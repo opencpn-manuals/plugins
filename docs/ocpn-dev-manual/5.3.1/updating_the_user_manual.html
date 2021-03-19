@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>Updating the User Manual :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/updating_the_user_manual.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,11 +224,8 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;39" alt="indexmenu_n&gt;39"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_updating_the_user_manual"><a class="anchor" href="#_updating_the_user_manual"></a>Updating the User Manual</h2>
+<h1 class="page">Updating the User Manual</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>FIXME - DO AFTER MIGRATION - This page needs to be continued and brought
@@ -289,8 +286,11 @@ http://opencpn.willkamp.com/</pre>
 </li>
 </ol>
 </div>
-<div class="sect2">
-<h3 id="_android"><a class="anchor" href="#_android"></a>Android</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_android"><a class="anchor" href="#_android"></a>Android</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Looking again at all the changes, one big thing that is not instantly
 obvious, is that OpenCPN now badly needs documentation for Android
@@ -300,235 +300,194 @@ users.<br>
 Changelog<br>
 - Rgleason 1-40 done</p>
 </div>
-<div class="paragraph">
-<p><mark>*1. Implement configurable waypoint range rings (FS#1560) -updated
-screenshot, added txt<br>
+<div class="listingblock">
+<div class="content">
+<pre>#*1. Implement configurable waypoint range rings (FS#1560) -updated
+screenshot, added txt +
 #*2. Implement configurable NMEA Talker ID (FS#1557) -Screenshot
-connections-output-filter.<br>
+connections-output-filter. +
 #*3. Harmonize autopilot APB and XTE precision settings to be the same
-always. - Made note in connections<br>
-4. Improve 2-bells audio file. (FS#1673)<br>
-5. Correct to disable selectability of hidden AIS targets. (FS#1666)<br>
+always. - Made note in connections +
+4. Improve 2-bells audio file. (FS#1673) +
+5. Correct to disable selectability of hidden AIS targets. (FS#1666) +
 #*6. Grib: Add Fixed spacing option for arrows and numbers. -updated
-many screenshots. added txt<br>
-7. Grib: Correct data interpolation error at 180 E/W longitude.<br>
+many screenshots. added txt +
+7. Grib: Correct data interpolation error at 180 E/W longitude. +
 8. Grib: Improve email request dialog to allow requests crossing 180 E/W
-longitude.<br>
+longitude. +
 #*9. Correct dialog text for magnetic variation sense. (FS#1694)
--modified text updated screenshot<br>
+-modified text updated screenshot +
 #*10. Add extended AIS Aton rendering according to IEC6228_Ed2. -added
-symbols to manual<br>
+symbols to manual +
 11. Make initial page selection on options dialog more consistent in
-GTK.<br>
+GTK. +
 12. Correct ENC UWTROC, OBSTRN, WRECKS visibility in Base and Standard
-modes. (FS#1717<br>
+modes. (FS#1717 +
 13. Correct uninitialized member causing crash on DSC message with
-incorrect checksum(FS#1697)<br>
+incorrect checksum(FS#1697) +
 14. Correct to ignore DSC messages with "Unspecified" position
-(FS#1711)<br>
+(FS#1711) +
 15. Correct VERCCL and VERCOP height decode and rendering on ENCs
-(FS#1704) Thanks TransmitterDan<br>
+(FS#1704) Thanks TransmitterDan +
 #*16. Correct to ignore invisible marks on selection/query (FS#1670)
--noted under Marks.<br>
-17. Correct keyboard accelerator logic for WXOSX (FS#1698/1655<br>
+-noted under Marks. +
+17. Correct keyboard accelerator logic for WXOSX (FS#1698/1655 +
 18. Correct RouteProperties dialog to "Stay on top" for WXOSX build
-(FS#1698)<br>
-19. Correct help launcher on wxWidgets 3.x. (FS#1702)<br>
-20. Correct uninitialized variables (FS#1679)<br>
-21. Correct for "GD=" missing datum in KAP chart header. (FS#1683)<br>
+(FS#1698) +
+19. Correct help launcher on wxWidgets 3.x. (FS#1702) +
+20. Correct uninitialized variables (FS#1679) +
+21. Correct for "GD=" missing datum in KAP chart header. (FS#1683) +
 22. Correct depth unit display for BSB charts with KNP/…UN=METRIC
-(FS#1654)<br>
+(FS#1654) +
 23. Correct cm93 failure to show some soundings on keyboard pan
-(FS#1689)<br>
-24. Correct automatic route creation properties on MOB event (FS#1699)<br>
+(FS#1689) +
+24. Correct automatic route creation properties on MOB event (FS#1699) +
 25. Improve toolbar tooltip placement for right-located toolbar.
-(FS#1657)<br>
+(FS#1657) +
 26. Correct datum initialization for quilted non-WGS84 charts in OpenGL
-mode. (FS</mark>????)<br>
-27. Correct occasional linux focus loss (FS#1684)<br>
+mode. (FS#????) +
+27. Correct occasional linux focus loss (FS#1684) +
 28. Preserve visibility attributes for GPX files originating from
-OpenCPN (FS#1667)<br>
-29. Improve formatting of S57 object attributes as decoded (FS#1713)<br>
-30. Correct ENC SENC file creation math for ARMHF systems.<br>
+OpenCPN (FS#1667) +
+29. Improve formatting of S57 object attributes as decoded (FS#1713) +
+30. Correct ENC SENC file creation math for ARMHF systems. +
 #*31. Implement quilting of skewed raster charts in OpenGL mode. -note
-at top of Quilting<br>
+at top of Quilting +
 #*32. Implement manual/timed automatic toolbar hiding option. -note made
-under Options UI<br>
-33. Update Windows build tool to VS2103<br>
-34. Update Windows wxWidgets version to wx3.0.2<br>
+under Options UI +
+33. Update Windows build tool to VS2103 +
+34. Update Windows wxWidgets version to wx3.0.2 +
 #*35. Implement automatic reload of updated PlugIns by visiting
-options→Plugins screen. -Added Re-enable to Plugin Install &amp; Enable<br>
+options→Plugins screen. -Added Re-enable to Plugin Install &amp; Enable +
 #*36. Improve GUI for GRIB PlugIn, better fitting the small screen. -
-New screenshots uploaded + Hide data.<br>
+New screenshots uploaded + Hide data. +
 *37. Correct duplicate routepoint delete logic, (FS#1743) - bug in
-logic, requires no change to docs.<br>
+logic, requires no change to docs. +
 38. Correct for inadvertent waypoint dragging on double-click
-(FS#1748)<br>
+(FS#1748) +
 39. Correct route line width in selected and activated modes.
-(FS#1735)<br>
+(FS#1735) +
 40. Correct ownship predictor rendering when ownship is off-screen
-(FS#1754)</p>
-</div>
-<div class="paragraph">
-<p>Version 4.1.925 Beta<br>
-Changelog<br>
-- Rgleason 41-61 done.</p>
-</div>
-<div class="paragraph">
-<p>41. Improve RouteManagerDialog sizing and rotation behavior.
-(FS#1757, FS#1755)<br>
+(FS#1754)
+
+Version 4.1.925 Beta +
+Changelog +
+- Rgleason 41-61 done.
+
+{empty}41. Improve RouteManagerDialog sizing and rotation behavior.
+(FS#1757, FS#1755) +
 42. Correct DC mode HPGL vector symbol rendering with wxGraphicsContext
-active.<br>
-43. Correct quilt operations on highly zoomed skewed quilt regions.<br>
-44. Correct shutdown process to avoid accessing PlugIn chart orphans.<br>
-45. Correct AIS target age logic when DST is active (FS#1809).<br>
+active. +
+43. Correct quilt operations on highly zoomed skewed quilt regions. +
+44. Correct shutdown process to avoid accessing PlugIn chart orphans. +
+45. Correct AIS target age logic when DST is active (FS#1809). +
 46. Correct rotated clip region calculation when using depth-buffer
 clipping. (FS#1801) -Serge closed for Baikal, I assume it is fixed. No
-doc changes.<br>
-47. Fix Grib Particle Looping (FS#1794) - Nice fix!<br>
+doc changes. +
+47. Fix Grib Particle Looping (FS#1794) - Nice fix! +
 48. Correct XML Changes file handling on crash restart and point
-dragging. (FS#1824, FS#1785)<br>
+dragging. (FS#1824, FS#1785) +
 49. Correct console canvas location for alternate compass layouts.
-(FS#1851) #notexist. no effect on user<br>
-50. Correct OpenGL options "accelerated panning" initial value.<br>
+(FS#1851) #notexist. no effect on user +
+50. Correct OpenGL options "accelerated panning" initial value. +
 51. Implement greatly improved mipmap generation algorithm using SSE
-intrinsics where available.<br>
+intrinsics where available. +
 52. Improve cm93 zoom logic to show more detail where desired,
-especially small islands in a big sea. - nice!<br>
+especially small islands in a big sea. - nice! +
 53. Correct chart group logic for similar chart file location prefix.
-(FS#1060) thanks tDan<br>
+(FS#1060) thanks tDan +
 54. Improve OpenGL raster cache build time by optimizing progress dialog
-updating. Thanks, did-g.<br>
-55. Add filter string control to NMEA debug window. Thanks Sean.<br>
-56. Add support for mingw compiler on Windows.<br>
-57. Correct rendering of TSS arrows in DC mode (FS#1858)<br>
+updating. Thanks, did-g. +
+55. Add filter string control to NMEA debug window. Thanks Sean. +
+56. Add support for mingw compiler on Windows. +
+57. Correct rendering of TSS arrows in DC mode (FS#1858) +
 58. Correct CenterView dialog text edit control behavior on Windows
-(FS#1765)<br>
+(FS#1765) +
 59. Correct textual description for AIS Target Status 11 and 12
-(FS#1848)<br>
-60. Correct waypoint icon selector dropdown size on MSW (FS#1815)<br>
+(FS#1848) +
+60. Correct waypoint icon selector dropdown size on MSW (FS#1815) +
 61. Correct initialization of UserIcons ownship preference. (FS#1769)
-thanks Peter.</p>
-</div>
-<div class="paragraph">
-<p>OpenCPN Version 4.1.1022<br>
-Changelog</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>WDkester - Changelog 63-77 Had 1 change (70).<br></p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Correct and extend Raster Chart PlugIn API for revised OpenGL access
-methods.<br></p>
-</li>
-<li>
-<p>Correct active track rendering logic to Ownship.<br></p>
-</li>
-<li>
-<p>Correct cm93 region and detail level calculation logic around
-Longitude 0.<br></p>
-</li>
-<li>
-<p>Correct longitude grid text rendering on OpenGL.<br></p>
-</li>
-<li>
-<p>Correct occasional loss of toolbar during mode switches and dialog
-access.<br></p>
-</li>
-<li>
-<p>Improve sectored light rendering performance on Windows OpenGL
-systems.<br></p>
-</li>
-<li>
-<p>Correct Vector chart PlugIn rendering methods.<br>
+thanks Peter.
+
+OpenCPN Version 4.1.1022 +
+Changelog
+
+- WDkester - Changelog 63-77 Had 1 change (70). +
+63. Correct and extend Raster Chart PlugIn API for revised OpenGL access
+methods. +
+64. Correct active track rendering logic to Ownship. +
+65. Correct cm93 region and detail level calculation logic around
+Longitude 0. +
+66. Correct longitude grid text rendering on OpenGL. +
+67. Correct occasional loss of toolbar during mode switches and dialog
+access. +
+68. Improve sectored light rendering performance on Windows OpenGL
+systems. +
+69. Correct Vector chart PlugIn rendering methods. +
 #*70. Implement GUI scale factor for toolbar effective on all
-platforms.<br></p>
-</li>
-<li>
-<p>If specified, require NMEA checksums to be valid before sending
-sentences to PlugIns.<br></p>
-</li>
-<li>
-<p>Correct initialization of Polyconic charts without embedded georef
-coefficients (FS#1866)<br></p>
-</li>
-<li>
-<p>Modify AIS SART target acknowledge timeout policy to honor global
-ACK timeout (FS#1856)<br></p>
-</li>
-<li>
-<p>Correct AIS Target Query dialog sizing logic<br></p>
-</li>
-<li>
-<p>Correct Grid text formatting for "degree" symbol (FS#1870)<br></p>
-</li>
-<li>
-<p>Extend PlugIn API for Waypoint list access.<br></p>
-</li>
-<li>
-<p>Correct Dashboard context menu actions when multiple dashboards are
-defined.</p>
-</li>
-</ol>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>OpenCPN Version 4.1.1108<br>
-Changelog<br>
-- Rgleason reviewed, no additional changes needed to UM.<br>
+platforms. +
+71. If specified, require NMEA checksums to be valid before sending
+sentences to PlugIns. +
+72. Correct initialization of Polyconic charts without embedded georef
+coefficients (FS#1866) +
+73. Modify AIS SART target acknowledge timeout policy to honor global
+ACK timeout (FS#1856) +
+74. Correct AIS Target Query dialog sizing logic +
+75. Correct Grid text formatting for "degree" symbol (FS#1870) +
+76. Extend PlugIn API for Waypoint list access. +
+77. Correct Dashboard context menu actions when multiple dashboards are
+defined.
+
+OpenCPN Version 4.1.1108 +
+Changelog +
+- Rgleason reviewed, no additional changes needed to UM. +
 #*78. Add Follower/Buddy to MMSIEditDialog to suppress AIS alert.
--Thanks Hakan, changes made to UM.<br>
+-Thanks Hakan, changes made to UM. +
 79. Correct occasional loss of reduced toolbar on chart stack change.
-Thanks, Chuck.<br>
+Thanks, Chuck. +
 80. Correct memory corruption on high overzoom DC mode raster chart
-rendering. (FS#1885)<br>
-81. Correct memory leaks on SENC file creation. -thanks bdbcat!<br>
-82. Improve AIS Alert Dialog sizing algorithm. - does not change UM.<br>
-83. Suppress some unnecessary log error messages on exit.<br>
+rendering. (FS#1885) +
+81. Correct memory leaks on SENC file creation. -thanks bdbcat! +
+82. Improve AIS Alert Dialog sizing algorithm. - does not change UM. +
+83. Suppress some unnecessary log error messages on exit. +
 84. Correct polyconic &amp; transverse Mercator chart outline calculation
-method. (FS#1882)<br>
+method. (FS#1882) +
 #*85.Correct operation of Anchor Information hotkey ("A") in vector
-chart display. Thanks nkiesel…<br>
+chart display. Thanks nkiesel… +
 86. In Responsive mode, set basic toolbar tool and compass size to 6 mm
-nominal.<br>
+nominal. +
 87. Correct chartbar switching behavior on touch enabled
-configurations.<br>
-88. Re-enable install log on MSW Installer Package.<br>
+configurations. +
+88. Re-enable install log on MSW Installer Package. +
 89. Correct toolbar submerge grabber logic in various cases. Thanks,
-Chuck.<br>
-90. Refactor to allow building with USE_S57=OFF (FS#1903)</p>
-</div>
-<div class="paragraph">
-<p>Release 4.1.1301<br>
-Changelog<br>
+Chuck. +
+90. Refactor to allow building with USE_S57=OFF (FS#1903)
+
+Release 4.1.1301 +
+Changelog +
 -Rgleason reviewed 91-105, UM changes as below. -may need to add some
-files to o-portable.<br>
-*91.Correct config file location for portable (-p) operation.<br>
+files to o-portable. +
+*91.Correct config file location for portable (-p) operation. +
 -Rgleason, checked installation. -May need to add some files for
-v4.1.x<br>
-92. Fix uncompensated skewed chart display. (FS#1904) Thanks Chuck.<br>
+v4.1.x +
+92. Fix uncompensated skewed chart display. (FS#1904) Thanks Chuck. +
 93. Correct cm93 quilt logic in OpenGL for some especially complex
-situations.<br>
-94. Correct rendering of disjoint, large scale S57 cells.<br>
+situations. +
+94. Correct rendering of disjoint, large scale S57 cells. +
 95. Implement mag variation calculation at object location if WMM is
-available. -nice Pavel<br>
-#*96.Update Authors list, adding Didier Gautheron.<br>
-97. Correct Windows Generic GDI OpenGL driver initialization.<br>
+available. -nice Pavel +
+#*96.Update Authors list, adding Didier Gautheron. +
+97. Correct Windows Generic GDI OpenGL driver initialization. +
 98.Improve DUSK/NIGHT color presentation by eliminating bright
-decorations.<br>
-99. Correct display of very long routes (FS#1896) - cutoff fixed.<br>
-100. Implement scaled icons for Settings top icons in responsive mode.<br>
-101. Handle NMEA V4 messages with prepended tags.<br>
-#*102.Re-enable ability to add a single chart to a group.<br>
-103. Improve initial responsiveness of Option dialog.<br>
+decorations. +
+99. Correct display of very long routes (FS#1896) - cutoff fixed. +
+100. Implement scaled icons for Settings top icons in responsive mode. +
+101. Handle NMEA V4 messages with prepended tags. +
+#*102.Re-enable ability to add a single chart to a group. +
+103. Improve initial responsiveness of Option dialog. +
 104. Modify OpenGL texture logic to support non-compliant MSW "GDI
-Generic" driver.<br>
-105. Implement ScaledVectorGraphics (SVG) interface for tools and icons.</p>
+Generic" driver. +
+105. Implement ScaledVectorGraphics (SVG) interface for tools and icons.</pre>
 </div>
 </div>
 </div>

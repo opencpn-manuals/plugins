@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>Compiling on Linux :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/compiling_linux.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -225,25 +225,20 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;2" alt="indexmenu_n&gt;2"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_compiling_on_linux"><a class="anchor" href="#_compiling_on_linux"></a>Compiling on Linux</h2>
+<h1 class="page">Compiling on Linux</h1>
+<div id="preamble">
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="_images/opencpn_dev_linux_0.png" alt="opencpn dev linux 0" width="50">
-</div>
-</div>
 <div class="paragraph">
 <p><strong>Instructions aimed at Debian/Ubuntu and Fedora/CentOS, but could easily
 be adjusted to fit other Linuxes, BSDs and Solaris.</strong></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_get_required_programs"><a class="anchor" href="#_1_get_required_programs"></a>1. Get required programs</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_1_get_required_programs"><a class="anchor" href="#_1_get_required_programs"></a>1. Get required programs</h3>
-<div class="sect3">
-<h4 id="_debian_ubuntu_mint_etc"><a class="anchor" href="#_debian_ubuntu_mint_etc"></a>Debian / Ubuntu / Mint etc</h4>
+<h3 id="_debian_ubuntu_mint_etc"><a class="anchor" href="#_debian_ubuntu_mint_etc"></a>Debian / Ubuntu / Mint etc</h3>
 <div class="literalblock">
 <div class="content">
 <pre>$ sudo apt-get install build-essential cmake gettext git-core gpsd gpsd-clients libgps-dev wx-common libgtk3.0-gtk3-dev libglu1-mesa-dev libgtk2.0-dev libgtk3-dev wx3.0-headers libbz2-dev libtinyxml-dev libsndfile1-dev libportaudio2 portaudio19-dev libcurl4-openssl-dev libexpat1-dev libcairo2-dev libarchive-dev liblzma-dev libexif-dev libelf-dev libsqlite3-dev</pre>
@@ -270,31 +265,31 @@ main repository. Remove these references:</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_fedora_centos"><a class="anchor" href="#_fedora_centos"></a>Fedora / CentOS</h4>
+<div class="sect2">
+<h3 id="_fedora_centos"><a class="anchor" href="#_fedora_centos"></a>Fedora / CentOS</h3>
 <div class="literalblock">
 <div class="content">
 <pre>$ yum install git cmake rpm-build gcc-c++ libstdc++-devel gtk2-devel wxGTK-devel mesa-libGLU-devel mesa-libGL-devel gettext bzip2-devel portaudio-devel libarchive-devel liblzma-devel libexif-devel</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_opensuse"><a class="anchor" href="#_opensuse"></a>OpenSuSE</h4>
+<div class="sect2">
+<h3 id="_opensuse"><a class="anchor" href="#_opensuse"></a>OpenSuSE</h3>
 <div class="literalblock">
 <div class="content">
 <pre>$ zypper install git cmake gcc-c++ libstdc++-devel gtk2-devel wxWidgets-wxcontainer-devel gettext-runtime gettext-tools libbz2-devel gpsd-devel portaudio-devel tinyxml-devel libcurl-devel freeglut-devel rpm-build libarchive-devel liblzma-devel libexif-devel</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_slackware"><a class="anchor" href="#_slackware"></a>Slackware</h4>
+<div class="sect2">
+<h3 id="_slackware"><a class="anchor" href="#_slackware"></a>Slackware</h3>
 <div class="paragraph">
 <p>see
 <a href="compiling_on_slackware.html" class="page">Compiling on Slackware</a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_notes"><a class="anchor" href="#_notes"></a>NOTES :</h4>
+<div class="sect2">
+<h3 id="_notes"><a class="anchor" href="#_notes"></a>NOTES :</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -337,29 +332,29 @@ dependencies as well…</p>
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_optional_remove_old_installation"><a class="anchor" href="#_optional_remove_old_installation"></a>Optional: Remove old installation</h4>
+<div class="sect2">
+<h3 id="_optional_remove_old_installation"><a class="anchor" href="#_optional_remove_old_installation"></a>Optional: Remove old installation</h3>
 <div class="paragraph">
 <p><em>Only required if opencpn .deb / .rpm was installed previously</em></p>
 </div>
-<div class="sect4">
-<h5 id="_debian_ubuntu_mint_etc_2"><a class="anchor" href="#_debian_ubuntu_mint_etc_2"></a>Debian / Ubuntu / Mint etc</h5>
+<div class="sect3">
+<h4 id="_debian_ubuntu_mint_etc_2"><a class="anchor" href="#_debian_ubuntu_mint_etc_2"></a>Debian / Ubuntu / Mint etc</h4>
 <div class="literalblock">
 <div class="content">
 <pre>$ sudo apt-get remove opencpn</pre>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_fedora_centos_2"><a class="anchor" href="#_fedora_centos_2"></a>Fedora / CentOS</h5>
+<div class="sect3">
+<h4 id="_fedora_centos_2"><a class="anchor" href="#_fedora_centos_2"></a>Fedora / CentOS</h4>
 <div class="literalblock">
 <div class="content">
 <pre>$ yum remove opencpn</pre>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="_opensuse_2"><a class="anchor" href="#_opensuse_2"></a>OpenSUSE</h5>
+<div class="sect3">
+<h4 id="_opensuse_2"><a class="anchor" href="#_opensuse_2"></a>OpenSUSE</h4>
 <div class="literalblock">
 <div class="content">
 <pre>$ zypper remove opencpn</pre>
@@ -368,8 +363,10 @@ dependencies as well…</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_2_download_source_code"><a class="anchor" href="#_2_download_source_code"></a>2. Download source code</h3>
+</div>
+<div class="sect1">
+<h2 id="_2_download_source_code"><a class="anchor" href="#_2_download_source_code"></a>2. Download source code</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Run this to get your local copy of the source code:</p>
 </div>
@@ -391,8 +388,10 @@ $ git pull</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_3_build_it"><a class="anchor" href="#_3_build_it"></a>3. Build it</h3>
+</div>
+<div class="sect1">
+<h2 id="_3_build_it"><a class="anchor" href="#_3_build_it"></a>3. Build it</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>We&#8217;ll build everything in a subdirectory to keep the codebase clean
 (easier to catch changes).</p>
@@ -406,8 +405,8 @@ $ cmake ../
 $ make</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_notes_2"><a class="anchor" href="#_notes_2"></a>Notes:</h4>
+<div class="sect2">
+<h3 id="_notes_2"><a class="anchor" href="#_notes_2"></a>Notes:</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -453,11 +452,13 @@ Change the path in this line in CMakeCache.txt:</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_4_install_it_or_create_a_package"><a class="anchor" href="#_4_install_it_or_create_a_package"></a>4. Install it or create a package</h3>
+</div>
+<div class="sect1">
+<h2 id="_4_install_it_or_create_a_package"><a class="anchor" href="#_4_install_it_or_create_a_package"></a>4. Install it or create a package</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Make sure to refer to the
-<strong><a href="modularized_packaging.html" class="page">modularized_packaging.adoc</a></strong>
+<strong><a href="modularized_packaging.html" class="page">Modularized Packaging</a></strong>
 chapter of this guide to understand what gets installed/packaged for you
 and how to influence it. To install your build product on your local
 machine, simply issue</p>
@@ -506,8 +507,10 @@ to read 'libtinyxml2.6.2v5'.</p>
 DEB package that is made.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_5_ides_for_linux_to_work_on_opencpn"><a class="anchor" href="#_5_ides_for_linux_to_work_on_opencpn"></a>5. IDEs for Linux to work on OpenCPN</h3>
+</div>
+<div class="sect1">
+<h2 id="_5_ides_for_linux_to_work_on_opencpn"><a class="anchor" href="#_5_ides_for_linux_to_work_on_opencpn"></a>5. IDEs for Linux to work on OpenCPN</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>You can use various IDEs to edit OpenCPN&#8217;s code on Linux, to have an
 easy life, choose one of <strong><a href="http://www.codeblocks.org/">Code::Blocks</a></strong>,
@@ -552,10 +555,12 @@ looks in the location the 'opencpn' executable is run from, i.e. your
 'build' directory.</p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_6_others"><a class="anchor" href="#_6_others"></a>6. Others</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_6_others"><a class="anchor" href="#_6_others"></a>6. Others</h3>
-<div class="sect3">
-<h4 id="_script_to_make_the_gitcmake_process_easy"><a class="anchor" href="#_script_to_make_the_gitcmake_process_easy"></a>Script to make the Git/Cmake process easy.</h4>
+<h3 id="_script_to_make_the_gitcmake_process_easy"><a class="anchor" href="#_script_to_make_the_gitcmake_process_easy"></a>Script to make the Git/Cmake process easy.</h3>
 <div class="literalblock">
 <div class="content">
 <pre>#! /bin/sh
@@ -591,8 +596,8 @@ exit</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_compiling_older_releases"><a class="anchor" href="#_compiling_older_releases"></a>Compiling older releases.</h4>
+<div class="sect2">
+<h3 id="_compiling_older_releases"><a class="anchor" href="#_compiling_older_releases"></a>Compiling older releases.</h3>
 <div class="paragraph">
 <p>Old way from CVS, no longer maintained</p>
 </div>
@@ -616,12 +621,11 @@ $ make install</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_check_on_plugin_availability_and_versions"><a class="anchor" href="#_check_on_plugin_availability_and_versions"></a>Check on Plugin Availability and Versions</h4>
+<div class="sect2">
+<h3 id="_check_on_plugin_availability_and_versions"><a class="anchor" href="#_check_on_plugin_availability_and_versions"></a>Check on Plugin Availability and Versions</h3>
 <div class="paragraph">
 <p>Go to <a href="https://launchpad.net/~opencpn/+archive/ubuntu/opencpn" class="bare">https://launchpad.net/~opencpn/+archive/ubuntu/opencpn</a> Scroll down
 to the desired plugin, and look at the version number.</p>
-</div>
 </div>
 </div>
 </div>

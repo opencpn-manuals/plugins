@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>Troubleshooting :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/troubleshooting.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,18 +224,18 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;6" alt="indexmenu_n&gt;6"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<h1 class="page">Troubleshooting</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>For trouble shooting and lower level nitty gritty details, the command
 line, configuration files and debuggers are your friends.</p>
 </div>
-<div class="sect2">
-<h3 id="_opencpn_has_a_minimal_command_line_interface_cli"><a class="anchor" href="#_opencpn_has_a_minimal_command_line_interface_cli"></a>OpenCPN has a minimal command line interface (CLI)</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opencpn_has_a_minimal_command_line_interface_cli"><a class="anchor" href="#_opencpn_has_a_minimal_command_line_interface_cli"></a>OpenCPN has a minimal command line interface (CLI)</h2>
+<div class="sectionbody">
 <div class="literalblock">
 <div class="content">
 <pre>Usage: opencpn [-h] [-p] [-fullscreen] [-no_opengl] [-rebuild_gl_raster_cache] [-parse_all_enc] [-unit_test_1 &lt;num&gt;]
@@ -248,8 +248,8 @@ line, configuration files and debuggers are your friends.</p>
   -unit_test_1:&lt;num&gt;            Display a slideshow of &lt;num&gt; charts and then exit. Zero or negative &lt;num&gt; specifies no limit.</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_unit_test_1"><a class="anchor" href="#_unit_test_1"></a>[-unit_test_1]</h4>
+<div class="sect2">
+<h3 id="_unit_test_1"><a class="anchor" href="#_unit_test_1"></a>[-unit_test_1]</h3>
 <div class="paragraph">
 <p>This command test cycles through all possible charts in the currently
 loaded chart database, adjusting the viewport to show the loaded chart
@@ -266,28 +266,30 @@ ENC charts into SENC files. The first, time consuming processing of ENC
 charts, can this way be done unattended.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_p"><a class="anchor" href="#_p"></a>[ -p ]</h4>
+<div class="sect2">
+<h3 id="_p"><a class="anchor" href="#_p"></a>[ -p ]</h3>
 <div class="paragraph">
 <p>The portable option is explained
 <a href="/opencpn/opencpn_user_manual/advanced_features/portable_opencpn.adoc" class="bare">/opencpn/opencpn_user_manual/advanced_features/portable_opencpn.adoc</a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_no_opengl"><a class="anchor" href="#_no_opengl"></a>[-no_opengl]</h4>
+<div class="sect2">
+<h3 id="_no_opengl"><a class="anchor" href="#_no_opengl"></a>[-no_opengl]</h3>
 <div class="paragraph">
 <p>A total switch-off of OpenGL, in a more thorough way than in "Options".</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_fullscreen"><a class="anchor" href="#_fullscreen"></a>[ -fullscreen ]</h4>
+<div class="sect2">
+<h3 id="_fullscreen"><a class="anchor" href="#_fullscreen"></a>[ -fullscreen ]</h3>
 <div class="paragraph">
 <p>Starts OpenCPN in FullScreen mode</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_debugging_output_settings_for_logfile"><a class="anchor" href="#_debugging_output_settings_for_logfile"></a>Debugging Output Settings for Logfile</h3>
+</div>
+<div class="sect1">
+<h2 id="_debugging_output_settings_for_logfile"><a class="anchor" href="#_debugging_output_settings_for_logfile"></a>Debugging Output Settings for Logfile</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The <em>config or ini</em> file contains a lot of settings that are saved
 between sessions.<br>
@@ -309,16 +311,18 @@ DebugGDAL       Add logfile debug output for GDAL\\</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_using_a_fifo_for_ais_debugging"><a class="anchor" href="#_using_a_fifo_for_ais_debugging"></a>Using a FIFO for ais debugging.</h3>
+</div>
+<div class="sect1">
+<h2 id="_using_a_fifo_for_ais_debugging"><a class="anchor" href="#_using_a_fifo_for_ais_debugging"></a>Using a FIFO for ais debugging.</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>See the code in <em>ais.cpp</em><br>
 `+/*
    A special test for a user defined FIFO
    To use this method, do the following:
    a.  Create a fifo            $mkfifo /tmp/aisfifo
-   b.  netcat into the fifo     $nc {ip} {port}&gt; /tmp/aisfifo
-                   sample {ip} {port} could be  nc 82.182.117.51 6401&gt; /tmp/aisfifo
+   b.  netcat into the fifo     $nc $ip $port&gt; /tmp/aisfifo
+                   sample ip port could be  nc 82.182.117.51 6401 &gt; /tmp/aisfifo
    c.  hand edit opencpn.conf and make AIS data source like this:
         [Settings/AISPort]
         Port=Serial:/tmp/aisfifo</p>
@@ -338,8 +342,10 @@ DebugGDAL       Add logfile debug output for GDAL\\</pre>
 requirement for the port to be a TTY is relaxed.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_wxwidgets"><a class="anchor" href="#_wxwidgets"></a>wxWidgets</h3>
+</div>
+<div class="sect1">
+<h2 id="_wxwidgets"><a class="anchor" href="#_wxwidgets"></a>wxWidgets</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>OpenCPN uses wxWidgets, currently version 3.0.2.
 <a href="https://www.wxwidgets.org/docs/">wxWidgets Reference Manuals</a> . The Often
@@ -361,7 +367,6 @@ changes to wxWidgets versions is infrequent.</p>
 <p>This PDF to
 ahttps://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0ahUKEwi864Ce3ZXXAhVMtxQKHbCMCscQFgguMAE&amp;url=https%3A%2F%2Fptgmedia.pearsoncmg.com%2Fimages%2F0131473816%2Fdownloads%2F0131473816_book.pdf&amp;usg=AOvVaw2cPYxEF2DKGrkc5mVx1FMF[wxWidgets
 History document] might help with wxWidgets issues.</p>
-</div>
 </div>
 </div>
 </div>

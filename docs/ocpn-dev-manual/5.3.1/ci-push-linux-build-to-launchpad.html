@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>CI: Push Linux Build to Launchpad :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/ci-push-linux-build-to-launchpad.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,14 +224,10 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;28" alt="indexmenu_n&gt;28"></span></p>
-</div>
+<h1 class="page">CI: Push Linux Build to Launchpad</h1>
 <div class="sect1">
-<h2 id="_ci_push_linux_build_to_launchpad"><a class="anchor" href="#_ci_push_linux_build_to_launchpad"></a>CI: Push Linux Build to Launchpad</h2>
+<h2 id="_initiate_the_push_with_git_push_origin_tag"><a class="anchor" href="#_initiate_the_push_with_git_push_origin_tag"></a>Initiate the push with 'git push origin [tag]'</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_initiate_the_push_with_git_push_origin_tag"><a class="anchor" href="#_initiate_the_push_with_git_push_origin_tag"></a>Initiate the push with 'git push origin [tag]'</h3>
 <div class="paragraph">
 <p>In .travis it is possible to initiate the push of a Linux build to your
 Launchpad repository. These instructions assume that you have a travis
@@ -240,15 +236,17 @@ travis account is used to confirm 'successful' builds of linux and osx,
 and to create Linux packages to deploy to your Launchpad.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_how_to_push_a_travis_built_file_to_your_launchpad"><a class="anchor" href="#_how_to_push_a_travis_built_file_to_your_launchpad"></a>How to push a .Travis 'built' file to your Launchpad</h3>
+</div>
+<div class="sect1">
+<h2 id="_how_to_push_a_travis_built_file_to_your_launchpad"><a class="anchor" href="#_how_to_push_a_travis_built_file_to_your_launchpad"></a>How to push a .Travis 'built' file to your Launchpad</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>For travis refer to
 <a href="http://www.cruisersforum.com/forums/f134/tactics-plugin-166909-2.html#post2913910">Petri&#8217;s
 post #637</a></p>
 </div>
-<div class="sect3">
-<h4 id="_a_configure_the_travis_file_for_security_and_permissions"><a class="anchor" href="#_a_configure_the_travis_file_for_security_and_permissions"></a>A. Configure the Travis file for security and permissions</h4>
+<div class="sect2">
+<h3 id="_a_configure_the_travis_file_for_security_and_permissions"><a class="anchor" href="#_a_configure_the_travis_file_for_security_and_permissions"></a>A. Configure the Travis file for security and permissions</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -260,8 +258,8 @@ section.</p>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_b_launchpad_provider_at_bottom_of_travis_yml_file"><a class="anchor" href="#_b_launchpad_provider_at_bottom_of_travis_yml_file"></a>B. Launchpad provider at bottom of travis.yml file</h4>
+<div class="sect2">
+<h3 id="_b_launchpad_provider_at_bottom_of_travis_yml_file"><a class="anchor" href="#_b_launchpad_provider_at_bottom_of_travis_yml_file"></a>B. Launchpad provider at bottom of travis.yml file</h3>
 <div class="paragraph">
 <p>Example Bottom section of the travis.yml file. Note: indentation is
 important in yml files, child parts MUST be indeted below the owner.
@@ -299,8 +297,8 @@ new "- provider:" with the text "releases" following it. Both "-
 provider:" labels need to have the same indentation.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_c_install_travis_cli_to_encrypt_a_launchpad_secure_public_key"><a class="anchor" href="#_c_install_travis_cli_to_encrypt_a_launchpad_secure_public_key"></a>C. Install Travis CLI to encrypt a Launchpad secure public key</h4>
+<div class="sect2">
+<h3 id="_c_install_travis_cli_to_encrypt_a_launchpad_secure_public_key"><a class="anchor" href="#_c_install_travis_cli_to_encrypt_a_launchpad_secure_public_key"></a>C. Install Travis CLI to encrypt a Launchpad secure public key</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -334,8 +332,8 @@ response: 1.8.10.</p>
 +`</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_d_install_curl_to_allow_posting_information_to_launchpad"><a class="anchor" href="#_d_install_curl_to_allow_posting_information_to_launchpad"></a>D. Install "curl" to allow posting information to Launchpad</h4>
+<div class="sect2">
+<h3 id="_d_install_curl_to_allow_posting_information_to_launchpad"><a class="anchor" href="#_d_install_curl_to_allow_posting_information_to_launchpad"></a>D. Install "curl" to allow posting information to Launchpad</h3>
 <div class="paragraph">
 <p>Part of the process requires the http "Post" process to acquire security
 tokens. The easy way to do this from a command prompt using the "curl"
@@ -345,8 +343,8 @@ website <a href="http://techieroop.com/how-to-install-curl-on-windows-10/" class
 select the correct version for your setup.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_e_create_a_launchpad_request_token"><a class="anchor" href="#_e_create_a_launchpad_request_token"></a>E. Create a Launchpad "request-token"</h4>
+<div class="sect2">
+<h3 id="_e_create_a_launchpad_request_token"><a class="anchor" href="#_e_create_a_launchpad_request_token"></a>E. Create a Launchpad "request-token"</h3>
 <div class="paragraph">
 <p>Issue the following command from a command prompt.</p>
 </div>
@@ -381,8 +379,8 @@ oauth_token=XJwTXv9f8RRRT6TwCZ4x&amp;oauth_token_secret=lbrXHsQ0jVlJlqLpNX4mGWtN
 <p>Save this information as you will need it in following steps.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_f_authenticate_the_user"><a class="anchor" href="#_f_authenticate_the_user"></a>F. Authenticate the User</h4>
+<div class="sect2">
+<h3 id="_f_authenticate_the_user"><a class="anchor" href="#_f_authenticate_the_user"></a>F. Authenticate the User</h3>
 <div class="paragraph">
 <p>You will now need to logon to your Launchpad account. You need to have
 been authenticated before you can issue the next command from your
@@ -407,8 +405,8 @@ line":</p>
 easiest is to select "All", the last button on the page.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_g_get_new_secure_launchpad_token"><a class="anchor" href="#_g_get_new_secure_launchpad_token"></a>G. Get new secure Launchpad token</h4>
+<div class="sect2">
+<h3 id="_g_get_new_secure_launchpad_token"><a class="anchor" href="#_g_get_new_secure_launchpad_token"></a>G. Get new secure Launchpad token</h3>
 <div class="paragraph">
 <p>In your command prompt window issue the following command:</p>
 </div>
@@ -434,8 +432,8 @@ easiest is to select "All", the last button on the page.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_g_encrypt_your_tokens_before_use"><a class="anchor" href="#_g_encrypt_your_tokens_before_use"></a>G. Encrypt your tokens before use</h4>
+<div class="sect2">
+<h3 id="_g_encrypt_your_tokens_before_use"><a class="anchor" href="#_g_encrypt_your_tokens_before_use"></a>G. Encrypt your tokens before use</h3>
 <div class="paragraph">
 <p>You should now encrypt your tokens before they are used. This makes the
 interaction more secure.</p>
@@ -540,8 +538,8 @@ position in the .travis.yml file, in this case "oauth_token_secret"</p>
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_h_start_building_the_travis_project"><a class="anchor" href="#_h_start_building_the_travis_project"></a>H. Start building the .travis project</h4>
+<div class="sect2">
+<h3 id="_h_start_building_the_travis_project"><a class="anchor" href="#_h_start_building_the_travis_project"></a>H. Start building the .travis project</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -568,8 +566,8 @@ travis does not provide that type of storage space.</p>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_i_troubleshooting"><a class="anchor" href="#_i_troubleshooting"></a>I. Troubleshooting</h4>
+<div class="sect2">
+<h3 id="_i_troubleshooting"><a class="anchor" href="#_i_troubleshooting"></a>I. Troubleshooting</h3>
 <div class="paragraph">
 <p>When the Travis build does not work the error messages can be obscure
 and not really help too much. A typical message may be:</p>
@@ -613,7 +611,6 @@ make the changes to your main branch(es) and clean up the 'test' branch</p>
 </div>
 <div class="paragraph">
 <p>:</p>
-</div>
 </div>
 </div>
 </div>

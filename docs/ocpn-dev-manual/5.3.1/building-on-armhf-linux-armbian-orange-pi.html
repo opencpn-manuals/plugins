@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>Building on armhf linux - Armbian - Orange Pi :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/building-on-armhf-linux-armbian-orange-pi.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -226,11 +226,8 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;3" alt="indexmenu_n&gt;3"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_building_on_armhf_linux_armbian_orange_pi"><a class="anchor" href="#_building_on_armhf_linux_armbian_orange_pi"></a>Building on armhf linux - Armbian - Orange Pi</h2>
+<h1 class="page">Building on armhf linux - Armbian - Orange Pi</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="http://www.armbian.com/">Armbian.com</a> offers opensource "Linux for arm"
@@ -242,8 +239,11 @@ These instructions are valid for Orange Pi PC Plus(H3 armhf) and OPi PC
 OpenCPN 5.0.0 Mar, 2019.<br>
 (I hate instructions that are not dated!)</p>
 </div>
-<div class="sect2">
-<h3 id="_update_the_system_software"><a class="anchor" href="#_update_the_system_software"></a>Update the system software</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_update_the_system_software"><a class="anchor" href="#_update_the_system_software"></a>Update the system software</h2>
+<div class="sectionbody">
 <div class="literalblock">
 <div class="content">
 <pre>orangepipc$ sudo apt update
@@ -251,8 +251,10 @@ orangepipc$ sudo apt upgrade</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_os_fixes_required"><a class="anchor" href="#_os_fixes_required"></a>OS Fixes required</h3>
+</div>
+<div class="sect1">
+<h2 id="_os_fixes_required"><a class="anchor" href="#_os_fixes_required"></a>OS Fixes required</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Some modules require a lot of memory to compile and the system comes
 with only 128MB so I plugged in a thumb-drive with a linux 1.2GB swap
@@ -265,10 +267,12 @@ orangepipc$ sudo swapon /dev/sda5</pre>
 </div>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_follow_the_standard_linux_build_instructions_for_ubuntudebian"><a class="anchor" href="#_follow_the_standard_linux_build_instructions_for_ubuntudebian"></a>Follow the standard Linux build instructions for Ubuntu/Debian:</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_follow_the_standard_linux_build_instructions_for_ubuntudebian"><a class="anchor" href="#_follow_the_standard_linux_build_instructions_for_ubuntudebian"></a>Follow the standard Linux build instructions for Ubuntu/Debian:</h3>
-<div class="sect3">
-<h4 id="_clone_the_opencpn_repository"><a class="anchor" href="#_clone_the_opencpn_repository"></a>Clone the OpenCPN repository</h4>
+<h3 id="_clone_the_opencpn_repository"><a class="anchor" href="#_clone_the_opencpn_repository"></a>Clone the OpenCPN repository</h3>
 <div class="paragraph">
 <p>As a normal user get the source code</p>
 </div>
@@ -281,8 +285,8 @@ cd build</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_compile_package_and_install"><a class="anchor" href="#_compile_package_and_install"></a>Compile, Package and Install</h4>
+<div class="sect2">
+<h3 id="_compile_package_and_install"><a class="anchor" href="#_compile_package_and_install"></a>Compile, Package and Install</h3>
 <div class="literalblock">
 <div class="content">
 <pre>cmake -DCFLAGS="-O2 -march=native" -DBUNDLE_DOCS=OFF -DBUNDLE_TCDATA=ON -DBUNDLE_GSHHS=LOW ../
@@ -293,8 +297,8 @@ make package</pre>
 <p>Install some charts and test in the normal way.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_compile_package_and_install_2"><a class="anchor" href="#_compile_package_and_install_2"></a>Compile, Package and Install</h4>
+<div class="sect2">
+<h3 id="_compile_package_and_install_2"><a class="anchor" href="#_compile_package_and_install_2"></a>Compile, Package and Install</h3>
 <div class="paragraph">
 <p>Follow the standard Linux build instructions for Ubuntu/Debian:</p>
 </div>
@@ -306,7 +310,6 @@ make package</pre>
 </div>
 <div class="paragraph">
 <p>Install some charts and test in the normal way.</p>
-</div>
 </div>
 </div>
 </div>

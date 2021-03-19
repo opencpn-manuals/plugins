@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>Compile on Slackware :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/compiling_on_slackware.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -226,14 +226,10 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;4" alt="indexmenu_n&gt;4"></span></p>
-</div>
+<h1 class="page">Compile on Slackware</h1>
 <div class="sect1">
-<h2 id="_compile_on_slackware"><a class="anchor" href="#_compile_on_slackware"></a>Compile on Slackware</h2>
+<h2 id="_building_opencpn_package_in_slackware"><a class="anchor" href="#_building_opencpn_package_in_slackware"></a>Building OpenCPN package in Slackware</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_building_opencpn_package_in_slackware"><a class="anchor" href="#_building_opencpn_package_in_slackware"></a>Building OpenCPN package in Slackware</h3>
 <div class="paragraph">
 <p>Building a package in Slackware is a bit more intricate than the way
 described above (see: <a href="http://www.slackwiki.com/Building_A_Package" class="bare">http://www.slackwiki.com/Building_A_Package</a> ).<br>
@@ -301,8 +297,8 @@ under .configure according to the following:</p>
 --build=$ARCH-slackware-linux</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_2_download_and_pack_source_code"><a class="anchor" href="#_2_download_and_pack_source_code"></a>2. Download and pack source code</h4>
+<div class="sect2">
+<h3 id="_2_download_and_pack_source_code"><a class="anchor" href="#_2_download_and_pack_source_code"></a>2. Download and pack source code</h3>
 <div class="paragraph">
 <p>Get the current beta sourcecode by</p>
 </div>
@@ -328,8 +324,8 @@ pack it to a .tar.gz //</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_build_package"><a class="anchor" href="#_3_build_package"></a>3. Build package</h4>
+<div class="sect2">
+<h3 id="_3_build_package"><a class="anchor" href="#_3_build_package"></a>3. Build package</h3>
 <div class="paragraph">
 <p>Go superuser and use src2pkg</p>
 </div>
@@ -345,8 +341,8 @@ bash-4.2# src2pkg opencpn-3.2.2.tar.gz</pre>
 <p>the package goes to /tmp</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_4_install_it"><a class="anchor" href="#_4_install_it"></a>4. Install it:</h4>
+<div class="sect2">
+<h3 id="_4_install_it"><a class="anchor" href="#_4_install_it"></a>4. Install it:</h3>
 <div class="literalblock">
 <div class="content">
 <pre>bash-4.2# installpkg /tmp/opencpn-3.2.2-x86_64-1.txz (-i486 for x86 arch)</pre>
@@ -363,7 +359,6 @@ wxGTK -ca 4MB- is -according to Slackbuilds.org a part of wxPython and
 conflict if both are installed. See wxGTK-README.<br>
 WxGTK + libmspack are enough for OpenCPN provided the Slackbuildscript
 is edited as suggested above.</p>
-</div>
 </div>
 </div>
 </div>

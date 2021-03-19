@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>PI Manager Dev Procedure :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/pi_installer_dev_procedure.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -212,6 +212,10 @@
 <button class="nav-toggle"></button>
   <a href="developer_guide.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li><a href="pi_installer_dev_procedure.html">PI Manager Dev Procedure</a></li>
+  </ul>
 </nav>
 </div>
   <div class="content">
@@ -219,11 +223,8 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;12" alt="indexmenu_n&gt;12"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_pi_manager_dev_procedure"><a class="anchor" href="#_pi_manager_dev_procedure"></a>PI Manager Dev Procedure</h2>
+<h1 class="page">PI Manager Dev Procedure</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -237,10 +238,13 @@ Kees on How to Publish radar_pi</a></p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build_and_deploy"><a class="anchor" href="#_build_and_deploy"></a>Build and Deploy</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_build_and_deploy"><a class="anchor" href="#_build_and_deploy"></a>Build and Deploy</h3>
-<div class="sect3">
-<h4 id="_deploy_to_beta_repository"><a class="anchor" href="#_deploy_to_beta_repository"></a>Deploy to "Beta" Repository</h4>
+<h3 id="_deploy_to_beta_repository"><a class="anchor" href="#_deploy_to_beta_repository"></a>Deploy to "Beta" Repository</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -261,8 +265,8 @@ Kees on How to Publish radar_pi</a></p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_beta_test"><a class="anchor" href="#_beta_test"></a>"Beta" Test</h4>
+<div class="sect2">
+<h3 id="_beta_test"><a class="anchor" href="#_beta_test"></a>"Beta" Test</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -296,10 +300,10 @@ with PI Installer using</p>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_deploy_to_prod_repository"><a class="anchor" href="#_deploy_to_prod_repository"></a>Deploy to "Prod" Repository</h3>
 <div class="sect3">
-<h4 id="_deploy_to_prod_repository"><a class="anchor" href="#_deploy_to_prod_repository"></a>Deploy to "Prod" Repository</h4>
-<div class="sect4">
-<h5 id="_placeholder_note"><a class="anchor" href="#_placeholder_note"></a>PLACEHOLDER NOTE</h5>
+<h4 id="_placeholder_note"><a class="anchor" href="#_placeholder_note"></a>PLACEHOLDER NOTE</h4>
 <div class="paragraph">
 <p><a href="https://cloudsmith.io/~opencpn/repos/">Cloudsmith OpenCPN Organization
 Plugin Repositories</a> are one of the deployment resources used for
@@ -427,8 +431,8 @@ PR and Merge by Dave.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_reversion"><a class="anchor" href="#_reversion"></a>Reversion</h4>
+<div class="sect2">
+<h3 id="_reversion"><a class="anchor" href="#_reversion"></a>Reversion</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -441,8 +445,8 @@ version you wish to revert to.</p>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_pi_installer_and_deployment"><a class="anchor" href="#_pi_installer_and_deployment"></a>PI Installer and Deployment</h4>
+<div class="sect2">
+<h3 id="_pi_installer_and_deployment"><a class="anchor" href="#_pi_installer_and_deployment"></a>PI Installer and Deployment</h3>
 <div class="paragraph">
 <p>(Draft) How does the Plugin Developer test deployment and installation
 of their plugin … and the generated ocpn-plugins.xml?</p>
@@ -540,7 +544,6 @@ and point the xml file to the appropriate url.</p>
 <p>with your new xml metadata files, and icon so the plugin is included.</p>
 </li>
 </ol>
-</div>
 </div>
 </div>
 </div>

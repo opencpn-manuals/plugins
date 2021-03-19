@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>User Interface Styling :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/user_interface_styling.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,11 +224,8 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;38" alt="indexmenu_n&gt;38"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_user_interface_styling"><a class="anchor" href="#_user_interface_styling"></a>User Interface Styling</h2>
+<h1 class="page">User Interface Styling</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Style Manager allows you to modify many aspects of the OpenCPN user
@@ -250,85 +247,101 @@ interface:</p>
 </li>
 </ul>
 </div>
-<div class="sect2">
-<h3 id="_configuration_files"><a class="anchor" href="#_configuration_files"></a>Configuration files</h3>
-<div class="literalblock">
-<div class="content">
-<pre> +
-When OpenCPN starts it will look for files named *styleXXX.xml* (where
-the XXX means that any text is allowed here) in the **uidata **
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_files"><a class="anchor" href="#_configuration_files"></a>Configuration files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When OpenCPN starts it will look for files named <strong>styleXXX.xml</strong> (where
+the XXX means that any text is allowed here) in the <strong>uidata </strong>
 subdirectory of the installation, and also in the user settings
-directory (** ~/.opencpn *under Linux). +
- +
-Each style.xml file defines one or several styles. The overall structure
-of the file should look like this: +
- +
-image:/opencpn/dev/styles_0.png[styles_0.png,width=572,height=564] +
- +
-All bitmaps that the style needs are defined in a PNG file, which is
-named in the * &lt;graphics-file&gt;** tag. The various *&lt;xxx-location&gt;* tags
+directory (** ~/.opencpn *under Linux).<br></p>
+</div>
+<div class="paragraph">
+<p>Each style.xml file defines one or several styles. The overall structure
+of the file should look like this:<br></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>image:/opencpn/dev/styles_0.png[styles_0.png,width=572,height=564] +</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All bitmaps that the style needs are defined in a PNG file, which is
+named in the * &lt;graphics-file&gt;** tag. The various <strong>&lt;xxx-location&gt;</strong> tags
 refer to bitmap locations in this file. Locations are in X/Y coordinates
 with the upper left corner as (0,0) and with positive Y downwards. This
 file should be a 24 bit PNG. Transparency is fully supported, you can
-use semitransparent icons and backgrounds to combine various effects. +
- +
-The *&lt;tools&gt;* tag contains overall parameters for the ** &lt;horizontal&gt;**
-and *&lt;vertical&gt;* versions of the toolbar. This makes it possible to have
+use semitransparent icons and backgrounds to combine various effects.<br></p>
+</div>
+<div class="paragraph">
+<p>The <strong>&lt;tools&gt;</strong> tag contains overall parameters for the <strong> &lt;horizontal&gt;</strong>
+and <strong>&lt;vertical&gt;</strong> versions of the toolbar. This makes it possible to have
 non-square buttons and still have the toolbar nicely rendered in both
 orientations. The separation distance is the separation in pixels
 between two toolbar buttons. When using non-square buttons the tool icon
 might have different positions on the background for horizontal and
 vertical. In this case, position the icons correctly for the horizontal
 case, and then specify the offset for the vertical case using the tag
-*&lt;icon-offset x="..." y="..." /&gt;* where X/Y are in pixels and are
-allowed to be negative. +
- +
-The margins are the margins around the outside, measured in pixels. The
+<strong>&lt;icon-offset x="&#8230;&#8203;" y="&#8230;&#8203;" /&gt;</strong> where X/Y are in pixels and are
+allowed to be negative.<br></p>
+</div>
+<div class="paragraph">
+<p>The margins are the margins around the outside, measured in pixels. The
 margin can also be made transparent. With a transparent toolbar the
 window edge snap will have a space between the window edge and the
-buttons. +
- +
-*&lt;background-location&gt;* and *&lt;toggled-location&gt;* should provide two
+buttons.<br></p>
+</div>
+<div class="paragraph">
+<p><strong>&lt;background-location&gt;</strong> and <strong>&lt;toggled-location&gt;</strong> should provide two
 different backgrounds, one for the non-toggled and one for the toggled
 (or pressed) state of the button. The toggled background is allowed to
 be larger (but not smaller) than the no-toggled. If you use this
 feature, make sure to specify enough spacing and margins to render the
-larger background properly. +
- +
-The ** &lt;size&gt;**tag specifies a default size for tools, but this can be
-overridden for an individual tool in its own tag. +
- +
-The toolbar can be further styled with nice looking start and end images
-using the *&lt;toolbar-start / end &gt;* tags. These are drawn on top of the
-other graphics. +
- +
-The *&lt;toolbar-corners&gt;* tag allows you to specify the corner radius of
-the toolbar. *NB!* Rounded corners are only visible if you use
-transparent margins. +
- +
-** &lt;tool&gt;**is an item in the toolbar. It should provide three icons: A
+larger background properly.<br></p>
+</div>
+<div class="paragraph">
+<p>The <strong> &lt;size&gt;</strong>tag specifies a default size for tools, but this can be
+overridden for an individual tool in its own tag.<br></p>
+</div>
+<div class="paragraph">
+<p>The toolbar can be further styled with nice looking start and end images
+using the <strong>&lt;toolbar-start / end &gt;</strong> tags. These are drawn on top of the
+other graphics.<br></p>
+</div>
+<div class="paragraph">
+<p>The <strong>&lt;toolbar-corners&gt;</strong> tag allows you to specify the corner radius of
+the toolbar. <strong>NB!</strong> Rounded corners are only visible if you use
+transparent margins.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&lt;tool&gt;<strong>is an item in the toolbar. It should provide three icons: A
 "normal" one plus the rolled over and disabled states. If you wish to
-hide a certain tool in your style you can specify the **
-&lt;hide-in-toolbar/&gt;**tag for it. +
- +
-** &lt;icon&gt;**is a general purpose icon, not used in the toolbar. Cursors
+hide a certain tool in your style you can specify the </strong>
+&lt;hide-in-toolbar/&gt;**tag for it.<br></p>
+</li>
+<li>
+<p>&lt;icon&gt;**is a general purpose icon, not used in the toolbar. Cursors
 and waypoint markers are examples of this type of icon. It has only one
-state. +
-==== Tool names and plug-ins ====</pre>
+state.</p>
+</li>
+</ul>
 </div>
+<div class="sect2">
+<h3 id="_tool_names_and_plug_ins"><a class="anchor" href="#_tool_names_and_plug_ins"></a>Tool names and plug-ins ====</h3>
+<div class="paragraph">
+<p>The standard OpenCPN tools have names, which you can easily get by
+looking at one of the default installed styles.<br></p>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre> +
-The standard OpenCPN tools have names, which you can easily get by
-looking at one of the default installed styles. +
- +
-Plug-ins are styled based on their "common name". If your style provides
+<div class="paragraph">
+<p>Plug-ins are styled based on their "common name". If your style provides
 a tool for the plug-in, that will have priority over any icons provided
 by the plugin itself. But for plug-ins that use their icons as a means
 of communicating status, the plug-ins icon will again get priority.
-(World Magnetic Model and Radar Overlay are examples of the latter).</pre>
-</div>
+(World Magnetic Model and Radar Overlay are examples of the latter).</p>
 </div>
 </div>
 </div>

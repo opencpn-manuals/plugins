@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>PI Manager Dev Setup :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/pi_installler_dev_setup.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,18 +224,18 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;10" alt="indexmenu_n&gt;10"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_pi_manager_dev_setup"><a class="anchor" href="#_pi_manager_dev_setup"></a>PI Manager Dev Setup</h2>
+<h1 class="page">PI Manager Dev Setup</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://github.com/leamas/OpenCPN/wiki">PIugin Manager Github Wiki</a>
 Extensive documentation</p>
 </div>
-<div class="sect2">
-<h3 id="_build_and_deploy_plugins"><a class="anchor" href="#_build_and_deploy_plugins"></a>Build and Deploy Plugins</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build_and_deploy_plugins"><a class="anchor" href="#_build_and_deploy_plugins"></a>Build and Deploy Plugins</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Alec Leamas is the author of PI Installer and should be given extensive
 credit &amp; thanks for his many months of work on the Plugin Installer. Jon
@@ -280,17 +280,19 @@ CLOUDSMITH.</p>
 </ul>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_pi_manager_system_consists_of_three_parts"><a class="anchor" href="#_pi_manager_system_consists_of_three_parts"></a>PI Manager System consists of three parts:</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_pi_manager_system_consists_of_three_parts"><a class="anchor" href="#_pi_manager_system_consists_of_three_parts"></a>PI Manager System consists of three parts:</h3>
-<div class="sect3">
-<h4 id="_1_plugin_manager_inside_opencpn"><a class="anchor" href="#_1_plugin_manager_inside_opencpn"></a>1. Plugin Manager inside OpenCPN</h4>
+<h3 id="_1_plugin_manager_inside_opencpn"><a class="anchor" href="#_1_plugin_manager_inside_opencpn"></a>1. Plugin Manager inside OpenCPN</h3>
 <div class="paragraph">
 <p>The plugin manager is now in OpenCPN master branch. Make a fresh build
 of opencpn from this branch. There are occasional improvements made now.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_2_plugin_build_deploy_by_plugin_devs"><a class="anchor" href="#_2_plugin_build_deploy_by_plugin_devs"></a>2. Plugin Build &amp; Deploy by Plugin Devs</h4>
+<div class="sect2">
+<h3 id="_2_plugin_build_deploy_by_plugin_devs"><a class="anchor" href="#_2_plugin_build_deploy_by_plugin_devs"></a>2. Plugin Build &amp; Deploy by Plugin Devs</h3>
 <div class="paragraph">
 <p>FIXME We need to simplify</p>
 </div>
@@ -327,8 +329,8 @@ is a working file with metadata and a downloadable tarball everything is
 fine, at least for a starter.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_metadata_repositorygit_opencpnplugins"><a class="anchor" href="#_3_metadata_repositorygit_opencpnplugins"></a>3. Metadata Repository:Git OpenCPN/Plugins</h4>
+<div class="sect2">
+<h3 id="_3_metadata_repositorygit_opencpnplugins"><a class="anchor" href="#_3_metadata_repositorygit_opencpnplugins"></a>3. Metadata Repository:Git OpenCPN/Plugins</h3>
 <div class="paragraph">
 <p>FIXME</p>
 </div>
@@ -355,8 +357,10 @@ will accept PRs</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_assumed_cloud_services"><a class="anchor" href="#_assumed_cloud_services"></a>Assumed Cloud Services</h3>
+</div>
+<div class="sect1">
+<h2 id="_assumed_cloud_services"><a class="anchor" href="#_assumed_cloud_services"></a>Assumed Cloud Services</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>We assume you have or are able to configure the following free
 opensource accounts/services:</p>
@@ -392,14 +396,15 @@ from Code &amp; Deploy repositories.</p>
 and Cloudsmith for PI Installer.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_plugins_adaptation"><a class="anchor" href="#_plugins_adaptation"></a>Plugins Adaptation</h3>
+</div>
+<div class="sect1">
+<h2 id="_plugins_adaptation"><a class="anchor" href="#_plugins_adaptation"></a>Plugins Adaptation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>You may have to adapt the plugin in various ways. Please review the
 items in this link
 <a href="https://github.com/leamas/OpenCPN/wiki/Plugin-adaptation">Plugin
 Adaptation</a></p>
-</div>
 </div>
 </div>
 </div>
@@ -569,8 +574,11 @@ when hovered over shows "Opensource".</p>
     - Then at the bottom "Upload Packages" button.</pre>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_cloudsmith_api_key_generation_and_use"><a class="anchor" href="#_cloudsmith_api_key_generation_and_use"></a>CLOUDSMITH_API_KEY Generation and Use</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cloudsmith_api_key_generation_and_use"><a class="anchor" href="#_cloudsmith_api_key_generation_and_use"></a>CLOUDSMITH_API_KEY Generation and Use</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>KEY #2 provides your BUILD service the ability to PUSH artifacts
 (tarballs, xml, packages) to your CLOUDSMITH repository.</p>
@@ -629,8 +637,10 @@ into your TRAVIS account on
 <p>Once this is done the deploy to Cloudsmith should work.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_cloudsmith_retention_policy_settings"><a class="anchor" href="#_cloudsmith_retention_policy_settings"></a>Cloudsmith Retention Policy Settings</h3>
+</div>
+<div class="sect1">
+<h2 id="_cloudsmith_retention_policy_settings"><a class="anchor" href="#_cloudsmith_retention_policy_settings"></a>Cloudsmith Retention Policy Settings</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Example: A repository with 4gb and about 5000 packages used for
 development. Retention policy set some time ago but these have not
@@ -655,10 +665,12 @@ there&#8217;s an "X Per Page" selector, where you can change the setting from
 delete/copy/move many packages at once, you can do it like that.</p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_cloudsmith_repositories_examples"><a class="anchor" href="#_cloudsmith_repositories_examples"></a>Cloudsmith Repositories Examples</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_cloudsmith_repositories_examples"><a class="anchor" href="#_cloudsmith_repositories_examples"></a>Cloudsmith Repositories Examples</h3>
-<div class="sect3">
-<h4 id="_opencpn_plugin_repositories"><a class="anchor" href="#_opencpn_plugin_repositories"></a>OpenCPN Plugin Repositories</h4>
+<h3 id="_opencpn_plugin_repositories"><a class="anchor" href="#_opencpn_plugin_repositories"></a>OpenCPN Plugin Repositories</h3>
 <div class="paragraph">
 <p><a href="https://cloudsmith.io/~david-register/repos/" class="bare">https://cloudsmith.io/~david-register/repos/</a></p>
 </div>
@@ -716,12 +728,15 @@ delete/copy/move many packages at once, you can do it like that.</p>
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
 <h2 id="_setup_configure_plugin_for_pi_installer"><a class="anchor" href="#_setup_configure_plugin_for_pi_installer"></a>Setup: Configure Plugin for PI Installer</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_summary_of_process"><a class="anchor" href="#_summary_of_process"></a>Summary of Process</h3>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary_of_process"><a class="anchor" href="#_summary_of_process"></a>Summary of Process</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -750,8 +765,10 @@ Procedure Build-Deploy</a> below, for more detail.</p>
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_add_cmake_and_script_files"><a class="anchor" href="#_add_cmake_and_script_files"></a>Add CMake and Script Files</h3>
+</div>
+<div class="sect1">
+<h2 id="_add_cmake_and_script_files"><a class="anchor" href="#_add_cmake_and_script_files"></a>Add CMake and Script Files</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>FIXME</p>
 </div>
@@ -884,8 +901,10 @@ data (icons)</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_modify_files"><a class="anchor" href="#_modify_files"></a>Modify Files</h3>
+</div>
+<div class="sect1">
+<h2 id="_modify_files"><a class="anchor" href="#_modify_files"></a>Modify Files</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Then the top of CMakeLists.txt must be customized for the plugin and
 environment. There are basically two sets of files for CMake that have
@@ -895,8 +914,8 @@ has gone to some effort to bring all the Plugin Dev settings up to the
 top of CMakeLists.txt The example below is from Jon&#8217;s testplugin_pi but
 needs to be updated!</p>
 </div>
-<div class="sect3">
-<h4 id="_cmakelists_txt"><a class="anchor" href="#_cmakelists_txt"></a>CMakeLists.txt</h4>
+<div class="sect2">
+<h3 id="_cmakelists_txt"><a class="anchor" href="#_cmakelists_txt"></a>CMakeLists.txt</h3>
 <div class="literalblock">
 <div class="content">
 <pre>project(testplugin_pi)
@@ -943,8 +962,8 @@ set(APPVEYOR_TEST_DEPLOY_TO_CLOUDSMITH "true")</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_circleciconfig_yml"><a class="anchor" href="#_circleciconfig_yml"></a>circleci\config.yml</h4>
+<div class="sect2">
+<h3 id="_circleciconfig_yml"><a class="anchor" href="#_circleciconfig_yml"></a>circleci\config.yml</h3>
 <div class="paragraph">
 <p>Your account does not have rights to run macos until CircleCI staff
 explicitly enables it. If you don&#8217;t have access to run the macOS
@@ -992,8 +1011,8 @@ stating that the plugin is opensource for OpenCPN.</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_appveyor_yml"><a class="anchor" href="#_appveyor_yml"></a>appveyor.yml</h4>
+<div class="sect2">
+<h3 id="_appveyor_yml"><a class="anchor" href="#_appveyor_yml"></a>appveyor.yml</h3>
 <div class="paragraph">
 <p>Generate a GitHub Personal Token specifically for Appveyor and your
 plugin. Save the code somewhere. Then encrypt the Github Personal Token
@@ -1009,8 +1028,8 @@ below.</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_travis_yml"><a class="anchor" href="#_travis_yml"></a>.travis.yml</h4>
+<div class="sect2">
+<h3 id="_travis_yml"><a class="anchor" href="#_travis_yml"></a>.travis.yml</h3>
 <div class="paragraph">
 <p>Generate a GitHub Personal Token specifically for Travis and your
 plugin. Save the code somewhere. Then encrypt the Github Personal Token
@@ -1035,12 +1054,15 @@ Encryption of Github Personnal Access Token</a></p>
 </div>
 </div>
 </div>
-</div>
 <div class="sect1">
 <h2 id="_other_notes"><a class="anchor" href="#_other_notes"></a>Other Notes</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_cloudsmith_opencpn_organization"><a class="anchor" href="#_cloudsmith_opencpn_organization"></a>Cloudsmith OpenCPN Organization</h3>
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cloudsmith_opencpn_organization"><a class="anchor" href="#_cloudsmith_opencpn_organization"></a>Cloudsmith OpenCPN Organization</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://cloudsmith.io/orgs/opencpn/" class="bare">https://cloudsmith.io/orgs/opencpn/</a></p>
 </div>
@@ -1055,8 +1077,10 @@ have created an opensource Cloudsmiith account.</p>
 <p>See this <a href="https://github.com/OpenCPN/OpenCPN/issues/1573" class="bare">https://github.com/OpenCPN/OpenCPN/issues/1573</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_installation_destination_change_with_plugin_manager"><a class="anchor" href="#_installation_destination_change_with_plugin_manager"></a>Installation Destination change with Plugin Manager</h3>
+</div>
+<div class="sect1">
+<h2 id="_installation_destination_change_with_plugin_manager"><a class="anchor" href="#_installation_destination_change_with_plugin_manager"></a>Installation Destination change with Plugin Manager</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><a href="https://github.com/OpenCPN/OpenCPN/issues/1605" class="bare">https://github.com/OpenCPN/OpenCPN/issues/1605</a></p>
 </div>
@@ -1065,8 +1089,10 @@ have created an opensource Cloudsmiith account.</p>
 experience when installing, noting path isssues.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_catalog_xml_name_must_match_common_name"><a class="anchor" href="#_catalog_xml_name_must_match_common_name"></a>Catalog XML "name" must match "Common Name"</h3>
+</div>
+<div class="sect1">
+<h2 id="_catalog_xml_name_must_match_common_name"><a class="anchor" href="#_catalog_xml_name_must_match_common_name"></a>Catalog XML "name" must match "Common Name"</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The name used in the Plugin Manager XML Catalog must match the "Common
 Name" of the plugin being installed.</p>
@@ -1106,7 +1132,6 @@ the source code, weather_routing_pi.cpp, in github:</p>
 {
     return _("WeatherRouting");
 }</pre>
-</div>
 </div>
 </div>
 </div>

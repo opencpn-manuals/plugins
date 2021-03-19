@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>Internationalization :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/internationalization.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -212,6 +212,10 @@
 <button class="nav-toggle"></button>
   <a href="developer_guide.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li><a href="internationalization.html">Internationalization</a></li>
+  </ul>
 </nav>
 </div>
   <div class="content">
@@ -219,18 +223,18 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;6" alt="indexmenu_n&gt;6"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_internationalization"><a class="anchor" href="#_internationalization"></a>Internationalization</h2>
+<h1 class="page">Internationalization</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Welcome all translators. Please review Crowdin below. That is the easy
 way to contribute your skills to the development of Opencpn and Plugins.</p>
 </div>
-<div class="sect2">
-<h3 id="_add_a_new_language"><a class="anchor" href="#_add_a_new_language"></a>Add a new Language</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_a_new_language"><a class="anchor" href="#_add_a_new_language"></a>Add a new Language</h2>
+<div class="sectionbody">
 <div class="literalblock">
 <div class="content">
 <pre> - To translate OpenCPN into any language, download the **opencpn.pot**  file from [[https://sourceforge.net/p/opencpn/code/ci/master/tree/po/|here]].
@@ -256,8 +260,10 @@ sudo update-locale</pre>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_to_improve_or_extend_any_existing_translation_local"><a class="anchor" href="#_to_improve_or_extend_any_existing_translation_local"></a>To improve or extend any existing translation (local)</h3>
+</div>
+<div class="sect1">
+<h2 id="_to_improve_or_extend_any_existing_translation_local"><a class="anchor" href="#_to_improve_or_extend_any_existing_translation_local"></a>To improve or extend any existing translation (local)</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -275,7 +281,7 @@ select all languages.</p>
 <div class="literalblock">
 <div class="content">
 <pre> +
-==== Use Crowdin with Browser ==== With version 3.3.1824 we have changed
+=== Use Crowdin with Browser ==== With version 3.3.1824 we have changed
 OpenCPN's translations to be managed by https://crowdin.net/[Crowdin]. +
 There are a couple of reasons behind this decision:</pre>
 </div>
@@ -313,7 +319,7 @@ keep the translations up to date is a web browser and a bit of time. +
  +
 *Please join us by signing up at
 https://crowdin.net/project/opencpn/invite* +
-==== Concerning "Items" and "Texts", the rule is: ====</pre>
+=== Concerning "Items" and "Texts", the rule is: ====</pre>
 </div>
 </div>
 </li>
@@ -331,7 +337,7 @@ its language.</p>
 <div class="paragraph">
 <p>Currently, all the other plugins and the heart of OpenCPN follow this
 rule and we can always translate very correctly.<br>
-====FAQ====<br>
+===FAQ====<br>
 <strong><em>I have a question about translation priority between core and plugins,
 &#8230;&#8203;.How can this be dealt with?</em></strong></p>
 </div>
@@ -381,7 +387,6 @@ are ready or at least to an acceptable level and before release a new
 message will result in download of translations, the po-files, and a PR
 to the plugin&#8217;s Github. The crucial task is to message when new strings
 are ready for Crowdin. "As simple as that".</p>
-</div>
 </div>
 </div>
 </div>

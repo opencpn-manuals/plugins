@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>CI: Advanced Debug Tips :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/advanceddebugtips.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,19 +224,19 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;30" alt="indexmenu_n&gt;30"></span></p>
-</div>
-<div class="sect1">
-<h2 id="_ci_advanced_debug_tips"><a class="anchor" href="#_ci_advanced_debug_tips"></a>CI: Advanced Debug Tips</h2>
+<h1 class="page">CI: Advanced Debug Tips</h1>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Further reading:
 <a href="https://www.hanselman.com/blog/AppVeyorAGoodContinuousIntegrationSystemIsAJoyToBehold.aspx">AppVeyor
 - A good continuous integration system is a joy to behold</a></p>
 </div>
-<div class="sect2">
-<h3 id="_how_to_use_ci_tools_appveyor"><a class="anchor" href="#_how_to_use_ci_tools_appveyor"></a>How to use CI Tools: Appveyor</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_use_ci_tools_appveyor"><a class="anchor" href="#_how_to_use_ci_tools_appveyor"></a>How to use CI Tools: Appveyor</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Bdbcat has responded to several questions, explaining how these features
 should be used.</p>
@@ -245,27 +245,41 @@ should be used.</p>
 <p>1. How to get Alpha/Beta Testers familiar with Github and
 locating those compiled files?</p>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>      * When we are actually in Beta test, we will describe the process and condition of the CI artifacts.
-      * We may use the artifacts then, but probably not.
-      * We have enough trouble tracking issues with one "official" Beta location.
-      * Using the almost daily updates of CI product for Beta testing would be a nightmare.
-      * Best to think of the usefulness of CI as we are right now: In Alpha test of some new features, some of which features are known to be incomplete or even with known heinous errors.</pre>
-</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When we are actually in Beta test, we will describe the process and condition of the CI artifacts.</p>
+</li>
+<li>
+<p>We may use the artifacts then, but probably not.</p>
+</li>
+<li>
+<p>We have enough trouble tracking issues with one "official" Beta location.</p>
+</li>
+<li>
+<p>Using the almost daily updates of CI product for Beta testing would be a nightmare.</p>
+</li>
+<li>
+<p>Best to think of the usefulness of CI as we are right now: In Alpha test of some new features, some of which features are known to be incomplete or even with known heinous errors.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>2. Are these eventually going to be the source for the Website
 Downloads page?</p>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>      * No. The CI artifacts result from building the current github HEAD.
-      * This, in general, will not be the same as the in-production Release point.</pre>
+<div class="ulist">
+<ul>
+<li>
+<p>No. The CI artifacts result from building the current github HEAD.</p>
+</li>
+<li>
+<p>This, in general, will not be the same as the in-production Release point.</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h4>
+<div class="sect2">
+<h3 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h3>
 <div class="paragraph">
 <p>Testing a CI Product is like sneaking a spoon-sip of the dinner
 simmering on the stove while Mom is not looking. She knows it needs
@@ -279,22 +293,24 @@ play&#8230;&#8203;.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_how_ci_tools_work"><a class="anchor" href="#_how_ci_tools_work"></a>How CI Tools work</h3>
+</div>
+<div class="sect1">
+<h2 id="_how_ci_tools_work"><a class="anchor" href="#_how_ci_tools_work"></a>How CI Tools work</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Using an example from Sean&#8217;s Weatherfax plugin.</p>
 </div>
 <div class="paragraph">
 <p>For Windows, use Appveyor.</p>
 </div>
-<div class="sect3">
-<h4 id="_1_go_to_seans_weatherfax_pi_github_repository"><a class="anchor" href="#_1_go_to_seans_weatherfax_pi_github_repository"></a>1. Go to Sean&#8217;s Weatherfax_pi github repository</h4>
+<div class="sect2">
+<h3 id="_1_go_to_seans_weatherfax_pi_github_repository"><a class="anchor" href="#_1_go_to_seans_weatherfax_pi_github_repository"></a>1. Go to Sean&#8217;s Weatherfax_pi github repository</h3>
 <div class="paragraph">
 <p><a href="https://github.com/seandepagnier/weatherfax_pi" class="bare">https://github.com/seandepagnier/weatherfax_pi</a></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_2_click_on_the_code_tab"><a class="anchor" href="#_2_click_on_the_code_tab"></a>2. Click on the Code Tab</h4>
+<div class="sect2">
+<h3 id="_2_click_on_the_code_tab"><a class="anchor" href="#_2_click_on_the_code_tab"></a>2. Click on the Code Tab</h3>
 <div class="paragraph">
 <p>Select the "Branch" you want to be on, most of the time it will be
 "master"</p>
@@ -303,8 +319,8 @@ play&#8230;&#8203;.</p>
 <p><span class="image"><img src="/opencpn/dev/ci-1.png" alt="CI-1" width="600"></span></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_3_click_on_the_commits_link"><a class="anchor" href="#_3_click_on_the_commits_link"></a>3. Click on the "Commits" Link</h4>
+<div class="sect2">
+<h3 id="_3_click_on_the_commits_link"><a class="anchor" href="#_3_click_on_the_commits_link"></a>3. Click on the "Commits" Link</h3>
 <div class="paragraph">
 <p><a href="https://github.com/seandepagnier/weatherfax_pi/commits/master" class="bare">https://github.com/seandepagnier/weatherfax_pi/commits/master</a></p>
 </div>
@@ -312,14 +328,14 @@ play&#8230;&#8203;.</p>
 <p><span class="image"><img src="/opencpn/dev/ci-2.png" alt="CI-2" width="600"></span></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_4_find_the_most_recent_commit"><a class="anchor" href="#_4_find_the_most_recent_commit"></a>4. Find the most recent commit</h4>
+<div class="sect2">
+<h3 id="_4_find_the_most_recent_commit"><a class="anchor" href="#_4_find_the_most_recent_commit"></a>4. Find the most recent commit</h3>
 <div class="paragraph">
 <p>Lets say it is <strong>"yet more inlines"</strong> from Feb 11 2018</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_5_click_on_the_green_check_at_the_end"><a class="anchor" href="#_5_click_on_the_green_check_at_the_end"></a>5. Click on the Green Check at the end</h4>
+<div class="sect2">
+<h3 id="_5_click_on_the_green_check_at_the_end"><a class="anchor" href="#_5_click_on_the_green_check_at_the_end"></a>5. Click on the Green Check at the end</h3>
 <div class="paragraph">
 <p>A popup for the Continuous Integration Links for TravisCI and AppVeyor
 come up.</p>
@@ -328,8 +344,8 @@ come up.</p>
 <p><span class="image"><img src="/opencpn/dev/ci-3.png" alt="CI-3" width="600"></span></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_6_click_on_appveyor_details"><a class="anchor" href="#_6_click_on_appveyor_details"></a>6. Click on AppVeyor "Details"</h4>
+<div class="sect2">
+<h3 id="_6_click_on_appveyor_details"><a class="anchor" href="#_6_click_on_appveyor_details"></a>6. Click on AppVeyor "Details"</h3>
 <div class="paragraph">
 <p>The page will come up with the "Console" Tab.</p>
 </div>
@@ -340,8 +356,8 @@ come up.</p>
 <p><span class="image"><img src="/opencpn/dev/ci-4.png" alt="CI-4" width="600"></span></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_7_click_on_the_artifacts_tab"><a class="anchor" href="#_7_click_on_the_artifacts_tab"></a>7. Click on the "Artifacts" Tab</h4>
+<div class="sect2">
+<h3 id="_7_click_on_the_artifacts_tab"><a class="anchor" href="#_7_click_on_the_artifacts_tab"></a>7. Click on the "Artifacts" Tab</h3>
 <div class="paragraph">
 <p>To get to the download executable.</p>
 </div>
@@ -354,7 +370,6 @@ come up.</p>
 <div class="paragraph">
 <p>You should then be able to download the weatherfax_pi-1.8.001-win32.exe
 by clicking on it.</p>
-</div>
 </div>
 </div>
 </div>

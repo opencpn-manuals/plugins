@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: OpenCPN Developer Manual</title>
+    <title>CI: Push build to Git Release :: OpenCPN Developer Manual</title>
     <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/ci-push-build-to-git.html">
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../_/css/site.css">
@@ -224,14 +224,10 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="paragraph">
-<p><span class="image"><img src="_images/indexmenu_n&gt;27" alt="indexmenu_n&gt;27"></span></p>
-</div>
+<h1 class="page">CI: Push build to Git Release</h1>
 <div class="sect1">
-<h2 id="_ci_push_build_to_git_release"><a class="anchor" href="#_ci_push_build_to_git_release"></a>CI: Push build to Git Release</h2>
+<h2 id="_initiate_the_push_with_git_push_origin_tag"><a class="anchor" href="#_initiate_the_push_with_git_push_origin_tag"></a>Initiate the push with 'git push origin [tag]'</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_initiate_the_push_with_git_push_origin_tag"><a class="anchor" href="#_initiate_the_push_with_git_push_origin_tag"></a>Initiate the push with 'git push origin [tag]'</h3>
 <div class="paragraph">
 <p>In both .travis and appveyor it is possible to initiate the push of a
 build to your Git repository. These instructions assume that you
@@ -240,15 +236,17 @@ basic process. Your travis account is used to confirm 'successful'
 builds of linux and osx, and to create those packages and releases.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_how_to_push_a_travis_built_file_to_a_new_github_release"><a class="anchor" href="#_how_to_push_a_travis_built_file_to_a_new_github_release"></a>How to push a .Travis 'built' file to a new Github 'Release'</h3>
+</div>
+<div class="sect1">
+<h2 id="_how_to_push_a_travis_built_file_to_a_new_github_release"><a class="anchor" href="#_how_to_push_a_travis_built_file_to_a_new_github_release"></a>How to push a .Travis 'built' file to a new Github 'Release'</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>For travis refer to
 <a href="http://www.cruisersforum.com/forums/f134/tactics-plugin-166909-2.html#post2913910">Petri&#8217;s
 post #637</a></p>
 </div>
-<div class="sect3">
-<h4 id="_a_configure_cmake_and_the_travis_file_for_security_and_permissions"><a class="anchor" href="#_a_configure_cmake_and_the_travis_file_for_security_and_permissions"></a>A. Configure CMake and the Travis file for security and permissions</h4>
+<div class="sect2">
+<h3 id="_a_configure_cmake_and_the_travis_file_for_security_and_permissions"><a class="anchor" href="#_a_configure_cmake_and_the_travis_file_for_security_and_permissions"></a>A. Configure CMake and the Travis file for security and permissions</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -265,7 +263,7 @@ particular
 note the MacOSX entries. Also see
 <a href="http://www.cruisersforum.com/forums/f134/tactics-plugin-166909-12.html#post2904905">this
 post and necessary changes by Nereus32</a> (There may be some other changes
-to cmake needed..Petri?)<code>+'- SET(TACTICS_INSTRUMENTS ON)'
+to cmake needed..Petri?)`+'- SET(TACTICS_INSTRUMENTS ON)'
 IF (TACTICS_INSTRUMENTS)
 PROJECT(dashboard_tactics_pi)
 SET(PACKAGE_NAME dashboard_tactics_pi)
@@ -277,26 +275,24 @@ SET(PACKAGE_NAME dashboard_pi)
 SET(VERBOSE_NAME Dashboard)
 SET(TITLE_NAME Dashboard)
 ENDIF (TACTICS_INSTRUMENTS)
-+</code></p>
+`</p>
 </li>
 </ol>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>Plus, take the dashboard_tactics_pi.pkgproj.in where I modified the key NAME as instructed.
-Repeat the build process from zero on an empty build directory and let me know.</pre>
+<div class="paragraph">
+<p>Plus, take the dashboard_tactics_pi.pkgproj.in where I modified the key NAME as instructed.
+Repeat the build process from zero on an empty build directory and let me know.</p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_b_bottom_of_travis_yml_file"><a class="anchor" href="#_b_bottom_of_travis_yml_file"></a>B. Bottom of travis.yml file</h4>
+<div class="sect2">
+<h3 id="_b_bottom_of_travis_yml_file"><a class="anchor" href="#_b_bottom_of_travis_yml_file"></a>B. Bottom of travis.yml file</h3>
 <div class="paragraph">
 <p>Example Bottom section of the travis.yml file. Note: indentation is
 important in yml files, child parts MUST be indeted below the owner.
 This is shown below by "api_key:" being the owner and "secure:" being
 the child, noticd that "secure:" is indented.</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
 <pre>deploy:
 - provider: releases
@@ -317,31 +313,43 @@ create a new "- provider:" with the text "launchpad" following it. Both
 "- provider:" labels need to have the same indentation.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_c_install_travis_cli_to_encrypt_a_github_secure_public_key"><a class="anchor" href="#_c_install_travis_cli_to_encrypt_a_github_secure_public_key"></a>C. Install Travis CLI to encrypt a Github secure public key</h4>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="sect2">
+<h3 id="_c_install_travis_cli_to_encrypt_a_github_secure_public_key"><a class="anchor" href="#_c_install_travis_cli_to_encrypt_a_github_secure_public_key"></a>C. Install Travis CLI to encrypt a Github secure public key</h3>
+<div class="ulist">
+<ul>
 <li>
 <p>You need a travis CLI (command line interface) to be able to encrypt
 the GitHub token. The encrypted string is put in your personal
-.travis.yml file. Unlike AppVeyor services, there is no on-line
+*travis.yml file. Unlike AppVeyor services, there is no on-line
 encryption service, that&#8217;s why you need to start with a travis CLI
 installation</p>
 </li>
-</ol>
+<li>
+<p>[[<a href="https://github.com/travis-ci/travis.rb|Travis" class="bare">https://github.com/travis-ci/travis.rb|Travis</a> CLI Tool]] for Windows Developers use [[opencpn:developer_manual:ci_travis_encryption_windows|Rubyinstaller/Gem/Travis]] which still uses 1Gb of disk space but is the easiest alternative.</p>
+</li>
+<li>
+<p>Travis CLI installation instructions for Windows (Suggest use of "Travis CLI Tool" above). When you are sure that you have travis CLI up and working, you can start to create the encrypted key. Without it, deployment to GitHub does not work.</p>
+</li>
+<li>
+<p>Travis CLI installation instructions for Linux are just below. Note that Windows10 users can:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Install a Travis CLI Tool as listed above (easiest).</p>
+</li>
+<li>
+<p>Create a [[<a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:run-ubuntu-in-win10|WSL-Windows" class="bare">https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:run-ubuntu-in-win10|WSL-Windows</a> Subsystem for Linux (Ubuntu 18.04LTS) on Win10 Installation]].</p>
+</li>
+<li>
+<p>or create a Virtual Box and install Ubuntu Linux.</p>
+</li>
+</ul>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre> - [[https://github.com/travis-ci/travis.rb|Travis CLI Tool]] for Windows Developers use [[opencpn:developer_manual:ci_travis_encryption_windows|Rubyinstaller/Gem/Travis]] which still uses 1Gb of disk space but is the easiest alternative.
-- Travis CLI installation instructions for Windows (Suggest use of "Travis CLI Tool" above). When you are sure that you have travis CLI up and working, you can start to create the encrypted key. Without it, deployment to GitHub does not work.
-- Travis CLI installation instructions for Linux are just below. Note that Windows10 users can:
-   * Install a Travis CLI Tool as listed above (easiest).
-   * Create a [[https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:run-ubuntu-in-win10|WSL-Windows Subsystem for Linux (Ubuntu 18.04LTS) on Win10 Installation]].
-   * or create a Virtual Box and install Ubuntu Linux.</pre>
-</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>and then from the linux command prompt execute:`+
+<p>and then from the linux command prompt execute:`
   sudo apt-get update --fix-missing
   sudo apt-get install ruby
   sudo apt-get install gem
@@ -352,13 +360,13 @@ installation</p>
 </div>
 <div class="paragraph">
 <p>225mb disk space used.
-+`</p>
+`</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_d_encrypt_a_github_api_token_with_travis_encrytion"><a class="anchor" href="#_d_encrypt_a_github_api_token_with_travis_encrytion"></a>D. Encrypt a Github API Token with Travis encrytion</h4>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="sect2">
+<h3 id="_d_encrypt_a_github_api_token_with_travis_encrytion"><a class="anchor" href="#_d_encrypt_a_github_api_token_with_travis_encrytion"></a>D. Encrypt a Github API Token with Travis encrytion</h3>
+<div class="ulist">
+<ul>
 <li>
 <p>Create a Github API token for travis in GitHub here
 <a href="https://github.com/settings/tokens">Developer tools</a>. Select all rights
@@ -371,11 +379,11 @@ a copy of your key.</p>
 CLI:`+  echo [Paste GitHub Token Here] | travis encrypt -r [username]/[repository_name] --org
 +`</p>
 </li>
-</ol>
+</ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_e_copy_and_paste_the_encrypted_key_into_the_travis_secure_field"><a class="anchor" href="#_e_copy_and_paste_the_encrypted_key_into_the_travis_secure_field"></a>E. Copy and Paste the encrypted key into the Travis secure field</h4>
+<div class="sect2">
+<h3 id="_e_copy_and_paste_the_encrypted_key_into_the_travis_secure_field"><a class="anchor" href="#_e_copy_and_paste_the_encrypted_key_into_the_travis_secure_field"></a>E. Copy and Paste the encrypted key into the Travis secure field</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -397,8 +405,8 @@ file. So stick to copy-paste.</p>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_f_start_building_the_travis_project"><a class="anchor" href="#_f_start_building_the_travis_project"></a>F. Start building the .travis project</h4>
+<div class="sect2">
+<h3 id="_f_start_building_the_travis_project"><a class="anchor" href="#_f_start_building_the_travis_project"></a>F. Start building the .travis project</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -430,8 +438,8 @@ travis does not provide that type of storage space.</p>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_g_deploy_build_to_github"><a class="anchor" href="#_g_deploy_build_to_github"></a>G. Deploy 'build' to Github</h4>
+<div class="sect2">
+<h3 id="_g_deploy_build_to_github"><a class="anchor" href="#_g_deploy_build_to_github"></a>G. Deploy 'build' to Github</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -440,19 +448,37 @@ ways to do this.</p>
 </li>
 <li>
 <p>Option 1: Create the new 'Tag' from within Github Release Tab.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>In GitHub create a repository, like v1.2.3 as 'tag', description can be anything, but it best to include the version. This is where Travis and AppVeyor both deploy the built contents.</p>
+</li>
+<li>
+<p>When you hit the create button, Travis and AppVeyor will create the 'build' and deploy (the condition flags in the configuration file are define this action) to the Github 'Release' Tag.</p>
+</li>
+<li>
+<p>That&#8217;s why it&#8217;s important to check before you create the 'Tag' that all builds do pass faultlessly. (Repositories cannot be deleted since they are, in fact defined by tags.)</p>
+</li>
+<li>
+<p>If you observe 401 error at the deployment phase in travis logs search in google.com with the following phrase for possible causes "travis github [[<a href="https://api.github.com/user|https://api.github.com/user" class="bare">https://api.github.com/user|https://api.github.com/user</a>]]: 401 - bad credentials"</p>
+</li>
+<li>
+<p>Option 2: Command Line - Make a 'Tag' locally and push it to your remote.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>From your command line create a new tag locally, and then push that tag to your remote repository.</p>
+</li>
+<li>
+<p>All the same cautions apply, make sure it builds properly first.&lt;code&gt;</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ol>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>    * In GitHub create a repository, like v1.2.3 as 'tag', description can be anything, but it best to include the version. This is where Travis and AppVeyor both deploy the built contents.
-    * When you hit the create button, Travis and AppVeyor will create the 'build' and deploy (the condition flags in the configuration file are define this action) to the Github 'Release' Tag.
-    * That's why it's important to check before you create the 'Tag' that all builds do pass faultlessly. (Repositories cannot be deleted since they are, in fact defined by tags.)
-    * If you observe 401 error at the deployment phase in travis logs search in google.com with the following phrase for possible causes "travis github [[https://api.github.com/user|https://api.github.com/user]]: 401 - bad credentials"
-- Option 2: Command Line - Make a 'Tag' locally and push it to your remote.
-    * From your command line create a new tag locally, and then push that tag to your remote repository.
-    * All the same cautions apply, make sure it builds properly first.&lt;code&gt;</pre>
-</div>
 </div>
 <div class="paragraph">
 <p>OPTION 2: TAG COMMANDS Make tag locally and push to remote git tag
@@ -463,11 +489,9 @@ fails to build, remove remote tag. git tag –delete v1.13.1 &#8592;-You&#8217;v
 made a mistake, it fails to build, remove local tag. Fix the problem and
 start over. &lt;/code&gt;</p>
 </div>
-<div class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p>==== H. Troubleshooting</p>
 </div>
+<div class="sect2">
+<h3 id="_h_troubleshooting"><a class="anchor" href="#_h_troubleshooting"></a>H. Troubleshooting</h3>
 <div class="paragraph">
 <p>When the Travis build does not work the error messages can be obscure
 and not really help too much. A typical message may be:</p>
@@ -509,17 +533,19 @@ make the changes to your main branch(es) and clean up the 'test' branch</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>=== How to push an Appveyor 'built' file to a new Github 'Release'</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_push_an_appveyor_built_file_to_a_new_github_release"><a class="anchor" href="#_how_to_push_an_appveyor_built_file_to_a_new_github_release"></a>How to push an Appveyor 'built' file to a new Github 'Release'</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The use and configuration of Appveyor is similar to Travis in many
 respects. We use Appveyor to create Windows packages.</p>
 </div>
-<div class="paragraph">
-<p>==== A. Configure Appveyor.yml file for security and permissions</p>
-</div>
-<div class="literalblock">
+<div class="sect2">
+<h3 id="_a_configure_appveyor_yml_file_for_security_and_permissions"><a class="anchor" href="#_a_configure_appveyor_yml_file_for_security_and_permissions"></a>A. Configure Appveyor.yml file for security and permissions</h3>
+<div class="listingblock">
 <div class="content">
 <pre># Artifacts Configuration
 artifacts: # push all files in directory
@@ -542,31 +568,25 @@ deploy:
 #   branch: master   # release from master branch only</pre>
 </div>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
+<div class="paragraph">
 <p>You can also use this Weatherfax_pi
 <a href="https://github.com/seandepagnier/weatherfax_pi/files/3112304/appveyor.yml.txt">appveyor.yml</a>
 file for reference and there are some
 <a href="https://github.com/seandepagnier/weatherfax_pi/issues/134">in process
 notes</a> available.</p>
-</li>
-<li>
+</div>
+<div class="paragraph">
 <p>Login to your Appveyor Account and Create a
 <em><a href="https://github.com/settings/tokens">Github API Public Security Token</a></em>
 under <em>New Personal Token</em>, entering a "Note" similar to
 <em>Appveyor_auth_token</em>[plugin_name]_ and then select a Permissions
-"Scope" for "REPO" by checking "Repo".</p>
-</li>
-<li>
-<p>Copy the resulting code to your clipboard and somewhere else, as this
+"Scope" for "REPO" by checking "Repo".
+. Copy the resulting code to your clipboard and somewhere else, as this
 is the last time you will have access to the public key.</p>
-</li>
-</ol>
 </div>
-<div class="paragraph">
-<p>==== B. Encrypt a Github secure public key using Appveyor Encrypt Service</p>
 </div>
+<div class="sect2">
+<h3 id="_b_encrypt_a_github_secure_public_key_using_appveyor_encrypt_service"><a class="anchor" href="#_b_encrypt_a_github_secure_public_key_using_appveyor_encrypt_service"></a>B. Encrypt a Github secure public key using Appveyor Encrypt Service</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -578,9 +598,9 @@ Encryption Service</a> and paste the public key into the field.</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>==== C. Copy and Paste the encrypted key into the Appveyor secure field</p>
 </div>
+<div class="sect2">
+<h3 id="_c_copy_and_paste_the_encrypted_key_into_the_appveyor_secure_field"><a class="anchor" href="#_c_copy_and_paste_the_encrypted_key_into_the_appveyor_secure_field"></a>C. Copy and Paste the encrypted key into the Appveyor secure field</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -593,9 +613,9 @@ encrypted public token can be enclosed by quotes.</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>==== D. Start building the Appveyor project</p>
 </div>
+<div class="sect2">
+<h3 id="_d_start_building_the_appveyor_project"><a class="anchor" href="#_d_start_building_the_appveyor_project"></a>D. Start building the Appveyor project</h3>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -609,18 +629,17 @@ before the next step. Commit and push to the remote repository.</p>
 </li>
 <li>
 <p>Additionally you must remember to change VERSION.cmake patch number
-and date, an commit and push that!<code>+git add appveyor.yml
+and date, an commit and push that!`+git add appveyor.yml
 git commit -a -m "update appveyor.yml"
-git push origin master
-+</code></p>
+git push origin master</p>
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>==== E. Deploy 'build' to Github</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="sect2">
+<h3 id="_e_deploy_build_to_github"><a class="anchor" href="#_e_deploy_build_to_github"></a>E. Deploy 'build' to Github</h3>
+<div class="ulist">
+<ul>
 <li>
 <p>It takes awhile for the commit (Windows) to build correctly, be
 patient when it is running.</p>
@@ -636,37 +655,53 @@ ways to do this.</p>
 <li>
 <p>Option 1: Create the new 'Tag' from within Github Release Tab.</p>
 </li>
-</ol>
+<li>
+<p>In GitHub create a repository, like v1.2.3 as 'tag', description can be anything, but it best to include the version. This is where Travis and AppVeyor both deploy the built contents.</p>
+</li>
+<li>
+<p>When you hit the create button, Travis and AppVeyor will create the 'build' and deploy (the condition flags in the configuration file are define this action) to the Github 'Release' Tag.</p>
+</li>
+<li>
+<p>That&#8217;s why it&#8217;s important to check before you create the 'Tag' that all builds do pass faultlessly. (Repositories cannot be deleted since they are, in fact defined by tags.)</p>
+</li>
+<li>
+<p>If you observe 401 error at the deployment phase in travis logs search in google.com with the following phrase for possible causes "travis github [[<a href="https://api.github.com/user|https://api.github.com/user" class="bare">https://api.github.com/user|https://api.github.com/user</a>]]: 401 - bad credentials"</p>
+</li>
+<li>
+<p>Option 2: Command Line - Make a 'Tag' locally and push it to your remote.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>From your command line create a new tag locally, and then push that tag to your remote repository.</p>
+</li>
+<li>
+<p>All the same cautions apply, make sure it builds properly first.&lt;code&gt;</p>
+</li>
+</ul>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>    * In GitHub create a repository, like v1.2.3 as 'tag', description can be anything, but it best to include the version. This is where Travis and AppVeyor both deploy the built contents.
-    * When you hit the create button, Travis and AppVeyor will create the 'build' and deploy (the condition flags in the configuration file are define this action) to the Github 'Release' Tag.
-    * That's why it's important to check before you create the 'Tag' that all builds do pass faultlessly. (Repositories cannot be deleted since they are, in fact defined by tags.)
-    * If you observe 401 error at the deployment phase in travis logs search in google.com with the following phrase for possible causes "travis github [[https://api.github.com/user|https://api.github.com/user]]: 401 - bad credentials"
-- Option 2: Command Line - Make a 'Tag' locally and push it to your remote.
-    * From your command line create a new tag locally, and then push that tag to your remote repository.
-    * All the same cautions apply, make sure it builds properly first.&lt;code&gt;</pre>
-</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>OPTION 2: TAG COMMANDS Make tag locally and then push to remote &lt;/code&gt;</p>
 </div>
-<div class="literalblock">
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<pre>Examples:
-git tag v1.9.1-ov42    &lt;--Create the tag on your local repository
+<pre>git tag v1.9.1-ov42    &lt;--Create the tag on your local repository
 git push origin v1.9.1-ov42  &lt;--Push the tag to your remote repository, travis creates build and pushes.
 git push –delete origin v1.9.1-ov42  &lt;--You've made a mistake, it fails to build, remove remote tag.
 git tag –delete v1.9.1-ov42  &lt;--You've made a mistake, it fails to build, remove local tag.
 Fix the problem and start over.</pre>
 </div>
 </div>
-<div class="paragraph">
-<p>==== F. What happens upon Deployment</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="sect2">
+<h3 id="_f_what_happens_upon_deployment"><a class="anchor" href="#_f_what_happens_upon_deployment"></a>F. What happens upon Deployment</h3>
+<div class="ulist">
+<ul>
 <li>
 <p>The git push origin v1.9.1-ov42 Tag command is executed.</p>
 </li>
@@ -679,30 +714,36 @@ build under the "Assets" label. You should find a file similar to
 <li>
 <p>See
 <a href="https://github.com/rgleason/weatherfax_pi/releases/tag/v1.9.3-ov42-test">https:__github.com/rgleason/weatherfax_pi/releases/tag/v1.9.3-ov42-test</a>]</p>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>The Appveyor 'Console Tab' shows:
 [[https:<em>ci.appveyor.com/project/rgleason/weatherfax-pi|https:</em>ci.appveyor.com/project/rgleason/weatherfax-pi]]</p>
 </li>
 <li>
-<p>The Appveyor "Artifacts Tab" shows the file pushed to Github
-'Release':
-<code class="[https:__ci.appveyor.com/project/rgleason/weatherfax-pi/build/artifacts|https://ci.appveyor.com/project/rgleason/weatherfax-pi/build/artifacts">+  Collecting artifacts&#8230;&#8203;
+<p>The Appveyor "Artifacts Tab" shows the file pushed to Github</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>'Release':
+https:__ci.appveyor.com/project/rgleason/weatherfax-pi/build/artifacts|https://ci.appveyor.com/project/rgleason/weatherfax-pi/build/artifacts`+  Collecting artifacts...
   Found artifact 'build\weatherfax_pi-1.9.3-ov42-win32.exe' matching 'build\*.exe' path
-  Uploading artifacts&#8230;&#8203;
-  [1/1] build\weatherfax_pi-1.9.3-ov42-win32.exe (721,873 bytes)&#8230;&#8203;100%
+  Uploading artifacts...
+  [1/1] build\weatherfax_pi-1.9.3-ov42-win32.exe (721,873 bytes)...100%
   Deploying using GitHub provider
-  Creating "v1.9.3-ov42-test" release for repository "rgleason/weatherfax_pi" tag "v1.9.3-ov42-test" commit "05b6418e674b7d722424146c8efe2745a88b635b"&#8230;&#8203;OK
-  Uploading "weatherfax_pi-1.9.3-ov42-win32.exe" to release assets&#8230;&#8203;OK
-  Build success
-+</code></p>
-<div class="olist upperalpha">
-<ol class="upperalpha" type="A">
-<li>
-<p>How to get to these Appveyor Locations? The simplest way to access
-Appveyor is through Github commits
+  Creating "v1.9.3-ov42-test" release for repository "rgleason/weatherfax_pi" tag "v1.9.3-ov42-test" commit "05b6418e674b7d722424146c8efe2745a88b635b"...OK
+  Uploading "weatherfax_pi-1.9.3-ov42-win32.exe" to release assets...OK
+  Build success</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_how_to_get_to_these_appveyor_locations_the_simplest_way_to_access"><a class="anchor" href="#_g_how_to_get_to_these_appveyor_locations_the_simplest_way_to_access"></a>G. How to get to these Appveyor Locations? The simplest way to access</h3>
+<div class="paragraph">
+<p>Appveyor is through Github commits
 eg:https://github.com/rgleason/weatherfax_pi/commits/master</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -714,22 +755,16 @@ new Tag is pushed to remote.) - green check.</p>
 </li>
 </ul>
 </div>
-</li>
-</ol>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
 <div class="paragraph">
 <p>Note that VERSION.cmake entries/changes and TAG must be manually
 coordinated!</p>
 </div>
-<div class="paragraph">
-<p>=== Additional Notes</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_notes"><a class="anchor" href="#_additional_notes"></a>Additional Notes</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>For more information about setting the auth_token security please read
 notes in Appveyor Forum discussions:</p>
@@ -759,9 +794,8 @@ encrypted version of that into the appveyor file.)</p>
 <p>It&#8217;s a nice efficient way to make a release with an identical tag. This
 is what I&#8217;ve done on my repository:</p>
 </div>
-<div class="paragraph">
-<p>==== More information for Appveyor</p>
-</div>
+<div class="sect2">
+<h3 id="_more_information_for_appveyor"><a class="anchor" href="#_more_information_for_appveyor"></a>More information for Appveyor</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -785,12 +819,6 @@ appveyor 'auth_token' to push a new github release #134</a></p>
 auth token</a></p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>:</p>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
