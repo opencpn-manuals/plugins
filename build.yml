@@ -6,7 +6,7 @@ site:
 
 content:
   sources:
-    - url: https://github.com/leamas/ocpn-dev-manual.git
+    - url: https://github.com/rgleason/ocpn-dev-manual.git
       branches: main   
       edit_url: false
     - url: https://github.com/leamas/ocpn-pi-docs.git
