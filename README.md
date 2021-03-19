@@ -1,5 +1,6 @@
-# OpenCPN Developer Manual Antora playbbok
+# OpenCPN Developer Manual Antora Playbook
 
-This repo collects the various parts of the Developer Manual and
-builds the HTML. (forcing build...)
+This repo contains the playbook which collects the various manual
+parts and builds the HTML. Committed documents in the docs/
+dir are available at https://leamas.github.io/ocpn-manuals/
 
