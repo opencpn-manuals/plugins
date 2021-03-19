@@ -1,7 +1,7 @@
 site:
   title: OpenCPN Developer Manual
   # the 404 page and sitemap files only get generated when the url property is seto
-  url: http://localhost/opencpn
+  url: https://leamas.github.io/ocpn-manuals/
   start_page:  ocpn-dev-manual:ROOT:developer_guide.adoc
 
 content:
@@ -19,5 +19,8 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+
+output:
+  dir: ./docs
 
 
