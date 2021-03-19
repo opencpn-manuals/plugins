@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/ocpn-dev-manual/5.3.1/building_on_motorola_xoom.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li>Developer Guide</li>
+    <li><a href="compiling_linux.html">Compiling on Linux</a></li>
+    <li><a href="building_on_motorola_xoom.html">Building on Motorola Xoom</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;2" alt="indexmenu_n&gt;2"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_building_on_motorola_xoom"><a class="anchor" href="#_building_on_motorola_xoom"></a>Building on Motorola Xoom</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>NOTICE!</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>It is possible on devices with android 4.3 and later that selinux is
+enabled by default!</strong> This means you may not be able to use OpenCPN when
+installed per my instructions. Guaranteed that if you are using a device
+with the Lollipop OS, selinux is enabled! In a typical computer
+installation, linux selinux settings are user controlled and commands
+are available to change the way selinux affects an applications access
+to files. Not so with android. Your choices are 1.) to purchase a device
+with a pre-android 4.3 O.S. or 2.) install a custom ROM without selinux
+enabled.<br>
+<br>
+<strong>It is probable that Linux Deploy and VNC viewers will be changed to
+work in a selinux enabled ROM environment, but how quickly is unknown by
+me at this time. When that happens I&#8217;ll remove this warning.</strong><br>
+<strong>Introductory Note:</strong> Although this article refers specifically to the
+Motorola Xoom, it is likely that if you own any brand of device with the
+armel architecture the instructions herein will enable you to install
+Linux and OpenCPN on your device.<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_1"><a class="anchor" href="#_step_1"></a>Step 1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You should determine what type of CPU (central processing unit) your
+device has before choosing a linux distribution for installation. To use
+an armhf distribution your device must have at least an armv7
+architecture. Refer on your device to "Settings" &gt;"About Tablet"&gt;"CPU"
+which should provide this information.<br>
+<br>
+The primary difference between devices will be the method used to unlock
+your bootloader (root the device). If a method for rooting your device
+cannot be found here: Android &amp; Windows Phone: Tablets, Apps, &amp; ROMs @
+xda-developers , then use your browser&#8217;s search engine inserting your
+model with the word root or rooting. You are bound to find a method
+somewhere. There is no way I can know about all of the various
+approaches used to root different android devices. Consequently the
+method you use may not include instructions to install SuperSu, an
+android app downloadable from Google Play. If your instructions neglect
+to mention this application, go to Google Play, download and install
+SuperSu.<br>
+<br>
+<strong>An important note concerning "SuperSu"</strong>:<br>
+<br>
+Depending on your version of android, SuperSu is either installed
+separately from the ROM, or as in the case of custom ROMs from
+Cyanogenmod, SuperSu and 'Privacy Guard' are included in the ROM.
+ROM=Operating system.<br>
+<br>
+Access by applications to system files is controlled by SuperSu. The
+Privacy Guard is used to prohibit applications from accessing your
+'private data'. Both are user controlled.<br>
+<br>
+If the rooting process you used required the installation of SuperSu
+separately, there will be a SuperSu icon on the android desktop where
+all applications reside. However, sometimes it will also appear on your
+customized desktop where you&#8217;ve placed frequently used applications.<br>
+<br>
+Tapping on the icon opens the SuperSu app. Go to the settings. Scroll
+Waaaay down toward the bottom until you see something akin to 'enable
+SuperSu Pro'. Enable this option. Right, you don&#8217;t need to buy the Pro
+version because while the developers appreciate people who do, they also
+realize the indispensable need by owners of rooted devices to use the
+app.<br>
+<br>
+In Cyanogenmod&#8217;s Custom ROMs, the SuperSu and Privacy Guard options are
+accessed through your device 'Settings', typically opened by tapping on
+a gear type icon… Confirm under # Superuser&gt;Settings&gt;Multi User
+Policy&gt;All users can request Superuser; Superuser Access&gt;Apps only.<br>
+<br>
+If Privacy Guard is enabled for Linux Deploy, it may not work. So, make
+certain Privacy Guard is not active for Linux Deploy. Installed
+seperately, the 'Pro' version must be enabled.<br>
+<br>
+Whenever an app requiring access to system files is opened the first
+time, SuperSu will appear asking you what to do. Grant or Deny access to
+the app? Permanently, or for some pre-determined amount of time? If this
+did not happen when you first opened, or tried to do something with
+Linux Deploy that required access to system files, it&#8217;s most likely
+related to my discussion above.<br>
+<br>
+<strong>NOW, CONNECT TO THE INTERNET</strong><br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_2"><a class="anchor" href="#_step_2"></a>Step 2</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using the Google Play application, download the following applications
+from Google Play.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>"Linux Deploy" ( see: <a href="https://github.com/meefik/linuxdeploy" class="bare">https://github.com/meefik/linuxdeploy</a> for sparse
+instructions).</p>
+</li>
+<li>
+<p>"Android Terminal Emulator" The terminal is used to download and
+install file dependencies and OpenCPN.</p>
+</li>
+<li>
+<p>"bVNC Free" The viewer is necessary to access your Linux desktop.</p>
+</li>
+<li>
+<p>"FX File Manager and FX File Manager Root Extension</p>
+</li>
+<li>
+<p>GPS Share WIFI</p>
+</li>
+<li>
+<p>GPS TEST</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>About GPS: If properly configured, built in, external usb, wireless and
+bluetooth gps will all work in OpenCPN. If using the built in android
+gps follow these steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In your android 'Settings' enable "Location" to start the gps. The
+wireless network need not be enabled. DO NOT ENABLE YOUR DEVICE HOTSPOT!</p>
+</li>
+<li>
+<p>Open the application GPS TEST so you can observe gps activity.</p>
+</li>
+<li>
+<p>Open GPS Share WIFI. Tap on 'setting'&gt;Local Port. Note the port number
+which is 12776 by default. You will use this port number in OpenCPN.</p>
+</li>
+<li>
+<p>Return in GPS Share WIFI to 'start' and tap on the green button. The
+button colour will change and provided your gps has a fix the lat/long
+will display.</p>
+</li>
+<li>
+<p>In OpenCPN select 'network', port 12776 and address 'localhost'. Tap
+on 'apply' then 'close'. You should see the icon in upper right corner
+showing green vertical bars and the ownship will move to your current
+location.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For more about gps refer to "Advanced and other information section at
+the end of this document.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_3"><a class="anchor" href="#_step_3"></a>Step 3</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using "Linux Deploy" , tap on the downward pointing arrow. Under
+'Deploy' tap on 'Distribution' and select "Ubuntu". Under "Distribution
+Suite" select "Precise" and under "Desktop" select "Xfce".</p>
+</div>
+<div class="paragraph">
+<p><strong>NOTE:</strong> Tap on three vertical dots&gt;Settings and check the default Linux
+Deploy setting "ENV directory" to see whether it is <strong>/data/local/linux</strong>
+or <strong>/data/data/ru.meefik.linuxdeploy/linux</strong>. If it is
+<strong>/data/data/ru.meefik.linuxdeploy/linux</strong> substitute this for
+<strong>/data/local/linux</strong> in the instructions wherever it appears! Or, change
+now to <strong>/data/local/linux</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Accept the remaining default settings in Linux Deploy. Following a
+successful installation refer to "More Information" to learn about other
+options and settings in Linux Deploy.</p>
+</div>
+<div class="paragraph">
+<p>To install linux using Linux Deploy tap on the downward pointing arrow.
+Then under 'Action' tap on 'Install'.</p>
+</div>
+<div class="paragraph">
+<p>Assuming Linux Deploy successfully concludes the installation of Ubuntu
+Precise complete the steps below. NOTE: Do not include the two '
+characters when typing or copying the commands into the android
+terminal.</p>
+</div>
+<div class="paragraph">
+<p>Open the "android terminal".</p>
+</div>
+<div class="paragraph">
+<p>Type 'su' at the prompt &gt; Press &lt;enter&gt; Copy/paste or type:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>/data/local/linux/bin/linuxdeploy shell</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and press &lt;enter&gt;</p>
+</div>
+<div class="paragraph">
+<p>Important! The next step creates a root password. Use a root password
+you won&#8217;t forget! You&#8217;ll need the password when performing operations in
+a terminal as the "root operator" in the Linux GUI environment.</p>
+</div>
+<div class="paragraph">
+<p>Type at the terminal prompt</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>passwd root
+and press &lt;enter&gt;
+Type your password
+and press &lt;enter&gt;
+Re-enter the password as requested.
+and press &lt;enter&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_4_installing_opencpn"><a class="anchor" href="#_step_4_installing_opencpn"></a>Step 4: Installing OpenCPN</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Follow the standard Linux build instructions for Ubuntu/Debian</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_5"><a class="anchor" href="#_step_5"></a>Step 5</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Using Linux Deploy press the 'start' icon.</p>
+</div>
+<div class="paragraph">
+<p>Open bVNC Free and confirm the settings are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Name: "new Server" or any other name you wish to use,</p>
+</li>
+<li>
+<p>IP Address: "localhost",</p>
+</li>
+<li>
+<p>Port: "5900",</p>
+</li>
+<li>
+<p>Authentication: vnc password. "changeme" (Which can be changed…)</p>
+</li>
+<li>
+<p>VNC server type: "Autodetect".</p>
+</li>
+<li>
+<p>Operating system type: "Other".</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_6"><a class="anchor" href="#_step_6"></a>Step 6</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Within bVNC Free 'Connect' to the Window Manager. The Xfce 'desktop'
+should appear.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_7_launch_opencpn"><a class="anchor" href="#_step_7_launch_opencpn"></a>Step 7 Launch OpenCPN</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You will most likely find OpenCPN in the main menu under "Education".
+Click on the OpenCPN icon and the program should start.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_8_adding_charts"><a class="anchor" href="#_step_8_adding_charts"></a>Step 8: Adding Charts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Finally a quote from a Cruisers Forum member regarding charts.:</p>
+</div>
+<div class="paragraph">
+<p>Although setting up charts inside OpenCPN is part of the main OpenCPN
+documentation, I think a section here needs to include installing charts
+in a nice simple way to the device. IMO the easiest method is to copy to
+the external SD and then make reference how to find this SD card using
+the File Manager located in the Linux distro. Trying to explain how to
+copy and move is confusing for new chums and old hands will already know
+how to do this if that&#8217;s what they want to do.</p>
+</div>
+<div class="paragraph">
+<p>Good idea, but the devices/partitions have to be designated in Linux
+Deploy first. In Linux Deploy tap on the downward pointing arrow. Scroll
+down to 'Start Up'. Enable 'Custom Mounts'. Tap on Mount Points and
+proceed to define which partitions you wish to access from the Linux
+Desktop, OpenCPN and other applications. /storage/sdcard0 and
+/storage/sdcard1 are two examples.</p>
+</div>
+<div class="paragraph">
+<p>Enjoy.</p>
+</div>
+<div class="paragraph">
+<p>Additional information and useful links will be added later.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

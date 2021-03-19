@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Design overview :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/plugin-installer/0.0.1/Program-design.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="plugin-installer" data-version="0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="Home.html">Plugin Installer Documentation</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugin Installer Documents</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Catalog.html">Catalog</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="End-user-stories.html">End User Stories</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Home.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Installation-paths.html">Installation Paths</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Plugin-adaptation.html">Plugin Adaptation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Plugin-developer-use-case.html">Plugin Developer Use Case</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Plugins.html">Plugins</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="Program-design.html">Program Design</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Tarballs.html">Tarballs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Terminology.html">Terminology</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Plugin Installer Documentation</span>
+    <span class="version">0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../ocpn-dev-manual/5.3.1/index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ocpn-dev-manual/5.3.1/index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../ocpn-dev-manual/5.3.1/developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="Home.html">Plugin Installer Documentation</a></li>
+    <li>Plugin Installer Documents</li>
+    <li><a href="Program-design.html">Program Design</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/leamas/ocpn-pi-docs/edit/main/modules/ROOT/pages/Program-design.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Design overview</h1>
+<div class="sect1">
+<h2 id="_supported_platforms"><a class="anchor" href="#_supported_platforms"></a>Supported platforms</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The installer supports four platforms:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>Macos</p>
+</li>
+<li>
+<p>Debian</p>
+</li>
+<li>
+<p>Flatpak</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The PR contains patches to make the mingw builds usable. However, the
+core installer makes no difference between mingw or msvc builds.</p>
+</div>
+<div class="paragraph">
+<p>The combination of Debian and Flatpak is aimed to cover the fragmented
+Linux ecosystem. While Flatpak can be used on all Linux distros, having
+Debian packages available makes sense for space-constrained embedded
+systems like the Raspberry.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_catalog_and_tarballs"><a class="anchor" href="#_catalog_and_tarballs"></a>Catalog and tarballs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These are the groundwork for the installer code. The catalog is the
+complete list of available plugins presented to user. When user selects
+a plugin, the catalog provides info so the plugin can be downloaded. See
+[Catalog](Catalog) and [Tarballs](Tarballs)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installations"><a class="anchor" href="#_installations"></a>Installations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Plugins are installed in the user writable [installation
+paths](Installation-paths).</p>
+</div>
+<div class="paragraph">
+<p>After installation, a list of installed files is left in the [user
+configuration directory](Terminology#user-config-path), in the sub
+directory <code>plugins/install_data</code>. This list is used when uninstalling.
+If the list does not exist the installer assumes the plugin has been
+installed using other means and will not change it in any way.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_main_modules_affected"><a class="anchor" href="#_main_modules_affected"></a>Main modules affected</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>pluginmanager.cpp has been patched to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Load plugins from the
+[User install dir](terminology#user-install-path) on all platforms.
+This makeś Macos and Windows work in a similar way as Linux.</p>
+</li>
+<li>
+<p>Support uninstallation of plugins in user install directories.</p>
+</li>
+<li>
+<p>Support a dynamic set of plugins. Prior to this PR, the set of
+plugins loaded at startup never changed.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The two new modules download\_mgr and catalog\_mgr handles the download
+and catalog manager UI dialogs.</p>
+</li>
+<li>
+<p>The PluginHandler module is the backend side of plugins, mostly
+downloading and installing. Here is also code to handle the plugin
+metadata.</p>
+</li>
+<li>
+<p>The PluginPaths module handles mapping of various paths to platform-
+specific values.</p>
+</li>
+<li>
+<p>OCPNPlatform has been patched to provide an extended set of platform
+paths, mostly to support loading plugins from user directories.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_build_chain"><a class="anchor" href="#_build_chain"></a>Build chain</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>flatpak/</code> directory contains all necessary pieces to build a
+flatpak version of opencpn. This has been incorporated to be able to
+test flatpaked plugins.</p>
+</div>
+<div class="paragraph">
+<p>The <code>ci/</code> directory contains changes to build mingw and also support for
+deploying packages to cloudsmith.io. Build scripts has been refactored
+to be usable also in other builders like circleci.com</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

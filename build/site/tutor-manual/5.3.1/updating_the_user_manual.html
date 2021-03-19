@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/tutor-manual/5.3.1/updating_the_user_manual.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tutor-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Tutor Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="developer_guide.html">OpenCPN Tutor Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="developer_guide.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li><a href="updating_the_user_manual.html">Updating the User Manual</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/mk/src/dokuwiki/tutor/modules/ROOT/pages/updating_the_user_manual.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;39" alt="indexmenu_n&gt;39"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_updating_the_user_manual"><a class="anchor" href="#_updating_the_user_manual"></a>Updating the User Manual</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FIXME - DO AFTER MIGRATION - This page needs to be continued and brought
+up to date. Also confirming that the manual has been updated with all
+from Release 4.1.1301 (4.2) Changelog forward to version 4.3, 4.4 and
+4.5! A relatively big job requiring updates to the User Manual from v4.1
+thru 4.5. This work will have to be done after migration. Also all the
+plugin documentation needs review, update and improvement. ---
+<em><a href="<a href="mailto:fcgleason@yahoo.com">fcgleason@yahoo.com</a>">Rick Gleason</a> 2016/12/27 12:30</em></p>
+</div>
+<div class="paragraph">
+<p>The user manual aims to correctly describe all features of OpenCPN that
+directly affect users. To do this it&#8217;s essential to keep track of the
+beta development and discussions.<br>
+Of course there are issues of style, language and other things as well,
+but here we concentrate on the technical issues.<br>
+<br>
+This is the way I&#8217;ve done it so far. First a quick and dirty scan to
+mark those issues that require a documentation change. See below. These
+are marked with a "*". All points referring to FS# then require checking
+the FS# issue to reassess if a change is needed.<br>
+Examples.<br>
+<mark>1 clearly needs a change as this is a new feature with user
+configurations.<br>
+#13 does not require a change as it&#8217;s a bugfix that makes O behave as
+reasonably expected.<br>
+#37 is not straight forward and requires study of FS</mark> and the patch to
+see if a documentation change is needed.<br>
+&#8230;&#8203;and so on.<br>
+Once the change is done, I mark each issue with a "<mark>" as well. So when
+the changes required by: "*1, Implement configurable waypoint range
+rings (FS#1560)", is done it will look like this.<br>
+"</mark>*1. Implement configurable waypoint range rings (FS#1560)".<br>
+<br>
+Making the changes requires a thorough understanding of the issue,
+gained by testing O and reading everything that is available, including
+the code, even if you&#8217;re not a C++ coder, as there are often valuable
+comments in the code. If this is not enough ask the developers, until
+everything is clear.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> +
+Tracker Search (Flyspray) FS#xxxx Register and Login to Tracker
+http://opencpn.willkamp.com/</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>From the main window, Upper Right corner.</p>
+</li>
+<li>
+<p>Find <strong>Show Task ID# * - Enter the FS# - Hit* enter</strong></p>
+</li>
+<li>
+<p>The search will be on ALL tasks, closed and open.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_android"><a class="anchor" href="#_android"></a>Android</h3>
+<div class="paragraph">
+<p>Looking again at all the changes, one big thing that is not instantly
+obvious, is that OpenCPN now badly needs documentation for Android
+users.<br>
+2015-06-02<br>
+4.1.602<br>
+Changelog<br>
+- Rgleason 1-40 done</p>
+</div>
+<div class="paragraph">
+<p><mark>*1. Implement configurable waypoint range rings (FS#1560) -updated
+screenshot, added txt<br>
+#*2. Implement configurable NMEA Talker ID (FS#1557) -Screenshot
+connections-output-filter.<br>
+#*3. Harmonize autopilot APB and XTE precision settings to be the same
+always. - Made note in connections<br>
+4. Improve 2-bells audio file. (FS#1673)<br>
+5. Correct to disable selectability of hidden AIS targets. (FS#1666)<br>
+#*6. Grib: Add Fixed spacing option for arrows and numbers. -updated
+many screenshots. added txt<br>
+7. Grib: Correct data interpolation error at 180 E/W longitude.<br>
+8. Grib: Improve email request dialog to allow requests crossing 180 E/W
+longitude.<br>
+#*9. Correct dialog text for magnetic variation sense. (FS#1694)
+-modified text updated screenshot<br>
+#*10. Add extended AIS Aton rendering according to IEC6228_Ed2. -added
+symbols to manual<br>
+11. Make initial page selection on options dialog more consistent in
+GTK.<br>
+12. Correct ENC UWTROC, OBSTRN, WRECKS visibility in Base and Standard
+modes. (FS#1717<br>
+13. Correct uninitialized member causing crash on DSC message with
+incorrect checksum(FS#1697)<br>
+14. Correct to ignore DSC messages with "Unspecified" position
+(FS#1711)<br>
+15. Correct VERCCL and VERCOP height decode and rendering on ENCs
+(FS#1704) Thanks TransmitterDan<br>
+#*16. Correct to ignore invisible marks on selection/query (FS#1670)
+-noted under Marks.<br>
+17. Correct keyboard accelerator logic for WXOSX (FS#1698/1655<br>
+18. Correct RouteProperties dialog to "Stay on top" for WXOSX build
+(FS#1698)<br>
+19. Correct help launcher on wxWidgets 3.x. (FS#1702)<br>
+20. Correct uninitialized variables (FS#1679)<br>
+21. Correct for "GD=" missing datum in KAP chart header. (FS#1683)<br>
+22. Correct depth unit display for BSB charts with KNP/…UN=METRIC
+(FS#1654)<br>
+23. Correct cm93 failure to show some soundings on keyboard pan
+(FS#1689)<br>
+24. Correct automatic route creation properties on MOB event (FS#1699)<br>
+25. Improve toolbar tooltip placement for right-located toolbar.
+(FS#1657)<br>
+26. Correct datum initialization for quilted non-WGS84 charts in OpenGL
+mode. (FS</mark>????)<br>
+27. Correct occasional linux focus loss (FS#1684)<br>
+28. Preserve visibility attributes for GPX files originating from
+OpenCPN (FS#1667)<br>
+29. Improve formatting of S57 object attributes as decoded (FS#1713)<br>
+30. Correct ENC SENC file creation math for ARMHF systems.<br>
+#*31. Implement quilting of skewed raster charts in OpenGL mode. -note
+at top of Quilting<br>
+#*32. Implement manual/timed automatic toolbar hiding option. -note made
+under Options UI<br>
+33. Update Windows build tool to VS2103<br>
+34. Update Windows wxWidgets version to wx3.0.2<br>
+#*35. Implement automatic reload of updated PlugIns by visiting
+options→Plugins screen. -Added Re-enable to Plugin Install &amp; Enable<br>
+#*36. Improve GUI for GRIB PlugIn, better fitting the small screen. -
+New screenshots uploaded + Hide data.<br>
+*37. Correct duplicate routepoint delete logic, (FS#1743) - bug in
+logic, requires no change to docs.<br>
+38. Correct for inadvertent waypoint dragging on double-click
+(FS#1748)<br>
+39. Correct route line width in selected and activated modes.
+(FS#1735)<br>
+40. Correct ownship predictor rendering when ownship is off-screen
+(FS#1754)</p>
+</div>
+<div class="paragraph">
+<p>Version 4.1.925 Beta<br>
+Changelog<br>
+- Rgleason 41-61 done.</p>
+</div>
+<div class="paragraph">
+<p>41. Improve RouteManagerDialog sizing and rotation behavior.
+(FS#1757, FS#1755)<br>
+42. Correct DC mode HPGL vector symbol rendering with wxGraphicsContext
+active.<br>
+43. Correct quilt operations on highly zoomed skewed quilt regions.<br>
+44. Correct shutdown process to avoid accessing PlugIn chart orphans.<br>
+45. Correct AIS target age logic when DST is active (FS#1809).<br>
+46. Correct rotated clip region calculation when using depth-buffer
+clipping. (FS#1801) -Serge closed for Baikal, I assume it is fixed. No
+doc changes.<br>
+47. Fix Grib Particle Looping (FS#1794) - Nice fix!<br>
+48. Correct XML Changes file handling on crash restart and point
+dragging. (FS#1824, FS#1785)<br>
+49. Correct console canvas location for alternate compass layouts.
+(FS#1851) #notexist. no effect on user<br>
+50. Correct OpenGL options "accelerated panning" initial value.<br>
+51. Implement greatly improved mipmap generation algorithm using SSE
+intrinsics where available.<br>
+52. Improve cm93 zoom logic to show more detail where desired,
+especially small islands in a big sea. - nice!<br>
+53. Correct chart group logic for similar chart file location prefix.
+(FS#1060) thanks tDan<br>
+54. Improve OpenGL raster cache build time by optimizing progress dialog
+updating. Thanks, did-g.<br>
+55. Add filter string control to NMEA debug window. Thanks Sean.<br>
+56. Add support for mingw compiler on Windows.<br>
+57. Correct rendering of TSS arrows in DC mode (FS#1858)<br>
+58. Correct CenterView dialog text edit control behavior on Windows
+(FS#1765)<br>
+59. Correct textual description for AIS Target Status 11 and 12
+(FS#1848)<br>
+60. Correct waypoint icon selector dropdown size on MSW (FS#1815)<br>
+61. Correct initialization of UserIcons ownship preference. (FS#1769)
+thanks Peter.</p>
+</div>
+<div class="paragraph">
+<p>OpenCPN Version 4.1.1022<br>
+Changelog</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>WDkester - Changelog 63-77 Had 1 change (70).<br></p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Correct and extend Raster Chart PlugIn API for revised OpenGL access
+methods.<br></p>
+</li>
+<li>
+<p>Correct active track rendering logic to Ownship.<br></p>
+</li>
+<li>
+<p>Correct cm93 region and detail level calculation logic around
+Longitude 0.<br></p>
+</li>
+<li>
+<p>Correct longitude grid text rendering on OpenGL.<br></p>
+</li>
+<li>
+<p>Correct occasional loss of toolbar during mode switches and dialog
+access.<br></p>
+</li>
+<li>
+<p>Improve sectored light rendering performance on Windows OpenGL
+systems.<br></p>
+</li>
+<li>
+<p>Correct Vector chart PlugIn rendering methods.<br>
+#*70. Implement GUI scale factor for toolbar effective on all
+platforms.<br></p>
+</li>
+<li>
+<p>If specified, require NMEA checksums to be valid before sending
+sentences to PlugIns.<br></p>
+</li>
+<li>
+<p>Correct initialization of Polyconic charts without embedded georef
+coefficients (FS#1866)<br></p>
+</li>
+<li>
+<p>Modify AIS SART target acknowledge timeout policy to honor global
+ACK timeout (FS#1856)<br></p>
+</li>
+<li>
+<p>Correct AIS Target Query dialog sizing logic<br></p>
+</li>
+<li>
+<p>Correct Grid text formatting for "degree" symbol (FS#1870)<br></p>
+</li>
+<li>
+<p>Extend PlugIn API for Waypoint list access.<br></p>
+</li>
+<li>
+<p>Correct Dashboard context menu actions when multiple dashboards are
+defined.</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>OpenCPN Version 4.1.1108<br>
+Changelog<br>
+- Rgleason reviewed, no additional changes needed to UM.<br>
+#*78. Add Follower/Buddy to MMSIEditDialog to suppress AIS alert.
+-Thanks Hakan, changes made to UM.<br>
+79. Correct occasional loss of reduced toolbar on chart stack change.
+Thanks, Chuck.<br>
+80. Correct memory corruption on high overzoom DC mode raster chart
+rendering. (FS#1885)<br>
+81. Correct memory leaks on SENC file creation. -thanks bdbcat!<br>
+82. Improve AIS Alert Dialog sizing algorithm. - does not change UM.<br>
+83. Suppress some unnecessary log error messages on exit.<br>
+84. Correct polyconic &amp; transverse Mercator chart outline calculation
+method. (FS#1882)<br>
+#*85.Correct operation of Anchor Information hotkey ("A") in vector
+chart display. Thanks nkiesel…<br>
+86. In Responsive mode, set basic toolbar tool and compass size to 6 mm
+nominal.<br>
+87. Correct chartbar switching behavior on touch enabled
+configurations.<br>
+88. Re-enable install log on MSW Installer Package.<br>
+89. Correct toolbar submerge grabber logic in various cases. Thanks,
+Chuck.<br>
+90. Refactor to allow building with USE_S57=OFF (FS#1903)</p>
+</div>
+<div class="paragraph">
+<p>Release 4.1.1301<br>
+Changelog<br>
+-Rgleason reviewed 91-105, UM changes as below. -may need to add some
+files to o-portable.<br>
+*91.Correct config file location for portable (-p) operation.<br>
+-Rgleason, checked installation. -May need to add some files for
+v4.1.x<br>
+92. Fix uncompensated skewed chart display. (FS#1904) Thanks Chuck.<br>
+93. Correct cm93 quilt logic in OpenGL for some especially complex
+situations.<br>
+94. Correct rendering of disjoint, large scale S57 cells.<br>
+95. Implement mag variation calculation at object location if WMM is
+available. -nice Pavel<br>
+#*96.Update Authors list, adding Didier Gautheron.<br>
+97. Correct Windows Generic GDI OpenGL driver initialization.<br>
+98.Improve DUSK/NIGHT color presentation by eliminating bright
+decorations.<br>
+99. Correct display of very long routes (FS#1896) - cutoff fixed.<br>
+100. Implement scaled icons for Settings top icons in responsive mode.<br>
+101. Handle NMEA V4 messages with prepended tags.<br>
+#*102.Re-enable ability to add a single chart to a group.<br>
+103. Improve initial responsiveness of Option dialog.<br>
+104. Modify OpenGL texture logic to support non-compliant MSW "GDI
+Generic" driver.<br>
+105. Implement ScaledVectorGraphics (SVG) interface for tools and icons.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

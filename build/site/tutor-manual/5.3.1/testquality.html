@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/tutor-manual/5.3.1/testquality.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tutor-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Tutor Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="developer_guide.html">OpenCPN Tutor Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="developer_guide.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li><a href="testquality.html">TestQuality -Test Management</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/mk/src/dokuwiki/tutor/modules/ROOT/pages/testquality.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;35" alt="indexmenu_n&gt;35"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_testquality_test_management"><a class="anchor" href="#_testquality_test_management"></a>TestQuality -Test Management</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.testquality.com/">Test Quality Website</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Build test plans, test suites, test cases quicker
+Run test plans and capture test results more efficiently
+Automatically import test results from any test runner
+Gain critical insights quicker
+Communicate and coordinate with teams of any size
+FREE for open source projects on GitHub public repo’s and ultra cost effective for private repo’s.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/opencpn/dev/developer_guide/testqualtity-from-canne.png" alt="Canne&#8217;s TestQuality Example" width="550"></span></p>
+</div>
+<div class="sect2">
+<h3 id="_how_to_use_testquality"><a class="anchor" href="#_how_to_use_testquality"></a>How to use TestQuality</h3>
+<div class="paragraph">
+<p>Get an account on testquality. From your github account online go to
+github marketplace or apps and search for Testquality
+<a href="https://github.com/marketplace/testquality/plan/MDIyOk1hcmtldHBsYWNlTGlzdGluZ1BsYW44MTM=#pricing-and-setup">TestQuality
+Setup</a></p>
+</div>
+<div class="paragraph">
+<p>In your own testquality account, you can create projects as you like.
+Each project can be, for example, one of the plugins you are working on.
+You would link your GitHub repository to the testquality project. This
+is important.</p>
+</div>
+<div class="paragraph">
+<p>First, you need to create a few major test plan categories (TP).</p>
+</div>
+<div class="paragraph">
+<p>Then you would start to invent and plan use cases which can be made step
+by step, every time the same way with each step either PASS or FAIL, no
+ambiguity. These are called Test Cases (TC). Each Test Case must belong
+to a Test Suite (TS). Typically, you would execute all the test cases in
+a test suite, so don&#8217;t make too big Test Suites. Each Test Suite must
+belong to a Test Plan.</p>
+</div>
+<div class="paragraph">
+<p>Test Plan &#8594; (n) x Test Suites Test Suites &#8594; (n) x Test Cases</p>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t worry about the steps in use cases too much. You can add new steps
+later on and then just make a new test run:</p>
+</div>
+<div class="paragraph">
+<p>You would create a Test Run, typically that contains all the tests in
+the Test Suite. Once you encounter a FAIL in a test step, stop: go to
+GitHub, create an issue for bug. It would have, say number #71. In your
+Test Case, you scroll down and you would Add a Defect. It asks you for a
+number, now give it number 71. You get the GitHub issue which you can
+resolve or leave for the future.</p>
+</div>
+<div class="paragraph">
+<p>Test run = select Test -Suite &#8594; execute all (n) x Test Cases in it
+(Skipping allowed if you want to verify a fix of a single bug).</p>
+</div>
+<div class="paragraph">
+<p>If you leave a bug fix for the future: after the fix, make a new Test
+Run, skip to the Use Case you are verifying the Defect # and then, at
+this failed step point, verify that it now PASS: In Defects click on the
+"71" defect: in the dialog mark it as resolved /fixed/cosed and leave a
+comment. GitHub will be updated automatically.</p>
+</div>
+<div class="paragraph">
+<p>It would help that if you define milestones, and use those for each test
+run, telling to which milestone (next milestone is usually next planned
+version) it belongs to. Then you would use in GitHub issues the same
+milestone number (in Issues).</p>
+</div>
+<div class="paragraph">
+<p>Simple!</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_collaborate_on_test_quality"><a class="anchor" href="#_collaborate_on_test_quality"></a>Collaborate on Test Quality</h3>
+<div class="paragraph">
+<p>Good Testing is an intensive and complex process, and experienced help
+is always welcome. The more people testing the better the software. This
+tool promises to be very useful establishing and tracking the tests
+needed, defining, refining and implementing the necessary tests. It can
+communicate the tests needed to others and how they should be done step
+by step.</p>
+</div>
+<div class="paragraph">
+<p>To collaborate and help on another person&#8217;s TestQuality project, create
+a login on that person&#8217;s testquality site [username].testquality.com
+using another or different email.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_here_are_some_test_examples"><a class="anchor" href="#_here_are_some_test_examples"></a>Here are some test Examples</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="/opencpn/dev/developer_guide/tc47-test-tw-calc-with-stw.pdf" alt="Example Test Process"></span></p>
+</li>
+<li>
+<p><span class="image"><img src="/opencpn/dev/developer_guide/tc53-test-current-spd.dir-w-leeway.pdf" alt="Test-current-spd.dir-w-leeway"></span></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Unfortunately this is missing some of the images which really help with
+understanding.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/ocpn-dev-manual/5.3.1/internationalization.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;6" alt="indexmenu_n&gt;6"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_internationalization"><a class="anchor" href="#_internationalization"></a>Internationalization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Welcome all translators. Please review Crowdin below. That is the easy
+way to contribute your skills to the development of Opencpn and Plugins.</p>
+</div>
+<div class="sect2">
+<h3 id="_add_a_new_language"><a class="anchor" href="#_add_a_new_language"></a>Add a new Language</h3>
+<div class="literalblock">
+<div class="content">
+<pre> - To translate OpenCPN into any language, download the **opencpn.pot**  file from [[https://sourceforge.net/p/opencpn/code/ci/master/tree/po/|here]].
+- Next rename this file using the [[https://www.nationsonline.org/oneworld/country_code_list.htm#W|ISO Alpha-2 Country Code]] for your language and changing the extension .pot to .po, e.g. **opencpn_it_IT.po**  for Italian.
+- Use [[http://www.poedit.net/|Poedit]], or edit the file manually by entering values for the translated terms into the Msgstr " " fields.
+- Test the file in OpenCPN by selecting the appropriate language. On Linux, you may need to install further language libraries (locales) to be able to select all languages. Here's how to do so on Ubuntu based systems:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#To list already installed locales
+locale -a
+
+#To see a list of supported langs
+less /usr/share/i18n/SUPPORTED
+
+#To install a new locale
+sudo locale-gen de_DE.UTF-8
+#This is an example for German, Unicode…
+
+#To update the list in the system
+sudo update-locale</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_to_improve_or_extend_any_existing_translation_local"><a class="anchor" href="#_to_improve_or_extend_any_existing_translation_local"></a>To improve or extend any existing translation (local)</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To improve or extend any existing translation, download the respective
+.po file, e.g. <strong>opencpn_it_IT.po</strong> for Italian.</p>
+</li>
+<li>
+<p>Use <a href="http://www.poedit.net/">Poedit</a>, or edit the file manually by
+entering values for the translated terms into the Msgstr " " fields.</p>
+</li>
+<li>
+<p>Test the file in OpenCPN by selecting the appropriate language. On
+Linux, you may need to install further language libraries to be able to
+select all languages.</p>
+<div class="literalblock">
+<div class="content">
+<pre> +
+==== Use Crowdin with Browser ==== With version 3.3.1824 we have changed
+OpenCPN's translations to be managed by https://crowdin.net/[Crowdin]. +
+There are a couple of reasons behind this decision:</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Some of the translations lack considerably behind and simply miss a
+maintainer</p>
+</li>
+<li>
+<p>A lot of the plug-ins lack the translations completely or almost
+completely</p>
+</li>
+<li>
+<p>It is hard for more people to cooperate on a language</p>
+</li>
+<li>
+<p>It needs effort from people who would like to contribute their time
+and language skills to install Poedit, learn how to use it and get the
+current PO/POT files, so the less geeky types may feel that it&#8217;s too
+much for them</p>
+</li>
+<li>
+<p>It gets a bit messy at times to manage all the translations submitted
+through different channels and the time can be better spent on writing
+new code and fixing bugs</p>
+<div class="literalblock">
+<div class="content">
+<pre> +
+We have created a project on https://crowdin.net/[Crowdin] (Many thanks
+to these guys for generously supporting open source projects) to
+maintain the localizations. From now on all that you need to help us
+keep the translations up to date is a web browser and a bit of time. +
+ +
+*Please join us by signing up at
+https://crowdin.net/project/opencpn/invite* +
+==== Concerning "Items" and "Texts", the rule is: ====</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>1 Item in the language file 1 = Display text.<br>
+Of course, this requires you to put more items in this file, but this is
+the only way for each translator to take account of the peculiarities of
+its language.</p>
+</div>
+<div class="paragraph">
+<p>Currently, all the other plugins and the heart of OpenCPN follow this
+rule and we can always translate very correctly.<br>
+====FAQ====<br>
+<strong><em>I have a question about translation priority between core and plugins,
+&#8230;&#8203;.How can this be dealt with?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>It&#8217;s simple. The language files of the plugins are loaded first. Then,
+the core language file is loaded. the whole thing is a single language
+file. If an item appears in a language file of a plugin and also,
+strictly identical, in the file of the core, this constitutes a single
+item. So the translation of the core takes the place of the translation
+of the plugin.</p>
+</div>
+<div class="paragraph">
+<p>The solution, to avoid translation conflicts, is that plugin developers
+must ensure that the items they use are different from those of the
+core.</p>
+</div>
+<div class="paragraph">
+<p>It is not necessary that the difference be very great. Only one
+different character is enough.<br>
+<br>
+<strong><em>How does ODraw ensure that it&#8217;s translations are used?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>ODraw uses a process to make sure its translations for are used for all
+its items. It does not affect the mainline translations, just the
+translation catalogue used by ODraw is its own. All plugins can use this
+method without impacting any other. The one downside is that you need to
+have translations for all words as the cascade back through the
+different catalogues may not give you the answer you expect. This is
+achieved by redefining the translation macro (done by cmake and
+compiler) such that the source code looks the same, but the catalogue
+being used is different.</p>
+</div>
+<div class="paragraph">
+<p>This process is currently used in the <strong>ODraw</strong> and <strong>Watchdog</strong> plugins. It
+is a simple change to a couple of files to implement.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>For Compiling, what is the Process to update Internationalization
+files when compiling plugins?</em></strong></p>
+</div>
+<div class="paragraph">
+<p>The "normal" routine is that when new development for each plugin is
+ready, at least for text parts, address a message to Pavel or me and we
+can upload the new strings, the POT-file, to Crowdin. When translators
+are ready or at least to an acceptable level and before release a new
+message will result in download of translations, the po-files, and a PR
+to the plugin&#8217;s Github. The crucial task is to message when new strings
+are ready for Crowdin. "As simple as that".</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

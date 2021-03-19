@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/tutor-manual/5.3.1/troubleshooting.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tutor-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Tutor Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="developer_guide.html">OpenCPN Tutor Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="developer_guide.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li><a href="troubleshooting.html">Troubleshooting</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/mk/src/dokuwiki/tutor/modules/ROOT/pages/troubleshooting.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;6" alt="indexmenu_n&gt;6"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For trouble shooting and lower level nitty gritty details, the command
+line, configuration files and debuggers are your friends.</p>
+</div>
+<div class="sect2">
+<h3 id="_opencpn_has_a_minimal_command_line_interface_cli"><a class="anchor" href="#_opencpn_has_a_minimal_command_line_interface_cli"></a>OpenCPN has a minimal command line interface (CLI)</h3>
+<div class="literalblock">
+<div class="content">
+<pre>Usage: opencpn [-h] [-p] [-fullscreen] [-no_opengl] [-rebuild_gl_raster_cache] [-parse_all_enc] [-unit_test_1 &lt;num&gt;]
+  -h, --help                    Show usage syntax.
+  -p                            Run in portable mode.
+  -fullscreen                   Switch to full screen mode on start.
+  -no_opengl                    Disable OpenGL video acceleration. This setting will be remembered.
+  -rebuild_gl_raster_cache      Rebuild OpenGL raster cache on start.
+  -parse_all_enc                Convert all S-57 charts to OpenCPN's internal format on start.
+  -unit_test_1:&lt;num&gt;            Display a slideshow of &lt;num&gt; charts and then exit. Zero or negative &lt;num&gt; specifies no limit.</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_unit_test_1"><a class="anchor" href="#_unit_test_1"></a>[-unit_test_1]</h4>
+<div class="paragraph">
+<p>This command test cycles through all possible charts in the currently
+loaded chart database, adjusting the viewport to show the loaded chart
+automatically. The value of this test is clear: it provide an unattended
+stress test of OpenCPN, It is most fun to watch in quilt mode…</p>
+</div>
+<div class="paragraph">
+<p>The test runs until all charts in the database have been visited once.
+Lets think of this as a Beta test tool.</p>
+</div>
+<div class="paragraph">
+<p>A side-effect of this switch is that it can be used to process a set of
+ENC charts into SENC files. The first, time consuming processing of ENC
+charts, can this way be done unattended.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_p"><a class="anchor" href="#_p"></a>[ -p ]</h4>
+<div class="paragraph">
+<p>The portable option is explained
+<a href="/opencpn/opencpn_user_manual/advanced_features/portable_opencpn.adoc" class="bare">/opencpn/opencpn_user_manual/advanced_features/portable_opencpn.adoc</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_no_opengl"><a class="anchor" href="#_no_opengl"></a>[-no_opengl]</h4>
+<div class="paragraph">
+<p>A total switch-off of OpenGL, in a more thorough way than in "Options".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_fullscreen"><a class="anchor" href="#_fullscreen"></a>[ -fullscreen ]</h4>
+<div class="paragraph">
+<p>Starts OpenCPN in FullScreen mode</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_debugging_output_settings_for_logfile"><a class="anchor" href="#_debugging_output_settings_for_logfile"></a>Debugging Output Settings for Logfile</h3>
+<div class="paragraph">
+<p>The <em>config or ini</em> file contains a lot of settings that are saved
+between sessions.<br>
+<strong>Debug statements can be added to produce a lot of output when problems
+arises in certain areas.</strong><br>
+The following statement are recognized and can be added to the config
+file before a session starts.<br></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[Settings] ...
+DebugOpenGL=1   Add logfile debug output for openGL.\\
+DebugNMEA=500   Writes 500 NMEA sentences to the log file\\
+DebugCM93=1     Writes volumes of debug info relating to CM93 to the logfile.\\
+DebugGPSD=1     This will produce some more log output regarding gpsd.\\
+DebugS57        Add logfile debug output for S57\\
+DebugBSBImg     Add logfile debug output for BSBImg\\
+DebugGDAL       Add logfile debug output for GDAL\\</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_a_fifo_for_ais_debugging"><a class="anchor" href="#_using_a_fifo_for_ais_debugging"></a>Using a FIFO for ais debugging.</h3>
+<div class="paragraph">
+<p>See the code in <em>ais.cpp</em><br>
+`+/*
+   A special test for a user defined FIFO
+   To use this method, do the following:
+   a.  Create a fifo            $mkfifo /tmp/aisfifo
+   b.  netcat into the fifo     $nc {ip} {port}&gt; /tmp/aisfifo
+                   sample {ip} {port} could be  nc 82.182.117.51 6401&gt; /tmp/aisfifo
+   c.  hand edit opencpn.conf and make AIS data source like this:
+        [Settings/AISPort]
+        Port=Serial:/tmp/aisfifo</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  This also works if you have an ascii ais log
+  for which you can simply $cat ais.log&gt; /tmp/aisfifo
+  */
+  if(m_pPortName-&gt;Contains(_T("fifo")))
+        goto port_ready;
++`</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You may see that if the port name contains the string "fifo", then the
+requirement for the port to be a TTY is relaxed.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wxwidgets"><a class="anchor" href="#_wxwidgets"></a>wxWidgets</h3>
+<div class="paragraph">
+<p>OpenCPN uses wxWidgets, currently version 3.0.2.
+<a href="https://www.wxwidgets.org/docs/">wxWidgets Reference Manuals</a> . The Often
+the version used is behind the most current one, because the developers
+are trying to maintain compatibility with older OS and Computers as much
+as is possible. Sometimes wxWidgets has bugs and a different routine is
+needed, or the developers figure out a workaround. Sometimes the fix is
+in a more current version of wxWidgets than is being used by OpenCPN so
+the developers then also try figure out workarounds.</p>
+</div>
+<div class="paragraph">
+<p>Also a change in wxWidgets generally affects all plugins, so that they
+all need compilation and the the new versions are no longer operable in
+previous versions of OpenCPN and the older plugins quite obviously won&#8217;t
+work in the the new version of Opencpn. This is another reason the
+changes to wxWidgets versions is infrequent.</p>
+</div>
+<div class="paragraph">
+<p>This PDF to
+ahttps://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=2&amp;ved=0ahUKEwi864Ce3ZXXAhVMtxQKHbCMCscQFgguMAE&amp;url=https%3A%2F%2Fptgmedia.pearsoncmg.com%2Fimages%2F0131473816%2Fdownloads%2F0131473816_book.pdf&amp;usg=AOvVaw2cPYxEF2DKGrkc5mVx1FMF[wxWidgets
+History document] might help with wxWidgets issues.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

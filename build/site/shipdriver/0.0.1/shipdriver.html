@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/shipdriver/0.0.1/shipdriver.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="shipdriver" data-version="0.0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">ShipDriver OpenCPN plugin docs.</span>
+    <span class="version">0.0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../ocpn-dev-manual/5.3.1/index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ocpn-dev-manual/5.3.1/index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../ocpn-dev-manual/5.3.1/developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/leamas/shipdriver_pi/edit/master/modules/ROOT/pages/shipdriver.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_shipdriver"><a class="anchor" href="#_shipdriver"></a>ShipDriver</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>image::sd0.png
+=== Links</p>
+</div>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/Rasbats/shipdriver_pi">Github Repository</a></p>
+</div>
+<div class="paragraph">
+<p>Releases: <a href="https://github.com/Rasbats/shipdriver_pi/releases">Github Releases</a></p>
+</div>
+<div class="paragraph">
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/shipdriver-another-beta-194030.html">Cruiser&#8217;s
+Forum ShipDriver Thread</a></p>
+</div>
+<div class="sect2">
+<h3 id="_1_what_and_why"><a class="anchor" href="#_1_what_and_why"></a>1. What and Why</h3>
+<div class="paragraph">
+<p>image::sd10.png</p>
+</div>
+<div class="paragraph">
+<p>ShipDriver is intended as a very basic ship simulator. It allows a
+simulated vessel to be driven across the chart and mimics the appearance
+of the OpenCPN screen when in actual use. AIS can be recorded and played
+back with the VDR plugin, allowing the display of collision avoidance
+situations. This could be useful for training purposes.The simulation
+can extend to multiplayer scenarios where AIS data from one simulator is
+sent across a network to another user.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_install"><a class="anchor" href="#_2_install"></a>2. Install</h3>
+<div class="paragraph">
+<p>Download the installer.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/Rasbats/ShipDriver_pi/releases" class="bare">https://github.com/Rasbats/ShipDriver_pi/releases</a></p>
+</div>
+<div class="paragraph">
+<p>Windows: Run the .exe file.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_standard_actions"><a class="anchor" href="#_3_standard_actions"></a>3. Standard actions</h3>
+<div class="paragraph">
+<p>Enable the plugin using Tools→Plugins and finding the ShipDriver entry.
+Press the Enable button.</p>
+</div>
+<div class="paragraph">
+<p>image::sd1.png</p>
+</div>
+<div class="paragraph">
+<p>The AIS Preferences are used later
+<a href="/opencpn/opencpn_user_manual/plugins/other/shipdriver#ais">(See this
+section)</a>. They can be left unchecked.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd2.png" alt="sd2.png">
+</div>
+</div>
+<div class="paragraph">
+<p>After 'Apply'/'Ok' the ShipDriver icon will appear in the toolbar of the
+main screen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd3.png" alt="sd3.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Press the icon to display the simulator control.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd5.png" alt="sd5.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Use right-click to bring up the menu for selecting the vessel start
+position. I have chosen a position close to a waypoint.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd4.png" alt="sd4.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Initially nothing happens but when you press the 'Start' button on the
+control the ownship icon appears, coloured red.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd8.png" alt="sd8.png">
+</div>
+</div>
+<div class="paragraph">
+<p>If you have not chosen a start position a warning notice will appear.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd7.png" alt="sd7.png">
+</div>
+</div>
+<div class="paragraph">
+<p>At the same time the Grib plugin form appears. Grib data is used for the
+sail option
+<a href="/opencpn/opencpn_user_manual/plugins/other/shipdriver#sail">(See
+this section)</a>. The Grib form can be closed at this point.</p>
+</div>
+<div class="paragraph">
+<p>The basic controls for using the simulator are shown here:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd8.1.png" alt="sd8.1.png">
+</div>
+</div>
+<div class="paragraph">
+<p>The best way of learning is to use the tiller and speed controls and
+watch the effect. When using the tiller an indicator at the top shows
+the rudder position. There is also a digital readout, either side of the
+'Midships' button.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd11.png" alt="sd11.png">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_options"><a class="anchor" href="#_4_options"></a>4. Options</h3>
+<div class="sect3">
+<h4 id="_auto"><a class="anchor" href="#_auto"></a>Auto</h4>
+<div class="paragraph">
+<p>The 'Auto' button directly controls the heading. 'Standby' stops the
+function. Using the tiller while the Auto function is active will
+override and stop 'Auto'.</p>
+</div>
+<div class="paragraph">
+<p>'Auto' active:
+image::sd14.png[sd14.png]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sail"><a class="anchor" href="#_sail"></a>Sail</h4>
+<div class="paragraph">
+<p>'Sail' uses the wind data from a Grib file to determine the speed of the
+boat. A polar from an 'Open 60' forms the basis for this. Press 'Sail'.
+By adjusting the heading the speed of the boat will change accordingly.</p>
+</div>
+<div class="paragraph">
+<p>If the Grib plugin is not using a file that covers the present
+time/location a warning appears.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd17.png" alt="sd17.png">
+</div>
+</div>
+<div class="paragraph">
+<p>The speed control is not active when the 'Sail' option is in use.</p>
+</div>
+<div class="paragraph">
+<p>when 'Sail' is active the button changes colour from green to red. Press
+'Sail' again to stop this mode.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ais"><a class="anchor" href="#_ais"></a>AIS</h4>
+<div class="paragraph">
+<p>In Tools→Plugins the 'Preferences' button for ShipDriver is used to
+select the AIS options.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd18.png" alt="sd18.png">
+</div>
+</div>
+<div class="paragraph">
+<p>When recording AIS a text file is created that can be played back with
+the VDR plugin. This records AIS data from 'Own Ship'. This data is
+nearly the same as seen when meeting a vessel transmitting a Class B AIS
+signal in the real world.</p>
+</div>
+<div class="paragraph">
+<p>AIS being recorded:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd19.png" alt="sd19.png">
+</div>
+</div>
+<div class="paragraph">
+<p>ShipDriver has been stopped and the AIS file is being played back using
+the VDR plugin:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd20.png" alt="sd20.png">
+</div>
+</div>
+<div class="paragraph">
+<p>By moving the vessel start position, re-starting and running ShipDriver,
+at the same time as playing the AIS with 'VDR_pi' a collision regs
+scenario can be created.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd21.png" alt="sd21.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Obtain the AIS data for the 'other vessel' by using 'right-click' on the
+target.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd22.png" alt="sd22.png">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ais_transmission"><a class="anchor" href="#_ais_transmission"></a>AIS Transmission</h4>
+<div class="paragraph">
+<p>Using Tools→Plugins and 'Preferences' for the plugin select the
+'Transmit' option.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd23.png" alt="sd23.png">
+</div>
+</div>
+<div class="paragraph">
+<p>When ShipDriver is in use an AIS signal will be transmitted from 'Own
+Ship'.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sd24.png" alt="sd24.png">
+</div>
+</div>
+<div class="paragraph">
+<p>This has limited use when OpenCPN is used on a single computer. However,
+on a network it is possible to transmit the data to another computer
+running ShipDriver allowing two users to simulate collision avoidance
+situations.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_faq"><a class="anchor" href="#_5_faq"></a>5. FAQ</h3>
+
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
