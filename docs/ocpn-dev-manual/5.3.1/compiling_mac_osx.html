@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/ocpn-dev-manual/5.3.1/compiling_mac_osx.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li>Developer Guide</li>
+    <li><a href="compiling_mac_osx.html">Compiling on macOS</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;4" alt="indexmenu_n&gt;4"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_compiling_on_macos"><a class="anchor" href="#_compiling_on_macos"></a>Compiling on macOS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_opencpn_compiling_for_macos"><a class="anchor" href="#_opencpn_compiling_for_macos"></a>OPENCPN - COMPILING FOR MACOS</h3>
+<div class="paragraph">
+<p>Revised: 11:00, 3 October 2019</p>
+</div>
+<div class="sect3">
+<h4 id="_xcode_version_11"><a class="anchor" href="#_xcode_version_11"></a>XCODE (Version 11)</h4>
+<div class="paragraph">
+<p>Download Xcode_11.xip from the Apple Developer website
+(<a href="https://developer.apple.com/download/more/" class="bare">https://developer.apple.com/download/more/</a>) - requires registration
+(free) at developer.apple.com website. Unzip and install Xcode_11</p>
+</div>
+<div class="paragraph">
+<p>Download Command_Line_Tools_for_Xcode_11.dmg from the Apple Developer
+website (<a href="https://developer.apple.com/download/more/" class="bare">https://developer.apple.com/download/more/</a>). Unzip and install
+Command_Line_Tools_for_Xcode_11</p>
+</div>
+<div class="paragraph">
+<p>The OpenCPN official build supports OS () X 10.9 and newer. Regardless
+of Xcode version, older OS () X SDK is not needed to build with support
+for older versions of macOS, but support for older macOS versions has to
+be explicitly turned on during the build of OpenCPN, wxWidgets and other
+libraries as described below.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_development_tools"><a class="anchor" href="#_development_tools"></a>DEVELOPMENT TOOLS</h4>
+<div class="paragraph">
+<p>There are required development tools that can be installed via Homebrew
+(<a href="https://brew.sh" class="bare">https://brew.sh</a>) (or similarly from MacPorts, but it is unsupported and
+untested).</p>
+</div>
+<div class="paragraph">
+<p>Install Home-brew:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install cmake and gettext via Homebrew:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ brew install cmake
+ $ brew install gettext</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add the gettext tools to your PATH environment variable using:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"'&gt;&gt; ~/.bash_profile</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install Tinyxml:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ brew install tinyxml</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And either restart Terminal.app or reload your environment using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> . ~/.bash_profile</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_required_external_libraries"><a class="anchor" href="#_required_external_libraries"></a>REQUIRED EXTERNAL LIBRARIES</h4>
+<div class="paragraph">
+<p>If you are building OpenCPN with SVG support (default), Cairo library is
+needed, install it using:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ brew install cairo</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Additionally, to support all the features of the wxSVG component,
+libexif should be installed using:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ brew install libexif</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you are building OpenCPN with extended archive support (default,
+required to download and unpack up to date GSHHG basemaps and pilot
+charts using the chart downloader plugin), libarchive library is needed,
+install it using:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ brew install xz libarchive</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>[Read following note - install only if necessary] - To produce binaries
+fully compatible with older macOS versions on newer macOS, libarchive
+must instead of from Homebrew, be built as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ export MACOSX_DEPLOYMENT_TARGET=10.9
+ $ wget https://libarchive.org/downloads/libarchive-3.3.3.tar.gz
+ $ tar zxf libarchive-3.3.3.tar.gz
+ $ cd libarchive-3.3.3
+ $ ./configure --without-lzo2 --without-nettle --without-xml2 --without-openssl --with-expat make
+ $ make install
+ $ cd ..</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_wxwidgets"><a class="anchor" href="#_wxwidgets"></a>wxWIDGETS</h4>
+<div class="paragraph">
+<p>OpenCPN is built upon wxWidgets, a package providing a cross-platform UI
+SDK. But to get results fully compatible with the official OpenCPN
+builds, which retain compatibility with macOS Mavericks (10.9) and
+newer, wxWidgets must be version 3.1.2 built manually as follows:
+Download wxWidgets-3.1.2.tar.bz2 from:
+<a href="https://www.wxwidgets.org/news/2018/12/wxwidgets-3.1.2-released/" class="bare">https://www.wxwidgets.org/news/2018/12/wxwidgets-3.1.2-released/</a> Unzip
+and move wxWidgets-3.1.2 folder to Desktop</p>
+</div>
+<div class="paragraph">
+<p>Install wxWidgets 3.1.2:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ mkdir build-release &amp;&amp; cd build-release
+ $ ../configure --with-cxx=11 --with-macosx-version-min=10.9 --enable-unicode --with-osx-cocoa --enable-aui --disable-debug --with-opengl
+ $ make -j2
+ $ sudo make install</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_packages_tool"><a class="anchor" href="#_packages_tool"></a>PACKAGES TOOL</h4>
+<div class="paragraph">
+<p>To create .pkg files for plugins, download the “Packages” tool from
+<a href="http://s.sudre.free.fr/Software/Packages/about.html">http:<em>s.sudre.free.fr/Software/Packages/about.html</a>]
+([[http:</em>s.sudre.free.fr/Software/Packages/about.html|http://s.sudre.free.fr/Software/Packages/about.html]).
+Install Packages.dmg by double-clicking the file and following the
+instructions - no need to open Packages.app as the installer configures
+the necessary command line tools for Packages.</p>
+</div>
+<div class="paragraph">
+<p>Check Configuration for problems or errors:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ brew doctor</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If everything is installed OK, you should get the message "Your system
+is ready to brew"</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_creating_an_installable_package_and_installing_opencpn"><a class="anchor" href="#_creating_an_installable_package_and_installing_opencpn"></a>CREATING AN INSTALLABLE PACKAGE AND INSTALLING OPENCPN</h4>
+<div class="paragraph">
+<p>Officially OpenCPN is built from the command line, but it&#8217;s also
+possible to use Apple&#8217;s Xcode IDE for development. Regardless of which
+method we choose, the first steps are the same: Get the OpenCPN source:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ git clone https://github.com/OpenCPN/OpenCPN.git</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create the build directory, where our local builds will take place, so
+that we don&#8217;t work directly in the source tree:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ mkdir OpenCPN/build &amp;&amp; cd OpenCPN/build</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Build Method 1</strong> - From the command line Prepare our build environment:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ export MACOSX_DEPLOYMENT_TARGET=10.9
+ $ cmake ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Build OpenCPN:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ make</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To build a debug version use:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ export MACOSX_DEPLOYMENT_TARGET=10.9
+ $ cmake -DCMAKE_BUILD_TYPE=Debug ..
+ $ make</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Build Method 2</strong> - Using Xcode Create the Xcode project:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ export MACOSX_DEPLOYMENT_TARGET=10.9
+ $ cmake -G Xcode ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Open the <code>OpenCPN.xcodeproj</code> file in Xcode, and use the “Build”, “Run”,
+“Debug”, etc features as normal. To use the “Run” action you need to
+build the “OpenCPN” target rather than the default “ALL_BUILD” target.</p>
+</div>
+<div class="paragraph">
+<p>Build and install OpenCPN: ​</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ make install</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>WARNING - Do The Following:</p>
+</div>
+<div class="paragraph">
+<p>The default install location is (/usr/local/bin). Everything from
+/usr/local/bin get&#8217;s packaged into your DMG which is not desirable. To
+avoid this, change the install location with 'cmake' as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ cmake -DCMAKE_INSTALL_PREFIX=/Users/dsr/tmp ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Some developers have reported that the install step copies a redundant
+set of the wxWidgets dynamic library into the install directory, causing
+OpenCPN to fail. This is intended, but gets annoying for local bundles
+not intended to be distributed. A kludgey fix:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ sudo rm /usr/local/bin/OpenCPN.app/Contents/MacOS/libwx*dylib</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Build the installable DMG:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ make create-dmg</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Depending on your local system, during both steps above you may observe
+insufficient permissions on some files. Either fix the permissions or
+use sudo to run make install/create-dmg</p>
+</div>
+<div class="paragraph">
+<p>To install the application, double-click on the DMG in Finder and drag
+OpenCPN.app to the Applications directory.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_building_plugins_example"><a class="anchor" href="#_building_plugins_example"></a>BUILDING PLUGINS (example)</h4>
+<div class="paragraph">
+<p>Building Watchdog_pi from dev branch:</p>
+</div>
+<div class="paragraph">
+<p>Get source code:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ git clone git://github.com/seandepagnier/watchdog_pi</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Build from command line:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> $ mkdir ~/watchdog_pi/build &amp;&amp; cd ~/watchdog_pi/build
+ $ export MACOSX_DEPLOYMENT_TARGET=10.09
+ $ cmake ..
+ $ make
+ $ make create-pkg</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Double-click on the package in
+~/watchdog_pi/build/Watchdog-Plugin-ov50_2.4.pkg This installs into
+/Applications/OpenCPN.app</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_earlier_instructions"><a class="anchor" href="#_earlier_instructions"></a>EARLIER INSTRUCTIONS</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_compiling_v5_0"><a class="anchor" href="#_compiling_v5_0"></a>Compiling v5.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These instructions are valid for the current codebase.
+=== Xcode</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install Xcode from the Mac App Store (free registration at
+developer.apple.com required)</p>
+</li>
+<li>
+<p>Install Command Line Tools for Xcode (available from
+developer.apple.com)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The OpenCPN official build supports OS X 10.9 and newer. Regardless of
+Xcode version, older OS X SDK is not needed to build with support for
+older versions of macOS, but support for older macOS versions has to be
+explicitly turned on during the build of OpenCPN, wxWidgets and other
+libraries as described below.</p>
+</div>
+<div class="sect2">
+<h3 id="_development_tools_2"><a class="anchor" href="#_development_tools_2"></a>Development Tools</h3>
+<div class="paragraph">
+<p>There are required development tools that can be installed via
+<a href="https://brew.sh">Homebrew</a> (or similarly from MacPorts, but it is
+unsupported and untested).</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install cmake and gettext via Homebrew</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ brew install cmake
+$ brew install gettext</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add the gettext tools to your PATH environment variable using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ echo 'export PATH="/usr/local/opt/gettext/bin:$PATH"'&gt;&gt; ~/.bash_profile</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and either restart Terminal.app or reload your environment using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>. ~/.bash_profile</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install the “Packages” tool for creating .pkg files for plugins from
+<a href="http://s.sudre.free.fr/Software/Packages/about.html" class="bare">http://s.sudre.free.fr/Software/Packages/about.html</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_required_external_libraries_2"><a class="anchor" href="#_required_external_libraries_2"></a>Required external libraries</h3>
+<div class="paragraph">
+<p>If you are building OpenCPN with SVG support (default), Cairo library is
+needed, install it using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ brew install cairo</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>additionally, to support all the features of the wxSVG component,
+libexif should be installed using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ brew install libexif</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you are building OpenCPN with extended archive support (default,
+required to download and unpack up to date GSHHG basemaps and pilot
+charts using the chart downloader plugin), libarchive library is needed,
+install it using</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ brew install xz libarchive</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To produce binaries fully compatible with older macOS versions on newer
+macOS, libarchive must instead of from Homebrew built as follows</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>export MACOSX_DEPLOYMENT_TARGET=10.9
+wget https://libarchive.org/downloads/libarchive-3.3.3.tar.gz
+tar zxf libarchive-3.3.3.tar.gz
+cd libarchive-3.3.3
+./configure --without-lzo2 --without-nettle --without-xml2 --without-openssl --with-expat
+make
+make install
+cd ..</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wxwidgets_2"><a class="anchor" href="#_wxwidgets_2"></a>wxWidgets</h3>
+<div class="paragraph">
+<p>OpenCPN is built upon wxWidgets, a package providing a cross-platform UI
+SDK.</p>
+</div>
+<div class="paragraph">
+<p><em>But to get results fully compatible with the official OpenCPN builds</em>,
+which retain compatibility with macOS Maverics (10.9) and newer,
+<em>wxWidgets must be version 3.1.2 built manually</em> as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ mkdir build-release
+$ cd build-release
+$ ../configure --with-cxx=11 --with-macosx-version-min=10.9 --enable-unicode --with-osx-cocoa --enable-aui --disable-debug --with-opengl --without-subdirs
+$ make -j2
+$ sudo make install</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_building_opencpn"><a class="anchor" href="#_building_opencpn"></a>Building OpenCPN</h3>
+<div class="paragraph">
+<p>Officially OpenCPN is built from the command line but it&#8217;s also possible
+to use Apple&#8217;s Xcode IDE for development. Regardless of which method we
+choose, the first steps are the same:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Get the OpenCPN source:</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ git clone https://github.com/OpenCPN/OpenCPN.git</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create the build directory, where our local builds will take place, so
+that we don&#8217;t work directly in the source tree:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ mkdir OpenCPN/build &amp;&amp; cd OpenCPN/build</pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_build_method_1_from_the_command_line"><a class="anchor" href="#_build_method_1_from_the_command_line"></a>Build Method 1 - From the command line</h4>
+<div class="paragraph">
+<p>Prepare our build environment:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ export MACOSX_DEPLOYMENT_TARGET=10.9
+$ cmake ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Build OpenCPN:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ make</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To build a debug version use:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ export MACOSX_DEPLOYMENT_TARGET=10.9
+$ cmake -DCMAKE_BUILD_TYPE=Debug ..
+$ make</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_build_method_2_using_xcode"><a class="anchor" href="#_build_method_2_using_xcode"></a>Build Method 2 - Using Xcode</h4>
+<div class="paragraph">
+<p>Create the Xcode project:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ export MACOSX_DEPLOYMENT_TARGET=10.9
+$ cmake -G Xcode ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Open the <code>OpenCPN.xcodeproj</code> file in Xcode, and use the “Build”, “Run”,
+“Debug”, etc features as normal. To use the “Run” action you need to
+build the “OpenCPN” target rather than the default “ALL_BUILD” target.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installing_opencpn_and_creating_an_installable_package"><a class="anchor" href="#_installing_opencpn_and_creating_an_installable_package"></a>Installing OpenCPN and Creating an Installable Package</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Build and install OpenCPN: ​</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ make install</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The default install location (/usr/local/bin) can be changed with cmake
+(<strong>And should be</strong> in case you want to create the DMG image, if you don&#8217;t
+change it, everything from /usr/local/bin get&#8217;s packaged into your DMG.
+You have been warned.):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ cmake -DCMAKE_INSTALL_PREFIX=/Users/dsr/tmp ..</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Some developers have reported that the install step copies a redundant
+set of the wxWidgets dynamic library into the install directory, causing
+OpenCPN to fail. This is of course intended, but gets annoying for local
+bundles not intended to be distributed. A kludgey fix:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ sudo rm /usr/local/bin/OpenCPN.app/Contents/MacOS/libwx*dylib</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Build the installable DMG:</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>$ make create-dmg</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Depending on your local system, during both steps above you may observe
+insufficient permissions on some files. Either fix the permissions or
+use <code>sudo</code> to run <code>make install/create-dmg</code></p>
+</div>
+<div class="paragraph">
+<p>To install the application, double-click on the DMG in Finder and drag
+OpenCPN.app to the Applications directory.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

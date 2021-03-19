@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/tutor-manual/5.3.1/pi_installler_dev_setup.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="tutor-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Tutor Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="developer_guide.html">OpenCPN Tutor Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="developer_guide.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="developer_guide.html">OpenCPN Tutor Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li><a href="pi_installler_dev_setup.html">PI Manager Dev Setup</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="file:///home/mk/src/dokuwiki/tutor/modules/ROOT/pages/pi_installler_dev_setup.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;10" alt="indexmenu_n&gt;10"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_pi_manager_dev_setup"><a class="anchor" href="#_pi_manager_dev_setup"></a>PI Manager Dev Setup</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/leamas/OpenCPN/wiki">PIugin Manager Github Wiki</a>
+Extensive documentation</p>
+</div>
+<div class="sect2">
+<h3 id="_build_and_deploy_plugins"><a class="anchor" href="#_build_and_deploy_plugins"></a>Build and Deploy Plugins</h3>
+<div class="paragraph">
+<p>Alec Leamas is the author of PI Installer and should be given extensive
+credit &amp; thanks for his many months of work on the Plugin Installer. Jon
+Gough has also generously spent many months to improve the PI Dev
+experience by his extensive work revising and improving the Build and
+Deploy side of PI Installer, the CMake and CI files needed at the head
+of any plugin that supports PI Installer.</p>
+</div>
+<div class="paragraph">
+<p>To understand more detail about the entire system, please also review
+<a href="https://github.com/leamas/OpenCPN/wiki">Plugin Installer Documents</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> DEVELOP Repos.  &lt;--Key #1--&gt;       BUILD     &lt;--Key #2--&gt;     DEPLOY Repos.
+      |   |                             |
+      |   |                             |
+    GITHUB              CIRCLECI - APPVEYOR - TRAVIS            CLOUDSMITH</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>NOTE:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>It is important to get Key #1 and Key #2 entered correctly, provided
+you need them.</p>
+</li>
+<li>
+<p>KEY #1 is only needed to PUSH the build back to your Github RELEASE
+Repository.</p>
+</li>
+<li>
+<p>Github OpenSource accounts are Public and easily accessible for
+download by the BUILD services.</p>
+</li>
+<li>
+<p>KEY #2 is needed to give the BUILD services the ability to PUSH to
+CLOUDSMITH.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pi_manager_system_consists_of_three_parts"><a class="anchor" href="#_pi_manager_system_consists_of_three_parts"></a>PI Manager System consists of three parts:</h3>
+<div class="sect3">
+<h4 id="_1_plugin_manager_inside_opencpn"><a class="anchor" href="#_1_plugin_manager_inside_opencpn"></a>1. Plugin Manager inside OpenCPN</h4>
+<div class="paragraph">
+<p>The plugin manager is now in OpenCPN master branch. Make a fresh build
+of opencpn from this branch. There are occasional improvements made now.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_plugin_build_deploy_by_plugin_devs"><a class="anchor" href="#_2_plugin_build_deploy_by_plugin_devs"></a>2. Plugin Build &amp; Deploy by Plugin Devs</h4>
+<div class="paragraph">
+<p>FIXME We need to simplify</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Step by step</p>
+</li>
+<li>
+<p>List of files needed</p>
+</li>
+<li>
+<p>Provide two sample file packages for download</p>
+</li>
+<li>
+<p>To be applied to the plugin (provided they are working)&gt;</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>CMake and CI Files from Jon Gough&#8217;s much improved
+<a href="https://github.com/jongough/testplugin_pi">testplugin_pi</a> using the
+"cmake_flatpak_test" branch. These are pre-configured with the code
+required to create the compressed binary and metadata xml files needed
+for the PI Installer to work. These files create plugin binary and
+metadata xml catalog files for various operating systems, utilizing git,
+the plugin&#8217;s GitHub repository, Appveyor, Travis and Circleci to build,
+and the Cloudsmith repository for deployments. The earlier
+<a href="https://github.com/mauroc/squiddio_pi">squiddio_pi</a> CMake and CI Files
+were a significant step in the development process, however we recommend
+use of the files in Testplugin_pi. Also please note that the CI parts,
+while useful, are not necessary to use the installer. As long as there
+is a working file with metadata and a downloadable tarball everything is
+fine, at least for a starter.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_metadata_repositorygit_opencpnplugins"><a class="anchor" href="#_3_metadata_repositorygit_opencpnplugins"></a>3. Metadata Repository:Git OpenCPN/Plugins</h4>
+<div class="paragraph">
+<p>FIXME</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Diagram: to explain relationship between CLOUDSMITH REPO and
+OPENCPN/PLUGINS</p>
+</li>
+<li>
+<p>Purpose: To collect all the plugins metadata.xml&#8217;s for the tarballs
+and push them to opencpn/plugins master:beta:alpha branches.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/OpenCPN/plugins/blob/master/DEVELOPER-INFO.md">OpenCPN
+plugins project README</a> The github repository that stores plugin
+metadata files (submitted by Pull Request), and the python code to
+create a single "ocpn-plugin.xml" file of plugin metadata for use by the
+PI Installer. This file contains all the necessary PI information and
+locations of files. Dave R. has control of this github repository and
+will accept PRs</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_assumed_cloud_services"><a class="anchor" href="#_assumed_cloud_services"></a>Assumed Cloud Services</h3>
+<div class="paragraph">
+<p>We assume you have or are able to configure the following free
+opensource accounts/services:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Code Repository <a href="https://github.com/">GitHub</a></p>
+</li>
+<li>
+<p>Deployment Repository <a href="https://cloudsmith.io/">Cloudsmith</a></p>
+</li>
+<li>
+<p>Build Tool <a href="https://circleci.com/">CircleCI</a> Needs authorizations from
+Code &amp; Deploy repositories. Preferred.</p>
+</li>
+<li>
+<p>Build Tool <a href="https://www.appveyor.com/">Appveyor</a> Needs authorizations
+from Code &amp; Deploy repositories.</p>
+</li>
+<li>
+<p>Build Tool <a href="https://travis-ci.org/">Travis-CI.org</a> Needs authorizations
+from Code &amp; Deploy repositories.</p>
+</li>
+<li>
+<p>Build Tool <a href="https://travis-ci.com/">Travis-CI.com</a> Needs authorizations
+from Code &amp; Deploy repositories.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>These next steps add build and deployment of multiple OS to Git Release
+and Cloudsmith for PI Installer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_plugins_adaptation"><a class="anchor" href="#_plugins_adaptation"></a>Plugins Adaptation</h3>
+<div class="paragraph">
+<p>You may have to adapt the plugin in various ways. Please review the
+items in this link
+<a href="https://github.com/leamas/OpenCPN/wiki/Plugin-adaptation">Plugin
+Adaptation</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github_personal_token_generation_and_use"><a class="anchor" href="#_github_personal_token_generation_and_use"></a>GITHUB Personal Token Generation and Use</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>KEY #1 provides your BUILD (Appveyor,Travis-ci or Circleci) service the
+ability to PUSH artifacts (tarballs, xml, packages) back to your GitHub
+RELEASE repository.</p>
+</div>
+<div class="paragraph">
+<p>Provide access for APPVEYOR, TRAVIS-CI and CIRCLECI to your plugin&#8217;s
+GitHub repository, so that these accounts can clone the repository in
+order to build the plugin. FIXME (This needs to be confirmed, it is an
+opensource public account, so no auth_key may be needed.)</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>From your GITHUB account [Username]</p>
+</li>
+</ol>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    - Select Settings
+    - Pick Developer Settings
+    - Pick Personal Access Settings
+    - Enter 'git-ptoken-[plugin]-into-appveyor' or 'git-ptoken-[plugin]-into-circleci' or similar, etc
+    - Then copy and save the 'number' for use below to provide CIRCLECI, APPEVEYOR and TRAVIS with credentials to access and download from your personal GitHib repository (for each plugin and each service).
+    - You will need a separate Github Personal Access Token for each plugin, and each service (Appveyor, Travis)
+- From your CIRCLECI account
+    - See [[:opencpn:developer_manual:pi_installler_build_deploy#circleci_build_account|CIRCLECI (Build Account)]]
+- From your APPVEYOR account
+    - Plugin, then select Setting (gear on top line to the right)
+    - Pick Environment (left menu)
+    - Pick Environment variables (in the center entry area).
+    - Pick Add Variable.
+    - Enter name "GIT-PTOKEN-[pluginname]-INTO-APPVEYOR"
+    - Enter value, which you saved, from GitHub.
+    - Pick SAVE at the bottom.
+    - Now simply use "GIT-PTOKEN-[pluginname]-into-APPVEYOR" with your appveyor.yml file
+    - Note: Appveyor used to give you an encryption number to at the bottom of the appveyor.yml file [[:opencpn:developer_manual:pi_installler_build_deploy#appveyoryml|Appveyor.yml file example]].
+- For TRAVIS-CI  [[https://docs.travis-ci.com/user/encryption-keys/|Travis-CI Encryption Docs]]
+    - First install [[:opencpn:developer_manual:ci-push-build-to-git#c_install_travis_cli_to_encrypt_a_github_secure_public_key|Travis CLI]] to encrypt a github secure public key.
+    - Then [[https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:developer_manual:ci-push-build-to-git#d_encrypt_a_github_api_token_with_travis_encrytion|Encrypt a Github API Token with Travis CLI Encryption]] using the Personnal Access Token 'number' you saved from Git.
+    - Then use the resulting 'encryption' in the [[:opencpn:developer_manual:pi_installler_build_deploy#travisyml|.Travis.yml file example]].
+    - For more information about Travis encryption of a Github Personnal Access Token see [[:opencpn:developer_manual:ci_travis_encryption_windows|CI:Travis Encryption for Windows]]
+    - For more information about Travis encryption using Linux and TravisCI see [[https://docs.travis-ci.com/user/encrypting-files/|Travis Encrypting]].
+- After setup, Refer to [[:opencpn:developer_manual:ci-push-build-to-git|How to push build to Git using Appveyor and Travis]]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/rgleason/squiddio_pi/tree/reset35-rg">Working Example
+deploys/uploads to Cloudsmith and GitHub Release</a><br>
+<a href="https://github.com/mauroc/squiddio_pi/issues/77">GitHub Issues discussion
+here Deploy to your repository is simple&#8230;&#8203; #77</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_circleci_build_account"><a class="anchor" href="#_circleci_build_account"></a>CIRCLECI (Build Account)</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open a (free) open-source account on circleci.com
+<a href="https://circleci.com/signup/">Signup</a> with your GitHub account</p>
+</li>
+<li>
+<p>You will be allowing CircleCI certain types of access to your GitHub
+account.</p>
+</li>
+<li>
+<p>Start following your GitHub plugin project on Circleci.</p>
+</li>
+<li>
+<p>In CircleCI</p>
+</li>
+</ol>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    - Under settings create a "context" with [username]
+    - Prerequisites: Config.yml uses workflows and you must be an admin.
+    - Under settings "Enable Github Checks" [[https://circleci.com/docs/2.0/enable-checks/#section=projects|https://circleci.com/docs/2.0/enable-checks/#section=projects]]
+    - Under Settings &gt; VCS &gt; "Manage Github Checks"? Yes
+    - [[https://circleci.com/docs/2.0/managing-api-tokens/#section=projects|Environment Settings and API tokens]]
+    - Context- Contexts provide a mechanism for securing and sharing environment variables across projects. The environment variables are defined as name/value pairs and are injected at runtime. [[https://circleci.com/docs/2.0/contexts/|https://circleci.com/docs/2.0/contexts/]]
+- In **//Project &gt; Build Settings &gt; Build Settings &gt; Environmental Variables//**  to set up security.
+- See [[:opencpn:developer_manual:pi_installler_build_deploy#cloudsmith_api_key_generation_and_use|CLOUDSMITH_API_KEY Generation and Use]]
+- Add environment variables to the job. You can add sensitive data (e.g. API keys) here, Private environment variables enable you to store secrets safely even when your project is public, see Building Open Source Projects for associated settings information. Use Contexts to further restrict access to environment variables from within the build, refer to the "Restricting a Context" documentation.
+- [[https://circleci.com/docs/2.0/oss/|Building Open Source Projects]]
+- Put your //**Cloudsmith Deployment Key**//  in your //**Circleci account&gt; Settings&gt; [user]&gt; squiddio_pi&gt; Env Variables**//  as "CLOUDSMITH_API_KEY" .
+- The squiddio_pi/ci/circleci-upload.sh file uses the name "CLOUDSMITH_API_KEY"
+- Typical Setttings: Since building a PR is one way to make sure it works, if someone wants to help you out, therefor please enable the //Build forked pull requests//  option which should make circleci build all PRs. If //Pass secrets to builds from forked pull requests//, is Disabled, it will not be able to upload anything.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/opencpn/dev/circleci-build-all-pr.png" alt="CircleCI build all PR" width="600"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cloudsmith_deployment_repository"><a class="anchor" href="#_cloudsmith_deployment_repository"></a>CLOUDSMITH Deployment Repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create your own CLOUDSMITH Deployment Repository. The shipped
+configuration uses cloudsmith.io. This is not a requirement in any way,
+but this is how to get the shipped setup working. Setup a Cloudsmith.IO
+Free Opensource Account:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to Cloudsmith.io <a href="https://cloudsmith.io/user/signup/" class="bare">https://cloudsmith.io/user/signup/</a> to sign up for
+a free opensource account using your github account.</p>
+</li>
+<li>
+<p>After the 7 day trial, you may be asked for credit card, as long as
+you stay public opensource with the base services, it should not cost
+you. Don&#8217;t get alarmed when it looks like they want money. Open-source
+repos are free.</p>
+</li>
+<li>
+<p>Create [user name] For Example: "firstname-lastname"</p>
+</li>
+<li>
+<p>Create 3 repositories named</p>
+</li>
+</ol>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    - [pluginname_pi]-prod
+    - [pluginname_pi]-beta
+    - [pluginname_pi]-alpha
+- OR (if you plan on deploying multiple plugins)
+    - opencpn-plugins-prod
+    - opencpn-plugins-beta
+    - opencpn-plugins-alpha
+- Which will store compressed binary files and metadata xml catalog built by circleci.
+- Create a [new repository] by clicking the "+" and then use one of the names above. Make sure you fill in the 'Slug' with exactly the same text as you used in 'Name' or you repository may not work as you expect and debugging is difficult.
+- Make sure you select "Opensource" (not Public) and complete the rest of the information appropriately, see below.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/opencpn/dev/cloudsmith-create-repository.png" alt="Cloudsmith create Repository" width="600"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>When completed the new repository should have a "heart" icon which
+when hovered over shows "Opensource".</p>
+</li>
+<li>
+<p>For each new repository select:</p>
+</li>
+</ol>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    - Under "Set me up" dropdown on the right side, select "Raw"
+    - See notes below for setting up [[:opencpn:developer_manual:pi_installler_build_deploy#cloudsmith_api_key_generation_and_use|CLOUDSMITH_API_KEY Generation and Use]].
+    - Test each repository to make sure you can upload and download a file using the web UI.
+    - Then at the bottom "Upload Packages" button.</pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cloudsmith_api_key_generation_and_use"><a class="anchor" href="#_cloudsmith_api_key_generation_and_use"></a>CLOUDSMITH_API_KEY Generation and Use</h3>
+<div class="paragraph">
+<p>KEY #2 provides your BUILD service the ability to PUSH artifacts
+(tarballs, xml, packages) to your CLOUDSMITH repository.</p>
+</div>
+<div class="paragraph">
+<p>Provide your unique CLOUDSMITH_API_KEY to other services such as
+CIRCLECI, TRAVIS and APPVEYOR to give them permission to DEPLOY to
+CLOUDSMITH.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Copy the API key from your CLOUDSMITH Account on
+<a href="https://cloudsmith.io">https:<em>cloudsmith.io</a>] by - Get the key from
+cloudsmith account page. Click the user name icon, upper right, and you
+will be able to copy the key to clipboard. - Left click your logon-id in
+the top right of the cloudsmith main page - Then click 'API Key' - You
+will be asked for 'Elevated Privileges' and need to supply your
+password. - Then your key will be displayed. - Copy this (either select
+the whole key and copy or click the paper clip icon at the right hand
+end of the key line) - Now use your Cloudsmith key in the appropriate
+accounts below to provide access to Cloudsmith for deployment. - Sign
+into your CIRCLECI account on
+[[https:</em>circleci.com|https:<em>circleci.com]] * Select 'Settings' in the
+left hand vertical toolbar * Then 'Projects' * Then the settings icon
+(gear wheel) of the project (plugin_pi) you want to use. * Click
+'Environment Variables' under 'BUILD SETTINGS', * Click "Add Variable" *
+Paste the Cloudsmith key into the Value Field.. * Add
+'CLOUDSMITH_API_KEY' into the Name Field. * Close by clicking Add
+Variable. - Sign into your APPVEYOR account on appveyor.com
+[[https:</em>appveyor.com|https:<em>appveyor.com]] * First add the plugin
+project. The plugin name should show in the upper left. * From the
+plugin page go to Settings in the top menu. * Select Environment from
+the side menu. * Under Environment Variables select Add a Variable. *
+Paste the Cloudsmith key into the Variable Field and enter
+CLOUDSMITH_API_KEY into the Name Field. * Click Add Variable. - Sign
+into your TRAVIS account on
+[[https:</em>travis-ci.org|https://travis-ci.org]</p>
+</li>
+</ol>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>      * Select the plugin project so that it shows at the top.(eg: weather_routing_pi)
+      * Select from the upper right "More Options". Then "Settings" from the dropdown.
+      * Scroll down to Environment Variables.
+      * Paste the Cloudsmith key into the Value Field and enter CLOUDSMITH_API_KEY into the Name Field.
+      * I select All Branches.
+      * Select Add. See the screenshot.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="/opencpn/dev/travis-cloudsmith_api_key.png" alt="Travis Cloudsmith API Key" width="400"></span></p>
+</div>
+<div class="paragraph">
+<p>Once this is done the deploy to Cloudsmith should work.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cloudsmith_retention_policy_settings"><a class="anchor" href="#_cloudsmith_retention_policy_settings"></a>Cloudsmith Retention Policy Settings</h3>
+<div class="paragraph">
+<p>Example: A repository with 4gb and about 5000 packages used for
+development. Retention policy set some time ago but these have not
+disappeared. Deleting them 25 at a time is impractical. Response: This
+is normally a misunderstanding of how the retention functionality works.
+Retention Policy only kicks in when a repository is uploaded, even for
+time-based retention. Also, you&#8217;ve currently got "Group Packages By
+Name" enabled, which means it is is counting per package name, rather
+than the packages in total. The 33 packages count you have means you&#8217;d
+have to have 34 versions of a named package before it deletes them. If
+you&#8217;d like to keep 30-days worth of absolute packages, just untick the
+box and we&#8217;ll trim it down to 30 days after the next upload.</p>
+</div>
+<div class="paragraph">
+<p>Some more information on how retention works here:
+<a href="https://help.cloudsmith.io/docs/retention-lifecycle" class="bare">https://help.cloudsmith.io/docs/retention-lifecycle</a></p>
+</div>
+<div class="paragraph">
+<p>Also, for manual actions, at the bottom of the packages list page,
+there&#8217;s an "X Per Page" selector, where you can change the setting from
+25 packages to 500. So if you really needed a manual action to
+delete/copy/move many packages at once, you can do it like that.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cloudsmith_repositories_examples"><a class="anchor" href="#_cloudsmith_repositories_examples"></a>Cloudsmith Repositories Examples</h3>
+<div class="sect3">
+<h4 id="_opencpn_plugin_repositories"><a class="anchor" href="#_opencpn_plugin_repositories"></a>OpenCPN Plugin Repositories</h4>
+<div class="paragraph">
+<p><a href="https://cloudsmith.io/~david-register/repos/" class="bare">https://cloudsmith.io/~david-register/repos/</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cloudsmith.io/" class="bare">https://cloudsmith.io/</a><sub>david-register/repos/opencpn/packages/[https:<em>cloudsmith.io/</sub>david-register/repos/opencpn/packages/]]
+*
+[[https:</em>cloudsmith.io/<sub>david-register/repos/opencpn-unstable/packages/|https://cloudsmith.io/</sub>david-register/repos/opencpn-unstable/packages/]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://cloudsmith.io/~alec-leamas/repos/" class="bare">https://cloudsmith.io/~alec-leamas/repos/</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cloudsmith.io/~alec-leamas/repos/opencpn-plugins-pkg/packages/">alec-leamas/opencpn-plugins-pkg</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://cloudsmith.io/~rick-gleason/repos/" class="bare">https://cloudsmith.io/~rick-gleason/repos/</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cloudsmith.io/~rick-gleason/repos/opencpn-plugins-beta/packages/">rick-gleason/opencpn-plugins-beta</a></p>
+</li>
+<li>
+<p><a href="https://cloudsmith.io/~rick-gleason/repos/opencpn-plugins-pkg/packages/">rick-gleason/opencpn-plugins-pkg</a></p>
+</li>
+<li>
+<p><a href="https://cloudsmith.io/~rick-gleason/repos/opencpn-plugins-prod/packages/">rick-gleason/opencpn-plugins-prod</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://cloudsmith.io/~jon-gough/repos/" class="bare">https://cloudsmith.io/~jon-gough/repos/</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://cloudsmith.io/~jon-gough/repos/testplugin_pi-beta/packages/">jon-gough/testplugin_pi-beta</a></p>
+</li>
+<li>
+<p><a href="https://cloudsmith.io/~jon-gough/repos/testplugin_pi-pkg/packages/">jon-gough/testplugin_pi-pkg</a></p>
+</li>
+<li>
+<p><a href="https://cloudsmith.io/~jon-gough/repos/testplugin_pi-beta/packages/">jon-gough/testplugin_pi-prod</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setup_configure_plugin_for_pi_installer"><a class="anchor" href="#_setup_configure_plugin_for_pi_installer"></a>Setup: Configure Plugin for PI Installer</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_summary_of_process"><a class="anchor" href="#_summary_of_process"></a>Summary of Process</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure your plugin&#8217;s files by replacing cmake and circleci scripts
+and modify them appropriately.</p>
+</li>
+<li>
+<p>Create free opensource accounts with circleci and cloudsmith, and set
+up opensource repositories.</p>
+</li>
+<li>
+<p>Test building and deployment to the cloudsmith "beta" repository.</p>
+</li>
+<li>
+<p>Use Opencpn with the PI Installer to open the new [ocpn-plugin.xml
+metadata catalog to confirm installation and test the plugin.</p>
+</li>
+<li>
+<p>After testing, issue a new version, pushing new binaries to cloudsmith
+repositories, along with a new ocpn-plugin.xml catalog file.</p>
+</li>
+<li>
+<p>See <a href="/opencpn/developer_manual/pi_installer_procedure.adoc">PI Installer
+Procedure Build-Deploy</a> below, for more detail.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_cmake_and_script_files"><a class="anchor" href="#_add_cmake_and_script_files"></a>Add CMake and Script Files</h3>
+<div class="paragraph">
+<p>FIXME</p>
+</div>
+<div class="paragraph">
+<p>Your plugin will need to be augmented with new CMake and script files.
+There are two versions you can select from Frontend1 and Frontend2.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The main Frontend1 example is in
+<a href="https://github.com/bdbcat/oesenc_pi">github.com\bdbcat\oesenc_pi</a> and a
+more annotated version is in
+<a href="https://github.com/rgleason/squiddio_pi/tree/frontend1">rgleason/squiddio_pi
+branch frontend1</a></p>
+</li>
+<li>
+<p>The main Frontend2 example is in
+<a href="https://github.com/jongough/testplugin_pi">github.com/jongough/testplugin_pi</a>
+and more annotated
+ashttps://github.com/rgleason/squiddio_pi/tree/frontend2[github.com/rgleason/squiddio_pi
+Branch frontend2]</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The simplest way is to copy the new files in ci &amp; cmake to your system
+and make the requisite changes to the CMakeLists.txt, of which there
+shouldn&#8217;t be too many as it is really the individual plugins file, i.e.
+has all the customization in.</p>
+</div>
+<div class="paragraph">
+<p>All changes for customisation should be constrained to the
+CMakeLists.txt file, because all the other files are parameter driven
+and so 'should' be the same between plugins. So all the files in the:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>'cmake' directory, including the in-files directory, are the same for
+every plugin, there should be no customisation to these files. There are
+'extra' cmake files which a plugin may use, i.e. FindPortaudio.cmake for
+the weather_routing_pi, but these are supplied by the plugin and are
+referenced vis CMakeLists.txt in the plugin customisation section.</p>
+</li>
+<li>
+<p>'ci' directory should not require hand customisation as again all the
+files are parameter (global variable) driven</p>
+</li>
+<li>
+<p>'.circleci' directory should not require hand customisation as again
+all the files are parameter (global variable) driven</p>
+</li>
+<li>
+<p>'debian' directory should not require hand customisation</p>
+</li>
+<li>
+<p>'mingw' directory should not require hand customisation</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Updates of plugins require copying the above directories in place and
+then carefully updating the CMakeLists.txt file by referencing the
+testplugin_pi version to change it to the new format and include all the
+'standard' parts that are needed. It should be quite easy to get it
+working, while testing on the web takes longer as jobs need to finish,
+to determine what needs fixing.</p>
+</div>
+<div class="paragraph">
+<p>So if you look through the first section of the CMakeLists.txt you will
+see where you set the cloudsmith user and repository name as well as the
+'special' stuff for the xml file. The next section down you may need to
+change a few default settings, i.e. 'USE_GL', or some special version of
+c++ that is needed. In the current file the following section (line 194
+onwards) is where you define all the files to be used. You will need to
+keep 'SRCS' as the source list, but the rest of it is up to you. You
+will also need the last section which does the rest of the build and
+package process.</p>
+</div>
+<div class="paragraph">
+<p>I would not try to 'combine' this process with any other in the same
+'stream' or you are likely to have problems. When I make changes just
+copy the new files in place and, if needed, make the co-requisite
+changes to CMakeLists.txt .</p>
+</div>
+<div class="paragraph">
+<p>The idea of this process is that it is a 'black box' to most and it
+should 'just work'. You will notice that I have changed the names of the
+repositories to '…-prod', '…-beta' and '…-alpha', it just seemed to
+match what was going into them. The destination repository is controlled
+by what you are doing, i.e. -</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Any non-master branch network build -&gt; alpha repository
+  Master build without tag and non-master branch build with tag -&gt; beta repository
+  Master build with tag -&gt; prod repository</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>All 'installation' files, 'deb', 'dmg', 'exe', etc will also go into the
+same repository, but they will have the current naming strategy, i.e.
+will start with 'opencpn-plugin-' the the rest of the descriptive name.</p>
+</div>
+<div class="paragraph">
+<p>Download and Use the CMake and CI files listed below from Jon Gough&#8217;s
+<a href="https://github.com/jongough/testplugin_pi">Testplugin_pi</a> using the
+"cmake_flatpak_test" branch. Download and install the files into a new
+branch on your plugin local repository.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Files
+--------------
+CMakeLists.txt   &lt;----- Your version and this version will have to be merged.
+appveyor.yml
+travis.yml
+
+Directories and Files
+----------------------
+cmake
+circleci
+buildosx
+ci
+debian
+mingw
+api-16
+data (icons)</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_modify_files"><a class="anchor" href="#_modify_files"></a>Modify Files</h3>
+<div class="paragraph">
+<p>Then the top of CMakeLists.txt must be customized for the plugin and
+environment. There are basically two sets of files for CMake that have
+been developed. One set comes from Alex Leamas and the other set comes
+from Jon Gough&#8217;s testplugin_pi which is being used as a template. Jon
+has gone to some effort to bring all the Plugin Dev settings up to the
+top of CMakeLists.txt The example below is from Jon&#8217;s testplugin_pi but
+needs to be updated!</p>
+</div>
+<div class="sect3">
+<h4 id="_cmakelists_txt"><a class="anchor" href="#_cmakelists_txt"></a>CMakeLists.txt</h4>
+<div class="literalblock">
+<div class="content">
+<pre>project(testplugin_pi)
+
+set(PACKAGE_NAME testplugin_pi)
+set(VERBOSE_NAME testplugin)
+set(TITLE_NAME testplugin)
+set(CPACK_PACKAGE_CONTACT "Jon Gough")
+
+set(VERSION_MAJOR "1")   &lt;---Set your version number and comment
+set(VERSION_MINOR "0")
+set(VERSION_PATCH "41")
+set(VERSION_TWEAK "8")
+set(VERSION_DATE "03/12/2019")
+set(OCPN_MIN_VERSION "ov50")
+set(OCPN_API_VERSION_MAJOR "1")
+set(OCPN_API_VERSION_MINOR "16")
+set(TP_COMMENT "  * Release for O5 using CI")
+
+set(PARENT "opencpn")
+set(PACKAGE "testplugin")      &lt;--- Set plugin name (twice)
+set(VERBOSE_NAME "Testplugin")
+#set(GIT_USER "jongough")      &lt;--- Git user commented out
+set(GIT_USER "rgleason")       &lt;--- Set your git user name
+set(GIT_REPOSITORY_NAME "testplugin_pi")  &lt;---Set the Git Repository Name
+message(STATUS "CIRCLECI: ${CIRCLECLI}, Env CIRCLECI: $ENV{CIRCLECI}")
+if($ENV{CIRCLECI})
+  set(GIT_REPOSITORY_HOST "github.com")
+  set(GIT_REPOSITORY_DIR "${GIT_USER}/")
+#  set(GIT_REPOSITORY_BRANCH "master")
+  set(GIT_REPOSITORY_BRANCH "cmake_flatpak_test")
+else()
+  set(GIT_REPOSITORY_HOST "git.eclipse.com.au")   &lt;--- This is used if you setup your own git server environment for testing
+  set(GIT_REPOSITORY_DIR "")
+  set(GIT_REPOSITORY_BRANCH "cmake_flatpak_test")
+endif()
+set(CLOUDSMITH_USER "rick-gleason")                  &lt;--- Set your Cloudsmith Name
+#set(CLOUDSMITH_BASE_REPOSITORY "${GIT_REPOSITORY_NAME}")  &lt;---Uses git repos name for Cloudsmith repositories
+set(CLOUDSMITH_BASE_REPOSITORY "opencpn-plugins") &lt;---Uses a generalized repository for multiple plugins.
+set(XML_INFO_URL "https://opencpn.org/OpenCPN/plugins/ocpn_draw.html")
+set(XML_SUMMARY "Test of ODraw ODAPI and JSON interfaces")
+set(XML_DESCRIPTION "Test ODraw API and demo use from another plugin")
+set(APPVEYOR_TEST_DEPLOY_TO_CLOUDSMITH "true")</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_circleciconfig_yml"><a class="anchor" href="#_circleciconfig_yml"></a>circleci\config.yml</h4>
+<div class="paragraph">
+<p>Your account does not have rights to run macos until CircleCI staff
+explicitly enables it. If you don&#8217;t have access to run the macOS
+enviornment that particular build will not start but all the others
+should run OK. <strong>//Therefore comment out the build for "macos" lines,
+until you ask for and are given permissions //</strong> by them to run limited
+use macos. <strong><em>First you need to create a real userid login in addition to
+your github login to get MacOS.</em></strong> See Build on
+macOShttps://circleci.com/open-source/[https:_circleci.com/open-source/]]_<strong>Then
+you need to write Circleci Support </strong>//
+to[[<a href="mailto:billing@circleci.com">billing@circleci.com</a>|<a href="mailto:billing@circleci.com">billing@circleci.com</a>] including your
+"Opensource" account, stating that you are creating only public
+OpenSource for OpenCPN and would like MacOS build capability.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> +
+Also write staff nicely asking if you can get permission for MacOS, and
+stating that the plugin is opensource for OpenCPN.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Line 39 start
+#   build-macos:
+#     macos:
+#       xcode: "10.0.0"
+#     environment:
+#       - OCPN_TARGET:  macos
+#     steps:
+#       - checkout
+#       - run: ci/circleci-build-macos.sh
+#       - run: ci/circleci-upload.sh</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Line 65 start
+#      - build-macos:
+#          filters:
+#            branches:
+#              ignore:
+#                - devel
+#                - tmp</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_appveyor_yml"><a class="anchor" href="#_appveyor_yml"></a>appveyor.yml</h4>
+<div class="paragraph">
+<p>Generate a GitHub Personal Token specifically for Appveyor and your
+plugin. Save the code somewhere. Then encrypt the Github Personal Token
+with appveyor&#8217;s encryption, and put that encryption into the code as
+below.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>deploy:
+  provider: release   # or GitHub
+  auth_token:     # git-ptoken-squiddio-into-appveyor [whatever you name it in GitHub]
+    secure: "&lt;encryption from appveyor https://ci.appveyor.com/tools/encrypt&gt;"</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_travis_yml"><a class="anchor" href="#_travis_yml"></a>.travis.yml</h4>
+<div class="paragraph">
+<p>Generate a GitHub Personal Token specifically for Travis and your
+plugin. Save the code somewhere. Then encrypt the Github Personal Token
+with Travis CI, and put that encryption into the code as below.</p>
+</div>
+<div class="paragraph">
+<p>Refer to
+<a href="/opencpn/developer_manual/ci-push-build-to-git#c_install_travis_cli_to_encrypt_a_github_secure_public_key.adoc">Travis
+Encryption of Github Personnal Access Token</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>deploy:
+- provider: releases
+  api_key:   # git-ptoken-squiddio-into-travis  [whatever you name it in GitHub]
+    secure:  &lt;add TravisCI encryption of git ptoken key&gt;
+    repo: [username]/squiddio_pi  #Deployment to GitHub Release Tag when a tag is pushed.
+    tags: true
+    all_branches: true</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_notes"><a class="anchor" href="#_other_notes"></a>Other Notes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_cloudsmith_opencpn_organization"><a class="anchor" href="#_cloudsmith_opencpn_organization"></a>Cloudsmith OpenCPN Organization</h3>
+<div class="paragraph">
+<p><a href="https://cloudsmith.io/orgs/opencpn/" class="bare">https://cloudsmith.io/orgs/opencpn/</a></p>
+</div>
+<div class="paragraph">
+<p>There are 3 repositories that can be used.</p>
+</div>
+<div class="paragraph">
+<p>Developers of Plugins can be invited to join the organization after they
+have created an opensource Cloudsmiith account.</p>
+</div>
+<div class="paragraph">
+<p>See this <a href="https://github.com/OpenCPN/OpenCPN/issues/1573" class="bare">https://github.com/OpenCPN/OpenCPN/issues/1573</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installation_destination_change_with_plugin_manager"><a class="anchor" href="#_installation_destination_change_with_plugin_manager"></a>Installation Destination change with Plugin Manager</h3>
+<div class="paragraph">
+<p><a href="https://github.com/OpenCPN/OpenCPN/issues/1605" class="bare">https://github.com/OpenCPN/OpenCPN/issues/1605</a></p>
+</div>
+<div class="paragraph">
+<p>Check your plugins for any changes needed to keep intended user
+experience when installing, noting path isssues.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_catalog_xml_name_must_match_common_name"><a class="anchor" href="#_catalog_xml_name_must_match_common_name"></a>Catalog XML "name" must match "Common Name"</h3>
+<div class="paragraph">
+<p>The name used in the Plugin Manager XML Catalog must match the "Common
+Name" of the plugin being installed.</p>
+</div>
+<div class="paragraph">
+<p>In order for the Plugin Manager to work consistently, the "name" tag in
+the catalog&#8217;s XML must match the "Common Name" of the plugin being
+installed. The (sometimes inconsistent) values in CmakeLists.txt do not
+affect the plugin manager at run-time. Example catalog xml record:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;plugin version="1"&gt;
+  &lt;name&gt; WeatherRouting &lt;/name&gt;
+  &lt;version&gt; 1.13.2 &lt;/version&gt;
+  &lt;release&gt; 0 &lt;/release&gt;
+  &lt;summary&gt; Plugin to complete optimal routing with weather files &lt;/summary&gt;
+  &lt;api-version&gt; 1.16 &lt;/api-version&gt;
+  &lt;open-source&gt; yes &lt;/open-source&gt;
+  &lt;author&gt; Sean d'Epagnier &lt;/author&gt;
+  &lt;source&gt; https://github.com/rgleason/weather_routing_pi &lt;/source&gt;
+  &lt;description&gt; Weather_Routing Plugin optimizes weather routing&lt;/description&gt;
+  &lt;target&gt;msvc&lt;/target&gt;
+  &lt;target-version&gt;10.0.14393&lt;/target-version&gt;
+  &lt;tarball-url&gt; https://dl.cloudsmith.io/public/rick-gleason/opencpn-plugins-beta/raw/names/weather_routing-msvc-10.0.14393-tarball/versions/1.13.2.+80.c284e85/weather_routing_pi-1.13.2.0-ov50-1.16_msvc-10.0.14393.tar.gz&lt;/tarball-url&gt;
+  &lt;info-url&gt; https://opencpn.org/OpenCPN/plugins/weather_routing.html &lt;/info-url&gt;
+&lt;/plugin&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The name "WeatherRouting" must match the "Common Name" which comes from
+the source code, weather_routing_pi.cpp, in github:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>wxString weather_routing_pi::GetCommonName()
+{
+    return _("WeatherRouting");
+}</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

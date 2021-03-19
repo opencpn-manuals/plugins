@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="http://localhost/opencpn/ocpn-dev-manual/5.3.1/compiling_windows.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://localhost/opencpn">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Developer Plugins</span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="gallery_boats.html">Boat Gallery</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li>Developer Guide</li>
+    <li><a href="compiling_windows.html">Compiling on Windows</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><span class="image"><img src="_images/indexmenu_n&gt;3" alt="indexmenu_n&gt;3"></span></p>
+</div>
+<div class="sect1">
+<h2 id="_compiling_on_windows"><a class="anchor" href="#_compiling_on_windows"></a>Compiling on Windows</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisities"><a class="anchor" href="#_prerequisities"></a>Prerequisities</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>for OpenCPN v5.0.0</p>
+</li>
+<li>
+<p>with wxWidgets v3.1.2</p>
+</li>
+<li>
+<p><a href="#plugin_api_versions.adoc" class="page unresolved">Plugin
+API</a> starts with API 1.16 (Supports plugins with earlier API but they
+must be compiled again for OpenCPN v5.0 due to the change in wxWidgets.)</p>
+</li>
+<li>
+<p>Highest chance of success if these steps are followed exactly.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_visual_studio_2017"><a class="anchor" href="#_visual_studio_2017"></a>Visual Studio 2017</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Get Visual Studio Community 2017. Go to this microsoft web page
+<a href="https://visualstudio.microsoft.com/vs/older-downloads/">Older Visual
+Studio</a> and scroll down.</p>
+</li>
+<li>
+<p>Install and select the workload <strong>Desktop development with C* and
+include component *Windows XP support for C</strong>.</p>
+</li>
+<li>
+<p>Also include the appropriate <strong>Windows x SDK </strong>component. Generally
+install the most current version, Windows 10 preferred.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_git"><a class="anchor" href="#_git"></a>Git</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Get Git for Windows from
+<a href="https://gitforwindows.org/">https://gitforwindows.org</a></p>
+</li>
+<li>
+<p>Install and let the installer register git in your PATH and select
+<strong>Checkout as-is, commit Unix-style line endings</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cmake"><a class="anchor" href="#_cmake"></a>CMake</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Get the latest CMake installation packages from
+<a href="https://cmake.org/">https://cmake.org</a></p>
+</li>
+<li>
+<p>Install and let the installer register in the PATH environment
+variable</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_poedit"><a class="anchor" href="#_poedit"></a>POedit</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Get the latest POedit installation package from
+<a href="https://poedit.net/">https://poedit.net</a></p>
+</li>
+<li>
+<p>Install</p>
+</li>
+<li>
+<p>Add <strong>C:\Program Files (x86)\Poedit\GettextTools\bin</strong> to your PATH</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nsis"><a class="anchor" href="#_nsis"></a>NSIS</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Download NSIS (Nullsoft Scriptabe Install System) from
+<a href="https://nsis.sourceforge.io/Download" class="bare">https://nsis.sourceforge.io/Download</a></p>
+</li>
+<li>
+<p>Install</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_zip"><a class="anchor" href="#_7_zip"></a>7-Zip</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Download 7-Zip from <a href="https://www.7-zip.org/download.html" class="bare">https://www.7-zip.org/download.html</a></p>
+</li>
+<li>
+<p>Install</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_get_the_wxwidgets_3_1_2_sources_and_built_them"><a class="anchor" href="#_get_the_wxwidgets_3_1_2_sources_and_built_them"></a>Get the wxWidgets 3.1.2 sources and built them</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open a <strong>x86 Native Tools Command Prompt for VS 2017 </strong> (In Windows 10
+by typing in the search box next to the Windows start button <strong>x86
+Native…</strong>etc) and execute the following commands:</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>cd C:\Users\myname\Sources
+git clone -b v3.1.2 https://github.com/wxWidgets/wxWidgets
+cd wxWidgets
+git submodule init
+git submodule update
+
+cd build\msw
+nmake /f makefile.vc BUILD=release SHARED=1 CXXFLAGS=/D_USING_V141_SDK71_ CFLAGS=/D_USING_V141_SDK71_ LDFLAGS=/SUBSYSTEM:WINDOWS,5.01
+nmake /f makefile.vc BUILD=debug SHARED=1 CXXFLAGS=/D_USING_V141_SDK71_ CFLAGS=/D_USING_V141_SDK71_ LDFLAGS=/SUBSYSTEM:WINDOWS,5.01</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Set the environment variable <strong>wxWIDGETS_ROOT_DIR</strong> with a value of the
+top level directory of your wxWidgets source tree.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_alternatives"><a class="anchor" href="#_alternatives"></a>Alternatives:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The commands on this page refers to C:\users\myname\Sources as the
+directory for all sources. Obviously one can use other directories.</p>
+</li>
+<li>
+<p>The commands above download the sources from GitHub and then build the
+release and the debug version. Instead of using git clone, you can
+download the wxWidgets sources manually from
+<a href="https://github.com/wxWidgets/wxWidgets/releases/tag/v3.1.2">https:__github.com/wxWidgets/wxWidgets/releases/tag/v3.1.2</a>].</p>
+</li>
+<li>
+<p>Alternatively there is a faster way to get started, by just getting
+wxWidgets prebuilt from
+[[https:__download.opencpn.org/s/E2p4nLDzeqx4SdX/download|wxWidgets-3.1.2.7z].
+This however is not suitable for serious development or debugging as
+only release configuration libraries are included.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getting_and_building_opencpn_source"><a class="anchor" href="#_getting_and_building_opencpn_source"></a>Getting and building OpenCPN source</h3>
+<div class="sect3">
+<h4 id="_get_the_opencpn_sources"><a class="anchor" href="#_get_the_opencpn_sources"></a>Get the OpenCPN sources</h4>
+<div class="paragraph">
+<p>In the open <strong>x86 Native Tools Command Prompt for VS 2017 </strong>execute the
+following commands:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>cd \Users\myname\Sources
+git clone https://github.com/OpenCPN/OpenCPN</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_get_prebuilt_windows_dependencies"><a class="anchor" href="#_get_prebuilt_windows_dependencies"></a>Get prebuilt Windows dependencies</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Download the dependencies bundle from
+<a href="https://download.opencpn.org/s/oibxM3kzfzKcSc3/download">OpenCPN_buildwin-4.99a.7z</a></p>
+</li>
+<li>
+<p>Extract into <strong>c:\Users\myname\Sources\OpenCPN\buildwin</strong> using 7-Zip</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_building_opencpn"><a class="anchor" href="#_building_opencpn"></a>Building OpenCPN</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>In the open <strong>x86 Native Tools Command Prompt for VS 2017</strong> execute the
+following commands to create the build directory, generate the solutions
+files and build the debug version, the release version and the setup
+package.</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>*</pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-level1 hljs" data-lang="level1">cd C:\Users\myname\Sources\OpenCPN
+mkdir build
+cd build
+cmake -G "Visual Studio 15 2017" -T v141_xp ..
+cmake --build .
+cmake --build . --config release
+cmake --build . --config release --target package</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>These commands should generate an OpenCPN install package in
+<strong>c:\Users\username\Sources\OpenCPN\build\opencpn_5.0.0_setup.exe</strong></p>
+</li>
+<li>
+<p>Excecute this program to install OpenCPN. Choose c:\Program Files
+(x86)\OpenCPN\ as installation directory to avoid unnecessary issues
+when installing plugins.</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_alternatives_2"><a class="anchor" href="#_alternatives_2"></a>Alternatives:</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Instead of running the last 3 cmake-commands, one could also start
+Visual Studio, open the generated solutionfile <code>OpenCPN.sln</code> and build
+from there.</p>
+</li>
+<li>
+<p>Obviously other directories can be used as well, just as multiple
+opencpn installation. The instructions above are meant for those setting
+up a new development environment for just OpenCPN 5.0.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_setup_copyfiles_bat_last_step_to_debug"><a class="anchor" href="#_setup_copyfiles_bat_last_step_to_debug"></a>Setup Copyfiles.bat - Last step to Debug</h4>
+<div class="paragraph">
+<p>Copyfiles.bat is a useful single batch file to copy all the needed files
+to the various directories. This batch file does not execute any cmake
+commands.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Download <span class="image"><img src="/opencpn/dev/copyfiles.bat.doc" alt="Copyfiles.bat.doc"></span> and
+remove the .doc</p>
+</li>
+<li>
+<p>Move the file to &lt;Your OpenCPN source tree&gt; (for example:
+C:\Compile\Github\Opencpn)</p>
+</li>
+<li>
+<p>Execute copyfiles.bat</p>
+</li>
+<li>
+<p>Start Visual Studio 2017 and the OpenCPN-solution file. (For Example:
+C:\Compile\Github\Opencpn\build\opencpn.sln)</p>
+</li>
+<li>
+<p>If the Solution Explorer is not visible, open the Solution Explorer
+(Via the view-menu, or Ctrl+Alt+L)</p>
+</li>
+<li>
+<p>Select the project "Opencpn" from the list, right click and pick "Set
+as Startup Project"</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Now Opencpn should be ready to debug.</p>
+</div>
+<div class="sect4">
+<h5 id="_batchutils"><a class="anchor" href="#_batchutils"></a>BatchUTILS</h5>
+<div class="paragraph">
+<p><a href="https://github.com/transmitterdan/BatchUTILS">BatchUTILS</a> is another
+alternative that is a more complete set of batch files to assist
+building OpenCPN. Osetup.bat is intended to be modified by an individual
+user based on their own system. Git clone
+<a href="https://github.com/transmitterdan/BatchUTILS">https:<em>github.com/transmitterdan/BatchUTILS</a>]
+to your github directory, next to the OpenCPN local repository.
+Discussion about
+[[https:</em>github.com/transmitterdan/BatchUTILS/issues/1|the use and
+development of BatchUtils]</p>
+</div>
+<div class="paragraph">
+<p>It’s nearly impossible to guess all the possible wxWidgets versions
+someone might have on their system. Also, other tools sometimes change
+paths as new versions are released. So it is expected that each user
+will customize Osetup.bat. The latest of Transmitter Dan&#8217;s batchutils is
+in git. If you want to use some other environment variable other than
+WXDIR that is ok. The Cmake tool will accept a number of possible
+environment names as the root of the wxWidgets toolkit.</p>
+</div>
+<div class="paragraph">
+<p>==</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
