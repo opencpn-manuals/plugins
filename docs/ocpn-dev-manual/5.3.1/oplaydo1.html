@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>oplaydo1 (Windows) :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/oplaydo1.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://leamas.github.io/ocpn-manuals">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="community.html">Community</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugin API</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugin_api_versions.html">Plugin API Versions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ocpn_draw_odapi.html">OCPN Draw ODAPI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="standalone_plugin_compilation.html">Plugin Compilation Win</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="troubleshooting_plugins.html">Troubleshooting Plugins</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_guidelines.html">Plugin Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_documentation.html">Plugin Documentation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_submissions.html">Plugin Submissions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="testplugin.html">Testplugin and Frontend2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="demo_plugin.html">Demonstration Plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="coding_solutions.html">Coding Solutions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_build_windows.html">Fork and Build (Windows)</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="oplaydo1.html">oplaydo1 (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_and_build_linux.html">Fork and Build (Linux)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oplaydo1_linux.html">oplaydo1 (Linux)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../AlternativeWorkflow/index.html">Alternative Managed Workflow for OpenCPN plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../AlternativeWorkflow/index.html">master</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li>Learning</li>
+    <li><a href="oplaydo1.html">oplaydo1 (Windows)</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">oplaydo1 (Windows)</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>In 'Fork and Build' we built the 'DR_pi' plugin.</p>
+</li>
+<li>
+<p>In Part 1 of this guide the 'DR_pi' plugin is renamed 'oplaydo1_pi'.
+The
+link:/opencpn/developer_manual/plugins/learning/oplaydo1#Using GIMP to make new icons[icon
+is changed].</p>
+</li>
+<li>
+<p>In
+link:/opencpn/developer_manual/plugins/learning/oplaydo1#Part 2/ Edit the plugin for new user actions[Part
+2] the dialog is changed to allow the user to input 'Start' and 'Finish'
+positions and generate a GPX file for displaying a route in OpenCPN.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_part_1_rename_the_plugin_and_make_a_new_icon"><a class="anchor" href="#_part_1_rename_the_plugin_and_make_a_new_icon"></a>Part 1: Rename the plugin and make a new icon</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_additional_requirements"><a class="anchor" href="#_additional_requirements"></a>Additional requirements</h3>
+<div class="paragraph">
+<p><a href="https://www.gimp.org/downloads/">GIMP</a> (Free &amp; Open Source Image Editor)</p>
+</div>
+<div class="paragraph">
+<p><a href="http://strawberryperl.com/">Strawberry Perl</a></p>
+</div>
+<div class="paragraph">
+<p><a href="http://nchrem.tnw.tudelft.nl/openvms/software2.html">png2wx.pl (Perl
+Script)</a></p>
+</div>
+<div class="paragraph">
+<p>How these programs/script are used will be explained as the guide
+progresses.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rename_and_rebuild"><a class="anchor" href="#_rename_and_rebuild"></a>Rename and rebuild</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before you start it is probably worth making a copy of the DR_pi
+project.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/dr_copy.png" alt="dr_copy.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Open the DR_pi project with Visual Studio.</p>
+</li>
+<li>
+<p>On the toolbar is a search and replace button. Use this firstly to
+change every string 'DR_pi' to 'oplaydo1_pi'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_replace.png" alt="op_replace.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Repeat, changing the string 'DR' to 'oplaydo1'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_replace1.png" alt="op_replace1.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This can cause problems where the string is part of code but we will
+resolve that later.</p>
+</li>
+<li>
+<p>If you look at 'CMakeLists.txt' you will find that the source file
+names do not match those in 'Solution Explorer'. The search and replace
+does not rename files.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_source_files.png" alt="op_source_files.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Save the changes that have been made so far.</p>
+</li>
+<li>
+<p>Rename files. You will need to close Visual Studio first.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_filenames.png" alt="op_filenames.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The folder 'DR_pi' has been renamed 'oplaydo1'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_folder.png" alt="op_folder.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The '.git' and 'ReadMe.cmd' have been removed and the folder 'build'
+deleted.</p>
+</li>
+<li>
+<p>Re-build with CMake-GUI. This makes the 'oplaydo1_pi' solution.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The process is exactly the same as that used in 'Fork and Build'.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CMake configure and generate. mswu, wxWidgets 3.0.2.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_cmake.png" alt="op_cmake.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy 'opencpn.lib' from the 'build' folder of 'DR_pi' to the 'build'
+folder of 'oplaydo1'.</p>
+</li>
+<li>
+<p>Open the 'oplaydo1.sln' file with Visual Studio.</p>
+</li>
+<li>
+<p>Build the solution.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_build.png" alt="op_build.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>All seems to have worked so the plugin is installed. However there is
+a problem with the icons.</p>
+</li>
+<li>
+<p>The green jigsaw icon shows that something is not correct.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_bad_icon.png" alt="op_bad_icon.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>What has happened is that the search and replace has changed 'DR' to
+'oplaydo1' in the file 'icons.cpp'. This has invalidated the code for
+creating the icon. This is the sort of error that needs fixing when an
+existing plugin is re-purposed. There could be many errors in the code
+due to unwanted changes not related to the change in the name of the
+plugin.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_bad_icon_fix.png" alt="op_bad_icon_fix.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In this case the change is not needed so change 'oplaydo1' back to
+'DR'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_bad_icon_code.png" alt="op_bad_icon_code.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Re-build the solution.</p>
+</li>
+<li>
+<p>Re-install the plugin. The icon is now restored to the 'cross'. This
+will be changed to a new icon shortly.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/op_icon_fixed.png" alt="op_icon_fixed.png"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_gimp_to_make_new_icons"><a class="anchor" href="#_using_gimp_to_make_new_icons"></a>Using GIMP to make new icons</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Use <a href="https://www.gimp.org/downloads/">GIMP</a> to create an image file
+32×32 px in size.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_gimp_image1.png" alt="g_gimp_image1.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When you are satisfied with the image reduce the number of colours to
+16.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_convert_color_menu.png" alt="g_convert_color_menu.png"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_convert_color.png" alt="g_convert_color.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>'File/Export'. Export the image as a .png file and save in the root
+folder of 'oplaydo1'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_export.png" alt="g_export.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Saving the file here is just for convenience. If the code files are
+going to be pushed to GitHub some file removal will be needed later.</p>
+</li>
+<li>
+<p>The file exported is saved as 'oplaydo1_pi.png'. This is the image
+that will appear in the list of plugins that can be enabled.</p>
+</li>
+<li>
+<p>Using GIMP the image is now changed to show a border. This will be the
+image used for the toolbar. - Export this new image as 'oplaydo1.png',
+also to the root folder of 'oplaydo1'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_playbat_folder.png" alt="g_playbat_folder.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Two extra files have appeared, 'icons.bat' and 'png2wx.pl'. These will
+be explained in the next section.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_png2wx_pl"><a class="anchor" href="#_using_png2wx_pl"></a>Using png2wx.pl</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The two icon images that were created must now be translated into a
+form that can be used by wxWidgets.</p>
+</li>
+<li>
+<p>When 'Strawberry Perl' was installed an entry was made in the PATH
+statement. This allows the Perl script to be run from the 'oplaydo1'
+folder.</p>
+</li>
+<li>
+<p>Make a copy of 'png2wx.pl' in the root folder.</p>
+</li>
+<li>
+<p>Create a new plain text 'batch' file here called 'icons.bat'. This
+file has only one line:</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>png2wx.pl -C icons.cpp -H icons.h -M ICONS_H oplaydo1.png oplaydo1_pi.png</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_perl_bat.png" alt="g_perl_bat.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The batch file is now run by a 'double-click' or 'Open'. This creates
+two new files in the root folder called 'icons.cpp' and 'icons.h'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_run_bat.png" alt="g_run_bat.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the 'src' folder there are already two files with the same name.
+These contain the icons for 'DR_pi' and are being replaced. Re-name them
+as '.bak' or similar, as a backup.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_rename_icons.png" alt="g_rename_icons.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Move 'icons.cpp' and 'icons.h' to the 'src' folder.</p>
+</li>
+<li>
+<p>Using Visual Studio re-build the solution.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_making_a_package"><a class="anchor" href="#_making_a_package"></a>Making a Package</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>To simplify the installation of the plugin it is useful to make a
+package.</p>
+</li>
+<li>
+<p>'Right-click' on the folder 'PACKAGE' in 'Solution Explorer'. -
+'Build/Build Only Package'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_build_package.png" alt="g_build_package.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This creates the installer in the folder 'NSIS'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_package.png" alt="g_package.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Run the installer. The installation script expects the plugins to be
+in the folder 'plugins', below 'OpenCPN'. If the main folder of OpenCPN
+has a different name, change it at the prompt. (HINT - put the cursor at
+the end of the name, make a space and a list of OpenCPN versions
+installed in parallel will appear. Choose the version of OpenCPN to use
+for running 'oplaydo1')</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_install_plugin.png" alt="g_install_plugin.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start OpenCPN. In the list of 'Options/Plugins' you should see the new
+icon for 'oplaydo1'. The new icon with the border should appear in the
+'Toolbar' of the program if 'oplaydo1' is enabled. Success!</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_new_icon_pi.png" alt="g_new_icon_pi.png"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/g_new_icon.png" alt="g_new_icon.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To summarise. The plugin has been renamed and the icons changed to
+match the new project. At present the functionality in 'oplaydo1_pi' is
+exactly the same as that in 'DR_pi'.</p>
+</li>
+<li>
+<p>In the next part the plugin is adapted for new functionality.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_part_2_edit_the_plugin_for_new_user_actions"><a class="anchor" href="#_part_2_edit_the_plugin_for_new_user_actions"></a>Part 2: Edit the plugin for new user actions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_additional_requirements_2"><a class="anchor" href="#_additional_requirements_2"></a>Additional requirements</h3>
+<div class="paragraph">
+<p><a href="https://github.com/wxFormBuilder/wxFormBuilder/releases">wxFormBuilder</a> (
+RAD tool for wxWidgets GUI design)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aim"><a class="anchor" href="#_aim"></a>Aim</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Make a new user interface and generate the code for this.</p>
+</li>
+<li>
+<p>Modify the plugin code to use the new interface</p>
+</li>
+<li>
+<p>Remove unwanted code</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_interface"><a class="anchor" href="#_user_interface"></a>User Interface</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Start a new project in wxFormBuilder. Edit the properties. The project
+will be called 'oplaydo1'. - This is what you are aiming for:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_dialog.png" alt="f_dialog.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An event called 'OnGenerate' has been added to the wxButton
+'m_buttonGenerate'. When the plugin is used this button will generate
+the GPX file, in a format that can be imported to OpenCPN.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_ongenerate.png" alt="f_ongenerate.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the project properties set 'file' as 'oplaydo1gui'</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_filename.png" alt="f_filename.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Set the path for generating the code files as
+'c:\learning\oplaydo1_pi'. Files 'oplaydo1gui.cpp' and 'oplayd1gui.h'
+will be made in this folder.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_path.png" alt="f_path.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Save the wxFormBuilder file as 'oplaydo1.fbp' in
+'c:\learning\oplaydo1_pi'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_save_fb.png" alt="f_save_fb.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Generate the code</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_generate_code.png" alt="f_generate_code.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>We have a problem.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_generate_code_problem.png" alt="f_generate_code_problem.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Looking at the 'C++' page of wxFormBuilder the code has become
+corrupt. Not shown here but the '.h"' appeared on a new line with'"'
+printed in red.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_generate_problem_solved.png" alt="f_generate_problem_solved.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>By going back to the project properties and changing the file name
+'oplaydo1gui' to another name and then back again to 'oplaydo1gui' the
+error was fixed (A bug in wxFormBuilder - or my machine?)</p>
+</li>
+<li>
+<p>The code is now generated in the two files in
+'c:\learning\oplaydo1_pi'.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modifying_the_code"><a class="anchor" href="#_modifying_the_code"></a>Modifying the code</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Make a backup of the files 'oplaydo1gui.cpp' and 'oplayd1gui.h' in
+'src' in case you need to refer to them. - Move 'oplaydo1gui.cpp' and
+'oplayd1gui.h' from 'oplaydo1_pi' to 'oplaydo1_pi\src'. - Open the
+solution with Visual Studio</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/vs_errors1.png" alt="vs_errors1.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only the main changes are going to be listed here. Compare
+'DRgui_impl.cpp' and 'DRgui_impl.h' from the 'DR_pi' plugin with
+'oplaydo1gui_impl.cpp' and 'oplayd1gui_impl.h' to see what has been
+changed.</p>
+</li>
+<li>
+<p>The first error to be addressed is the name of the main dialog class.
+It has to be changed from 'DlgDef' to 'm_dialog', which was the name
+given to the dialog in wxFormBuilder.</p>
+</li>
+<li>
+<p>In 'oplaydo1gui_impl.h' change 'DlgDef' to 'm_dialog'.</p>
+</li>
+<li>
+<p>Try to avoid any changes to 'oplaydo1gui.cpp' and 'oplayd1gui.h' or
+someone using the wxFormBuilder file in the future could have a problem.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/vs_ref_m_dialog.png" alt="vs_ref_m_dialog.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The command event 'OnGenerate' has to be linked to a function in
+'oplaydo1gui_impl.h'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/vs_ongenerate_virtual.png" alt="vs_ongenerate_virtual.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The function that has the code we want for generating a GPX file is
+called 'Calculate'. Change 'Calculate' to 'OnGenerate'.</p>
+</li>
+<li>
+<p>In 'oplaydo1gui_impl.cpp' find the function 'Calculate' and rename it
+as 'OnGenerate'.</p>
+</li>
+<li>
+<p>The functions 'OnPSGPX' is not needed. Parts of 'OpenXML' may be
+useful. Either delete functions/code or comment out.</p>
+</li>
+<li>
+<p>'Preferences' is not going to be used so 'CfgDlg' references are
+removed.</p>
+</li>
+<li>
+<p>All the changes are not going to be listed. Source code files can be
+downloaded <a href="_attachments/oplaydo1_code.zip">here</a>.</p>
+</li>
+<li>
+<p>After removing all the errors and building/installing the plugin the
+new dialog is shown.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/o_output.png" alt="o_output.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Enter the Start and Finish positions and press the 'Generate' button.
+Errors in input values will result in an error message.</p>
+</li>
+<li>
+<p>If there are no errors the 'Save File' dialog will appear and you can
+enter a name (no extension) for the GPX file. If you add .gpx to the
+file name you will find the name ends in .gpx.gpx when saved.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/o_save_file.png" alt="o_save_file.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Test the GPX file by importing using the OpenCPN Route Manager</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/o_import_gpx.png" alt="o_import_gpx.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The final route will appear on the chart</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/o_route.png" alt="o_route.png"></span></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

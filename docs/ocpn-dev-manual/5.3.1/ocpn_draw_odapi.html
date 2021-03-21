@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ocpn_Draw ODAPI :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/ocpn_draw_odapi.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://leamas.github.io/ocpn-manuals">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="community.html">Community</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugin API</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugin_api_versions.html">Plugin API Versions</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="ocpn_draw_odapi.html">OCPN Draw ODAPI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="standalone_plugin_compilation.html">Plugin Compilation Win</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="troubleshooting_plugins.html">Troubleshooting Plugins</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_guidelines.html">Plugin Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_documentation.html">Plugin Documentation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_submissions.html">Plugin Submissions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="testplugin.html">Testplugin and Frontend2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="demo_plugin.html">Demonstration Plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="coding_solutions.html">Coding Solutions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_build_windows.html">Fork and Build (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oplaydo1.html">oplaydo1 (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_and_build_linux.html">Fork and Build (Linux)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oplaydo1_linux.html">oplaydo1 (Linux)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../AlternativeWorkflow/index.html">Alternative Managed Workflow for OpenCPN plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../AlternativeWorkflow/index.html">master</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li>Plugin API</li>
+    <li><a href="ocpn_draw_odapi.html">OCPN Draw ODAPI</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Ocpn_Draw ODAPI</h1>
+<div class="sect1">
+<h2 id="_updated_odapi_for_faster_access_ocpn_draw_capabilities"><a class="anchor" href="#_updated_odapi_for_faster_access_ocpn_draw_capabilities"></a>Updated ODAPI for faster access OCPN_Draw capabilities</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Version 1.1</p>
+</div>
+<div class="paragraph">
+<p>This update introduces the ODAPI which allows other plugins and OCPN to
+gain direct access to the JSON API functions without the overhead of
+JSON processing. You will need to include ODAPI.h in your code and then
+use a JSON message to get the addresses of all the API&#8217;s.</p>
+</div>
+<div class="paragraph">
+<p>Example to get the api&#8217;s:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>            wxJSONValue jMsg;
+            wxJSONWriter writer;
+            wxString    MsgString;
+            jMsg[wxT("Source")] = wxT("WATCHDOG_PI");
+            jMsg[wxT("Type")] = wxT("Request");
+            jMsg[wxT("Msg")] = wxS("GetAPIAddresses");
+            jMsg[wxT("MsgId")] = wxS("GetAPIAddresses");
+            writer.Write( jMsg, MsgString );
+            SendPluginMessage( wxS("OCPN_DRAW_PI"), MsgString );
+            if(g_ReceivedODAPIMessage != wxEmptyString &amp;&amp;  g_ReceivedODAPIJSONMsg[wxT("MsgId")].AsString() ==  wxS("GetAPIAddresses")) {
+                wxString sptr = g_ReceivedODAPIJSONMsg[_T("OD_FindPointInAnyBoundary")].AsString();
+                if(sptr != _T("null")) {
+                    sscanf(sptr.To8BitData().data(), "%p", &amp;pOD_FindPointInAnyBoundary);
+                    l_bUseODAPI_FPIAB = true;
+                }
+                sptr = g_ReceivedODAPIJSONMsg[_T("OD_FindClosestBoundaryLineCrossing")].AsString();
+                if(sptr != _T("null")) {
+                    sscanf(sptr.To8BitData().data(), "%p", &amp;pODFindClosestBoundaryLineCrossing);
+                    l_bUseODAPI_FCBLC = true;
+                }
+            }</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Example calling api&#8217;s:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>    FindClosestBoundaryLineCrossing_t *pFCPIAB = new FindClosestBoundaryLineCrossing_t;
+    pFCPIAB-&gt;dStartLat = lastfix.Lat;
+    pFCPIAB-&gt;dStartLon = lastfix.Lon;
+    pFCPIAB-&gt;dEndLat = lat;
+    pFCPIAB-&gt;dEndLon = lon;
+    (*pODFindClosestBoundaryLineCrossing)(pFCPIAB)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An example of the use of the API can be found in the WatchDog plugin.
+You will need to get at least 1.9.048 of the WatchDog plugin to see
+examples of its use.</p>
+</div>
+<div class="paragraph">
+<p>The ODAPI.h file contains typedef statements that make it easier to use
+the API. All the API&#8217;s are defined here so you use the typedef to define
+a variable to hold the address of the correct API and then use this to
+execute the API.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_notes_about_odapi"><a class="anchor" href="#_additional_notes_about_odapi"></a>Additional Notes about ODAPI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The original ODAPI only had four functions which were read only:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OD_FindPathByGUID - Find a path of any type by its GUID</p>
+</li>
+<li>
+<p>OD_FindPointInAnyBoundary - Find if a Lat/Lon is inside any boundary</p>
+</li>
+<li>
+<p>OD_FindClosestBoundaryLineCrossing - Find if a line crosses a boundary
+line and will return the closest line crossing</p>
+</li>
+<li>
+<p>OD_FindFirstBoundaryLineCrossing - Find if a line crosses a boundary
+and return as soon as a crossing is detected</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These were initially used by the WatchDog and WeatherRouting plugins.</p>
+</div>
+<div class="paragraph">
+<p>With OD 1.5 (beta) and OD 1.6 there are new API&#8217;s available to allow
+creation of objects. These are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OD_CreateBoundary - Create a Boundary</p>
+</li>
+<li>
+<p>OD_CreateBoundaryPoint - Create an isolated Boundary Point</p>
+</li>
+<li>
+<p>OD_CreateTextPoint - Create a Text Point</p>
+</li>
+<li>
+<p>OD_DeleteTextPoint - Delete a Text Point</p>
+</li>
+<li>
+<p>OD_AddPointIcon - Add an OD Point icon that can be used</p>
+</li>
+<li>
+<p>OD_DeletePointIcon - Delete a previously added OD Point icon</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This now allows use of some of the OD drawing tools by other plugins. An
+updated version of Squiddio_pi is available, also beta, which can use
+either OCPN Waypoints or OD Text Points for the display of information.
+The change has been made to the method of displaying the information but
+not to the functionality of Squiddio.</p>
+</div>
+<div class="paragraph">
+<p>To help with understanding of how to use the new API&#8217;s and for testing
+purposes a new plugin has been created, testplugin_pi
+(<a href="https://github.com/jongough/testplugin_pi" class="bare">https://github.com/jongough/testplugin_pi</a>). This plugin can use either
+the ODAPI binary interface or JSON text form to drive OD. The names of
+the API&#8217;s should be self explanatory as to what they do and reference to
+the testplugin should help with understanding.</p>
+</div>
+<div class="sect2">
+<h3 id="_additionally_jon_gough_writes"><a class="anchor" href="#_additionally_jon_gough_writes"></a>Additionally Jon Gough writes:</h3>
+<div class="paragraph">
+<p><a href="https://github.com/seandepagnier/weather_routing_pi/issues/191#issuecomment-385209963" class="bare">https://github.com/seandepagnier/weather_routing_pi/issues/191#issuecomment-385209963</a></p>
+</div>
+<div class="paragraph">
+<p>There are two methods of interacting with OD programatically, OCPN
+messaging using JSON messages and the ODAPI. Basically the OCPN
+messaging is synchronous and broadcast, so every plugin gets the message
+being sent and the originator is blocked until the message process
+completes. Also, the message is in JSON format which requires decoding,
+so every plugin that is registered for messaging has to decode the
+message to see if it is interested in it. The ODAPI uses the messaging
+process to give out the real address of the API, but once this is done
+it is possible to call the available OD functions directly with a C
+structure.</p>
+</div>
+<div class="paragraph">
+<p>So the OCPN JSON message is useful for letting multiple plugins know
+what is going on and for low message rate processes. For targeted, high
+rate, message/communitaions it is not really usable in its current
+format (Dave said he was going to look into it for OCPN V5). For
+Watchdog and Weather Routing the message rate can be high and it is only
+for OD, no one else should be interested in the messages, so the ODAPI
+was created to avoid the JSON overhead and to allow plugins to
+communicate directly with OD (in fact execute OD code as it was part of
+their plugin).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jon_advises"><a class="anchor" href="#_jon_advises"></a>Jon advises</h3>
+<div class="paragraph">
+<p>Basically the ODAPI is defined in ODAPI.h which should be used by any
+plugin wishing to use the binary interaction method, there is also the
+ODJSONSchemas.h file which defines the JSON version of the API in a
+schema format. There is as yet no globally usable parser for this
+version of the schema (still waiting for another open source development
+to catch up with the JSON standards).</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

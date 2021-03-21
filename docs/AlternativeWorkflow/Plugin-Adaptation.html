@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/AlternativeWorkflow/Plugin-Adaptation.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../_/css/site.css">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://leamas.github.io/ocpn-manuals">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="AlternativeWorkflow" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">Alternative Managed Workflow for OpenCPN plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Using the Alternative Managed Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Alternative-Workflow.html">The Alternative Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Metadata-Flow.html">Metadata Files</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Appveyor.html">Appveyor</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="CircleCI.html">CircleCI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Cloud-Service-Changes.html">Cloud service changes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Cloudsmith.html">Cloudsmith</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Travis.html">Travis</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="GitHub.html">GitHub</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="Plugin-Adaptation.html">Adapting the plugin</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="CodeChange.html">Code Changes</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Local-Build.html">Building locally</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Useful-Stuff.html">Useful information</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="Plugin-Dependencies.html">Plugin Dependencies</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Alternative Managed Workflow for OpenCPN plugins</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">Alternative Managed Workflow for OpenCPN plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ocpn-dev-manual/5.3.1/index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ocpn-dev-manual/5.3.1/index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../ocpn-dev-manual/5.3.1/developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Alternative Managed Workflow for OpenCPN plugins</a></li>
+    <li><a href="Plugin-Adaptation.html">Adapting the plugin</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/managed_plugins/edit/asciidoc/docs/modules/ROOT/pages/Plugin-Adaptation.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_adapting_the_legacy_plugin"><a class="anchor" href="#_adapting_the_legacy_plugin"></a>Adapting the legacy plugin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="CodeChange.html" class="page">Extra detail on the source code changes</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_source_code_changes"><a class="anchor" href="#_source_code_changes"></a>Source Code Changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Make the following changes to the plugin source code.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Use API 16:</strong> Update the source code to use API 16.</p>
+</li>
+<li>
+<p><strong>Change the method for finding the data directory:</strong> Use
+GetPluginDataDir instead of GetpDataDir Examples of code changes are
+[[shown here|codechange]].</p>
+</li>
+<li>
+<p>These changes should be enough for most plugins. However, more exotic
+plugins might need to consider the more complete list at
+<a href="https://github.com/leamas/OpenCPN/wiki/Plugin-adaptation" class="bare">https://github.com/leamas/OpenCPN/wiki/Plugin-adaptation</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_replaceadd_files_to_enable_ci_continuous_integration"><a class="anchor" href="#_replaceadd_files_to_enable_ci_continuous_integration"></a>Replace/add files to enable CI (Continuous Integration)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Use the
+<a href="https://github.com/Rasbats/shipdriver_pi">ShipDriver
+files/directories</a>
+to make the changes required.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/1files.jpg" alt="1files.jpg"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_following_directories_are_copied_from_shipdriver_to_the_tidefinder_directory"><a class="anchor" href="#_the_following_directories_are_copied_from_shipdriver_to_the_tidefinder_directory"></a>The following directories are copied from ShipDriver to the TideFinder directory:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>.circleci</p>
+</li>
+<li>
+<p>build-deps</p>
+</li>
+<li>
+<p>ci</p>
+</li>
+<li>
+<p>flatpak (<strong>rename org.opencpn.OpenCPN.Plugin.ShipDriver.yaml as
+org.opencpn.OpenCPN.Plugin.TideFinder.yaml</strong>)</p>
+</li>
+<li>
+<p>libs</p>
+</li>
+<li>
+<p>mingw</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_this_directory_replaces_the_original_in_tidefinder"><a class="anchor" href="#_this_directory_replaces_the_original_in_tidefinder"></a>This directory replaces the original in TideFinder:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>cmake</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_these_shipdriver_files_are_added_to_the_tidefinder_directory"><a class="anchor" href="#_these_shipdriver_files_are_added_to_the_tidefinder_directory"></a>These ShipDriver files are added to the TideFinder/ directory:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>.cmake-format.yaml</p>
+</li>
+<li>
+<p>.travis.yml</p>
+</li>
+<li>
+<p>appveyor.yml</p>
+</li>
+<li>
+<p>CI.md</p>
+</li>
+<li>
+<p>config.h.in</p>
+</li>
+<li>
+<p>COPYING</p>
+</li>
+<li>
+<p>DEPENDENCIES.md</p>
+</li>
+<li>
+<p>README-git.md</p>
+</li>
+<li>
+<p>shipdriver-plugin.xml.in (<strong>rename as TideFinder-plugin.xml.in</strong>)</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_files_to_edit"><a class="anchor" href="#_files_to_edit"></a>Files to edit</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>README.md</p>
+</li>
+<li>
+<p>CMakeLists.txt</p>
+</li>
+<li>
+<p>TideFinder-plugin.xml.in</p>
+</li>
+<li>
+<p>org.opencpn.OpenCPN.Plugin.TideFinder.yaml</p>
+</li>
+<li>
+<p>appveyor.yml</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It may be easiest to use two text editor windows, one showing the
+TideFinder file with the other showing ShipDriver.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_readme_md"><a class="anchor" href="#_readme_md"></a>README.md</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Change the building instructions and make other edits as necessary.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cmakelists_txt"><a class="anchor" href="#_cmakelists_txt"></a>CMakeLists.txt</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A draft copy using ShipMaker CMakeLists.txt can be used as a template
+for the new file. Edit the draft copy and substitute TideFinder for
+ShipDriver. Then delete the original TideFinder file and rename the
+draft copy CMakeLists.txt.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2files.jpg" alt="2files.jpg"></span></p>
+</div>
+<div class="paragraph">
+<p>Remove `src/ocpn_plugin.h' from the source files. This is in the
+libs/api-16 directory and used later, when building.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tidefinder_plugin_xml_in"><a class="anchor" href="#_tidefinder_plugin_xml_in"></a>TideFinder-plugin.xml.in</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Edit this file using the ShipDriver file as a guide.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_org_opencpn_opencpn_plugin_tidefinder_yaml"><a class="anchor" href="#_org_opencpn_opencpn_plugin_tidefinder_yaml"></a>org.opencpn.OpenCPN.Plugin.TideFinder.yaml</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This file is found in the `flatpak' directory. Just 3 name
+substitutions.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_appveyor_yml"><a class="anchor" href="#_appveyor_yml"></a>appveyor.yml</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Just one substitution.</p>
+</div>
+<div class="paragraph">
+<p><a href="Alternative-Workflow.html" class="page">The Alternative Workflow</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

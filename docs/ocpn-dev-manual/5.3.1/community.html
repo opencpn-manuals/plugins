@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Community :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/community.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://leamas.github.io/ocpn-manuals">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="community.html">Community</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugin API</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugin_api_versions.html">Plugin API Versions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ocpn_draw_odapi.html">OCPN Draw ODAPI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="standalone_plugin_compilation.html">Plugin Compilation Win</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="troubleshooting_plugins.html">Troubleshooting Plugins</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_guidelines.html">Plugin Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_documentation.html">Plugin Documentation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_submissions.html">Plugin Submissions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="testplugin.html">Testplugin and Frontend2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="demo_plugin.html">Demonstration Plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="coding_solutions.html">Coding Solutions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_build_windows.html">Fork and Build (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oplaydo1.html">oplaydo1 (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_and_build_linux.html">Fork and Build (Linux)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oplaydo1_linux.html">oplaydo1 (Linux)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../AlternativeWorkflow/index.html">Alternative Managed Workflow for OpenCPN plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../AlternativeWorkflow/index.html">master</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li><a href="community.html">Community</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Community</h1>
+<div class="sect1">
+<h2 id="_opensource_software"><a class="anchor" href="#_opensource_software"></a>Opensource Software</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License
+GPL</a> <a href="https://www.gnu.org/philosophy/free-sw.html">GNU Definition</a>
+<a href="https://opensource.org/">Open Source Initiative</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_opensource_cooperation"><a class="anchor" href="#_opensource_cooperation"></a>Opensource Cooperation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These notes are much more important in an open community like OpenCPN.
+Otherwise work issues tend to be stored out of sight and we risk two or
+more are working on the same thing clueless of each others. Open
+cooperation and problem solving communication is a better way.</p>
+</div>
+<div class="paragraph">
+<p>There is a wide range of skills &amp; skill levels in this community. We all
+try to help each other, but we need to understand that this is all
+voluntary, and intended to be fun. We all share the common interest of
+supporting and creating great Chart Plotter Navigation software.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_participation"><a class="anchor" href="#_participation"></a>Participation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are many ways to participate in and assist this Open Source
+Project. Programming skills are advantageous but not necessary because
+many other different skills and efforts are needed. See where you can
+help!</p>
+</div>
+<div class="sect2">
+<h3 id="_user_participation"><a class="anchor" href="#_user_participation"></a>User Participation</h3>
+<div class="paragraph">
+<p>Language Translator: Assist by
+<a href="https://crowdin.com/project/opencpn">Crowdin Translation of OpenCPN and
+Plugins</a></p>
+</div>
+<div class="paragraph">
+<p>User Manual Editor: Assist by
+<a href="/opencpn/developer_manual/edit_user_manual#won_t_you_become_an_editor_to_advance_opencpn">Editing</a></p>
+</div>
+<div class="paragraph">
+<p>User Feedback: Suggestions, User Interface Suggestions, Feature
+Requests, Bugs<br>
+should be done <span class="underline">exclusively</span> via:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/">OpenCPN Cruiser&#8217;s Forum</a>
+Find or make an appropriate thread For discussion.</p>
+</li>
+<li>
+<p><a href="https://opencpn.org/flyspray/">Tracker</a> Sometimes called Flyspray. You
+must register first.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Please refrain from inserting your comments, bugs &amp; feature requests
+into <em>Alpha</em> and <em>Beta</em> Testing.</p>
+</li>
+<li>
+<p>This distracts the programmers from their goal, disrupts
+communications and the points, as good as they may be are generally
+lost!</p>
+</li>
+<li>
+<p>Programmers are often working on much bigger projects than the User
+Interface, which may be associated with support of many OS, migration to
+newer tools, or introducing big new features..</p>
+</li>
+<li>
+<p>Let the programmers work in peace on tough problems.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_beta_tester"><a class="anchor" href="#_beta_tester"></a>Beta Tester</h3>
+<div class="paragraph">
+<p>Beta Testing is conducted in a Real Time environment (not using Debug)
+by volunteer testers or end users when the development team determines
+the software is ready.</p>
+</div>
+<div class="paragraph">
+<p>Any user can be a beta tester, they need to know how to install and use
+the software and report. Using CI tools is inappropriate for Beta
+Testing.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programming_education"><a class="anchor" href="#_programming_education"></a>Programming Education</h3>
+<div class="paragraph">
+<p>We unfortunately don&#8217;t have manpower to teach people programming and
+duplicate every piece of documentation out there.</p>
+</div>
+<div class="paragraph">
+<p>Dave has suggested these websites for Training in C++ which is the most
+basic skill required. In any case they should be bookmarked and studied.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.learncpp.com/">LearnCpp</a></p>
+</li>
+<li>
+<p><a href="http://www.cplusplus.com/doc/tutorial/">CSplusplus</a></p>
+</li>
+<li>
+<p><a href="https://github.com/open-source">Github Opensource</a>
+<a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository">Getting
+Started</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We also do not have energy, time, resources, whatever, to maintain the
+outdated toolchain, dependencies and know-how.</p>
+</div>
+<div class="paragraph">
+<p>However all the build instructions are updated for the current master
+and that is what developers should use. Version 4.8.2 is history. (Pavel
+-Nohal)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alpha_tester"><a class="anchor" href="#_alpha_tester"></a>Alpha Tester</h3>
+<div class="paragraph">
+<p>Done early on by skilled testers at the specific request of programmers
+who are actively creating big new features or internal optimizations.
+These skilled testers are asked by the programmers to help achieve the
+main goals of the program to get it ready for Beta Testing, using a
+"Debug" environment. They do not "Bug" the programmers with:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Additional feature requests.</p>
+</li>
+<li>
+<p>UI changes.</p>
+</li>
+<li>
+<p>Known Bugs (the programmers already know about)</p>
+</li>
+<li>
+<p>Other trivia.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>They debug the program using their software tools and report the actions
+and error codes using MSVC++ call stack, or Linux debug tools. Beta
+testing can only begin when the development team is sure there are no
+obvious bugs such as null pointer deref or other errors that can be
+caught through testing inside a debug environment. Beta testing begins
+when the development team wishes it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_early_alpha_tester"><a class="anchor" href="#_early_alpha_tester"></a>Early Alpha Tester</h3>
+<div class="paragraph">
+<p>Sometimes called "heat-seekers". For this type of tester, using the CI
+products for informal alpha testing of unreleased code is very useful to
+the devs. The main benefit to devs is the rapid cross-platform exercise
+of the app, where testers bang away on the interface using their
+favorite workflows, and attempt to break it. Most devs don&#8217;t keep
+current images of all 5 platforms available for extended testing, and in
+any case this takes a lot of time. However with the software tools
+below, the time spent compiling is dramatically less.</p>
+</div>
+<div class="paragraph">
+<p>It simply must be understood that this alpha testing is ad-hoc, and is
+not tracked in any persistent manner. But it does advance the code-base
+integrity quickly.</p>
+</div>
+<div class="paragraph">
+<p>However do not "bug" the programmers. Simply report your findings as
+completely as possible using the Github "Issues" section. Include any
+pertinent logs, screenshots or files. Do not combine issues into one
+post and identify the program version or date.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programmer"><a class="anchor" href="#_programmer"></a>Programmer</h3>
+<div class="paragraph">
+<p>Programming skills vary greatly. Some are learning, some have many years
+of experience. Respect each other and work together when possible.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software_tools"><a class="anchor" href="#_software_tools"></a>Software Tools</h3>
+<div class="paragraph">
+<p>Debugging see the "Compiling" pages"</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="/opencpn/developer_manual/developer_guide/compiling_linux">Linux
+Compile &amp; Debug</a> - <a href="https://www.gnu.org/software/ddd/">GNU Data Display
+Debugger Webpage</a>
+<a href="http://knuth.luther.edu/~leekent/tutorials/ddd.html">Intro to DDD</a>
+<a href="https://www.gnu.org/software/ddd/manual/pdf/ddd.pdf">Manual</a></p>
+</li>
+<li>
+<p><a href="/opencpn/developer_manual/developer_guide/compiling_windows">Windows
+Compile &amp; Debug</a> -
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/">Windows
+Debuggers</a></p>
+</li>
+<li>
+<p><a href="/opencpn/developer_manual/developer_guide/compiling_mac_osx">Compile
+&amp; Debug on MacOS</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Online Repositories - Free to Opensource</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/open-source">Github Opensource</a>
+<a href="https://help.github.com/">Help</a>
+<a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository">Getting
+Started</a> <a href="https://github.com/OpenCPN/OpenCPN">OpenCPN Github</a> Plugin
+Repositories</p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/opencpn/?source=directory">Sourceforge
+OpenCPN</a> Older compiled OpenCPN</p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/opencpnplugins/?source=navbar">Sourceforge
+Packaging Data</a> Necessary for Compiling</p>
+</li>
+<li>
+<p><a href="https://sourceforge.net/projects/opencpnplugins/files/?source=navbar">Sourceforge
+Older Plugins</a> Older Plugins</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Additional Software Tools which integrate with and push to Github - Free
+to OpenSource :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://travis-ci.com/">Travis CI</a> "Build apps with confidence"</p>
+</li>
+<li>
+<p><a href="https://www.appveyor.com/">Appveyor</a> "Continuous Integration solution
+for Windows" <a href="https://www.appveyor.com/docs/">Docs</a></p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Programmers use these tools to setup automatic builds of the current
+github "head". This involves having certain *.yml files in the main
+directory and requires the plugin author to have an account and enable
+the feature. Linux and Windows executable become available for download
+and testing.</p>
+</li>
+<li>
+<p>OpenCPN and some plugins have TravisCI and Appeveyor enabled.</p>
+</li>
+<li>
+<p>Alpha Testers working closely with Programmers can then access and
+download the most recent "build" without having to compile.</p>
+</li>
+<li>
+<p>These tools are used for ad hoc "Alpha Testing".</p>
+</li>
+<li>
+<p>OpenCPN Programmers do not use these tools for Continuous Integration
+(CI) or Continuous Releases (CR) or Test Driven Development (TDD).</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>See <a href="/opencpn/developer_manual/advanceddebugtips">Advanced Debugging
+Tips</a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>oplaydo1 (Linux) :: OpenCPN Developer Manual</title>
+    <link rel="canonical" href="https://leamas.github.io/ocpn-manuals/ocpn-dev-manual/5.3.1/oplaydo1_linux.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://leamas.github.io/ocpn-manuals">OpenCPN Developer Manual</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ocpn-dev-manual" data-version="5.3.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">OpenCPN Developer Manual</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Developer Manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="community.html">Community</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="compiling_linux.html">Compiling on Linux</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building-on-armhf-linux-armbian-orange-pi.html">Building on armhf linux - Armbian - Orange Pi</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="building_on_motorola_xoom.html">Building on Motorola Xoom</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="compiling_on_slackware.html">Compile on Slackware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rpi2.html">Compile on Raspberry PI</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_windows.html">Compiling on Windows</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="compiling_mac_osx.html">Compiling on macOS</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="modularized_packaging.html">Modularized Packaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="code_formatting.html">Code Formatting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="messaging.html">Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugin API</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugin_api_versions.html">Plugin API Versions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ocpn_draw_odapi.html">OCPN Draw ODAPI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="standalone_plugin_compilation.html">Plugin Compilation Win</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="troubleshooting_plugins.html">Troubleshooting Plugins</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_guidelines.html">Plugin Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_documentation.html">Plugin Documentation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="plugin_submissions.html">Plugin Submissions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Learning</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="testplugin.html">Testplugin and Frontend2</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="demo_plugin.html">Demonstration Plugin</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="coding_solutions.html">Coding Solutions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_build_windows.html">Fork and Build (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="oplaydo1.html">oplaydo1 (Windows)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fork_and_build_linux.html">Fork and Build (Linux)</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="oplaydo1_linux.html">oplaydo1 (Linux)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="bug_and_feature_tracking.html">Bugs and feature tracking</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_dependencies.html">PI Dependencies</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Summary</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installler_dev_setup.html">PI Manager Dev Setup</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_catalog_meta.html">PI Manager Catalog &amp; Meta-Url</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="pi_installer_summary.html">PI Manager Dev Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-build-to-git.html">CI: Push build to Git Release</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci-push-linux-build-to-launchpad.html">CI: Push Linux Build to Launchpad</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="ci_travis_encryption_windows.html">CI: Travis Encryption for Windows Dev</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="advanceddebugtips.html">CI Advanced Debug Tips</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="codacy.html">Codacy:Automate code quality</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="testquality.html">TestQuality -Test Management</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="online_tools.html">Online Nmea Tools</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="user_interface_styling.html">User Interface Styling</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="updating_the_user_manual.html">Updating the User Manual</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../shipdriver/0.0.1/shipdriver.html">Shipdriver manual DEMO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Developer Manual</span>
+    <span class="version">5.3.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../AlternativeWorkflow/index.html">Alternative Managed Workflow for OpenCPN plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../AlternativeWorkflow/index.html">master</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">OpenCPN Developer Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plugin-installer/0.0.1/Home.html">Plugin Installer Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plugin-installer/0.0.1/Home.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.0.1/shipdriver.html">ShipDriver OpenCPN plugin docs.</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.0.1/shipdriver.html">0.0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="developer_guide.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">OpenCPN Developer Manual</a></li>
+    <li>Developer Manual</li>
+    <li>Learning</li>
+    <li><a href="oplaydo1_linux.html">oplaydo1 (Linux)</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">oplaydo1 (Linux)</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>In 'Fork and Build' we built the 'DR_pi' plugin.</p>
+</li>
+<li>
+<p>In Part 1 of this guide the 'DR_pi' plugin is renamed 'oplaydo1_pi'.
+The <a href="oplaydo1.html#using_gimp_to_make_new_icons" class="page">icon is changed</a>.</p>
+</li>
+<li>
+<p>In
+<a href="oplaydo1.html#_part_2edit_the_plugin_for_new_user_actions" class="page">Part 2</a>
+the dialog is changed to allow the user to input 'Start' and 'Finish'
+positions and generate a GPX file for displaying a route in OpenCPN. -
+In 'Fork and Build' we made the 'DR_pi' plugin.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_part_1_rename_the_plugin_and_make_a_new_icon"><a class="anchor" href="#_part_1_rename_the_plugin_and_make_a_new_icon"></a>Part 1: Rename the plugin and make a new icon</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_additional_requirements"><a class="anchor" href="#_additional_requirements"></a>Additional requirements</h3>
+<div class="paragraph">
+<p>GIMP (Free &amp; Open Source Image Editor). Install this using the 'Ubuntu
+Software Centre' (Search for GIMP)</p>
+</div>
+<div class="paragraph">
+<p>Perl (Check it is installed by using the 'Ubuntu Software Centre'</p>
+</div>
+<div class="paragraph">
+<p><a href="http://nchrem.tnw.tudelft.nl/openvms/software2.html">png2wx.pl (Perl
+Script)</a></p>
+</div>
+<div class="paragraph">
+<p>How these programs/script are used will be explained as the guide
+progresses.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rename_and_rebuild"><a class="anchor" href="#_rename_and_rebuild"></a>Rename and rebuild</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>In 'Fork and Build' we made the 'DR_pi' plugin.</p>
+</li>
+<li>
+<p>In this section 'DR_pi' is edited and a new plugin 'oplaydo1_pi' is
+made from 'DR_pi'.</p>
+</li>
+<li>
+<p>Before starting it may be worth making a copy of 'DR_pi'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/make_copy.png" alt="make_copy.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>We use CodeBlocks as the editor.</p>
+</li>
+<li>
+<p>Open the 'DR_pi.cbp' CodeBlock project with 'CodeBlocks'.</p>
+</li>
+<li>
+<p>Replace 'DR_pi' with 'oplaydo1_pi'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/cb_replace.png" alt="cb_replace.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Open the file 'CMakeList.txt' file in 'DR_pi' and edit the file names.
+Change 'DRgui' to 'oplaydo1gui'.</p>
+</li>
+<li>
+<p>Change all the 'DR' to 'oplaydo1'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/cmakelists_edit.png" alt="cmakelists_edit.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Save your work.</p>
+</li>
+<li>
+<p>The old 'DR_pi' folder is renamed 'oplaydo1_pi'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/folder_rename.png" alt="folder_rename.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the 'oplaydo_pi' folder rename files, changing the
+'DRgui..filename' to 'oplaydo1gui..filename'.</p>
+</li>
+<li>
+<p>The files 'NavFunc.cpp' and 'NavFunc.h' can be removed because these
+functions will not be used.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/rename_remove_navfunc.png" alt="rename_remove_navfunc.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Delete the 'old' 'build' folder. Make a new 'build' folder for the
+project.</p>
+</li>
+<li>
+<p>Make a new 'CodeBlocks' project called 'oplaydo1_pi' using 'Terminal'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/cmake_codeblocks.png" alt="cmake_codeblocks.png"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/cmake_works.png" alt="cmake_works.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Using 'CodeBlocks' open the new project 'oplaydo1_pi.cbp'.</p>
+</li>
+<li>
+<p>Build the new project.</p>
+</li>
+<li>
+<p>Some errors will occur, where 'DR' needs to be changed to 'oplaydo1'.</p>
+</li>
+<li>
+<p>The reference to the include file 'NavFunc.h' is removed, as that file
+has been deleted. This will have caused other problems due to missing
+functions and where a function is no longer available it is commented
+out.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/cb_builds.png" alt="cb_builds.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the 'build' folder: 'sudo make install', 'sudo make package', using
+'Terminal'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/make_package.png" alt="make_package.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This creates a '.deb' package which can be opened with the 'Ubuntu
+Software Centre'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/make_package_files.png" alt="make_package_files.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Using the 'Ubuntu Software Centre' 'oplaydo_pi' can be installed, in
+the same way as 'DR_pi'.</p>
+</li>
+<li>
+<p>On the first install the plugin was still named 'DR_pi' not
+'oplaydo1_pi'. There is code in 'oplaydo1_pi.cpp' that needs editing
+with CodeBlocks. Change 'DR' to 'oplaydo1'. '_img_DR' was changed to
+'_img_oplaydo1' in 'oplaydo1_pi.cpp' and in 'icons.cpp' and 'icons.h'.</p>
+</li>
+<li>
+<p>Then 'build' again, followed by 'sudo make install', 'sudo make
+package', using 'Terminal'.</p>
+</li>
+<li>
+<p>The icon has not yet been changed, or any of the code to customise our
+new plugin.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/oplaydo_b4_changes.png" alt="oplaydo_b4_changes.png"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_gimp_to_make_new_icons"><a class="anchor" href="#_using_gimp_to_make_new_icons"></a>Using GIMP to make new icons</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Using <a href="http://shutter-project.org/downloads/">Shutter</a> a screenshot was
+made from the 'DR_pi' icons as a starting point for the new icons.</p>
+</li>
+<li>
+<p>The '.png' files were then opened in Gimp. - Size of the images was
+adjusted to 32×32 and the 'Mode' was set as 'indexed' with 16 colours.</p>
+</li>
+<li>
+<p>The images were then <strong>exported</strong> as new '.png' files and saved in the
+'/learning/oplaydo1_pi' folder, as 'oplaydo1.png' and 'oplaydo1_pi.png'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/gimp_workspace.png" alt="gimp_workspace.png"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/gimp_saved.png" alt="gimp_saved.png"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_png2wx_pl"><a class="anchor" href="#_using_png2wx_pl"></a>Using png2wx.pl</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>The two icon images that were created must now be translated into a
+form that can be used by wxWidgets.</p>
+</li>
+<li>
+<p>Using 'Ubuntu Software Centre' check that 'Perl' has been installed on
+your machine.</p>
+</li>
+<li>
+<p>Download the script 'png2wx.pl' from
+<a href="http://nchrem.tnw.tudelft.nl/openvms/software2.html">here</a>. Place the
+script in the 'oplaydo1_pi' root folder.</p>
+</li>
+<li>
+<p>Using 'Terminal' navigate to 'learning/oplaydo1_pi'. Type the
+following command line.</p>
+</li>
+</ul>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>perl png2wx.pl -C icons.cpp -H icons.h -M ICONS_H oplaydo1.png oplaydo1_pi.png</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Two files, 'icons.cpp' and 'icons.h' are created in the root folder.</p>
+</li>
+<li>
+<p>Copy these files to the 'learning/oplaydo1_pi/src' folder. They will
+replace the existing files and provide the new icons for 'oplaydo1_pi'.</p>
+</li>
+<li>
+<p>Using 'CodeBlocks' open the 'oplaydo1_pi' project.</p>
+</li>
+<li>
+<p>Build the project again.</p>
+</li>
+<li>
+<p>Using 'Terminal' cd to the 'build' folder. 'sudo make install', 'sudo
+make package'.</p>
+</li>
+<li>
+<p>The '.deb' package made can be opened with the 'Ubuntu Software
+Centre' and reinstalled.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/open_icon_changed.png" alt="open_icon_changed.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To summarise. The plugin has been renamed and the icons changed to
+match the new project. At present the functionality in 'oplaydo1_pi' is
+nearly the same as that in 'DR_pi'.</p>
+</li>
+<li>
+<p>In the Part 2 the plugin is given new functionality.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_part_2_edit_the_plugin_for_new_user_actions"><a class="anchor" href="#_part_2_edit_the_plugin_for_new_user_actions"></a>Part 2: Edit the plugin for new user actions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_additional_requirements_2"><a class="anchor" href="#_additional_requirements_2"></a>Additional requirements</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Using the 'Ubuntu Software Centre' install
+'http://github.com/wxFormBuilder/wxFormBuilder/releases[wxFormBuilder]'.
+( RAD tool for wxWidgets GUI design)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_aim"><a class="anchor" href="#_aim"></a>Aim</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Make a new user interface and generate the code for this.</p>
+</li>
+<li>
+<p>Modify the plugin code to use the new interface</p>
+</li>
+<li>
+<p>Remove unwanted code</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_interface"><a class="anchor" href="#_user_interface"></a>User Interface</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>To save time the 'oplaydo1.fbp' wxFormBuilder project file was copied
+from the Windows machine.</p>
+</li>
+<li>
+<p><strong>Problem</strong> 'Ubuntu Software Centre' had installed a copy of
+wxFormBuilder that did not open the '.fbp'. Although the wxFormBuilder
+source etc has moved to GitHub, SourceForge still has some useful
+information. Following these instructions wxFormBuilder was updated,
+even though my Linux machine is using 'Ubuntu 14.04 - Trusty'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/wxfb_update.png" alt="wxfb_update.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The 'oplaydo1.fbp' file could now be opened.</p>
+</li>
+<li>
+<p>Alternatively start a new project in wxFormBuilder. Edit the
+properties. The project will be called 'oplaydo1'.</p>
+</li>
+<li>
+<p>This is what you are aiming for:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_dialog.png" alt="f_dialog.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The textboxes (textCtrl) have been given names that indicate their
+use.</p>
+</li>
+<li>
+<p>An event called 'OnGenerate' has been added to the wxButton
+'m_buttonGenerate'. When the plugin is used this button will generate
+the GPX file. The format can be imported into OpenCPN.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_ongenerate.png" alt="f_ongenerate.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the project properties set 'file' as 'oplaydo1gui'. The path in my
+case is 'home/mike/learning/oplaydo1_pi'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/f_filename.png" alt="f_filename.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>When you are satisfied with the design use 'File/Generate Code' (or
+F8) to make two files in the root folder, 'oplaydo1gui.cpp' and
+'oplaydo1gui.h'.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_modifying_the_code"><a class="anchor" href="#_modifying_the_code"></a>Modifying the code</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Make a backup of the files 'oplaydo1gui.cpp' and 'oplayd1gui.h' in
+'src' in case you need to refer to them.</p>
+</li>
+<li>
+<p>Move 'oplaydo1gui.cpp' and 'oplayd1gui.h' from 'oplaydo1_pi' to
+'oplaydo1_pi/src'.</p>
+</li>
+<li>
+<p>Open the 'oplaydo1_pi' project with 'CodeBlocks'.</p>
+</li>
+<li>
+<p>'DlgDef' needs changing to 'm_dialog', which was the class
+wxFormBuilder used for the dialog.</p>
+</li>
+<li>
+<p>'DlgCfgDef' sections are removed. We will not be using 'preferences'
+for the plugin.</p>
+</li>
+<li>
+<p>In 'oplaydo1gui_impl.h' change 'DlgDef' to 'm_dialog'.</p>
+</li>
+<li>
+<p>Try to avoid any changes to 'oplaydo1gui.cpp' and 'oplayd1gui.h'. This
+would create differences with the source wxFormBuilder file.</p>
+</li>
+<li>
+<p>The command event 'OnGenerate' has to be linked to a function in
+'oplaydo1gui_impl.h'.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/cb_ongenerate.png" alt="cb_ongenerate.png"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The function that has the code we want for generating a GPX file is
+originally called 'Calculate'. Change 'Calculate' to 'OnGenerate'.</p>
+</li>
+<li>
+<p>In 'oplaydo1gui_impl.cpp' find the function 'Calculate' and rename it
+to 'OnGenerate'.</p>
+</li>
+<li>
+<p>The functions 'OnPSGPX' is not needed. Parts of 'OpenXML' may be
+useful. Either delete functions/code or comment out.</p>
+</li>
+<li>
+<p>'Preferences' is not going to be used so 'CfgDlg' references are
+removed.</p>
+</li>
+<li>
+<p>All the changes are not going to be listed. Source code files can be
+downloaded <a href="_attachments/oplaydo1_code.zip">here</a>.</p>
+</li>
+<li>
+<p>'std:abs' causes an error on Linux, which is found by CodeBlocks. Use
+'fabs' instead.</p>
+</li>
+<li>
+<p><strong>Problem …</strong>After 'sudo make install', 'sudo make package' and
+installing the '.deb' package no icons could be seen in OpenCPN.</p>
+</li>
+<li>
+<p><strong>Remedy …</strong>One of the '.png' icon images still used 256 colours.
+Using GIMP this was 'mode/indexed' to 16. The png2wx.pl script was rerun
+and the two files 'icons.cpp' and 'icons.h' copied to the 'src' folder.
+The project was rebuilt in CodeBlocks.</p>
+</li>
+<li>
+<p>'sudo make install', 'sudo make package'. Reinstall the '.deb'
+package.</p>
+</li>
+<li>
+<p>After removing all the errors and building/installing the plugin the
+new dialog form is shown and tested.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/test_oplaydo1.png" alt="test_oplaydo1.png"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
