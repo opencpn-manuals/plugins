@@ -1,6 +1,5 @@
 site:
   title: OpenCPN Developer Manual
-  # the 404 page and sitemap files only get generated when the url property is seto
   url: https://leamas.github.io/ocpn-manuals/
   start_page:  ocpn-dev-manual:ROOT:developer_guide.adoc
 
@@ -12,9 +11,14 @@ content:
     - url: https://github.com/leamas/ocpn-pi-docs.git
       branches: main
       edit_url: true
-    - url: https://github.com/leamas/shipdriver_pi.git
+    - url: https://github.com/Rasbats/shipdriver_pi.git
       branches: master
       edit_url: true
+      start_path: docs
+    - url: https://github.com/Rasbats/managed_plugins.git
+      branches: asciidoc
+      edit_url: true
+      start_path: docs
 ui:   
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
