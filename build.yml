@@ -1,4 +1,3 @@
-# last build 2021-03-21
 site:
   title: OpenCPN Developer Manual
   url: https://leamas.github.io/ocpn-manuals/
@@ -22,7 +21,7 @@ content:
       start_path: manual
 ui:   
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: ./ui-bundle.zip
     snapshot: true
 
 output:
