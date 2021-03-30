@@ -11,10 +11,6 @@ content:
     - url: https://github.com/leamas/ocpn-pi-docs.git
       branches: main
       edit_url: false
-    - url: https://github.com/Rasbats/shipdriver_pi.git
-      branches: asciidoc
-      edit_url: false
-      start_path: manual
     - url: https://github.com/Rasbats/managed_plugins.git
       branches: asciidoc
       edit_url: false
