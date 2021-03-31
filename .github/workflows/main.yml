@@ -1,11 +1,13 @@
-name: OpenCPN Developmen Manual
+name: OpenCPN Development Manual
 
 on:
   push:
     branches:
-      - master
+      - gh-pages
 env:
-  SITE_DIR: 'docs'
+  SITE_DIR: '../docs'
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
 jobs:
   build_site:
     name: "Build site with Antora"
@@ -41,8 +43,7 @@ jobs:
      - name: Deploy to GitHub Pages
        uses: JamesIves/github-pages-deploy-action@3.2.1
        with:
-        # ACCESS_TOKEN: # optional
-        # GITHUB_TOKEN: "${{ github.token}}"
+        GITHUB_TOKEN: "${{ github.token}}"
         FOLDER: "${{ env.SITE_DIR }}"
         BRANCH: 'gh-pages'
         COMMIT_MESSAGE: "[CI] Publish Documentation for ${{ github.sha }}"
