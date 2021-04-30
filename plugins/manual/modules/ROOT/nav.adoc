@@ -1,0 +1,14 @@
+* xref:index.adoc[Home Page]
+
+* Plugins
++
+--
+include::partial$nav-plugins.adoc[]
+--
+* Beta Plugins
++
+--
+include::partial$nav-betaplugins.adoc[]
+--
+*
+

@@ -1,0 +1,503 @@
+
+== Compile 2013 VS Community Workflow
+
+=== Aim
+
+To show one workflow for setting up a Windows pc for compiling OpenCPN.
+
+The pc used was a 'win-32-x86 machine', running Windows 8.1.
+
+If you are running 'x64' you will need to download the 64 bit installers
+for some of the programs used here. This applies to:
+
+* Git
+* CMake
+* 7Zip
+
+The steps will follow the instructions
+link:/opencpn/developer_manual/developer_guide/compiling_windows[here].
+
+'Navigate' means using 'Windows Explorer' to find a folder or file.
+
+'cd' or 'CD' is used in a Terminal window to 'change directory' (aka
+'change folder')
+
+=== Method
+
+* This assumes that you have accepted the suggested locations for
+installing the various programs.
+
+==== Install Visual Studio Community 2013
+
+*https://www.visualstudio.com/en-us/news/releasenotes/vs2013-community-vs*
+
+* Download the installer.
+
+image::vs_download.png[vs_download.png]
+
+* Install Visual Studio by a double-click on the '.exe'. You can disable
+all the optional features offered to save space.
+
+==== Install Git
+
+Get the Git installation packages from
+*https://git-for-windows.github.io/*
+
+* Install and let it register in the *PATH* environment variable
+* The defaults for all the installation settings are fine except for
+just the following:
+* On the *Adjusting your PATH environment*, select *Run Git from the
+Windows Command Prompt*.
+
+image::git_command_prompt.png[git_command_prompt.png,width=513,height=399]
+
+* On the *Choosing CR/LF behavior* select *Checkout as-is, Commit Unix
+LF*.
+
+image::git_commit_unix_lf.png[git_commit_unix_lf.png,width=513,height=399]
+
+* This is really important, the codebase uses Unix LF line endings and
+committing CR/LF makes the commits huge and hides their real content.
+
+==== Install CMake
+
+* Get the latest CMake installation packages from
+*http://www.cmake.org/[http://www.cmake.org]*
+
+image::cmake_web1.png[cmake_web1.png]
+
+* *The installer used is shown at the bottom of this screenshot.*
+
+image::cmake_web2.png[cmake_web2.png]
+
+* *As part of the install choose this option:*
+
+image::cmake_path.png[cmake_path.png]
+
+* Install CMake and let it register the *'Path'* environment variable
+
+==== Install Poedit
+
+Get the latest 'Poedit' installation package from
+*http://www.poedit.net/[http://www.poedit.net]*
+
+. Install 'Poedit'.
+. Add *'C:\Program Files\Poedit\GettextTools\bin'* to the *PATH*
+environment variable.
+
+* Select 'System' and in the left column click 'Advanced System
+Settings'.
+
+image::poedit_system.png[poedit_system.png]
+
+* On the Advanced tab, click on the '*Environment Variables'* button.
+
+image::poedit_system_environment.png[poedit_system_environment.png]
+
+* Under **'System Variables' **find the **'Path' **system variable.
+Press *'Edit'.*
+
+image::poedit_system_environment_path.png[poedit_system_environment_path.png]
+
+* In **'Variable value' *add '*;***C:\Program
+Files\Poedit\GettextTools\bin'* to the end of the list. (The**
+semicolon** is important!)
+
+image::poedit_system_environment_path_edit.png[poedit_system_environment_path_edit.png]
+
+* Press **'OK' **a number of times to save and exit.
+
+**Note: **If you look in the '**C:\Program
+Files\Poedit\GettextTools\****bin' **folder you will see the file
+*'msgfmt.exe'* which does the work of the program.
+
+==== Install NSIS
+
+In case you want to create installation packages, install NSIS Unicode
+2.46.5 from
+*https://code.google.com/archive/p/unsis/downloads[http://www.scratchpaper.com/]*
+
+* Choose the Unicode version for 'win32-x86'. All the default settings
+can be accepted.
+
+image::nsis_download.png[nsis_download.png]
+
+There is a "bug" in CMake, which only looks at
+"HKEY_LOCAL_MACHINE\SOFTWARE\NSIS" for the installation location of NSIS
+
+The Unicode version adds its registry key in
+"HKEY_LOCAL_MACHINE\SOFTWARE\NSIS\Unicode".
+
+Some registry tweaking is needed.
+
+* Open a 'Command Prompt' and type and run 'regedit'. This starts the
+'Registry Editor'.
+
+image::nsis_command_prompt.png[nsis_command_prompt.png]
+
+* Navigate to *'HKEY_LOCAL_MACHINE\SOFTWARE\NSIS\Unicode'*. Double-click
+on the 'Default' line.
+
+*Note:* If you are running a 64-bit machine (x64) the key is located in
+'HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432node\NSIS\Unicode'
+
+image::nsis_registry_double_click.png[nsis_registry_double_click.png]
+
+* Copy the value (The installation path of NSIS).
+* Navigate to *'HKEY_LOCAL_MACHINE\SOFTWARE\NSIS'*.
+
+*Note:* If you are running a 64-bit machine (x64) the location is
+'HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432node\NSIS'.
+
+image::nsis_value_not_set.png[nsis_value_not_set.png]
+
+* Double-click on the 'Default' line and paste the install path into
+'Value data'.
+
+image::nsis_paste_value.png[nsis_paste_value.png]
+
+To make the installer package use proper language name translations, it
+is necessary to modify file **'C:\Program
+Files\NSIS\Unicode\Contrib\Language files\Norwegian.nsh' **and change
+the line
+
+....
+!insertmacro LANGFILE "Norwegian" "Norwegian"
+....
+
+to
+
+....
+!insertmacro LANGFILE "Norwegian" "Norsk"
+....
+
+The **'C:\Program Files\NSIS\Unicode\Contrib\Language
+files\Norwegian.nsh' ** is edited.
+
+Due to 'Security' you will need to add 'Write' permission to this file.
+Without this you will not be able to save the changes.
+
+* With 'Explorer' navigate to *'C:\Program
+Files\NSIS\Unicode\Contrib\Language files\'.*
+* Right-click on the file *'Norwegian.nsh'.*
+* In 'Properties', 'Security' tab, press the 'Edit' button.
+
+image::nsis_norsk_security.png[nsis_norsk_security.png]
+
+* Select 'Users' and tick all the 'Allow' boxes.
+* The **'C:\Program Files\NSIS\Unicode\Contrib\Language
+files\Norwegian.nsh' ** can now be opened with 'WordPad' or 'Notepad'
+and the changes made and saved.
+
+image::nsis_norge.png[nsis_norge.png]
+
+image::nsis_norsk.png[nsis_norsk.png]
+
+==== Compiling wxWidgets 3.0.2
+
+* Download the '3.0.2 release' as a *'zip'* file from
+*http://wxwidgets.org/downloads/*
+* Navigate to the folder where you downloaded the zip.
+* Right-click on the file **'wxWidgets-3.0.2.zip' **and select the menu
+option 'Extract All…'.
+
+image::wxw_extract_all.png[wxw_extract_all.png]
+
+* Edit the folder for the Destination to read 'C:\wxWidgets-3.0.2' and
+press the 'Extract' button.
+
+image::wxw_extract.png[wxw_extract.png]
+
+===== Start the 'VS2013 x86 Native Tools Command Prompt'
+
+**Note: **This can be confusing!!! Even though we have installed 'Visual
+Studio Community 2013' when you search the 'Program Files' folder you
+will see 'Microsoft Visual Studio 12' but not 'Microsoft Visual Studio
+13'. When you look at the installed 'Apps' you will see this:
+
+image::vs2012_2013.png[vs2012_2013.png]
+
+* If you start the command prompt from 'Apps' *DO NOT* use the
+'Microsoft Visual Studio 2012 - VS2012 x86 Native Tools Command Prompt'.
+An error message will appear:
+
+image::vs_11_error.png[vs_11_error.png]
+
+* Instead … press the button 'Visual Studio Tools' under the heading
+'Visual Studio 2013'.
+
+This will open a folder of shortcuts.
+
+image::vs_tools.png[vs_tools.png]
+
+You are in the folder 'C:\Program Files\Microsoft Visual Studio
+12.0\Common7\Tools\Shortcuts'
+
+* Double-click the 'VS2013 x86 Native Tools Command Prompt' shortcut and
+a 'Terminal' window will appear
+
+**Note: **On a 64 bit machine the prompt is 'VS2013 x64 Command Prompt'
+
+image::vs_command_prompt.png[vs_command_prompt.png]
+
+Title is 'VS2013', the text reads 'Visual Studio 12'. You get the
+picture!!!
+
+* cd to *'C:\wxWidgets-3.0.2\build\msw*'.
+
+An easy way to enter the correct folder (cd) for 'wxWidgets
+3.0.2\build\msw' is to navigate to that folder with 'Explorer'.
+
+* On the line showing the folders right-click and select 'Copy address
+as text'.
+* In the Terminal window type 'cd ' (that is 'cd' plus a space').
+Right-click and 'Paste'.
+
+Build both *release* and *debug* configurations, which will be
+compatible with Windows XP.
+
+....
+RELEASE VERSION
+nmake -f makefile.vc BUILD=release SHARED=1 CFLAGS=/D_USING_V120_SDK71_ CXXFLAGS=/D_USING_V120_SDK71_
+
+DEBUG VERSION
+nmake -f makefile.vc BUILD=debug SHARED=1 CFLAGS=/D_USING_V120_SDK71_ CXXFLAGS=/D_USING_V120_SDK71_
+....
+
+* For the 'Release' version copy the line starting 'nmake' into the
+Terminal window and press 'Enter'. Wait until the building has finished.
+This could take some time.
+* Repeat the process for the 'Debug' version.
+
+image::wxw_release_compiled.png[wxw_release_compiled.png]
+
+* Close the 'Terminal' window.
+
+You will find that a number of files have been made in the folder
+*'c:\wxWidgets-3.0.2\lib\vc-dll'*.
+
+Some of the filenames start 'wxmsw30u' and others 'wxmsw30ud'
+corresponding to the 'Release' and 'Debug' versions.
+
+image::wxw_files_made.png[wxw_files_made.png]
+
+*This completes the preparations for building the OpenCPN program.*
+
+== Building OpenCPN
+
+=== Get the OpenCPN source
+
+* Make a folder to store your OpenCPN source code files. In this guide I
+am going to call it 'Example' in the root folder, i.e.**
+'C:\Example\'**.
+* Start a 'Command Prompt' (Any prompt will work - just right-click on
+your Window icon) and select 'Command Prompt'. A Terminal window will
+appear.
+
+image::git_wcommand_prompt.png[git_wcommand_prompt.png]
+
+* CD to the 'Example' folder. (Type 'cd C:\Example' and press 'Enter').
+
+image::git_cd_example.png[git_cd_example.png]
+
+* Type this text into the Terminal window and press 'Enter'.
+
+....
+git clone git://github.com/OpenCPN/OpenCPN.git
+....
+
+* This will download the latest Beta code.
+
+image::git_clone_opencpn.png[git_clone_opencpn.png]
+
+* The files/folders for building 'OpenCPN' will be placed in the folder
+'C:\Example\OpenCPN'
+* If you are happy to work with the Beta version source code … move on
+to the
+link:/opencpn/developer_manual/developer_guide/compiling_windows/compiling_windows_-_steps_-_example#get_the_binary_dependency_files[next
+section].
+
+'''''
+
+*Note:* If you want the source code for the latest stable release (4.4.0
+at time of writing) you need to locate that source on GitHub.com:
+
+https://github.com/OpenCPN/OpenCPN/tree/v4.4.0
+
+* Press the 'Clone or download' button. *DO NOT* use the text for 'git
+clone' or you will get the Beta version. Instead …
+* Select 'Download Zip' and get the zip file.
+
+image::git_clone_download_44.png[git_clone_download_44.png]
+
+* Extract the files to the folder 'C:\Example'
+
+image::git_zip_extract.png[git_zip_extract.png]
+
+* The files/folders for building 'OpenCPN' will be placed in the folder
+'C:\Example\OpenCPN-4.4.0'
+* These are the files that are going to be used for this workflow. This
+folder is renamed 'C:\Example\OpenCPN' to make the process steps read in
+the same way as for the files from 'git clone' (the Beta version).
+
+'''''
+
+=== Get the binary dependency files
+
+Sorry, this needs another program - *7Zip.*
+
+....
+ * Get the installer from [[http://www.7-zip.org/download.html|here. ]]
+* 7z files are compressed files making them smaller and faster to download. The '7Zip' program allows you to extract the original files. {{opencpn:dev:developer_guide:compiling_windows:7z_download.png?nolink&}}
+....
+
+* After the download double-click the '7z….exe' file to carry out the
+installation.
+* You need to restart the computer.
+
+image::7z_restart.png[7z_restart.png]
+
+*'7z'* files can now be opened and extracted with this program.
+
+* Download
+*http://sourceforge.net/projects/opencpnplugins/files/opencpn_packaging_data/OpenCPN_buildwin.7z/download[OpenCPN_buildwin.7z]*
+
+image::o_build_win.png[o_build_win.png]
+
+* Right-click on this file in 'Windows Explorer'. Select the option
+'7-Zip', 'Extract Files'.
+
+image::7z_extract_build_win.png[7z_extract_build_win.png]
+
+* Select the folder 'C:\Example\OpenCPN. The files and folders from the
+7z file will be placed under that
+directory
+
+image::7z_extract_folder.png[7z_extract_folder.png]
+
+* Uncheck the box next to the text 'OpenCPN_buildwin'.
+
+image::7z_extract_build_win2.png[7z_extract_build_win2.png]
+
+* Use the 'No to All' button to avoid overwriting files in the source.
+
+image::bw_overwrite.png[bw_overwrite.png]
+
+* This will add extra files in the folder 'C:\Example\OpenCPN\buildwin'
+that are needed for the build.
+
+==== Make a Visual Studio solution for building OpenCPN
+
+* Start the VS2013 x86 Native Tools Command Prompt (A reminder is
+link:/opencpn/developer_manual/developer_guide/compiling_windows/compiling_windows_-_steps_-_example#start_the_vs2013_x86_native_tools_command_prompt[here])
+
+{empty}[The command prompt shortcut is in the folder 'C:\Program
+Files\Microsoft Visual Studio 12.0\Common7\Tools\Shortcuts']
+
+* Change Directory [cd] into 'C:\Example\OpenCPN'.
+* Create a folder named "build" under this topmost source folder.
+
+....
+mkdir build
+....
+
+* cd to the "build" folder and then issue the cmake command shown.
+
+....
+cd build
+cmake -T v120_xp ..
+....
+
+image::b_terminal.png[b_terminal.png]
+
+image::b_terminal_finished.png[b_terminal_finished.png]
+
+* Close the Terminal window. +
+* This has created the Visual Studio solution file 'OpenCPN.sln'.
+
+image::b_solution_file.png[b_solution_file.png]
+
+....
+*
+....
+
+==== Build OpenCPN
+
+* Open the '.sln' file with the program Visual Studio Community 2013
+(you can double-click the file name)
+* The program window should look like this:
+
+image::vs_open_solution.png[vs_open_solution.png]
+
+* Select the project 'opencpn' as the 'Startup Project
+
+image::vs_startup_project.png[vs_startup_project.png]
+
+'''''
+
+* To avoid problems later please check the following options are set
+correctly
+* Select 'Tools', 'Options'
+* Check the settings are the same as shown in these two screenshots
+
+image::vs2013_line_endings.png[vs2013_line_endings.png]
+
+image::vs2013_tabs.png[vs2013_tabs.png]
+
+'''''
+
+* From the top of the window choose 'Build', 'Solution'.
+* You will be making a 'Debug' version of the program.
+
+image::vs_build_debug.png[vs_build_debug.png]
+
+* The build will take some time but the result should be like this:
+
+image::vs_debug_success.png[vs_debug_success.png]
+
+* All is going well. The release version will now be made.
+* Change the 'Dropdown' from 'Debug' to 'Release'.
+
+image::vs_release.png[vs_release.png]
+
+* From the top of the window choose 'Build', 'Solution' again.
+
+image::vs_release_success.png[vs_release_success.png]
+
+* Two new folders have appeared in 'C:\Example\OpenCPN\build', called
+'Release' and 'Debug'.
+
+=== Make a package to install OpenCPN
+
+This assumes that you have installed 'NSIS' (The guide was
+link:/opencpn/developer_manual/developer_guide/compiling_windows/compiling_windows_-_steps_-_example#install_nsis[here]).
+
+* In Visual Studio Solution Explorer you will see a project called
+'PACKAGE'.
+* Right-click 'PACKAGE'. Choose 'Project Only', 'Build Only PACKAGE'
+
+image::vs_package.png[vs_package.png]
+
+* Run this option.
+
+image::vs_package_built.png[vs_package_built.png]
+
+* This will produce an installer 'setup.exe' in the folder
+'C:\Example\OpenCPN\build\'
+
+image::vs_package_location.png[vs_package_location.png]
+
+=== Install OpenCPN
+
+* Double click the setup .exe
+* Accept the default settings
+* The installation will complete with this page
+
+image::o_installed.png[o_installed.png]
+
+* Run the finished program
+
+image::o_success.png[o_success.png]
+
+*OpenCPN (Version 4.4.0) and the four plugins included in the source
+files have been built successfully.*

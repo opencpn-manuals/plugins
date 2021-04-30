@@ -1,0 +1,152 @@
+= Compile on Raspberry PI
+
+== Prerequisites:
+
+HW setup: Make sure that you have:
+
+. A decent power supply. The Pi is power hungry and especially for
+multi-core compilations and later on moving and zooming maps, you'll
+need full power. A 1.5 Amps mobile phone charger won't do it, most of
+the 2 Amps neither, especially in combination with ultra thin wired USB
+signal cables! The Pi seems to create enormous current bursts, rather
+than a continuous current flow. My Amp meter shows an average flow of
+only 0.5A, but I know that the spikes will go up to 2-3 Amps! Zooming,
+panning and heavy display activities cause these bursts, hence if your
+Pi crashes during such actions, it's most likely due to insufficient
+power or too thin cables.
+. A quality Class 10 SD-Card. Most of instabilities or latencies come
+from lousy SD-Cards or insufficient power supplies
+. Good Storage. You might wonder, where to put your chart files. Either,
+buy a bigger SD card (32 Gb),or leave the SD card for Jessie and the app
+and add a decent USB Memory stick. The Pi mounts memory sticks
+automatically under /media/… The Pi is picky concerning mem sticks!
+
+== Make sure, you are on the latest OS version
+
+....
+$sudo apt-get update
+$sudo apt-get dist-upgrade
+....
+
+Use RASPI-CONFIG to enable OpenGL. Since the driver is still Beta, you
+can't do this from the GUI Desktop.
+
+....
+$ sudo raspi-config
+....
+
+⇒ Advanced Options, “GL Driver”, enable +
+Add the following lines to /boot/config.txt
+
+....
+$sudo vi /boot/config.txt
+framebuffer_depth=32
+framebuffer_ignore_alpha=1
+....
+
+== Getting the sources and building OpenCPN:
+
+....
+Simply follow the Linux build instructions for Ubuntu/Debian
+....
+
+== Random notes:
+
+Be aware that you also have to make provisions for the HW you want to
+connect to the Pi, to give you GPS, AIS etc. and where and how you want
+to connect these to the various interfaces and protocols:
+
+In most cases you want
+
+....
+gpsd gpsd-clients
+....
+
+There is an awful lot of things to consider when adding HW to the Pi,
+which has nothing to do with compiling OpenCPN for Pis. OpenCPN is just
+using'em. If that scares you away, consider to use OpenPlotter, which is
+a pretty nice fully integrated HW & SW solution for amazingly affordable
+HW prices. May be bitTorrent wasn't the luckiest choice as distribution
+channel, but for those who are scared for security, you could buy their
+prepopulated SD Card for small money.
+
+The same applies for the question, how you want later to access the Pi
+and OpenCPN, underway and away from your home router/LAN. Considering to
+use the Pi as WiFi access point… Once configured as AP, you can't use it
+for accessing public WiFi nets in harbors!
+
+When away from your internet@home your Pi won't have any possibility to
+fetch the current time, hence after power on, your date/time setting
+will be ways off! You'll need to read the date/time from an NMEA GPS
+message and stitch it into the Pi's clock. Afterwards, you'll need the
+NTP service from e.g. gpsd to keep it accurate. The NTP won't do the
+trick alone, because it will not touch your date/time setting, if they
+are off for more than 1000 secs.
+
+Last not least: If the a.m. process does not produce any obvious errors
+or aborts and you end up with an executable, things should be pretty
+much OK. Subsequent instabilities are most likely not caused from your
+compilation or SW bugs all over the place. On a more or less clean
+installation on an unspoilt RPI, everything should work fine. If not,
+consider HW issues (as described above).
+
+== Additional Details
+
+I'm running the Pi headless; that's because I probably have no issues w/
+performance limitation from v-sync on TV screens. 60 fps looks very much
+NTSC to me! Be sure that you are on a newer Jessie kernel, at least the
+Dec. 2016 version. I am not so sure about having to switch ON OpenGL in
+the OpenCPN config menu… I observed some instability on high detailed &
+quilted charts, when zooming. I switched OFF OpenGL in OpenCPN, but left
+it ON in the Pi. The amazing result was, that the zoom and pan display
+speed was equally fast as before, but the instability was gone. The
+thing runs now since several days beton stable and I can do whatever I
+want w/out being able to crash it ! This is due to a bug in OpenCPN.
+Please refer to:
+
+http://www.cruisersforum.com/forums/f134/opencpn-on-raspberry-pi2-140940-18.html#post2322329
+
+Why am I so picky about power bursts? Because in a normal computer, big
+capacitors are added and power supplies are fast regulators to deal with
+big power bursts. Mind you, the Intel 4 Core CPUs are rated up to 130W
+at 1,1V, means 120Amps or so, while in idle mode, actual power
+consumption is 30W or less. Hence the power consumption jumps between 30
+and 130 Watts in milliseconds, as CPU power/load is required. We should
+understand, that despite the small size of the Pi, the Quad-Core CPU in
+there is a high performance beast of burden!! Due to the size of the Pi,
+they had no chances putting big capacitors onto the board, and they
+unloaded the burst problem to an external power supply, which is then by
+many users replaced by a simple Mobile wall
+http://www.cruisersforum.com/forums/tags/plug.html[plug],
+underestimating the untold power requirements of the Pi.
+
+One more word concerning Power. I have seen specs for the Pi, saying it
+should be supplied w/ 5.1V ! That's essential, because the Pi has at the
+entry a self healing poly-fuse and a diode to protect it against power
+connections in the wrong sense (+/-). The
+http://www.cruisersforum.com/forums/tags/price.html[price] to pay for is
+that the self healing fuse has a significant internal resistance; That
+means that right at the power entry to the Pi there is a loss of 100-200
+mV, variable with the current intake. Just running it at a Mobile
+http://www.cruisersforum.com/forums/tags/charger.html[charger], which
+are not so stable and go under heavy load even below 5V, the Pi is
+starving for Power. For the full story and differences between Pi2/3,
+please refer to the original page, which shows IMHO a bit an optimistic
+view. Scroll down to the power section of the table and moreover to the
+respective power chapter in the text. Notice the 2.5A under RPI3 and be
+aware that the RPI 3 Documentation still lucks individual updates,
+because the RPI3 is so much similar to the RPI2, except for power !
+
+http://elinux.org/RPi_Hardware
+
+In the new PIXEL Desktop, there should be an indication of low power, ….
+if the Pi still has got enough to switch it on….
+
+Good luck hk
+
+Raspberry Pi, Pi 2 and Pi 3 Benchmarks - Roy Longbottom's PC benchmark
+Collection
+http://www.roylongbottom.org.uk/Raspberry%20Pi%20Benchmarks.htm
+
+PS: Feb 2017, OpenCPN V 4.5.2xx and Jessie Dec. 2016 Kernel on a
+Raspberry Pi 3B

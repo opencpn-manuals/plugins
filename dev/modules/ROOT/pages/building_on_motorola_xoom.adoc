@@ -1,0 +1,216 @@
+= Building on Motorola Xoom
+
+*NOTICE!*
+
+*It is possible on devices with android 4.3 and later that selinux is
+enabled by default!* This means you may not be able to use OpenCPN when
+installed per my instructions. Guaranteed that if you are using a device
+with the Lollipop OS, selinux is enabled! In a typical computer
+installation, linux selinux settings are user controlled and commands
+are available to change the way selinux affects an applications access
+to files. Not so with android. Your choices are 1.) to purchase a device
+with a pre-android 4.3 O.S. or 2.) install a custom ROM without selinux
+enabled. +
+ +
+*It is probable that Linux Deploy and VNC viewers will be changed to
+work in a selinux enabled ROM environment, but how quickly is unknown by
+me at this time. When that happens I'll remove this warning.* +
+*Introductory Note:* Although this article refers specifically to the
+Motorola Xoom, it is likely that if you own any brand of device with the
+armel architecture the instructions herein will enable you to install
+Linux and OpenCPN on your device. +
+
+== Step 1
+
+You should determine what type of CPU (central processing unit) your
+device has before choosing a linux distribution for installation. To use
+an armhf distribution your device must have at least an armv7
+architecture. Refer on your device to "Settings" >"About Tablet">"CPU"
+which should provide this information. +
+ +
+The primary difference between devices will be the method used to unlock
+your bootloader (root the device). If a method for rooting your device
+cannot be found here: Android & Windows Phone: Tablets, Apps, & ROMs @
+xda-developers , then use your browser's search engine inserting your
+model with the word root or rooting. You are bound to find a method
+somewhere. There is no way I can know about all of the various
+approaches used to root different android devices. Consequently the
+method you use may not include instructions to install SuperSu, an
+android app downloadable from Google Play. If your instructions neglect
+to mention this application, go to Google Play, download and install
+SuperSu. +
+ +
+*An important note concerning "SuperSu"*: +
+ +
+Depending on your version of android, SuperSu is either installed
+separately from the ROM, or as in the case of custom ROMs from
+Cyanogenmod, SuperSu and 'Privacy Guard' are included in the ROM.
+ROM=Operating system. +
+ +
+Access by applications to system files is controlled by SuperSu. The
+Privacy Guard is used to prohibit applications from accessing your
+'private data'. Both are user controlled. +
+ +
+If the rooting process you used required the installation of SuperSu
+separately, there will be a SuperSu icon on the android desktop where
+all applications reside. However, sometimes it will also appear on your
+customized desktop where you've placed frequently used applications. +
+ +
+Tapping on the icon opens the SuperSu app. Go to the settings. Scroll
+Waaaay down toward the bottom until you see something akin to 'enable
+SuperSu Pro'. Enable this option. Right, you don't need to buy the Pro
+version because while the developers appreciate people who do, they also
+realize the indispensable need by owners of rooted devices to use the
+app. +
+ +
+In Cyanogenmod's Custom ROMs, the SuperSu and Privacy Guard options are
+accessed through your device 'Settings', typically opened by tapping on
+a gear type icon… Confirm under # Superuser>Settings>Multi User
+Policy>All users can request Superuser; Superuser Access>Apps only. +
+ +
+If Privacy Guard is enabled for Linux Deploy, it may not work. So, make
+certain Privacy Guard is not active for Linux Deploy. Installed
+seperately, the 'Pro' version must be enabled. +
+ +
+Whenever an app requiring access to system files is opened the first
+time, SuperSu will appear asking you what to do. Grant or Deny access to
+the app? Permanently, or for some pre-determined amount of time? If this
+did not happen when you first opened, or tried to do something with
+Linux Deploy that required access to system files, it's most likely
+related to my discussion above. +
+ +
+**NOW, CONNECT TO THE INTERNET** +
+
+== Step 2
+
+Using the Google Play application, download the following applications
+from Google Play.
+
+* "Linux Deploy" ( see: https://github.com/meefik/linuxdeploy for sparse
+instructions).
+* "Android Terminal Emulator" The terminal is used to download and
+install file dependencies and OpenCPN.
+* "bVNC Free" The viewer is necessary to access your Linux desktop.
+* "FX File Manager and FX File Manager Root Extension
+* GPS Share WIFI
+* GPS TEST
+
+About GPS: If properly configured, built in, external usb, wireless and
+bluetooth gps will all work in OpenCPN. If using the built in android
+gps follow these steps:
+
+* In your android 'Settings' enable "Location" to start the gps. The
+wireless network need not be enabled. DO NOT ENABLE YOUR DEVICE HOTSPOT!
+* Open the application GPS TEST so you can observe gps activity.
+* Open GPS Share WIFI. Tap on 'setting'>Local Port. Note the port number
+which is 12776 by default. You will use this port number in OpenCPN.
+* Return in GPS Share WIFI to 'start' and tap on the green button. The
+button colour will change and provided your gps has a fix the lat/long
+will display.
+* In OpenCPN select 'network', port 12776 and address 'localhost'. Tap
+on 'apply' then 'close'. You should see the icon in upper right corner
+showing green vertical bars and the ownship will move to your current
+location.
+
+For more about gps refer to "Advanced and other information section at
+the end of this document.
+
+== Step 3
+
+Using "Linux Deploy" , tap on the downward pointing arrow. Under
+'Deploy' tap on 'Distribution' and select "Ubuntu". Under "Distribution
+Suite" select "Precise" and under "Desktop" select "Xfce".
+
+*NOTE:* Tap on three vertical dots>Settings and check the default Linux
+Deploy setting "ENV directory" to see whether it is */data/local/linux*
+or */data/data/ru.meefik.linuxdeploy/linux*. If it is
+*/data/data/ru.meefik.linuxdeploy/linux* substitute this for
+*/data/local/linux* in the instructions wherever it appears! Or, change
+now to */data/local/linux*.
+
+Accept the remaining default settings in Linux Deploy. Following a
+successful installation refer to "More Information" to learn about other
+options and settings in Linux Deploy.
+
+To install linux using Linux Deploy tap on the downward pointing arrow.
+Then under 'Action' tap on 'Install'.
+
+Assuming Linux Deploy successfully concludes the installation of Ubuntu
+Precise complete the steps below. NOTE: Do not include the two '
+characters when typing or copying the commands into the android
+terminal.
+
+Open the "android terminal".
+
+Type 'su' at the prompt > Press <enter> Copy/paste or type:
+
+....
+/data/local/linux/bin/linuxdeploy shell
+....
+
+and press <enter>
+
+Important! The next step creates a root password. Use a root password
+you won't forget! You'll need the password when performing operations in
+a terminal as the "root operator" in the Linux GUI environment.
+
+Type at the terminal prompt
+
+....
+passwd root
+and press <enter>
+Type your password
+and press <enter>
+Re-enter the password as requested.
+and press <enter>
+....
+
+== Step 4: Installing OpenCPN
+
+Follow the standard Linux build instructions for Ubuntu/Debian
+
+== Step 5
+
+Using Linux Deploy press the 'start' icon.
+
+Open bVNC Free and confirm the settings are:
+
+* Name: "new Server" or any other name you wish to use,
+* IP Address: "localhost",
+* Port: "5900",
+* Authentication: vnc password. "changeme" (Which can be changed…)
+* VNC server type: "Autodetect".
+* Operating system type: "Other".
+
+== Step 6
+
+Within bVNC Free 'Connect' to the Window Manager. The Xfce 'desktop'
+should appear.
+
+== Step 7 Launch OpenCPN
+
+You will most likely find OpenCPN in the main menu under "Education".
+Click on the OpenCPN icon and the program should start.
+
+== Step 8: Adding Charts
+
+Finally a quote from a Cruisers Forum member regarding charts.:
+
+Although setting up charts inside OpenCPN is part of the main OpenCPN
+documentation, I think a section here needs to include installing charts
+in a nice simple way to the device. IMO the easiest method is to copy to
+the external SD and then make reference how to find this SD card using
+the File Manager located in the Linux distro. Trying to explain how to
+copy and move is confusing for new chums and old hands will already know
+how to do this if that's what they want to do.
+
+Good idea, but the devices/partitions have to be designated in Linux
+Deploy first. In Linux Deploy tap on the downward pointing arrow. Scroll
+down to 'Start Up'. Enable 'Custom Mounts'. Tap on Mount Points and
+proceed to define which partitions you wish to access from the Linux
+Desktop, OpenCPN and other applications. /storage/sdcard0 and
+/storage/sdcard1 are two examples.
+
+Enjoy.
+
+Additional information and useful links will be added later.

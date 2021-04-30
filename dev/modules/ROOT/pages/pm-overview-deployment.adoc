@@ -1,0 +1,56 @@
+= Plugin Manager Deployment Overview
+
+The Plugin Manager (PM) installer is, from 5.2.0 the normal way to
+install plugins. The installer is designed around some concepts:
+
+Tarball::
+A tarball is (in this context) the complete plugin which the installer
+installs. It is basically the result of `make install` packed together
+with metadata. The layout is fixed and documented in
+xref:plugin-installer:ROOT:Tarballs.adoc[here]
+
+Metadata::
+The plugin metadata contains plugin name, version and an url from which
+the tarball can be downloaded. These are a central parts, but there is
+more defined as documented  xref:plugin-installer:ROOT:Catalog.adoc[here]
+
+Catalog::
+The catalog is the list of plugins available for an OpenCPN installation.
+The UI in the program, a list of plugins, is based on the catalog.
+
+Librarian::
+The librarian, really Dave, manages the catalog which is continously
+updated.
+
+
+The flow from developer to user of a plugin:
+
+image:PI-flow.png[]
+
+* Developer updates the plugin code, commits and pushes to Github.
+
+* The commit on Github activates the CI builders, like CircleCI (there
+  is typically more of them), which starts building the plugin for various
+  platforms.
+
+* Each CI build results in a tarball and a metadata file for a specific
+  platform.
+
+* The tarball is uploaded to Cloudsmith, a binary repository from which
+  users can download it.
+
+* The metadata is sent to the librarian who reviews it.
+
+* If accepted, the librarian merges the metadata into the catalog.
+
+* User updates the catalog regularly, downloading the last version of the
+  catalog to the computer.
+
+* When there is a need, user locates a plugin to download in the catalog.
+  Catalog metadata provides the url which is used to download and install
+  the plugin.
+
+A lot of services are mentioned in this text. However, these are just
+examples, source code could be stored anywhere, other CI builders (or none)
+could be used and the binary content can be stored anywhere. The only fixed
+point is the catalog.

@@ -1,0 +1,209 @@
+== Javascript Plugin
+
+image:js_icon_full_size_.png[]
+
+== JavaScript
+
+=== Aim
+
+To provide a scriptable plugin that allows users to tailor the
+functioning of OpenCPN without getting into the complexity of writing a
+plugin.
+
+link:assets/JavaScript%20plugin%20user%20guide.pdf[Javascript plugin user guide]
+
+https://github.com/antipole2/JavaScript_pi/blob/master/documentation/JavaScript%20plugin%20user%20guide.pdf[Complete
+User Guide] +
+https://github.com/antipole2/JavaScript_pi/releases[Releases (including
+installers)] +
+https://github.com/antipole2/JavaScript_pi[Github Repository] +
+https://www.cruisersforum.com/forums/f134/javascript-plugin-235728.html[Cruisers
+Forum Thread]
+
+=== How does it work?
+
+The plugin presents a console window comprising a script pane and a
+results pane and some buttons. You enter your JavaScript in the script
+pane (or load it from a file) and click on the Run button. The script is
+compiled into byte code and executed and any result is displayed. At its
+simplest, enter, say
+
+[source,code]
+----
+(4+8)/3
+----
+
+and the result 4 is displayed. But you could also enter, say
+
+[source,code]
+----
+function fib(n) {
+    if (n == 0) { return 0; }
+    if (n == 1) { return 1; }
+    return fib(n-1) + fib(n-2);
+}
+function build(n) {
+    var res = [];
+    for (i = 0; i <n; i++) {
+        res.push(fib(i));
+    }
+    return(res.join(' '));
+}
+
+print("Fibonacci says: ", build(20), “\n");
+----
+
+Which displays
+
+Fibonacci says: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
+2584 4181
+
+This illustrates how functions can be defined and called, including
+recursively. So we have a super calculator!
+
+I have been developing interfaces (APIs) to OpenCPN and it is here that
+the fun starts. As an example, the following statement takes the
+supplied NMEA sentence, adds a checksum (replacing any existing one) and
+pushes it out over the OpenCPN connections
+
+[source,code]
+----
+OCPNpushNMEA(“$OCRMB,A,0.000,L,,Yarmouth,5030.530,N,00120.030,W,
+       15.386,82.924,0.000,5030.530,S,00120.030,E,V");
+----
+
+A challenge has been how to arrange for the processing of OpenCPN
+events. I have developed a way of specifying a function to handle a
+particular event, so we can write, for example
+
+[source,code]
+----
+OCPNonNMEAsentence(handleNMEA);
+
+function handleNMEA(result){
+    if(result.OK){
+    print(“Received: “, result.value, “\n”);
+        }
+    else print(“Bad checksum\n”);
+    }
+----
+
+This listens out for the next NMEA sentence and displays it on receipt
+if the checksum is OK.
+
+=== Structures and methods
+
+JavaScript supports the use of structures and methods. I have created
+structures to represent positions, waypoints and routes. You can write
+something like:
+
+[source,code]
+----
+myposition = new Position(50.234, 3.231);
+// let’s change the longitude
+myposition.longitude = -1.674;
+print(“My position is “, myPosition.formatted, ‘\n”);
+// displays //My position is 50º 14.040’N 001º 40.440’W
+----
+
+mypos.NMEA returns the string 5014.04,N,140.44,W, which is the very odd
+way positions are represented in NMEA sentences.
+
+This structure includes methods, as illustrated here:
+
+[source,code]
+----
+sentence = "$OCRMB,A,0.000,L,,UK-S:Y,5030.530,N,00120.030,W,15.386,82.924,
+0.000,5030.530,S,00120.030,E,V,A*69";
+myPosition.NMEAdecode(sentence,1); // decodes NMEA sentence and sets
+print(mypos.formatted, “\n"); //  displays 50º 30.530’N 001º 20.030’W
+myPosition.latest(); // sets myPosition to the latest available from OpenCPN
+print("My latest position is", myPosition.formatted, "\n");
+// might display My latest position is 50º 23.50’N 001º 41.234’W
+----
+
+____
+____
+
+=== A simple application
+
+As an illustrative application, I note that @arnolddemaa was having
+problems capturing magnetic variation from HDG sentences and inserting
+into RMC sentences. Here is a solution which captures the variation from
+HDG sentences and inserts it into any RMC sentences that do not already
+have the variation. It changes the RMC sender identity so that the
+originals can be blocked by OpenCPN filtering. It works by splitting the
+sentence into an array of fields. Note how it ends by setting up to
+process the next NMEA sentence.
+
+[source,code]
+----
+// insert magnetic variation into RMC sentence
+var vardegs = "";    // where we will save the latest variation
+var varEW = "";
+OCPNonNMEAsentence(processNMEA);
+
+function processNMEA(result){
+    if (result.OK){
+        sentence = result.value;
+        switch (sentence.slice(3,6)){
+            case “HDG:"  // capture variation
+                splut = sentence.split(",");
+                vardegs = splut[4];    varEW = splut[5];
+                break;
+            case "RMC":
+                splut = sentence.split(",");
+                if (splut[10] == "") { // if no variation already
+                    splut[10] = vardegs; splut[11] = varEW;
+                    splut[0] = “$JSRMC”;
+                        }
+                result = splut.join(“,"); // put sentence together
+                OCPNpushNMEA(result);
+                break;
+            }
+        }
+    OCPNonNMEAsentence(processNMEA);
+    };
+----
+
+=== OpenCPN Messaging
+
+I have implemented APIs to handle OpenCPN messages. Different messages
+can be directed to message-specific functions. For example:
+
+[source,code]
+----
+//request route list
+routeRequest = '{"mode": "Not track"}'   // JSON needed to get route
+OCPNonMessageName(handleRL, “OCPN_ROUTELIST_RESPONSE”);
+OCPNsendMessage("OCPN_ROUTELIST_REQUEST", routeRequest);
+
+function handleRL(routeListJS){ //handle receipt of the route list
+    routeList = JSON.parse(routeListJS);
+    // notice how easy it is to parse the JSON into a structure
+    // for illustration, here we extract the GUID of the first route
+    firstGUID = routeList[0].GUID;
+    }
+----
+
+=== Probing OpenCPN
+
+I have found the plugin an excellent way of probing OpenCPN
+functionality, particularly as I can evolve the script in the light of
+what I get, iteratively. Wondering what a route list looks like? This
+will show you:
+
+[source,code]
+----
+OCPNonMessageName(handleRL, “OCPN_ROUTELIST_RESPONSE”);
+OCPNsendMessage("OCPN_ROUTELIST_REQUEST", JSON.stringify({"mode": "Not track”}));
+
+function handleRL(routeListJS){  // handle route list response
+      print(routeListJS, “\n”);
+    }
+----
+
+=== More examples
+
+See the user guide for details of all the APIs and more illustrative
+applications.

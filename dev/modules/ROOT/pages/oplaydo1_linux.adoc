@@ -1,0 +1,289 @@
+
+= oplaydo1 (Linux)
+
+- In 'Fork and Build' we built the 'DR_pi' plugin.
+
+- In Part 1 of this guide the 'DR_pi' plugin is renamed 'oplaydo1_pi'.
+The xref:oplaydo1#using_gimp_to_make_new_icons[icon is changed].
+
+- In
+xref:oplaydo1#_part_2edit_the_plugin_for_new_user_actions[Part 2]
+the dialog is changed to allow the user to input 'Start' and 'Finish'
+positions and generate a GPX file for displaying a route in OpenCPN. -
+In 'Fork and Build' we made the 'DR_pi' plugin.
+
+== Part 1: Rename the plugin and make a new icon
+
+=== Additional requirements
+
+GIMP (Free & Open Source Image Editor). Install this using the 'Ubuntu
+Software Centre' (Search for GIMP)
+
+Perl (Check it is installed by using the 'Ubuntu Software Centre'
+
+http://nchrem.tnw.tudelft.nl/openvms/software2.html[png2wx.pl (Perl
+Script)]
+
+How these programs/script are used will be explained as the guide
+progresses.
+
+== Rename and rebuild
+
+- In 'Fork and Build' we made the 'DR_pi' plugin.
+
+- In this section 'DR_pi' is edited and a new plugin 'oplaydo1_pi' is
+made from 'DR_pi'.
+
+- Before starting it may be worth making a copy of 'DR_pi'.
+
+image:make_copy.png[make_copy.png]
+
+- We use CodeBlocks as the editor.
+
+- Open the 'DR_pi.cbp' CodeBlock project with 'CodeBlocks'.
+
+- Replace 'DR_pi' with 'oplaydo1_pi'.
+
+image:cb_replace.png[cb_replace.png]
+
+- Open the file 'CMakeList.txt' file in 'DR_pi' and edit the file names.
+Change 'DRgui' to 'oplaydo1gui'.
+
+- Change all the 'DR' to 'oplaydo1'.
+
+image:cmakelists_edit.png[cmakelists_edit.png]
+
+- Save your work.
+
+- The old 'DR_pi' folder is renamed 'oplaydo1_pi'.
+
+image:folder_rename.png[folder_rename.png]
+
+- In the 'oplaydo_pi' folder rename files, changing the
+'DRgui..filename' to 'oplaydo1gui..filename'.
+
+- The files 'NavFunc.cpp' and 'NavFunc.h' can be removed because these
+functions will not be used.
+
+image:rename_remove_navfunc.png[rename_remove_navfunc.png]
+
+- Delete the 'old' 'build' folder. Make a new 'build' folder for the
+project.
+
+- Make a new 'CodeBlocks' project called 'oplaydo1_pi' using 'Terminal'.
+
+image:cmake_codeblocks.png[cmake_codeblocks.png]
+
+image:cmake_works.png[cmake_works.png]
+
+- Using 'CodeBlocks' open the new project 'oplaydo1_pi.cbp'.
+
+- Build the new project.
+
+- Some errors will occur, where 'DR' needs to be changed to 'oplaydo1'.
+
+- The reference to the include file 'NavFunc.h' is removed, as that file
+has been deleted. This will have caused other problems due to missing
+functions and where a function is no longer available it is commented
+out.
+
+image:cb_builds.png[cb_builds.png]
+
+- In the 'build' folder: 'sudo make install', 'sudo make package', using
+'Terminal'.
+
+image:make_package.png[make_package.png]
+
+- This creates a '.deb' package which can be opened with the 'Ubuntu
+Software Centre'.
+
+image:make_package_files.png[make_package_files.png]
+
+- Using the 'Ubuntu Software Centre' 'oplaydo_pi' can be installed, in
+the same way as 'DR_pi'.
+
+- On the first install the plugin was still named 'DR_pi' not
+'oplaydo1_pi'. There is code in 'oplaydo1_pi.cpp' that needs editing
+with CodeBlocks. Change 'DR' to 'oplaydo1'. '_img_DR' was changed to
+'_img_oplaydo1' in 'oplaydo1_pi.cpp' and in 'icons.cpp' and 'icons.h'.
+
+- Then 'build' again, followed by 'sudo make install', 'sudo make
+package', using 'Terminal'.
+
+- The icon has not yet been changed, or any of the code to customise our
+new plugin.
+
+image:oplaydo_b4_changes.png[oplaydo_b4_changes.png]
+
+== Using GIMP to make new icons
+
+- Using http://shutter-project.org/downloads/[Shutter] a screenshot was
+made from the 'DR_pi' icons as a starting point for the new icons.
+
+- The '.png' files were then opened in Gimp. - Size of the images was
+adjusted to 32×32 and the 'Mode' was set as 'indexed' with 16 colours.
+
+- The images were then *exported* as new '.png' files and saved in the
+'/learning/oplaydo1_pi' folder, as 'oplaydo1.png' and 'oplaydo1_pi.png'.
+
+image:gimp_workspace.png[gimp_workspace.png]
+
+image:gimp_saved.png[gimp_saved.png]
+
+== Using png2wx.pl
+
+- The two icon images that were created must now be translated into a
+form that can be used by wxWidgets.
+
+- Using 'Ubuntu Software Centre' check that 'Perl' has been installed on
+your machine.
+
+- Download the script 'png2wx.pl' from
+http://nchrem.tnw.tudelft.nl/openvms/software2.html[here]. Place the
+script in the 'oplaydo1_pi' root folder.
+
+- Using 'Terminal' navigate to 'learning/oplaydo1_pi'. Type the
+following command line.
+
+....
+perl png2wx.pl -C icons.cpp -H icons.h -M ICONS_H oplaydo1.png oplaydo1_pi.png
+....
+
+- Two files, 'icons.cpp' and 'icons.h' are created in the root folder.
+
+- Copy these files to the 'learning/oplaydo1_pi/src' folder. They will
+replace the existing files and provide the new icons for 'oplaydo1_pi'.
+
+- Using 'CodeBlocks' open the 'oplaydo1_pi' project.
+
+- Build the project again.
+
+- Using 'Terminal' cd to the 'build' folder. 'sudo make install', 'sudo
+make package'.
+
+- The '.deb' package made can be opened with the 'Ubuntu Software
+Centre' and reinstalled.
+
+image:open_icon_changed.png[open_icon_changed.png]
+
+- To summarise. The plugin has been renamed and the icons changed to
+match the new project. At present the functionality in 'oplaydo1_pi' is
+nearly the same as that in 'DR_pi'.
+
+- In the Part 2 the plugin is given new functionality.
+
+== Part 2: Edit the plugin for new user actions
+
+=== Additional requirements
+
+- Using the 'Ubuntu Software Centre' install
+'http://github.com/wxFormBuilder/wxFormBuilder/releases[wxFormBuilder]'.
+( RAD tool for wxWidgets GUI design)
+
+=== Aim
+
+- Make a new user interface and generate the code for this.
+
+- Modify the plugin code to use the new interface
+
+- Remove unwanted code
+
+=== User Interface
+
+- To save time the 'oplaydo1.fbp' wxFormBuilder project file was copied
+from the Windows machine.
+
+- *Problem* 'Ubuntu Software Centre' had installed a copy of
+wxFormBuilder that did not open the '.fbp'. Although the wxFormBuilder
+source etc has moved to GitHub, SourceForge still has some useful
+information. Following these instructions wxFormBuilder was updated,
+even though my Linux machine is using 'Ubuntu 14.04 - Trusty'.
+
+image:wxfb_update.png[wxfb_update.png]
+
+- The 'oplaydo1.fbp' file could now be opened.
+
+- Alternatively start a new project in wxFormBuilder. Edit the
+properties. The project will be called 'oplaydo1'.
+
+- This is what you are aiming for:
+
+image:f_dialog.png[f_dialog.png]
+
+- The textboxes (textCtrl) have been given names that indicate their
+use.
+
+- An event called 'OnGenerate' has been added to the wxButton
+'m_buttonGenerate'. When the plugin is used this button will generate
+the GPX file. The format can be imported into OpenCPN.
+
+image:f_ongenerate.png[f_ongenerate.png]
+
+- In the project properties set 'file' as 'oplaydo1gui'. The path in my
+case is 'home/mike/learning/oplaydo1_pi'.
+
+image:f_filename.png[f_filename.png]
+
+- When you are satisfied with the design use 'File/Generate Code' (or
+F8) to make two files in the root folder, 'oplaydo1gui.cpp' and
+'oplaydo1gui.h'.
+
+=== Modifying the code
+
+- Make a backup of the files 'oplaydo1gui.cpp' and 'oplayd1gui.h' in
+'src' in case you need to refer to them.
+
+- Move 'oplaydo1gui.cpp' and 'oplayd1gui.h' from 'oplaydo1_pi' to
+'oplaydo1_pi/src'.
+
+- Open the 'oplaydo1_pi' project with 'CodeBlocks'.
+
+- 'DlgDef' needs changing to 'm_dialog', which was the class
+wxFormBuilder used for the dialog.
+
+- 'DlgCfgDef' sections are removed. We will not be using 'preferences'
+for the plugin.
+
+- In 'oplaydo1gui_impl.h' change 'DlgDef' to 'm_dialog'.
+
+- Try to avoid any changes to 'oplaydo1gui.cpp' and 'oplayd1gui.h'. This
+would create differences with the source wxFormBuilder file.
+
+- The command event 'OnGenerate' has to be linked to a function in
+'oplaydo1gui_impl.h'.
+
+image:cb_ongenerate.png[cb_ongenerate.png]
+
+- The function that has the code we want for generating a GPX file is
+originally called 'Calculate'. Change 'Calculate' to 'OnGenerate'.
+
+- In 'oplaydo1gui_impl.cpp' find the function 'Calculate' and rename it
+to 'OnGenerate'.
+
+- The functions 'OnPSGPX' is not needed. Parts of 'OpenXML' may be
+useful. Either delete functions/code or comment out.
+
+- 'Preferences' is not going to be used so 'CfgDlg' references are
+removed.
+
+- All the changes are not going to be listed. Source code files can be
+downloaded link:{attachmentsdir}/oplaydo1_code.zip[here].
+
+- 'std:abs' causes an error on Linux, which is found by CodeBlocks. Use
+'fabs' instead.
+
+- **Problem …**After 'sudo make install', 'sudo make package' and
+installing the '.deb' package no icons could be seen in OpenCPN.
+
+- **Remedy …**One of the '.png' icon images still used 256 colours.
+Using GIMP this was 'mode/indexed' to 16. The png2wx.pl script was rerun
+and the two files 'icons.cpp' and 'icons.h' copied to the 'src' folder.
+The project was rebuilt in CodeBlocks.
+
+- 'sudo make install', 'sudo make package'. Reinstall the '.deb'
+package.
+
+- After removing all the errors and building/installing the plugin the
+new dialog form is shown and tested.
+
+image:test_oplaydo1.png[test_oplaydo1.png]

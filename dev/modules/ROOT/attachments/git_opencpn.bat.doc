@@ -1,0 +1,37 @@
+Echo off
+Echo git_opencpn.bat
+Echo Fetches the repository and builds it with VS2013
+Echo
+Echo To start over a with new git clone, delete github\obeta and run: git_opencpn.bat
+Echo Normal execution order of git_opencpn.bat
+Echo config.bat
+Echo build.bat
+Echo dbbuild.bat  calls dbcopy.bat
+Echo
+Echo config.bat is called by  git_opencpn.bat first
+Echo
+Echo by TransmitterDan and modified by rgleason
+Echo
+Echo From the MS VStudio Commande Prompt execute "git_opencpn.bat"
+Echo which creates a new directory "obeta", git clones opencpn, cd into opencpn,
+Echo tries to download opencpn_buildwin.7z from sourceforge and expand it.
+Echo Using the program 7z. Check to make sure the progam is installed and works.
+Echo "C:\Program Files (x86)\7-Zip\7z"
+Echo then creates a new directory "build", changed directory to build.
+Echo Copies the batch files to build, deletes cmakecache.txt, executes cmake -T v120_xp ..
+Echo Then procedes to copy all the necessary files to directories and sub-dir.
+Echo by TransmitterDan modified by rgleason
+mkdir obeta
+cd obeta
+git clone https://github.com/OpenCPN/OpenCPN.git
+cd Opencpn
+powershell -Command "(New-Object Net.WebClient).DownloadFile('http://sourceforge.net/projects/opencpnplugins/files/opencpn_packaging_data/OpenCPN_buildwin.7z/download', 'OpenCPN_buildwin.7z')"
+"C:\Program Files (x86)\7-Zip\7z" x -y OpenCPN_buildwin.7z
+mkdir build
+ECHO Change to build directory & copy batch files
+ECHO =============================================
+cd build
+copy ..\..\..\*.bat
+call config.bat
+call dbbuild.bat
+call build.bat

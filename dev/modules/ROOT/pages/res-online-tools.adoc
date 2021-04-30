@@ -1,0 +1,55 @@
+= Online Nmea Tools
+
+https://www.tigoe.com/pcomp/code/Processing/127/[Explanation of Calc of
+Checksum]
+
+http://doschman.blogspot.com/2013/01/calculating-nmea-sentence-checksums.html[Calc
+of Nmea Checksums with Python]
+
+https://rl.se/aivdm[AIVDM & AIVDO NMEA sentence decoder]
+
+https://nmeachecksum.eqth.net/[NmeaChecksum Calculator]
+
+http://www.hhhh.org/wiml/proj/nmeaxor.html[MTK NMEA checksum calculator]
+
+https://nmeagen.org/[Nmea Generator]]
+
+https://gpsgate.com/support/gps_simulator[GPS Gate Simulator]
+
+http://openskipper.org/[OpenSkipper] Open Source C# code for Windows for
+integrating and displaying NMEA 0183, NMEA 2000 and AIS data from
+nautical instruments, GPS units and internet data sources, receive and
+transmit data over multiple connections, webserve to Laptop, Ipad or
+Android. by Dr Drew Mason and Jason Drake, updated in 2014 by Timo
+Lappalainen and Kave Oy from Finland.
+
+http://www.kave.fi/Apps/OpenSkipper/TestingOpenSkipperWithNMEASimulator.html[NMEA
+Simulator 26.03.2019] NMEA Simulator can be used to simulate real
+devices on NMEA 0183 or NMEA 2000 bus. With simulator you can e.g. test
+you navigation software without real devices.
+
+http://www.kave.fi/Apps/[Dave Koy Apps Page]
+
+https://chrome.google.com/webstore/detail/nmea-simulator/dfhcgoinjchfcfnnkecjpjcnknlipcll?hl=en[Chrome
+Nmea Simulator to TCP]
+
+http://www.sailsoft.nl/freeware.html[Sailsoft Freeware -
+WaypointCreator, IpaNmea, NmeaFileReader]
+
+http://www.kagstrom.no/nmea_simulator.htm[Max Kagstrom Nmea Simulator
+-Free for a time]
+
+https://www.labsat.co.uk/index.php/en/free-gps-nmea-simulator-software[Labset
+Reed GPS Nmea Simulator]
+
+http://catb.org/gpsd/AIVDM.html[AIVDM/AIVDO protocol decoding] Eric
+Raymond
+
+http://www.aggsoft.com/ais-decoder.htm[AIS Online Decoder. AIVDM & AIVDO
+NMEA Messages]
+
+http://www.maritec.co.za/?page_id=1051[AIS VDM & VDO Message Decoder]
+
+http://ais.tbsalling.dk/[Online AIS Message Decoder]
+
+https://www.wireshark.org/download.html[Wireshark Decoding]

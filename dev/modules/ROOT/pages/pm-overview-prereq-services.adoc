@@ -1,0 +1,110 @@
+= Prerequisite Cloud Services
+
+Needed for Build and Deployment.
+
+ Github --> CircleCI  --> Cloudsmith --> Library
+  Code       Build        Deploy to       Catalog
+
+== Cloud Services
+
+We assume you have or are able to configure the following free opensource accounts/services:
+
+. Code Repository https://github.com/[GitHub]
+. Deployment Repository https://cloudsmith.io/[Cloudsmith]
+. Build Tool https://circleci.com/[CircleCI] Needs authorizations from
+Code & Deploy repositories.
+. Build Tool https://www.appveyor.com/[Appveyor] Needs authorizations
+from Code & Deploy repositories.
+. Note: Travis-CI.com is no longer free Opensource and therefore is not used.
+
+If you do not have these accounts, register as a free opensource account and save your passwords.
+Use your github account to register and sign in to Circleci and Cloudsmith if possible.
+
+== Authorization Keys
+
+There are two essential authorization keys needed to establish secure workflow communications between your cloud services. It is a good idea to record these and keep them readily available for reference.
+
+=== Github Personal Authorization Token #1
+
+   Code          Build    Auth-Key
+  Github  <--  CircleCI (Github Key #1)
+  Github  <--  Appveyor (Github Key #1)
+
+Github OpenSource accounts/repositories are Public and readily accessible for download by BUILD services, however
+
+. Appveyor needs a Github auth key to communicate build status to github.
+. CircleCI does not need a key because your github account was used to register, so the keys can be created and registered from within circleci.
+
+==== A. Create a Github Personal Authorization Token (Git PAToken)
+
+. In your Github account: github.com[username]
+. Settings > Developer Settings > Pick Personal Access Settings
+. For each Plugin and each Service a separate Github Personal Access Token is required.
+. Suggest entry of 'git-ptoken-[plugin]-into-appveyor' or 'git-ptoken-[plugin]-into-circleci' or similar
+. Save the 'number' for future use in the appropriate service.
+
+==== B. Authorize communication with Github
+
+* CircleCI
+
+. Enter your key into CircleCI as follows:
+. Projects - plugin > Project Settings > Environment Variables
+. Enter "Name" = [Unique Git PAToken Name] and "Variable" = [Enter your number key from Github]
+
+* Appveyor
+
+. Enter your key into CircleCI as follows:
+. Projects - Plugin > Setting (top right) > Environment (left) > Environment variables.
+. Pick Add Variable. Add a new key if you see an existing one.
+. Enter "Name" = [Unique Git PAToken Name] and "Variable" = [Enter your number key from Github]
+. Pick SAVE at the bottom.
+
+A Git PAToken #1 is needed to PUSH the build status back to your public Github Repository.
+
+=== Cloudsmith API Key #2
+
+    Deploy to       Build      Auth-Key
+  Cloudsmith <-- CircleCI (Cloudsmith Key #2)
+  Cloudsmith <-- Appveyor (Cloudsmith Key #2)
+
+. CircleCI requires your CLOUDSMITH_API_KEY to push build files to Cloudsmith.
+. Appveyor requires one too.
+
+==== A. Get your CLOUDSMITH_API_KEY
+
+. Login into your account and use upper right dropdown menu.
+. Settings > API and copy the API key for later reuse.
+. Do not hit refesh unless you must replace it.
+
+==== B. Authorize workflow deployment to Cloudsmith
+
+* CircleCI
+
+. Enter your key into CircleCI as follows:
+. Projects (or plugin) > Project Settings > Environment Variables
+. Enter "Name" = CLOUDSMITH_API_KEY and "Variable" = [Enter your number key from Cloudsmith]
+
+* Appveyor
+
+. Enter your key into CircleCI as follows:
+. Add a new key if you see an existing one.
+. Projects - Plugin > Setting (top right) > Environment (left) > Environment variables.
+. Enter "Name" = CLOUDSMITH_API_KEY and "Variable" = [Enter your Cloudsmith number key]
+. Pick SAVE at the bottom.
+
+=== Other Useful Settings ===
+
+==== CircleCI Settings ====
+Project - Plugin > Settings > Advanced  Turn on Github status updates and Build Forked Pull Requests
+
+=== Setup Cloudsmith Repositories next
+
+xref:pm-overview-prereq-other.adoc[Cloudsmith Repository Setup]
+
+=== Note
+
+If some part of the workflow does not seem to be working during first setup of these services, it is probably associated with these keys or your service dashboard settings.
+
+* There are times when a new key is needed for it to work. Once it works, it is generally good.
+* Cloudsmith uses a single key for multiple plugins, but a separate Git Personal Autorization Token is needed for each plugin and each service.
+* If the workflow stops a new plugin requires similar dashboard settings and enabling, and perhaps use of the same or different key depending on what service setup.

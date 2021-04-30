@@ -1,0 +1,36 @@
+= Manual Maintenance
+
+If you discover any shortcoming in this manual, please enhance it by submitting
+a patch. For simple bug-fixing changes this is a simple task.
+
+Bigger changes are of course also more then welcome.
+
+== Small bugfixes
+
+To edit a page in the manual, click the "Edit this Page" link which is displayed
+at every page top-right.
+
+The link will display a Github UI where the page can be edited (click the pen
+icon). The changes can be previewed.
+
+When the changes are saved, Github will create a Pull Request which basically
+requests that the manual maintainers accepts you changes.
+
+That's it!
+
+== Larger changes
+
+For larger changes it's easier to follow the ordinary git/GitHub workflow. This
+starts with forking https://github.com/rgleason/ocpn-dev-manual[].
+
+After this follow the
+https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request[usual procedure]
+to create a pull request (PR).
+
+The pages are written in Asciidoc, a simple markup language. Smaller changes
+are possible to do without any Asciidoc knowledge. For bigger changes,
+these are important resources:
+
+* https://powerman.name/doc/asciidoc[Asciidoc cheat sheat]
+* https://docs.asciidoctor.org/asciidoc/latest[Asciidoc Reference Documentation]
+* https://docs.antora.org/antora/2.2/page/[Antora Page documentation]

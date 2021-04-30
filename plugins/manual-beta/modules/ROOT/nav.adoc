@@ -1,0 +1,2 @@
+* xref:index.adoc[Home Page]
+** xref:beta-plugins.adoc[Beta Plugins]

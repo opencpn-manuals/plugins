@@ -1,0 +1,238 @@
+site:
+  title: OpenCPN Plugins Manual
+  # the 404 page and sitemap files only get generated when the url property is seto
+  url: https://github.com/Rasbats/opencpn-plugins-manual
+  start_page: opencpn-master-plugins::index.adoc
+  
+  
+content:
+  sources:   
+    - url: https://github.com/Rasbats/opencpn-plugins-manual
+      branches: main
+      start_paths: 
+      - manual
+      - manual-beta
+      
+          
+    - url: https://github.com/Rasbats/shipdriver_pi.git    
+      branches: master
+      start_path: manual/shipdriver
+      edit_url: true 
+      
+    - url: https://github.com/Rasbats/otcurrent_pi.git    
+      branches: master
+      start_path: manual/otcurrent
+      edit_url: true
+      
+    - url: https://github.com/Rasbats/photolayer_pi.git    
+      branches: master
+      start_path: manual/photolayer
+      edit_url: true
+
+    - url: https://github.com/Rasbats/DR_pi.git    
+      branches: master
+      start_path: manual/dead_reckoning
+      edit_url: true
+      
+    - url: https://github.com/rgleason/watchdog_pi
+      branches: master
+      start_path: manual/watchdog
+      edit_url: true
+      
+    - url: https://github.com/jongough/ocpn_draw_pi.git 
+      branches: master
+      start_path: manual/odraw
+      edit_url: true
+    
+    - url: https://github.com/opencpn-radar-pi/radar_pi.git 
+      branches: master
+      start_path: manual/radar
+      edit_url: true
+    
+    - url: https://github.com/rgleason/dashboard_tactics_pi.git
+      branches: mnt151-frontend2
+      start_path: manual/dash-t
+      edit_url: true
+    
+    - url: https://github.com/Rasbats/vfkaps_pi.git    
+      branches: master
+      start_path: manual/vfkaps
+      edit_url: true
+    
+    - url: https://github.com/Rasbats/sar_pi.git    
+      branches: master
+      start_path: manual/sar
+      edit_url: true
+    
+    - url: https://github.com/nohal/aisradar_pi.git   
+      branches: master
+      start_path: manual/ais_radar_display
+      edit_url: true
+
+    - url: https://github.com/nohal/vdr_pi.git   
+      branches: master
+      start_path: manual/vdr
+      edit_url: true
+
+    - url: https://github.com/nohal/gecomapi_pi.git   
+      branches: master
+      start_path: manual/googleearth
+      edit_url: true
+
+    - url: https://github.com/nohal/iacfleet_pi.git   
+      branches: master
+      start_path: manual/iacfleet
+      edit_url: true
+
+    - url: https://github.com/nohal/launcher_pi.git   
+      branches: master
+      start_path: manual/launcher
+      edit_url: true
+
+    - url: https://github.com/nohal/ocpndebugger_pi.git   
+      branches: master
+      start_path: manual/debugger
+      edit_url: true
+
+    - url: https://github.com/nohal/objsearch_pi.git   
+      branches: master
+      start_path: manual/objsearch
+      edit_url: true
+
+    - url: https://github.com/rgleason/chartscale_pi.git   
+      branches: master
+      start_path: manual/chartscale
+      edit_url: true
+
+    - url: https://github.com/rgleason/projections_pi.git   
+      branches: master
+      start_path: manual/projections
+      edit_url: true
+
+    - url: https://github.com/rgleason/celestial_navigation_pi.git   
+      branches: master
+      start_path: manual/celestial_navigation
+      edit_url: true
+
+    - url: https://github.com/rgleason/plots_pi.git   
+      branches: master
+      start_path: manual/sweep_plot
+      edit_url: true
+
+    - url: https://github.com/rgleason/weatherfax_pi.git   
+      branches: master
+      start_path: manual/weatherfax
+      edit_url: true
+
+    - url: https://github.com/rgleason/climatology_pi.git   
+      branches: master
+      start_path: manual/climatology
+      edit_url: true
+
+    - url: https://github.com/rgleason/weather_routing_pi.git   
+      branches: master
+      start_path: manual/weather_routing
+      edit_url: true
+
+    - url: https://github.com/rgleason/statusbar_pi.git   
+      branches: master
+      start_path: manual/statusbar
+      edit_url: true
+
+    - url: https://github.com/rgleason/pypilot_pi.git   
+      branches: master
+      start_path: manual/pypilot
+      edit_url: true
+
+    - url: https://github.com/rgleason/rotationctrl_pi.git   
+      branches: master
+      start_path: manual/rotationctrl
+      edit_url: true
+
+    - url: https://github.com/rasbats/calculator_pi.git   
+      branches: master
+      start_path: manual/calculator
+      edit_url: true
+
+    - url: https://github.com/rasbats/otidalplan_pi.git   
+      branches: master
+      start_path: manual/otidalplan
+      edit_url: true
+
+    - url: https://github.com/bdbcat/ofc_pi.git
+      branches: master
+      start_path: manual/fugawi
+      edit_url: true
+
+    - url: https://github.com/bdbcat/nvc_pi.git
+      branches: master
+      start_path: manual/nv_charts
+      edit_url: true
+
+    - url: https://github.com/bdbcat/s63_pi.git
+      branches: master
+      start_path: manual/s63_vector_charts
+      edit_url: true
+
+    - url: https://github.com/bdbcat/oesenc_pi.git
+      branches: master
+      start_path: manual/oeSENC
+      edit_url: true
+    
+    - url: https://github.com/bdbcat/bsb4_pi.git
+      branches: master
+      start_path: manual/bsb4_charts
+      edit_url: true
+
+    - url: https://github.com/rgleason/LogbookKonni_pi.git   
+      branches: master
+      start_path: manual/logbook
+      edit_url: true
+
+    - url: https://github.com/rgleason/FindIt_pi.git   
+      branches: master
+      start_path: manual/find-it
+      edit_url: true
+
+    - url: https://github.com/rgleason/route_pi.git   
+      branches: master
+      start_path: manual/route_great_circle
+      edit_url: true
+
+    - url: https://github.com/rgleason/tactics_pi.git   
+      branches: master
+      start_path: manual/tactics
+      edit_url: true
+
+    - url: https://github.com/rgleason/polar_pi.git   
+      branches: master
+      start_path: manual/Polar
+      edit_url: true
+
+    - url: https://github.com/RooieDirk/NmeaConverter_pi.git
+      branches: master
+      start_path: manual/nmea_converter
+      edit_url: true
+
+    - url: https://github.com/LennartG-Sve/GPS-Odometer_pi.git
+      branches: master
+      start_path: manual/odometer
+      edit_url: true
+
+    - url: https://github.com/jongough/windvane_pi.git
+      branches: master
+      start_path: manual/windvane
+      edit_url: true
+
+    - url: https://github.com/rgleason/rtlsdr_pi.git
+      branches: master
+      start_path: manual/rtlsdr
+      edit_url: true
+    
+ui:   
+  bundle:
+      url: ./ui-bundle.zip
+      snapshot: true  
+
+output:
+  dir: ./docs

@@ -1,0 +1,13 @@
+= Demonstration Plugin
+
+A Demo_Plugin is
+https://github.com/OpenCPN/OpenCPN/tree/master/plugins/demo_pi_sample[Demo_pi_sample]
+
+* If you don't have a free opensource account at github, perhaps you
+should.
+* If you haven't downloaded github desktop (windows) it is useful.
+* You should learn command prompt git commands, they are very useful.
+* Publish your opensource plugin on git.
+* Atom is a very useful text editor that has additional benefits when
+used with git.
+* Notepad++ is often used too.

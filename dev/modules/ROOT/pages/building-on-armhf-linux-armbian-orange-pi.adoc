@@ -1,0 +1,62 @@
+= Building on armhf linux - Armbian - Orange Pi
+
+http://www.armbian.com/[Armbian.com] offers opensource "Linux for arm"
+kernels with Debian and Ubuntu distros. They have come from Rev 5.05 in
+Apr, 2016 to 5.38 now. +
+ +
+These instructions are valid for Orange Pi PC Plus(H3 armhf) and OPi PC
+2(H5 arm64), Armbian 5.75 Ubuntu 18.04 Bionic, and Debian 9 Stretch and
+OpenCPN 5.0.0 Mar, 2019. +
+(I hate instructions that are not dated!)
+
+== Update the system software
+
+....
+orangepipc$ sudo apt update
+orangepipc$ sudo apt upgrade
+....
+
+== OS Fixes required
+
+Some modules require a lot of memory to compile and the system comes
+with only 128MB so I plugged in a thumb-drive with a linux 1.2GB swap
+partition and
+
+....
+orangepipc$ sudo mkswap -f /dev/sda5
+orangepipc$ sudo swapon /dev/sda5
+
+....
+
+== Follow the standard Linux build instructions for Ubuntu/Debian:
+
+=== Clone the OpenCPN repository
+
+As a normal user get the source code
+
+....
+git clone https://github.com/OpenCPN/OpenCPN.git
+cd OpenCPN
+mkdir build
+cd build
+....
+
+=== Compile, Package and Install
+
+....
+cmake -DCFLAGS="-O2 -march=native" -DBUNDLE_DOCS=OFF -DBUNDLE_TCDATA=ON -DBUNDLE_GSHHS=LOW ../
+make package
+....
+
+Install some charts and test in the normal way.
+
+=== Compile, Package and Install
+
+Follow the standard Linux build instructions for Ubuntu/Debian:
+
+....
+cmake -DCFLAGS="-O2 -march=native" -DBUNDLE_DOCS=OFF -DBUNDLE_TCDATA=ON -DBUNDLE_GSHHS=LOW ../
+make package
+....
+
+Install some charts and test in the normal way.

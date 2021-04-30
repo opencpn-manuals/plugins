@@ -1,0 +1,12 @@
+indexmenu_n_1
+
+== Deviation Curve
+
+An analytic method for obtaining the deviation curve of a magnetic
+compass allowing obtaining the value of the deviation for any course.
+image:../../software/deviation.png[image,width=645,height=577]
+
+* https://sites.google.com/site/navigationalalgorithms/Home/papersnavigation[Method
+explained -Download "Deviation Curve of the Magnetic Compass"] Method
+used by the Deviation Plugin.
+* http://sites.google.com/site/navigationalalgorithms/[free software]

@@ -1,0 +1,31 @@
+= PI Dependencies
+
+https://github.com/Rasbats/photolayer_pi/pull/30[Photolayer-PI-Dependencies]
+
+Plugins must not depend on external packages like Linux .deb or MacOS
+homebrew packages to work (since end users don't have them installed).
+This means that a plugin which depends on an external library not
+available by just installing OpenCPN must handle this in various other
+ways like:
+
+. Rebuild from source. This is the only option in the flatpak case.
+OTOH, the flatpak runtime is quite large and contains a lot of common
+libraries.
+. Link statically. Preliminary findings are that this works on MacOS but
+not in Debian; Debian static libs seems to be compiled without -fPIC
+which means the they cannot be linked into a shared library. YMMV.
+. Bundle the dynamic library. By default. linux has an RPATH which
+points to both the plugin directory and it's parent. This means that a
+library .so file bundled in any of these locations will be used by the
+plugin.
+
+The photolayer_pi plugin contains examples on all these strategies. The
+proj and libgeotiff libs are rebuilt from sources. The libtiff library
+is bundled on Debian and linked statically on MacOS. The "rebuild from
+source" is done in libs/geotiff and the flatpak yaml manifest.
+
+To check the dependencies of a plugin there are the otool -L (MacOS) and
+ldd (Linux) tools which lists the runtime dependencies of a plugin. By
+default, these are run on all photolayer macos and debian builds. The
+MacOS output is relatively easy to read while the ldd output probably is
+too messy for regular checks. It might be useful when debugging. though.

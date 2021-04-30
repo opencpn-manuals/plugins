@@ -1,0 +1,15 @@
+== Authoring the manual
+
+This section is a collection of information about the build process for the OpenCPN Manuals.
+
+xref:authoring/FAQ.adoc[FAQ]
+
+xref:authoring/intro.adoc[Introduction to the manual for developers]
+
+xref:authoring/tools.adoc[Tools used for editing and reading manual pages]
+
+xref:authoring/local-build[(Not essential reading)Shows how the manual information can be used]
+
+xref:authoring/useful.adoc[Useful stuff]
+
+xref:authoring/TODO.adoc[TODO]

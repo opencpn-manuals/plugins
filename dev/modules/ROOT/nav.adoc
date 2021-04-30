@@ -1,0 +1,108 @@
+.Developer Manual
+* Introduction
+** xref:intro-AboutThisManual.adoc[About this Manual]
+** xref:intro-Background.adoc[Background]
+** xref:intro-Community.adoc[Community]
+** xref:intro-Terminology.adoc[Terminology]
+* Opencpn development
+** Compiling
+*** xref:od-compile-cmake.adoc[CMake]
+*** xref:od-compile-linux.adoc[Linux]
+*** xref:od-compile-windows.adoc[Windows]
+*** xref:od-compile-mac-osx.adoc[MacOS]
+*** xref:od-compile-cross-compile-for-windows-under-linux.adoc[Mingw windows build on Linux]
+** xref:od-code-formatting.adoc[Code Formatting]
+** xref:od-user-interface-styling.adoc[User Interface Styling]
+** xref:od-troubleshooting.adoc[Troubleshooting]
+* Plugin Manager Development
+** xref:pm-plugin-guidelines.adoc[Plugin Guidelines]
+*** xref:pm-plugin-documentation.adoc[Documentation]
+*** xref:pm-plugin-dependencies.adoc[Dependencies]
+** xref:pm-plugin-api-versions.adoc[Plugin API and ABI]
+* Plugin Manager Workflow
+** xref:pm-overview-deployment.adoc[Deployment overview]
+** xref:pm-overview-prereq-workflow.adoc[Workflow Prerequisites]
+** xref:pm-overview-prereq-services.adoc[Prerequisite Services]
+** xref:pm-overview-prereq-other.adoc[Cloudsmith Setup]
+** xref:pm-overview-workflow.adoc[Workflow overview]
+** xref:pm-tp-template.adoc[Testplugin Template]
+*** xref:pm-tp-system-structure.adoc[System Structure]
+*** xref:pm-tp-dev-setup.adoc[Developer Setup]
+*** xref:pm-tp-config-template.adoc[Configure Template]
+*** Build Locally
+*** xref:pm-tp-adapt-plugin.adoc[Adapt Plugin]
+*** xref:pm-tp-deploy.adoc[Deploy Details]
+*** xref:pm-tp-update-library.adoc[Update the Library]
+*** xref:pm-tp-language-nuance.adoc[Language Nuances]
+*** xref:pm-tp-odapi-messaging.adoc[Odapi Messages]
+*** xref:pm-tp-odapi.adoc[Odapi for oDraw]
+*** xref:pm-tp-ocpn_draw_odapi.adoc[Ocpn_Draw Odapi]
+*** xref:AlternativeWorkflow:ROOT:index.adoc[Shipdriver Templates -Alternative Workflow]
+*** xref:Managed_Plugins:ROOT:nav.adoc[Shipdriver Templates -Managed Plugins Workflow]
+*** xref:plugin-installer:ROOT:index.adoc[Plugin Manager Installer Documentation]
+* xref:opencpn-plugins-manual:ROOT:index.adoc[OpenCPN Plugin Manuals]
+* xref:dm-legacy-plugins.adoc[Legacy Plugin Packaging]
+* xref:dm-manual-maint.adoc[Maintenance of this Manual]
+* xref:dm-i18n.adoc[Internationalization]
+* Resources
+** xref:res-prebuilt-build-files.adoc[Prebuilt Build Files]
+** xref:res-online-tools.adoc[Online Nmea Tools]
+* The Attic
+** Redundant
+** xref:demo_plugin.adoc[Demonstration Plugin]
+** xref:updating_the_user_manual.adoc[Updating the User Manual]
+** xref:bug_and_feature_tracking.adoc[Bugs and feature tracking]
+** xref:troubleshooting_plugins.adoc[Troubleshooting Plugins]
+** xref:plugin_submissions.adoc[Plugin Submissions]
+** xref:standalone_plugin_compilation.adoc[Plugin Compilation Win]
+** xref:compiling_external_plugins_and_building_install_packages.adoc[Compile Plugins and build Install Packages]
+** xref:compiling_plugins_to_debug.adoc[Compile Plugins for Debugging]
+** xref:developer_guide.adoc[Developer Guide]
+** Reference
+*** xref:languages.adoc[Internationalization]
+*** xref:prerequisites.adoc[Prerequisites]
+*** xref:compiling_mac_osx.adoc[Compiling on macOS]
+*** xref:compile_linux_old.adoc[Compiling on Linux]
+*** xref:rpi2.adoc[Compile on Raspberry PI]
+*** xref:building_and_installing_on_cubieboard_2_with_hw_acceleration.adoc[Cubieboard 2 with HW acceleration]
+*** xref:building-on-armhf-linux-armbian-orange-pi.adoc[armhf linux - Armbian - Orange Pi]
+*** xref:building_on_motorola_xoom.adoc[Building on Motorola Xoom]
+*** xref:compiling_on_slackware.adoc[Compile on Slackware]
+*** xref:vs2015_workflow.adoc[Compile 2015 VS Community Workflow]
+*** xref:compile_windows_2013_vs_community.adoc[Compile 2013 VS Community Workflow]
+*** xref:compile_windows_2013_vs_community_ov4.2-4.8.8.adoc[Compile 2013 VS Community Workflow ov4.2-4.8.8]
+*** xref:standalone_plugin_compilation.adoc[Plugin Compilation Win]
+*** xref:ci-push-linux-build-to-launchpad.adoc[CI: Push Linux Build to Launchpad]
+*** xref:codacy.adoc[Codacy:Automate code quality]
+*** xref:testquality.adoc[TestQuality -Test Management]
+*** xref:nsis_installation_directory.adoc[NSIS Installation Directory]
+*** xref:nsis_table.adoc[NSIS Table]
+* User Manual (UM)
+** xref:developer_manual.adoc[Background]
+** xref:community_old.adoc[Community]
+** xref:pi_installer-ui.adoc[PI Manager UI Discussion]
+** xref:pi_installer_summary.adoc[PI Manager Summary]
++++
+<p/> <hr/> <p/>
++++
+* Old Manual
+** Compiling on Windows
+** xref:languages.adoc[Internationalization- Languages]
+** xref:messaging.adoc[Messaging]
+** xref:prerequisites.adoc[Prerequisites -Just found this]
+** Developer Plugins
+** Plugin API
+*** xref:ocpn_draw_odapi.adoc[OCPN Draw ODAPI]
+** xref:beta_plugins.adoc[Beta Plugins]
+** Learning
+*** xref:coding_solutions.adoc[Coding Solutions]
+*** xref:fork_build_windows.adoc[Fork and Build (Windows)]
+*** xref:oplaydo1.adoc[oplaydo1 (Windows)]
+*** xref:fork_and_build_linux.adoc[Fork and Build (Linux)]
+*** xref:oplaydo1_linux.adoc[oplaydo1 (Linux)]
+** xref:pi_installer_dev_procedure.adoc[PI Manager Dev Procedure]
+** xref:ci-push-build-to-git.adoc[CI: Push build to Git Release]
+** xref:ci_travis_encryption_windows.adoc[CI: Travis Encryption for Windows Dev]
+** xref:advanceddebugtips.adoc[CI Advanced Debug Tips]
+** Plugin Installer Manual
+** xref:plugin-installer:ROOT:Home.adoc[Home-Plugin-Installer]

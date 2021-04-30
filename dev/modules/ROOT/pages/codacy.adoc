@@ -1,0 +1,27 @@
+= Codacy:Automate code quality
+
+https://www.codacy.com/[Codacy Website]
+
+Automatically identify issues through static code review analysis. Get
+notified on security issues, code coverage, code duplication, and code
+complexity in every commit and pull request, directly from your current
+workflow.
+
+Standardize your code quality. Track your quality evolution. Get
+actionable results. Fix issues quickly.
+
+Free to opensource developers using their github account.
+
+Petri's [Canne] comments about Codacy with Plugin DashT:
+
+Those codacy.com guys have collected static analysis tools I've used
+individually for year - they are the most accepted ones, too - with a
+good integration to GitHub, it is a priceless tool. Not later than today
+it found a really stupid pointer problem in my new code which would have
+caused a core dump sooner or later. Thank you, codacy.com! Nice to get
+an e-mail which says you are a bummer... I deserved it!
+
+..DashT! I like it. It is a very good, really good code base now. I did
+maybe 5% new code, the rest was assembling, cleaning, testing, cleaning,
+testing... Now it has a quality I can accept. Hopefully others could
+profit from my work, too, in the pure FOSS (Free and Open Source) way!
