@@ -1,0 +1,219 @@
+= NSIS Table
+
+== Table for Creation of Operational "Release" Version
+
+*Note*: Any improvements or corrections would be appreciated.
+
+The *destination* shown in the table would be a main OpenCPN program
+folder similar to
+
+....
+"c:\programfiles (x86)\opencpn.4.5.221\"
+....
+
+NOTE: This listing attempts to duplicate the NSIS created setup
+directory found under a directory similar to:
+
+....
+ "C:\Users\[username]\Documents\GitHub\obeta\OpenCPN\build\_CPack_Packages\win32\NSIS\opencpn_[version]_setup
+....
+
+This directory will normally contain all files necessary for an
+operational running version of OpenCPN. After this directory is
+completed, NSIS will copy its contents and compact into an
+"opencpn_[version]_setup.exe" found in two places:
+
+....
+C:\Users\[username]\Documents\GitHub\obeta\OpenCPN\build\_CPack_Packages\win32\NSIS
+Also sometimes in C:\Users\[username]\Documents\GitHub\obets\OpenCPN\build
+....
+
+[cols=",,",options="header",]
+|===
+|Copy Individual files |From |To
+|opencpn.exe |build/release/opencpn.exe |destination
+|ocpn_gltest1.exe |buildwin/ocpn_gltest1.exe |destination
+|license.txt |data/license.txt |destination
+|PrivacyPolicy.txt |buildwin/crashrpt/PrivacyPolicy.txt |destination
+|CrashRpt1403.dll |buildwin/crashrpt/CrashRpt1403.dll |destination
+|crashrpt_lang.ini |buildwin/crashrpt/crashrpt_lang.ini |destination
+|CrashSender1403.exe |buildwin/crashrpt/CrashSender1403.exe |destination
+|dbghelp.dll |buildwin/crashrpt/dbghelp.dll |destination
+|cairo.dll |buildwin/gtk/cairo.dll |destination
+|expat.dll |buildwin\expat-2.1.0/expat.dll |destination
+|fontconfig.dll |buildwin/gtk/fontconfig.dll |destination
+|iconv.dll |buildwin/gtk/iconv.dll |destination
+|libcurl.dll |buildwin/libcurl.dll |destination
+|libpng16.dll |buildwin/gtk/libpng16.dll |destination
+|libxml2.dll |buildwin/gtk/libxml2.dll |destination
+|msvcp120.dll |buildwin/vc/msvcp120.dll |destination
+|msvcr120.dll |buildwin/vc/msvcr120.dll |destination
+|pixman-1.dll |buildwin/gtk/pixman-1.dll |destination
+|zlib1.dll |buildwin/zlib1.dll |destination
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy 16 wxWidget Files |From |To
+|All Files |buildwin/wxWidgets/*.* |destination
+|wxbase30u_net_vc_custom.dll |buildwin/wxWidgets |destination
+|wxbase30u_vc_custom.dll |buildwin/wxWidgets |destination
+|wxbase30u_xml_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_adv_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_aui_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_core_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_gl_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_html_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_media_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_propgrid_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_qa_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_ribbon_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_richtext_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_stc_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_webview_vc_custom.dll |buildwin/wxWidgets |destination
+|wxmsw30u_xrc_vc_custom.dll |buildwin/wxWidgets |destination
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy Six Data Directories |From |To
+|doc |data\doc\*.* |destination\doc
+|gshhs |data\gshhs\*.* |destination\gshhs
+|s57data |data\s57data\*.* |destination\s57data
+|sounds |data\sounds\*.* |destination\sounds
+|tcdata |data\tcdata\*.* |destination\tcdata
+|wvsdata |data\wvsdata\*.* |destination\wvsdata
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy to share Directory |From |To
+|I cannot find the correct locales directory | |FIXME
+|I cannot find the docs files | |FIXME
+|share |data |destination/share
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy to uidata Directory |From |To
+|3 SVG Directories from /data/svg to uidata | |
+
+|journeyman |data/svg/journeyman/*.* |destination/uidata/journeyman
+
+|journeyman_flat |data/svg/journeyman_flat/*.*
+|destination/uidata/journeyman_flat
+
+|traditional |data/svg/traditional/*.* |destination/uidata/tradtitional
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy to uidata Directory |From |To
+|9 Toolbar Files & Icon Files from src/bitmaps to uidata | |
+
+|styles.xml |src/bitmaps/styles.xml |destination/uidata
+
+|toolicons_journeyman.png |src/bitmaps/toolicons_journeyman.png
+|destination/uidata
+
+|toolicons_journeyman_flat.png
+|src/bitmaps/toolicons_journeyman_flat.png |destination/uidata
+
+|toolicons_traditional.png |src/bitmaps/toolicons_traditional.png
+|destination/uidata
+
+|iconAll.png |src/bitmaps/iconAll.png |destination/uidata
+
+|iconMinimum.png |src/bitmaps/iconMinimum.png |destination/uidata
+
+|iconRMinus.png |src/bitmaps/iconRMinus.png |destination/uidata
+
+|iconRPlus.png |src/bitmaps/iconRPlus.png |destination/uidata
+
+|iconStandard.png |src/bitmaps/iconStandard.png |destination/uidata
+|===
+
+== Plugin Debug Version *_pi.dll and *_pi\Data Folders
+
+*Source *_pi.dll:* source\build\plugins\*_pi\*debug*\*_pi.dll +
+*Source *_pi\data:* source\plugins\*_pi\data\*.* +
+*Destination:* source\build\plugins +
+ +
+^Copy to build\plugins^From^To|
+
+[cols=",,",]
+|===
+|Debug 4 Internal Plugin *_pi.dll To debug a plugin. Use as an example |
+|
+
+|chartdlder_pi.dll |build\plugins\chartdldr_pi\debug\chartdnldr_pi.dll
+|source\build\plugins
+
+|dashboard_pi.dll |build\plugins\dashboard_pi\debug\dashboard_pi.dll
+|source\build\plugins
+
+|grib_pi.dll |build\plugins\grib_pi\debug\grib_pi.dll
+|source\build\plugins
+
+|wmm_pi.dll |build\plugins\wmm_pi\debug\wmm_pi.dll |source\build\plugins
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy to \build\plugins |From |To
+|Debug 4 Internal Plugins *_pi\Data Directories | |
+
+|data\*.* files |plugins\chartdldr_pi\data\*.*
+|build\plugins\chartdldr_pi\data
+
+|data\*.* files |plugins\dashboard_pi\data\*.*
+|build\plugins\dashboard_pi\data
+
+|data\*.* files |plugins\grib_pi\data\*.* |build\plugins\grib_pi\data
+
+|data\*.* files |plugins\wwm_pi\data*.* |build\plugins\wmm_pi\data
+|===
+
+== Plugin Release Version *_pi.dll and *_pi\Data Folders
+
+*Source *_pi.dll:* source\build\plugins\*_pi\*release*\*_pi.dll +
+*Source *_pi\data:* source\release\plugins\*_pi\data\*.* +
+*Destination:* source\build\plugins +
+ +
+^Copy to build\plugins^From^To|
+
+[cols=",,",]
+|===
+|Release 4 Internal Plugin *_pi.dll Use as an example for other plugins.
+| |
+
+|chartdlder_pi.dll |build\plugins\chartdldr_pi\release\chartdnldr_pi.dll
+|build\release\plugins
+
+|dashboard_pi.dll |build\plugins\dashboard_pi\release\dashboard_pi.dll
+|build\release\plugins
+
+|grib_pi.dll |build\plugins\grib_pi\release\grib_pi.dll
+|build\release\plugins
+
+|wmm_pi.dll |build\plugins\wmm_pi\release\wmm_pi.dll
+|build\release\plugins
+|===
+
+[cols=",,",options="header",]
+|===
+|Copy to \build\plugins |From |To
+|Release 4 Internal Plugins *_pi\Data Directories Use as an example | |
+
+|data\*.* files |plugins\chartdldr_pi\data\*.*
+|build\release\plugins\chartdldr_pi\data
+
+|data\*.* files |plugins\dashboard_pi\data\*.*
+|build\release\plugins\dashboard_pi\data
+
+|data\*.* files |plugins\grib_pi\data\*.*
+|build\release\plugins\grib_pi\data
+
+|data\*.* files |plugins\wwm_pi\data*.*
+|build\release\plugins\wmm_pi\data
+|===

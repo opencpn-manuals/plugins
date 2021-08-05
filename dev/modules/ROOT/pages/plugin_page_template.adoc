@@ -1,0 +1,24 @@
+= Plugin Datasheet Template
+
+== Aim
+
+== Requirements
+
+== Source code
+
+== Documentation
+
+*Please make a User Guide. More information is given
+xref:plugin_documentation.adoc[here].
+
+== User Guide
+
+=== 1. What and Why
+
+=== 2. Install
+
+=== 3. Standard actions
+
+=== 4. Options
+
+=== 5. FAQ

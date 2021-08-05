@@ -1,0 +1,55 @@
+= Plugin Guidelines
+
+== Publishing rules
+
+These are the guidelines for publishing OpenCPN Plugins in the
+plugin xref:catalog.adoc[catalog] or on OpenCPN.org
+
+
+Plugins  must be distributed under the license
+terms of https://www.gnu.org/licenses/old-licenses/gpl-2.0.html[GPL V2]
+or later.
+
+. In particular, this means that the Plugin author must arrange for
+independent publication of the source code of the Plugin. OpenCPN.org
+will not host the Plugin source code.
+. Plugins published on OpenCPN.org must be ported and available for one
+of the following list of platforms:
+  * Debian style Linux
+  * Flatpak Linux
+  * Microsoft Windows
+  * Macintosh OS-X +
+. _Developers should keep in mind that the usability and popularity of a
+Plugin is directly related to its platform portability, and so should
+strive to make their Plugins available for all OpenCPN platforms._
+. Plugin binaries may exist on the OpenCPN.org server or elsewhere
+
+New plugins are published using the
+xref:installer-overview.adoc[Plugin Installer] available since 5.2.0.
+This means that plugins are published after pull request to the
+plugins project as described in
+xref:catalog.adoc[the catalog documenation].
+
+== Documentation
+
+Plugins should properly documented as described in the
+xref:plugin_documentation.adoc[documentation page].
+
+== Internationalization (i18n)
+
+There is an i18n infrastrucure based on the gettext tools and the
+https://crowdin.com/[] web-based translator service. Plugin in need
+of i18n should use this infrastructure as described in the
+xref:plugin_i18n.adoc[i18n] page.
+
+
+== Dependencies
+
+Plugins should bundle all dependencies. This has two consequences:
+
+* Plugins should bundle libraries which exist in opencpn, like the
+  nmea0183 library. The plugins must not break if the library in opencpn
+  is updated.
+* Plugins should not depend on operating systems libraries beyond those
+  linked to the main binary since users will not have these installed.
+  See the xref:pi_dependencies.adoc[dependencies page].

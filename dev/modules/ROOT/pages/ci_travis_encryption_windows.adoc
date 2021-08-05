@@ -1,0 +1,47 @@
+= CI: Travis Encryption for Windows Dev
+
+== For Windows Developers
+
+In order to get the new Plugin Installer working, you will need a
+TravisCI encryption of a Github Personnal token for your plugin.
+
+Normally, if you were a Linux developer, you could install travisCI and
+make the encryption, however Windows Developers are generally not
+interested in installing a new OS in limited hardware space. This
+alternative does require about 1 gb but does not require a Linux
+installation.
+
+. Installation instructions for the travis tool (written in ruby) are
+available at https://github.com/travis-ci/travis.rb[Travis CLI Tool]
+. Refer to https://github.com/travis-ci/travis.rb#windows and download
+and install the most recent Ruby. For me, Ruby+Devkit 2.6.X (x64). Do
+not install the 3 options. The installation requires about 1gb.
+. Open the Ruby Command Prompt with administration privileges and issue
+the following commands.
+
+....
+$ ruby --version
+$ ruby 2.6.5p114 (2019-10-01 revision 67812) [x64-mingw32]
+$ gem install travis 
+  Downloads and installs even more files.
+$ travis --version
+$ 1.8.10
+$ travis encrypt --help
+....
+
+. In GitHub at your plugin, pick the upper right dropdown> Settings>
+Developer Settings> Personnal Access Tokens
+. Now make a new token named "git-ptoken-<your plugin name>-travis" and
+copy and save the auth-token code.
+. Next encrypt the GitHub Personnal Access Token for travis using the
+Ruby/travis Command prompt.
+
+....
+$ echo <my github personnal token for squiddio> | travis encrypt -r rgleason/squiddio_pi --org
+and the response was
+Please add the following to your .travis.yml file:
+secure: "<a travis encryption key that did not match my original key>"
+Pro Tip: You can add it automatically by running with --add.
+....
+
+. Copy the encryption key and use it in your travis.yml file

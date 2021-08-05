@@ -1,0 +1,65 @@
+= Cross compile for Windows under Linux -- mingw
+
+== General
+
+This is much more convenient than building under windows, and the build
+is usually faster. The resulting binary can be tested in wine. If you have
+any questions Cruisers Forum Thread is
+http://www.cruisersforum.com/forums/f134/building-opencpn-using-mingw-gcc-on-windows-121802.html#post1600285[here].
+
+The info here is based on the CI scripts which lives in the _ci/_
+directory. These scripts, which are continously tested is the
+ultimate source for how to make the mingw build.
+
+== The Fedora environment
+
+The build is best done on Fedora, where the mingw stack seems to be
+well maintained. For non-Fedora users, the easiest way is to use
+a Fedora docker container. An example how to use a such a container,
+assuming a build script which lives in _$PWD/build-mingw.sh_:
+
+    $ echo "DOCKER_OPTS=\"-H tcp://127.0.0.1:2375 -H $DOCKER_SOCK -s devicemapper\"" \
+        | sudo tee /etc/default/docker > /dev/null
+    $ sudo systemctl restart docker.service
+    $ sudo docker pull fedora:33
+    $ docker run --privileged  \
+        -v /sys/fs/cgroup:/sys/fs/cgroup \
+        -v $(pwd):/opencpn-ci:rw \
+        fedora:33  /opencpn-ci/build-mingw.sh
+
+== Install build dependencies
+
+The first line is usually not required on a regular Fedora host where
+these are installed anyway. Note the dependency on Leamas's COPR
+opencpn-mingw repository.
+
+    $ su -c "dnf install -y sudo dnf-plugins-core"
+    $ sudo dnf copr enable -y --nogpgcheck leamas/opencpn-mingw
+    $ sudo dnf builddep -y mingw/fedora/opencpn-deps.spec
+
+== Clone the sources
+The sources are quite large, a 330 MB download at the time of writing. Adding
+_--depth 10_ to the clone command brings this down to around 60 MB. However
+such a clone is not really usable if there is a need to submit patches.
+FIXME: Not mingw
+
+    $ git clone https://github.com/OpenCPN/OpenCPN.git
+    $ cd OpenCPN
+
+== Build
+
+The build within Fedora is basically simple, as of commands below.
+Add other cmake options as required.
+
+    $ rm -rf build; mkdir build; cd build
+    $ cmake \
+        -DCMAKE_TOOLCHAIN_FILE=../mingw/fedora/toolchain.cmake \
+        -DOCPN_CI_BUILD:BOOL=ON \
+        ..
+    $ make
+    $ make package
+
+The build produces a NSIS .exe installation package. This can be used
+to install opencpn without problems using wine on Linux. Of
+course, the installer also works on Windows. Note that plugins built on
+windows using the MSVC compiler are *not* compatible with the mingw build.

@@ -1,0 +1,26 @@
+= System Structure
+
+== Plugin Manager (PM) System consists of three parts:
+
+=== 1. OpenCPN Plugin Manager Code - UI
+
+Purpose: User Interface & PI Operations in OpenCPN +
+Operations under **Options > Plugins** and the PI User Interface. +
+
+=== 2. Plugin Code - Configure Template
+
+Purpose: Provide a prebuilt and tested CMake Template to enable Continuous Integration (CI) to manage the routine tasks required to build and deploy multiple build environments.
+
+. Confirm the plugin builds locally and works properly before starting.
+. Step by step Instructions
+. List of folders and files needed
+. Process to make a backup and to apply the folders and files to the plugin.
+. Details xref:pm-tp-config-template.adoc[Configure Template] has more detail for these steps:
+
+=== 3. Transfer of metadata files to Catalog Library
+
+Purpose: To include the plugin listing in OpenCPN Plugin +
+Manual Process: by Plugin Developer +
+Details: xref:pm-tp-update-library.adoc[Update Library] +
+
+For a Graphic of system structure xref:pm-overview-deployment.adoc[Deployment Overview Graphic].

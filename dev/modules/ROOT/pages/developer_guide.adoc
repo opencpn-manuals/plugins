@@ -1,0 +1,30 @@
+= Developer Guide
+
+Alec my local version kept starting with this page.
+So I have tried to fix it.
+However there is no link for the  "OpenCPN Developer Manual" at the top  it is "file not found"
+Note that I renamed the "intro" files consistently.
+
+
+I am not even sure these links are complete or needed, but this was part of the beginning of the manual
+
+== How to contribute to OpenCPN Code
+
+The best way to contribute to OpenCPN code is to fork the main
+repository from
+https://github.com/OpenCPN/OpenCPN[https://github.com/OpenCPN/OpenCPN],
+push your changes to your fork and create a pull request. There is a
+short guide to the whole process at  https://guides.github.com/activities/forking/
+
+https://github.com/OpenCPN/OpenCPN
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:compiling_linux.adoc[Compiling Linux]
+* xref:compiling_windows.adoc[Compiling Windows]
+* xref:compiling_mac_osx.adoc[Compiling macOS]
+* xref:pm-overview-workflow.adoc[Workflow Overview]
+* xref:legacy-plugins.adoc[Legacy Plugin Packages]
+* xref:cmake.adoc[Cmake]  What title here?
+* xref:i18n.adoc[i18nInternationalization]
+* xref:code_formatting.adoc[Code Formatting]
+* xref:messaging.adoc[Messaging]

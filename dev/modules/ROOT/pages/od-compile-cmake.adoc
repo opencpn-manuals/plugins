@@ -1,0 +1,95 @@
+= CMake Usage and Options
+
+== General
+
+OpenCPN is configured using cmake. The build is done
+out-of-tree according to
+
+    mkdir build
+    cd build
+    cmake [Options] ..
+    build command
+
+The *build command* part is platform dependent whereas the rest is
+identical on all platforms.
+
+The *Options* part refers to various CMake parameters. They are
+too many to be documented, this documentation just mentions a few.
+The best way to get an overview over the available options is to
+invoke _ccmake_ which displays a comprehensive list of all options,
+their current values and a short help string.
+
+The goal is that all options should have sane default values, and that
+a basic build should work without using any of them.
+
+Three kind of options are heavily used by OpenCPN:
+
+. Standard CMake variables, documented in https://cmake.org/documentation/[],
+often but not always with a CMAKE_ prefix.
+. OpenCPN specific variables, often with a OCPN_ prefix. Documented in the
+code which can be viewed using _ccmake_.
+. wxWidgets-specific options with a wxWidgets_ prefix, documented in
+https://cmake.org/cmake/help/latest/module/FindwxWidgets.html[]
+
+
+== Build Type -- CMAKE_BUILD_TYPE
+
+The default build type is _RelWithDebInfo_. A common alternative is _Debug_.
+
+== Installation path --  CMAKE_INSTALL_PREFIX
+
+Governs the path where files are installed in the installation package.
+Default is platform-dependent. It's not uncommon to change this to some
+other location.
+
+== Include git data in package name -- OCPN_CI_BUILD
+
+By default off. If enabled, makes latest git commit part of generated
+installation files; simplifies when having several test builds.
+
+== Explicit target specification -- OCPN_TARGET_TUPLE
+
+OpenCPN is built for a combination of operating system and hardware. This
+is crucial to determine if a plugin is compatible with the main OpenCPN
+program or not.
+
+On most targets this is computed automatically. In some situations,
+notably when cross-compiling, this is not possible and must be set
+in this option. The syntax  is `target;version;arch` like
+`flatpak;20.08;aarch64` or `debian:11:x86_64`
+
+== Use system libraries -- OCPN_USE_BUNDLED_LIBS
+
+OpenCPN bundles some libraries which can be found also as system libraries
+on for example Linux. This option governs whether the bundled libs should
+be used  (OCPN_USE_BUNDLED_LIBS=ON) or the system ones
+(OCPN_USE_BUNDLED_LIBS=OFF). It can also be set to a comma-separated list
+of libraries for which the bundled libs should be used. Only code can
+tell which libraries, though.
+
+
+== Bundled documentation
+
+The package can be built without bundling any documentation
+using _OCPN_BUNDLE_DOCS=OFF_. This has the benefit of a
+considerably smaller package.
+
+Also, unfortunately current documentation is non-free in the
+open-source sence since the sources are not available for
+technical reasons. Thus, using  _OCPN_BUNDLE_DOCS=OFF_ avoids
+bundling non-free stuff in generated package
+
+The documentation is available as a separate download from
+http://www.opencpn.org for installations built without the bundled
+docs.
+
+== Current and Tide Data -- TCDATA
+
+Bundling this data is governed by the OCPN_BUNDLE_TCDATA parameter,
+a boolean.
+
+== Shoreline World Wide Background Chart -- GSHHS
+
+If enabled, the boolean option OCPN_BUNDLE_GSHHS bundles the crude GSHHS
+data. To use more detailed higher levels use the system chartdldr
+plugin which always is available.
