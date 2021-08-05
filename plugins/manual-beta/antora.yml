@@ -1,4 +1,4 @@
-name: opencpn-beta-plugins
+name: plugins
 title: OpenCPN Beta Plugins
 version: '0.1'
 start_page: ROOT:index.adoc 
