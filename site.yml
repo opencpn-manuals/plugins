@@ -1,7 +1,7 @@
 site:
   title: OpenCPN Manuals
   url: https://rasbats.github.io/ocpn-manuals/
-  start_page:  ocpn-manuals:ROOT::index.adoc
+  start_page:  ocpn-manuals::index.adoc
 
 content:
   sources:
