@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://rasbats.github.io/ocpn-manuals/nmea_converter/0.1/nmea_converter.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://rasbats.github.io/ocpn-manuals"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="nmea_converter" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">nmea_converter</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../manuals/0.1/index.html">OpenCPN Manuals</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../manuals/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-master-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-master-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Users/Mike/Documents/GitHub/ocpn-manuals/sources/NmeaConverter_pi/manual/nmea_converter/modules/ROOT/pages/nmea_converter.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_nmeaconverter"><a class="anchor" href="#_nmeaconverter"></a>NMEAconverter</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/plugins.png" alt="plugins">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/RooieDirk/NmeaConverter_pi" class="bare">https://github.com/RooieDirk/NmeaConverter_pi</a></p>
+</li>
+<li>
+<p>Release:
+<a href="https://github.com/RooieDirk/NmeaConverter_pi/releases">RooieDirk Release
+TAB</a></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/nmeaconvert.html">Website
+Download</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/new-plugin-nmeaconvertor-145073.html" class="bare">http://www.cruisersforum.com/forums/f134/new-plugin-nmeaconvertor-145073.html</a></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/nmeacon.jpg" alt="nmeacon">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_outline"><a class="anchor" href="#_outline"></a>Outline</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="nmea_converter.html#getting_started">Getting Started</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#first_test">First Test</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#use_incoming_data_to_send_a_different_nmea_sentence">Use
+incoming data to send a different NMEA sentence</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#do_math_-_convert_units_eg_centigrade_to_fahrenheit">Do
+Math - Convert Units, e.g. Centigrade to Fahrenheit</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#force_true_heading_to_cog">getting_startedForce
+True Heading to COG</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#calculate_true_wind_from_apparent_wind">Calculate
+True Wind from Apparent Wind</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#normalize_degrees_to_less_than_360">Normalize
+Degrees to less than 360</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#prepare_barometer_sensor_output_for_dashboard">Prepare
+Barometer Sensor Output for Dashboard</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#fix_incorrect_st60_wind_speed_data">Fix
+incorrect ST60 Wind Speed Data</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#wildcards_example_-change_engine_data_format">Wildcards
+Example - Change Engine Data Format</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#getting_startedconvert_temperature_c_to_fahrenheit_-_opencpnopencpn_user_manualpluginslogsnmea_converter_fix_bad_heading_checksum">Fix
+bad Heading Checksum</a></p>
+</li>
+<li>
+<p><a href="nmea_converter.html#change_validity_character_-_nmea_converter_with_sailaway_game_simulator">Change
+Validity Character - NMEA Converter with the SailAway Game/Simulator</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>NMEAconverter is a utility that can parse incoming NMEA sentences/data,
+adjust and/or make calculations with the data, and then output a new
+NMEA sentence to have that adjusted data appear in OpenCPN. Examples
+include calculating true wind speed/angle from apparent wind data and
+boat speed information, changing units (degrees C to F or vice-versa,
+knots to km, etc.), or correcting malformed sentences created by some
+equipment where the sentence would otherwise be ignored by OpenCPN or
+displayed improperly.</p>
+</div>
+<div class="paragraph">
+<p>Please note that there is no Toolbar Icon. NmeaConverter works from the
+Preferences button of the plug-in. Options|Plug-ins|NMEAConvertor –&gt;
+Preferences</p>
+</div>
+<div class="paragraph">
+<p>To use the plugin a basic understanding of NMEA sentences is required.
+Please see the <a href="../../advanced_features/nmea_sentences.html">NMEA
+Sentences Page</a> for details on NMEA sentences and the fields each
+sentence contains. The basics of an NMEA sentence are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Initial delimiter (usually $, sometimes !)</p>
+</li>
+<li>
+<p>Talker ID (the instrument sending the data, two characters, optional)</p>
+</li>
+<li>
+<p>Sentence name - three characters</p>
+</li>
+<li>
+<p>Data, in fields, comma separated</p>
+</li>
+<li>
+<p>End delimiter - *</p>
+</li>
+<li>
+<p>Checksum</p>
+</li>
+<li>
+<p>Carriage Return+Linefeed</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Example $GPRMB,field1,field2,…field15*&lt;0xChecksum&gt;&lt;0x0D&gt;&lt;0x0A&gt;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">                                                            14
+        1 2   3 4    5    6       7 8        9 10  11  12  13|
+        |   |   |   |    |   |       |   |        |   |   |   |   |   |
+ $IDRMB,A,x.x,a,c--c,c--c,llll.ll,a,yyyyy.yy,a,x.x,x.x,x.x,A,m*hh&lt;CR&gt;&lt;LF&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The basic format of a conversion command is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">NewSentence, Argument for Field 1, Argument for Field 2, ...Argument for field n</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>NewSentence = $IDYYY where ID is a talker ID you would like to use to
+denote sentences from the converter. The examples in this manual
+generally use XX as the talker ID for newly created sentences. YYY is
+the NMEA sentence identifier you would like to send. A simple conversion
+example - this sample takes the 5th and 6th fields of an MDA sentence
+and transmits a new MTA sentence:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMTA, $WIMDA5, $WIMDA6</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Arguments can take the form of constants (numeric or text), values from
+an incoming NMEA sentence, or calculations using either or both
+constants and incoming data. In the simplest form an argument is an
+incoming NMEA sentence and field number - $GPRMC4 will get the fourth
+value in any RMC sentence received by OpenCPN from talker GP. Use the
+<a href="../../advanced_features/nmea_sentences.html">NMEA Sentences Page</a> to
+figure out what sentence you want to send, what data fields are
+required, and how the fields are configured. You must build a complete
+version of the sentence you want to send, and put the right data/fields
+from the original source in the right places for the converter to work
+properly. A number of detailed examples are provided below for
+reference.</p>
+</div>
+<div class="paragraph">
+<p>When inserting argument fields the wildcard “?” can be used to tell the
+converter to use data with any content where the “?” appears. The
+wildcard “??” at the front of an argument will tell the converter to use
+data from any talker sending the requested sentence (e.g. $??HDG3 will
+retrieve the third field from any HDG sentence regardless of sender). Be
+careful when using wildcards and the talker ID, especially when
+correcting malformed sentences. If you create a conversion that outputs
+the same sentence as any field used in the input (e.g. $XXHDG,
+$??HDG3,…..) you will create a loop that will crash the plugin (and
+OpenCPN). Every time the plugin evaluates it will see its own creation,
+because of the wildcard it will reevaluate, …</p>
+</div>
+<div class="paragraph">
+<p>Once a conversion is defined you can select whether to send the
+calculated sentence on a fixed timing (every x seconds) or only when the
+incoming data is updated.</p>
+</div>
+<div class="paragraph">
+<p>You do not need to add the end delimiter (*) or the checksum in your
+converter definitions - the converter will calculate the checksum and
+add the delimiter and checksum automatically.</p>
+</div>
+<div class="paragraph">
+<p>Depending on the data you are manipulating you may want to go into the
+<a href="../../options_setting/connections.html">OpenCPN Connections Tab</a> and
+tell OpenCPN to ignore the original data. If you are making unit
+conversions, for instance, and do not ignore the original data you will
+end up with a display that flashes between the original value and the
+converted value. Setting the data to ignore will not affect the
+converter, the data will still be received there, it simply prevents the
+display of the data in OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>For Reference from the
+<a href="../../advanced_features/nmea_sentences.html">NMEA Sentences Page</a>,
+sentences that can be displayed in OpenCPN include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>DBT - Depth Below Transducer</p>
+</li>
+<li>
+<p>DPT - Depth of Water</p>
+</li>
+<li>
+<p>GGA - Global Positioning System Fix Data</p>
+</li>
+<li>
+<p>GLL - Geographic Position - Latitude/Longitude HDG Heading - Deviation
+&amp; Variation</p>
+</li>
+<li>
+<p>HDM - Heading - Magnetic</p>
+</li>
+<li>
+<p>HDT - Heading - True</p>
+</li>
+<li>
+<p>MTA - Air Temperature (obsolete)</p>
+</li>
+<li>
+<p>MDA - Meteorological Composite (obsolete) Use XDR transducer instead.</p>
+</li>
+<li>
+<p>MTW - Mean Temperature of Water</p>
+</li>
+<li>
+<p>VLW - Distance Traveled through Water</p>
+</li>
+<li>
+<p>MWD - Wind Direction &amp; Speed</p>
+</li>
+<li>
+<p>MWV - Wind Speed and Angle</p>
+</li>
+<li>
+<p>RMC - Recommended Minimum Navigation Information</p>
+</li>
+<li>
+<p>RSA - Rudder Sensor Angle</p>
+</li>
+<li>
+<p>VHW - Water speed and heading</p>
+</li>
+<li>
+<p>VTG - Track made good and Ground speed</p>
+</li>
+<li>
+<p>VWR - Relative Wind Speed and Angle</p>
+</li>
+<li>
+<p>VWT - True Windspeed and Angle (obsolete)</p>
+</li>
+<li>
+<p>XDR - Transducer Values</p>
+</li>
+<li>
+<p>ZDA -Time &amp; Date - UTC, day, month, year and local time zone</p>
+</li>
+<li>
+<p>AIVDO - Automatic Information System (AIS) position reports from own
+vessel</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_getting_started"><a class="anchor" href="#_1_getting_started"></a>1. Getting Started</h3>
+<div class="paragraph">
+<p>Install the plugin in accordance with the
+<a href="../install_and_enable.html">Plugin Installation Instructions</a>.</p>
+</div>
+<div class="paragraph">
+<p>Then open the Preferences Dialog to set up your conversions.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/nmea-converter.png" alt="nmea converter">
+</div>
+</div>
+<div class="paragraph">
+<p>If you see something like above please enlarge the nmeaSendObjectDlg
+window so it displays the “OK” and “Cancel” buttons.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_first_test"><a class="anchor" href="#_2_first_test"></a>2. First Test</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/testmessage1.png" alt="testmessage1">
+</div>
+</div>
+<div class="paragraph">
+<p>This is a completely useless sentence that is sent every second to
+OpenCPN. Check also the NMEAdebug window in the picture above, and note
+that a checksum is added to the sentence. It is easy to change this one
+into something like:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$GPRMC,085437,A,5324.3052,N,00611.5704,E,3.3,68.9,070614,0.3,E,A</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Just enter this line into the NMEAConverter &gt; Preference &gt; New &gt; Edit
+box and Save it. No VDR file is needed. That will fake a GPS position
+into OpenCPN, but still not very useful.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_use_incoming_data_to_send_a_different_nmea_sentence"><a class="anchor" href="#_3_use_incoming_data_to_send_a_different_nmea_sentence"></a>3. Use incoming data to send a different NMEA sentence</h3>
+<div class="paragraph">
+<p>The real power of this plugin is that you can change the data of the
+sent sentence by cherry picking from incoming sentences. The reason I
+wrote this plugin was I wanted Dashboard to show the air temperature. To
+get the data, Dashboard needs an $xxMTA sentence, however I had a Airmar
+PB200 unit that is sending $xxMDA sentences.</p>
+</div>
+<div class="paragraph">
+<p>An example: We have from the windset,</p>
+</div>
+<div class="paragraph">
+<p>MDA- Meteorological (Obsolete)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$WIMDA,30.1,I,1.0,B,11.3,C,,,,,,,18.6,T,18.5,M,5.8,N,3.0,M*27</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and want: MDA- Air temperature</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$xxMTA,11.3,C*&lt;Checksum&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that the data needed is in fields 5 and 6 of the MDA sentence.
+(11.3 degrees Celsius)</p>
+</div>
+<div class="paragraph">
+<p>Setting the format to</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMTA, $WIMDA5, $WIMDA6</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>will give an output sentence:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMTA, 11.3, C*26</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Where <strong>$WIMDA5</strong> is replaced by the 5th field of the $WIMDA sentence.
+etc.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/xxmtamessage2.png" alt="xxmtamessage2">
+</div>
+</div>
+<div class="paragraph">
+<p>As seen above, the $XXMTA sentence is sent each time a $WIMDA sentence
+is received and read by Dashboard.</p>
+</div>
+<div class="paragraph">
+<p>For testing use VDR_pi or VDRplayer and run</p>
+</div>
+<div class="paragraph">
+<p><a href="../../../files/nmea/wimda_ocmda.zip">WIMDA+OCMDA.txt from this zip</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_do_math_convert_units_e_g_centigrade_to_fahrenheit"><a class="anchor" href="#_4_do_math_convert_units_e_g_centigrade_to_fahrenheit"></a>4. Do Math - Convert Units, e.g. Centigrade to Fahrenheit</h3>
+<div class="paragraph">
+<p>But what if I was living in the US and preferred the reading to be in
+degrees Fahrenheit? Just change the format to:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMTA, 9/5*$WIMDA5 + 32, F</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/xxmtamessage3.png" alt="image::xxmtamessage3.png[image" width="641" height="366]">
+</div>
+</div>
+<div class="paragraph">
+<p>The value is recalculated and displayed as degrees Fahrenheit.</p>
+</div>
+<div class="paragraph">
+<p>Use the same file for testing use VDR_pi or VDRplayer and run
+<a href="../../../files/nmea/wimda_ocmda.zip">WIMDA+OCMDA.txt from this zip</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_force_true_heading_to_cog"><a class="anchor" href="#_5_force_true_heading_to_cog"></a>5. Force True Heading to COG</h3>
+<div class="paragraph">
+<p>In NMEAconverter create a HDG (compass) sentence from your COG. Possible
+use when the autopilot is old and does not receive heading (true or
+magnetic).</p>
+</div>
+<div class="paragraph">
+<p>Note: Since computation of the drift and surface current requires HDG,
+it is understood that while using Tactics_pi value for Current speed and
+direction will not be useful. All you will see is the speed difference
+between SOG and STW, which would force Current to be the vector
+component normal to the keel. That means the “current” display will
+always be directly from bow or stern, in other words the component of
+the current along the centerline of the boat, assuming your STW(speed
+through water) is calibrated correctly.</p>
+</div>
+<div class="paragraph">
+<p>See
+<a href="http://www.cruisersforum.com/forums/f134/tactics-plugin-166909-36.html#post2140937">CF
+Tactics_pi Post #22</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/aufnahme37.jpeg" alt="aufnahme37">
+</div>
+</div>
+<div class="paragraph">
+<p>The NMEA file being run by VDR_pi is</p>
+</div>
+<div class="paragraph">
+<p><a href="../../../files/nmea/vdr2_-_copie.xls">vdr2 - copie.xls</a></p>
+</div>
+<div class="paragraph">
+<p>Tactics_pi and in particular, NMEAconverter_pi is using</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXHDT,$IIVTG1,$IIVTG2</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Remember that setting HDT to COG will give you no drift angle at all
+(except maybe a small portion via the manual heel input), so you will
+not see any real current I suggest to set a fixed heel angle to 0 (see
+screenshot above), to avoid side effects with manual heel input at very
+low speeds and small speed differences between SOG and STW.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_6_calculate_true_wind_from_apparent_wind"><a class="anchor" href="#_6_calculate_true_wind_from_apparent_wind"></a>6. Calculate True Wind from Apparent Wind</h3>
+<div class="sect3">
+<h4 id="_known"><a class="anchor" href="#_known"></a>Known</h4>
+<div class="paragraph">
+<p>Boat Speed ground (kts) = SOG<br>
+Apparent wind speed (degrees) = AWS<br>
+Apparent wind angle (degrees) = AWA</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mwv_wind_speed_and_angle_input"><a class="anchor" href="#_mwv_wind_speed_and_angle_input"></a>MWV - Wind Speed and Angle - Input</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$–MWV,x.x,a,x.x,a*hh&lt;CR&gt;&lt;LF&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Field Number:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Wind Angle, 0 to 360 degrees</p>
+</li>
+<li>
+<p>Reference, R = Relative, T = True</p>
+</li>
+<li>
+<p>Wind Speed</p>
+</li>
+<li>
+<p>Wind Speed Units, K/M/N</p>
+</li>
+<li>
+<p>Status, A = Data Valid</p>
+</li>
+<li>
+<p>Checksum</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_rma_recommended_minimum_navigation_information_input"><a class="anchor" href="#_rma_recommended_minimum_navigation_information_input"></a>RMA - Recommended Minimum Navigation Information - Input</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$–RMA,A,llll.ll,a,yyyyy.yy,a,x.x,x.x,x.x,x.x,x.x,a*hh&lt;CR&gt;&lt;LF&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Field Number:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Blink Warning</p>
+</li>
+<li>
+<p>Latitude</p>
+</li>
+<li>
+<p>N or S</p>
+</li>
+<li>
+<p>Longitude</p>
+</li>
+<li>
+<p>E or W</p>
+</li>
+<li>
+<p>Time Difference A, uS</p>
+</li>
+<li>
+<p>Time Difference B, uS</p>
+</li>
+<li>
+<p>Speed Over Ground, Knots</p>
+</li>
+<li>
+<p>Track Made Good, degrees true</p>
+</li>
+<li>
+<p>Magnetic Variation, degrees</p>
+</li>
+<li>
+<p>E or W</p>
+</li>
+<li>
+<p>Checksum</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mwv_wind_speed_and_angle_output_tw_in_knots"><a class="anchor" href="#_mwv_wind_speed_and_angle_output_tw_in_knots"></a>MWV - Wind Speed and Angle - Output TW in Knots</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$–MWV,x.x,T,x.x,K*hh&lt;CR&gt;&lt;LF&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Field Number:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Wind Angle, 0 to 360 degrees</p>
+</li>
+<li>
+<p>Reference, R = Relative, T = True</p>
+</li>
+<li>
+<p>Wind Speed</p>
+</li>
+<li>
+<p>Wind Speed Units, K/M/N</p>
+</li>
+<li>
+<p>Status, A = Data Valid</p>
+</li>
+<li>
+<p>Checksum</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>NMEA 0183 from <a href="http://www.catb.org/gpsd/NMEA.html" class="bare">http://www.catb.org/gpsd/NMEA.html</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_calculations_needed"><a class="anchor" href="#_calculations_needed"></a>Calculations Needed:</h4>
+<div class="paragraph">
+<p>x =AWS*sin(AWA*3.14159265/180)<br>
+y =(x/tan(AWA*3.14159265/180)) - SOG<br>
+TWS (True Wind Speed) =x/sin(TWA*3.14159265/180)<br>
+TWA (True Wind Angle) =atan(x/y)*180/3.14159265<br>
+*Formula from <a href="http://www.bethandevans.com/calculators.htm" class="bare">http://www.bethandevans.com/calculators.htm</a><br></p>
+</div>
+<div class="paragraph">
+<p>The formula now needs to be completed:<br>
+<strong>$XXMWV,</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tws_and_twa"><a class="anchor" href="#_tws_and_twa"></a>TWS and TWA</h4>
+<div class="paragraph">
+<p>(From zzz, see
+<a href="http://www.cruisersforum.com/forums/f134/new-plugin-nmeaconvertor-145073.html#post2533127">zzz&#8217;s
+Cruiser Forum Post</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMWV,$WIMWV1+acos((sqr($WIMWV3)+sqr($GPRMC7)+sqr($WIMWV3)-2*$GPRMC7*$WIMWV3*cos($WIMWV1*3.14159265/180)-sqr($GPRMC7))/(2*sqrt(sqr($GPRMC7)+sqr($WIMWV3)-2*$GPRMC7*cos($WIMWV1*3.14159265/180))*$WIMWV3)),T,sqrt(sqr($GPRMC7)+SQR($WIMWV3)-2*$GPRMC7*$WIMWV3*cos($WIMWV1*3.14159265/180)),N,A</code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>$s were missing in the previous version</p>
+</li>
+<li>
+<p>Changed wind speed unit from K to N</p>
+</li>
+<li>
+<p>Deleted spaces after commas.</p>
+</li>
+<li>
+<p>In terms of sog vs. stw, as pointed out, in most cases, diff is
+negligible I believe.</p>
+</li>
+<li>
+<p>One thing about stw is that the sensor cannot capture the movement of
+a vessel due to tide (as high as 5 knots!).</p>
+</li>
+<li>
+<p>For my purpose, gps is good enough.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_observations_by_rhythm_doctor"><a class="anchor" href="#_observations_by_rhythm_doctor"></a>Observations by Rhythm Doctor:</h4>
+<div class="paragraph">
+<p>One needs to be careful with this calculation. There are at least two
+different syntaxes for the reporting of relative wind angle. The older
+VWR and VWT sentences for relative and true wind are not recommended for
+new devices, but there are many older devices and SeaTalk converters
+that still use them (specifically, my own instruments). The sentences
+look like this (with II talker ID in this example):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$IIVWR,084.0,R,10.4,N,5.4,M,19.3,K
+$IIVWT,084.0,R,10.4,N,5.4,M,19.3,K</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>1 084.0 Wind Angle 0 - 180<br>
+2 R Right of vessel heading (L = Left)<br>
+3 10.4 Wind Speed<br>
+4 N Wind Speed units Knots<br>
+5 5.4 Wind Speed<br>
+6 M Wind Speed units Metres per second<br>
+7 19.3 Wind Speed<br>
+9 K Wind Speed units Km/Hr</em></p>
+</div>
+<div class="paragraph">
+<p>Newer devices use the preferred MWV sentence structure that looks like
+this (with II talker ID in this case):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$IIMWV,084.0,R,10.4,N,A
+$IIMWV,084.0,T,10.4,N,A</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>1 084.0 Wind Angle 0 - 359<br>
+2 R Relative (T = True)<br>
+3 10.4 Wind Speed<br>
+4 N Wind Speed units Knots (K = KPH, M = MPH)<br>
+5 A Status (A= Valid)</em></p>
+</div>
+<div class="paragraph">
+<p>Note that VWR/VWT and MWV work totally differently: VWR provides wind
+angles from 0-180 with an additional parameter of L or R, while MWV
+provides wind angles from 0-359 with no L or R. Converting your obsolete
+VWR sentence to the more modern MWV sentence would seem to be impossible
+without a conditional if() statement, which appears to not be supported
+(since I was unable to get it to work).</p>
+</div>
+<div class="paragraph">
+<p>Here is the sentence that works best for me for converting VWR
+(relative/apparent wind) to VWT (true wind). Using the wildcard (instead
+of II, GP, or WI sender IDs) allows testing with others' VWR sentences,
+including Paul Elliot&#8217;s test NMEA files:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXVWT,90-deg(atan(($??VWR3*cos(rad($??VWR1))-$??RMC7)/$??VWR3*sin(rad($??VWR1)))),$??VWR2,sqrt(sqr($??VWR3*sin(rad($??VWR1)))+sqr($??VWR3*cos(rad($??VWR1))-$??RMC7)),$??VWR4,,,,</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that there is an invisible &lt;return&gt; character at the end of this
+sentence (after the four commas). In my testing, things don&#8217;t work right
+without it. I recommend that you include it if you copy/paste this
+formula into the config dialog.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_transmitter_dan_advises"><a class="anchor" href="#_transmitter_dan_advises"></a>Transmitter Dan advises:</h4>
+<div class="paragraph">
+<p>It is possible to replace the sender ID (GP or WI) with ?? which means
+any sender ID will be accepted. Using the wildcard will allow Paul
+Elliot&#8217;s test NMEA file to work with the NMEAconverter formula, using
+Seatalk - vYacht dialect:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMWV,90-deg(atan(($??MWV3*cos(rad($??MWV1))-$GPRMC7)/$??MWV3*sin(rad($??MWV1)))),T,sqrt(sqr($??MWV3*sin (rad($??MWV1)))+sqr($??MWV3*cos(rad($??MWV1))-$GPRMC7)),N,A</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Edit: In above formula&#8217;s 3.14159265 might be replaced by “pi”, and
+3.14159265/180 can also be written as “deg”.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.navmonpc.com/downloads.html">Paul Elliot&#8217;s Test Files</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_normalize_degrees_to_less_than_360"><a class="anchor" href="#_7_normalize_degrees_to_less_than_360"></a>7. Normalize Degrees to less than 360</h3>
+<div class="sect3">
+<h4 id="_for_true_wind_direction_twd_sum_between_true_wind_angle_mwv_and_true_heading_hdt"><a class="anchor" href="#_for_true_wind_direction_twd_sum_between_true_wind_angle_mwv_and_true_heading_hdt"></a>For True Wind Direction (TWD) = Sum between True Wind Angle (MWV) and True Heading (HDT)</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/nmeaconverter-greater-than-360-crop.png" alt="nmeaconverter greater than 360 crop">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_math_basis"><a class="anchor" href="#_math_basis"></a>Math Basis</h4>
+<div class="paragraph">
+<p><a href="https://stackoverflow.com/questions/1628386/normalise-orientation-between-0-and-360">Normalize
+orientation between 0 and 360</a></p>
+</div>
+<div class="paragraph">
+<p>Formula for re-orienting circular values i.e to keep angle between 0 and
+359 is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">angle + Math.ceil( -angle / 360 ) * 360</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Generalized formula for shifting angle orientation can be:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">angle + Math.ceil( (-angle+shift) / 360 ) * 360</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>in which value of shift represent circular shift for e.g I want values
+in -179 to 180 then it can be represented as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">angle + Math.ceil( (-angle-179) / 360 ) * 360</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>What is math.ceil? Java script function.</p>
+</div>
+<div class="paragraph">
+<p>The
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil">Math.ceil()</a>
+function returns the smallest integer greater than or equal to a given
+number. Note: Math.ceil(null) returns integer 0 and does not give a NaN
+error.</p>
+</div>
+<div class="paragraph">
+<p>NMEAConverter has this comparable function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">ceil : the smallest integer greater than or equal to x</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Homebrew MOD function:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">=( Angle /360-INT( Angle /360))*360</code></pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/nemaconverter-normalize-degrees-crop.png.detail.html" alt="nemaconverter normalize degrees crop.png.detail">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_implementation"><a class="anchor" href="#_implementation"></a>Implementation</h4>
+<div class="paragraph">
+<p>All data comes from Raymarine instrument with NMEA 0183. Here the two
+data values to have in OpenCPN:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>True Heading</p>
+</li>
+<li>
+<p>True Wind Direction 0-359</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXHDT,$??HDG1,T
+$WIMWD,($??MWV1+$??HDT1)+ceil((-($??MWV1+$??HDT1))/360)*360,T,,M,$??MWV3,N,,M</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Max reports that it works well. - Thank you Max.</p>
+</div>
+<div class="paragraph">
+<p>The formula to normalize the degrees to be between 0-360 is</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">ceil((-($??MWV1+$??HDT1))/360)*360</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_8_prepare_barometer_sensor_output_for_dashboard"><a class="anchor" href="#_8_prepare_barometer_sensor_output_for_dashboard"></a>8. Prepare Barometer Sensor Output for Dashboard</h3>
+<div class="sect3">
+<h4 id="_aim"><a class="anchor" href="#_aim"></a>Aim</h4>
+<div class="paragraph">
+<p>The BMP180 pressure sensor output from Raspberry Pi/OpenPlotter uses the
+sentence $OSXDR. This cannot be read by Dashboard. BMP180 Output Units
+are Bars i.e 1000 times the reading needed for display -
+mBar/hectoPascal. Any error in the output cannot be corrected. This
+formula creates an $xxMDA (deprecated) or $xxXDR sentence that can be
+used by Dashboard.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conversion"><a class="anchor" href="#_conversion"></a>Conversion</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$MYXDR,P, 0.018 + 1/1000 * $OSXDR2,B,Barometer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Deprecated:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$MYMDA, , ,0.018 +1/1000*$OSXDR2,,B,,,,,,,,,,,,,,,,M</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>(0.018 is an error correction and also adjusts the barometer pressure
+for a sea level reading)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_applying_the_settings"><a class="anchor" href="#_applying_the_settings"></a>Applying the settings</h4>
+<div class="paragraph">
+<p>Found it necessary to tick the 'block incoming messages with wrong
+checksum' box when editing the sentence.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/block_incomming.png" alt="image:../../../dev/plugins/beta_plugins/plugins_under_development/block_incomming.png[image" width="400]">
+</div>
+</div>
+<div class="paragraph">
+<p>When editing the sentence; starting a variable with '.' or '$' causes
+OpenCPN to freeze. Variables are being read by the plugin all the time
+and these characters are not recognized. Workaround is to type '0.' and
+then the number. Also 'OSXDR2' and then add the '$' in front, '$OSXDR2'.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/osxdr_variables.png" alt="osxdr variables">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/virtual_mda.png" alt="virtual mda">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_9_fix_incorrect_st60_wind_speed_data"><a class="anchor" href="#_9_fix_incorrect_st60_wind_speed_data"></a>9. Fix incorrect ST60 Wind Speed Data</h3>
+<div class="paragraph">
+<p>Ratsea has fixed an incorrect Raymarine ST60 conversion.</p>
+</div>
+<div class="sect3">
+<h4 id="_problem"><a class="anchor" href="#_problem"></a>Problem</h4>
+<div class="paragraph">
+<p>Dashboard displays incorrect wind speed data when using the ST60 Multi
+NMEA Output. The data is treated as Km/hr as it has the K unit
+identifier and is converted to knots/m per sec/Km/hr as per the
+Dashboard settings, it then incorrect as the data is already in Knots</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_aim_2"><a class="anchor" href="#_aim_2"></a>Aim</h4>
+<div class="paragraph">
+<p>Change the display units in the wind output sentence from ST60 Multi
+from K (kms/hr) to N (kts) as the Raymarine instrument incorrectly uses
+the K identifier for Knots and not the N, so that the Dashboard
+correctly displays the Wind Speed data in the units selected.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_process"><a class="anchor" href="#_process"></a>Process</h4>
+<div class="paragraph">
+<p>Using the NMEA converter, apply the conversion to the MWV sentence with
+a new ID - xx:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$xxMWV,$IIMWV1,$IIMWV2,$IIMWV3,N,$IIMWV5</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and tick 'Send after update all variable' With the instrument switched
+on and receiving the actual live data shows in Blue.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/nmea-con-st60.jpeg" alt="nmea con st60">
+</div>
+</div>
+<div class="paragraph">
+<p>The NMEA datastream then becomes:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$IIHDM,143,M*3A
+$IIMTW,025.2,C*26
+$IIMWV,155,R,009.0,K,A*2E Input
+$xxMWV,155,R,9.0,N,A*2B Corrected, the input line is also shown on the dashboard, but too quickly to notice
+$IIVHW,,T,143,M,00.00,N,00.00,K*63</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_caution"><a class="anchor" href="#_caution"></a>Caution</h4>
+<div class="paragraph">
+<p>Whilst developing this code, I found that using the formula:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$IIMWV,$IIMWV1,$IIMWV2,$IIMWV3,N,$IIMWV5</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>would also work if the 'Send every (n) seconds' was ticked, but the
+Dashboard would flash between the two values of Km/sec and knots. If the
+Send after update all… was ticked, then OpenCPN would freeze in a
+continuous loop trying to update the newly created NMEA sentence!</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_10_use_wildcards"><a class="anchor" href="#_10_use_wildcards"></a>10. Use Wildcards</h3>
+<div class="paragraph">
+<p>Now it is possible to use wildcards in the identifiers. So you could
+make it talkerid independent by using something similar to</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">.....$??XXX3....</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and whatever character on the ? position will cause a hit.</p>
+</div>
+<div class="paragraph">
+<p>Even more important, you might use it for special transducers sending
+the something like</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$OWXDR,H,....or $OWXDR,C....</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>sentence.</p>
+</div>
+<div class="paragraph">
+<p>Note that field 1 is part of the identifier. As the comma is the NMEA
+separator, you can not use it as an identifier string, but by using a
+wildcard it works.</p>
+</div>
+<div class="paragraph">
+<p>For example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code"> ....$OWXDR?H2... or $??XDR?H2....</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>will work.
+<a href="https://www.cruisersforum.com/forums/f134/new-plugin-nmeaconvertor-145073.html#post3218765">Cruiser
+Forum Post</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_10_wildcards_example_change_engine_data_format"><a class="anchor" href="#_10_wildcards_example_change_engine_data_format"></a>10. Wildcards Example: Change Engine data format</h3>
+<div class="paragraph">
+<p>Using wildcards is also useful when the data to be matched is in the
+data payload rather than the header. In the example below, we have
+engine data coming from the NMEA stream which contains the correct
+sender transducer ID, however is not the format required by the Engine
+Dashboard plug-in. Here is the original NMEA sentences:</p>
+</div>
+<div class="paragraph">
+<p>[code] <em>Engine RPM $ERRPM,E,0,2324.00,,A*69</em> Oil Pressure,
+Coolant Temp, and Engine Hours
+$ERXDR,P,4.04,B,ENGOILP0,C,75.25,C,ENGTEMP0,G,2024 .1,,ENGHRS0*01
+<em>Battery0 (Starter) Voltage and Shunt Current
+$ERXDR,U,13.75,V,BATVOLT0,I,0.8,A,BATCURR0*4D</em> Battery1 (House) Voltage
+$ERXDR,U,13.27,V,BATVOLT1*14 [/code]</p>
+</div>
+<div class="paragraph">
+<p>You can see that the two battery voltages are distinguished using
+different transducer IDs, BATVOLT0 and BATVOLT1</p>
+</div>
+<div class="paragraph">
+<p>The following NMEA Converter plug-in code converts to sentences so that
+the Engine Dashboard can read them. For the sentence that contains
+multiple data elements, we can us the wildcard “$ERXDR?P2” to match on
+the particular sentence that has the data we need.</p>
+</div>
+<div class="paragraph">
+<p>To get battery voltage and current, we need to make liberal use of the
+wildcard to match out to the “I” in order to distinguish from the
+BATVOLT1 sentence. this gets us the battery0 voltage and the DC shunt
+current.</p>
+</div>
+<div class="paragraph">
+<p>For battery1, I have not figured out how to convert this because the
+only character that distinguishes it from battery0 is the “1” at the
+end.</p>
+</div>
+<div class="paragraph">
+<p>[code] RPM $IIXDR,T,$ERRPM3,R,MAIN ENGINE OIL PRESSURE
+$IIXDR,P,$ERXDR?P2*100000,P,MAIN ENGINE COOLANT TEMP
+$IIXDR,C,$ERXDR?P6,C,MAIN ENGINE HOURS $IIXDR,G,$ERXDR?P10,H,MAIN HOUSE
+BATTERY VOLTAGE $IIXDR,U,$ERXDR?U??????????????????I2,V,HOUS DC AMPERAGE
+$IIXDR,U,$ERXDR?U??????????????????I6,A,STRT [/code]</p>
+</div>
+<div class="paragraph">
+<p>See this
+<a href="https://www.cruisersforum.com/forums/f134/new-plugin-nmeaconvertor-145073.html#post3241791">CF
+#341 Post</a> and ones preceding.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_11_convert_temperature_c_to_fahrenheit"><a class="anchor" href="#_11_convert_temperature_c_to_fahrenheit"></a>11. Convert Temperature C to Fahrenheit</h3>
+<div class="paragraph">
+<p>Using convert C to F for temp ( $XXMTA, 9/5*$AIMTW5 + 32, F) with send
+after all updates variables checked.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>As soon as I start to playback a NMEA stream via VDR plugin or
+VDRplayer.py OpenCPN crashes. A look at the O logs does not produce any
+clues.</p>
+</li>
+<li>
+<p>As a side note I have compiled and used the Tactics plugin with the
+same NMEA file with VDRplayer and O and Tactics run just fine.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You are using an ..MTW sentence. Format according my info:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MTW - Mean Temperature of Water</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>$–MTW,x.x,C_hh</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>This sentence has only 2 fields available, the first one given the
+temp value and the second just 'C' for 'Celsius'.</p>
+</li>
+<li>
+<p>In your command sentence ($XXMTA, 9/5_$AIMTW5 + 32, F) )</p>
+</li>
+<li>
+<p>You are requesting the 5th field of the MTW sentence, but that field
+does not exist. Try again with</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code"> $XXMTA, 9/5*$AIMTW1 + 32, F</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Used new formula provided above.. Still Crashed. I removed the</p>
+</div>
+<div class="paragraph">
+<p>$Dummy</p>
+</div>
+<div class="paragraph">
+<p>entry that came with NMEAConverter_pi install. OpenCPN no longer crashes
+with NMEAConverter_pi enabled with a NMEA stream present..and as
+provided for above</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXMTA, 9/5*$AIMTW1 + 32, F</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>is showing the “Air Temp” in F in Dashboard on O. “I can never thank the
+volunteers enough for all these wonderful tools.”</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_12_fix_bad_heading_checksum"><a class="anchor" href="#_12_fix_bad_heading_checksum"></a>12. Fix bad Heading Checksum</h3>
+<div class="paragraph">
+<p><a href="http://www.cruisersforum.com/forums/f134/heading-info-not-being-accepted-used-225665.html#post3004204">Cruiser
+Forum Post</a></p>
+</div>
+<div class="paragraph">
+<p>The problem with the incoming sentence:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$APHDM, 113,M*0A</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Which in this case, is a magnetic heading of 113 degrees followed by a
+bad checksum.</p>
+</div>
+<div class="paragraph">
+<p>Using the NMEA converter sentence, to delete the bad checksum and then
+add a new checksum after a forced comma,</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$IIHDM, $APHDM1", "</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Which gets converted to a new sentence of $IIHDM,113, *50 with a new
+checksum. This assigns the first field of the NMEA sentence from $APHDM
+(113) to a new virtual source of $IIHDM</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/correct_head.jpeg" alt="correct head">
+</div>
+</div>
+<div class="paragraph">
+<p>Tim advises:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>As you can see, I now have a heading indicator plus dashboard data.
+The NMEA debug window shows the data coming in and being converted.</p>
+</li>
+<li>
+<p>I&#8217;m sure that I should tweak the conversion command to put M in for
+magnetic, plus tidy up commas and stuff (as per Hakan suggestion), but
+it is working well, so I am reluctant to “fix” it further just at the
+moment…</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dsanduril reports: “The TMQ checksum includes the '$' delimiter
+character at the start of the sentence. Per NMEA standard the '$'
+delimiter at the start of the sentence and the '*' delimiter at the end
+of the sentence should not be included in the checksum. Checksum should
+be calculated by XOR of all characters between the delimiters.
+[Suggesting that the TMQ AP needs a firmware update to correct the
+error.”</p>
+</div>
+<div class="paragraph">
+<p>From the Nmea Standard:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">&gt; The checksum is the 8-bit exclusive OR (no start or stop bits) of all characters in the sentence, including "," and "^" delimiters, between but not including the "$" or "!" and the "*" delimiters[emphasis added]. The hexadecimal value of the most significant and least significant 4 bits of the result is converted to two ASCII characters (0-9, A-F (upper case)) for transmission. The most significant character is transmitted first.</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_13_change_validity_character_nmea_converter_with_the_sailaway_gamesimulator"><a class="anchor" href="#_13_change_validity_character_nmea_converter_with_the_sailaway_gamesimulator"></a>13. Change Validity Character - NMEA Converter with the SailAway Game/Simulator</h3>
+<div class="paragraph">
+<p>The game SailAway sends realtime NMEA streams that can be used with
+plotter software, routing software, etc. The game developers have
+elected to send the RMC and GLL sentences with the “V” validity
+character, which indicates the data is invalid. OpenCPN rejects the
+data. An “A” character is required to show the data is valid.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$GPGLL,2546.261,N,7959.8522,W,174650.217,V*3B&lt;0x0D&gt;&lt;0x0A&gt;
+$GPRMC,174650.217,V,2546.261,N,7959.8522,W,4.9,79,230320,,,*0D&lt;0x0D&gt;&lt;0x0A&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>NMEAconverter can easily adjust these sentences and recalculate the
+checksum so that the data is accepted in OpenCPN.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">$XXRMC,$GPRMC1,A,$GPRMC3,$GPRMC4,$GPRMC5,$GPRMC6,$ GPRMC7,$GPRMC8,$GPRMC9,,,
+$XXGLL,$GPGLL1,$GPGLL2,$GPGLL3,$GPGLL4,$GPGLL5,A</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Thanks to Jurien72 and Rasbats
+<a href="https://www.cruisersforum.com/forums/f134/sog-cog-problem-231924.html#post3101987">CForum
+SOG/COG Problem</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_14_contribute_your_formulas_conversions"><a class="anchor" href="#_14_contribute_your_formulas_conversions"></a>14. Contribute your Formulas &amp; Conversions</h3>
+<div class="paragraph">
+<p>If you have an useful format formula please feel free to add it here.</p>
+</div>
+<div class="paragraph">
+<p>Another future possibility is to do a comparison lookup of a boat&#8217;s
+Polar data and send a special NMEA sentence of the comparative result to
+the Dashboard using a special dedicated performance instrument, for
+example.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_calculations_supported"><a class="anchor" href="#_calculations_supported"></a>Calculations Supported</h3>
+<div class="paragraph">
+<p>For calculations the following functions are supported:</p>
+</div>
+<div class="sect3">
+<h4 id="_normal_functions"><a class="anchor" href="#_normal_functions"></a>Normal functions</h4>
+<div class="paragraph">
+<p>abs : the absolute value, it removes the sign<br>
+ceil : the smallest integer greater than or equal to x<br>
+cub : x^3, safe way to compute such an exponent<br>
+deg : converts from radian to degree<br>
+exp : the exponential value<br>
+hvi : Heaviside&#8217;s function, =0 if x&lt;0, =1 if x&gt;=0<br>
+int : the largest integer less than or equal to x<br>
+inv : inverts, 1/x<br>
+floor : not supported, see int<br>
+ln : the Napierian\natural logarithm<br>
+lnep : see ln<br>
+log : the logarithm base 10<br>
+rad : converts from degree to radian<br>
+sgn : the sign, -1 or +1. Zero returns +1.<br>
+sqr : x^2, safe way to compute such an exponent<br>
+sqrt : the root square<br>
+pi : 3.14159265<br>
+deg : 3.14159265/180</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_trigonometric_functions"><a class="anchor" href="#_trigonometric_functions"></a>Trigonometric functions</h4>
+<div class="paragraph">
+<p>acos : the secant (inverse of cosine)<br>
+acsh : the inverse of the hyperbolic cosine<br>
+asin : the cosecant (inverse of sine)<br>
+asnh : the inverse of the hyperbolic sine<br>
+atan : the cotangent (inverse of tangent)<br>
+atnh : the inverse of the hyperbolic tangent<br>
+cos : the cosine<br>
+cosh : the hyperbolic cosine<br>
+sin : the sine<br>
+sinc : the cardinal sine (radian)<br>
+sinh : the hyperbolic sine<br>
+tan : the tangent<br>
+tanh : the hyperbolic tangent</p>
+</div>
+<div class="paragraph">
+<p>This makes it possible to do spreadsheet-like calculations. And as in a
+spreadsheet the trigonometric functions use radians.</p>
+</div>
+<div class="paragraph">
+<p>In beta at this moment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An extra checkbox to allow for calculation in degrees instead of
+radians.</p>
+</li>
+<li>
+<p>“E” bug is fixed.</p>
+</li>
+<li>
+<p>“pi” instead of 3.14159265</p>
+</li>
+<li>
+<p>“deg” instead of 3.14159265/180</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

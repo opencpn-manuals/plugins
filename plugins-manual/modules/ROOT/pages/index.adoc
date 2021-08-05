@@ -1,3 +1,0 @@
-== MANUALS
-
-xref:opencpn-master-plugins::index.adoc[Plugins Manual]

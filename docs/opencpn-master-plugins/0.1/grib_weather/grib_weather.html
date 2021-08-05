@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://rasbats.github.io/ocpn-manuals/opencpn-master-plugins/0.1/grib_weather/grib_weather.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://rasbats.github.io/ocpn-manuals"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="opencpn-master-plugins" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">OpenCPN Plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Included_plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="grib_weather.html">grib_weather</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">chart_downloader_tab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AIS / Radar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../ais_radar_display/0.1/ais_radar_display.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../radar/0.1/Home.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../rtlsdr/0.1/rtlsdr.html">RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../oesenc/0.1/oesenc.html">oeSENC</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../fugawi/0.1/fugawi.html">Fugawi (deprecated)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../vfkaps/0.1/vfkaps.html">VfKaps - VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../rotationctrl/0.1/rotationctrl.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../chartscale/0.1/chartscale.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../objsearch/0.1/objsearch.html">objsearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../projections/0.1/projections.html">projections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Logs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../dash-t/0.1/dash-t.html">dash-t</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../logbook/0.1/logbook.html">logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../find-it/0.1/find-it.html">find-it</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../vdr/0.1/vdr.html">vdr</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../nmea_converter/0.1/nmea_converter.html">NMEA Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../squiddio/squiddio.html">Squiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../googleearth/0.1/googleearth.html">googleearth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../route_great_circle/0.1/route_great_circle.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../dead_reckoning/0.1/dead_reckoning.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../otcurrent/0.1/otcurrent.html">otidalcurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ge2kap/ge2kap.html">GE2KAP Companion Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">WMM (Included in OpenCPN)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../odraw/0.1/odraw.html">odraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../sar/0.1/sar.html">SAR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sailing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tactics/0.1/tactics.html">tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../sweep_plot/0.1/sweep_plot.html">Sweep Plot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../polar/0.1/polar.html">polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../windvane/0.1/windvane.html">windvane</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Weather</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../climatology/0.1/climatology.html">climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../weather_routing/0.1/weather_routing.html">Weather Routing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Utility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../statusbar/0.7.6/statusbar.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../calculator/0.1/calculator.html">calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../launcher/0.1/launcher.html">launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../debugger/0.1/debugger.html">debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../pypilot/0.1/pypilot.html">pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../shipdriver/0.1/shipdriver.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../twocan/twocan.html">twocan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../odometer/0.1/odometer.html">odometer</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beta Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/engine-dash/engine-dash.html">Engine Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/race-start/race-start.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/trackpoint/trackpoint.html">Trackpoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/tidefinder/tidefinder.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/javascript/javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/deviation/deviation.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/survey/survey.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autopilot-rm/autopilot-rm.html">Autopilot_rm for Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autotrackrm-ev/autotrackraymarine.html">AutoTrackRaymarine for Evolution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autopilot_route/autopilot_route.html">Autopilot_Route for OpenCPN</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/admiralty/admiralty.html">Admiralty Tides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/ncdf/ncdf.html">NetCDF tidal currents</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/otidalroute/otidalroute.html">otidalroute</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/sailawaynmea/sailawaynmea.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/uktides/uktides.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../otidalplan/0.1/otidalplan.html">otidalplan - using HARMONICS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Plugins</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../manuals/0.1/index.html">OpenCPN Manuals</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../manuals/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">OpenCPN Plugins</a></li>
+    <li>Plugins</li>
+    <li>Included_plugins</li>
+    <li><a href="grib_weather.html">grib_weather</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/ocpn-manuals/edit/manual/plugins/manual/modules/grib_weather/pages/grib_weather.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_grib_weather"><a class="anchor" href="#_grib_weather"></a>Grib Weather</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>OpenCPN has a grib weather file viewer plugin, aimed at being useful
+while under way.<br>
+<strong>The grib plugin is an Internal Plugin, always distributed with OpenCPN,
+no separate download is required.</strong></p>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/OpenCPN/OpenCPN/tree/master/plugins">Opencpn
+Internal Plugin</a><br>
+Forum:
+<a href="http://www.cruisersforum.com/forums/f134/new-grib-presentation-100414.html">Grib
+Weather Forum</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_is_a_grib_file"><a class="anchor" href="#_what_is_a_grib_file"></a>What is a grib file?</h3>
+<div class="paragraph">
+<p>If you are not familiar with grib weather files, make sure you
+understand the basics, before you start to use them. <strong>It is essential to
+understand the limitations of weather forecasts that are distributed in
+the grib format.</strong><br>
+It is also worth pointing out that gribs are <strong>not</strong> reliable near
+tropical systems.<br>
+Send a blank mail to <a href="mailto:GribWarning@saildocs.com">GribWarning@saildocs.com</a>. Read the mail you get
+back carefully.<br>
+To get started with gribs and to find sources for downloads, check
+<a href="http://weather.mailasail.com/Franks-Weather/Grib-Files-Getting-And-Using">Franks-Weather</a>.<br>
+A very good, up to date book, is “Modern Marine Weather, second edition”
+by David Burch, with a thorough treatment of the subject.<br>
+A few files including lectures on tropical weather and gribs are
+available <a href="http://www.pangolin.co.nz/jetsam-index">here</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_types_of_grib_files"><a class="anchor" href="#_types_of_grib_files"></a>Types of Grib files.</h3>
+<div class="paragraph">
+<p>OpenCPN can read both the original gribfile format, known as Grib1, as
+well as the new Grib2 format, with the .grb2 or .grib2 file-extension.
+To learn more about the various grib formats and models available, see
+this <a href="http://luckgrib.com/blog/2018/08/24/nbm-announce.html">Luckgrib
+(Apple App) page</a>. See this
+<a href="http://luckgrib.com/tutorials/2018/08/24/nbm-oceanic.html">Introduction
+to NBM Oceanic Winds</a> which introduces probability to the results. This
+is a new resource for the weather community to consider.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_get_started"><a class="anchor" href="#_get_started"></a>Get started</h3>
+<div class="paragraph">
+<p>To display grib files as an overlay on your normal charts you have to
+first activate the grib icon</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib.png" alt="grib">
+</div>
+</div>
+<div class="paragraph">
+<p>Go to</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/settings.png" alt="settings">
+</div>
+</div>
+<div class="paragraph">
+<p>find the plugin tab. Click on the Grib plugin, then the “Enable” button. The
+“Preferences” Button brings up a small dialog. The settings in this
+dialog rarely needs changing after the initial setup.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribpreference2.png" alt="33gribpreference2">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_grib_preference"><a class="anchor" href="#_grib_preference"></a>Grib Preference</h3>
+<div class="paragraph">
+<p><strong>Use High Definition Graphics</strong>. The setting only concerns the barbed
+wind arrows.Tick the “Use High Definition Graphics” box, unless you are
+on old hardware. Not ticking the “High Definition Graphics” box can help
+to speed up the grib display on a slow computer.<br>
+<strong>Use Gradual Colors.</strong> This setting applies to all colored overlay maps.
+On many installations the difference in rendering is very small. The
+overlay maps built in color variation plays a part.<br>
+<strong>Copy First Cumulative Missing Record</strong>. This is about rainfall and cloud
+cover records .<br>
+As these records are “cumulative” the first one does not exist in files
+from zyGrib and Saildocs. With this parameter unchecked, there will be
+neither rainfall and nor cloud cover displayed for the first date/time
+of the file. Ticking the box fixes the problem.<br>
+<strong>Copy Missing Wave Records</strong>. This only concerns wave records from zyGrib
+delivers files from two models ; FNMOC (WW3-…) for waves and GFS for all
+other parameters. These two forecast models does not have the same time
+spacing. For some dates/times, the wave data do not exist.This parameter
+allows this missing data to be reconstructed and avoiding the overlay
+(if set) to flicker.<br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_load_file_options"><a class="anchor" href="#_load_file_options"></a>Load File Options</h3>
+<div class="paragraph">
+<p><strong>Load the More Recent File in Directory</strong>. Loads the newest file in the
+grib directory on start.<br>
+<strong>Load the Last Open File</strong>. Loads the grib file used last time.<br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_start_options"><a class="anchor" href="#_start_options"></a>Start options</h3>
+<div class="paragraph">
+<p><strong>Start at the first forecast in GRIB file</strong><br>
+<strong>Start at the nearest forecast to current time</strong><br>
+<strong>Authorize interpolation to start at current time.</strong><br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_time_options"><a class="anchor" href="#_time_options"></a>Time Options</h3>
+<div class="paragraph">
+<p><strong>Local Time</strong><br>
+<strong>UTC</strong><br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_grib_display_controls"><a class="anchor" href="#_the_grib_display_controls"></a>The Grib Display Controls</h3>
+<div class="sect3">
+<h4 id="_the_standard_display_control"><a class="anchor" href="#_the_standard_display_control"></a>The Standard Display Control</h4>
+<div class="paragraph">
+<p>To start the Grib plugin press the
+image::grib.png[image,width=32,height=32]button
+in the tool-bar. The “GRIB Display Control” then pops up.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-menu-2.png" alt="grib menu 2">
+</div>
+</div>
+<div class="paragraph">
+<p>Hide Data at Cursor</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/girb-hide-data.png" alt="image" width="550" height="57">
+</div>
+</div>
+<div class="paragraph">
+<p>This is a smart and compact dialog. For a quick start press the “Open
+File” button and navigate to your grib file directory and press the file
+to be displayed.<br>
+<strong>Previous/Next</strong> Go to the previous or the next record in the gribfile.
+This corresponds to the time “interval” chosen when the grib file was
+downloaded.<br>
+<strong>Data valid at</strong> The time of validity for all grib data on screen.<br>
+<strong>Open Grib file</strong> The name of the grib file in use.<br>
+<strong>Now</strong> Displays the record, nearest in time to “now” according to the
+Start option you have selected: (“Start at the nearest forecast to
+current time” or “Authorize interpolation to start at current time”).<br>
+<strong>Select Geopotential Height</strong> If grib data for geopotential height is
+available, selection will be between Std, 500.<br>
+<strong>Zoom to Center</strong> This button will home in on the loaded area that the
+loaded grib file covers.<br>
+<strong>Play</strong> Goes through all records in turn, with the animation speed
+controlled in the “Grib Settings” dialog.<br>
+<strong>Hide Cursor Data</strong> Hides Grib which normally appears in the data
+windows. Data windows are hidden.<br>
+<strong>Progress Slider</strong> Just to the right of the “Play” button is a slider
+that is just another way of going through the grip records.<br>
+<strong>Open File</strong> Activates the operating systems standard file selector
+dialog to select a grib file. The plugin remembers the directory of this
+grib. This is used next time you start OpenCPN and activates the Grib
+plugin. See settings in the “Grib Preferences” dialog above.<br>
+<strong>Settings</strong> is where to control how the different grib data will be
+displayed. See more below.<br>
+<strong>Request</strong> Download grib files via email. More below.<br>
+<strong>GRIB Data at Cursor.</strong> This is where the “smart” part kicks in.<br>
+<strong>Only entries for the data contained in the active grib file will be
+displayed</strong>. For example, if there is no wave data in the current grib
+file, there will be no signs of wave data at all. In the case above,
+where the the wave data is N/A, the grib file includes wave data, but
+not for the area where the cursor is. Compare with the picture below,
+where the grib only contains current data.<br>
+The tick boxes next to each data entry, are used to activate the
+data-display on the screen.<br>
+Exactly what will be shown is controlled in the “Grib Settings” dialog,
+which is reached by pressing the “Settings” button.<br>
+Don&#8217;t activate to many display features at the same time. The display
+quickly becomes very cluttered.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribcurrent.png" alt="33gribcurrent">
+</div>
+</div>
+<div class="paragraph">
+<p>The “GRIB Display Control” loaded with a grib file only containing
+current data.</p>
+</div>
+<div class="paragraph">
+<p><strong>Advanced GRIB Data at Cursor</strong>. The display options for all the data
+shown, can be reached by right.clicking on the little squares where the
+“ticks” are shown. For the meaning of all these options, read on.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/4gribcontrol.png" alt="4gribcontrol">
+</div>
+</div>
+<div class="paragraph">
+<p>Right-clicking the “Air Temp” option square.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_advanced_display_control"><a class="anchor" href="#_the_advanced_display_control"></a>The Advanced Display Control</h4>
+<div class="paragraph">
+<p>The plugin has an advanced mode were altitude data can be displayed.
+This mode requires some more knowledge than plain gribs.<br>
+A good start is to read
+<strong><a href="http://vos.noaa.gov/MWL/dec_08/milibar_chart.shtml">"Mariner&#8217;s Guide to
+the 500&#8212;&#8203;Millibar Chart"</a>.</strong><br>
+If a grib file includes altitude data, the control will automatically
+include more options. See below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/500mb.png" alt="500mb">
+</div>
+</div>
+<div class="paragraph">
+<p>If the dialog looks normal except for an extra selection box under “GRIB
+Data at Cursor”, like this,</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/std-grib.png" alt="std grib">
+</div>
+</div>
+<div class="paragraph">
+<p>then the grib file contains altitude data. Selecting one of the
+altitudes, for example 500, changes the dialog to what you see above.<br>
+The advanced data are displayed against a yellow background.<br>
+<strong>Wind</strong>. These are the wind data valid for the selected altitude level.<br>
+<strong>Grib Data at 500 hPa</strong>. The values at the selected level.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pressure_isobar_numbers_short_long"><a class="anchor" href="#_pressure_isobar_numbers_short_long"></a>Pressure Isobar Numbers - Short &amp; Long</h3>
+<div class="paragraph">
+<p>Right click on Pressure and select what you want.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-pressure-isobar-numbers-short-long.png" alt="grib pressure isobar numbers short long">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weather_tables"><a class="anchor" href="#_weather_tables"></a>Weather Tables</h3>
+<div class="paragraph">
+<p>Once a grib file is loaded in the current session, the “Weather table”
+appears in the right click menu.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33wxtable.png" alt="33wxtable">
+</div>
+</div>
+<div class="paragraph">
+<p>Click the entry, and a Weather Table, valid at the cursor point, pops
+up. All available data in the current grib file, for the whole time
+span, are shown.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-table-arrows.png" alt="grib table arrows">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>NOTE:</strong> To change the Wind &amp; Wave Arrows to Degrees, just hit the <strong>Dir</strong>
+switch.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-table-degrees.png" alt="grib table degrees">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_settings"><a class="anchor" href="#_settings"></a>Settings</h4>
+<div class="paragraph">
+<p>…controls how the grib files are displayed on the screen, and units used
+in the Grib Display control. Things like overlay colors, animation time
+interval and speed and much more. The basic dialog looks like this.</p>
+</div>
+<div class="paragraph">
+<p><strong>Typical DATA TAB</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-wind-gust.png" alt="grib settings data wind gust">
+</div>
+</div>
+<div class="paragraph">
+<p>Note the Fixed or Minimum Spacing (pixels) selection. This is a typical
+setting.</p>
+</div>
+<div class="paragraph">
+<p><strong>Typical GUI TAB</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-waves-gui.png" alt="grib settings data waves gui">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Typical PLAYBACK TAB</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-waves-playback.png" alt="grib settings data waves playback">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_playback"><a class="anchor" href="#_playback"></a>Playback</h4>
+<div class="paragraph">
+<p>The Loop Mode controls what happens when “Play” is pressed in the Grib
+Display Control.</p>
+</div>
+<div class="paragraph">
+<p><strong>Loop Mode</strong>. Sets the “Play” function into a loop mode. Otherwise,
+playback will stop when reaching the end of the file.<br>
+<strong>Loop Start</strong>. Were to start the loop. The option “Current time forecast”
+makes sure that only data now or in the future are shown<br>
+<strong>Updates per Second.</strong> Controls the speed of “play”.<br>
+<strong>Loop Start</strong>. The loop can start either at the start of the grib file or
+from the current time forecast.<br>
+<strong>Interpolate between gribs</strong>. If you select this option, you will be able
+to choose your own time interval, but you have to consider that it can
+decrease data accuracy. To remind you, this info will pop up.<br></p>
+</div>
+<div class="paragraph">
+<p>image::33gribinterpolation.png[image,width=477,height=165]<br>
+<strong>Time Interval</strong>. This is the time interval used for interpolation. The
+entry is only visible if “Interpolate between gribs” is ticked. This is
+connected tho the chosen time interval when requesting a grib file.<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_display"><a class="anchor" href="#_display"></a>Display</h4>
+<div class="paragraph">
+<p>The lower part of the Grib Settings Dialog, under the Display heading is
+really 10 different controls. The controls are activated by the choosing
+one of the items in the selection menu below.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/4gribdisplaychoices.png" alt="4gribdisplaychoices">
+</div>
+</div>
+<div class="paragraph">
+<p>Many of the entries are repeated, so let&#39;s first have a closer look
+at the the most important one, the Wind. Entries on the same line are
+connected.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-wind.png" alt="grib settings data wind">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Units</strong> refers to the choice of units for the selected record.<br>
+For wind speed the choices are.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribunits.png" alt="33gribunits">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Barbed Arrows</strong> Display the traditional barbed arrows, showing wind
+direction and wind speed.<br>
+<strong>Range</strong> refers to the distance between displayed arrows (not working
+3.3.1117).<br>
+<strong>Default Color/Controlled Colors</strong> Default is dark brown while
+“Controlled” varies from blue for very light winds to red for very
+strong winds.<br></p>
+</div>
+<div class="paragraph">
+<p>image::4gribcontroledcolours.png[image,width=300,height=187]<br>
+<strong>Always visible</strong> This option only exists for “Wind” and “Pressure”. When
+ticked the object is shown regardless of what is ticked in the “Settings
+Control”. The idea is to be able to Show wind and/or pressure at the
+same time as other options. Use with Rainfall, for example, to help
+identifying fronts.<br>
+<strong>Display Isotachs</strong> shows contour lines connecting points with the same
+wind speed.<br>
+<strong>Spacing</strong> controls which wind speed Isotachs will be shown. Use knots
+for units and 10 for spacing and isotach contours will be shown at 10
+kts, 20kts and so on.<br>
+<strong>OverlayMap</strong> Depending on your system capability,if you use “Accelerated
+Graphics (OpenGL)” (see General Options/Display/Advanced), the overlay
+will be visible at all scales. But if you don&#8217;t, the overlay will only
+be visible at small scales. A small yellow pop up at the bottom left of
+the screen will inform you. Zoom out to a scale of 1:13 millions, or
+smaller to see them.<br>
+<strong>Colors</strong> is another selection menu containing pre-set color schemes. The
+idea is to use the scheme with the same name as the control, but this is
+just a hint, nothing more.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33griboverlaycolors.png" alt="33griboverlaycolors">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Numbers</strong> shows the wind speed in small square boxes. <strong>Minimum Spacing</strong>
+refers to the spacing between these boxes.<br>
+<strong>Particle Map</strong> is a kind of animation of the wind field. It is created
+by letting “particles”, or dots, move in the wind direction and leave a
+trail. The trail is colored after the wind strength, and each particle
+has a limited “life span”.<br>
+The <strong>Density</strong> slider creates particle trails that are shorter but closer
+together with increased value, which is the same as further to the
+right. The particle Map below clearly shows a convergence zone with
+stronger winds (red). This is probably a cold front.<br>
+<strong>Performance Warning</strong>: Note that high density Particle Maps on Low
+Powered Machines and Large Files may slow your machine to a crawl. First
+test on small files.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/particlemap.png" alt="particlemap">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Overlay Transparency</strong> works as expected.</p>
+</div>
+<div class="paragraph">
+<p>All the controls for Wind Gust, Rainfall and Cloud Cover, have similar
+entries; only the units differ.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-wind-gust.png" alt="grib settings data wind gust">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+<div class="paragraph">
+<p>The pressure display has no overlays, only the options of isobars and
+numbers. Overlay Transparency is redundant.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-pressure.png" alt="grib settings data pressure">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+<div class="paragraph">
+<p>Waves and Current have a more or less similar display. A Particle Map is
+available for currents. See the descripion above for wind Particle Maps.
+Once again different units.<br>
+There is a choice between three different display arrows shown in two
+sizes.<br>
+If wave height, direction and wave period is present in the grib file it
+will be displayed in the Display Control like this:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/4gribcurrent_0.png" alt="4gribcurrent 0">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-waves-data.png" alt="grib settings data waves data">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+<div class="paragraph">
+<p>Air Temperature and Sea Temperature looks the same.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-air-temperature.png" alt="grib settings data air temperature">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+<div class="paragraph">
+<p>Convective Available Potential Energy (CAPE) has these settings</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-data-cape.png" alt="image" width="550" height="248">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-bottom-slider.png" alt="grib settings bottom slider">
+</div>
+</div>
+<div class="paragraph">
+<p>Altitude and Relative Humidity have a simple one choice entry.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_grib_file_request_button"><a class="anchor" href="#_the_grib_file_request_button"></a>The Grib-file Request Button</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Grib files can be requested directly from the plugin. The request is
+in the form of an email to SailDocs or ZyGrib. The requested grib file
+is also delivered via email as an attachment.</p>
+</li>
+<li>
+<p>The area for which data is requested defaults to the area visible on
+the screen, but the request area can be selected by other means as well.
+See more below.</p>
+</li>
+<li>
+<p>It&#8217;s possible to request gribs from 4 different Grib prediction models
+when using Saildocs GFS, COAMPS, RTOFS and indirectly WW3. When you
+request “Waves” in GFS, Saildocs merge wavedata from WW3 into the
+delivered grib.</p>
+</li>
+<li>
+<p>The ZyGrib option can only deliver GFS gribs, which is the “standard”
+model for gribs.</p>
+</li>
+<li>
+<p>RTOFS gribs only contains current and water temperature data.</p>
+</li>
+<li>
+<p>COAMPS delivers wind and pressure with a higher resolution than GFS</p>
+</li>
+<li>
+<p>The minimum times between grib records are 3h for GFS and 6h for
+COAMPS &amp; RTOFS.</p>
+</li>
+<li>
+<p>GFS can be requested for 8 days ahead. An extended GFS request up to
+16 days ahead is possible. This warning will pop up.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gfs16.png" alt="33gfs16">
+</div>
+</div>
+<div class="paragraph">
+<p>The same value for COAMPS is 3 days and RTOFS 6 days.<br></p>
+</div>
+<div class="paragraph">
+<p>There are two layouts of this dialog, depending on whether it is a
+request to SaiDocs or to ZyGrib. Some alternatives are only available
+from SailDocs, and some are only available from zyGrib. Alternatives not
+available are grayed out.</p>
+</div>
+<div class="sect4">
+<h5 id="_saildocs_request_form"><a class="anchor" href="#_saildocs_request_form"></a>SailDocs Request Form</h5>
+<div class="imageblock">
+<div class="content">
+<img src="_images/grib-settings-message-saildocs.png" alt="grib settings message saildocs">
+</div>
+</div>
+<div class="paragraph">
+<p>Compose the request by picking parameters and data. Not all data are
+available for all choices of parameters.<br>
+For example, in the picture above “Wind Gusts” and “Current” are grayed
+out, as the are not available with GFS from SailDocs.<br>
+When selecting <strong>“Moving Grib”</strong> the dialog expands and makes it possible
+to choose a speed and course. The selected grib forecast area will move,
+using these values, for each grib interval. The idea behind this is to
+minimize the download while still covering a longer passage.<br>
+Moving grib files are incompatible with interpolation, so if a “moving
+file” is detected a warning is displayed. Interpolation, if set is
+deactivated, but only for moving file, the settings as such, are not
+modified.<br>
+<strong>Resolution</strong> The choices are 0.5, 1.0 or 2.0. A recent upgrade to gribs
+makes it possible to download even 0.25&deg; resolution. This is not yet
+an alternative in the plugin and requires editing the email manually
+before sending. In the picture above …|0.5,0.5|… should instead look
+like …|0.25,0.25|…<br>
+The default geographical coverage of the requested grib file is the area
+you can see on the screen. A manual Selection Mode is also available.<br>
+When the <strong>Area Selection</strong> → Manual Selection box is ticked the dialog
+expands<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/4gribareaselection.png" alt="4gribareaselection">
+</div>
+</div>
+<div class="paragraph">
+<p>Choose the limiting Latitude and Longitude for the grib-file manually or
+press “Start graphic Sel.” button.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/4gribgraph-selection.png" alt="4gribgraph selection">
+</div>
+</div>
+<div class="paragraph">
+<p>Press the left mouse-button and draw a rectangle around the required
+area.</p>
+</div>
+<div class="paragraph">
+<p>When selecting <strong>“Pressure Altitude”</strong> and the GFS forecast model, the
+dialog expands and makes it possible to choose forecasts for different
+altitude levels. The SailDocs dialog only supports the 500 mb altitude,
+while zyGrib suports all options.<br>
+When you are ready press <strong><em>“Send”</em></strong>.<br>
+This message will show in the “Mail” window instead of the “send”
+request:<br></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">   Your request is ready. An email is prepared in your email environment.
+   You have just to verify and send it...
+   Save or Cancel to finish...or Continue...</code></pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> +
+As stated, a mail is composed for you and ready to send with your normal
+mailing program. +
+This is the standard way of getting a new grib in Windows and Linux.
+(Mac ??) +</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To get a grib, just press <strong><em>“Send”</em></strong>, and wait for a return mail.<br>
+<br></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_zygrib_request_form"><a class="anchor" href="#_zygrib_request_form"></a>zyGrib Request Form</h5>
+<div class="literalblock">
+<div class="content">
+<pre> +
+Note that the Login is longer the first page of the website. The URL for
+the login is http://www.zygrib.org/index.php?page=gribauto This is where
+you login to recieve the special code that allows download for two
+months. +
+image::grib-settings-message-zygrib.png[image,width=550,height=692] +</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_of_default_email_server"><a class="anchor" href="#_configuration_of_default_email_server"></a>Configuration of Default Email Server</h4>
+<div class="paragraph">
+<p>If after hitting “Send”, the “Mail” window shows this message, instead
+of the “send” request:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code"> Request can't be sent. Please verify your email system parameters.
+ You should also have a look at your log file.
+ Save or Cancel to finish...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Configuration of the user&#8217;s default Mail Server for the particular
+Operating System is required.</p>
+</div>
+<div class="paragraph">
+<p><strong>There is an advanced alternative</strong> for Mac OSX, Linux (and BSD). Install
+and configure a mail server. Instructions are on the
+<a href="grib_weather/mail_servers.html">Grib Weather Mail Servers Page</a>.
+Following these instructions to enable the mail server will enable
+automatic transmission of a grib request to SailDocs.</p>
+</div>
+<div class="paragraph">
+<p>After installing and configuring a mail server, there is one more step.
+Open “opencpn.conf” and add the line below. As always, do not run
+OpenCPN when editing opencpn.conf.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">   [PlugIns/GRIB]\\
+   SendMailMethod=1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Setting “SendMailMethod” to “0” restores the default.<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_zygrib_server_registration"><a class="anchor" href="#_zygrib_server_registration"></a>ZyGrib Server Registration</h4>
+<div class="paragraph">
+<p>When ZyGrib is selected as the download server, there are User and Code
+fields that can be completed. This requires subscription or registration
+to the ZyGrib Forum.</p>
+</div>
+<div class="paragraph">
+<p>ZyGrib allows registration to the zyGrib forum and permits use of the
+user/password to obtain a two month code for registered zyGrib
+downloads. Limitations: Maximum 16 emails per user and per 24 hours.
+Maximum size of 4 MB per grib file.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.zygrib.org/index.php?page=gribauto&amp;mode=form">Request by
+Internet</a></p>
+</li>
+<li>
+<p><a href="http://zygrib.org/index.php?page=gribauto&amp;mode=mail">Gribs by Email</a></p>
+</li>
+<li>
+<p><a href="http://www.zygrib.org/index.php?page=gribauto">Code Generator</a></p>
+</li>
+<li>
+<p><a href="http://zygrib.org/forum/index.php?sid=961889a5354269828e9d83eb33007c99">Forum</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_load_two_grib_files_concurrently_wind_current"><a class="anchor" href="#_load_two_grib_files_concurrently_wind_current"></a>Load two Grib Files Concurrently (Wind + Current)</h4>
+<div class="paragraph">
+<p>Combine separate Saildocs GFS Wind + RTOFS Current grib files. (Note:
+Only applies to OpenCPN v4.2.x and forward)<br>
+Using Windows, Click on the “Open a File” to browse grib file.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Highlight two grib files (Ctrl and pick the two files with a mouse
+left click.)</p>
+</li>
+<li>
+<p>The pick Open and the two grib files will be opened.</p>
+</li>
+<li>
+<p>Both grib files will be used by Weather_routing.</p>
+</li>
+<li>
+<p>In grib_pi settings I always use the “Current” “Proportional Arrow”</p>
+</li>
+<li>
+<p>Refer to <a href="../weather/weather_routing.html">Weather_Routing_pi: Two
+Grib Files (Wind + Current)</a></p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/saildocscurrent.jpg" alt="saildocscurrent">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_more_to_know"><a class="anchor" href="#_more_to_know"></a>More to know</h4>
+<div class="paragraph">
+<p>There are many aspects to the use of grib files which lead to the use of
+other companion programs or plugins.<br></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.zygrib.org/index.php?page=abstract_en">ZyGrib</a> is a free and
+open-source software (FOSS) dedicated grib viewer. Grib files can be
+downloaded by ZyGrib and then opened in OpenCPN.</p>
+</li>
+<li>
+<p><a href="https://opengribs.org/en/gribs">Opengrib</a> Other sources of gribs, also
+a grib server.http://openskiron.org/en/[Download Mediterranean Grib
+Files]</p>
+</li>
+<li>
+<p><a href="../../toolbar_buttons/route_mark_manager/weather_routing.html">Weather-Routing</a>
+tools use Grib_pi and Grib data to create optimized routing based on
+boat performance files.</p>
+</li>
+<li>
+<p><a href="../weather/weather_routing.html">Weather Routing Plugin</a> OpenCPN
+has an excellent weather_routing plugin which works in concert with
+grib_pi and climatology_pi concurrently, so that grib files are extended
+by Climatology&#8217;s monthly averages for planning long voyages.</p>
+</li>
+<li>
+<p><a href="http://wiki.virtual-loup-de-mer.org/index.php/QtVlm/en">QtVlm</a>, is
+another FOSS weather routing program, combines a grib file with boat
+polar data, and produces an optimized route.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>These are very good tools to use in routing decisions, but they all have
+the same limitations as all grib-data.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_grib_file_notes_warnings"><a class="anchor" href="#_grib_file_notes_warnings"></a>Grib File Notes &amp; WARNINGS</h4>
+<div class="paragraph">
+<p>(These notes are from the SailDocs Grib Server)</p>
+</div>
+<div class="paragraph">
+<p>This grib file is extracted from a computer forecast model. While such
+computer data can provide useful guidance for general wind flow, there
+are limitations which must be understood.</p>
+</div>
+<div class="paragraph">
+<p>What you are receiving is a weather prediction generated by a computer
+run by NOAA/NCEP (GFS, WW3 models) or the US Navy (comaps, nogaps) and
+downloaded and processed by Saildocs (a service of Sailmail).</p>
+</div>
+<div class="paragraph">
+<p>The network is complex, and any computer network is subject to hardware
+and software failures or human error which can effect accuracy or
+availability of data.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In particular, if our servers were not able to download a current data
+file then the grib-file may be based on old data. The file information
+is shown above and also contained in the file itself. Also remember that
+grib data is not reviewed by forecasters before being made available.</p>
+</li>
+<li>
+<p>You are getting a small part of the raw model data that the
+forecasters themselves use when writing a forecast, and it is your
+responsibility to make sure that the data is consistent with your local
+conditions and with the professionally-generated forecasts (e.g. text
+bulletins and weather-fax charts).</p>
+</li>
+<li>
+<p>Grib data also has limitations along shore, where local effects often
+dominate and may not be adequately modeled.</p>
+</li>
+<li>
+<p>In addition these models cannot provide adequate prediction for</p>
+<div class="ulist">
+<ul>
+<li>
+<p>tropical systems,</p>
+</li>
+<li>
+<p>frontal activity or convergence zones.</p>
+</li>
+<li>
+<p>For example, while global models can provide useful data on the likely
+track of hurricanes, they grossly underestimate the strength of
+hurricanes because of their small size compared to the model grid.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>For hurricane/cyclone forecasts, carefully monitor the appropriate
+warning messages and do not rely on grib data from any source.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Grib data can provide useful guidance not available elsewhere.
+Understand the limitations and use the data carefully. Grib data should
+be considered supplemental to other forecasts, and not be relied upon in
+lieu of professionally-generated charts or forecasts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

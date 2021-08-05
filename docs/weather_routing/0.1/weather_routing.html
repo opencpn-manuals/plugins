@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://rasbats.github.io/ocpn-manuals/weather_routing/0.1/weather_routing.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://rasbats.github.io/ocpn-manuals"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="weather_routing" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">weather_routing</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../manuals/0.1/index.html">OpenCPN Manuals</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../manuals/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-master-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-master-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Users/Mike/Documents/GitHub/ocpn-manuals/sources/weather_routing_pi/manual/weather_routing/modules/ROOT/pages/weather_routing.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_weather_routing_pi"><a class="anchor" href="#_weather_routing_pi"></a>Weather Routing Pi</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-icon.jpeg" alt="wr-icon">
+</div>
+</div>
+<div class="paragraph">
+<p>Author: Sean D&#8217;Epagnier<br>
+Maintainers: Rick Gleason, Jon Gough and the Plugin Team<br>
+PI Manager Workflow: Testplugin</p>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/seandepagnier/weather_routing_pi" class="bare">https://github.com/seandepagnier/weather_routing_pi</a><br></p>
+</li>
+<li>
+<p>Maintainer Source: <a href="https://github.com/rgleason/weather_routing_pi" class="bare">https://github.com/rgleason/weather_routing_pi</a><br></p>
+</li>
+<li>
+<p>Downloads: <a href="https://opencpn.org/OpenCPN/plugins/weatherroute.html" class="bare">https://opencpn.org/OpenCPN/plugins/weatherroute.html</a><br></p>
+</li>
+<li>
+<p>Forum: <a href="http://www.cruisersforum.com/forums/f134/weather-routing-100060.html" class="bare">http://www.cruisersforum.com/forums/f134/weather-routing-100060.html</a><br></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_purpose_of_weather_routing_wr"><a class="anchor" href="#_purpose_of_weather_routing_wr"></a>Purpose of Weather Routing (WR)</h3>
+<div class="paragraph">
+<p><a href="https://routing.luckgrib.com/intro/index.html">Luckygrib</a> has superb introductory documentation for WeatherRouting. This started out as an excellent grib viewer/download for ipad and imac only. This documentation is worth reviewing first for general principals.</p>
+</div>
+<div class="sect3">
+<h4 id="_create_optimized_weather_routes_based_on"><a class="anchor" href="#_create_optimized_weather_routes_based_on"></a>Create optimized Weather Routes based on:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../included_plugins/grib_weather.html">Grib_pi plugin</a> using
+downloaded predictive grib files (grb, grb2) with wind, wave &amp; current data</p>
+</li>
+<li>
+<p><a href="climatology.html">Climatology_pi plugin</a> using built in NOAA 30 year data, averaged by month with wind, wave and current data</p>
+</li>
+<li>
+<p><a href="../../charts/chart_sources.html#high_resolution_background_map">GSHHS
+High Resolution Background</a> It is easiest and best to install GSHHS using the
+<a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_downloader_tab">Options
+&gt; Chart &gt; Chartdownloader</a>. Required to improve routing with “Detect Land” checked.</p>
+</li>
+<li>
+<p>Your Boat&#8217;s Performance Data - Starting sources VPP Calculated Polars or Measurement in various conditions (see below)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_boat_performance_data_polar_data"><a class="anchor" href="#_boat_performance_data_polar_data"></a>Boat Performance Data - Polar Data</h4>
+<div class="paragraph">
+<p>The plugin also requires Boat performance data (polar data). There are many Polar Data files built in and included as a part of the plugin. Also Polar Data can be developed from:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Boat Instrument data created while sailing in non-current conditions.
+See</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../sailing/polar.html">Polar_pi</a></p>
+</li>
+<li>
+<p><a href="../logs/vdr.html">VDR_pi</a></p>
+</li>
+<li>
+<p><a href="../../../supplementary_software/nmea_instruments.html#nmea_server_for_tests">VDRplayer Manual</a>javascript:%20indexmenu_18973814515a5cc87ac6b23.o(80);</p>
+</li>
+<li>
+<p><a href="../../../supplementary_software/polauto.html">Polauto (Windows)</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>VPP Velocity Prediction Programs using physical measurements of the boat.</p>
+</li>
+<li>
+<p>Additionally there are many Polar Data files available in the
+Weather_routing Plugin.</p>
+</li>
+<li>
+<p>You may find a starter polar file for your boat (EG: C:\Program Files(x86)\OpenCPN 4.8.0\plugins\weather_routing_pi\data\polars)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note: Boat performance data should be in a format compatible with
+weather_routing_pi. The plugin will convert the file to a format it can use (fixing certain minor variations and irregularities) or declare it unusable.</p>
+</div>
+<div class="paragraph">
+<p>Note: Grib data is predictive data, and as such it will be subject to change. Generally data past 3-4 days it is unreliable, and the longest grib available is 16 days (with a larger time interval between data points). For longer voyages, Climatology_pi data can be used as an alternative data source to extend the routing calculations.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_boat_performance_data_outside_sources"><a class="anchor" href="#_boat_performance_data_outside_sources"></a>Boat Performance Data - Outside Sources</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Weather_Routing_pi has a full set of polar files, but there are other
+sources.</p>
+</li>
+<li>
+<p><a href="https://www.seapilot.com/features/download-polar-files/">Seapilot Polar
+Files</a></p>
+</li>
+<li>
+<p><a href="https://www.cruisersforum.com/forums/f121/polar-files-collection-219560.html">Polar
+File Collection (cloud)</a></p>
+</li>
+<li>
+<p><a href="http://download.meltemus.com/polars/">qtvlm polars</a></p>
+</li>
+<li>
+<p><a href="https://jieter.github.io/orc-data/site/">ORC Polars</a></p>
+</li>
+<li>
+<p><a href="https://l-36.com/polar_polars.php">L_36 Polar_Polars</a></p>
+</li>
+<li>
+<p><a href="https://distantshores.ca/boatblog_files/sailing-polar-performance.php">Distant
+Shores on Polar Performance</a> Good advice, adjust VPP Polars for Cruising</p>
+</li>
+<li>
+<p><a href="weather_routing.html#boat_performance_data_-_polar_data">Boat
+Performance Data</a>. Record in consistent conditions for various
+conditions, see why.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.ockam.com/2013/06/03/what-are-polars/">Ockham:What are Polars?</a></p>
+</li>
+<li>
+<p><a href="http://www.ockam.com/2008/02/19/make-polar/">Ockham: Make your own?</a></p>
+</li>
+<li>
+<p><a href="https://www.yachtingworld.com/features/5-tips-developing-polar-diagrams-optimise-speed-71464">Yachting World: Polars 5 tips</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_is_weather_routing_useful_for"><a class="anchor" href="#_what_is_weather_routing_useful_for"></a>What is Weather Routing useful for?</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Trip or voyage planning.</p>
+</li>
+<li>
+<p>Determining good weather windows for starting the trip.</p>
+</li>
+<li>
+<p>Calculate multiple routes at the same time.</p>
+</li>
+<li>
+<p>Highlight and step through multiple “completed' routes at the same time.</p>
+</li>
+<li>
+<p>Approximation of better routes dependent on goals and constraints set.</p>
+</li>
+<li>
+<p>Adjust the Wind Speed as a percentage, which helps to set realistic goals.</p>
+</li>
+<li>
+<p>Avoidance of predicted high winds (hurricanes &amp; typhoons), areas of light winds, large waves, etc.</p>
+</li>
+<li>
+<p>Show possible sail changes and % crossover.</p>
+</li>
+<li>
+<p>Summary metro chart of the voyage that shows the weather visually.</p>
+</li>
+<li>
+<p>Number of tacks, % upwind/downwind, etc. to determine how difficult the voyage will be.</p>
+</li>
+<li>
+<p>Estimate trip total time, distance, average speed to help determine the stores needed.</p>
+</li>
+<li>
+<p>Useful for crew members planning airline tickets, but only as a rough estimate.</p>
+</li>
+<li>
+<p>Remember that it is only as good as predictive and average data!</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_does_weather_routing_look_like"><a class="anchor" href="#_what_does_weather_routing_look_like"></a>What does Weather Routing look like?</h3>
+<div class="paragraph">
+<p><strong>Weather Routing</strong>: Calculation of the fastest/safest route from a
+starting point to an ending point given the current national weather forecasts, available wind data, current oceanic currents , the performance of your vessel, and comfort criteria (storms, wind, waves, etc.) <a href="http://www.altendorff.co.uk/archives/1151">More about Optimum
+Weather Route</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/weather_route_data_types_1.png" alt="weather route data types 1">
+</div>
+</div>
+<div class="paragraph">
+<p>When the weather route is displayed, <strong>Grib</strong> and <strong>Climatology</strong>
+calculations use different <em>color schemes</em>. as in the route above.</p>
+</div>
+<div class="sect3">
+<h4 id="_wind_data_sources_grib_and_climatology"><a class="anchor" href="#_wind_data_sources_grib_and_climatology"></a>Wind Data Sources - Grib and Climatology</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Isochrones</strong> While calculating a Weather Routing the plugin will
+calculate the location of the boat for a given time interval (eg: 1 hr, 4hr, 6 hr or 12hr ) and display an isochrone contour line which
+represents how far the boat will sail in a given direction, based on the weather and boat conditions, for each successive time interval.
+Isochrones are like contour lines around the starting point. Think of Isochrones as showing an intermediate destination time lines with different distances from the start point.</p>
+</li>
+<li>
+<p><strong>Left Pink-Yellow Isochrones</strong>: Beginning passage uses <strong>Climatology</strong>
+data because the boat is outside the <strong>Grib</strong> area.</p>
+</li>
+<li>
+<p><strong>Middle Blue-Cyan Isochrones</strong>: Computation is based on <strong>Grib</strong> data.</p>
+</li>
+<li>
+<p><strong>Right Pink-Yellow Isochrones</strong>: End of passage, <strong>Grib</strong> data not
+available so again <strong>Climatology</strong> data is used.</p>
+</li>
+<li>
+<p>If the transition from grib to climatology is not uniform, then the climatology data is not as reliable in that situation.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/irma-cuba-2-puerto-rico.jpeg" alt="irma cuba 2 puerto rico">
+</div>
+</div>
+<div class="paragraph">
+<p>Cuba to Puerto Rico,title="Irma Cuba to Puerto Rico"]]</p>
+</div>
+<div class="paragraph">
+<p>Example: Routing from Cuba to Puerto Rico through Hurricane Irma.(Don&#8217;t ever do this!) Showing Grib_pi “Weather Data” (Right Click on Chart) and Weather_routing View &gt; Report &amp; View &gt; Plot.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_terminology_and_route_icons"><a class="anchor" href="#_terminology_and_route_icons"></a>Terminology and Route Icons</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Route or Optimal Route:</strong> Thick magenta line from the start “triangle” to the finish “X”.</p>
+</li>
+<li>
+<p><strong>Cursor Route</strong>: Thin yellow line that follows the cursor around. This is the optimal route to the cursor.</p>
+</li>
+<li>
+<p><strong>Triangle</strong>: Start point defined by the “Weather Routing Position”
+selected in the “Configuration”.</p>
+</li>
+<li>
+<p><strong>X</strong>: End point defined by the “Weather Routing Position” selected in the “Configuration”.</p>
+</li>
+<li>
+<p><strong>Square</strong>: Small squares along the route, are <strong>sail/polar file</strong> changes [Not shown].</p>
+</li>
+<li>
+<p><strong>Circle</strong> on the route is the calculated <strong>Boat location</strong> for that time frame.</p>
+</li>
+<li>
+<p><strong>Configuration</strong> and <strong>Computation</strong> of a routing is at the center of the plugin.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="weather_routing/settings.html">Configuration Defaults</a> Options and Constraints you may need for reference.</p>
+</li>
+<li>
+<p><a href="weather_routing/information.html">Configuration Terminology</a>
+Definitions available from within the Plugin, <strong>Help &gt; Information</strong> Menu. Reference <a href="../../terminology.html">Common Terms</a> used in this Manual.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Also look at the next screenshot below for examples.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_techniques_and_tools"><a class="anchor" href="#_techniques_and_tools"></a>Techniques and Tools</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong><a href="weather_routing/information.html">Configuration Terminology</a></strong>
+Definitions available from within the Plugin, <strong>Help &gt; Information</strong> Menu. Review this carefully while stepping through the plugin menus, looking particularly at <strong>Edit Boat.xml</strong> and <strong>Edit Polar File (.csv, .txt, .pol)</strong>
+Understand the menu system here and how it works. Boat.xml simply
+contains a list of boat polar files to use in the routing. The polar files can be edited, saved and saved as.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Weather Routing is a deep plugin which can use three other plugins
+concurrently, so stick to basics when starting out.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Grib Step Through</strong> Step through the Grib file changing time, frame by frame, hour by hour, to understand the Routing better.</p>
+</li>
+<li>
+<p><strong>Data at Cursor</strong>: Run your cursor along the route with the <strong>Grib_pi</strong>
+Menu and “Wind speed at Cursor” on. It is very useful for diagnostics along a problematic route.</p>
+</li>
+<li>
+<p><strong>Grib Weather Table</strong>: When a grib shows on the screen, right click and pick “Weather Table” (see screenshot below)</p>
+</li>
+<li>
+<p><strong>WeatherRouting additional information</strong> After computation of a
+routing, highlight the Configuration, pick <em>View</em> in the menu at the top then select <strong>Settings, Statistics, Report, Plot or Cursor</strong> for more information. (See screenshot below for examples)</p>
+</li>
+<li>
+<p><strong>WeatherRouting settings</strong> Pick View &gt; Settings.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Use the <strong>Grib Plugin</strong> and recently downloaded grib files for
+completing grib predictive routing (1-8 days).</p>
+</li>
+<li>
+<p>Use the <strong>Climatology Plugin</strong> to find and plan long term cruising
+routes, (most useful in prevailing winds areas).</p>
+</li>
+<li>
+<p>Use both Grib and Climatology data, to allow the routing to be extended past the time/date range of the grib file, which uses Climatology data to extend the Routing based on NOAA “average” or “most likely” data.</p>
+</li>
+<li>
+<p>Use both Grib and Climatology to use “tidal current data” if the grib does not contain it, or to use climatology to avoid areas ofcyclones.</p>
+</li>
+<li>
+<p>Your first goal should be to read this manual several times while
+trying to understand the menus and structure. Then to make a routing yourself. The “Configuration” and “Computation” of an optimal weather routing is at the heart of this plugin.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cleanup_of_prior_installation"><a class="anchor" href="#_cleanup_of_prior_installation"></a>Cleanup of Prior Installation</h3>
+<div class="paragraph">
+<p>Generally we recommend that the plugin and configuration artifacts
+should be completely removed before installation of the new version, in order to allow the intended initialization files to be copied from the System files ProgramFiles (x86) folders to User Files ProgramData. The plugin expects a clean environment before initializing and copying the appropriate files into the user directories. You must “Clean” your opencpn files of all weather_routing files and folders or the initialization that is required will not occur. For windows users, from:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>C:\Program Files (x86)\OpenCPN 4.8.0 —&gt; Run Uninstall
+Weather_routing.exe as administrator.</p>
+</li>
+<li>
+<p>C:\ProgramData\opencpn —&gt; Open opencpn.ini in Notepad++ and remove all lines for weather_routing and weatherrouting, including the order of plugins “weatherrouting” reference.</p>
+</li>
+<li>
+<p>C:\ProgramData\opencpn\plugins —&gt; Remove the Weather_routing
+directory.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_download_and_installation"><a class="anchor" href="#_download_and_installation"></a>Download and Installation</h3>
+<div class="paragraph">
+<p><a href="https://opencpn.org/OpenCPN/plugins/weatherroute.html">Download Page:
+Linux, Windows, Mac</a></p>
+</div>
+<div class="paragraph">
+<p>Make sure you choose the file that is compatible with your computer system.<br>
+In this manual we presume it&#8217;s Windows, so we choose the <strong>Windows
+setup-package</strong>.</p>
+</div>
+<div class="paragraph">
+<p>We assume you know where to find the files you download from the
+Internet (if you don&#8217;t: quit now and read the manual of your computer
+before doing anything else with it</p>
+</div>
+<div class="paragraph">
+<p>Double-click the downloaded file (with “weather_routing_pi” in the name and ”.exe“ as extension) and follow the set-up instructions. If you are doing parallel installs of OpenCPN make sure the plugin goes into the proper version of OpenCPN!</p>
+</div>
+<div class="paragraph">
+<p>That&#8217;s it. But before you can actually <strong>use</strong> Weather_Routing_pi, you first have to <a href="../install_and_enable.html">Enable</a> the plug-in in OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p><a href="../included_plugins/grib_weather.html">Grib_pi plugin</a> is included with OpenCPN, but you will need to install
+<a href="climatology.html">Climatology_pi plugin</a> if you wish to use that type of data.</p>
+</div>
+<div class="sect3">
+<h4 id="_enable_opengl"><a class="anchor" href="#_enable_opengl"></a>Enable OpenGL</h4>
+<div class="paragraph">
+<p>You need to activate OpenGL in order to have the route display on top of the grib layer!</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_source_code"><a class="anchor" href="#_source_code"></a>Source Code</h4>
+<div class="paragraph">
+<p><a href="https://github.com/seandepagnier/weather_routing_pi" class="bare">https://github.com/seandepagnier/weather_routing_pi</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_cruisers_forum_thread"><a class="anchor" href="#_cruisers_forum_thread"></a>Cruisers Forum Thread</h4>
+<div class="paragraph">
+<p><a href="http://www.cruisersforum.com/forums/f134/weather-routing-100060.html">Weather Routing</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_standard_actions"><a class="anchor" href="#_standard_actions"></a>Standard Actions</h3>
+<div class="sect3">
+<h4 id="_goal"><a class="anchor" href="#_goal"></a>Goal</h4>
+<div class="paragraph">
+<p>Weather_routing is remarkably flexible, but with that comes complexity. New users must not dive in changing settings without understanding what they are doing or how it affects “<strong>Computation</strong>”.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Generally the “<strong>Reset</strong>” settings are the most reliable settings
+available and after hitting “<strong>Reset</strong>” most of the settings can be left alone.</p>
+</li>
+<li>
+<p>However there are definitely some settings the user must set manually in order to get any results! The goal here is to make your first routing compute properly and
+“<strong>Complete</strong>”.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Please follow this tutorial carefully and you will succeed the first time. Once you get familiar with the interface and have had successes, learn all the features gradually, changing and adjusting one setting at a time.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_1_setup_grib_pi_data"><a class="anchor" href="#_1_setup_grib_pi_data"></a>1.Setup Grib_pi Data</h4>
+<div class="paragraph">
+<p><a href="../included_plugins/grib_weather.html">Grib_pi</a> is installed with OpenCPN. Learn how to use it and download a fresh Grib file with wind, current &amp; waves.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Initially the grib area should be larger than the area between start and finish by at least two time intervals,</p>
+</li>
+<li>
+<p>Should be for more days than expected (refine this later).</p>
+</li>
+<li>
+<p>Set the grib at the <strong>starting time</strong> and then move it <em>one or two time intervals forward</em>, later with more experience you may set the Grib data and time at what you want.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ccc-castine-grib.png" alt="ccc castine grib">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_setup_climatology_pi_data"><a class="anchor" href="#_2_setup_climatology_pi_data"></a>2. Setup Climatology_pi Data</h4>
+<div class="paragraph">
+<p><a href="climatology.html">Climatology_pi</a> should be installed as directed.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Enable Climatology_pi. Learn how to use it.</p>
+</li>
+<li>
+<p>When Climatology_pi is <strong>Enabled</strong> under <em>Options &gt; Plugins</em> , the
+“<strong>Weather_routing Configuration</strong>” - <em>Data Source</em> - <strong>Climatology
+Dropdown Menu</strong> (<em>Disable, Cumulative Map, Cumulative Calms, Most Likely,Average</em>) will become accessible for selection.</p>
+</li>
+<li>
+<p>The <strong>Weather_Routing Plugin</strong> will access <em>Climatology data</em>
+automatically once these settings are selected.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/climatology-wind-current-cape-lookout.jpeg" alt="climatology wind current cape lookout">
+</div>
+</div>
+<div class="paragraph">
+<p>Climatology NOAA 30 year average Wind and Current data in September near Cape Lookout</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/climatology-wind.jpeg" alt="climatology wind">
+</div>
+</div>
+<div class="paragraph">
+<p>Climatology Configuration of Wind Roses (Size=100 and Spacing=50 is good
+too.)<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_install_gshhs_high_resolution_background"><a class="anchor" href="#_3_install_gshhs_high_resolution_background"></a>3. Install GSHHS High Resolution Background</h4>
+<div class="paragraph">
+<p>Download and install to improve routing with “Detect Land” checked.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../charts/chart_sources.html#high_resolution_background_map">GSHHS High Resolution Background</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you are working with Land Interface a lot, this is not optional! Best to install it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_weather_routing_setup"><a class="anchor" href="#_4_weather_routing_setup"></a>4. Weather Routing Setup</h4>
+<div class="sect4">
+<h5 id="_four_transatlantic_configurations_that_will_compute_using_climatology_wind_data"><a class="anchor" href="#_four_transatlantic_configurations_that_will_compute_using_climatology_wind_data"></a>Four Transatlantic Configurations that will Compute using Climatology Wind Data</h5>
+<div class="paragraph">
+<p>Confirm that the Weather_Routing Plugin has been installed.</p>
+</div>
+<div class="paragraph">
+<p>*Files & Pathnames*</p>
+</div>
+<div class="paragraph">
+<p>It is important that you use this configuration for Windows (Linux use comparable User accessible directories):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Main Path for support files:
+<em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</li>
+<li>
+<p>WeatherRoutingConfiguration.xml:
+<em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</li>
+<li>
+<p>Polar Files (.pol,.txt,.csv):
+<em>C:\ProgramData\opencpn\plugins\weather_routing\polars</em></p>
+</li>
+<li>
+<p>Boat.Xml Files: <em>C:\ProgramData\opencpn\plugins\weather_routing\boat</em></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>(Note the weather_routing installation may not create these files in the correct location, and may put them under <em>C:\Program Files
+(x86)\opencpn\plugins\weather_routing/data</em>. If this is the case, just download the Weather Routing Setup files below and install as shown above.</p>
+</div>
+<div class="paragraph">
+<p>Weather Route setup for MacOS and for inclusion in the Weather Routing wiki.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_run_some_weather_routing_routes"><a class="anchor" href="#_run_some_weather_routing_routes"></a>Run some Weather Routing Routes</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start Climatology_pi, although it will start automatically if called.</p>
+</li>
+<li>
+<p>Start Grib_pi (normally used, but not necessary with the default
+“Configurations” which use Climatology.</p>
+</li>
+<li>
+<p>Set the Grib Date has been already set in the default configurations.</p>
+</li>
+<li>
+<p>Then open Weather_routing_pi.</p>
+</li>
+<li>
+<p>Confirm the “Boat section” path is correct as shown above in the
+Pathname list.</p>
+</li>
+<li>
+<p>Confirm the “Polar” path is correct as shown above in the Pathname list.</p>
+</li>
+<li>
+<p>In the menu you should find 5 configurations for transatlantic routes.</p>
+</li>
+<li>
+<p>Pick a route and then select “Compute from the bottom of the menu.</p>
+</li>
+<li>
+<p>Check that the isobars and route is drawn.</p>
+</li>
+<li>
+<p>Try “Computing” the other routes, noticing how the settings have been changed, and what files are being used.</p>
+</li>
+<li>
+<p>Once you are pretty confident about this, go to the next step, which is to create your own configurations.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_computation_of_4_routes"><a class="anchor" href="#_computation_of_4_routes"></a>Computation of 4 Routes</h5>
+<div class="paragraph">
+<p>There are 4 Weather Routings in “<strong>Weather-Routing-Setup</strong>” that should <strong>Complete</strong> using the wind data from Climatology.<br></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_wr_not_a_substitute_for_sound_judgment_realistic_goals"><a class="anchor" href="#_5_wr_not_a_substitute_for_sound_judgment_realistic_goals"></a>5. WR Not a substitute for sound judgment &amp; realistic goals</h4>
+<div class="paragraph">
+<p><strong>You</strong> must <em>Configure</em> weather_routing to match your <em>sound judgment</em> and <em>realistic goals</em>. You are in control, use your own judgement when you review the results. <strong>This cannot be emphasized enough.</strong> Weather_Routing_pi is just a tool in your hands, you are in control.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_weatherroutingconfiguration_xml_menu"><a class="anchor" href="#_6_weatherroutingconfiguration_xml_menu"></a>6. WeatherRoutingConfiguration.XML Menu</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/weatherroutingconfiguration-positions.jpeg" alt="weatherroutingconfiguration positions">
+</div>
+</div>
+<div class="paragraph">
+<p>If the plugin is downloaded and installed, with default settings
+unchanged (or “Reset All” is used), the plugin should create an
+optimized weather routing with just a few specific additional settings and “computation”.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Complete <a href="weather_routing.html#setup_grib_pi_data">Setup Grib_pi Data</a> and <a href="weather_routing.html#setup_climatology_pi_data">Setup
+Climatology_pi Data</a> as described above.</p>
+</li>
+<li>
+<p>Start by clicking on the Toolbar Weather_routing plugin Icon to open the Weather_routing_Configuration Menu.</p>
+</li>
+<li>
+<p>WR WeatherRoutingConfiguration.xml Menu</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/weatherroutingconfiguration-positions.jpeg" alt="weatherroutingconfiguration positions">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Define two <strong>Weather Route Positions</strong> on the chart within the “grib
+area”. Hover the mouse at a selected location, <em>Right Click</em>, and then pick “<strong>Weather Route Position</strong>” from the popup menu. Make a “<strong>Boston</strong>” and a “<strong>Halifax</strong>” Weather Route Position.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-new-position.jpeg" alt="wr new position">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <em>WR WeatherRoutingConfiguration.xml</em> menu select
+<strong>Configuration</strong><em>New</em>. <em>The Weather Routing Configuration</em> Menu will appear with “Start”=Boston and “End”=Halifax.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-new-configuration.jpeg" alt="wr new configuration">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_7_weather_routing_configuration_menu"><a class="anchor" href="#_7_weather_routing_configuration_menu"></a>7. Weather Routing Configuration Menu</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Scan the setting to check that they are as shown in the image.</p>
+</li>
+<li>
+<p>Check <strong>Start</strong> and <strong>End</strong> selections. If not correct, select these WP Positions from the respective dropdowns.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-wr-configuration.jpeg" alt="wr wr configuration">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Set Start Date &amp; Time</strong>. If you have set start date &amp; time in Grib_pi
+as described above.</p>
+</li>
+<li>
+<p>From the <em>Weather Routing Configuration Menu</em> click <strong>Grib Time</strong> to set the Start Date/Time used by the “Configuration” for the routing. The <strong>Grib Time</strong> used will be the current frame used and visible in Grib_pi. There are other ways to do this, but use this way to start.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_8_wr_configuration_boat_xml_menu_edit"><a class="anchor" href="#_8_wr_configuration_boat_xml_menu_edit"></a>8. WR Configuration &gt; Boat.xml Menu - Edit</h4>
+<div class="paragraph">
+<p>Weather_routing_pi uses <em>[Boat].xml</em> files to store multiple
+<em>[Polar].pol, *.csv or *.txt</em> filenames which are used with the Current ”<em>Configuration</em>”. Also the <em>[Boat].xml</em> file can be <em>“Save as Boat”</em> to another boat filename such as <em>Boat-Test.xml</em> or
+<em>[Your-Boat-Medium-Wind-Heavy-Sea-Clean-Bottom].xml</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-config-boat-xml.jpeg" alt="wr config boat xml">
+</div>
+</div>
+<div class="paragraph">
+<p>Many new users have have trouble “Completing” Weather Route
+Configurations due to <em>Polar:Fail</em> messages, which is often because the single polar they have used only has TWS from 6-20 knots and does not span the entire true wind speed range of the particular grib file being used.</p>
+</div>
+<div class="paragraph">
+<p>To help new users when starting out, we will create a <strong>Boat-test.xml</strong>
+file that references three “polar-xx-xxx-x-xx.pol” files which cover a full TWS (True Wind Speed) range of 0-60 knots. The Weather_routing Configuration will utilize the best polar information from the multiple polar files in <strong>Boat-test.xml</strong> after computing the “Sail/Polar Crossover” calculations between the different polar files being used.</p>
+</div>
+<div class="paragraph">
+<p><a href="boat-test-xml.zip">Three Boat.xml zipped files</a></p>
+</div>
+<div class="paragraph">
+<p>unzip to
+<em>C:\ProgramData\opencpn\plugins\weather_routing\boat</em> which are
+preconfigured files that should work with the Polar and WeatherRoutingConfiguration.XML file downloads. These files are the same
+as
+<strong><a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:toolbar_buttons:plugins:weather:weather_routing#weather_routing_setup">Weather_Routing_Setup</a></strong>
+above.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Boat.XML</p>
+</li>
+<li>
+<p>Boat-test.XML</p>
+</li>
+<li>
+<p>Boat-Test-Power.XML</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Later on, after some successful weather routings, users are encouraged to create separate boat performance <em>[polar].pol</em> files for:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sets of Sails Used (Sail Changes, First &amp; Second Reefs)</p>
+</li>
+<li>
+<p>Sea conditions (Waves - Rough, Chop, Height, Period)</p>
+</li>
+<li>
+<p>Boat load (Race Light, Cruising, Heavy)</p>
+</li>
+<li>
+<p>Boat bottom condition (Smooth, Grass, Barnacles, Loaded)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Example of useful Polars for your boat:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>LW-light wind (0-5 knots) Sail set #1</p>
+</li>
+<li>
+<p>MW-medium wind (5-18 knots) Sail set #2</p>
+</li>
+<li>
+<p>HW-heavy wind (18-24 knots) Sail set #3</p>
+</li>
+<li>
+<p>SW-storm wind (24-32 knots) Sail set #4</p>
+</li>
+<li>
+<p>GW-gail wind (32-60 knots) Hove to, Drogue.</p>
+</li>
+<li>
+<p>LW-lightwind-Power (0-3 knots) Polluting Internal Combustion Engine</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Using the sails normally used for each type of wind, such that the full
+range of True Wind Speed (TWS) is represented (0-60 knots).</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+These files can be inspected and edited with a text editor such as
+Notepad++ or they can more easily be edited using the <em>Polar section</em>
+<strong>Edit</strong> Menu and the two Tabs <strong>Grid</strong> and <strong>Dimensions</strong>. Learn how they are
+formatted (particularly <strong>.pol) as this will assist you in creating
+useful polars for your boat.<br>
+<br>
+*Polar Files for Learning (User Friendly)</strong>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><a href="weather_routing/polars-pol.zip">Polars-Pol.zip</a></p>
+</div>
+<div class="paragraph">
+<p>Please Download, unzip and copy the six <strong>.pol files listed below into your data\polars directory. For Windows use:
+<em>C:\ProgramData\opencpn\plugins\weather_routing\data\polars</em> These files are the same as
+*https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:toolbar_buttons:plugins:weather:weather_routing#weather_routing_setup[Weather_Routing_Setup]</strong>
+above.</p>
+</div>
+<div class="paragraph">
+<p>Three Stepped Range TWS Files used together (use either Sail or Power for TWS-0-6)</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>TWS-0-6-Power.pol (power for light winds)</p>
+</li>
+<li>
+<p>TWS-0-6.pol (sail)</p>
+</li>
+<li>
+<p>TWS-0-20.pol</p>
+</li>
+<li>
+<p>TWS-20-60.pol</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/tws-0-6-power.jpeg" alt="tws 0 6 power">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/tws-6-20.jpeg" alt="tws 6 20">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/tws-20-60.jpeg" alt="tws 20 60">
+</div>
+</div>
+<div class="paragraph">
+<p>Single File with Full Range TWS 0-60 knots</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Test-TWS-0-20+60.pol</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/test-tws-0-20_60.jpeg" alt="test tws 0 20 60">
+</div>
+</div>
+<div class="paragraph">
+<p>[Boat].xml files are normally located here for Windows:
+<em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</div>
+<div class="paragraph">
+<p>In <strong>Boat.xml Menu</strong> <em>Edit</em> please <strong>Add</strong> these files</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>TWS-0-6-Power.pol (use power in light winds)</p>
+</li>
+<li>
+<p>TWS-0-20.pol</p>
+</li>
+<li>
+<p>TWS-20-60.pol</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Use of these three files will cover a wide wind range from 0-60 knots (with 0-6 under power). If you just want to use one file for TWS 0-60 knots use Test-TWS-0-20+60.pol.</p>
+</div>
+<div class="paragraph">
+<p>Once the three files have been added, next pick <strong>Save as Boat</strong> then type
+<strong>Boat-Test</strong> and “Save” to create and save “Boat-Test.xml”</p>
+</div>
+<div class="paragraph">
+<p>Now when <strong>Computing</strong> “new” <strong>Configurations</strong> first check the
+configuration by selecting <strong>Boat-Test.xml</strong> at the Boat section “….” just
+ahead of “Edit” in the “Configuration” Menu. Once that completes
+properly, then create a “Boat.xml” file for your boat with reference to your normal boat polars and use that.</p>
+</div>
+<div class="sect4">
+<h5 id="_plot_tab"><a class="anchor" href="#_plot_tab"></a>Plot Tab</h5>
+<div class="paragraph">
+<p>Shows the highlighted polar file graphically as a familiar polar
+diagram. Note that the dropdown menus at the bottom provide different useful ways of viewing the boat performance data.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-config-boat-polar-test.xml-polar-tab.jpeg" alt="wr config boat polar test.xml polar tab">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_cross_over_chart_tab"><a class="anchor" href="#_cross_over_chart_tab"></a>Cross over Chart Tab</h5>
+<div class="paragraph">
+<p>Shows the Sail/Polar Cross over calculations.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-config-boat-polar-text-xml-cross-over-chart-tab.jpeg" alt="wr config boat polar text xml cross over chart tab">
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_stats_tab"><a class="anchor" href="#_stats_tab"></a>Stats Tab</h5>
+<div class="paragraph">
+<p>Shows target speeds.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-config-boat-polar-test-xml-stats-tab.jpeg" alt="wr config boat polar test xml stats tab">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Complete Setting up “Boat” Performance &amp; Polars</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Weather_routing_pi will use this data to calculate the most favorable route.</p>
+</li>
+<li>
+<p>Later you can find a Boat Polar file that is closer to your boat.</p>
+</li>
+<li>
+<p>Click <strong>Save Boat</strong> to close the menu and save the
+<strong>[Boat]/Polar-Test.xml</strong> file.</p>
+</li>
+<li>
+<p>Then “<strong>Close</strong>” <strong>Weather Routing Configuration</strong> Menu.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_9_compute_configuration_in_weatherroutingconfiguration_xml_menu"><a class="anchor" href="#_9_compute_configuration_in_weatherroutingconfiguration_xml_menu"></a>9. Compute "Configuration" in WeatherRoutingConfiguration.xml Menu</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>In the <em>WR WeatherRoutingConfiguration.xml</em> menu, highlight the
+<em>Configuration</em> you&#8217;ve created and select <strong>Compute</strong>.</p>
+</li>
+<li>
+<p>Now new isochrones will be created and a weather routing from Boston to Halifax will be “<strong>completed</strong>”.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-compute.jpg" alt="wr compute">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_10_messages_in_configuration_window"><a class="anchor" href="#_10_messages_in_configuration_window"></a>10. Messages in Configuration Window</h4>
+<div class="paragraph">
+<p>In the Configuration Menu after “Compute”, a message will show to the right of the Configuration.</p>
+</div>
+<div class="paragraph">
+<p>“Complete” affirms that the computations completed. “Fail” indicates they did not and that some setup parameter may be out of range. The failure messages have been made to be more descriptive to help.</p>
+</div>
+<div class="paragraph">
+<p>If your polar doesn&#8217;t include boat speeds:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Above a windspeed that the grib tries to use, it will fail to route.</p>
+</li>
+<li>
+<p>Below a windspeed that the grib tries to use, it will fail to route.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>There are many reasons a <strong>Computation</strong> cannot complete, or fail. The computation is dependent on:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Wind Data (grib_pi or climatology_pi) - Start &amp; End data/time of the file, interval downloaded.</p>
+</li>
+<li>
+<p>Boat Polar File - Correct format, with a wind range that matches the grib data.</p>
+</li>
+<li>
+<p>Time Interval Issues - Sometimes a 1/2hr or 1hr interval will yield a better route than 3hr or 3hr. Sometimes that is the difference between “Completion” and “Fail”.</p>
+</li>
+<li>
+<p>Max Diverted Route - Normal setting is 100 degrees, which speeds up calculations, but with longer time intervals, you may have to set this on something like 140-160 degrees to complete the routing, particularly when the Finish is near land with Islands and Peninsulas around.</p>
+</li>
+<li>
+<p>Configuration settings which must be made to be compatible with the data to Complete:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Interval Issues - Too long a calculation interval for the distance between start and end.</p>
+</li>
+<li>
+<p>Land Detail - Detect land is checked and the High Resolution GSHHS
+Shoreline is not installed.</p>
+</li>
+<li>
+<p>Land Interface Issues - Routing near land is complex, if there is a failure at the interface with land zoom in and look at the Isobars. Sometimes they are not calculated for all locations due to the complexity of the land (limited by too many iterations). In that case try making a new Weather Routing Position nearby where there are isobars shown.</p>
+</li>
+<li>
+<p>Max Diverted Course - When “Polar:Fail” or “Polar:No Data” occurs
+near the “finish” using large Time Intervals (4hr - 24hr). Zoom in and look at the route, isochrones, finish, and land. If the route is almost completed to “Finish” (with land, islands and peninsulas around) try changing Max Diverted Course from 100 degrees to 150 degrees and run it again. It will probably complete.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Different Time Intervals - Everything Else is the same.</p>
+</div>
+<div class="paragraph">
+<p>Beginners should first try a simple route, with starting point and end point, 5 degree steps, and possibly a 3 hour time interval until they see it is working. The time interval depends on the speed of the boat and distance traveled, grib file downloaded.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>If the Configuration was completing <strong>Computation</strong> earlier and you changed a setting, check that first.</p>
+</li>
+<li>
+<p>If a Configuration fails, another thing to try is <strong>Reset All</strong>, and go through the setup sequence above, again.</p>
+</li>
+<li>
+<p>If “Polar:Failed” try increasing or reducing the <em>Weather Routing</em> <em>Configuration</em><strong>Wind</strong> <strong>Strength %</strong> (50%, 150%) because the Polar
+File may not have the required winds specified. The grib file may have periods of very high winds or very low winds which are not covered by the polar diagram wind range.</p>
+</li>
+<li>
+<p>Then try using different data, either change the grib start date, moving it forward, or try using only Climatology Data, or change the Polar File to something else, or add multiple polar files, just to get the Configuration working.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_11_configuration_edit"><a class="anchor" href="#_11_configuration_edit"></a>11. Configuration - Edit</h4>
+<div class="paragraph">
+<p>Provides setup flexibility for various factors:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start location, date and time. End location.</p>
+</li>
+<li>
+<p>Step duration for isochrones in hours and minutes (12 hours for long
+routes, 1 hour for shorter)</p>
+</li>
+<li>
+<p>For Time Step I generally start larger and once things are working, go smaller, the distance governs what the tme step is.</p>
+</li>
+<li>
+<p>Divide the time expected to sail the course into 10 and use that
+number for the Time Step. Then adjust as needed.</p>
+</li>
+<li>
+<p>Degree Steps (5 degree steps is faster than 1 degree steps). Generally
+leave Courses (relative to true wind) alone, From 0 to 180 by 5 degrees is fine.</p>
+</li>
+<li>
+<p>Boat Performance based on editing boat specifications or based on a polar data file.</p>
+</li>
+<li>
+<p>Set constraints on various factors such as max wind, swell, waves,
+latitude, max diverted course etc…</p>
+</li>
+<li>
+<p>Start Grib_pi and/or Climatology_pi</p>
+</li>
+<li>
+<p>Set Grib_pi to the date and time you want to use.</p>
+</li>
+<li>
+<p>Then go to the Weather_routing Config menu and pick “Grib Time”</p>
+</li>
+<li>
+<p>Set options like detect land, currents, inverted regiions, anchoring.</p>
+</li>
+<li>
+<p>Routes can be Edited (created, selected, renamed, reset and exported.)</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wd-boat-edit.jpeg" alt="wd boat edit">
+</div>
+</div>
+<div class="paragraph">
+<p>Configuration and Edit
+Boat.xml,title="WR Configuration and Edit Boat.xml",width=600]]</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_12_view"><a class="anchor" href="#_12_view"></a>12. View</h4>
+<div class="sect4">
+<h5 id="_settings"><a class="anchor" href="#_settings"></a>Settings</h5>
+<div class="paragraph">
+<p>To eliminate the black lines of all Alternate Routes, in Settings you
+can set the alternate route thickness to zero.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_statistics"><a class="anchor" href="#_statistics"></a>Statistics</h5>
+
+</div>
+<div class="sect4">
+<h5 id="_report"><a class="anchor" href="#_report"></a>Report</h5>
+
+</div>
+<div class="sect4">
+<h5 id="_plot"><a class="anchor" href="#_plot"></a>Plot</h5>
+
+</div>
+<div class="sect4">
+<h5 id="_cursor_position"><a class="anchor" href="#_cursor_position"></a>Cursor Position</h5>
+
+</div>
+</div>
+<div class="sect3">
+<h4 id="_13_use_with_grib_pi"><a class="anchor" href="#_13_use_with_grib_pi"></a>13. Use with Grib_pi</h4>
+<div class="paragraph">
+<p>Boat position (round circle) is when stepping through the grib file (assuming you use a grib file and not climatology of course).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wxrte-grib-time-control.png" alt="wxrte grib time control">
+</div>
+</div>
+<div class="paragraph">
+<p>Moreover, if multiple routes are computed and shown (selected), when stepping through the grib the boat position is shown simultaneously on each route.</p>
+</div>
+<div class="paragraph">
+<p>that: when you step through the grib you will see the boat position at that current grib time (not “the multipier of the two time intervals”).
+This can be right on an isochrone or between two isochrones (if grib interval is smaller than wxrte time interval).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_14_use_with_climatology"><a class="anchor" href="#_14_use_with_climatology"></a>14. Use with Climatology</h4>
+
+</div>
+<div class="sect3">
+<h4 id="_15_use_with_route_manager"><a class="anchor" href="#_15_use_with_route_manager"></a>15. Use with Route Manager</h4>
+<div class="paragraph">
+<p>The <strong>Route Manager</strong> can be used for listing the weather route. <em>Right click</em> a weather route and pick “<em>Properties</em>”. Also a Weather Routing can be Exported to a gpx file or saved to a Route in Route Manager.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_16_other_uses"><a class="anchor" href="#_16_other_uses"></a>16. Other Uses</h4>
+<div class="paragraph">
+<p>In addition to “Standard actions” Weather_Routing_pi will work with
+other <strong>Plugins</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_two_grib_files_wind_current"><a class="anchor" href="#_two_grib_files_wind_current"></a>Two Grib Files (Wind + Current)</h4>
+<div class="paragraph">
+<p>Weather Routing will use two grib files that are loaded by Grib_pi. This
+is useful when you have downloaded a GFS Wind and Pressure Grib, and an
+RTOFS Current Grib of similar time period and resolution. First
+<a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:included_plugins:grib_weather#load_two_grib_files_concurrently_wind_current">Load
+two Grib Files Concurrently (Wind + Current)</a> in Grib_pi. Then in WR
+Configuration check the Currents box.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-route-2grib-grib_current.jpeg" alt="wx route 2grib grib current">
+</div>
+</div>
+<div class="paragraph">
+<p>In this Baltic Sea example there is an underlying current file with black arrows and the area of the grib is shown in light read. The wind<br>
+pressure grib is shown with brown arrows with feathers.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ocpn_draw_pi_boundary_with_guid"><a class="anchor" href="#_ocpn_draw_pi_boundary_with_guid"></a>Ocpn_Draw_pi (Boundary with guid)</h4>
+<div class="paragraph">
+<p>Create Boundaries recognized by Weather_Routing_pi. Useful for guiding routing.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wr-ockam-polar-grib-4day-with-boundary.jpeg" alt="image">
+</div>
+</div>
+<div class="paragraph">
+<p>Red hatched Boundary along the Nova Scotia coast was created in
+Ocpn_Draw and used in weather_routing, to prevent routing in that area.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-rte-boundary-guard-zone-grib-clim.jpeg" alt="wx rte boundary guard zone grib clim">
+</div>
+</div>
+<div class="paragraph">
+<p>Red hatched Boundary created with Ocpn_Draw and used in Weather Routing
+Configuration &gt; Options &gt; Basic Tab &gt; Check “Detect Boundary”</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_watchdog_pi_alarms"><a class="anchor" href="#_watchdog_pi_alarms"></a>Watchdog_pi Alarms</h4>
+<div class="paragraph">
+<p>(anchor, boundary, speed, course, deadman, NMEA etc.)</p>
+</div>
+<div class="paragraph">
+<p>Set various parameters (range in meters, degrees, time in seconds or
+minutes, speed etc.)</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_faq"><a class="anchor" href="#_faq"></a>FAQ</h3>
+<div class="paragraph">
+<p>This section is meant to deal with various questions that might arise
+when using the pi. Example: (Why) Can(‘t) I? Answer:<br></p>
+</div>
+<div class="sect3">
+<h4 id="_why_does_the_computation_of_a_configuration_always_fail_with_the_message_polarfail_it_is_very_frustrating"><a class="anchor" href="#_why_does_the_computation_of_a_configuration_always_fail_with_the_message_polarfail_it_is_very_frustrating"></a>Why does the "Computation" of a "Configuration" always fail with the message "Polar:Fail"? It is very frustrating.</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>See:
+<a href="https://www.cruisersforum.com/forums/f134/weather-routing-100060-71.html#post2461392">CF Thread Polar Fail</a></p>
+</li>
+<li>
+<p></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_what_can_i_do_about_polarfail"><a class="anchor" href="#_what_can_i_do_about_polarfail"></a>What can I do about "Polar:Fail"?</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add other polars to the boat file to cover those wind speeds.</p>
+</li>
+<li>
+<p>Increase or Decrease the Interval, try 1 hr to 8hr. This does make a difference, and sometimes an alternate optimal route will appear.</p>
+</li>
+<li>
+<p>Reduce Wind to 50% or 25%.</p>
+</li>
+<li>
+<p>Increase Wind to 110% or 125%.</p>
+</li>
+<li>
+<p>Use Boat.XML or Boat-Test.xml with TWS 0-60 knots.(original file, unchanged)</p>
+</li>
+<li>
+<p>Use a different set of Polars.</p>
+</li>
+<li>
+<p>Find the high or low wind area and times, then change the route
+accordingly.</p>
+</li>
+<li>
+<p>Try a different grib file from another time with in the same area.</p>
+</li>
+<li>
+<p>Zoom into where it fails and look. Near land can cause problems.</p>
+</li>
+<li>
+<p>Try making a slightly new Destination point if it fails just short.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_i_cant_seem_to_get_this_to_complete_a_weather_routing_what_is_wrong"><a class="anchor" href="#_i_cant_seem_to_get_this_to_complete_a_weather_routing_what_is_wrong"></a>I can&#8217;t seem to get this to complete a weather routing, what is wrong?</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Undo the most recent changes you have made if you had it was working
+recently.</p>
+</li>
+<li>
+<p>When this happens go back to basics, Reset to default settings. See the <a href="http://www.cruisersforum.com/forums/f134/weather-routing-100060-2.html#post2461969">CF Post</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>about this and refer to the default list in this manual above. Or
+download the
+<strong><a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:toolbar_buttons:plugins:weather:weather_routing#weather_routing_setup">Weather_Routing_Setup</a></strong>
+above, install it again and start over.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_routings_with_climatology_only_seem_to_be_missing_voyage_data_such_as_duration_time_of_start_and_finishif_we_are_using_a_specific_date_and_time_for_the_start_why_is_this_happening"><a class="anchor" href="#_routings_with_climatology_only_seem_to_be_missing_voyage_data_such_as_duration_time_of_start_and_finishif_we_are_using_a_specific_date_and_time_for_the_start_why_is_this_happening"></a>Routings, with climatology only, seem to be missing voyage data, such as duration, time of start and finish&#8212;&#8203;If we are using a specific date and time for the start, why is this happening?</h4>
+<div class="paragraph">
+<p>It is most likely that the routing did not reach the destination.
+-Understand that the routing ends if destination is inside two
+isochrones, which is likely what you have, but remember between these two isochrones the boat can only move in straight lines and if there&#8217;s land in the way, the destination could be unreachable. Islands and Harbors are very prone to this kind of issue.</p>
+</div>
+<div class="paragraph">
+<p>Try a new destination (or start) well outside of the harbor. This issue occurs at both the start and the finish when the routing is tends to be near land with islands, harbors and complex shorelines, or try shortening the interval.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_why_doesnt_synchronize_position_on_route_display_with_grib_display_no_red_circle"><a class="anchor" href="#_why_doesnt_synchronize_position_on_route_display_with_grib_display_no_red_circle"></a>Why doesn&#8217;t synchronize position on route, display with grib display? No red circle.</h4>
+<div class="paragraph">
+<p>Try uninstalling the weather_routing plugin and removing all files and configuration from the system as outlined in the manual then re-install and make a new configuration. Now you should see a red circle moving along the route as you step thru the Grib file.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_edit_boat_plot_tab_what_is_the_difference_between_the_faint_yellow_line_and_the_magenta_line"><a class="anchor" href="#_edit_boat_plot_tab_what_is_the_difference_between_the_faint_yellow_line_and_the_magenta_line"></a>Edit Boat &gt; Plot Tab What is the difference between the faint yellow line and the magenta line?</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>These are the optimum upwind and downwind lines for best velocity made good. The colors show up best with the left dropdown set on “Speed” rather than “Plot”</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/editboat-plottab.png" alt="editboat plottab">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_view_route_position_boat_speed"><a class="anchor" href="#_view_route_position_boat_speed"></a>View &gt; Route Position &gt; Boat Speed</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Boat Speed is shown as SOG and SOW when they are different. If they are the same, only one value is shown.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_weather_routing_time_intervals_and_grib_data_time_intervals"><a class="anchor" href="#_weather_routing_time_intervals_and_grib_data_time_intervals"></a>Weather_Routing Time Intervals and Grib Data Time Intervals</h4>
+<div class="paragraph">
+<p>When you step through the grib you will see the boat position at that current grib time. This can be right on an isochrone or between two isochrones (if grib interval is smaller than wxrte time interval).</p>
+</div>
+<div class="paragraph">
+<p>Grib data Time Interval: Available in 3,6 and 12 hour intervals.
+Weather_Routing Time Interval: Often set to a smaller interval, say 3 or 1 hour intervals. But sometimes to complete to the destination the interval has to be set considerably smaller, say 10 minutes.
+Weather_routing will then interpolate the Grib file interval down to 10 minutes. When you try to step through the grib file to understand the conditions on the routing, you will jump across the interpolated isochrones. This is determined by the weatherrouting time interval.</p>
+</div>
+<div class="paragraph">
+<p>For example: From the WeatherRoutingConfiguration results the arrival time is 21:33, for a departure at 12:00. This means a duration of 9 hours, or three grib intervals of 3 hours. Consistent with the 3 steps in grib controller (3 hour time intervals). If you have weather_routing time interval set to 10 minutes, the boat will skip over 18 isochrones for each step of the grib controller.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_do_i_eliminate_all_black_alternate_routes"><a class="anchor" href="#_how_do_i_eliminate_all_black_alternate_routes"></a>How do I eliminate all black alternate routes?</h4>
+<div class="paragraph">
+<p>View &gt; Settings “Alternates for all isochrones” is unchecked and there are still black alternate routes showing. How do I eliminate them? Set alternate route thickness to “0” on the View &gt; Settings menu.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_how_can_i_edit_or_move_an_existing_wr_position"><a class="anchor" href="#_how_can_i_edit_or_move_an_existing_wr_position"></a>How can I edit or move an existing WR Position?</h4>
+<div class="paragraph">
+<p>Create a new position with the same name to replace it. There is then a prompt to overwrite the old location. This works from the context menu on the chart also.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_supplemental_hardware_and_software"><a class="anchor" href="#_supplemental_hardware_and_software"></a>Supplemental Hardware and Software</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Polar tools - Polar_pi, Polauto (Windows) (See above)</p>
+</li>
+<li>
+<p>Voyage Recordings to create polars: Use Opencpn VDR_pi RPI3 or Yacht Devices Voyage Recorder</p>
+</li>
+<li>
+<p>Yacht Devices using Excel:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="http://www.yachtd.com/downloads/polar_diagram.pdf">Case: How to plot a polar diagram for a yacht using data collected by Voyage Recorder</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Additional Polars <a href="http://download.meltemus.com/polars/">Qtvlm Polars</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We contributed so there may be duplicates.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_warnings"><a class="anchor" href="#_warnings"></a>Warnings</h3>
+<div class="sect3">
+<h4 id="_warning_about_data"><a class="anchor" href="#_warning_about_data"></a>Warning about Data</h4>
+<div class="paragraph">
+<p>Weather_routing is only as good as the data provided by the Grib plugin and the Climatology plugin.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Grib plugin</strong>: Depends on recent download grib files from Noaa and other sources. Downloaded Grib predicitions can change significantly over several days. The longer the grib prediction is, the less reliable the grib can be.</p>
+</li>
+<li>
+<p><strong>Climatology plugin</strong>: Can be used for analyzing long crusing routes through various seasons and constraints, but does not take into account the current weather conditions which often vary significantly from the 30 year average, especially outside of prevailing wind areas.</p>
+</li>
+<li>
+<p><strong>These planning tools</strong> may be helpful, but should be taken with a
+healthy “grain of salt” as any good sailor (who looks out to the
+horizon) should know.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_warning_about_weather_routes"><a class="anchor" href="#_warning_about_weather_routes"></a>Warning about Weather Routes</h4>
+<div class="paragraph">
+<p>The weather routes created may not consider or “see” normal navigation considerations and issues, therefore every route should be checked very carefully for navigation markers, shallow depths, bad currents, rocks, land and other obstacles and hazards.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_developer_notes_regarding_packaging_for_configuration_of_the_installation_files"><a class="anchor" href="#_developer_notes_regarding_packaging_for_configuration_of_the_installation_files"></a>Developer Notes regarding Packaging for Configuration of the Installation files</h4>
+<div class="paragraph">
+<p>Stelian wrote:</p>
+</div>
+<div class="paragraph">
+<p>In fact, the paths in WeatherRoutingConfig.xml and the boat XML files need to be there, because they tell the plugin where to find the corresponding boat/polar files. And since there might be several boat or polar names with the same name (but located in different folders), the paths need to tell which one is to be used.</p>
+</div>
+<div class="paragraph">
+<p>However, there is one exception to this: at the packaging time, we don&#8217;t know where the files will be installed - we know we want to put these in the user directory (ProgramData), but this path is dynamic, it depends on the user name (in case of multiuser systems). For example, on Linux, it might be /home/stelian/.opencpn/plugins/… or /home/rick!</p>
+</div>
+<div class="paragraph">
+<p>So what we&#8217;ve done is to change the code to allow the config file to use name without the path. The plugin, when it tries to open the file and if there is no path before, will automatically append the user directory path.
+This is why the xml files containing the default configuration need to have only the filenames and not the paths inside.</p>
+</div>
+<div class="paragraph">
+<p>Moreover, the files can contain the path to the contours. This path, once again, is dependent on the user. So we&#8217;ve just removed the CrossOverContours from the boat xml files, and made sure that the plugin will regenerate the contours upon start.</p>
+</div>
+<div class="paragraph">
+<p>For the date problems, well, we simply noticed in the XML file that the dates were in mm/dd/yy format, so I&#8217;ve just modified them to yyyy-mm-dd, (if you had saved the files using the current version of the plugin this should have been done automatically).</p>
+</div>
+<div class="paragraph">
+<p>There was an hour issue too, the file had 09:00 (local time I suppose), I put 00:00:00 instead, I don&#8217;t think it matters much anyway for such long routes.</p>
+</div>
+<div class="paragraph">
+<p>I also renamed a boat.XML file to .xml (notice case), it&#8217;s more standard that way (I know that windows doesn&#8217;t care much, but on the other systems the conventions are quite strong).</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h3>
+<div class="paragraph">
+<p>New dialog to display which sail plan is at the cursor in View→Cursor Position. Alternately it might be interesting to have a display option to color the route map the same as the cross-over chart. There is a box on the route to show each sail change.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_author"><a class="anchor" href="#_author"></a>Author</h3>
+<div class="paragraph">
+<p>Weather_routing_pi is written by Sean D`Epagnier programmer excellente.
+<a href="http://seandepagnier.users.sourceforge.net/">Sean&#8217;s Website</a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://rasbats.github.io/ocpn-manuals/radar/0.1/Raymarine-radome-model-support.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://rasbats.github.io/ocpn-manuals"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="radar" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Radar Manual</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../manuals/0.1/index.html">OpenCPN Manuals</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../manuals/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-master-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-master-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Users/Mike/Documents/GitHub/ocpn-manuals/sources/radar_pi/manual/radar/modules/ROOT/pages/Raymarine-radome-model-support.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p>Release 5.2.0 contains support for (older) Raymarine radars.</p>
+</div>
+<div class="paragraph">
+<p>This is based on the Raymarine plugin project originally written by
+ab2nkovs who never contacted us and just cloned the original BR24 code
+and then published it here: <a href="https://github.com/ab2nkovs/RMRadar_pi" class="bare">https://github.com/ab2nkovs/RMRadar_pi</a> –
+never to be heard from again.</p>
+</div>
+<div class="paragraph">
+<p>As far as we know this will support the RD4xxD models and possibly the
+older ``Pathfinder'' models attached to E series classic and maybe even
+RL/RC generation displays, but we’ll see.</p>
+</div>
+<div class="paragraph">
+<p>Note that the common combo of an older Pathfinder analog radome with a
+(first gen) C series Classic or SL display cannot be used; this is an
+analog radome connected directly to the radar/chartplotter and neither
+the display nor scanner has a Seatalk <em>hs</em> port. If your device has a
+<strong>Raynet</strong> connector, there are conversion cables to Seatalk <em>hs</em> and this
+might work. Please let us know which device you have exactly, with the
+exact Ray device type, and which ports it has.</p>
+</div>
+<div class="paragraph">
+<p>EVERYTHING YOU DO IS AT YOUR OWN RISK!! NOTE THAT THE AUTHORS DO NOT OWN
+OR HAVE ACCESS TO A RAYMARINE RADAR; IF YOU CAN’T FIND IT HERE PLEASE
+FIND OUT YOUR SELF AND INFORM US!!</p>
+</div>
+<div class="sect1">
+<h2 id="_list_of_raymarine_radome_models"><a class="anchor" href="#_list_of_raymarine_radome_models"></a>List of Raymarine Radome models</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Model</th>
+<th class="tableblock halign-left valign-top">Interface</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">Features</th>
+<th class="tableblock halign-left valign-top">Plugin Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M92650</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RL/RC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M92650S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RL/RC/E</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M92652</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RL/RC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M92652S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RL/RC/E</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RD218</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RD424</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RD418D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ethernet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron + Digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RD424D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ethernet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron + Digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RD418HD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ethernet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron + Digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MC/48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RD424HD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ethernet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetron + Digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MC/48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Q24C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eth+WiFi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Q24W</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WiFi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full digital</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NY</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Q24D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eth+Wifi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chirp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MC/48/DO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NY</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Interface:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>RL = Electronics is in RL Pathfinder display, which generates Ethernet data via Seatalk <em>hs</em> port</p>
+</li>
+<li>
+<p>RC = Electronics is in RC Pathfinder display, which generates Ethernet data via Seatalk <em>hs</em> port</p>
+</li>
+<li>
+<p>E = Electronics is in E Series (Classic) display, which generates Ethernet data via Seatalk <em>hs</em> port</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>MC = MultiColor, e.g. more bits per ``pixel'' for more information on signal strength</p>
+</li>
+<li>
+<p>48 = 48 RPM at closer ranges instead of 24</p>
+</li>
+<li>
+<p>DO = Doppler, uses different color for targets getting nearer or further away</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Plugin Support:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>? = We hope that this will work, we just don’t know yet</p>
+</li>
+<li>
+<p>Yes = This is what the original plugin by ab2knovs (<a href="https://github.com/ab2nkovs/RMRadar_pi" class="bare">https://github.com/ab2nkovs/RMRadar_pi</a>) claimed to support</p>
+</li>
+<li>
+<p>NY = Not yet, please help if you have such a scanner</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="Home.html" class="page">Back to overview Plugin radar_pi</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
