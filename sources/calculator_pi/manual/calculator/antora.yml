@@ -1,0 +1,4 @@
+name: calculator
+title: calculator
+version: '0.1'
+start_page: ROOT:calculator.adoc 

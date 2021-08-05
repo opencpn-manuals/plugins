@@ -1,0 +1,108 @@
+:imagesdir: ../images/
+
+== Admiralty Tides
+
+Admiralty Tide Tables
+
+== Plugin Datasheet Template
+
+=== Aim
+
+Form or repository for Admiralty Tide information. Intent is simply to
+store it in an useful form in OpenCPN.
+
+=== Links
+
+* Source: https://github.com/registry/admiralty_tide_tables_pi[Github
+Repository]
+* Forum:
+http://www.cruisersforum.com/forums/f134/a-t-t-calculation-plugin-for-reeds-almanac-and-admiralty-tide-tables-168254.html[A.T.T.
+calculation plugin for REEDS almanac and Admiralty Tide Tables]
+* Explanation: http://www.siranah.de/html/sail030d.htm[Admiralty Tide
+Tables Explanation]
+
+=== Requirements
+
+??
+
+=== Documentation
+
+*Please make a User Guide. More information is given
+link:../plugin_documentation.html[here.]*
+
+== User Guide
+
+=== 1. What and Why
+
+Easy work with A.T.Tables, published in REEDS or in Tide Tables, i've
+created small OpenCPN plugin. It allows to calculate tides on secondary
+ports having data from standard ports and differences of secondary ports
+how it is suppose to be done manually on paper. dea is simple: I want to
+simplify tedious part of tide calculation based on A.T.T. → calculation
+itself.
+
+Having REEDS for a given year, I do actually have most up-to-date
+calculation for most of ports and marinas, covered by the almanac.
+Problem is only the calculation.
+
+So far I can easily type-in the data for some standard port and
+differences for secondary port of interest, press “calculate” and get my
+tide for secondary port at given date. Agreed, further work on this tide
+(tide at given time, time or required depth and and and) has to be done
+manually, but for the beginning it is already something if one has tide
+for secondary ports.
+
+Input form of the plugin has a form and acronyms like it is in A.T.T or
+Reeds for simplicity.
+
+For further ideas would be collecting calculated data in some
+offline/online data base so that one has to type in tides and
+differences only once… but it is not done yet.
+
+This calculated/typed-in data could be shared via … some file in same
+git repository or via some online database - don't know what is better.
+
+If some one wants to contribute → you are welcome. If plugin gets
+published on opencpn page/plugins → nice. if someone wants to take over
+its maintenance and further development (without removing essential part
+→ working with Reeds/A.T.T ) → great (i don't have much time to invest
+into it) Feature requests/comments/improvements suggestions i will read,
+but do not promise to react on them immediately ( i don't have much time
+to invest into it)… only if they will be useful for my own usage while
+sailing… sorry for that.
+
+Update
+
+{empty}1. Added IO. 2. Input once. Now one has to input data for
+standard or secondary ports only once, save it and it gets loaded by
+next start of opencpn automatically. 3. Format of files is not stable
+yet. I have to make a round of field tests wheather it is usable and
+check calculation. 4. rgleason tests it on win as standalone build (i
+use linux and build within opencpn build system) 5. Any another tests
+(on another systems/configurations) are welcome.
+
+Small road map: 1. Polish UX and behavior of all form elements 2.
+Improve io format. 3. Connect Standard and secondary ports. (issue:
+A.T.T. lists numbers of ports, REEDS - no.. ).
+
+Further ideas (which i might or might not do): 1. Add some kind of
+exchange data of stored ports with community to make it downloadable .
+In this wey data base of tide data from A.T.T. and REEDS will grow much
+faster and gets available for more people. 2. Add support for tide curve
+for standard port, so one can do such thing like “at which time one has
+enough water depth to pass a barrier” or similar. 3. …
+
+=== 2. Install
+
+
+image:admiralty-table.jpeg[]
+
+
+image:admiraltytidestable.jpeg[]
+
+
+=== 3. Standard actions
+
+=== 4. Options
+
+=== 5. FAQ

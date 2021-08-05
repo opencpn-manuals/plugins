@@ -1,0 +1,4 @@
+name: debugger
+title: debugger
+version: '0.1'
+start_page: ROOT:debugger.adoc 

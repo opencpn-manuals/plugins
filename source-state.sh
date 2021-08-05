@@ -48,11 +48,12 @@ case "$1" in
     restore) 
         while true; do
             read dir url commit || exit 0
-            test -d $dir || git_clone $url $dir
-            cd $dir
-            git fetch origin $commit
-            git checkout FETCH_HEAD
+            test -d $dir || git_clone $url $dir  
+            cd $dir                                
+            b="^./manual\(/.*\)?"
+            find -mindepth 1 ! -regex $b -delete
             cd ..
+
         done < $statefile
         ;;
 

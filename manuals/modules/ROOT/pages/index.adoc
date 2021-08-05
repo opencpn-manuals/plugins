@@ -1,7 +1,3 @@
 == MANUALS
 
-link:https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual[User Manual]
-
 xref:opencpn-master-plugins::index.adoc[Plugins Manual]
-
-xref:ocpn-dev-manual::intro-AboutThisManual.adoc[Developer Manual]

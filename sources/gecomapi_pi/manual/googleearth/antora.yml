@@ -1,0 +1,4 @@
+name: googleearth
+title: Google Earth
+version: '0.1'
+start_page: ROOT:googleearth.adoc 

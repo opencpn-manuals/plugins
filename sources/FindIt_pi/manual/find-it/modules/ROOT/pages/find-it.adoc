@@ -1,0 +1,54 @@
+== Find-It
+
+=== Links
+
+* Source: https://github.com/ptulp/FindIt_pi[Github Repository] +
+* Source: https://github.com/ptulp/FindIt_pi/releases[Github Releases] +
+* Download: https://opencpn.org/OpenCPN/plugins/findit.html[Website
+Download] +
+* Forum:
+http://www.cruisersforum.com/forums/f134/konnis-findit-plug-in-link-85367.html[Findit
+CF Thread] +
+
+=== 1. What and Why
+
+This Plugin is a stowage manager.
+
+The plugin can work alone or in conjunction with the LogbookKonni
+plugin. If the LogbookKonni plugin is present and enabled and the Buy it
+button is pressed the items in the Material or Provisions page marked
+Buy will be transferred to the LogbookKonni page Maintenance/BuyParts.
+
+=== 2. Install
+
+See link:../install_and_enable.html[Install and Enable] page for
+installing this plugin.
+
+=== 3. Standard actions
+
+First you have to define the Units, e.g. Bottle, Can, Tin, Box etc.
+
+image::units.png[]
+
+Then you have to create the possible locations in the boat. These
+Locations are user definable and depend on the possible locations on
+board. The locations below are just for demo purposes.
+
+image::locations.png[]
+
+Now you can create Material or Provisions with the units and locations
+defined previously.
+
+image::provisions.png[]
+
+If the *Actual* count will be below the *Quota*, the *Balance* will be
+positive and the *Buy* indicator will be set to *Yes*. Clicking on the
+*Buy it* button will transfer the *Yes* marked lines to the
+*LogbookKonni* plugin in the *Maintenance/BuyParts* section. Depending
+on the *Priority* it will be marked in different colors.
+
+image::find-logbook.png[]
+
+=== 4. Options
+
+image::fi-setup.png[]

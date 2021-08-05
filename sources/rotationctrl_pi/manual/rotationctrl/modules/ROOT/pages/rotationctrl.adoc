@@ -1,0 +1,284 @@
+== Rotation Control
+
+image::rotctrl_buttons.png[]
+
+This document is about Rotation Control-plugin (Rotation-pi)
+
+=== Links
+
+* Source: https://github.com/seandepagnier/rotationctrl_pi +
+* Download: https://opencpn.org/OpenCPN/plugins/chartrotation.html +
+* Forum:
+http://www.cruisersforum.com/forums/f134/rotationctrl-plugin-144542.html +
+
+ 
+_*Important
+Note*: 
+This plugin is an early testing release. +
+You may encounter some bugs in this plug-in. +
+See “Remarks”, part B and C._
+
+* link:rotationctrl.html#what_and_why[What and Why]
+** link:rotationctrl.html#a_what_can_rotation-pi_do[A. What can
+Rotation-pi do]
+** link:rotationctrl.html#b_why_can_rotation-pi_be_useful[B. Why can
+Rotation-pi be useful]
+* link:rotationctrl.html#installation[Installation]
+** link:rotationctrl.html#a_where_to_get_rotation-pi[A. Where to get
+Rotation-pi]
+** link:rotationctrl.html#b_how_to_install_rotation-pi[B. How to install
+Rotation-pi]
+* link:rotationctrl.html#standard_actions[Standard Actions]
+* link:rotationctrl.html#remarks[Remarks]
+** link:rotationctrl.html#a_why_or_why_not_north_up[A. Why (or why not)
+"North up"?]
+** link:rotationctrl.html#b_notes_on_possible_strange_behavior_of_enc-text[B.
+Strange behavior of ENC-text]
+** link:rotationctrl.html#c_notes_on_strange_interaction_with_google_earth[C.
+Strange interaction with Google Earth]
+** link:rotationctrl.html#d_notes_on_possible_performance-issues[D.
+Notes on possible performance-issues]
+
+=== 1. What and Why
+
+==== A. What can Rotation-pi do
+
+The plugin allows the user to control the way the chart is shown on the
+the computer-screen.
+
+You can rotate the chart manually (clockwise, counterclockwise) and in
+the following manners:
+
+* *North* up (the top of the chart corresponds to the direction of true
+North).
+* *South* up (the top of the chart corresponds to the direction of true
+South).
+* *Course* up (the top of the chart points corresponds to the direction
+you are actually goïng (Course over Ground).
+* *Heading* up (the top of the chart corresponds to the direction you
+are steering).
+* *Route* up (the top of the chart corresponds to the waypoint that is
+activated as “navigate to”.
+* *Wind* up (the top of the chart corresponds to the direction the wind
+is coming from).
+
+The plugin gets the necessary information in the following manners:
+
+* about “*North*“and “*South*”: from the information in your *digital
+charts*.
+* about your *course*: from your *GPS*.
+* about your *heading*: from your *(electronic) compass* that outputs
+NMEA-data to OpenCPN.
+* about your *route*: from *OpenCPN* (when you have activated a route).
+* about the *wind*: from your *wind sensor* that outputs NMEA-data to
+OpenCPN.
+
+==== B. Why can Rotation-pi be useful
+
+Normally the representation of a chart is “North up”.
+
+That means Top is “North”, Right hand side is “East”, Bottom is “South”
+and Left hand side is “West”.
+
+But maybe you prefer to have the top of the chart corresponding to
+“South”.
+
+Or to have the top of the chart corresponding to:
+
+* your present course (to where you are really going to)
+* or heading (to the direction your bow is pointing to)
+* or route (to where you are supposed to go)
+* or the wind-direction (the direction to avoid facing while throwing up
+or peeing).
+
+*Examples*:
+
+This sailing vessel is inward bound. The representation is “North up”.
+
+image::rotctrl_north_up.png[]
+
+* The *wind* (blue arrow) is from the *West*.
+* The ship's *heading* is the *red dashed* line.
+* The ships *course* (over the ground) is the *white dotted* line.
+* The ships *route* (next active waypoint) is the red dot at the end of
+the *green line* (and don't worry, she's just about to turn to port).
+
+The next illustrations show you the differences. Note the rotation of
+the coastline.
+
+*South* up
+
+image::rotctrl_south_up.png[]
+
+*Course* up
+
+image::rotctrl_course_up.png[]
+
+*Heading* up
+
+image::rotctrl_heading_up.png[]
+
+*Route* up
+
+image::rotctrl_route_up.png[]
+
+*Wind* up
+
+image::rotctrl_wind_up.png[]
+
+link:rotationctrl.html[Back to top of page ↑]
+
+=== 2. Installation
+
+==== A. Where to get Rotation-pi
+
+Rotation-pi can be downloaded from
+https://opencpn.org/OpenCPN/info/downloadplugins.html
+
+image::rotctrl_download.png[]
+
+==== B. How to install Rotation-pi
+
+Make sure you choose the file that is compatible to your
+computersystem. +
+In this manual we presume it's Windows, so we choose the Windows
+setup-package.
+
+image::rotctrl_setup_package.png[]
+
+Download the file (double-click). Double-click the downloaded file (with
+“rotationctrl_pi” in the name and ”.exe” as extension) and follow the
+set-up instructions. +
+That's it.
+
+Open (or restart) OpenCPN. +
+Click *Tools-Options-Plugins* +
+Scroll down untill you see the Rotation-pi.
+
+Click “*enable*”.
+
+image::rotctrl_enable.png[]
+
+The Rotation-pi icons should appear in your Toolbar.
+
+image::rotctrl_buttons.png[]
+
+Additionally you can set the *Preferences*. 
+
+image::rotctrl_preferences.png[]
+ 
+image::rotctrl_preferences-2.png[]
+
+link:rotationctrl.html[Back to top of page ↑]
+
+=== 3. Standard Actions
+
+What are basic (standard) actions you have to do to make Rotation-pi
+work. +
+Simple: just click the button of your choice to activate the desired
+rotation. 
+
+image::rotctrl_buttons.png[]
+
+*Note*: the buttons for “Manual Tilt” (the red buttons) do not seem to
+work yet! +
+To go back to the normal representation (“North up”) click the “North
+up”-button. +
+ +
+link:rotationctrl.html[Back to top of page ↑]
+
+=== 4. Remarks
+
+=== A. Why (or why not) "North up"?
+
+image::rotctrl_real_north_up_vector.png[]
+
+This is the “normal” representation (“*North* up”). +
+ +
+We are sailing in a narrow channel in a southerly direction. +
+On the chart, the coast is on the *left* side of the boat-icon. +
+ +
+But for the helmsman on board the coast is on his *right* hand
+(starboard) side. +
+For someone who has a clear visual image of the chart “in his head”,
+this should not be a problem. +
+But other people may find it a bit confusing.
+
+image::rotctrl_real_south_up_vector.png[]
+
+This is the same situation, but now with “*Heading* up”.
+
+In this presentation-mode the chart shows the coast on the same side
+(right hand) as it is seen from the helmsman's position. +
+That sounds logical.
+
+But for those of us who have “the chart in their head” it can be
+confusing. +
+(because the brain may say _“Hey skipper! It's your boat that is moving
+and turning, not the coast!”_)
+
+Let's face it: when thinking of the UK and Ireland,is this what you have
+in mind?
+
+image::rotctrl_uk_south_up.png[]
+
+link:rotationctrl.html[Back to top of page ↑]
+
+=== B. Notes on possible strange behavior of ENC-text
+
+When using ENC-charts (vector-charts) you might experience some weird
+behavior when using any other mode than “North up”.
+
+This is “*North* up”
+
+image::rotctrl_333_nu.png[]
+
+Note the ENC-text for the names and numbers of the buoys and the
+indication “Wk” on the wreck-symbols.
+
+And a few seconds later, but now with “*Heading* up”.
+
+image::rotctrl_325_cu.png[]
+
+Note the icons for the buoys are not “upright” anymore, but also rotated
+(and with “South up” they would be completely upside down).
+
+But more disturbing is that the ENC text for the names and numbers of
+the buoys has disappeared (as has the text “Wk” on the wreck-symbols). +
+And other ENC-text might be placed in the wrong positions.
+
+This “missing text-bug” can occur because in this example a ENC (a
+vector chart) is used. +
+It can occur with all representations that are not “North up”.
+
+Note: This does not seem to occur to all ENC's, but it *can* occur. +
+It can not happen while using a raster chart (on a raster chart you will
+not lose the text, but the text will be rotated the same way as the rest
+of the information on that chart).
+
+link:rotationctrl.html[Back to top of page ↑]
+
+=== C. Notes on strange interaction with Google Earth
+
+When jused in conjunction with the Google Earth-plugin, something
+strange happens. In any representation-mode other than “North-up” or
+“South-up”, the picture in the Google Earth-window rotates
+*_+++opposite+++_* to the rotation of the main screen (the chart). +
+In other words, if the main charts rotates clockwise, the Google
+Earth-window rotates counter-clockwise and vice versa.
+
+image::rotctrl_google_earth_contra.png[]
+
+True, it does make navigation more interesting, but nevertheless should
+be considered a bug in this
+
+=== D. Notes on possible performance-issues
+
+When you alter course, something happens on your OpenCPN screen. In
+normal mode (“North up”) OpenCPN rotates your ship's icon. But in modes
+“Heading up”, “Course up” and “Route up”, you want OpenCPN to rotate the
+world. That takes a lot more than just rotating that ship-icon. On less
+powerful systems it might cause the system to respond slower than
+desired (or it might cause other problems).
+
+link:rotationctrl.html[Back to top of page ↑]

@@ -1,0 +1,4 @@
+name: windvane
+title: Windvane
+version: '0.1'
+start_page: ROOT:windvane.adoc

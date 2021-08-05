@@ -1,0 +1,4 @@
+name: tidefinder
+title: TideFinder
+version: '0.1'
+start_page: ROOT:tidefinder.adoc 

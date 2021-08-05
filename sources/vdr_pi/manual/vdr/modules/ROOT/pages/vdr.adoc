@@ -1,0 +1,77 @@
+== VDR
+
+=== Voyage Data Recorder
+
+Use Voyage Data Recorder to record and play NMEA files.
+
+=== Links
+
+* Source: https://github.com/nohal/vdr_pi[Github Nohal Repository, use
+Packaging Branch]
+* Source: https://github.com/SethDart/vdr_pi[Github Seth-dart Original
+Repository]
+* Download: https://opencpn.org/OpenCPN/plugins/vdr.html[Website
+Download]
+* Forum:
+http://www.cruisersforum.com/forums/f134/vdr-plugin-59808.html[VDR
+Plugin Thread]
+
+image::vdr-ais_simulation-2.png[]
+
+* Use VDR for AIS Simulation - Run VDR to play AIS NMEA files. Or… use
+the VDR plugin to record your passages and replay them later! The VDR is
+also great for testing NMEA sentences, the Dashboard and new OpenCPN
+features. These are just a few examples, of how to use this versatile
+plugin.
+* When VDR is activated in ToolBar→Options→Plugins→VDR, two Buttons
+appears in the ToolBar
+
+image::vdr-icons.png[]
+
+* The left button is for recording, and leads to a “Choose file” dialog
+to select the file to record to. A file with a .txtfile extension works
+well.
+* The right button is for playing an existing file, and also leads to a
+dialog where the file must be selected. Once selected VDR starts to play
+the file,the smalldialog below shows on the screen.
+
+image::vdr-control.png[]
+
+* You can control the speed with the upper slider. Far left is slow,
+natural speed, while moving the slider to the far right equals fast
+forwarding. Please note that the setting under options/ships/calculate
+SOG will impact which SOG values are shown when playing fast forwarding.
+* The lower part of the dialog shows the progress.
+* When recording, the VDR plugin includes all NMEA data available on the
+internal bus in OpenCPN. Even data not recognized or used by OpenCPN
+will be recorded. Everything (almost) in the ToolBar→Connections→NMEA
+debug window will be included.
+* In other words. The VDR records everything from all ports and does not
+participate in the downstream multiplexer filter or priority scheme.
+That way, a VDR recording may be played back, experimenting with various
+filters and priorities if desired.
+* If you are playing a file with the VDR at the same time, even that
+data will be included. So it is possible to play and record at the same
+time!
+
+==== Want to play ?
+
+* To get started, download this
+
+link:../../../files/nmea/rausch_shortened.zip[file]. 
+
+Save and un-zip and you have a .txt file. The file is ready to play.
+* If you can't find the boat, have a look in the Adriatic or just press
+the “Auto Follow”, or press F2. The view will now center on the action.
+
+image::nmea-debug-dsc.png[]
+
+* The VDR shows up as “PlugIn Virtual” in the NMEA Debug Window.
+
+=== FAQ
+
+==== Why is my SOG way off and showing 60-70 knots in the Dashboard, when I playback a file?
+
+Uncheck “Calculate SOG” option in Preferences. See
+http://www.cruisersforum.com/forums/f134/playback-vdr-from-recorded-file-201359.html#post2635729[Playback
+from recorded file]

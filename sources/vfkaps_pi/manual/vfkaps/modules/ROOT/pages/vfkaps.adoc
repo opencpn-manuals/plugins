@@ -1,0 +1,372 @@
+== Vfkaps Charts
+
+=== VentureFarther Satellite Charts
+
+=== Links
+
+* Source: https://github.com/Rasbats/vfkaps_pi/[Github Repository]
+* Releases: https://github.com/Rasbats/vfkaps_pi/releases/[Github
+Releases Download]
+* Download: https://opencpn.org/OpenCPN/plugins/vfkaps.html[Download
+Webpage]
+* Website: https://www.venturefarther.com/[VentureFarther.com]
+* Forum:http://www.cruisersforum.com/forums/f134/venturefarther-satellite-charts-vfkaps-plugin-189029.html[Venturefarther
+Satellite Charts - Vfkaps Plugin]
+* Forum:
+http://www.ybw.com/forums/showthread.php?484796-Google-earth-KAP-chart-creation-plugin-for-opencpn[Yachting
+& Boating World Forum - Google earth KAP chart creation plugin for
+Opencpn]
+
+=== 1. What and Why
+
+In some areas of the world a satellite chart is more accurate than even
+the official chart. This plugin allows satellite charts from Google,
+Bing or Nokia to be downloaded via the VentureFarther server
+(http://venturefarther.com[http://venturefarther.com)]
+
+Even in well charted areas such as the UK the satellite chart will often
+be more accurate than the official UKHO chart. As an example a waypoint
+was made on the chart for the River Avon, Devon, UK.
+
+image::wp.1.png[]
+
+An extreme example but the satellite chart shows where you could have
+ended up if you had followed the navigation chart!
+
+image::wp.2.png[]
+
+=== 2. Install
+
+You will need to register with VentureFarther and obtain your API key
+http://venturefarther.com[here]
+
+*_Please read the 'Credits' page on the VentureFarther website. 1 Credit
+is used for each single satellite chart download. Making a 'Multi-Chart'
+download will use 9 credits, because it consists of 9 satellite charts.
+Credits can be earned by submitting cruising information or you may
+choose to purchase an annual subsciption._*
+
+Download the plugin installer and run the installer .exe file from here
+(Windows):
+
+https://github.com/Rasbats/vfkaps_pi/releases/tag/v1.0[https://github.com/Rasbats/vfkaps_pi/releases]
+
+On Linux download the DEB package and install this.
+
+==== Important ... Using encrypted charts while using the plugin
+
+If one of your 'normal' navigational chart directories contains
+encrypted charts, such as those from
+http://visitmyharbour.co.uk[VisitMyHarbour] you will find that any
+satellite charts you create are deleted as soon as OpenCPN is closed. To
+avoid this you will need to remove the encrypted chart directory.
+
+image::13a.vf.png[]
+
+Close OpenCPN and restart. Make your satellite charts. You can then
+close OpenCPN. VisitMyHarbour (VMH) charts are activated … 'I agree'.
+Start OpenCPN and add your VMH chart directory. You then have both
+satellite charts and VMH charts on the same screen. You will be able to
+create more satellite charts in this state but they will be deleted as
+soon as OpenCPN closes.
+
+=== 3. Standard actions
+
+Open the toolbox and enable 'vfkaps'. Open 'Preferences'.
+
+image::1.vf.png[]
+
+Select/create the directory where you want to save your satellite
+charts.
+
+image::3.vf.png[]
+
+Enter your VentureFarther API key.
+
+image::2.vf.png[]
+
+Apply/Ok and on the toolbar you will find the vfkaps icon.
+
+image::4.vf.png[]
+
+Start the vfkaps plugin.
+
+image::5.vf.png[]
+
+Using the orange box as a 'gunsight' move to the area of the chart where
+you want to download a satellite image and press 'Generate Chart'.
+
+A dialog box will show the progess of the download.
+
+image::6.vf.png[]
+
+image::7.vf.png[]
+
+You can zoom in and use the new selected area to make a larger scale
+chart.
+
+image::7a.vf.png[]
+
+Use the arrow keys to move to an adjacent area.
+
+image::8.vf.png[]
+
+And you can download the satellite chart for that area.
+
+link:vfkaps.html#tiling_satellite_charts[See this section for help on
+downloading the surrounding charts]
+
+image::9.vf.png[]
+
+After using the direction arrows you will need to use the 'O' button to
+re-centre the orange box in the centre of the map.
+
+image::11.vf.png[]
+
+A different provider for the satellite chart can be chosen but if the
+same area is used the first downloaded chart will be overwritten and
+lost.
+
+image::0.vf.png[]
+
+link:vfkaps.html#deleting_the_last_chart_download[This shows how to
+delete files from the last download]
+
+*Format of the satellite chart*
+
+Country_VF_latitude_longitude (degrees, decimal minutes)
+
+United_Kingdom_VF50_16.794_N_3_52.806_W.kap
+
+=== 4. Options / Warnings / Ideas
+
+==== Sharing anchorage information
+
+One of the aims of VentureFarther is to help sailors share information
+about the anchorages they use. On the VentureFarther website you will
+find anchorages that users have contributed. Satellite charts of these
+anchorages can be made by using the 'Country Anchorage Charts' tab of
+the plugin.
+
+Using this tab generates a list of countries for which users have
+contributed an anchorage. Select the anchorage area of interest.
+'Generate' will create the satellite chart and place a waypoint icon
+near the anchorage. *The normal warnings apply about using the best
+information available to determine the safety of the anchorage you have
+chosen.*
+
+image::20.vf.png[]
+
+image::21.vf.png[]
+
+image::22.vf.png[]
+
+These anchorage satellite charts may be especially useful in poorly
+charted areas of the world.
+
+image::23.vf.png[]
+
+=== 3. Standard actions
+
+Open the toolbox and enable 'vfkaps'. Open 'Preferences'.
+
+image::1.vf.png[]
+
+Select/create the directory where you want to save your satellite
+charts.
+
+image::3.vf.png[]
+
+Enter your VentureFarther API key.
+
+image::2.vf.png[]
+
+Apply/Ok and on the toolbar you will find the vfkaps icon.
+
+image::4.vf.png[]
+
+Start the vfkaps plugin.
+
+image::5.vf.png[]
+
+Using the orange box as a 'gunsight' move to the area of the chart where
+you want to download a satellite image and press 'Generate Chart'.
+
+A dialog box will show the progess of the download.
+
+image::6.vf.png[]
+
+image::7.vf.png[]
+
+You can zoom in and use the new selected area to make a larger scale
+chart.
+
+image::7a.vf.png[]
+
+Use the arrow keys to move to an adjacent area.
+
+image::8.vf.png[]
+
+And you can download the satellite chart for that area.
+
+link:vfkaps.html#tiling_satellite_charts[See this section for help on
+downloading the surrounding charts]
+
+image::9.vf.png[]
+
+After using the direction arrows you will need to use the 'O' button to
+re-centre the orange box in the centre of the map.
+
+image::11.vf.png[]
+
+A different provider for the satellite chart can be chosen but if the
+same area is used the first downloaded chart will be overwritten and
+lost.
+
+image::0.vf.png[]
+
+{empty}[opencpn:opencpn_user_manual:plugins:charts:vfkaps#deleting_the_last_chart_download|This
+shows how to delete files from the last download]]
+
+*Format of the satellite chart*
+
+Country_VF_latitude_longitude (degrees, decimal minutes)
+
+United_Kingdom_VF50_16.794_N_3_52.806_W.kap
+
+=== 4. Options / Warnings / Ideas
+
+==== Sharing anchorage information
+
+One of the aims of VentureFarther is to help sailors share information
+about the anchorages they use. On the VentureFarther website you will
+find anchorages that users have contributed. Satellite charts of these
+anchorages can be made by using the 'Country Anchorage Charts' tab of
+the plugin.
+
+Using this tab generates a list of countries for which users have
+contributed an anchorage. Select the anchorage area of interest.
+'Generate' will create the satellite chart and place a waypoint icon
+near the anchorage. *The normal warnings apply about using the best
+information available to determine the safety of the anchorage you have
+chosen.*
+
+image::20.vf.png[]
+
+image::21.vf.png[]
+
+image::22.vf.png[]
+
+These anchorage satellite charts may be especially useful in poorly
+charted areas of the world.
+
+image::23.vf.png[]
+
+==== Insufficient credit with VentureFarther
+
+If you have run out of credit with VentureFarther you will get a warning
+notice.
+
+image::9a.vf.png[]
+
+You will need to increase your credit with VentureFarther by making a
+contribution to the data on that website. You may wish to purchase an
+annual subscription.
+
+==== Chart directory has been deleted
+
+If you have deleted the directory where you have been saving the charts
+you will get a warning.
+
+\{\{opencpn:manual:plugins:vfkaps:9b.vf.png?nolink&}}
+
+You will need to go back to preferences and select/create a new
+directory.
+
+image::3.vf.png[]
+
+==== Tiling satellite charts
+
+This is carried out by using the 'Multi-Chart' tab.
+
+image::10.vf.png[]
+
+Use the direction arrows to select the centre of the 9 charts that will
+be downloaded.
+
+image::12.vf.png[]
+
+Be prepared for a large download, that can take several seconds.
+
+image::13.vf.png[]
+
+==== Surrounding charts at very small scale
+
+Single chart downloads at very small scale is possible. You will not be
+able to download the surrounding charts using 'Fetch surrouding charts'.
+
+image::16.vf.png[]
+
+==== Deleting the last chart download
+
+Use the button 'Delete last download'.
+
+This option is useful if you want to compare the satellite chart of the
+same area from different providers.
+
+image::14.vf.png[]
+
+And the last chart files will be deleted.
+
+image::15.vf.png[]
+
+image::15a.vf.png[]
+
+==== Chart directory has been deleted
+
+If you have deleted the directory where you have been saving the charts
+you will get a warning.
+
+image::9b.vf.png[]
+
+You will need to go back to preferences and select/create a new
+directory.
+
+image::3.vf.png[]
+
+==== Tiling satellite charts
+
+This is carried out by using the 'Multi-Chart' tab.
+
+image::10.vf.png[]
+
+Use the direction arrows to select the centre of the 9 charts that will
+be downloaded.
+
+image::12.vf.png[]
+
+Be prepared for a large download, that can take several seconds.
+
+image::13.vf.png[]
+
+==== Surrounding charts at very small scale
+
+Single chart downloads at very small scale is possible. You will not be
+able to download the surrounding charts using 'Fetch surrouding charts'.
+
+image::16.vf.png[]
+
+==== Deleting the last chart download
+
+Use the button 'Delete last download'.
+
+This option is useful if you want to compare the satellite chart of the
+same area from different providers.
+
+image::14.vf.png[]
+
+And the last chart files will be deleted.
+
+image::15.vf.png[]
+
+image::15a.vf.png[]

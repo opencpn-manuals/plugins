@@ -21,13 +21,13 @@ These plugins are installed with the basic OpenCPN program.
 * xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
 
 === AIS / Radar  
-* xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display #] image:managed_plugin.png[] 
+* xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display #] image::managed_plugin.png[] 
 * xref:radar:ROOT:Home.adoc[Radar Display #] image:managed_plugin.png[]
 * xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR #]
 
 === Charts  
 * xref:nv_charts:ROOT:nv_charts.adoc[nv_charts #] 
-* xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts #] image:managed_plugin.png[] 
+* xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts #] image::managed_plugin.png[] 
 * xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts #]  
 * xref:oesenc:ROOT:oesenc.adoc[oeSENC #] image:managed_plugin.png[] 
 * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) #] 

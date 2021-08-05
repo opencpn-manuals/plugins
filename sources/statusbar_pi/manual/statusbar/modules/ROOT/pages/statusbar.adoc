@@ -1,0 +1,169 @@
+= StatusBar
+
+Alternative to the Standard Status bar at the bottom.
+
+Author: Sean D'Epagnier +
+Maintenance: Rick Gleason, Jon Gough and the Plugin Team +
+PI Manager Workflow: Testplugin
+
+== Links
+
+* Source: https://github.com/seandepagnier/statusbar_pi +
+* Maintained Source: https://github.com/rgleason/statusbar_pi +
+* Download: https://opencpn.org/OpenCPN/plugins/statusbar.html +
+* Forum: http://www.cruisersforum.com/forums/f134/statusbar-plugin-119047.html[CF
+Statusbar_pi Thread] +
+* YouTube: https://www.youtube.com/watch?v=sT23hDvFwz8[Statusbar]
+
+== 1. What and Why
+
+=== What can StatusBar do?
+
+Shows Dashboard and Nmea Data at the bottom of the screen in various
+formats.
+
+=== Why is StatusBar useful?
+
+Informs the skipper of conditions that are useful in navigation.
+StatusBar plugin replaces builtin statusbar. The builtin status bar
+(disable from the User Interface tab) can be very difficult to read.
+
+The statusbar plugin improves on some of these difficulties. It is best
+used with OpenGL enabled (requires some basic OpenGL extensions).
+
+== 2. Installation
+
+=== A. Where to get this plugin:
+
+Available on the Downloads Page:
+https://opencpn.org/OpenCPN/info/downloadplugins.html
+
+=== B. How to install the plugin:
+
+. Double-click the downloaded file (with “statusbar_pi” in the name and
+“.exe” as extension) and follow the set-up instructions.
+. Open (or restart) OpenCPN.
+. Click *Tools-Options-Plugins*
+. Scroll down until you see the StatusBar-pi.
+. Click “*Enable*” to enable the plugin and then hit “*Apply*”.
+. Use “*Preferences*” to set your preferences (should be
+self-explanatory). Then “*Apply*.
+. Then close *Options* and the data should appear at the bottom of the
+screen.
+
+=== C. How to disable the OpenCPN lower Status bar.
+
+. Settings > User Interface.
+. Uncheck “Show Status Bar”.
+
+=== D. Where is the Cruiser's Forum Discussion?:
+
+http://www.cruisersforum.com/forums/f134/statusbar-plugin-119047.html#post1474705[CF
+Statusbar_pi thread]
+
+== 3. Standard Actions
+
+image::statusbar-prefs-info.jpg[statusbar-prefs-info]
+
+=== Preferences Menu
+
+==== Display String
+
+Display of data is controlled in the Preferences menu in the Display
+String area. Below is the default Display String entered under
+Preferences. This area is edited to display the information you would
+like shown on the screen.
+
+[source,code]
+----
+%02A %2.2B%D  %02E %2.2F%H  %.1I %03J\n%02O %2.2P%R %02S %2.2T%V %03W %.2X %03.a
+----
+
+The formatting and values available to the user are listed below under
+*Info*
+
+==== Fonts, Color and Transparency
+
+Under preferences the user can select font, font color and size as well
+as transparency.
+
+==== Select Dropdown
+
+Used to control the Appearance of the data. There are three *Select*
+string types which can be picked from the dropdown: *Default*,
+*Ownship*, *Multiline*
+
+[source,code]
+----
+wxString DefaultString = _T("Ship %02A %2.4B %D   %02E %2.4F %H   SOG %.2I  COG %03J
+%02O %2.4P %R   %02S %2.4T %V   %03W  %.1X    Scale %Z");
+
+wxString OwnshipString = _T("Ship %02A %2.4B %D   %02E %2.4F %H   SOG %.2I  COG %03J");
+
+wxString MultilineString = _T("%02A %2.2B%D  %02E %2.2F%H  %.1I %03J
+\n%02O %2.2P%R %02S %2.2T%V %03W %.2X %03.a");
+----
+
+image::statsbar-prefs-default.jpg[statsbar-prefs-default]
+
+Select Dropdown - Default
+
+image::statusbar-prefs-multiline.jpg[statusbar-prefs-multiline.jpg]
+
+Select Dropdown - Multiline
+
+image::statusbar-prefs-ownship.jpg[statusbar-prefs-ownship.jpg]
+
+Select Dropdown - Ownship
+
+==== Info Button
+
+The button *Info* displays a popup window with the Code key. The allowed
+Display strings can include the following formats:
+
+For example:
+
+[source,code]
+----
+"%03.0E\"  Gives ship longitude.
+The format specifier 03.0 gives how many places to round to, and to use leading 0's etc.
+----
+
+The following are the specifier formats:
+
+[cols=",",]
+|===
+|%A |ship lat degrees
+|%B |ship lat minutes
+|%C |ship lat seconds
+|%D |ship North/South
+|%E |ship lon degrees
+|%F |ship lon minutes
+|%G |ship lon seconds
+|%H |ship East/West
+|%I |ship sog
+|%J |ship cog
+|%K |ship heading true
+|%L |ship heading magnetic
+|%O |cursor lat degrees
+|%P |cursor lat minutes
+|%Q |cursor lat seconds
+|%R |cursor North/South
+|%S |cursor lon degrees
+|%T |cursor lon minutes
+|%U |cursor lon seconds
+|%V |cursor East/West
+|%W |from ship bearing to cursor
+|%X |distance to cursor mercator
+|%Y |distance to cursor great circle
+|%Z |chart scale
+|%a |viewport orientation angle
+|%f |frames rendered per second
+|%d |Date
+|%t |Time
+|%z |Time Zone
+|%% |print a percent
+|===
+
+Sean D'Epagnier website is  http://seandepagnier.users.sourceforge.net/ where you will find a
+“Donate” button.

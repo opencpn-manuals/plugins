@@ -12,221 +12,218 @@ content:
       - manuals
       - plugins/manual
       - plugins/manual-beta
-     
-    - url: sources/shipdriver_pi
-      branches: master
-      start_path: manual/shipdriver
-      edit_url: true 
-      
-    - url: sources/otcurrent_pi    
-      branches: master
-      start_path: manual/otcurrent
-      edit_url: true
-      
-    - url: sources/photolayer_pi    
-      branches: master
-      start_path: manual/photolayer
-      edit_url: true
-
-    - url: sources/DR_pi    
-      branches: master
-      start_path: manual/dead_reckoning
-      edit_url: true
-      
-    - url: sources/watchdog_pi
-      branches: master
-      start_path: manual/watchdog
-      edit_url: true
-      
-    - url: sources/ocpn_draw_pi 
-      branches: master
-      start_path: manual/odraw
-      edit_url: true
     
-    - url: sources/radar_pi 
-      branches: master
-      start_path: manual/radar
-      edit_url: true
+    - url: .
+      branches: HEAD
+      start_path: ./sources/admiralty_tide_tables_pi/manual/admiralty
     
-    - url: sources/dashboard_tactics_pi
-      branches: mnt151-frontend2
-      start_path: manual/dash-t
-      edit_url: true
+    - url: .
+      branches: HEAD
+      start_path: ./sources/aisradar_pi/manual/ais_radar_display
     
-    - url: sources/vfkaps_pi    
-      branches: master
-      start_path: manual/vfkaps
-      edit_url: true
+    - url: .
+      branches: HEAD
+      start_path: ./sources/autopilot_route_pi/manual/autopilot_route
     
-    - url: sources/sar_pi    
-      branches: master
-      start_path: manual/sar
-      edit_url: true
+    - url: .
+      branches: HEAD
+      start_path: ./sources/Autopilot-Plugin/manual/autopilot-rm
     
-    - url: sources/aisradar_pi   
-      branches: master
-      start_path: manual/ais_radar_display
-      edit_url: true
-
-    - url: sources/vdr_pi   
-      branches: master
-      start_path: manual/vdr
-      edit_url: true
-
-    - url: sources/gecomapi_pi   
-      branches: master
-      start_path: manual/googleearth
-      edit_url: true
-
-    - url: sources/iacfleet_pi   
-      branches: master
-      start_path: manual/iacfleet
-      edit_url: true
-
-    - url: sources/launcher_pi   
-      branches: master
-      start_path: manual/launcher
-      edit_url: true
-
-    - url: sources/ocpndebugger_pi   
-      branches: master
-      start_path: manual/debugger
-      edit_url: true
-
-    - url: sources/objsearch_pi   
-      branches: master
-      start_path: manual/objsearch
-      edit_url: true
-
-    - url: sources/chartscale_pi   
-      branches: master
-      start_path: manual/chartscale
-      edit_url: true
-
-    - url: sources/projections_pi   
-      branches: master
-      start_path: manual/projections
-      edit_url: true
-
-    - url: sources/celestial_navigation_pi   
-      branches: master
-      start_path: manual/celestial_navigation
-      edit_url: true
-
-    - url: sources/plots_pi   
-      branches: master
-      start_path: manual/sweep_plot
-      edit_url: true
-
-    - url: sources/weatherfax_pi   
-      branches: master
-      start_path: manual/weatherfax
-      edit_url: true
-
-    - url: sources/climatology_pi   
-      branches: master
-      start_path: manual/climatology
-      edit_url: true
-
-    - url: sources/weather_routing_pi   
-      branches: master
-      start_path: manual/weather_routing
-      edit_url: true
-
-    - url: sources/statusbar_pi   
-      branches: master
-      start_path: manual/statusbar
-      edit_url: true
-
-    - url: sources/pypilot_pi   
-      branches: master
-      start_path: manual/pypilot
-      edit_url: true
-
-    - url: sources/rotationctrl_pi   
-      branches: master
-      start_path: manual/rotationctrl
-      edit_url: true
-
-    - url: sources/calculator_pi   
-      branches: master
-      start_path: manual/calculator
-      edit_url: true
-
-    - url: sources/otidalplan_pi
-      branches: master
-      start_path: manual/otidalplan
-      edit_url: true
-
-    - url: sources/ofc_pi
-      branches: master
-      start_path: manual/fugawi
-      edit_url: true
-
-    - url: sources/nvc_pi
-      branches: master
-      start_path: manual/nv_charts
-      edit_url: true
-
-    - url: sources/s63_pi
-      branches: master
-      start_path: manual/s63_vector_charts
-      edit_url: true
-
-    - url: sources/oesenc_pi
-      branches: master
-      start_path: manual/oeSENC
-      edit_url: true
+    - url: .
+      branches: HEAD
+      start_path: ./sources/bsb4_pi/manual/bsb4_charts
     
-    - url: sources/bsb4_pi
-      branches: master
-      start_path: manual/bsb4_charts
-      edit_url: true
-
-    - url: sources/LogbookKonni_pi   
-      branches: master
-      start_path: manual/logbook
-      edit_url: true
-
-    - url: sources/FindIt_pi   
-      branches: master
-      start_path: manual/find-it
-      edit_url: true
-
-    - url: sources/route_pi   
-      branches: master
-      start_path: manual/route_great_circle
-      edit_url: true
-
-    - url: sources/tactics_pi   
-      branches: master
-      start_path: manual/tactics
-      edit_url: true
-
-    - url: sources/polar_pi   
-      branches: master
-      start_path: manual/Polar
-      edit_url: true
-
-    - url: sources/NmeaConverter_pi
-      branches: master
-      start_path: manual/nmea_converter
-      edit_url: true
-
-    - url: sources/GPS-Odometer_pi
-      branches: master
-      start_path: manual/odometer
-      edit_url: true
-
-    - url: sources/windvane_pi
-      branches: master
-      start_path: manual/windvane
-      edit_url: true
-
-    - url: sources/rtlsdr_pi
-      branches: master
-      start_path: manual/rtlsdr
-      edit_url: true 
+    - url: .
+      branches: HEAD
+      start_path: ./sources/calculator_pi/manual/calculator
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/celestial_navigation_pi/manual/celestial_navigation
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/chartscale_pi/manual/chartscale
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/climatology_pi/manual/climatology
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/dashboard_tactics_pi/manual/dash-t
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/DR_pi/manual/dead_reckoning
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/EarthExplorer_pi/manual/EarthExplorer
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/FindIt_pi/manual/find-it
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/gecomapi_pi/manual/googleearth
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/GPS-Odometer_pi/manual/odometer
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/iacfleet_pi/manual/iacfleet
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/launcher_pi/manual/launcher
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/LogbookKonni_pi/manual/logbook
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/NmeaConverter_pi/manual/nmea_converter
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/nvc_pi/manual/nv_charts
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/objsearch_pi/manual/objsearch
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/ocpn_draw_pi/manual/odraw
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/ocpndebugger_pi/manual/debugger
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/oeSENC_pi/manual/oeSENC
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/ofc_pi/manual/fugawi
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/otcurrent_pi/manual/otcurrent
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/otidalplan_pi/manual/otidalplan
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/otidalroute_pi/manual/otidalroute
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/photolayer_pi/manual/photolayer
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/plots_pi/manual/sweep_plot
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/polar_pi/manual/polar
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/projections_pi/manual/projections
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/pypilot_pi/manual/pypilot
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/radar_pi/manual/radar
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/rotationctrl_pi/manual/rotationctrl
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/route_pi/manual/route_great_circle
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/rtlsdr_pi/manual/rtlsdr
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/s63_pi/manual/s63_vector_charts
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/SailawayNMEA_pi/manual/SailawayNMEA
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/sar_pi/manual/sar
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/shipdriver_pi/manual/shipdriver
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/statusbar_pi/manual/statusbar
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/survey_pi/manual/survey
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/tactics_pi/manual/tactics
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/TideFinder_pi/manual/TideFinder
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/TwoCanPlugIn/manual/twocan
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/UKTides_pi/manual/UKTides
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/vdr_pi/manual/vdr
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/vfkaps_pi/manual/vfkaps
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/watchdog_pi/manual/watchdog
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/weather_routing_pi/manual/weather_routing
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/weatherfax_pi/manual/weatherfax
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/windvane_pi/manual/windvane
 
 ui:
   bundle:
@@ -236,9 +233,6 @@ ui:
 output:
   dir: docs
   clean: true
-
-runtime:
-fetch: true
 
 asciidoc:
   attributes:
