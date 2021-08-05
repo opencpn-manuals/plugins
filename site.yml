@@ -10,7 +10,6 @@ content:
       edit_url: true
       start_paths:
       - manuals
-      - dev
       - plugins/manual
       - plugins/manual-beta
     
