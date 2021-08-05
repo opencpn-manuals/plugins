@@ -1,5 +1,0 @@
-name: manuals
-title: OpenCPN Manuals
-version: '5.3.1'
-nav:
-  - modules/ROOT/nav.adoc
