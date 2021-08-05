@@ -1,9 +1,0 @@
-Echo off
-Echo clean.bat
-Echo Execute from ..\build if you want to do a clean build.
-Echo This does not delete all files in \build\ and start over from config.bat
-Echo It jst does a MS VStudio "clean"
-Echo by TransmitterDan modified by rgleason
-
-cmake --build . --config release --target clean
-cmake --build . --config debug --target clean
