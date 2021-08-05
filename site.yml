@@ -9,7 +9,6 @@ content:
       branches: manual
       edit_url: true
       start_paths:
-      - manuals
       - plugins/manual
       - plugins/manual-beta
     
