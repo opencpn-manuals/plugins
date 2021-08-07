@@ -1,11 +1,11 @@
 site:
   title: OpenCPN Manuals
-  url: https://rasbats.github.io/ocpn-manuals/
+  url: https://opencpn-manuals.github.io/plugins/
   start_page:  opencpn-plugins::index.adoc
 
 content:
   sources:
-    - url: https://github.com/Rasbats/ocpn-manuals
+    - url: https://github.com/opencpn-manuals/plugins
       branches: main
       edit_url: true
       start_paths:
