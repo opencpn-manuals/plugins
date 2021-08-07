@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/calculator/0.1/calculator.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="calculator" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">calculator</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../opencpn-plugins/0.1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Projects/opencpn-manuals/plugins/sources/calculator_pi/manual/calculator/modules/ROOT/pages/calculator.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_calculator"><a class="anchor" href="#_calculator"></a>Calculator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="_images/calculator.png" alt="calculator"></span></p>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="paragraph">
+<p>This plugin is available for Linux and Windows.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Source SaltyPaws: <a href="https://github.com/SaltyPaws/calculator_pi">Github
+Calculator Plugin</a><br></p>
+</li>
+<li>
+<p>Source Rasbats (with windows):
+<a href="https://github.com/Rasbats/calculator_pi">Github Calculator muparser
+Windows fix</a><br></p>
+</li>
+<li>
+<p>Release: <a href="https://github.com/Rasbats/calculator_pi/releases">Linux and
+Windows release</a></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/calculator.html" class="bare">https://opencpn.org/OpenCPN/plugins/calculator.html</a><br></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/calculator_pi-new-finished-plugin-for-opencpn-86028.html">CF
+Calculator_pi Thread</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/plugin-calculator">Plugin-calculator</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/plugin-calculator-windows-version-178199.html">Plugin
+calculator windows version</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_goals"><a class="anchor" href="#_goals"></a>Goals</h3>
+<div class="paragraph">
+<p>This is a light weight yet powerful calculator plugin for OpenCPN which
+includes functions to solve nautical questions.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Would you like to know your hull speed?</p>
+</li>
+<li>
+<p>Increase of draft due to heel.</p>
+</li>
+<li>
+<p>More functions can be added by the author.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Key features are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Storing results in variables</p>
+</li>
+<li>
+<p>Shows historic calculations</p>
+</li>
+<li>
+<p>Full complement of nautical functions</p>
+</li>
+<li>
+<p>Screen footprint can be optimized &amp; minimized as required</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Adding formulas is easy. If your favorite nautical equation is missing,
+please let me know your equation via flyspray, and I will add it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-code hljs" data-lang="code">OpenCPN 4.2.0 and above.
+Linux or Windows</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use"><a class="anchor" href="#_use"></a>Use</h3>
+<div class="paragraph">
+<p><strong>The calculator plugin allows you to carry out all nautical
+calculations, without having to leave the OpenCPN environment. The
+scientific calculator is capable of working with, and retaining
+variables</strong>.<br>
+* When starting the plugin for the first time, go to</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/settings.png" alt="settings"></span></p>
+</div>
+<div class="paragraph">
+<p>to find the plugin tab. Click on the calculator plugin, then the “Enable” button.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Back in the OpenCPN menu the calculator icon</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/calculator.png" alt="calculator"></span></p>
+</div>
+<div class="paragraph">
+<p>brings up the calculator.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/calculator_screenshot.png" alt="calculator screenshot"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tick the “Help” tickbox to bring up a comprehensive help screen.
+Unticking the help button brings you back to the calculator only
+interface and resizes the menu to the original size.</p>
+</li>
+<li>
+<p>Enter calculations in the box and press enter or “Calculate” for
+evaluation. Press the up or down button, to retrieve historic input and
+results (max 30).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_help"><a class="anchor" href="#_help"></a>Help</h3>
+<div class="paragraph">
+<p>Type help in the calculator to get these instructions.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h3>
+<div class="paragraph">
+<p><strong>Examples</strong> of expressions that work in the calculator are: <em>(comments
+are in brackets, some results depend on other example calculations)</em>:</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hull_speed"><a class="anchor" href="#_hull_speed"></a>Hull speed:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>LWL=48 <em>(water line length in feet)</em></p>
+</li>
+<li>
+<p>vhull=1.34*LWL^(1/2) <em>(hull speed in knots)</em></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conversions"><a class="anchor" href="#_conversions"></a>Conversions:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ftm=0.3048 <em>(feet to meters)</em></p>
+</li>
+<li>
+<p>km_to_nm=0.539957 <em>(Kilometers to nautical Mile)</em></p>
+</li>
+<li>
+<p>ftm*LWL <em>(waterline length in meters)</em></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_distance_to_horizon"><a class="anchor" href="#_distance_to_horizon"></a>Distance to horizon</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>R=6378.1*1000 <em>(Radius of the earth in m)</em></p>
+</li>
+<li>
+<p>H=2.5 <em>(Height of the eye above sea-level in m)</em></p>
+</li>
+<li>
+<p>d = R * acos(R/(R + h)) <em>(Distance to horizon in m)</em></p>
+</li>
+<li>
+<p>ans*km_to_nm <em>(Distance to horizon in nm)</em></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_distance_to_lighthouse"><a class="anchor" href="#_distance_to_lighthouse"></a>Distance to lighthouse</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>H1=200 <em>(height of lighthouse in m)</em></p>
+</li>
+<li>
+<p>d1 = R*acos(R/(R + H1)) <em>(Distance to horizon in m)</em></p>
+</li>
+<li>
+<p>distance=d1+d <em>(visibility range of lighthouse in m)</em></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_useful_notes"><a class="anchor" href="#_useful_notes"></a>Useful Notes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Ans</strong> is the result of the previous calculation</p>
+</li>
+<li>
+<p><strong>Variables</strong> can be defined (e.g. myvariable=10/8*cos(dtr*90) or
+yourvariable=Ans)</p>
+</li>
+<li>
+<p>% modulus - Divides the value of one expression by the value of
+another, and returns the remainder.</p>
+</li>
+<li>
+<p>! factorial</p>
+</li>
+<li>
+<p>Sign Returns .-1 for negative numbers and 1 for positive numbers</p>
+</li>
+<li>
+<p>Factorial Variables: Pi, e</p>
+</li>
+<li>
+<p>dtr is the conversion factor from degrees to radians</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_built_in_functions"><a class="anchor" href="#_built_in_functions"></a>Built-in functions</h4>
+<div class="paragraph">
+<p>The following table gives an overview of the functions supported by the
+default implementation. It lists the function names, the number of
+arguments and a brief description.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Argc.</th>
+<th class="tableblock halign-left valign-top">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TRIGONOMETRY</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">default entry use radians e.g. sin(dtr*90) to calculate
+in degrees</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sine function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cosine function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tangens function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arcus sine function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acos</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arcus cosine function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">atan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">arcus tangens function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sinh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hyperbolic sine function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cosh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hyperbolic cosine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tanh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hyperbolic tangens function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">asinh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hyperbolic arcus sine function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">acosh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hyperbolic arcus tangens function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">atanh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hyperbolic arcur tangens function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOGARITHMIC</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">log2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logarithm to the base 2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">log10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logarithm to the base 10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">log</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logarithm to the base 10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ln</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logarithm to base e (2.71828…)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OTHER</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">exp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e raised to the power of x</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sqrt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">square root of a value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sign</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sign function -1 if x&lt;0; 1 if x&gt;0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">round to nearest integer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">abs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">absolute value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">min</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">var.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">min of all arguments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">var.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">max of all arguments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">var.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sum of all arguments</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">avg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">var.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mean value of all arguments</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_built_in_binary_operators"><a class="anchor" href="#_built_in_binary_operators"></a>Built-in binary operators</h3>
+<div class="paragraph">
+<p>The following table lists the default binary operators supported by the
+parser.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Priority</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">assignment</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&amp;&amp;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logical and</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">logical or</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">⇐</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">less or equal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;=</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">greater or equal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">!=</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">not equal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">==</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">equal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">greater than</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">less than</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">addition</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subtraction</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">multiplication</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">/</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">division</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">^</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">raise x to the power of y</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">^</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>The assignment operator is special since it changes one of its
+arguments and can only by applied to variables.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_other_operators"><a class="anchor" href="#_other_operators"></a>Other operators</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_muparser"><a class="anchor" href="#_muparser"></a>MuParser</h3>
+<div class="paragraph">
+<p><strong>muParser</strong> has built in support for the <em>if.. then.. else</em> operator. It
+uses lazy evaluation in order to make sure only the necessary branch of
+the expression is evaluated.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Meaning</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">?:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">if then else operator</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_variables"><a class="anchor" href="#_variables"></a>Variables:</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">pi, e</th>
+<th class="tableblock halign-left valign-top">well known</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ans</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">the result of the previous calculation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dtr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conversion factor from degrees to radians</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Define variables</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e.g. myvariable=10/8*cos(dtr*90) or yourvariable=ans</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">clear</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">removes results in the history and leaves defined variables in
+tact</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_user_interface"><a class="anchor" href="#_user_interface"></a>User Interface:</h3>
+<div class="paragraph">
+<p>Type these commands in the command window:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">history</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the history panel</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">showhelp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show/Hide the Help button</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">showcalculate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show/Hide the Calculate button</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">showhistory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Show/Hide the history toggle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">help</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">show the help menu</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_settingspluginspreferences"><a class="anchor" href="#_settingspluginspreferences"></a>Settings/Plugins/Preferences:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Show/Hide Calculate</p>
+</li>
+<li>
+<p>Help and History toggle buttons</p>
+</li>
+<li>
+<p>History Settings: max Results -this is the number of results that will
+be stored in the history pull down. The history pulldown will contain
+five times this value.</p>
+</li>
+<li>
+<p>Log to opencpn: Enable/Disable logging of results to opencpn logfile.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_other"><a class="anchor" href="#_other"></a>Other:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Error handling supported</p>
+</li>
+<li>
+<p>MuParser has been compiled with C++ Double for internal precision.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_compiling"><a class="anchor" href="#_compiling"></a>Compiling</h3>
+<div class="paragraph">
+<p>You have to be able to compile OpenCPN itself - Get the info
+athttp://opencpn.org/ocpn/developers_manual[Developers Manual]</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>git clone <a href="https://github.com/SaltyPaws/Calc_pi_muparser.git" class="bare">https://github.com/SaltyPaws/Calc_pi_muparser.git</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Build out of OpenCPN branch!</p>
+</div>
+<div class="paragraph">
+<p>in folder calculator_pi</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>mkdir build</p>
+</li>
+<li>
+<p>cd build</p>
+</li>
+<li>
+<p>cmake ..</p>
+</li>
+<li>
+<p>make</p>
+</li>
+<li>
+<p>sudo make installf</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After using wxformbuilder to modify the interface, use degreefix.sh, to
+facilitate the windows build. When updating the Excel file with formulas
+and conversions, convert to cpp code by running the supplied perl script</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_changes_to_version_1_6"><a class="anchor" href="#_changes_to_version_1_6"></a>Changes to version 1.6</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Added Willson Fetch Equation</p>
+</li>
+<li>
+<p>Added wind speed to Beaufort equation</p>
+</li>
+<li>
+<p>Changed to MuParser math interface</p>
+</li>
+<li>
+<p>Added History pulldown box, improved history box behaviour</p>
+</li>
+<li>
+<p>Added reporting modes (1000 separator, SI prefixes, accuracy)</p>
+</li>
+<li>
+<p>Added function button in OpenCPN toolbar, with option to switch off
+from plugin settings</p>
+</li>
+<li>
+<p>Minor tweaks and fixes</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>SaltyPaws aka Walbert Schulpen</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_support_for_diagrams"><a class="anchor" href="#_support_for_diagrams"></a>Support for Diagrams</h3>
+<div class="paragraph">
+<p>I believe the plugin supports small jpg &amp; png images for the purpose of
+better visualization. What is needed to implement this system is some
+diagrams and more knowledge about the plugin. Rgleason</p>
+</div>
+<div class="sect3">
+<h4 id="_early_executables"><a class="anchor" href="#_early_executables"></a>Early Executables</h4>
+<div class="paragraph">
+<p>Earlier compiled library files can be downloaded/uploaded here.
+<a href="https://sourceforge.net/projects/opencpnplugins/" class="bare">https://sourceforge.net/projects/opencpnplugins/</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_license"><a class="anchor" href="#_license"></a>License</h3>
+<div class="paragraph">
+<p>The plugin is licensed under the terms of GPL v2 or, at your will,
+later. The MuParser files are by Ingo Berg and is open source. For full
+licence, please see the muparser source files.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sources"><a class="anchor" href="#_sources"></a>Sources</h3>
+<div class="paragraph">
+<p><a href="https://www.movable-type.co.uk/scripts/latlong.html">Calculations
+Lat/Long</a></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

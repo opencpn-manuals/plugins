@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/otidalplan/0.1/otidalplan.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="otidalplan" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">otidalplan</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../opencpn-plugins/0.1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Projects/opencpn-manuals/plugins/sources/otidalplan_pi/manual/otidalplan/modules/ROOT/pages/otidalplan.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_otidalplan"><a class="anchor" href="#_otidalplan"></a>otidalplan</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="_images/0.png" alt="0"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aim"><a class="anchor" href="#_aim"></a>Aim</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Estimate positions along a route and final ETA using data from tidal
+current harmonics.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>OpenCPN 5.2.4 and above. For the initial download an Internet connection is needed. The plugin tarball can be downloaded and imported to OpenCPN.</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_what_the_plugin_does"><a class="anchor" href="#_1_what_the_plugin_does"></a>1. What the plugin does</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Set and rate of the tidal current from tidal current harmonics is used
+to calculate EP positions along a route and a final ETA. Courses to
+steer and speeds made good are available. Starting at different times
+the ETA for these departure times can be compared. This takes into
+account the different tidal currents likely to be experienced.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_install"><a class="anchor" href="#_2_install"></a>2. Install</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The plugin is available in the Beta catalog of the plugin manager. After
+installation the otidalplan plugin is added to the list and can be
+enabled.</p>
+</div>
+<div class="paragraph">
+<p>In the list of available plugins:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/1.png" alt="1"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.png" alt="2"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.png" alt="3"></span></p>
+</div>
+<div class="paragraph">
+<p>Ready to use:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/4.png" alt="4"></span></p>
+</div>
+<div class="paragraph">
+<p>And in the toolbar:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/5.png" alt="5"></span></p>
+</div>
+<div class="paragraph">
+<p>Showing the plugin dialog:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/6.png" alt="6"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_method"><a class="anchor" href="#_basic_method"></a>Basic method</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Attach the tidal current stations for the planned route. This is based
+on DR positions and the maximum distance from the station.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/7.png" alt="7"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/8.png" alt="8"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Enter the name for the route containing the EP. Tick the box to show
+the calculated route.</p>
+</li>
+<li>
+<p>Calculate the ETA. This creates a new route containing the EP
+positions.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/9.png" alt="9"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/10.png" alt="10"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/11.png" alt="11"></span></p>
+</div>
+<div class="sect2">
+<h3 id="_information_available"><a class="anchor" href="#_information_available"></a>Information Available</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Available from the menu:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/12.png" alt="12"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/13.png" alt="13"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_route_table"><a class="anchor" href="#_route_table"></a>Route Table</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="_images/14.png" alt="14"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/15.png" alt="15"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/16.png" alt="16"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options"><a class="anchor" href="#_options"></a>Options</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_gpx_file"><a class="anchor" href="#_gpx_file"></a>GPX file</h3>
+<div class="paragraph">
+<p>A GPX file of the EP route can be created at the same time as the new
+route is calculated. Tick the box to allow this.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/17.png" alt="17"></span></p>
+</div>
+<div class="paragraph">
+<p>The GPX can be imported into OpenCPN using the Route and Mark Manager</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/18.png" alt="18"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/19.png" alt="19"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tidal_current_harmonics"><a class="anchor" href="#_tidal_current_harmonics"></a>Tidal current harmonics</h3>
+<div class="paragraph">
+<p>The harmonics installed with OpenCPN may not cover the area you are
+navigating. Another set of harmonics can be used by selecting the folder
+containing HARMONIC.idx.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/20.png" alt="20"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adjust_accuracy"><a class="anchor" href="#_adjust_accuracy"></a>Adjust accuracy</h3>
+<div class="paragraph">
+<p>The tidal current stations associated with a route are used based on DR
+and maximum distance from that DR. By adjusting these two parameters
+greater accuracy may be achieved.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/21.png" alt="21"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_different_departure_times"><a class="anchor" href="#_use_different_departure_times"></a>Use different departure times</h3>
+<div class="paragraph">
+<p><span class="image"><img src="_images/22.png" alt="22"></span></p>
+</div>
+<div class="paragraph">
+<p>The Summary table from the menu shows the effect of using different
+departure times:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/24.png" alt="24"></span></p>
+</div>
+<div class="paragraph">
+<p>Route with EP positions can be charted from the list of routes:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/23.png" alt="23"></span></p>
+</div>
+<div class="sect3">
+<h4 id="_welcome_to_the_otidalplan_pi_wiki"><a class="anchor" href="#_welcome_to_the_otidalplan_pi_wiki"></a>Welcome to the otidalplan_pi wiki!</h4>
+<div class="paragraph">
+<p><span class="image"><img src="_images/0.png" alt="0"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_aim_2"><a class="anchor" href="#_aim_2"></a>Aim</h3>
+<div class="paragraph">
+<p>Estimate positions along a route and final ETA using data from tidal
+current harmonics.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references_2"><a class="anchor" href="#_references_2"></a>References</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_requirements_2"><a class="anchor" href="#_requirements_2"></a>Requirements</h3>
+<div class="paragraph">
+<p><code>OpenCPN 5.2.4 and above. For the initial download an Internet connection is needed. The plugin tarball can be downloaded and imported to OpenCPN.</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_1_what_the_plugin_does_2"><a class="anchor" href="#_1_what_the_plugin_does_2"></a>1. What the plugin does</h3>
+<div class="paragraph">
+<p>Set and rate of the tidal current from tidal current harmonics is used
+to calculate EP positions along a route and a final ETA. Courses to
+steer and speeds made good are available. Starting at different times
+the ETA for these departure times can be compared. This takes into
+account the different tidal currents likely to be experienced.</p>
+</div>
+<div class="paragraph">
+<p>[[2-install-1]]
+=== 2. Install</p>
+</div>
+<div class="paragraph">
+<p>The plugin is available in the Beta catalog of the plugin manager. After
+installation the otidalplan plugin is added to the list and can be
+enabled.</p>
+</div>
+<div class="paragraph">
+<p>In the list of available plugins:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/1.png" alt="1"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/2.png" alt="2"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/3.png" alt="3"></span></p>
+</div>
+<div class="paragraph">
+<p>Ready to use:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/4.png" alt="4"></span></p>
+</div>
+<div class="paragraph">
+<p>And in the toolbar:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/5.png" alt="5"></span></p>
+</div>
+<div class="paragraph">
+<p>Showing the plugin dialog: [[/images/6.png[]</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_basic_method_2"><a class="anchor" href="#_basic_method_2"></a>Basic method</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Attach the tidal current stations for the planned route. This is based
+on DR positions and the maximum distance from the station.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/7.png" alt="7"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/8.png" alt="8"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="2">
+<li>
+<p>Enter the name for the route containing the EP. Tick the box to show
+the calculated route.</p>
+</li>
+<li>
+<p>Calculate the ETA. This creates a new route containing the EP
+positions.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/9.png" alt="9"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/10.png" alt="10"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/11.png" alt="11"></span></p>
+</div>
+<div class="sect3">
+<h4 id="_information_available_2"><a class="anchor" href="#_information_available_2"></a>Information Available</h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_summary_2"><a class="anchor" href="#_summary_2"></a>Summary</h3>
+<div class="paragraph">
+<p>Available from the menu:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/12.png" alt="12"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/13.png" alt="13"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_route_table_2"><a class="anchor" href="#_route_table_2"></a>Route Table</h3>
+<div class="paragraph">
+<p><span class="image"><img src="_images/14.png" alt="14"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/15.png" alt="15"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/16.png" alt="16"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_options_2"><a class="anchor" href="#_options_2"></a>Options</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_gpx_file_2"><a class="anchor" href="#_gpx_file_2"></a>GPX file</h3>
+<div class="paragraph">
+<p>A GPX file of the EP route can be created at the same time as the new
+route is calculated. Tick the box to allow this.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/17.png" alt="17"></span></p>
+</div>
+<div class="paragraph">
+<p>The GPX can be imported into OpenCPN using the Route and Mark Manager</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/18.png" alt="18"></span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/19.png" alt="19"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tidal_current_harmonics_2"><a class="anchor" href="#_tidal_current_harmonics_2"></a>Tidal current harmonics</h3>
+<div class="paragraph">
+<p>The harmonics installed with OpenCPN may not cover the area you are
+navigating. Another set of harmonics can be used by selecting the folder
+containing HARMONIC.idx.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/20.png" alt="20"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adjust_accuracy_2"><a class="anchor" href="#_adjust_accuracy_2"></a>Adjust accuracy</h3>
+<div class="paragraph">
+<p>The tidal current stations associated with a route are used based on DR
+and maximum distance from that DR. By adjusting these two parameters
+greater accuracy may be achieved.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/21.png" alt="21"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_different_departure_times_2"><a class="anchor" href="#_use_different_departure_times_2"></a>Use different departure times</h3>
+<div class="paragraph">
+<p><span class="image"><img src="_images/22.png" alt="22"></span></p>
+</div>
+<div class="paragraph">
+<p>The Summary table from the menu shows the effect of using different
+departure times:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/24.png" alt="24"></span></p>
+</div>
+<div class="paragraph">
+<p>Route with EP positions can be charted from the list of routes:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/23.png" alt="23"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

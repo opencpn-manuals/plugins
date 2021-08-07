@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/radar/0.1/Operation.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="radar" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Radar Manual</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../opencpn-plugins/0.1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Projects/opencpn-manuals/plugins/sources/radar_pi/manual/radar/modules/ROOT/pages/Operation.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_radar_operations"><a class="anchor" href="#_radar_operations"></a>Radar operations</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_toolbar_button"><a class="anchor" href="#_the_toolbar_button"></a>The toolbar button</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">The toolbar button shows the state of the radar:</div>
+<ul>
+<li>
+<p>Radar not detected <span class="image"><img src="_images/radar_notdetected_n.png" alt="radar notdetected n"></span></p>
+</li>
+<li>
+<p>Radar standby  <span class="image"><img src="_images/radar_standby_n.png" alt="radar standby n"></span></p>
+</li>
+<li>
+<p>Radar transmitting  <span class="image"><img src="_images/radar_transmit_n.png" alt="radar transmit n"></span></p>
+</li>
+<li>
+<p>Radar windows hidden <span class="image"><img src="_images/radar_hidden_n.png" alt="radar hidden n"></span></p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">The action taken when clicking the icon depends on the current state:</div>
+<ul>
+<li>
+<p>When radar overlay is enabled but the control menu is not shown it
+shows the control menu.</p>
+</li>
+<li>
+<p>Otherwise it toggles the radar windows and overlay off (hidden) or on
+(shown).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Hiding all radar windows and overlay is useful if you are sailing into a
+highly complex situation where you want full view of the chart display
+and not have the distraction of radar windows and paints over your
+charts. The radar keeps its current settings (it keeps transmitting if
+this was on) until you un-hide (show) it again.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_opencpn_context_menu"><a class="anchor" href="#_the_opencpn_context_menu"></a>The OpenCPN context menu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are also entries in the <em>context menu</em> for the radar plugin. The
+context menu is usually accessed by clicking the right mouse button on
+the chart window.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_context_menu_1.png" alt="radar context menu 1">
+</div>
+</div>
+<div class="ulist">
+<div class="title">These are:</div>
+<ul>
+<li>
+<p>Hide radar</p>
+</li>
+<li>
+<p>Show radar</p>
+</li>
+<li>
+<p>Radar control…</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Hide or Show radar should be self-explanatory. If chart overlay is
+enabled the <em>Radar control…</em> button will show the control menu for that
+radar only. If chart overlay is disabled it will show the control
+menu(s) for one or two radars.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_ppi_windows"><a class="anchor" href="#_the_ppi_windows"></a>The PPI window(s)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Up to four classic radar displays, known as Position Plot Indicators
+(PPI) by professionals, can be shown. You can hide these if so desired
+(which makes sense only if you enabled the overlay over the chart). You
+can resize, move or dock them into the chart display. To close them you
+use the default OS button on the top of the window. To dock or undock
+them, open the radar control menu and select <em>Windows &gt; Float/Dock
+PPI</em> .</p>
+</div>
+<div class="paragraph">
+<p>The author likes to use two radar ranges with the windows docked on the
+right side of the display, one above the other. But just try it out to
+see what you like best.</p>
+</div>
+<div class="paragraph">
+<p>The PPI window has a <em>Menu</em> button that accesses the control menu. If
+you moved the PPI window since the last time you accessed the control
+menu the menu will come up immediately above the Menu button on the PPI
+window.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_control_menu"><a class="anchor" href="#_the_control_menu"></a>The control menu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Every radar has its own <em>control menu</em>. If radar overlay is enabled and
+you have hidden the control menu of the radar assigned to radar overlay,
+press the toolbar icon to access the control menu. If all else fails you
+can access this using the context menu on the chart display (<em>Right
+mouse button &gt; Radar control …</em>)</p>
+</div>
+<div class="paragraph">
+<p>The control menu only shows those options which are functional for the
+particular state of the radar, and has various sub-menus.</p>
+</div>
+<div class="sect2">
+<h3 id="_the_main_menu"><a class="anchor" href="#_the_main_menu"></a>The main menu</h3>
+<div class="paragraph">
+<p>When the radar is not transmitting the menu looks like this:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Button</th>
+<th class="tableblock halign-left valign-top">Possible values</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adjust</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change basic settings such as range, gain, clutter</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Advanced</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change advanced settings</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">View</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Picture orientation and trails</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cursor</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Information and settings driven by the cursor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Guard zones</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Controlling the guard zones</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Window</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">How the PPI or overlay is displayed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timed transmit</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Schedule radar transmission</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start/Stop radar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standby, Transmitting, Timed state</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle radar transmit state</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><em>Note:</em> Your radar may not support all shown items, in which case they
+are not shown in the menu.</p>
+</div>
+<div class="paragraph">
+<p><em>Note:</em> Unlike earlier releases, all menu items that your radar supports
+are always shown. If they cannot be enabled they are shown greyed out.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adjust_menu"><a class="anchor" href="#_adjust_menu"></a>Adjust menu</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_adjust.png" alt="Adjust menu">
+</div>
+</div>
+<div class="paragraph">
+<p>This allows you to set radar gain, sea clutter, rain clutter and range.
+Range can be set to Auto if the radar picture is overlayed on the chart.
+Depending on your radar type several auto modes are possible for sea
+clutter.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_advanced_menu"><a class="anchor" href="#_advanced_menu"></a>Advanced menu</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_advanced.png" alt="Advanced menu">
+</div>
+</div>
+<div class="paragraph">
+<p>The advanced settings allows other settings to be modified. These are
+radar specific. You can also go even deeper to the <em>Installation</em> menu,
+which allows modification of radar settings such as the heading
+correction and mount height.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_view_menu"><a class="anchor" href="#_view_menu"></a>View menu</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_view.png" alt="View menu">
+</div>
+</div>
+<div class="paragraph">
+<p>The view menu allows modification of how the radar picture is viewed.
+You can set the orientation and center of the radar picture in the PPI
+window. You can also change the refresh rate; if you want a continuously
+sweeping update increase the refresh rate. If your computer cannot keep
+up with the radar picture (high CPU or GPU load) or you are using a
+remote viewer such as VNC you can lower the refresh rate.</p>
+</div>
+<div class="paragraph">
+<p>The target trails options will make radar targets linger on the screen,
+shown in a white-grey palette. Target trails are especially useful if
+your radar is having trouble with reliable target detection. It can also
+be used as a poor-mans doppler effect: if the radar heading
+stabilization would be perfect, only moving targets will show a large
+trail.
+You can switch between <em>true</em> and <em>relative</em> trails. The latter shows the
+target&#8217;s motion relative your own course and speed.</p>
+</div>
+<div class="paragraph">
+<p>You can also modify whether AIS and ARPA triangles are shown on the PPI
+windows.</p>
+</div>
+<div class="paragraph">
+<p>Lastly, for HALO radars that support it we can enable the Doppler mode
+built into these radars; with Doppler the radar will show clearly (in
+yellow) which targets are moving more than 3 knots towards or away from
+the radar.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cursor_menu"><a class="anchor" href="#_cursor_menu"></a>Cursor menu</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_cursor.png" alt="Cursor menu">
+</div>
+</div>
+<div class="paragraph">
+<p>The PPI windows will always show where the cursor on the main chart
+window is in blue, and if you click on the chart or PPI window this
+position will be marked with a white cursor.</p>
+</div>
+<div class="paragraph">
+<p>The cursor menu will allow you to use this white cursor mark. You can
+either use it as an EBL/VRM mark, which shows an Electronic Bearing Line
+(EBL) with a range ring (Virtual Range Mark). The EBL/VRM can be used as
+a "memory" so that you can compare the current position of a target
+with an earlier position and range.</p>
+</div>
+<div class="paragraph">
+<p>The other use is that you can have the radar acquire a target that is at
+or near the cursor location. This is called MARPA - Mini Automatic Radar
+Plotting Aid. If the MARPA target is seen another 2 revolutions of the
+scanner it will be converted into an AIS-like target that is shown both
+on the PPI window (if enabled on the View menu) and the chart displays.
+The plugin supports 50 (M)ARPA targets. See Guard Zones below for ARPA.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_guard_zones_menu"><a class="anchor" href="#_guard_zones_menu"></a>Guard zones menu</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_guard_zones.png" alt="Guard zones menu">
+</div>
+</div>
+<div class="paragraph">
+<p>You can define two <em>guard zones</em> where, if targets are seen in that
+sector of the radar, they will either sound an alarm and/or be converted
+into an ARPA target.</p>
+</div>
+<div class="paragraph">
+<p>Which option you prefer is dependent on what sort of environment you are
+sailing in; in congested waters it may be advantageous to use the ARPA
+facility for a guard zone that extends ahead of the boat. This way boats
+without an AIS will automatically be converted over to ARPA targets.</p>
+</div>
+<div class="paragraph">
+<p>If you choose to have the guard zones raise an alarm you will see an
+alarm dialog box and a voice over saying ``Alarm: Targets detected''. If
+you <em>confirm</em> the alarm it will not be raised until the targets have
+disappeared from the guard zone and re-appear.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_window_menu"><a class="anchor" href="#_window_menu"></a>Window menu</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_window.png" alt="Window menu">
+</div>
+</div>
+<div class="paragraph">
+<p>Via the <em>window</em> menu you can choose whether the PPI window is shown and
+whether the radar picture should be <em>overlayed</em> over the chart window.
+For the latter to be enabled you need GNSS position and heading (or COG,
+see <em>Preferences</em>.)</p>
+</div>
+<div class="paragraph">
+<p>You can also <em>dock</em> the PPI window. This means that the PPI window is
+not shown as a separate window, but shown on the right side of the
+chart(s) on the main OpenCPN window.</p>
+</div>
+<div class="paragraph">
+<p>You can also access the <em>Info</em> window which will show automatically if
+something is wrong or a setting is insufficient. This allows you to
+check the detected radar type(s) and how many radar spokes are received.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_timed_transmit"><a class="anchor" href="#_timed_transmit"></a>Timed transmit</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/radar_menu_timed_transmit.png" alt="Timed transmit menu">
+</div>
+</div>
+<div class="paragraph">
+<p>Timed transmit is useful for magnetron radars that (a) use a lot of
+power and (b) have a limited life span. For modern non-magnetron digital
+radars this is not really useful.</p>
+</div>
+<div class="paragraph">
+<p>It allows you to set both the <em>on</em> time and the <em>standby</em> time of
+the radar. When activated the status will be shown at the <em>Control menu &gt; Start/Stopp</em> button.</p>
+</div>
+<div class="paragraph">
+<p><a href="Home.html" class="page">Back to overview Plugin radar_pi</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/celestial_navigation/0.1/celestial_navigation.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="celestial_navigation" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">celestial_navigation</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-plugins/0.1/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../opencpn-plugins/0.1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="file:///C:/Projects/opencpn-manuals/plugins/sources/celestial_navigation_pi/manual/celestial_navigation/modules/ROOT/pages/celestial_navigation.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_celestial_navigation"><a class="anchor" href="#_celestial_navigation"></a>Celestial Navigation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_plugin_to_record_sextant_sights_and_show_circles_of_position_to_obtain_a_fix"><a class="anchor" href="#_plugin_to_record_sextant_sights_and_show_circles_of_position_to_obtain_a_fix"></a>Plugin to record Sextant Sights and show Circles of Position to obtain a Fix</h3>
+<div class="paragraph">
+<p>Celestial navigation support makes it possible to establish your
+position when other means are not available. Also, users may find this
+plugin, which is still under development, useful for cross checking
+their position fixes obtained in other ways, or to to better visualize a
+celestial fix. You find the forum thread here:</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Source:
+<a href="https://github.com/seandepagnier/celestial_navigation_pi">GithubRepository</a></p>
+</li>
+<li>
+<p>Releases:
+<a href="https://github.com/rgleason/celestial_navigation_pi/releases">GithubWindows Releases</a></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/celestialnav.html" class="bare">https://opencpn.org/OpenCPN/plugins/celestialnav.html</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/celestial-navigation-plugin-redux-98748.html">Celestial Navigation Plugin Redux</a></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/four-circles-of-position.png" alt="four circles of position">
+</div>
+</div>
+<div class="sect3">
+<h4 id="_types_of_observations"><a class="anchor" href="#_types_of_observations"></a>Types of Observations</h4>
+<div class="paragraph">
+<p>Currently 3 types of observations are, more or less, supported:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Altitude</strong> (sextant measurement) – Measure the angle between the
+horizon and a heavenly body, and enter the required data in the plugin.
+Each measurement results in a Circle of Position on the sphere (COP, or
+Circle of Equal Altitude). Two or more observations result in
+intersecting COP&#8217;s from which a position fix can be obtained.</p>
+</li>
+<li>
+<p><strong>Azimuth</strong> (compass measurement) – Measure the azimuth (bearing) of a
+heavenly body. This method is hopelessly inaccurate, especially on a
+small boat in high seas. However, it is interesting for demonstration
+purposes, and possibly - with accurate digital compasses - it may be a
+viable navigation method in the future.</p>
+</li>
+<li>
+<p><strong>Lunar distance</strong> (sextant measurement) – Measure the angle between two
+heavenly bodies. The computer then attempts to determine clock error
+from this measurement, and the system time may be corrected.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_process"><a class="anchor" href="#_process"></a>Process</h3>
+<div class="sect3">
+<h4 id="_1_obtaining_sights_with_sextant"><a class="anchor" href="#_1_obtaining_sights_with_sextant"></a>1. Obtaining Sights with Sextant</h4>
+<div class="paragraph">
+<p>Standard practice in navy and merchant navy with regard to celestial
+positioning is as follows (assuming no artificial horizon is available
+on the sextant):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>During morning nautical twilight (about 15 minutes): if possible take
+6 star/planet observations.</p>
+</li>
+<li>
+<p>In the morning at about 09:00LT: take a Sun&#8217;s observation (later to be
+shifted to noon-time).</p>
+</li>
+<li>
+<p>At local noon: take a Sun&#8217;s observation (traditionally only direct
+latitude calculation from sun at meridian passage). Construct a fix for
+noon from both sun observations.</p>
+</li>
+<li>
+<p>During evening nautical twilight (about 15 minutes): if possible take
+6 star/planet observations.</p>
+</li>
+<li>
+<p>Use the Moon for an observation in above practice when situation
+permits.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Many books have been written about the art and science of celestial
+positioning (see below).</p>
+</div>
+<div class="paragraph">
+<p>This is the document containing the test data used for the example
+below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/textbook_data.pdf" alt="textbook data">
+</div>
+</div>
+<div class="paragraph">
+<p>(4 star observations).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_sight_properties_sight_tab_enter_star_data"><a class="anchor" href="#_2_sight_properties_sight_tab_enter_star_data"></a>2. Sight Properties - Sight Tab - Enter Star Data</h4>
+<div class="paragraph">
+<p>Enter Type (Altitude, Azimuth, Lunar), Celestial Body, Limb, Measurement
+and Degrees of Certainty. Degrees of Certainty is the accuracy the
+navigator assumes for the observation. A larger value results in a
+larger line width for the Circle of Position on the chart.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sight-1-degrees-minutes-uncertainty.png" alt="image::sight-1-degrees-minutes-uncertainty.png[image" width="399" height="272]">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_sight_properties_date_and_time_tab"><a class="anchor" href="#_3_sight_properties_date_and_time_tab"></a>3. Sight Properties - Date and Time Tab</h4>
+<div class="paragraph">
+<p>Enter Date (based on GMT/UT) and Time in GMT/UT, Certainty and Shift.
+Note that entering a shift removes the calculated numerical fix. This is
+due to the computation method used, which presently does not allow to
+shift COP&#8217;s. However, a position fix can be established by visually
+observing the COP&#8217;s (which are graphically shifted) on the chart.</p>
+</div>
+<div class="paragraph">
+<p>The date and time is populated using current computer time and time zone
+(verify your computer&#8217;s time), to match the Greenwich UTC Date &amp; Time.
+Times for sights are entered in UTC. Sights are likely taken
+extemporaneously with time details, unique exact time for each sight
+must be entered separately, overriding the computer time &amp; date.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sight-2-date-time-certainty-shift.png" alt="sight 2 date time certainty shift">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_dr_shift_distance_and_bearing"><a class="anchor" href="#_4_dr_shift_distance_and_bearing"></a>4. DR Shift - Distance and Bearing</h4>
+<div class="paragraph">
+<p>image::sights-dr-shift.png.detail.html[image::sights-dr-shift.png[DR
+Shift,title="DR Shift",width=400]]</p>
+</div>
+<div class="paragraph">
+<p>When a DR Shift with values &gt; 0 is entered the Circle of Position will
+shift accordingly, the “Fix” button will not compute and the Fix must be
+done manually.</p>
+</div>
+<div class="paragraph">
+<p>The DR Shift is used to “advance” a sight to the time of last sight in a
+“group of sights” which have been taken at different times (usually 1-5
+minutes apart), so that the fix can e more accurately determined.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The navigator first measures the range and bearing of the sight that
+is to be “advanced” to the last sight of the group.</p>
+</li>
+<li>
+<p>These values are then entered into DR Shift and the program simply
+adjusts the Circle of Position to the time of the last sight of the
+group.</p>
+</li>
+<li>
+<p>The actual “Fix” must be done by manual inspection and dropping a
+waypoint at the selected location and labeling it “Fix” with the date
+and time labeled.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Please see David Burch&#8217;s videos below
+<a href="celestial_navigation.html#videosmethodology_with_celestial_navigation_pi">Videos:
+Methodology_with_Celestial_Navigation_pi</a> for a much clearer
+explanation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_5_sight_properties_config_tab_display_characteristics"><a class="anchor" href="#_5_sight_properties_config_tab_display_characteristics"></a>5. Sight Properties - Config Tab - Display Characteristics</h4>
+<div class="paragraph">
+<p>Enter Transparency and Color you wish to use for the COP.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sight-3-configuration.png" alt="sight 3 configuration">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_6_sight_properties_parameters_tab"><a class="anchor" href="#_6_sight_properties_parameters_tab"></a>6. Sight Properties - Parameters Tab</h4>
+<div class="paragraph">
+<p>Enter Eye Height, Temperature, Pressure and Index Error.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sight-4-parameters.png" alt="sight 4 parameters">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_7_sight_properties_calculations_tab"><a class="anchor" href="#_7_sight_properties_calculations_tab"></a>7. Sight Properties - Calculations Tab</h4>
+<div class="paragraph">
+<p>Showing the input figures and some calculated results for the
+observation. Together with the calculated numerical position fix showed
+in the main window of the plugin, this can be used for comparison with
+results that are obtained by other calculation methods (traditional
+manual method using logarithms, traditional or direct computation
+methods as mentioned in Nautical Almanac, shortened methods using e.g.
+<a href="http://msi.nga.mil/NGAPortal/MSI.portal?_nfpb=true&amp;_st=&amp;_pageLabel=msi_portal_page_62&amp;pubCode=0013">US
+Pub. 229</a> or <a href="http://thenauticalalmanac.com/">US Pub. 249</a>, other computer
+applications).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sight-5-calculations.png" alt="sight 5 calculations">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_8_celestial_navigation_sights_circles_of_position_and_sights"><a class="anchor" href="#_8_celestial_navigation_sights_circles_of_position_and_sights"></a>8. Celestial Navigation Sights - Circles of Position and Sights</h4>
+<div class="paragraph">
+<p>A Circle of Position (COP) indicates all the positions on earth where a
+navigator may observe the same altitude of a heavenly body at a certain
+time. Using traditional methods, only the part of a COP the navigator is
+interested in is used, and replaced by a tangent line (LOP).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/four-circles-of-position.png" alt="four circles of position">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_9_four_circles_of_position_showing_dr_position_as_mob_and_fix_as_waypoint"><a class="anchor" href="#_9_four_circles_of_position_showing_dr_position_as_mob_and_fix_as_waypoint"></a>9. Four Circles of Position (showing DR position as MOB and fix as Waypoint)</h4>
+<div class="paragraph">
+<p>The MOB icon shows the initial DR position entered. The red circle
+indicates the intersection of the crossing red lines, the calculated
+position fix. Hover cursor over the crossing, right click and place a
+mark. If required, visually adjust this to get best latitude and
+longitude of the fix. In Sight Properties - Sight Tab, Degrees Certainty
+was set to 0.05.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/four-sights-entered.png" alt="four sights entered">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_methodology"><a class="anchor" href="#_methodology"></a>Methodology</h3>
+<div class="sect3">
+<h4 id="_videos_methodology_with_celestial_navigation_pi"><a class="anchor" href="#_videos_methodology_with_celestial_navigation_pi"></a>Videos: Methodology with Celestial_Navigation_Pi</h4>
+<div class="paragraph">
+<p>Videos by David Burch, <a href="https://www.starpath.com/index.htm">Starpath
+Navigation</a></p>
+</div>
+<div class="paragraph">
+<p>This computer assisted process is a little different than traditional
+techniques because Circles of Position are calculated using the Simbad
+database for stars and lunar and the sight circles and intersections are
+neatly represented in the standard Opencpn interface. David Burch
+(Starpath.com) has completed a number of very informative videos for
+Celestial_Navigation_pi. Let him step you through the process visually,
+and you will learn the differences from traditional calculations as
+well. His videos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://www.youtube.com/watch?v=S-HzQBA7Ya4">OpenCPN Cel Nav PluginPart 1</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Working with two “Altitude” sights.</p>
+</li>
+<li>
+<p>Getting a “running fix”, entering parameters.</p>
+</li>
+<li>
+<p>Plot two positions, and “advance” earlier sight by determining
+distance and bearing to last sight.</p>
+</li>
+<li>
+<p>Determine the “Fix”.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=uejmHlpnXKU">OpenCPN Cel Nav PluginPart 2</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Multiple sights taken at different times</p>
+</li>
+<li>
+<p>Advancing multiple sights to the last sight, using DR offsets.</p>
+</li>
+<li>
+<p>Evaluate sights using fit slope method to eliminate bad sights.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=nNILOsxVP7M">OpenCPN Cel Nav PluginPart 3</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Use of Azimuth</p>
+</li>
+<li>
+<p>Use of Transparency.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=PZRctmBrT8o">OpenCPN Cel Nav Plug in Part 4</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Find function computes height and bearing of any celestial body from
+a known position and time.</p>
+</li>
+<li>
+<p>Comparison with USNO data shows the azimuth values (Zn) computed with
+Find are accurate to within 0.1º, whereas the Hc values are off as much
+as 15’ or so as these were only intended for finding the body in the
+sky.</p>
+</li>
+<li>
+<p>Review of WMM plugin as a way to get accurate variation needed for
+the compass check.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2013/10/checking-your-compass-with-sun.html">Checking your Compass with the Sun</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=H5e95h0FxGI">OpenCPN Basic Chart
+Plotting Tools</a></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Also tryhttps://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:safety:odraw1.4_pi[Ocpn_Draw_pi]
+for additional drawing tools.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Other informative Videos by David Burch</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2017/10/analysis-of-celestial-navigation-sight.html">Analysis of Celestial Navigation Sight Session</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=AYnhesJKzaU">Sight Reductions by Calculator, Part 1, Find Hc</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=NyFuVl8zk2k&amp;index=2&amp;list=PLx1XvLdpAhGBpoUFY26Gc4wSK08pveThI">Sight Reduction by Calculatior, Part 2. Find Z</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=ei2c3589wxY&amp;index=4&amp;list=PLx1XvLdpAhGBpoUFY26Gc4wSK08pveThI">Ways to get accurate GMT (UTC) - 3 Ways</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/results?search_query=David+Burch+opencpn">David Burch&#8217;s other OpenCPN Videos</a></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_general_traditional_theory"><a class="anchor" href="#_general_traditional_theory"></a>General Traditional Theory</h4>
+<div class="paragraph">
+<p>A general, but very clear text on celestial positioning is available in
+the PDF file on the web site of Henning Umland:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.celnav.de/page2.htm">A Short Guide to Celestial Navigation(pdf 5mb)</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Many thanks to Henning Umland for this concise text. Naturally, also the
+information provided by the Nautical Almanac and Bowditch is of interest
+(see 'Links').</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_plugin_computation_methods"><a class="anchor" href="#_plugin_computation_methods"></a>Plugin Computation Methods</h4>
+<div class="paragraph">
+<p>The plugin is still under development and the computation methods used
+are innovative and based on vector, matrix and least squares methods.
+The author, Sean d&#8217;Epagnier, uses this innovative method to directly
+calculate a fix position. Only he knows the background and details.</p>
+</div>
+<div class="paragraph">
+<p>General information on direct computation methods can be found on pages
+277 to 285 of the Nautical Almanac 1994 (see 'Links') and in the
+following articles:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>image::cel_nav_new_computational_methods_04_2014_01_2_.pdf[New
+Computational Methods for Solving Problems of the Astronomical Vessel
+Position (pdf 1.7mb)]</p>
+</li>
+<li>
+<p>image::cel_nav_direct_fix_v44n1-2.pdf[The
+Direct Fix of Latitude and Longitude from two observed Altitudes (pdf
+1mb)]</p>
+</li>
+<li>
+<p>image::cel_nav_generic_03_2012_06.pdf[Genetic
+Algorithm for Solving Celestial Navigation Problems (pdf 435kb)]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Presently, the plugin is not capable of advancing COP&#8217;s to a common
+time. When a shift is entered, the calculated numerical position on the
+main window disappears. In this case, the fix can only be established by
+visual examination of the graphics on the screen (see also 3. Sight
+Properties - Date and Time Tab, and 8. Four Circles of Position) and a
+fix time cannot be established.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_accuracy_of_data"><a class="anchor" href="#_accuracy_of_data"></a>Accuracy of Data</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://aa.usno.navy.mil/data/docs/celnavtable.php">Celestial Navigation Data for Assumed Position and Time- Navy</a></p>
+</li>
+<li>
+<p><a href="http://www.clearskyinstitute.com/xephem/">Astronomical Software Ephemeris</a></p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_comparison_of_plugin_astronomical_data_and_nautical_almanac_data"><a class="anchor" href="#_comparison_of_plugin_astronomical_data_and_nautical_almanac_data"></a>Comparison of Plugin Astronomical Data and Nautical Almanac Data</h4>
+<div class="paragraph">
+<p>The data and formulae contained in the Nautical Almanac form a standard
+in itself. The plugin utilizes astronomical data from VOP87d (for the
+planets and indirectly for the sun), ELP2000/82 (for the moon) and
+contains Right Ascension (RA; star&#8217;s SHA = 360° - star&#8217;s RA) and
+Declination (Dec) data for the selected stars.</p>
+</div>
+<div class="paragraph">
+<p>During development of the plugin, the calculated (intermediate)
+correction values for dip, refraction, horizontal parallax, parallax in
+altitude and semi diameter, as well as the calculated position fix,
+should be compared to values that result from other computation methods.</p>
+</div>
+<div class="paragraph">
+<p>The astronomical data used in the plugin is more accurate than data
+taken from the Nautical Almanac. However, for navigation purposes the
+differences are generally not important. With regard to altitude
+reductions, so far test data indicates that the differences found in
+calculated observed altitude (Ho) are small. Measurement and reading
+errors made by the navigator will be larger. Using the present version,
+calculated fix positions can still differ from those calculated with
+traditional methods.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_accuracy_of_plugin_astronomical_data"><a class="anchor" href="#_accuracy_of_plugin_astronomical_data"></a>Accuracy of Plugin Astronomical Data</h4>
+<div class="paragraph">
+<p>The plugin astronomical data are from Jean Meeus' Astronomical
+Algorithms <a href="https://en.wikipedia.org/wiki/Jean_Meeus">Wikapedia</a>
+<a href="https://sourceforge.net/projects/astroalgorithms/">Sourceforge</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Planetary positions are based upon a truncated version of
+<a href="http://adsabs.harvard.edu/abs/1988A%26A&#8230;&#8203;202..309B">Bretagnon and Francou&#8217;s VSOP87</a> theory
+<a href="https://en.wikipedia.org/wiki/VSOP_(planets)">Wikipedia VSOP</a> . The
+estimated maximum error in the heliocentric longitude is several
+arc-seconds. Geocentric positions are accurate to within a few
+arc-seconds.</p>
+</li>
+<li>
+<p>Lunar positions are calculated using a truncated version of the
+<a href="http://adsabs.harvard.edu/full/1983A%26A&#8230;&#8203;124&#8230;&#8203;50C">lunar theory ELP-2000/82 of Chapront-Touzé and Chapront</a>. The estimated maximum error in the geocentric longitude is about 10 arc-seconds.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_accuracy_of_data_in_the_printed_nautical_almanac"><a class="anchor" href="#_accuracy_of_data_in_the_printed_nautical_almanac"></a>Accuracy of Data in the Printed Nautical Almanac</h4>
+<div class="paragraph">
+<p>The largest error that can occur in GHA and declination of any body
+other than the Sun or Moon is less than 0.2'; it may reach 0.25' for the
+Sun and 0.3' for that of the Moon. In practice it may be expected that
+only one third of the values of GHA and declination will have errors
+larger than 0.05', and less than one tenth will have errors larger than
+0.1'.</p>
+</div>
+<div class="paragraph">
+<p>The errors in the altitude corrections are nominally in the same order
+(<em>but the actual values of dip and refraction at low altitudes may
+differ considerably in extreme atmospheric conditions</em>).</p>
+</div>
+<div class="paragraph">
+<p>Depending on the type of sextant, the reading accuracy of the sextant
+can be 0.2', 0.1' or 10“. Measurement and reading errors made by the
+navigator will be larger.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_online_source_of_celestial_navigation_data"><a class="anchor" href="#_online_source_of_celestial_navigation_data"></a>Online source of Celestial Navigation Data</h4>
+<div class="paragraph">
+<p>This page allows you to obtain all the astronomical information
+necessary to plot navigational lines of position from observations of
+the altitudes of celestial bodies. Simply fill in the form below and
+click on the “Get data” button at the end of the form.</p>
+</div>
+<div class="paragraph">
+<p>A table of data will be provided giving both almanac data and altitude
+corrections for each celestial body that is above the horizon at the
+place and time that you specify. Sea-level observations are assumed.
+Very useful for study, testing and comparisons.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://aa.usno.navy.mil/data/docs/celnavtable.php">Celestial Navigation Data for Assumed Position and Time</a> usno.navy.mil</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_calculation_accuracy_improvements_to_plugin_2262017"><a class="anchor" href="#_calculation_accuracy_improvements_to_plugin_2262017"></a>Calculation &amp; Accuracy Improvements to Plugin 2/26/2017</h4>
+<div class="paragraph">
+<p>by <strong><em>Povl Abrahamsen</em></strong>, 2/26/2017</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cel-nav-accuracy.jpeg" alt="image::cel-nav-accuracy.jpeg[cel-nav-accuracy.jpg" width="300]">
+</div>
+<div class="title">Figure 1. cel-nav-accuracy.jpg</div>
+</div>
+<div class="paragraph">
+<p>While the existing plugin worked well with sun, moon, and planet sights,
+it was not treating stars correctly. This update adds corrections for
+star sights.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>It uses updated star positions from the
+<a href="http://simbad.u-strasbg.fr/simbad/">SIMBAD Astronomical Database</a>.</p>
+</li>
+<li>
+<p>Positions are corrected for proper motion and parallax.</p>
+</li>
+<li>
+<p>Positions are corrected for frame bias, precession, and nutation.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>See:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://github.com/seandepagnier/celestial_navigation_pi/pull/9">Githb Pull Request #9</a></p>
+</li>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/celestial-navigation-plugin-redux-98748-28.html#post2330218">Cruiser Forum Post #377</a></p>
+</li>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/celestial-navigation-plugin-redux-98748-27.html#post2334429">Cruiser Forum Post #383</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>New files:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>transform_star.cpp has been written by me, using equations from the US
+Naval Observatory Circular No. 179
+(<a href="http://aa.usno.navy.mil/publications/docs/Circular_179.pdf" class="bare">http://aa.usno.navy.mil/publications/docs/Circular_179.pdf</a>)</p>
+</li>
+<li>
+<p>epv00.cpp comes from the SOFA library (<a href="http://www.iausofa.org/" class="bare">http://www.iausofa.org/</a>), with
+a wrapper function written by Povl Abrahamsen.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Also we would like to acknowledge the use of the SOFA function and
+library.<br>
+See
+<a href="celestial_navigation.html#articleearth_rotation_and_equatorial_coordinates">Article:
+Earth Rotation and Equatorial Coordinates</a> below for general information
+about the error.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_summary_of_accuracy"><a class="anchor" href="#_summary_of_accuracy"></a>Summary of Accuracy</h4>
+<div class="paragraph">
+<p>We believe the current values should be usable for navigation -
+certainly within the accuracy that can be expected for a human holding a
+sextant on a vessel at sea. But clearly there are still some minor
+corrections required to get the exact same values as the USNO.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_abbreviations"><a class="anchor" href="#_abbreviations"></a>Abbreviations</h3>
+<div class="paragraph">
+<p>Some abbreviations of terms are given in the list hereunder. Not all of
+these abbreviations conform to a standard.</p>
+</div>
+<div class="paragraph">
+<p><strong>AP</strong>- Assumed Position- where you are <em>or think you are</em> based on
+Latitude and Longitude.</p>
+</div>
+<div class="paragraph">
+<p><strong>COP</strong>- Circle of Position (Circle of Equal Altitude)</p>
+</div>
+<div class="paragraph">
+<p><strong>Dec</strong>- Declination- the angle in degrees of a celestial body above or
+below the celestial equator. It&#8217;s analogous to latitude on earth.</p>
+</div>
+<div class="paragraph">
+<p><strong>DR</strong>- Dead Reckoning Position (from <em>Deduced Reckoning)</em></p>
+</div>
+<div class="paragraph">
+<p><strong>HA</strong>- Hour Angle</p>
+</div>
+<div class="paragraph">
+<p><strong>GP</strong>- Geographical Position of a heavenly body. It has two components;
+declination and GHA. <em>Dec,</em> or declination, mentioned above, is
+analogous to latitude on earth. In Western longitudes a heavenly body&#8217;s
+GHA equals the longitude of the GP. In Eastern longitudes the GP equals
+360° <em>minus</em> GHA. If at a given point in time you were at the GP of a
+celestial body it would be directly over your head- your zenith.</p>
+</div>
+<div class="paragraph">
+<p><strong>GMT/UT</strong>- Greenwich Mean Time and Universal Time. For celestial
+navigation work all observations are recorded in time and date based on
+Greenwich, England. GMT is also known as “UT”.</p>
+</div>
+<div class="paragraph">
+<p><strong>GHA</strong>- <em>Greenwich Hour Angle</em>- the angular distance in degrees between
+Greenwich (0°) and a celestial object. GHA is always measured West of
+Greenwich.</p>
+</div>
+<div class="paragraph">
+<p><strong>LHA</strong>- <em>Local Hour Angle</em>- the horizontal angular distance in degrees
+between the Ap (Assumed position) and a celestial object. It is always
+measured West from the Ap. to the celestial object.</p>
+</div>
+<div class="paragraph">
+<p><strong>LOP</strong>- Line of Position</p>
+</div>
+<div class="paragraph">
+<p><strong>MPP</strong>- Most Probable Position</p>
+</div>
+<div class="paragraph">
+<p><strong>RA</strong>- Right Ascension (star&#8217;s SHA = 360<sup>o</sup> <em>minus</em> the star&#8217;s RA)</p>
+</div>
+<div class="paragraph">
+<p><strong>SHA</strong>- Sidereal Hour Angle</p>
+</div>
+<div class="paragraph">
+<p><strong>D-R-I-P-S</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Dip</strong> of the Horizon (function of eye height)</p>
+</li>
+<li>
+<p><strong>R</strong>- Refraction (function of Ha, temperature and pressure)</p>
+</li>
+<li>
+<p><strong>IE</strong>- Index Error (= + or <em>minus</em> Index Error of sextant)</p>
+</li>
+<li>
+<p><strong>PA</strong>- Parallax in Altitude (function of HP and Ha)</p>
+</li>
+<li>
+<p><strong>SD</strong>- Semi-Diameter. One half of the angular width of the Sun or Moon.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>HP</strong>- Horizontal Parallax</p>
+</div>
+<div class="paragraph">
+<p><strong>Hs</strong>- Sextant Altitude- the initial, uncorrected, sextant measurement
+from the horizon to a celestial body. Also known as <em>Height of sextant.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Ha</strong>- Apparent Altitude= Hs <em>minus</em> Dip +or <em>minus</em> IC (Index
+Correction) Also known as <em>Apparent Height.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Ho</strong>- Observed Altitude- final corrected sextant angular measurement.
+Also known as <em>Height observed.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Hc</strong>- Computed Altitude. Also known as <em>Height computed.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Int</strong>- Intercept (=Ho + or <em>minus</em> Hc) Always subtract the smaller
+figure from the larger.</p>
+</div>
+<div class="paragraph">
+<p><strong>Z</strong>- Azimuth. Horizontal angle in degrees between True North and the
+celestial body.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_resources"><a class="anchor" href="#_resources"></a>Resources</h3>
+<div class="sect3">
+<h4 id="_article_genetic_algorithm_for_solving_celestial_navigation_fix_problems"><a class="anchor" href="#_article_genetic_algorithm_for_solving_celestial_navigation_fix_problems"></a>Article: Genetic Algorithm for Solving Celestial Navigation Fix Problems</h4>
+<div class="paragraph">
+<p>by Ming-Cheng Tsou, Ph.D., National Kaohsiung Marine University, Taiwan
+POLISH MARITIME RESEARCH 3(75) 2012 Vol 19; pp. 53-59
+10.2478/v10012-012-0031-5</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link::http_3a_2f_2fyadda.icm.edu.pl_2fyadda_2felement_2fbwmeta1.element.baztech-article-bwm4-0041-0021_2fc_2fgenetic_03_2012_06.pdf[122939.celnavalg tsau.pdf]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ABSTRACT<br>
+In this work, we employ a genetic algorithm, from the field of
+artificial intelligence, due to its superior search ability that mimics
+the natural process of biological evolution. Unique encodings and
+genetic operators designed in this study, in combination with the fix
+principle of celestial circles of equal altitude in celestial
+navigation, allow the rapid and direct attainment of accurate optimum
+vessel position. Test results indicate that this method has more
+flexibility, and avoids tedious and complicated computation and
+graphical procedures.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_article_new_computational_methods_for_solving_problems_of_the_astronomical_vessel_position"><a class="anchor" href="#_article_new_computational_methods_for_solving_problems_of_the_astronomical_vessel_position"></a>Article: New Computational Methods for Solving Problems of the Astronomical Vessel Position</h4>
+<div class="paragraph">
+<p>by Tien-Pen Hsu (1), Chih-Li Chen (2) and Jiang-Ren Chang (3)</p>
+</div>
+<div class="paragraph">
+<p>(1) Institute of Civil Engineering, National Taiwan University<br>
+(2) Institute of Merchant Marine, National Taiwan Ocean University<br>
+(3) Institute of Systems Engineering and Naval Architecture, National
+Taiwan Ocean University; E-mail: <a href="mailto:cjr@mail.ntou.edu.tw">cjr@mail.ntou.edu.tw</a><br>
+THE JOURNAL OF NAVIGATION (2005), 58, 315–335. The Royal Institute of
+Navigation, doi: 10.1017/S0373463305003188, Printed in the United
+Kingdom</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link::https_3a_2f_2fyadda.icm.edu.pl_2fbaztech_2felement_2fbwmeta1.element.baztech-341a8953-47f5-4270-937d-8e3f46892879_2fc_2f04_2014_01_282_29.pdf[JON 58(2) 315-335.pdf]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ABSTRACT<br>
+In this paper, a simplified and direct computation method formulated by
+the fixed coordinate system and relative meridian concept in conjunction
+with vector algebra is developed to deal with the classical problems of
+celestial navigation. It is found that the proposed approach, the
+Simultaneous Equal-altitude Equation Method (SEEM), can directly
+calculate the Astronomical Vessel Position (AVP) without an additional
+graphical procedure. The SEEM is not only simpler than the matrix method
+but is also more straightforward than the Spherical Triangle Method
+(STM). Due to tedious computation procedures existing in the commonly
+used methods for determining the AVP, a set of optimal computation
+procedures for the STM is also suggested. In addition, aimed at
+drawbacks of the intercept method, an improved approach with a new
+computation procedure is also presented to plot the celestial line of
+position without the intercept. The improved approach with iteration
+scheme is used to solve the AVP and validate the SEEM successfully.
+Methods of solving AVP problems are also discussed in detail. Finally, a
+benchmark example is included to demonstrate these proposed methods.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_article_the_direct_fix_of_latitude_and_longitude_from_two_observed_altitudes"><a class="anchor" href="#_article_the_direct_fix_of_latitude_and_longitude_from_two_observed_altitudes"></a>Article: The Direct Fix of Latitude and Longitude from Two Observed Altitudes</h4>
+<div class="paragraph">
+<p>by Stanley W. Gery<br>
+Neptune Power Squadron, Huntington, New York, Received April 1996,
+Revised December 1996</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link::http_3a_2f_2ffer3.com_2farc_2fimgx_2fv44n1-2.pdf[v44n1-2.pdf]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ABSTRACT<br>
+This work presents a direct method for obtaining the latitude and
+longitude of an observer from the observed altitudes of two celestial
+bodies. No assumed position or dead-reckoned position or plotting is
+required. Starting with the Greenwich hour angles, declinations, and
+observed altitudes of each pair, the latitude and longitude of the two
+points from which the observations must have been made are directly
+computed. The algorithm is presented in the paper, along with its
+derivation. Two different, inexpensive, programmable pocket electronic
+calculators were programmed to execute the algorithm, and they do it in
+under 30 s. The algorithm was also programmed to run on a personal
+computer to examine the effect of the precision of the calculations on
+the error in the results. The findings show that the use of eight
+decimal places in the trigonometric computations provides acceptable
+results.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_article_use_of_rotation_matrices_to_plot_a_circle_of_equal_altitude"><a class="anchor" href="#_article_use_of_rotation_matrices_to_plot_a_circle_of_equal_altitude"></a>Article: Use of Rotation Matrices to Plot a Circle of Equal Altitude</h4>
+<div class="paragraph">
+<p>by A. Ruiz<br>
+Industrial engineer, Navigational Algorithms<br>
+Journal of Maritime Research, Vol. VIII. No. 3, pp.51-58, 2011</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>image::cel_nav_use_of_rotation_matrices_to_plot_a_circle_of_equal_altitude.pdf[Download
+Rotation Matrices (pdf 3mb)]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ABSTRACT<br>
+A direct method for obtaining the points of a circle of equal altitude
+using the vector analysis as an alternative to the spherical
+trigonometry is presented, and a solution where celestial navigation and
+Global Navigation Satellite Systems are complementary and coexist is
+proposed.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_article_vector_solution_for_the_intersection_of_two_circles_of_equal_altitude"><a class="anchor" href="#_article_vector_solution_for_the_intersection_of_two_circles_of_equal_altitude"></a>Article: Vector Solution for the Intersection of two Circles of Equal Altitude</h4>
+<div class="paragraph">
+<p>by Andrés Ruiz González
+<a href="http://www.geocities.com/andresruizgonzalez">Navigational Algorithms</a> San Sebastián. second website:
+<a href="https://sites.google.com/site/navigationalalgorithms/papersnavigation">Navigational Algorithms</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>image::vector2cop.pdf[Vector Solution for the Intersection of two Circles of Equal Altitude (pdf
+70kb)]</p>
+</li>
+<li>
+<p>link::https_3a_2f_2f5bda2dca-a-62cb3a1a-s-sites.googlegroups.com_2fsite_2fnavigationalalgorithms_2fpapersnavigation_2fvector2cop.pdf[Vector
+Solution for the Intersection of two Circles of Equal Altitude]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ABSTRACT<br>
+A direct method for obtaining the two possible positions derived from
+two sights using the vector analysis instead the spherical trigonometry
+is presented. The geometry of the circle of equal altitude and of the
+two body fixes is analyzed, and then the vector equation for
+simultaneous sights is constructed. Also the running fix problem is
+treated. Finally the C++ source code for the algorithm is provided in an
+easy implementation, susceptible for being translated to other common
+programming language</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_article_determining_the_position_and_motion_of_a_vessel_from_celestial_observations"><a class="anchor" href="#_article_determining_the_position_and_motion_of_a_vessel_from_celestial_observations"></a>Article: Determining the Position and Motion of a Vessel from Celestial Observations</h4>
+<div class="paragraph">
+<p>by George H. Kaplan, U.S. Naval Observatory</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link:: http_3a_2f_2faa.usno.navy.mil_2fpublications_2freports_2fghk_posmo.pdf[Determine Position &amp; Motion of a Vessel (pdf)]</p>
+</li>
+<li>
+<p>See also <a href="http://aa.usno.navy.mil/publications/docs/celnav.php">Other Articles by George Kaplan</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>ABSTRACT<br>
+Although many mathematical approaches to the celestial fix problem have
+been published, all of them fundamentally assume a stationary observer.
+Since this situation seldom occurs in practice, methods have been
+developed that effectively remove the observer&#8217;s motion from the problem
+before a fix is determined. As an alternative, this paper presents a
+development of celestial navigation that incorporates a moving observer
+as part of its basic construction. This development allows recovery of
+the information on the vessel&#8217;s course and speed contained in the
+observations. Thus, it provides the means for determining, from a
+suitable ensemble of celestial observations, the values of all four
+parameters describing a vessel&#8217;s rhumb-line track across the earth:
+latitude and longitude at a specified time, course, and speed. In many
+cases, this technique will result in better fixes than traditional
+methods.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_article_earth_rotation_and_equatorial_coordinates"><a class="anchor" href="#_article_earth_rotation_and_equatorial_coordinates"></a>Article: Earth Rotation and Equatorial Coordinates</h4>
+<div class="paragraph">
+<p>Rick Fisher August 2010</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.cv.nrao.edu/~rfisher/Ephemerides/earth_rot.html" class="bare">https://www.cv.nrao.edu/~rfisher/Ephemerides/earth_rot.html</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Abstract<br>
+“By the standards of modern astrometry, the earth is quite a wobbly
+platform from which to observe the sky. The earth&#8217;s rotation rate is not
+uniform, its axis of rotation is not fixed in space, and even its shape
+and relative positions of its surface locations are not fixed. For the
+purposes of pointing a telescope to one-arcsecond accuracy, we need not
+worry about shape and surface feature changes, but changes in the
+orientation of the earth&#8217;s rotation axis are very important. ”</p>
+</div>
+<div class="paragraph">
+<p>Discusses small errors in measurements and standards due to
+perturbations of the earth. 2/28/2017</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_articlecoordinates_time_and_the_sky"><a class="anchor" href="#_articlecoordinates_time_and_the_sky"></a>Article:Coordinates, Time and the Sky</h4>
+<div class="paragraph">
+<p>Coordinate Systems for Direction<br>
+John Thorstensen, Department of Physics and Astronomy, Dartmouth
+College, Hanover, NH 03755</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>link::http_3a_2f_2fwww.dartmouth.edu_2f_ast15_2fnotes_2fcoords.pdf[Coordinates, Time and the Sky]</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This subject is fundamental to anyone who looks at the heavens; it is
+aesthetically and mathematically beautiful, and rich in history…</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_book_a_short_guide_to_celestial_navigation"><a class="anchor" href="#_book_a_short_guide_to_celestial_navigation"></a>Book: A Short Guide to Celestial Navigation</h4>
+<div class="paragraph">
+<p>Copyright © 1997-2011 Henning Umland; PDF file can be found on this page
+on his web site:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.celnav.de/page2.htm" class="bare">http://www.celnav.de/page2.htm</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.3 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, no Front-Cover Texts and no Back-Cover Texts. A copy
+of the license is included in the section entitled “GNU Free
+Documentation License”.<br>
+Revised October 1st, 2011, First Published May 20th, 1997</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_book_the_sextant_handbook"><a class="anchor" href="#_book_the_sextant_handbook"></a>Book: The Sextant Handbook</h4>
+<div class="paragraph">
+<p>Copyright © 1986, 1992 Bruce A. Bauer<br>
+International Marine<br>
+ISBN 0-07-005219-0</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.amazon.com/The-Sextant-Handbook-Bruce-Bauer/dp/0070052190">Amazon
+web site: The Sextant Handbook, Adjustment, Repair, Use and History -
+2nd Edition</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Sextant Handbook is dedicated to the premise that electronic
+navigation devices, while too convenient to disregard, are too
+vulnerable to rely on exclusively. The book is designed to make beginner
+and expert alike conversant with this most beautiful and and functional
+of the navigator&#8217;s tools.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_blog_most_likely_position_from_3_lops"><a class="anchor" href="#_blog_most_likely_position_from_3_lops"></a>Blog: Most Likely Position from 3 LOPs</h4>
+<div class="paragraph">
+<p>by Richard E. Rice and David Burch
+(<a href="https://www.starpath.com/celestial/celestial_title.htm">Starpath
+Navigation</a>)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2016/07/most-likely-position-from-3-lops.html">Most
+likely position from 3 LOPs</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This is an update of work done originally in 2012. We have used it in
+our classes but not published it. We revive it here with new examples
+and free apps for computation and experimentation with the solution.
+Details of the derivations are published in another format. The
+derivation applies to n LOPs with random and systematic variances. This
+example is three only, addressing the navigator&#8217;s famous “cocked hat”
+problem.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_online_vanderbuilt_astronavigation_course"><a class="anchor" href="#_online_vanderbuilt_astronavigation_course"></a>Online: Vanderbuilt AstroNavigation Course</h4>
+<div class="paragraph">
+<p><a href="https://my.vanderbilt.edu/astronav/">Vanderbuilt AstorNavigation Online Course</a> <a href="https://my.vanderbilt.edu/astronav/" class="bare">https://my.vanderbilt.edu/astronav/</a>
+<a href="https://my.vanderbilt.edu/astronav/review/">Supplemental Page</a></p>
+</div>
+<div class="paragraph">
+<p>This free and open to the public, online course is made possible by The
+Blended &amp; Online Learning Design (BOLD) Fellows Program and is hosted by
+Vanderbilt University. The BOLD Fellows program allows graduate
+student-faculty teams to create course materials in STEM subject areas
+rooted in good course design principles which benefit from the online
+content delivery.</p>
+</div>
+<div class="paragraph">
+<p>This course serves to address the lack of widely-available instruction
+in astronavigation. Specifically targeted here are the steps of
+performing a sight reduction to obtain a terrestrial position using this
+technique. These steps are explicitly illustrated after a brief overview
+provides a solid context for their relevance. Difficult concepts such as
+plotting on a navigational chart and the complexities of using of
+navigational publications should be better served through this online
+content delivery.</p>
+</div>
+<div class="paragraph">
+<p>Content created by: David D. Caudel, PhD. Candidate, Physics, Vanderbilt
+University</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_online_stellarium_astronomy_software"><a class="anchor" href="#_online_stellarium_astronomy_software"></a>Online: Stellarium Astronomy Software</h4>
+<div class="paragraph">
+<p><a href="https://stellarium.org/">Stellarium Astronomy Software</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://stellarium-web.org/">Stellarium Web based StarFinder</a> Excellent web browser app.</p>
+</div>
+<div class="paragraph">
+<p>Stellarium is a free open source planetarium for your computer. It shows
+a realistic sky in 3D, just like what you see with the naked eye,
+binoculars or a telescope. It is being used in planetarium projectors.
+Just set your coordinates and go.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_celestial_navigation_links"><a class="anchor" href="#_celestial_navigation_links"></a>Celestial Navigation links</h4>
+<div class="paragraph">
+<p>In addition to the excellent <a href="celestial_navigation.html#methodology">OpenCPN Celestial Navigation
+videos under "Methodology" by David Burch</a> his Starpath Navigation websites have a considerable treasure trove for learners:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.starpath.com/">Starpath Navigation: Online Courses, Books &amp; Software</a></p>
+</li>
+<li>
+<p><a href="https://www.starpath.com/catalog/courses/courses_index.htm">Starpath Navigation: Online Home Study: Celestial Navigation</a></p>
+</li>
+<li>
+<p><a href="https://www.starpath.com/catalog/books/1887.htm">Starpath Navigation: Book: Celestial Navigation 2nd Edition ..a best seller</a></p>
+</li>
+<li>
+<p><a href="https://www.starpilotllc.com/">StarPilot Programs: Celestial Navigation and Piloting: PC, Iphone, Ipad, TI89T calculator</a></p>
+</li>
+<li>
+<p><a href="https://thenauticalalmanac.com">TheNauticalAlmanac.com</a> An extensive source for celestial navigation. Nautical Almanac PDF&#8217;S and other tools.</p>
+</li>
+<li>
+<p><a href="https://www.thenauticalalmanac.com/Pub.%20No.%20249.html">Pub. No. 249</a>- (organized for individual latitudes- Volumes 1, 2, 3 Epoch 2020)</p>
+</li>
+<li>
+<p><a href="https://thenauticalalmanac.com/Pub.%20No.%20229.html">Pub. No. 229</a>- (organized for individual latitudes- Volumes 1 through 6)</p>
+</li>
+<li>
+<p><a href="https://thenauticalalmanac.com/2017_Bowditch-_American_Practical_Navigator.html">Bowditch 2017</a> (Organized for easy Chapter download)</p>
+</li>
+<li>
+<p><a href="https://friendsofthevigilance.org.uk/Astron/Astron.html">Astron</a> -Find Celestial Bodies: Enter lat,lon,time and date and then go to Planner tab at the bottom you will get a list of the bodies, Hc and Zn.</p>
+</li>
+<li>
+<p><a href="http://www.celnav.de/page4.htm">Cool Celestial Navigation Links</a> (on the web site of Henning Umland)</p>
+</li>
+<li>
+<p><a href="http://reednavigation.com/files/Nautical-Almanac-1994.pdf">Nautical Almanac 1994.pdf</a> (large download of 140 Mb from the web site of Reed Navigation)</p>
+</li>
+<li>
+<p><a href="https://sites.google.com/site/navigationalalgorithms/">Navigational Algorithms</a> (web site of Andres Ruiz)</p>
+</li>
+<li>
+<p><a href="https://sites.google.com/site/navigationalalgorithms/papersnavigation">Papers on Advanced Navigation</a> (web site of Andres Ruiz)</p>
+</li>
+<li>
+<p>link::supplementary_software/celestial_navigation.html[Supplementary celestial software on OpenCPN web site] (by Andres Ruiz)</p>
+</li>
+<li>
+<p><a href="http://www.siranah.de/html/fr_sail.htm">Erik&#8217;s Nautical Web Pages</a> (website of Erik de Man)</p>
+</li>
+<li>
+<p><a href="http://www.seasources.net/celestial_navigation.htm">Online Study of Celestial Navigation</a> (e-learning via web site of Seasources.net)</p>
+</li>
+<li>
+<p><a href="http://www.backbearing.com/index.html">Backbearing Astronavigation</a></p>
+</li>
+<li>
+<p><a href="http://fer3.com/arc/">NavList</a></p>
+</li>
+<li>
+<p><a href="http://www.fer3.com/arc/navbooks2.html">Bowditch 1995</a> (but also other, historical, navigation books online)</p>
+</li>
+<li>
+<p>link::TimeAndNavigation/FutureOfCelestialNavigation_Steve.Bell.pdf[UKHO Future of Celestial Navigation]</p>
+</li>
+<li>
+<p><a href="http://digitalcommons.odu.edu/cgi/viewcontent.cgi?article=1040&amp;context=ots_masters_projects">Future of Celestial Navigation</a> (pdf; <strong><em>also points out the vulnerability of GPS</em></strong> )</p>
+</li>
+<li>
+<p><a href="http://www.naval-technology.com/features/featurecelestial-navigation-ancient-craft-reinstated-as-cyber-warfare-looms-large-4809513/">Celestial Navigation in the Navy</a></p>
+</li>
+<li>
+<p><a href="http://www.navigation-spreadsheets.com/">Interactive Spreadsheets</a></p>
+</li>
+<li>
+<p><a href="http://aa.usno.navy.mil/data/docs/celnavtable.php">Celestial Navigation Data for Assumed Position and Time</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_test_data_examples"><a class="anchor" href="#_test_data_examples"></a>Test Data: Examples</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>image::textbook_data.pdf[Example worksheet] (observation of 4 stars for fix calculation)</p>
+</li>
+<li>
+<p>image::nautical_almanac_alt_reduction.pdf[Alternative worksheet] (observation of Sun, Moon, Venus and Polaris for altitude
+reduction only)</p>
+</li>
+<li>
+<p><a href="http://www.mediafire.com/file/0c13tih7hm1pdhq/Celestial+Navigation+Example.zip">CelestialNavigation</a> (Problem, solution with Andres program, import GPX into
+Opencpn. by Andres Ruiz)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We should thank Sean who has advanced the work of others admirably, and NAV for his technical review of the plugin, his knowledge, and his generous assistance in preparing this documentation. Rick.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_kubeks_sights_to_test_accuracy_of_the_plugin"><a class="anchor" href="#_kubeks_sights_to_test_accuracy_of_the_plugin"></a>Kubek&#8217;s Sights to test Accuracy of the Plugin</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/astro_capture_all_17_sights.png" alt="]">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/my_astro_sights.xml.doc" alt="Sights.xml File">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/my_astro_sight_2017.txt.doc" alt="My Astro Sight 2017">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/track_with_astro.zip" alt="Track with Sighting Waypoints">
+</div>
+</div>
+<div class="paragraph">
+<p>Please remove ”.doc“ and “my_astro_” from “my_astro_sights.xml” and place in your programdata/opencpn/plugins/celestial_navigation/ directory. Also please remove ”.doc“ from “my_astro_sight_2017.txt.doc”.</p>
+</div>
+<div class="sect4">
+<h5 id="_kubeks_notes"><a class="anchor" href="#_kubeks_notes"></a>Kubek&#8217;s Notes</h5>
+<div class="paragraph">
+<p>'Mer Pass' is Meridian passages of the Sun (LL) or The Noon Sight (RYA Astronavigation Chapter 5).</p>
+</div>
+<div class="paragraph">
+<p>All my sights are NOT in the same time so you need to do “running fix”(maybe somebody can improve this plugin to have build in drawing “running fix”). For all 17 sights, I first calculated on paper during passage using Sight Reduction Tables + Almanac for 2017 and to compere it, I do it again using Long Term Almanac 2000-2050 - Kolbe (which isgreat). Lastly I put my sight into plugin to check it and it looks OK. Same as my paper work (except Mer Pass).</p>
+</div>
+<div class="paragraph">
+<p>What I would like to see as an option to this plugin is “Meridian passage of the Sun”. I used those sight as Sun LL in the plugin but it is NOT as precise as could be (Astro17 - I have on the paper 18°10&#8217;N [on GPS it was 18°10,6&#8217;N] - plugin draw circle in 18°12.9&#8217;N - the reason is that time of the 'Mer Pass' of the Sun is very difficult to measure precisely).</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testing_armchair_testing_of_celestial_navigation"><a class="anchor" href="#_testing_armchair_testing_of_celestial_navigation"></a>Testing: Armchair testing of Celestial Navigation</h4>
+<div class="sect4">
+<h5 id="_a_simplified_example"><a class="anchor" href="#_a_simplified_example"></a>A Simplified Example</h5>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The menu selection <strong>Sight Highlighted &gt; Edit &gt; Sight &gt; FIND</strong> is used to help find the Altitude, Azimuth or the celestial bodies, and currently does not calculate any of the Parameter corrections. Indeed, these calculations would have to be the mathmatical reverse of those found in the file sightdialog.cpp (Lines 151-159) and would have to be done in reverse order. The reason this is important, is if you use this armchair method, the circles of position will not be exact, so your fix will not be as accurate as if you actually take a sight.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>We are going to use the all the same times and locations for the sights. Everything that can be set the same will be.</p>
+</div>
+<div class="paragraph">
+<p><strong>Simplification: Parameters that are always the same:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Clock Offset =0</p>
+</li>
+<li>
+<p>Time: Boston Time ( UTC-5): Oct 10, 2017, 13:00 so UTC 10/10/17 18:00</p>
+</li>
+<li>
+<p>DR Shift: Distance=0 Bearing=0</p>
+</li>
+<li>
+<p>Parameters: Eye height=2.0 m Temp 10 c, Pressure=1010, Index Error 0
+min</p>
+</li>
+<li>
+<p>Latitude: 42.35, Longitude to -71.1</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>What is different:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Using “Find” and Altitude set for the Star and enter the Lat/Long above:</p>
+</li>
+<li>
+<p>Star - Altitude Entered</p>
+</li>
+<li>
+<p>Alkaid 79.501993</p>
+</li>
+<li>
+<p>Kochab 58.133196</p>
+</li>
+<li>
+<p>Arcturus 66.507224</p>
+</li>
+<li>
+<p>Sun 36.888867</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>I suppose I should go up to the rooftop to use my sextant and learn how to take sights again. But that is not the purpose here. We want to check Celestial_Navigation_pi. So this an armchair method that I think may be ok using the “Find” Button. (Short Answer: I think the problem was the default setting of “Clock Offset: -10000 seconds”! This should be set at default=0 IMHO)</p>
+</div>
+<div class="paragraph">
+<p>Here is a sample test</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/sights.xml.doc" alt="sight.xml.doc">
+</div>
+</div>
+<div class="paragraph">
+<p>file that you can use if you would like. Remove the ”.doc“ please. You can rename your own sights.xml file for reuse later, and load this one….for Windows Users this file is in <em>C:\ProgramData\opencpn\plugins\celestial_navigation</em>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_process_2"><a class="anchor" href="#_process_2"></a>Process</h5>
+<div class="paragraph">
+<p>1. In OpenCPN with Celestial_Navigation_pi “Enabled”, first
+<strong>Locate the Boat</strong>!<br>
+2. The <strong>Own Boat</strong> location is used for the Sight &gt; “Find” function.
+“<strong>Find</strong>” will be used to get '<em>altitude</em>' or '<em>azimuth</em>' for a given
+<em>celestial body</em>, at <em>the boat&#8217;s location or a location you entered</em> at
+a <em>UTC time</em>.<br>
+3. Right Click, Drop a waypoint and then Right click on WP, pick
+Properties set lat 42.35 long -71.10 Boston,Ma<br>
+4. Try to Right-click “<strong>Move the boat</strong>” to the exact location of the
+waypoint. (I would really appreciate a Right-click “Move to lat\long”
+feature.<br>
+5. <strong>Clock Offset</strong> Button. Check that Clock Offset = “0” 6. In Cel_Nav
+Pick “<strong>New</strong>“<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-03-time.jpg" alt="cn 03 time">
+</div>
+</div>
+<div class="paragraph">
+<p>7. Time Tab: Boston Time ( UTC-5): Oct 10, 2017, 13:00 so UTC
+10/10/17 18:00</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-04-drshift.jpg" alt="cn 04 drshift">
+</div>
+</div>
+<div class="paragraph">
+<p>8. DR Shift: Distance=0 Bearing=0</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-05-config.jpg" alt="cn 05 config">
+</div>
+</div>
+<div class="paragraph">
+<p>9. Config; Set color wanted.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-06-parameters.jpg" alt="cn 06 parameters">
+</div>
+</div>
+<div class="paragraph">
+<p>10. Parameters; Eye height=2.0 meters; Temp 10 c.; Pressure=1010;
+Index Error 0 min. Click Set as Defaults.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-07-sight-sun.jpg" alt="cn 07 sight sun">
+</div>
+</div>
+<div class="paragraph">
+<p>11. <strong>Sight Tab</strong>: Type=Altitude; <strong>Celestial Body=Sun</strong>; Limb=Lower;
+then pick “<strong>Find</strong>“<br>
+12. Make sure to change Latitude: 42.35, Longitude to -71.1 (Would very
+much like to Right Click &gt; Move Boat Lat/Long!)<br>
+13. Read Altitude of Sun on 10/10/17 UTC 1800 = 36.888867, Select
+“Done”<br>
+14. Enter “<strong>Degrees</strong>” 36.888867, make the Minutes 0. Hit <strong>OK</strong>.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-08-sight-arcturus.jpg" alt="cn 08 sight arcturus">
+</div>
+</div>
+<div class="paragraph">
+<p>16. <strong>Sight Tab</strong>:Then enter another Type= Altitude <strong>Celestial
+Body=Arcturus</strong> Limb=Lower, check that the Time, DR Shift, Config are the
+same. Hit Find.<br>
+17. Enter Lat=42.35 Long=-71.1 See Altitude of Arcturus UTC 10/10/17
+18000 is 66.507224 Hit <strong>Done</strong>.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-09-sight-arturus-entered.jpg" alt="cn 09 sight arturus entered">
+</div>
+</div>
+<div class="paragraph">
+<p>18. Enter Degrees=66.507224, make Minutes=0. Hit <strong>OK</strong>.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-10-sight-arcturus-calc.jpg" alt="cn 10 sight arcturus calc">
+</div>
+</div>
+<div class="paragraph">
+<p>15. Arcturus Calculation Page (Printable)</p>
+</div>
+<div class="paragraph">
+<p>19. Found <em>“<strong>Clock Offset</strong>”= -10000 or something</em>, set it at “0”
+then screwed around for awhile checking other things. <em>Sights changed
+position, better…</em> <strong>This was definitely a problem from earlier!</strong><br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-11-sight-kochab.jpg" alt="cn 11 sight kochab">
+</div>
+</div>
+<div class="paragraph">
+<p>20. <strong>Sight Tab</strong>:Then enter another Type= Altitude <strong>Celestial
+Body=Kochab</strong> Limb=Lower, check that the Time, DR Shift, Config are the
+same. Hit Find.<br>
+21. Enter Lat=42.35 Long=-71.1 See Altitude of Kochab UTC 10/10/17 18000
+is 58.133196 Hit <strong>Done</strong>.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-12-sight-kochab-calc.jpg" alt="cn 12 sight kochab calc">
+</div>
+</div>
+<div class="paragraph">
+<p>22. Enter Degrees=58.133196, make Minutes=0. Hit <strong>OK</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-13-fix1-42nm.jpg" alt="cn 13 fix1 42nm">
+</div>
+</div>
+<div class="paragraph">
+<p>23. <strong>Fix</strong> Then find Fix. The fix is 41 nm off. To many circles
+east to west.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-14-sight-alkaid.jpg" alt="cn 14 sight alkaid">
+</div>
+</div>
+<div class="paragraph">
+<p>24. <strong>Sight Tab</strong>:Pick “New” and set <strong>Celestial Body=Alkiaid</strong>.
+Check all Tabs set correctly. Pick “<strong>Find</strong>“<br>
+25. Enter Lat=42.35 Long=-71.1 See Altitude of Alkaid UTC 10/10/17 18000
+is 79.501993 Hit <strong>Done</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-15-fix2-32nm.jpg" alt="cn 15 fix2 32nm">
+</div>
+</div>
+<div class="paragraph">
+<p>26. <strong>Fix</strong> Hit Fix new red X draw and it is 31 nm away. Better.<br>
+27 <strong>Turn off the Sun</strong> as it is the worst sighting compared to the other
+3 by clicking on the “eye”. Better.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/cn-16-fix3-8nm-sun-off.jpg" alt="cn 16 fix3 8nm sun off">
+</div>
+</div>
+<div class="paragraph">
+<p>28. <strong>Fix</strong> Hit Fix and new red X drawn and it is <strong>8nm away</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/fix_42-21.1_-71-6.1.jpg" alt="fix 42 21.1  71 6.1">
+</div>
+</div>
+<div class="paragraph">
+<p>image::sights.xml.rick2.doc[Associated</p>
+</div>
+<div class="paragraph">
+<p>Sights.xml File -take .rick2.doc off please]</p>
+</div>
+<div class="paragraph">
+<p>29. Later added more sights and selected the 4 best ones and hit
+<strong>Fix</strong> and got about .6nm away.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The altitude &amp; azimuth given with the “FIND” button is without the
+Parameter&#8217;s Tab corrections, so it will not be as accurate as an actual
+Sight.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
