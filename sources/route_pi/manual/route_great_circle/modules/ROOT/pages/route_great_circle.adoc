@@ -1,0 +1,28 @@
+indexmenu_n_4
+
+== Great Circle Route
+
+=== Links
+
+* Source: https://github.com/SaltyPaws/route_pi[Github Repository] +
+* Download: https://opencpn.org/OpenCPN/plugins/route.html[Download
+Page] +
+* Cruiser's Forum:
+http://www.cruisersforum.com/forums/showthread.php?p=1686937[Route_pi
+Discussion Thread]
+
+=== Route Plugin
+
+“Salty Paws” route plugin handles much more than Great circles,
+introduced here.
+
+image:../../../manual/route_plugin.png[image,width=500,height=415]
+
+The plugin has a few features not present in the built-in tool. It can
+calculate a composite route, and the distance between the waypoints can
+be set by the user. The end result, however, is a “gpx” file that is
+exported, and then imported into OpenCPN via the Route Manager.
+
+image:../../../manual/gc-comp.png[image,width=700,height=218]
+
+A Great-circle from Cook Strait to Cape Horn limited by 60° S

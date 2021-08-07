@@ -1,0 +1,76 @@
+== FUGAWI Closed Down.
+
+Early November 2018 Fugawi published this note on their web-site:
+
+===== Downloadable charts sales available ONLY until +
+November 30, 2018
+
+=== 
+
+As of Friday, November 30, 2018 Fugawi.com will no longer sell
+downloadable charts, renewals, or content for use with navigation
+software and apps.
+
+For those who have existing subscriptions the site will be operational
+until December 31, 2019 and your Fugawi.com account will remain
+accessible.
+
+The https://fugawi.com/knowledge_base[Fugawi.com Knowledge Base]
+containing frequently asked questions and
+https://fugawi.com/contact[customer support] will also still be
+available.
+
+Thank you to all of our loyal customers for their patronage over the
+years!
+
+== Fugawi Charts, no longer available.
+
+The Fugawi Charts plug-in gives access to license the broad raster chart
+portfolio offered by Fugawi for all platforms supported by OpenCPN,
+provided that you bought them before November 30, 2018. No more updates
+available. +
+You will find here charts from editors like NV, Delius-Klasing,
+Solteknik, BlueLatitude, Explorer charts and more
+
+=== Links
+
+Source: https://github.com/bdbcat/ofc_pi[Github Repository] +
+Download: https://opencpn.org/OpenCPN/plugins/fugawi.html[Website
+Download] +
+Forum:
+http://www.cruisersforum.com/forums/f134/fugawi-charts-plugin-for-opencpn-201011.html[Fugawi
+Thread] +
+Website: https://fugawi.com
+
+=== Windows / Mac / Linux
+
+image::fugawi-nv-se-cuba.png[]
+
+NOTE: _The following requires online internet access!_
+
+*1.* Download and install the
+https://opencpn.org/OpenCPN/plugins/fugawi.html[FugawiCharts] plugin
+(only for OpenCPN 4.8.4 version and above). If you have already the
+Fugawi plugin installed, update to the latest version.
+
+*2.* Go to OpenCPN, _Options → Plugins → Fugawi Charts_ and enable it.
+
+*3.* At http://fugawi.com[Fugawi.com] license the chart sets you are
+interested in. Remember your access data to the Fugawi shop (email and
+password), you will need them later.
+
+*4.* Go back to OpenCPN, _Options → Charts → Fugawi charts_ tab and
+press _Refresh Chart List_.
+
+*5.* Login with your Fugawi shop access data.
+
+*6.* You will see the list of chart sets you have licensed. Select the
+chart set you want to work with by clicking on it. Assign it to your
+system, download and install as guided by the plug-in.
+
+image::step6-refresh.png[]
+
+* You will find https://fugawi.com/store?device_model_id=25[List of
+OpenCPN Fugawi Charts]
+* You will find additional information in the form of
+https://fugawi.com/knowledge_base[Fugawi.com FAQs]

@@ -1,0 +1,97 @@
+
+== EarthExplorer
+
+New legacy plugin to drive Google Earth (GE).
+
+image::plugin_icon.png[]
+
+image::plugin_view.jpg[]
+
+In addition to driving a simulated vessel across the chart of OpenCPN
+the vessel can be displayed on Google Earth. The plugin controls the GE
+camera position. The autopilot can be used. A sample GPX is included.
+This is a route through the new locks at the southern end of the Panama
+Canal. The default model to drive is a panamax container ship.
+
+*Plugin Install*
+
+Install the plugin in the normal way for a legacy plugin.
+
+*Extra requirements*
+
+At the moment the Google Chrome Web Server extension is used to serve
+the KML files used by GE. Chrome is cross-platform and can be used on
+MacOSX, Linux and Windows.
+
+* Install Google Chrome (if not already installed)
+* Start Chrome
+* Add the webserver extension
+* Start the webserver. After this the Chrome Browser can be shut down.
+It does not have to be the default browser
+
+On first starting to drive with EarthExplorer the files to link with GE
+are copied to the GetpPrivateApplicationDataLocation() directory. On
+Windows this will be similar to **C:_pi* . On Linux it will be like
+*home/.opencpn/plugins/EarthExplorer_pi/data*.
+
+If not already installed download and install Google Earth Pro:
+https://www.google.com/earth/download/gep/agree.html
+
+Not sure if the version available from Paul Higgins is compatible.
+
+== Setting up
+
+*Start the Chrome Web Server*
+
+It displays with a button to choose the default folder. Select the
+GetpPrivateApplicationDataLocation() folder mentioned above.
+
+*Start OpenCPN*
+
+Start your OpenCPN and enable EarthExplorer. Start the plugin to test
+the drive function is working. Very similar to ShipDriver (!!!). Testing
+will have created a `placemark.kml' file in the
+GetpPrivateApplicationDataLocation() folder along with the model file
+`container.dae'. Another file is also copied there … `link.kml'. This
+provides the network link with GE.
+
+*Start Google Earth*
+
+*File->Open* and select `placemark.kml' from the same folder as you set
+up in the Chrome webserver. * GE should fly to the location of your
+vessel. You should see the model in the centre of the GE display. * A
+place called `model' will have been added to GE `Temporary Places'.
+
+*File->Open* and select `link.kml'. This will add a place `Earth
+Explorer' to `Temporary Places'. One of the contents of this place is
+`model'.
+
+Start driving the vessel in OpenCPN. You should see the model moving
+across the screen. If you can still see the model that was dropped when
+you opened `placemark.kml' you can de-select and delete that place, as
+it is no longer needed.
+
+Select the `3D Buildings' layer in GE if you want to see models. These
+show the bridges at the southern end of the Panama Canal.
+
+Press `Camera' if you want to zoom in or pan/tilt the display in GE.
+
+Using Options->Ship the `Ship icon type' can be changed to `real scale
+vector'. A panamax container ship has length 292m, beam 30m. GPS is
+approx 270m from the bow and midships.
+
+=== Closing Google Earth
+
+*Important*. Do not save the temporary places when you close GE. You
+need to repeat the startup procedure listed above when you open GE
+again.
+
+== Enjoy your toy
+
+Many bugs remain. Pleae PM me if you see anything that needs fixing.
+
+If you have other GPX files for interesting pilotages or other ship
+models please PM me.
+
+https://www.cruisersforum.com/forums/showthread.php?p=3304453#post3304453[Announcement
+on the Cruisers Forum]

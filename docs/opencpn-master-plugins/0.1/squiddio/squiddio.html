@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://rasbats.github.io/ocpn-manuals/opencpn-master-plugins/0.1/squiddio/squiddio.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://rasbats.github.io/ocpn-manuals"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="opencpn-master-plugins" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">OpenCPN Plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Included_plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">grib_weather</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">chart_downloader_tab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AIS / Radar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../ais_radar_display/0.1/ais_radar_display.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../radar/0.1/Home.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../rtlsdr/0.1/rtlsdr.html">RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../oesenc/0.1/oesenc.html">oeSENC</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../fugawi/0.1/fugawi.html">Fugawi (deprecated)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../vfkaps/0.1/vfkaps.html">VfKaps - VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../rotationctrl/0.1/rotationctrl.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../chartscale/0.1/chartscale.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../objsearch/0.1/objsearch.html">objsearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../projections/0.1/projections.html">projections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Logs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../dash-t/0.1/dash-t.html">dash-t</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../logbook/0.1/logbook.html">logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../find-it/0.1/find-it.html">find-it</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../vdr/0.1/vdr.html">vdr</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../nmea_converter/0.1/nmea_converter.html">NMEA Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="squiddio.html">Squiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../googleearth/0.1/googleearth.html">googleearth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../route_great_circle/0.1/route_great_circle.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../dead_reckoning/0.1/dead_reckoning.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../otcurrent/0.1/otcurrent.html">otidalcurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ge2kap/ge2kap.html">GE2KAP Companion Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">WMM (Included in OpenCPN)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../odraw/0.1/odraw.html">odraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../sar/0.1/sar.html">SAR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sailing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tactics/0.1/tactics.html">tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../sweep_plot/0.1/sweep_plot.html">Sweep Plot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../polar/0.1/polar.html">polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../windvane/0.1/windvane.html">windvane</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Weather</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../climatology/0.1/climatology.html">climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../weather_routing/0.1/weather_routing.html">Weather Routing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Utility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../statusbar/0.7.6/statusbar.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../calculator/0.1/calculator.html">calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../launcher/0.1/launcher.html">launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../debugger/0.1/debugger.html">debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../pypilot/0.1/pypilot.html">pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../shipdriver/0.1/shipdriver.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../twocan/twocan.html">twocan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../odometer/0.1/odometer.html">odometer</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beta Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/engine-dash/engine-dash.html">Engine Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/race-start/race-start.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/trackpoint/trackpoint.html">Trackpoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/tidefinder/tidefinder.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/javascript/javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/deviation/deviation.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/survey/survey.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autopilot-rm/autopilot-rm.html">Autopilot_rm for Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autotrackrm-ev/autotrackraymarine.html">AutoTrackRaymarine for Evolution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autopilot_route/autopilot_route.html">Autopilot_Route for OpenCPN</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/admiralty/admiralty.html">Admiralty Tides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/ncdf/ncdf.html">NetCDF tidal currents</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/otidalroute/otidalroute.html">otidalroute</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/sailawaynmea/sailawaynmea.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/uktides/uktides.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../otidalplan/0.1/otidalplan.html">otidalplan - using HARMONICS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Plugins</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">OpenCPN Plugins</a></li>
+    <li>Plugins</li>
+    <li>Navigation</li>
+    <li><a href="squiddio.html">Squiddio</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/ocpn-manuals/edit/main/plugins/manual/modules/squiddio/pages/squiddio.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_squiddio"><a class="anchor" href="#_squiddio"></a>sQuiddio</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_find_thousands_of_sailing_points_of_interest_right_in_your_opencpn_chart"><a class="anchor" href="#_find_thousands_of_sailing_points_of_interest_right_in_your_opencpn_chart"></a>Find thousands of sailing Points of Interest right in your OpenCPN chart</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/squiddio_overall1.png" alt="squiddio overall1">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Website: <strong><a href="http://squidd.io">sQuiddio.io</a></strong></p>
+</li>
+<li>
+<p>Source:https://github.com/mauroc/squiddio_pi[Github Repository]</p>
+</li>
+<li>
+<p>Release: <a href="https://github.com/mauroc/squiddio_pi/releases">Github
+Release</a></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/sQuiddio.html">Website
+Download</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/squiddio-plugin-132122.html">sQuiddio
+CF Thread</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_squiddio_plugin"><a class="anchor" href="#_the_squiddio_plugin"></a>The sQuiddio plugin</h3>
+<div class="paragraph">
+<p>The sQuiddio plugin makes its global user-sourced and user-maintained
+repository of sailing Points of Interest available as waypoints in
+OpenCPN through a plugin. Typical POIs include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>marinas</p>
+</li>
+<li>
+<p>anchorages</p>
+</li>
+<li>
+<p>yacht clubs</p>
+</li>
+<li>
+<p>docks</p>
+</li>
+<li>
+<p>fuel stations</p>
+</li>
+<li>
+<p>weather buoys</p>
+</li>
+<li>
+<p>…and many others</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Click on each POI&#8217;s icon on the chart to access basic information about
+the POI, such as a marina&#8217;s average user rating, address and phone
+number. Obtain additional information, see photos and user reviews by
+following the link to the POI page on sQuiddio.</p>
+</div>
+<div class="paragraph">
+<p>Use the sQuidd.io plugin to plan your next cruise with the most
+up-to-date user-sourced information available.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_getting_started"><a class="anchor" href="#_getting_started"></a>Getting started:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In OpenCPN, go to the Options → Plugins and enable the sQuiddio plugin
+(no settings are required).</p>
+</li>
+<li>
+<p>To view POIs in a <em>sector</em>*:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Right-click on the area of the chart for which you want to view
+available POIs.</p>
+</li>
+<li>
+<p>Select <em>sQuiddio: Download (Update) local Points of Interest</em> from
+the contextual menu (right click on the chart to launch the contextual
+menu).</p>
+</li>
+<li>
+<p>For a touch device (e.g.Android), a right-click action is generated
+by a so-called “long touch”. Touch and hold the screen point until a
+context menu appears. Select the desired action. Note: Not all phones
+generate an application context menu by touching the device “menu”
+button. Depends on the Android version and device mfg. The general
+method is “long touch” on the chart canvas. Should work on all devices.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>a <em>Sector</em> is defined as an area of 5×5 degrees of lat/lon</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Use of the plugin is free of charge. (<a href="http://squidd.io/users/new">Free
+registration</a> is required for certain functions).</p>
+</div>
+<div class="sect3">
+<h4 id="_share_your_seafaring_knowledge_with_others"><a class="anchor" href="#_share_your_seafaring_knowledge_with_others"></a>Share your seafaring knowledge with others</h4>
+<div class="imageblock">
+<div class="content">
+<img src="_images/squiddio_poi_view.png" alt="squiddio poi view">
+</div>
+</div>
+<div class="paragraph">
+<p>By following the link in the waypoint properties dialog, users can
+access information, images and user comments on the POI&#8217;s web site.
+Registered sQuidd.io users can post comments about the POI, as well as
+rate the POI on attributes such as beauty, service and quality of wi-fi
+access (where applicable).</p>
+</div>
+<div class="paragraph">
+<p>Can&#8217;t find your favorite anchorage or marina?
+<a href="squiddio.html#submitting_a_new_poi">Report new POIs</a> not yet
+available in the database.</p>
+</div>
+<div class="paragraph">
+<p>More info on viewing, creating and updating POIs in sQuiddio
+<a href="squiddio.html#viewing_points_of_interest">here</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_view_weather_buoy_and_ship_reports_right_on_your_chart"><a class="anchor" href="#_view_weather_buoy_and_ship_reports_right_on_your_chart"></a>View Weather Buoy and Ship Reports right on your chart</h4>
+<div class="paragraph">
+<p>(version 1.3 or greater)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/squiddio_ndbc_buoys.png" alt="squiddio ndbc buoys">
+</div>
+</div>
+<div class="paragraph">
+<p>sQuiddio provides wind and wave reports obtained from the US National
+Data Buoy Center (NDBC) <a href="https://www.ndbc.noaa.gov/">database</a> updated on
+an hourly basis as POIs on your OpenCPN chart.</p>
+</div>
+<div class="paragraph">
+<p>More info on Buoy and Ship reports
+<a href="squiddio.html#viewing_ndbc_buoy_and_ship_reports">here</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_one_click_download_of_satellite_maps_for_any_point_of_interest"><a class="anchor" href="#_one_click_download_of_satellite_maps_for_any_point_of_interest"></a>One-click download of Satellite Maps for any Point of Interest</h4>
+<div class="paragraph">
+<p>(version 1.3 or greater)</p>
+</div>
+<div class="paragraph">
+<p>Enhance your charts with the visual cruise-planning benefits afforded by
+satellite images. View detailed satellite maps of marinas or anchorages.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/squiddio_gcharts.png" alt="squiddio gcharts">
+</div>
+</div>
+<div class="paragraph">
+<p>More info on downloading Google Maps
+<a href="squiddio.html#downloading_google_maps_for_one_or_more_pois">here</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_follow_your_cruising_friends_on_your_opencpn_chart"><a class="anchor" href="#_follow_your_cruising_friends_on_your_opencpn_chart"></a>Follow your cruising friends on your OpenCPN Chart</h4>
+<div class="paragraph">
+<p>(version 0.4 or greater)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/opencpn4.png" alt="opencpn4">
+</div>
+</div>
+<div class="paragraph">
+<p>Share your position, SOG and COG with boats in your sQuiddio
+<a href="http://squidd.io/faq#follow">follow list</a> , and display their current
+position and heading on your OpenCPN charts</p>
+</div>
+<div class="paragraph">
+<p>More info on Log Sharing
+<a href="squiddio.html#follow_your_cruising_friends_on_your_opencpn_chart1">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installing_the_plugin"><a class="anchor" href="#_installing_the_plugin"></a>Installing the plugin</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Look for the sQuidd.io icon
+image::marina_grn.png[image,width=20]in the <em>Plugins for
+OpenCPN 3.3 and later</em> section of the plugins
+<a href="http://opencpn.org/ocpn/downloadplugins#plugins33">download page</a>.</p>
+</li>
+<li>
+<p>Select the architecture and platform of your choice, download and
+install the relevant installation package.</p>
+</li>
+<li>
+<p>After successful installation, the plug in should be available in the
+Plugins tab of your OpenCpn Options dialog box.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_the_plugin"><a class="anchor" href="#_using_the_plugin"></a>Using the plugin</h3>
+<div class="sect3">
+<h4 id="_viewing_points_of_interest"><a class="anchor" href="#_viewing_points_of_interest"></a>Viewing Points of Interest:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>In OpenCPN, go to the Options → Plugins and enable the sQuiddio plugin
+(no settings are required).</p>
+</li>
+<li>
+<p>To view POIs in an area:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Right-click on the area of the chart for which you want to view
+available POIs.</p>
+</li>
+<li>
+<p>Select <em>sQuiddio: Download local Points of interest</em> from the
+contextual menu. (if you have previously downloaded POIs for this area,
+the option will be named sQuiddio: Update local Points of interest</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>To view additional information about the POI, and a link to the
+sQuiddio POI page, right click on POI&#8217;s waypoint, and select Properties.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The waypoint dialog box includes a link to the Destination page on
+sQuidd.io. If you have an Internet connection, click the link and your
+browser should soon display the Destination&#8217;s page on sQuidd.io.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="http://squidd.io/places/17924"><span class="image"><img src="../../http_3a_2f_2fsquidd.io_2fassets_2fopencpn_2fplace_view.png" alt="image"></span></a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>You can hide all POIs for an area from the charts by right-clicking on
+the chart and selecting <em>sQuiddio: Hide local Points of Interest</em> from
+the contextual menu. You can make the destinations visible again
+(without downloading them anew) by selecting the <em>Show sQiddio
+destinations</em>.</p>
+</li>
+<li>
+<p>You can also select the types of POI to show or hide: click on the
+sQuiddio icon in the toolbar, then the <em>View</em> tab, and select the types
+of POIs you want to display on the chart</p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_pois_as_opencpn_waypoints_or_ocpn_draw_texpoints"><a class="anchor" href="#_pois_as_opencpn_waypoints_or_ocpn_draw_texpoints"></a>POIs as OpenCPN Waypoints or OCPN Draw Texpoints</h5>
+<div class="paragraph">
+<p>In earlier versions of the plugin (&lt; 0.7), POIs were represented on the
+chart as OpenCPN Waypoints (which wasn&#8217;t optimal, as Waypoints were not
+intended to be used as static POIs). The introduction of the OCPN Draw
+plugin has enabled POIs to be rendered alternatively as ODraw Text
+Points, which has a number of advantages (e.g. view POI information upon
+hovering the mouse, POIs cannot be mistakenly moved etc.) . If you have
+the ODraw Plugin installed, we strongly recommend you select this option
+by going to the settings dialog → <em>POI Rendering</em> and selecting <em>ODraw
+Textpoint</em> as an option.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_submitting_a_new_poi"><a class="anchor" href="#_submitting_a_new_poi"></a>Submitting a new POI</h4>
+<div class="paragraph">
+<p>sQuiddio relies on users like you to grow its database of POIs and keep
+it relevant. To submit a new POI:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Position your cursor on the new POI&#8217;s exact location in the OpenCPN
+chart</p>
+</li>
+<li>
+<p>Right-click and select <em>sQuiddio: Report a POI at this location</em> from
+the contextual menu. (Note: you must have a free user account to report
+new POI. Signup <a href="https://squidd.io/signup">here</a>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_viewing_ndbc_buoy_and_ship_reports"><a class="anchor" href="#_viewing_ndbc_buoy_and_ship_reports"></a>Viewing NDBC Buoy and Ship reports</h4>
+<div class="paragraph">
+<p>To view the updated reports:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NDBC Buoys and Ships appear just like of any other POI on your charts.
+Just make sure that the options <em>NDBC Buoy Report</em> and/or <em>NDBC Ship
+Report</em> are checked in the <em>View</em> tab of the plugin settings.</p>
+</li>
+<li>
+<p>Position your cursor on the Sector of the chart that you want to see
+the Buoy or Ship reports for and select <em>sQuiddio: Download (Update)
+local Points of interest</em> from the contestual menu.</p>
+</li>
+<li>
+<p>To view the last 10 wind and wave reports for a buoy or ship,
+double-click on the POI icon to open the <em>Waypoint (Text Point)
+Properties</em> dialog, then select the <em>Display Text</em></p>
+</li>
+<li>
+<p><strong>Important</strong>! these <strong>POIs are not automatically updated</strong> over time, so
+you must select the <em>sQuiddio: Update local Points of interest item</em> in
+the context menu to download the most recent wind and wave reports.</p>
+</li>
+<li>
+<p>Note that <a href="https://www.ndbc.noaa.gov/">NDBC coverage</a> is mostly limited
+to United States waters, with some non-US (but currently few) other
+locations. We are currently looking into adding other organizations with
+similar services (e.g. Metoffice). Please contact <em>info at squidd dot
+io</em> for ideas and suggestions</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_downloading_google_maps_for_one_or_more_pois"><a class="anchor" href="#_downloading_google_maps_for_one_or_more_pois"></a>Downloading Google Maps for one or more POIs</h4>
+<div class="paragraph">
+<p>To download Google maps for a set of POIs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Zoom in/out in your viewport so that only the POI(s) for which you
+want to download maps are shown</p>
+</li>
+<li>
+<p>Select <em>sQuiddio: Download Satellite Images for POIs</em> from the
+contextual menu. A separate map is downloaded for each POI and for each
+level of zoom specified in the Download tab of the plugin settings. The
+plugin follows the Google Maps zoom levels, the default values being 17
+( ideal for, e.g., seeing the layout of a marina ) and 15, useful when
+planning an approach to an anchorage or marina. You will be provided an
+estimate of the size of the compressed file to be downloaded, and asked
+to confirm the download.</p>
+</li>
+<li>
+<p>The Chart Database will be automatically updated when the download is
+complete and the Google Maps will appear on your chart (Note: if you
+have created a Chart Group for your Google Maps, you may have to close
+out and relaunch OpenCPN in order for the maps to show)</p>
+</li>
+<li>
+<p>To change the zoom levels of the Google Maps to be downloaded, as well
+as the directory where you want your maps saved (maps are saved as
+raster files in the KAP format), click on the sQuiddio plugin icon in
+the toolbar and go to the <em>Download</em> tab</p>
+</li>
+<li>
+<p>You can also choose to download a Map to cover the entire viewport, in
+addition to the individual POI-specific maps. See the option <em>Include
+Viewport Map</em> in the <em>Downloads</em> tab</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_follow_your_cruising_friends_on_your_opencpn_chart_2"><a class="anchor" href="#_follow_your_cruising_friends_on_your_opencpn_chart_2"></a>Follow your cruising friends on your OpenCPN Chart</h4>
+<div class="paragraph">
+<p>If you are sailing with a group of other boats, chartering with a
+flottilla, participating in a regatta or simply want to follow your
+friends as they brave the unknown from the comfort of your home, you can
+use sQuidd.io&#8217;s Follow List feature to track the other boats' position,
+speed and heading on OpenCPN (as well as on the sQuiddio web site). The
+plug in will retrieve the latest log updates from your Follow List and
+send your own GPS position at regular intervals. The plugin provides a
+choice of various time intervals, from ten seconds to once a day.</p>
+</div>
+<div class="paragraph">
+<p>Log sharing requires a free account on
+<a href="https://squidd.io/signup">sQuidd.io</a>. To activate the feature:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Create your Follow list on sQuidd.io</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Log into sQuidd.io</p>
+</li>
+<li>
+<p>Go to the Dashboard and click on the Update Follow List button in the
+You are Following section</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>In the Authentication tab of the sQuiddio plugin settings, enter your
+sQuiddio ID (the email address you used to sign up) and your API key.
+You can retrieve your API key online by:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Logging into sQuidd.io</p>
+</li>
+<li>
+<p>Clicking on the Preferences link in the top bar of the sQuiddio web
+site</p>
+</li>
+<li>
+<p>Selecting the Numbers and Keys tab</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>In the Log Sharing tab of your sQuiddio plugin settings, select the
+intervals at which you want to receive and send log updates. Once the
+credentials are entered correctly and at least one of the two time
+intervals is set (and an Internet connection is available), the sharing
+process starts and a progress bar will be shown with timestamps of the
+last send/receive events (if you find that the status bar gets in the
+way, you can minimize it by dragging it to the edges of the viewport).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_about_squidd_io"><a class="anchor" href="#_about_squidd_io"></a>About sQuidd.io</h3>
+<div class="paragraph">
+<p>sQuidd.io is a service designed and developed by boaters for boaters. We
+love the sea and believe that the best way to enjoy and protect this
+wonderful gift of Mother Nature is to facilitate the sharing of
+information among boaters. This is why most of the content you find on
+our site is generated by other users. We encourage you to contribute
+your seafaring knowledge to sQuidd.io by creating Points of Interest,
+rating your favorite ones and by providing information and feedback.
+Thanks to users like you, sQuiddio has become the most complete,
+comprehensive and up-to date source of cruising information in the
+world.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_faq_about_the_website"><a class="anchor" href="#_faq_about_the_website"></a>FAQ About the Website</h3>
+<div class="sect3">
+<h4 id="_are_there_destination_reviews_or_just_star_ratings"><a class="anchor" href="#_are_there_destination_reviews_or_just_star_ratings"></a>Are there Destination reviews, or just "star" ratings?</h4>
+<div class="paragraph">
+<p>Most of the info on the destination page is user-editable by clicking on
+the green “edit” link. The edit page has a Google map which can be used
+to adjust the exact location of the destination, and three tabs, that
+allow you to specify some basic info about the destination (phone
+number, email address etc), write and intro paragraph, or add a number
+of keyword-value pairs that provide additional information. All this
+updates the Destination page once the edits are saved. User reviews are
+entered in the form of user comments in the Media Feed, at the bottom of
+the page.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_are_there_data_fields_for_things_like_dockage_or_mooring_rates_approach_depths_vhf_channel_available_services_nearby_facilities_fuel_prices_etc"><a class="anchor" href="#_are_there_data_fields_for_things_like_dockage_or_mooring_rates_approach_depths_vhf_channel_available_services_nearby_facilities_fuel_prices_etc"></a>Are there data fields for things like dockage or mooring rates, approach depths, VHF channel, available services, nearby facilities, fuel prices, etc?</h4>
+<div class="paragraph">
+<p>Yes. That&#8217;s what the above keyword-value pairs are for. With this
+approach, you have an unlimited number of potential attributes to define
+the destination. Just type anything you wish, e.g. “Toll Free Number” as
+a keyword, then the enter the corresponding value. There is a type-ahead
+filler in the keyword field that shows commonly used keywords (e.g.
+Guest Berths for a Marina, or holding for an anchorage), but you can
+enter what you want. Again, all these are shown on the Destination page</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_also_whats_with_all_the_flikr_photos_and_links"><a class="anchor" href="#_also_whats_with_all_the_flikr_photos_and_links"></a>Also, what&#8217;s with all the flikr photos and links?</h4>
+<div class="paragraph">
+<p>Photos are one of the objects that can be posted to the Media Feed, in
+addition to comments and reviews, since they are a great way to provide
+a visual dimension to the destination page. Users can upload their
+photos. In absence of user-supplied photos, we have pre-populated the
+media feeds of many destinations with photos from the public domain or
+services like Panoramio (discontinued) or Flickr based on lat/lon
+coordinates. As users add their own, the new ones will replace the old
+ones There is also a mechanism to provide photos and comments through
+social media (see the link at the bottom)</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_more_info_in_the_website_faq"><a class="anchor" href="#_more_info_in_the_website_faq"></a>More info in the website FAQ</h4>
+<div class="paragraph">
+<p><a href="http://squidd.io/faq#destinations">FAQ Destinations</a> POI, Share, Check
+in/out, Twitter &amp; Instagram, Photos</p>
+</div>
+<div class="paragraph">
+<p><a href="http://squidd.io/faq#follow">FAQ Stay Connected</a> Share position with
+friends on a follow list. Spot, Cell, GeoSMS, Satphone, email</p>
+</div>
+<div class="paragraph">
+<p><a href="http://squidd.io/faq#opencpn">FAQ OpenCPN</a> Plugin, API, POI, add POI, Log
+Sharing, Position.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

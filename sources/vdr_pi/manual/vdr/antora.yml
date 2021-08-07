@@ -1,0 +1,4 @@
+name: vdr
+title: vdr
+version: '0.1'
+start_page: ROOT:vdr.adoc 

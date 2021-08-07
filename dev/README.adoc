@@ -1,7 +1,0 @@
-= Antora OpenCPN Developer Manual 
-
-This is a WIP, and should not be consulted for info of any kind.
-
-The manual is part of the Antora playbook at
-https://github.com/leamas/ocpn-manuals. This is occasionally rebuilt and
-available at https://leamas.github.io/ocpn-manuals/

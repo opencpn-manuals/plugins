@@ -1,0 +1,111 @@
+== oTCurrent
+
+image::otcurrent_pi.png[]
+
+=== Links
+
+* Source: https://github.com/Rasbats/otcurrent_pi[Github Repository] +
+* Download: https://opencpn.org/OpenCPN/plugins/otcurrent.html[Website
+Download] +
+* Forum:
+http://www.cruisersforum.com/forums/f134/otcurrent-plugin-129161.html[oTCurrent
+Thread] +
+
+=== 1. What and Why
+
+The OpenCPN standard installation has tidal current data for the USA.
+Using the program 'Show Currents' icon a set of arrows for the tidal
+current are displayed and also the rate of the current. These arrows are
+in a single colour. No value for direction is shown.
+
+oTCurrent allows the selection of a different date/time for the tidal
+current prediction. Also, using the 'Next' and 'Previous' buttons the
+user can 'step through' the time of the prediction. Direction and rate
+can both be shown.
+
+*IMPORTANT:* The times selected/shown use the same time zone as your
+computer. The tidal current displayed should be checked against official
+publications.
+
+=== 2. Install
+
+The Windows installer
+ishttps://github.com/Rasbats/otcurrent_pi/releases[here].
+
+The plugin assumes that you are using the 'HARMONIC.IDX' file installed
+in the 'tcdata' folder of your setup. The plugin is not able to work
+with 'tcd' files. If you are using a different 'HARMONIC.IDX' you can
+select the folder where this file is located.
+
+=== 3. Standard actions
+
+Enable the plugin by using Tools/Options and pressing the Enable button.
+
+image::ot_preferences.png[]
+
+While the 'Options' screen is open user preferences can be set. The user
+can decide whether text values of rate and direction are shown against
+the tidal arrows. Arrows can be 'solid fill' or 'outline'. 'Fill Colour'
+makes the arrows 'solid fill'.
+
+The color of the arrows can be changed.
+
+For users with a high resolution display there is an option to adjust
+the plugin dialog to match those displays.
+
+These selections are saved in the Config file.
+
+image::ot_colours.png[]
+
+After enabling the plugin and pressing 'Apply' the oTCurrent icon
+appears on the toolbar.
+
+image::ot_toolbar_icon.png[]
+
+Press the icon to start seeing tidal arrows. Unlike the arrows displayed
+by the standard OpenCPN program you will need to be zoomed in, to a
+scale greater than 1:50000.
+
+image::ot_next_button.png[]
+
+Pressing 'Next' steps the time ahead by the interval set in the 'Step'
+box.
+
+image::ot_interval_select.png[]
+
+Pressing 'Previous' steps the time back by this interval.
+
+The 'Now' (Clock) button shows the tidal current for the present time.
+
+image::ot_now_button.png[]
+
+Dates in the future can be chosen, using the 'Select' button.
+
+image::ot_select_button.png[]
+
+If you have a 'Harmonic.idx' file on your computer, other than the one
+installed as part of the standard OpenCPN installation, this file can be
+selected with the 'Browse' button.
+
+image::ot_browse_button.png[]
+
+=== 4. Options
+
+Return to 'Tools/Options/Preferences' if you wish to change whether text
+is displayed for direction or rate. Also to change the color used for a
+range of speed. For high resolution displays there is an option to
+improve the plugin dialog for those displays.
+
+=== 5. FAQ
+
+*No arrows are shown.* How do I show them? +
+Is the chart zoomed in to a sufficiently large scale? Are you using a
+'Harmonic.idx' file?
+
+*My sailing area is Europe.* Can tidal currents (streams) be
+displayed? +
+Unofficial 'Harmonic.idx' files are available for some European waters.
+
+*For Linux users:* If you are using V10 please rename HARMONIC.idx as
+HARMONIC.IDX. Without this change you will not see any arrows or current
+information with the plugin.

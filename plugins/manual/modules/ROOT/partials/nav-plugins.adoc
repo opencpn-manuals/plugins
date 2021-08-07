@@ -1,8 +1,8 @@
 * Included_plugins
-** xref:opencpn-master-plugins:dashboard:dashboard.adoc[dashboard]
-** xref:opencpn-master-plugins:wmm:wmm.adoc[World Magnetic]
-** xref:opencpn-master-plugins:grib_weather:grib_weather.adoc[grib_weather]
-** xref:opencpn-master-plugins:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+** xref:dashboard:dashboard.adoc[dashboard]
+** xref:wmm:wmm.adoc[World Magnetic]
+** xref:grib_weather:grib_weather.adoc[grib_weather]
+** xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
 * AIS / Radar
 ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
 ** xref:radar:ROOT:Home.adoc[Radar Display]

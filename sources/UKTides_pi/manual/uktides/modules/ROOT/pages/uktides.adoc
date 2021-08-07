@@ -1,0 +1,96 @@
+== UKTides
+
+image:uktides_pi.png[]
+
+=== Aim
+
+Using the UKHO API predictions of HW/LW for over 600 tidal stations
+around the UK are possible.
+
+This is the official UKHO data.
+
+==== Links
+
+* Source: https://github.com/Rasbats/UKTides_pi[Github Repository]
+* Releases: https://github.com/Rasbats/UKTides_pi[Github Releases]
+* Forum:
+https://www.cruisersforum.com/forums/f134/uktidalevents-plugin-205525-2.html#post2925973
+
+==== Aim
+
+To predict tidal heights (HW/LW) for over 600 tidal stations around the
+UK.
+
+image:0.jpeg[]
+
+==== Requirements
+
+[source,code]
+----
+OpenCPN 5.2.4 and above.
+For the initial download an Internet connection is needed. It is possible to save up to 7 days of data and during this period no further connection is needed.
+----
+
+=== 1. What and Why
+
+Official UK tidal predictions of HW/LW. Extends the number of tidal
+stations around the UK.
+
+=== 2. Install
+
+The plugin is available in the Beta catalog of the plugin manager. After
+installation the UKTides plugin is added to the list and can be enabled.
+
+image:1.jpeg[]
+
+Once enabled the icon for UKTides is shown in the toolbar:
+
+image:2.jpeg[]
+
+=== 3. Standard actions
+
+Click on the UKTides icon.
+
+The plugin dialog appears on the screen.
+
+image:3.jpeg[]
+
+Click the 'Download' button to show all the UK tidal stations. These
+locations are downloaded using the UKHO API.
+
+image:4.jpeg[]
+
+Right-click alongside the station icon where the times of HW/LW are
+needed.
+
+On the menu is an option 'Select UK Tidal Station'.
+
+image:5.jpeg[]
+
+Using this option an information box appears with the tidal data.
+
+image:6.jpeg[]
+
+==== 4. Options
+
+The tidal data is saved for a period of up to 7 days. This is the
+maximum allowed by the UKHO license.
+
+Using 'Saved Stations' you can see the stations you have worked with
+recently.One of these can be selected to see the data.
+
+image:7.jpeg[]
+
+image:8.jpeg[]
+
+All the icons can be a distraction. They can be removed using the button
+'Remove Icons'.
+
+image:9.jpeg[]
+
+You can choose to leave the icons for the 'saved ports' still visible.
+
+The selector at the bottom of the plugin dialog lets the user select the
+number of days for which predictions are produced.
+
+image:10.jpeg[]

@@ -1,0 +1,4 @@
+name: earthexplorer
+title: EarthExplorer
+version: '0.1'
+start_page: ROOT:earthexplorer.adoc 

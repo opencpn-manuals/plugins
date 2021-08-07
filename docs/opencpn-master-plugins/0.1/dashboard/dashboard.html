@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN Manuals</title>
+    <link rel="canonical" href="https://rasbats.github.io/ocpn-manuals/opencpn-master-plugins/0.1/dashboard/dashboard.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://rasbats.github.io/ocpn-manuals"
+      >
+        OpenCPN Manuals
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual
+">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://rasbats.github.io/opencpn-plugins-manual/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="opencpn-master-plugins" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">OpenCPN Plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Included_plugins</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="dashboard.html">dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">grib_weather</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">chart_downloader_tab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AIS / Radar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../ais_radar_display/0.1/ais_radar_display.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../radar/0.1/Home.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../rtlsdr/0.1/rtlsdr.html">RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../oesenc/0.1/oesenc.html">oeSENC</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../fugawi/0.1/fugawi.html">Fugawi (deprecated)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../vfkaps/0.1/vfkaps.html">VfKaps - VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../rotationctrl/0.1/rotationctrl.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../chartscale/0.1/chartscale.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../objsearch/0.1/objsearch.html">objsearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../projections/0.1/projections.html">projections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Logs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../dash-t/0.1/dash-t.html">dash-t</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../logbook/0.1/logbook.html">logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../find-it/0.1/find-it.html">find-it</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../vdr/0.1/vdr.html">vdr</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../nmea_converter/0.1/nmea_converter.html">NMEA Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../squiddio/squiddio.html">Squiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../googleearth/0.1/googleearth.html">googleearth</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../route_great_circle/0.1/route_great_circle.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../dead_reckoning/0.1/dead_reckoning.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../otcurrent/0.1/otcurrent.html">otidalcurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../ge2kap/ge2kap.html">GE2KAP Companion Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">WMM (Included in OpenCPN)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../odraw/0.1/odraw.html">odraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../sar/0.1/sar.html">SAR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sailing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../tactics/0.1/tactics.html">tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../sweep_plot/0.1/sweep_plot.html">Sweep Plot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../polar/0.1/polar.html">polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../windvane/0.1/windvane.html">windvane</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Weather</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../climatology/0.1/climatology.html">climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../weather_routing/0.1/weather_routing.html">Weather Routing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Utility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../statusbar/0.7.6/statusbar.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../calculator/0.1/calculator.html">calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../launcher/0.1/launcher.html">launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../debugger/0.1/debugger.html">debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../pypilot/0.1/pypilot.html">pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../shipdriver/0.1/shipdriver.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../twocan/twocan.html">twocan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../../odometer/0.1/odometer.html">odometer</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beta Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/engine-dash/engine-dash.html">Engine Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/race-start/race-start.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/trackpoint/trackpoint.html">Trackpoint</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/tidefinder/tidefinder.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/javascript/javascript.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/deviation/deviation.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/survey/survey.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autopilot-rm/autopilot-rm.html">Autopilot_rm for Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autotrackrm-ev/autotrackraymarine.html">AutoTrackRaymarine for Evolution</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/autopilot_route/autopilot_route.html">Autopilot_Route for OpenCPN</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/admiralty/admiralty.html">Admiralty Tides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/ncdf/ncdf.html">NetCDF tidal currents</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/otidalroute/otidalroute.html">otidalroute</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/sailawaynmea/sailawaynmea.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../opencpn-beta-plugins/0.1/uktides/uktides.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../../otidalplan/0.1/otidalplan.html">otidalplan - using HARMONICS</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Plugins</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../admiralty/0.1/admiralty.html">admiralty</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../admiralty/0.1/admiralty.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ais_radar_display/0.1/ais_radar_display.html">ais_radar_display</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ais_radar_display/0.1/ais_radar_display.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../autopilot-rm/0.1/autopilot-rm.html">autopilot_raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../autopilot-rm/0.1/autopilot-rm.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../autopilot_route/0.1/autopilot_route.html">autopilot_route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../autopilot_route/0.1/autopilot_route.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../bsb4_charts/0.1/bsb4_charts.html">bsb4_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../bsb4_charts/0.1/bsb4_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../calculator/0.1/calculator.html">calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../calculator/0.1/calculator.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../celestial_navigation/0.1/celestial_navigation.html">celestial_navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../celestial_navigation/0.1/celestial_navigation.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../chartscale/0.1/chartscale.html">chartscale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../chartscale/0.1/chartscale.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../climatology/0.1/climatology.html">climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../climatology/0.1/climatology.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dash-t/0.1/dash-t.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dash-t/0.1/dash-t.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../debugger/0.1/debugger.html">debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../debugger/0.1/debugger.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../dead_reckoning/0.1/dead_reckoning.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dead_reckoning/0.1/dead_reckoning.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../earthexplorer/0.1/earthexplorer.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../earthexplorer/0.1/earthexplorer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../find-it/0.1/find-it.html">find-it</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../find-it/0.1/find-it.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fugawi/0.1/fugawi.html">fugawi</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fugawi/0.1/fugawi.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../googleearth/0.1/googleearth.html">Google Earth</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../googleearth/0.1/googleearth.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../iacfleet/0.1/iacfleet.html">iacfleet</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../iacfleet/0.1/iacfleet.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../launcher/0.1/launcher.html">launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../launcher/0.1/launcher.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../logbook/0.1/logbook.html">logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../logbook/0.1/logbook.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../nmea_converter/0.1/nmea_converter.html">nmea_converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../nmea_converter/0.1/nmea_converter.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../nv_charts/0.1/nv_charts.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../nv_charts/0.1/nv_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../objsearch/0.1/objsearch.html">objsearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../objsearch/0.1/objsearch.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../odometer/0.1/odometer.html">odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../odometer/0.1/odometer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../odraw/0.1/odraw.html">odraw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../odraw/0.1/odraw.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../oesenc/0.1/oesenc.html">oesenc</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../oesenc/0.1/oesenc.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../opencpn-beta-plugins/0.1/index.html">OpenCPN Beta Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../opencpn-beta-plugins/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otcurrent/0.1/otcurrent.html">otcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otcurrent/0.1/otcurrent.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otidalplan/0.1/otidalplan.html">otidalplan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otidalplan/0.1/otidalplan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../otidalroute/0.1/otidalroute.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../otidalroute/0.1/otidalroute.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../photolayer/0.1/photolayer.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../photolayer/0.1/photolayer.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../polar/0.1/polar.html">polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../polar/0.1/polar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../projections/0.1/projections.html">projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../projections/0.1/projections.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../pypilot/0.1/pypilot.html">pypilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../pypilot/0.1/pypilot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../radar/0.1/Home.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../radar/0.1/Home.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../rotationctrl/0.1/rotationctrl.html">rotationctrl</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../rotationctrl/0.1/rotationctrl.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../route_great_circle/0.1/route_great_circle.html">route_great_circle</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../route_great_circle/0.1/route_great_circle.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../rtlsdr/0.1/rtlsdr.html">rtlsdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../rtlsdr/0.1/rtlsdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../s63_vector_charts/0.1/s63_vector_charts.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../s63_vector_charts/0.1/s63_vector_charts.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sailawaynmea/0.1/sailawaynmea.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sailawaynmea/0.1/sailawaynmea.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sar/0.1/sar.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sar/0.1/sar.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../shipdriver/0.1/shipdriver.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../shipdriver/0.1/shipdriver.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../statusbar/0.7.6/statusbar.html">statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../statusbar/0.7.6/statusbar.html">0.7.6</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../survey/0.1/survey.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../survey/0.1/survey.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../sweep_plot/0.1/sweep_plot.html">sweep_plot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../sweep_plot/0.1/sweep_plot.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../tactics/0.1/tactics.html">tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../tactics/0.1/tactics.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../tidefinder/0.1/tidefinder.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../tidefinder/0.1/tidefinder.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../twocan/0.1/twocan.html">twocan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../twocan/0.1/twocan.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../uktides/0.1/uktides.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../uktides/0.1/uktides.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../vdr/0.1/vdr.html">vdr</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../vdr/0.1/vdr.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../vfkaps/0.1/vfkaps.html">vfkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../vfkaps/0.1/vfkaps.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../watchdog/2.4.29/watchdog.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../watchdog/2.4.29/watchdog.html">2.4.29</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../weather_routing/0.1/weather_routing.html">weather_routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../weather_routing/0.1/weather_routing.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../weatherfax/0.1/weatherfax.html">weatherfax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../weatherfax/0.1/weatherfax.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../windvane/0.1/windvane.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../windvane/0.1/windvane.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">OpenCPN Plugins</a></li>
+    <li>Plugins</li>
+    <li>Included_plugins</li>
+    <li><a href="dashboard.html">dashboard</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/ocpn-manuals/edit/main/plugins/manual/modules/dashboard/pages/dashboard.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p>indexmenu_n_1</p>
+</div>
+<div class="sect1">
+<h2 id="_dashboard"><a class="anchor" href="#_dashboard"></a>Dashboard</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Dashboard plugin is able to show quite a few instruments. <strong>The
+Dashboard plugin is an Internal Plugin, always distributed with OpenCPN,
+no separate download is required.</strong></p>
+</div>
+<div class="paragraph">
+<p>If the data is available to OpenCPN in the NMEA0183 data stream the
+different instruments will display relevant data; but the plugin won&#8217;t
+tell what is available. It is assumed that the user knows what is
+connected. It is of course possible to activate all instruments and see
+what works.</p>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="paragraph">
+<p>Source: <a href="https://github.com/OpenCPN/OpenCPN/tree/master/plugins">Opencpn
+Internal Plugin</a><br>
+Forum:
+<a href="http://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html">Forum
+Discussion thread</a></p>
+</div>
+<div class="paragraph">
+<p>Companion Plugin:
+<a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:logs:nmea_converter">NmeaConverter_pi</a>
+can solve many conversion problems.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_dashboard_in_action"><a class="anchor" href="#_the_dashboard_in_action"></a>The Dashboard in action</h3>
+<div class="paragraph">
+<p>There are two Dashboards, one vertical and one horizontal.</p>
+</div>
+<div class="paragraph">
+<p>Grab the top Caption bar with the cursor and drag the Dashboard as far
+as possible to the right or left. Let go the cursor, and the Dashboard
+will dock, the chart display will adjust, no part of the chart will be
+hidden. Horizontal Dashboards can in a similar way be docked top or
+bottom. This process is reversible. Just grab the Dashboard dialog bar
+with the cursor, an pull towards the middle of the screen, and the
+Dashboard will become floating.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dashboard32.png" alt="image" width="600" height="454"></span></p>
+</div>
+<div class="paragraph">
+<p>The same Dashboards docked left and bottom.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dashboard-docked32.png" alt="image" width="600" height="480"></span></p>
+</div>
+<div class="paragraph">
+<p>There is a grab handle in the SE corner of each Dashboard. Use it to
+resize each dialog. The graphics will change size, but not the text,
+which is handled separately. See further down.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dash-drag.png" alt="image" width="600" height="454"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_dashboard_tab"><a class="anchor" href="#_the_dashboard_tab"></a>The Dashboard Tab</h3>
+<div class="paragraph">
+<p>Once the Dashboard plugin is activated in the plugin tab, the Dashboard
+Icon will be available in the ToolBar and will work as an on/off toggle.
+The Preference button works exactly the same as described under
+“Dashboard Settings” below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dashboard-plugin32.png" alt="image" width="600" height="682"></span></p>
+</div>
+<div class="paragraph">
+<p>The “Enable” Button activates the plugin and shows the icon in the
+ToolBar. Once enabled, the “Disable” Button is displayed, as show above.
+If you press the “Preference” Button the Dashboard preferences dialog
+becomes available.</p>
+</div>
+<div class="sect3">
+<h4 id="_dashboard_settings"><a class="anchor" href="#_dashboard_settings"></a>Dashboard settings</h4>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dash-set.png" alt="image" width="298" height="239"></span></p>
+</div>
+<div class="paragraph">
+<p>Right click anywhere in a Dashboard and a few options are displayed, in
+a small dialog. Above we have clicked on the vertical Dashboard. Make
+this Dashboard horizontal by clicking the “Horizontal” radio button.
+Stop displaying it by un-ticking the box in front of the first
+“Dashboard” line. Get it back by right clicking on the other Dashboard
+and tick the same box again.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_preferences"><a class="anchor" href="#_preferences"></a>Preferences</h4>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dashprop322.png" alt="image" width="450" height="455"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_dashboard_tab_2"><a class="anchor" href="#_the_dashboard_tab_2"></a>The Dashboard Tab</h4>
+<div class="paragraph">
+<p>The Icons in the narrow pane to the left, represents the available
+instances. Click on an instance and the configured instruments shows in
+the “Instruments” pane.</p>
+</div>
+<div class="paragraph">
+<p><strong>“+” and “-“</strong> Add or delete a Dashboard instance. Note, that an active
+Dashboard can not be deleted as the ”-” will be grayed out. Configure a
+new instance by “Add”-ing instruments in the “Instrument” pane.</p>
+</div>
+<div class="paragraph">
+<p><strong>Show this Dashboard</strong> If ticked just that Dashboard is shown. Toggling
+the icon displays all Dashboards.</p>
+</div>
+<div class="paragraph">
+<p><strong>Caption</strong> changes the name of the DashBoard from the default “Dashboard”
+to the Caption value. Due to a wxWidgets bug, this change is not
+instant, and requires docking the Dashboard or restarting OpenCPN, to
+work.</p>
+</div>
+<div class="paragraph">
+<p><strong>Orientation</strong> A dash board can be either Vertical or Horizontal.
+Vertical can be docked left or right, Horizontal can be docked top or
+bottom.</p>
+</div>
+<div class="paragraph">
+<p><strong>The “Instruments” pane</strong>. Shows the Instruments that are “active”, that
+will show up in that particular Dashboard .The instruments are selected
+with the buttons to the right.</p>
+</div>
+<div class="paragraph">
+<p><strong>Add</strong>. This button brings up the “Add Instrument” dialog where the
+available instruments can be highlighted and added to the Instruments
+Window.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dash-select-instr_0.png" alt="image" width="260" height="265"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_40_instruments_available"><a class="anchor" href="#_40_instruments_available"></a>40 Instruments Available</h4>
+<div class="paragraph">
+<p>[.np_break]# #</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Position (text)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOG (text) -Speed Over Ground</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Speedometer (dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COG(text) - Course Over Ground</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GPS Compass(dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STW(text) Speed Through Water</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True HDG(text) Heading</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apparent WindAngle &amp; Speed(dial) See
+<a href="http://www.cruisersforum.com/forums/f134/mwv-sentences-not-working-in-dashboard-159069.html">MWV</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">App. Wind speed(text)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">App. Wind speed(dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">App. Wind angle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind Angle &amp; Speed(dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depth(text)<sup>1</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Depth(dial)<sup>1</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Water Temp(text)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VMG(text)- Velocity Made Good to a waypoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VMG(dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rudder Angle(text)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rudder Angle(dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GPS in view(text)- the number of satellites detected<sup>2</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GPS status(dial)<sup>2</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cursor, shows the position of the cursor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clock, showing UTC from the NMEA stream, in most cases this is the gps
+time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sunrise/Sunset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moon phase</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Air Temp</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind angle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind direction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind Speed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind Direction and speed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetic Hdg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Compass</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Wind History</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trip Log</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sum Log</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Barometric Pressure (dial)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Barometric Pressure (text)
+<a href="http://www.cruisersforum.com/forums/f134/dashboard-vs-xdr-mta-mda-197116.html#post2571109">MVW
+Example</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Barometric History</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">From Ownship. Shows the vector from Ownship to the cursor.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetic COG<sup>2</sup></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>[.np_break]# #</p>
+</div>
+<div class="paragraph">
+<p>1. The DPT sentence is used, and transducer offset will be added
+to depth value, if available.<br>
+2. Linux note: GPS satellite info is not available if using gpsd. The
+same informations is however available through the “xgps” command.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_delete"><a class="anchor" href="#_delete"></a>Delete</h4>
+<div class="paragraph">
+<p>Highlight an entry in the Instrument Window to delete it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_up_down"><a class="anchor" href="#_up_down"></a>Up / Down</h4>
+<div class="paragraph">
+<p>Highlight an entry in the Instrument Window and change the order between
+the selected instruments. This order will also be the order between the
+instruments in the Dashboard dialog.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_appearance_tab"><a class="anchor" href="#_the_appearance_tab"></a>The Appearance Tab</h4>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dashboard-preferences-appearance.jpeg" alt="dashboard-preferences-appearance.jpg" width="443" height="385" title="dashboard-preferences-appearance.jpg"></span></p>
+</div>
+<div class="paragraph">
+<p>Use this tab to set fonts.</p>
+</div>
+<div class="paragraph">
+<p>Note: Depth Transducer Offset is in units of meters regardless of the
+chosen display units.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dampen_sog_and_cog_ir_filter"><a class="anchor" href="#_dampen_sog_and_cog_ir_filter"></a>Dampen SOG and COG (IR Filter)</h4>
+<div class="paragraph">
+<p>There are 2 parameters in the Dashboard→Preferences→Appearance dialog
+for damping of SOG and COG. A value of 1 means no filtering. Higher
+values mean ever slower response of the instrument. The max filter value
+is 100 which is pretty slow. This filter works almost exactly like a
+mechanical filter that uses an oil damped indicator dial. It will
+respond gradually to a change in course or speed. A typical filter value
+of 10 seems to work pretty well.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_units_selection"><a class="anchor" href="#_units_selection"></a>Units Selection</h4>
+<div class="paragraph">
+<p>Select these parameters as suits your use. These controls together
+enable the user to adjust the view of the dashboard to suit individual
+needs.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/plugins/dashboard/dash-big-fonts.png" alt="image" width="700" height="691"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Units Ranges and Formats</strong> Set the units to use, and the range of the
+speed dial.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/33speed12.png" alt="image" width="231" height="250"></span><span class="image"><img src="../../manual/33speed50.png" alt="image" width="231" height="250"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_wind_history"><a class="anchor" href="#_wind_history"></a>Wind History</h4>
+<div class="paragraph">
+<p>The Wind History Instrument needs some further explanations.</p>
+</div>
+<div class="paragraph">
+<p><strong>The “wind history” instrument is meant to be run as a standalone
+(vertical) instrument.</strong><br>
+Just define a separate dashboard and add it as the only instrument.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/wh2.png" alt="image" width="345" height="421"></span></p>
+</div>
+<div class="paragraph">
+<p>You can resize the Instrument with the mouse.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/wh.png" alt="image" width="800" height="181"></span></p>
+</div>
+<div class="paragraph">
+<p>In real conditions, it monitors around 40 min of wind direction (red),
+as well as wind speed (blue), showing a vertical time line every 5 min
+(the example screen shot is a full-speed VDR replay).</p>
+</div>
+<div class="paragraph">
+<p>The text on the top shows the current values, as it is displayed in the
+standard instruments (blue = wind speed data, TWS=True Wind Speed, red =
+direction, TWD = True Wind Direction).</p>
+</div>
+<div class="paragraph">
+<p>Here is an explanation of the text line, left side (see screen shot):<br>
+TWS 7.5: true Wind Speed currently 7.5 kts<br>
+Max 22.3 kts since 18:50: this is the max Wind speed in the visible
+graphs, i.e. the last ~40 mins<br>
+Overall 22.3: the max wind speed since OpenCPN was started.</p>
+</div>
+<div class="paragraph">
+<p>Right side above: TWD 357 degrees: True wind direction currently 357
+degrees</p>
+</div>
+<div class="paragraph">
+<p>The thin red/blue curves are the real direction/speed values, the
+thicker curves are smoothed values. Makes it easier to see trends.</p>
+</div>
+<div class="paragraph">
+<p>There is some logic included : The instruments zooms automatically as
+much as possible, always trying to show the whole visible curve;<br>
+Wind speed curve:<br>
+if your max (visible) wind speed is 10 kts, then your scale is from 0…11
+kts (rounded upwards to the next full knot).<br>
+In the screen shot we had a mx of 22.3kts –&gt; scale is 0…23 kts.<br>
+Wind direction:<br>
+The instrument scale shows +/- 90 degrees of the currently visible data
+values, but is limited to a total of 360 degrees.<br>
+If the wind is shifting through North (from 350, 355, 359, 002, 010, …)
+we&#8217;re shifting the curve as well, meaning that there is NO vertical jump
+in the data from 360 degrees –&gt; 0 degrees, and we do NOT loose all the
+continuity in the smoothed curves !</p>
+</div>
+<div class="paragraph">
+<p>If you should happen to have more than a full 360 degrees cycle of wind
+direction in the recorded data (if you sail through a couple of dust
+devils ), I limited the max scale to 360 degrees, meaning that the curve
+will run out of the visible area on bottom or on top of the instrument.</p>
+</div>
+<div class="paragraph">
+<p>Please note that you don&#8217;t have to have the instrument “open” all the
+time. Once activated as initially described, you can close it, and
+simply reopen it on demand. You don&#8217;t loose the curves, the instrument
+continues to collect the data. To make it visible again simply right
+click on an existing standard-dashboard, and click the “Wind History”
+Dashboard.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../manual/wh1.png" alt="image" width="162" height="134"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_night_time_mode"><a class="anchor" href="#_night_time_mode"></a>Night time Mode</h4>
+<div class="paragraph">
+<p>In Windows, Night, F5, mode. The title bar on the floating dashboard
+window is a bit glaring (this mode is controlled by windows by way of a
+theme and is not possible to change from an application) . Dock the
+Dashboard into “docked mode” it will be less glaring. The best solution
+is to simply “dock” the dashboard window at night, either left or right.
+This brings the window decorations back under OCPN control, and we
+recently added logic to dim it in this mode.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dashboard_time"><a class="anchor" href="#_dashboard_time"></a>Dashboard Time</h4>
+<div class="paragraph">
+<p>The dashboard plugin contains 3 instruments capable of displaying the
+time according to the preference of the user.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GPS clock - Unmodified time provided by the GPS unit, if available.
+This value is UTC.</p>
+</li>
+<li>
+<p>Local GPS clock - Time from the GPS clock corrected by user defined
+timezone offset (see below)</p>
+</li>
+<li>
+<p>Local CPU clock - Local clock obtained from operating system</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>On the appearance tab of the Dashboard preferences there is a setting
+for “Local offset from UTC”. The default is 00:00. When the 00:00 is
+selected th Local GPS clock will display time in the time zone of the
+computer running OpenCPN. If that is not what you want then you can
+selected any other offset in 30 minute increments up to +/- 12 hours.
+The offset will be added to the GPS UTC time and the local computer time
+zone will be ignored.</p>
+</div>
+<div class="sect4">
+<h5 id="_sunrise_sunset"><a class="anchor" href="#_sunrise_sunset"></a>Sunrise - Sunset</h5>
+<div class="paragraph">
+<p>Sunrise/sunset are computed based on the date and lat/long from the GPS
+NMEA input data. They are not computed from the CPU clock or the ship&#8217;s
+position. So unless you have a GPS connected then the times of
+sunrise/sunset are probably not going to be right. It has always been
+thus.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_nmeaconverter_pi_conversions"><a class="anchor" href="#_nmeaconverter_pi_conversions"></a>NmeaConverter_pi Conversions</h4>
+<div class="paragraph">
+<p><a href="https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:logs:nmea_converter">NmeaConverter_pi</a>
+can solve many compatibility or unit conversion issues. There are nine
+examples showing how the use NmeaConverter to adjust Dashboard output.</p>
+</div>
+<div class="sect4">
+<h5 id="_barometer_mwv_xdrmtamda"><a class="anchor" href="#_barometer_mwv_xdrmtamda"></a>Barometer MWV - XDR,MTA,MDA</h5>
+<div class="paragraph">
+<p>NMEAconverter_pi may help
+<a href="../logs/nmea_converter.html#prepare_barometer_sensor_output_for_dashboard">1.
+Prepare Barometer Sensor Output for Dashboard</a></p>
+</div>
+<div class="paragraph">
+<p>David Burch Videos</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=a6ljVkZH-HY&amp;feature=youtu.be">"Displaying
+Barameter in Opencpn -Part 1"</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=bxKr1C3IPXc">Barometer in Opencpn -
+Part II</a></p>
+<div class="literalblock">
+<div class="content">
+<pre>+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
