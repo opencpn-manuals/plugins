@@ -9,8 +9,8 @@ content:
       branches: main
       edit_url: true
       start_paths:
-      - plugins/manual
-      - plugins/manual-beta
+      - manual/master-plugins
+      - manual/beta-plugins
     
     - url: .
       branches: HEAD
