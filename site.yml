@@ -5,8 +5,8 @@ site:
 
 content:
   sources:
-    - url: https://github.com/opencpn-manuals/plugins
-      branches: main
+    - url: .
+      branches: HEAD
       edit_url: true
       start_paths:
       - manual/master-plugins
@@ -58,7 +58,7 @@ content:
     
     - url: .
       branches: HEAD
-      start_path: ./sources/EarthExplorer_pi/manual/EarthExplorer
+      start_path: ./sources/EarthExplorer_pi/manual/earthexplorer
     
     - url: .
       branches: HEAD
@@ -134,7 +134,7 @@ content:
     
     - url: .
       branches: HEAD
-      start_path: ./sources/polar_pi/manual/polar
+      start_path: ./sources/polar_pi/manual/Polar
     
     - url: .
       branches: HEAD
@@ -166,7 +166,7 @@ content:
     
     - url: .
       branches: HEAD
-      start_path: ./sources/SailawayNMEA_pi/manual/SailawayNMEA
+      start_path: ./sources/SailawayNMEA_pi/manual/sailawaynmea
     
     - url: .
       branches: HEAD
@@ -190,7 +190,7 @@ content:
     
     - url: .
       branches: HEAD
-      start_path: ./sources/TideFinder_pi/manual/TideFinder
+      start_path: ./sources/TideFinder_pi/manual/tidefinder
     
     - url: .
       branches: HEAD
@@ -198,7 +198,7 @@ content:
     
     - url: .
       branches: HEAD
-      start_path: ./sources/UKTides_pi/manual/UKTides
+      start_path: ./sources/UKTides_pi/manual/uktides
     
     - url: .
       branches: HEAD
