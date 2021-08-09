@@ -20,6 +20,7 @@ statefile="$here/sources.state"
 test -d $here/sources || mkdir $here/sources
 
 cleanup_clone() {
+    if test -f .git/info/sparse-checkout; then return; fi
     for f in *; do
         case $f in
             manual|antora.yml|modules) true ;;
@@ -33,7 +34,7 @@ git_clone() {
     if [[ "$vers" == *2.[345][0-9].* ]]; then   # > 2.30
         git clone --depth 1 --filter=blob:none --sparse $1
         cd $2
-        git sparse-checkout set manual
+        git sparse-checkout set manual antora.yml modules
     else
         git clone --depth 2 $1
         cd $2
@@ -43,17 +44,22 @@ git_clone() {
 }
 
 cd $here/sources
-git config advice.detachedHead false
+git config --global advice.detachedHead false
 case "$1" in
     restore) 
         while true; do
             read dir url commit || exit 0
-            test -d $dir || git_clone $url $dir  
-            cd $dir                                
-            b="^./manual\(/.*\)?"
-            find -mindepth 1 ! -regex $b -delete
+            test -d $dir || git_clone $url $dir || {
+                echo "Error: $dir: Cannot clone $url" >&2
+                continue
+            }
+            cd $dir
+            if git fetch origin $commit; then
+                git checkout -q FETCH_HEAD
+            else
+                echo "Error: $dir: Cannot check out commit $commit" >&2
+            fi
             cd ..
-
         done < $statefile
         ;;
 
@@ -63,8 +69,11 @@ case "$1" in
             echo -n "$dir: "
             git remote update origin
             head=$(git rev-parse refs/remotes/origin/HEAD)
-            git checkout $head
-            cleanup_clone
+            if git checkout $head; then
+                cleanup_clone
+            else
+                echo "Error: $dir: Cannot checkout HEAD commit $head" >&2
+            fi
             cd ..
         done
         ;;
@@ -72,10 +81,8 @@ case "$1" in
     save)
         rm -f $statefile
         for dir in $(find . -maxdepth 1 -mindepth 1 -type d); do
-            cd $dir
-            url=$(git remote show origin | awk '/Fetch URL/ {print $3}')
-            echo $dir $url $(git rev-parse HEAD) >> $statefile
-            cd ..
+            url=$(git -C $dir config remote.origin.url)
+            echo $dir $url $(git -C $dir rev-parse HEAD) >> $statefile
         done
         ;;
 
