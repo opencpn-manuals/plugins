@@ -3,7 +3,7 @@ name: OpenCPN Development Manual
 on:
   push:
     branches:
-      - gh-pages
+      - build
 env:
   SITE_DIR: '../docs'
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
