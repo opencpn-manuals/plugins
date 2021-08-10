@@ -1,0 +1,6 @@
+name: opencpn-plugins
+title: OpenCPN Manuals
+version: '0.1'
+start-page: manual
+nav:
+  - modules/ROOT/nav.adoc
