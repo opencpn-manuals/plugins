@@ -1,17 +1,25 @@
 #!/bin/bash
 
+# A primitive git submodules replacement, used since
+# isomorphic-git does not support git submodules.
 #
-# Some pidgin git submodules mockup. Allows all included plugin
-# directories to be represented by their url and commit.
+# The script handles a number of external git repos which are part of
+# the build. All repos lives in the sources/ directory.
 #
-# Arguments: an operation, mandatory, one of:
+# The sources.state file is used to record the state of the repos. Each
+# repo is defined by a name, url and commit in this file.
 #
-#   - restore: fetches and checkout all repos listed in statefile
-#   - save: Save state of all plugin repos in statefile
+# Script is invoked with an operation argument, one of
+#
+#   - restore: Fetch and checkout all repos listed in sources.state
+#   - save: Save state of all plugin repos in sources.state
 #   - update: Update all plugin repos to latest version (does not save!).
 #
 # Files:
-#   sources.state: directory, url and commit for plugin sources.
+#   sources.state:
+#       directory, url and commit for plugin sources.
+#   sources:
+#       base directory
 #
 
 
@@ -23,7 +31,7 @@ cleanup_clone() {
     if test -f .git/info/sparse-checkout; then return; fi
     for f in *; do
         case $f in
-            manual|antora.yml|modules) true ;;
+            manual|antora.yml|modules|ci) true ;;
             *) rm -rf $f
         esac
     done
@@ -34,7 +42,7 @@ git_clone() {
     if [[ "$vers" == *2.[345][0-9].* ]]; then   # > 2.30
         git clone --depth 1 --filter=blob:none --sparse $1
         cd $2
-        git sparse-checkout set manual antora.yml modules
+        git sparse-checkout set manual antora.yml modules ci
     else
         git clone --depth 2 $1
         cd $2
@@ -46,19 +54,13 @@ git_clone() {
 cd $here/sources
 git config --global advice.detachedHead false
 case "$1" in
-    restore) 
+    restore)
         while true; do
             read dir url commit || exit 0
-            test -d $dir || git_clone $url $dir || {
-                echo "Error: $dir: Cannot clone $url" >&2
-                continue
-            }
+            test -d $dir || git_clone $url $dir
             cd $dir
-            if git fetch origin $commit; then
-                git checkout -q FETCH_HEAD
-            else
-                echo "Error: $dir: Cannot check out commit $commit" >&2
-            fi
+            git fetch origin $commit
+            git checkout -q FETCH_HEAD
             cd ..
         done < $statefile
         ;;
@@ -69,11 +71,8 @@ case "$1" in
             echo -n "$dir: "
             git remote update origin
             head=$(git rev-parse refs/remotes/origin/HEAD)
-            if git checkout $head; then
-                cleanup_clone
-            else
-                echo "Error: $dir: Cannot checkout HEAD commit $head" >&2
-            fi
+            git checkout $head
+            cleanup_clone
             cd ..
         done
         ;;
