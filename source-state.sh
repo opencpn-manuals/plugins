@@ -1,17 +1,25 @@
 #!/bin/bash
 
+# A primitive git submodules replacement, used since
+# isomorphic-git does not support git submodules.
 #
-# Some pidgin git submodules mockup. Allows all included plugin
-# directories to be represented by their url and commit.
+# The script handles a number of external git repos which are part of
+# the build. All repos lives in the sources/ directory.
 #
-# Arguments: an operation, mandatory, one of:
+# The sources.state file is used to record the state of the repos. Each
+# repo is defined by a name, url and commit in this file.
 #
-#   - restore: fetches and checkout all repos listed in statefile
-#   - save: Save state of all plugin repos in statefile
+# Script is invoked with an operation argument, one of
+#
+#   - restore: Fetch and checkout all repos listed in sources.state
+#   - save: Save state of all plugin repos in sources.state
 #   - update: Update all plugin repos to latest version (does not save!).
 #
 # Files:
-#   sources.state: directory, url and commit for plugin sources.
+#   sources.state:
+#       directory, url and commit for plugin sources.
+#   sources:
+#       base directory
 #
 
 
@@ -20,9 +28,10 @@ statefile="$here/sources.state"
 test -d $here/sources || mkdir $here/sources
 
 cleanup_clone() {
+    if test -f .git/info/sparse-checkout; then return; fi
     for f in *; do
         case $f in
-            manual|antora.yml|modules) true ;;
+            manual|antora.yml|modules|ci) true ;;
             *) rm -rf $f
         esac
     done
@@ -33,7 +42,7 @@ git_clone() {
     if [[ "$vers" == *2.[345][0-9].* ]]; then   # > 2.30
         git clone --depth 1 --filter=blob:none --sparse $1
         cd $2
-        git sparse-checkout set manual
+        git sparse-checkout set manual antora.yml modules ci
     else
         git clone --depth 2 $1
         cd $2
@@ -43,17 +52,16 @@ git_clone() {
 }
 
 cd $here/sources
-git config advice.detachedHead false
+git config --global advice.detachedHead false
 case "$1" in
-    restore) 
+    restore)
         while true; do
             read dir url commit || exit 0
-            test -d $dir || git_clone $url $dir  
-            cd $dir                                
-            b="^./manual\(/.*\)?"
-            find -mindepth 1 ! -regex $b -delete
+            test -d $dir || git_clone $url $dir
+            cd $dir
+            git fetch origin $commit
+            git checkout -q FETCH_HEAD
             cd ..
-
         done < $statefile
         ;;
 
@@ -72,10 +80,8 @@ case "$1" in
     save)
         rm -f $statefile
         for dir in $(find . -maxdepth 1 -mindepth 1 -type d); do
-            cd $dir
-            url=$(git remote show origin | awk '/Fetch URL/ {print $3}')
-            echo $dir $url $(git rev-parse HEAD) >> $statefile
-            cd ..
+            url=$(git -C $dir config remote.origin.url)
+            echo $dir $url $(git -C $dir rev-parse HEAD) >> $statefile
         done
         ;;
 
