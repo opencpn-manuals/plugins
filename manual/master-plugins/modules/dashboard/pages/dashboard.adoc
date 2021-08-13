@@ -365,10 +365,10 @@ David Burch Videos
 
 Displaying Barometer in Opencpn -Part 1
 
-video::https://www.youtube.com/watch?v=a6ljVkZH-HY[]
+video::a6ljVkZH-HY[youtube]
 
 Barometer in Opencpn - Part II
 
-video::https://www.youtube.com/watch?v=bxKr1C3IPXc[]
+video::bxKr1C3IPXc[youtube]
 
 
