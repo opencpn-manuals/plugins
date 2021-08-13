@@ -52,3 +52,11 @@ I am trying to find the locations in the text for these.
 How would one do that?
 
 They are straight html link, right? Just do git grep :https://www.cruisersforum.com/, that gives you the matches and files. Or use git grep -l which just returns a list of files containing the link.
+
+Rick@Dart MINGW64 ~/documents/github/development/modules/ROOT/pages (main)
+$ grep :https://www.cruisersforum.com/
+and cursor is just blinking.
+
+This is using Windows Bash prompt.
+
+grep reads by default from stdin... type control-C to get out this. Then use the correct command git grep which by default searches from current dir.
