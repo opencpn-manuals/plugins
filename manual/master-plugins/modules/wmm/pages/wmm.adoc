@@ -5,20 +5,19 @@ the current NOAA World Magnetic Model, WMM2015, valid until 2020. The
 WMM plugin is an Internal Plugin, always distributed with OpenCPN, no
 separate download is required.
 
-https://blogs.agu.org/geospace/2019/02/27/historic-stone-walls-record-history-of-earths-magnetic-wanderings/[Old
-stone walls record history of Earth’s magnetic wanderings.] Very
-interesting article, showing a good use for lidar. This shows why the
-World Magnetic Model plugin (WMM_pi) needs to be updated on a regular
-basis..
+https://blogs.agu.org/geospace/2019/02/27/historic-stone-walls-record-history-of-earths-magnetic-wanderings/[Old stone walls record history of Earth’s magnetic wanderings.] 
+
+Very interesting article, showing a good use for lidar. This shows why the World Magnetic Model plugin (WMM_pi) needs to be updated on a regular basis..
 
 === Links
 
-Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
-Forum:
-http://www.cruisersforum.com/forums/f134/world-magnetic-model-plugin-58167.html[World
-Magnetic Model Plugin (WMM) Thread] +
-Forum: http://www.cruisersforum.com/forums/showthread.php?p=1701648[WMM
-Thread] +
+Source: 
+
+https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
+
+Forum: http://www.cruisersforum.com/forums/f134/world-magnetic-model-plugin-58167.html[WorldMagnetic Model Plugin (WMM) Thread]
+
+Forum: http://www.cruisersforum.com/forums/showthread.php?p=1701648[WMMThread]
 
 === A Quick-Start Guide.
 
@@ -89,7 +88,7 @@ image::wmm6.png[]
 
 Click “Settings” and adjust the display of the graphical plot.
 
-image::wmm7.png[] 
+image::wmm7.png[]
 
 Show variation only.
 
