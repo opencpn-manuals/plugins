@@ -13,8 +13,7 @@ basis..
 
 === Links
 
-Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn
-Internal Plugin] +
+Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
 Forum:
 http://www.cruisersforum.com/forums/f134/world-magnetic-model-plugin-58167.html[World
 Magnetic Model Plugin (WMM) Thread] +
