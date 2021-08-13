@@ -13,7 +13,7 @@ what works.
 === Links
 
 Source:: 
-https:://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
+https:://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn internal Plugin]
 Forum::
 http:://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html[Forum Discussion thread]
 
@@ -33,17 +33,17 @@ bottom. This process is reversible. Just grab the Dashboard dialog bar
 with the cursor, an pull towards the middle of the screen, and the
 Dashboard will become floating.
 
-image::dashboard32.png[image,width=600,height=454]
+image::dashboard32.png[]
 
 The same Dashboards docked left and bottom.
 
-image::dashboard-docked32.png[image,width=600,height=480]
+image::dashboard-docked32.png[]
 
 There is a grab handle in the SE corner of each Dashboard. Use it to
 resize each dialog. The graphics will change size, but not the text,
 which is handled separately. See further down.
 
-image::dash-drag.png[image,width=600,height=454]
+image::dash-drag.png[]
 
 === The Dashboard Tab
 
