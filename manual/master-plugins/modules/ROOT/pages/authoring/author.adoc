@@ -2,7 +2,7 @@
 
 This section is a collection of information about the build process for the OpenCPN Manuals.
 
-xref:FAQ.adoc[FAQ]
+xref:authoring/FAQ.adoc[FAQ]
 
 xref:intro.adoc[Introduction to the manual for developers]
 
