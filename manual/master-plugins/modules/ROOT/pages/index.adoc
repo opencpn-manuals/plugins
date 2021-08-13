@@ -8,4 +8,4 @@ xref:opencpn-beta-plugins::index.adoc[Beta Plugins]
 
 Beta plugins are plugins which are in development and not yet considered stable enough to be published on the main OpenCPN website or included in the master catalog. Where a managed version has been produced this will appear in the beta catalog of the OpenCPN program. Beta plugins may cause your computer to freeze or result in OpenCPN failing to work correctly. They are used entirely at your own risk.
 
-xref:authoring:author.adoc[Authoring the manual]
+xref:authoring/author.adoc[Authoring the manual]
