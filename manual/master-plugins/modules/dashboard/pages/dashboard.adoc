@@ -361,8 +361,10 @@ https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html#pr
 
 David Burch Videos
 
-https:://www.youtube.com/watch?v=a6ljVkZH-HY[Displaying Barometer in Opencpn -Part 1]
+Displaying Barometer in Opencpn -Part 1
+video::a6ljVkZH-HY[youtube]
 
-https:://www.youtube.com/watch?v=bxKr1C3IPXc[Barometer in Opencpn - Part II]
+Barometer in Opencpn - Part II
+video::bxKr1C3IPXc[youtube]
 
 
