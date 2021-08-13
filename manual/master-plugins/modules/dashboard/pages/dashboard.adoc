@@ -1,5 +1,3 @@
-indexmenu_n_1
-
 == Dashboard
 
 The Dashboard plugin is able to show quite a few instruments. *The
@@ -14,14 +12,12 @@ what works.
 
 === Links
 
-Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn
-Internal Plugin] +
-Forum:
-http://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html[Forum
-Discussion thread]
+Source:: https:://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
+Forum::
+http:://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html[Forum Discussion thread]
 
-Companion Plugin:
-https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:logs:nmea_converter[NmeaConverter_pi]
+Companion Plugin::
+https:://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn::opencpn_user_manual::plugins::logs::nmea_converter[NmeaConverter_pi]
 can solve many conversion problems.
 
 === The Dashboard in action
@@ -36,17 +32,17 @@ bottom. This process is reversible. Just grab the Dashboard dialog bar
 with the cursor, an pull towards the middle of the screen, and the
 Dashboard will become floating.
 
-image:../../../manual/plugins/dashboard/dashboard32.png[image,width=600,height=454]
+image::dashboard32.png[image,width=600,height=454]
 
 The same Dashboards docked left and bottom.
 
-image:../../../manual/plugins/dashboard/dashboard-docked32.png[image,width=600,height=480]
+image::dashboard-docked32.png[image,width=600,height=480]
 
 There is a grab handle in the SE corner of each Dashboard. Use it to
 resize each dialog. The graphics will change size, but not the text,
 which is handled separately. See further down.
 
-image:../../../manual/plugins/dashboard/dash-drag.png[image,width=600,height=454]
+image::dash-drag.png[image,width=600,height=454]
 
 === The Dashboard Tab
 
@@ -55,7 +51,7 @@ Icon will be available in the ToolBar and will work as an on/off toggle.
 The Preference button works exactly the same as described under
 “Dashboard Settings” below.
 
-image:../../../manual/plugins/dashboard/dashboard-plugin32.png[image,width=600,height=682]
+image::dashboard-plugin32.png[image,width=600,height=682]
 
 The “Enable” Button activates the plugin and shows the icon in the
 ToolBar. Once enabled, the “Disable” Button is displayed, as show above.
@@ -64,7 +60,7 @@ becomes available.
 
 ==== Dashboard settings
 
-image:../../../manual/plugins/dashboard/dash-set.png[image,width=298,height=239]
+image::dash-set.png[image,width=298,height=239]
 
 Right click anywhere in a Dashboard and a few options are displayed, in
 a small dialog. Above we have clicked on the vertical Dashboard. Make
@@ -75,7 +71,7 @@ and tick the same box again.
 
 ==== Preferences
 
-image:../../../manual/plugins/dashboard/dashprop322.png[image,width=450,height=455]
+image::dashprop322.png[image,width=450,height=455]
 
 ==== The Dashboard Tab
 
@@ -107,11 +103,11 @@ with the buttons to the right.
 available instruments can be highlighted and added to the Instruments
 Window.
 
-image:../../../manual/plugins/dashboard/dash-select-instr_0.png[image,width=260,height=265]
+image::dash-select-instr_0.png[image,width=260,height=265]
 
 ==== 40 Instruments Available
 
-[.np_break]# #
+
 
 [cols="",]
 |===
@@ -130,7 +126,7 @@ image:../../../manual/plugins/dashboard/dash-select-instr_0.png[image,width=260,
 |True HDG(text) Heading
 
 |Apparent WindAngle & Speed(dial) See
-http://www.cruisersforum.com/forums/f134/mwv-sentences-not-working-in-dashboard-159069.html[MWV]
+http:://www.cruisersforum.com/forums/f134/mwv-sentences-not-working-in-dashboard-159069.html[MWV]
 
 |App. Wind speed(text)
 
@@ -190,7 +186,7 @@ time.
 |Barometric Pressure (dial)
 
 |Barometric Pressure (text)
-http://www.cruisersforum.com/forums/f134/dashboard-vs-xdr-mta-mda-197116.html#post2571109[MVW
+http:://www.cruisersforum.com/forums/f134/dashboard-vs-xdr-mta-mda-197116.html#post2571109[MVW
 Example]
 
 |Barometric History
@@ -200,14 +196,14 @@ Example]
 |Magnetic COG^2^
 |===
 
-[.np_break]# #
+
 
 {empty}1. The DPT sentence is used, and transducer offset will be added
-to depth value, if available. +
-2. Linux note: GPS satellite info is not available if using gpsd. The
+to depth value, if available.
+2. Linux note:: GPS satellite info is not available if using gpsd. The
 same informations is however available through the “xgps” command.
 
- +
+
 
 ==== Delete
 
@@ -221,11 +217,11 @@ instruments in the Dashboard dialog.
 
 ==== The Appearance Tab
 
-image:../../../manual/plugins/dashboard/dashboard-preferences-appearance.jpeg[dashboard-preferences-appearance.jpg,title="dashboard-preferences-appearance.jpg",width=443,height=385]
+image::dashboard-preferences-appearance.jpeg[dashboard-preferences-appearance.jpg,title="dashboard-preferences-appearance.jpg",width=443,height=385]
 
 Use this tab to set fonts.
 
-Note: Depth Transducer Offset is in units of meters regardless of the
+Note:: Depth Transducer Offset is in units of meters regardless of the
 chosen display units.
 
 ==== Dampen SOG and COG (IR Filter)
@@ -244,26 +240,26 @@ Select these parameters as suits your use. These controls together
 enable the user to adjust the view of the dashboard to suit individual
 needs.
 
-image:../../../manual/plugins/dashboard/dash-big-fonts.png[image,width=700,height=691]
+image::dash-big-fonts.png[image,width=700,height=691]
 
 *Units Ranges and Formats* Set the units to use, and the range of the
 speed dial.
 
-image:../../../manual/33speed12.png[image,width=231,height=250]image:../../../manual/33speed50.png[image,width=231,height=250]
+image::33speed12.png[image,width=231,height=250]image::33speed50.png[image,width=231,height=250]
 
 ==== Wind History
 
 The Wind History Instrument needs some further explanations.
 
 *The “wind history” instrument is meant to be run as a standalone
-(vertical) instrument.* +
+(vertical) instrument.*
 Just define a separate dashboard and add it as the only instrument.
 
-image:../../../manual/wh2.png[image,width=345,height=421]
+image::wh2.png[image,width=345,height=421]
 
 You can resize the Instrument with the mouse.
 
-image:../../../manual/wh.png[image,width=800,height=181]
+image::wh.png[image,width=800,height=181]
 
 In real conditions, it monitors around 40 min of wind direction (red),
 as well as wind speed (blue), showing a vertical time line every 5 min
@@ -273,27 +269,27 @@ The text on the top shows the current values, as it is displayed in the
 standard instruments (blue = wind speed data, TWS=True Wind Speed, red =
 direction, TWD = True Wind Direction).
 
-Here is an explanation of the text line, left side (see screen shot): +
-TWS 7.5: true Wind Speed currently 7.5 kts +
-Max 22.3 kts since 18:50: this is the max Wind speed in the visible
-graphs, i.e. the last ~40 mins +
-Overall 22.3: the max wind speed since OpenCPN was started.
+Here is an explanation of the text line, left side (see screen shot)::
+TWS 7.5:: true Wind Speed currently 7.5 kts
+Max 22.3 kts since 18::50:: this is the max Wind speed in the visible
+graphs, i.e. the last ~40 mins
+Overall 22.3:: the max wind speed since OpenCPN was started.
 
-Right side above: TWD 357 degrees: True wind direction currently 357
+Right side above:: TWD 357 degrees:: True wind direction currently 357
 degrees
 
 The thin red/blue curves are the real direction/speed values, the
 thicker curves are smoothed values. Makes it easier to see trends.
 
-There is some logic included : The instruments zooms automatically as
-much as possible, always trying to show the whole visible curve; +
-Wind speed curve: +
+There is some logic included :: The instruments zooms automatically as
+much as possible, always trying to show the whole visible curve;
+Wind speed curve::
 if your max (visible) wind speed is 10 kts, then your scale is from 0…11
-kts (rounded upwards to the next full knot). +
-In the screen shot we had a mx of 22.3kts –> scale is 0…23 kts. +
-Wind direction: +
-The instrument scale shows +/- 90 degrees of the currently visible data
-values, but is limited to a total of 360 degrees. +
+kts (rounded upwards to the next full knot).
+In the screen shot we had a mx of 22.3kts –> scale is 0…23 kts.
+Wind direction::
+The instrument scale shows/- 90 degrees of the currently visible data
+values, but is limited to a total of 360 degrees.
 If the wind is shifting through North (from 350, 355, 359, 002, 010, …)
 we're shifting the curve as well, meaning that there is NO vertical jump
 in the data from 360 degrees –> 0 degrees, and we do NOT loose all the
@@ -311,7 +307,7 @@ continues to collect the data. To make it visible again simply right
 click on an existing standard-dashboard, and click the “Wind History”
 Dashboard.
 
-image:../../../manual/wh1.png[image,width=162,height=134]
+image::wh1.png[image,width=162,height=134]
 
 ==== Night time Mode
 
@@ -335,10 +331,10 @@ timezone offset (see below)
 . Local CPU clock - Local clock obtained from operating system
 
 On the appearance tab of the Dashboard preferences there is a setting
-for “Local offset from UTC”. The default is 00:00. When the 00:00 is
+for “Local offset from UTC”. The default is 00::00. When the 00::00 is
 selected th Local GPS clock will display time in the time zone of the
 computer running OpenCPN. If that is not what you want then you can
-selected any other offset in 30 minute increments up to +/- 12 hours.
+selected any other offset in 30 minute increments up to/- 12 hours.
 The offset will be added to the GPS UTC time and the local computer time
 zone will be ignored.
 
@@ -352,21 +348,20 @@ thus.
 
 ==== NmeaConverter_pi Conversions
 
-https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:plugins:logs:nmea_converter[NmeaConverter_pi]
+https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
+[NmeaConverter_pi]
 can solve many compatibility or unit conversion issues. There are nine
 examples showing how the use NmeaConverter to adjust Dashboard output.
 
 ===== Barometer MWV - XDR,MTA,MDA
 
 NMEAconverter_pi may help
-link:../logs/nmea_converter.html#prepare_barometer_sensor_output_for_dashboard[1.
-Prepare Barometer Sensor Output for Dashboard]
+https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html#prepare_barometer_sensor_output_for_dashboard
 
 David Burch Videos
 
-* https://www.youtube.com/watch?v=a6ljVkZH-HY&feature=youtu.be["Displaying
-Barameter in Opencpn -Part 1"]
-* https://www.youtube.com/watch?v=bxKr1C3IPXc[Barometer in Opencpn -
+* https:://www.youtube.com/watch?v=a6ljVkZH-HY["Displaying Barameter in Opencpn -Part 1"]
+* https:://www.youtube.com/watch?v=bxKr1C3IPXc[Barometer in Opencpn -
 Part II]
 
- +
+
