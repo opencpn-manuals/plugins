@@ -25,7 +25,6 @@ conventions. Linux, Windows and Mac are all different. If the plugin
 does not find a default MAPI program, an appropriate message will show
 in the plugin menu:
 
-[source,code]
 ----
  Request can't be sent. Please verify your email system parameters.
  You should also have a look at your log file.
@@ -34,7 +33,6 @@ in the plugin menu:
 
 and there will be an error message in the opencpn.log similar to:
 
-[source,code]
 ----
  10:55:47 PM: MAIL Error: Failed to logon to MAPI using a shared session, Error:3
 ----
@@ -48,7 +46,6 @@ CLS Send, MAPI or Runtime Error in Email]
 For example, if you use Thunderbird exclusively with Win10 or Win8.1,
 this should fix the problem
 
-[source,code]
 ----
  Start > Control Panel > Default Programs > Set your Default Programs,  Then pick Thunderbird.
 ----
@@ -116,8 +113,7 @@ line UseTLS=YES or UseSTARTTLS=YES
 the second file : /etc/ssmtp/revaliases (with root rights)
 
 Enter this line.
-root:yourlogin@yourdomain:yourISPserveurname.yourd
-omainimage:../../../../http_3a_2f_2fwww.cruisersforum.com_2fimages_2fsmilies_2ftongue.gif[image]ort
+root:yourlogin@yourdomain:yourISPserveurname.yourdomain
 
 the default port was 25 but now many ISP refuse it and use 587. If you
 have a mail system, you will find the right value in it.sudo
@@ -138,43 +134,40 @@ $sudo dpkg-reconfigure exim4-config
 This is a very simple setup where exim is just used to forward mail to
 the ISP:s smtp server. Local system mail is also available.
 
-image:../../../../manual/plugins/grib/33gribmail1.png[image,width=650]
+image::33gribmail1.png[image,width=650]
 It's important to use the choice above.
 
-image:../../../../manual/plugins/grib/33gribmail2.png[image,width=650]
+image::33gribmail2.png[image,width=650]
 I just use “localhost”.
 
-image:../../../../manual/plugins/grib/33gribmail3.png[image,width=650]
+image::33gribmail3.png[image,width=650]
 We have no incoming connections.
 
-image:../../../../manual/plugins/grib/33gribmail4.png[image,width=650]
+image::33gribmail4.png[image,width=650]
 We are not using this.
 
-image:../../../../manual/plugins/grib/33gribmail5.png[image,width=650]
+image::33gribmail5.png[image,width=650]
 We are not using this.
 
-image:../../../../manual/plugins/grib/33gribmail6.png[image,width=650]
+image::33gribmail6.png[image,width=650]
 This is important. It must point to your Internet Service Providers SMTP
 server.
 
-image:../../../../manual/plugins/grib/33gribmail7.png[image,width=650]
+image::33gribmail7.png[image,width=650]
 Your choice!
 
-image:../../../../manual/plugins/grib/33gribmail8.png[image,width=650]
+image::33gribmail8.png[image,width=650]
 RTFM and make up your mind. Not a big deal for this simple setup.
 
-image:../../../../manual/plugins/grib/33gribmail9.png[image,width=650]
+image::33gribmail9.png[image,width=650]
 RTFM.
 
-image:../../../../manual/plugins/grib/33gribmail10.png[image,width=650]
+image::33gribmail10.png[image,width=650]
 Your Choice, but no point in splitting this simple setup.
 
 Edit /etc/exim4/passwd.client so it contains your username and password
 to your ISP:s mail server.
 
-[.np_break]# #
-
-[cols="",]
 |===
 |# password file used when the local exim is authenticating to a
 remote_PARA+++TABLE_INS_# host as a
@@ -186,7 +179,6 @@ target.mail.server.example:login:password_PARA+++TABLE_INS_# for OpenCPN
 you can use *:login:password_PARA+++TABLE_INS_*:fakexyz123:madeupXYZ123
 |===
 
-[.np_break]# #
 
 (Re)start Exim4
 $ /etc/init.d/exim4
@@ -196,7 +188,7 @@ Start testing
 
 
 
-== Mac OS X
+== Mac OS
 
 === Using Sendmail/Postfix
 
@@ -211,21 +203,11 @@ sudo mkdir -p /Library/Server/Mail/Data/spool
 
 sudo gzip
 /usr/share/man/man1/\{postalias.1,postcat.1,postconf.1,postdrop.1,postf
-ix.1,postkick.1,postlock.1,postlog.1,postmap.1,pos
-tmulti.1,postqueue.1,postsuper.1,sendmail.1}
+ix.1,postkick.1,postlock.1,postlog.1,postmap.1,postmulti.1,postqueue.1,postsuper.1,sendmail.1}
 
-sudo gzip
-/usr/share/man/man5/\{access.5,aliases.5,bounce.5,canonical.5,cidr_tabl
-e.5,generic.5,header_checks.5,ldap_table.5,master.
-5,mysql_table.5,nisplus_table.5,pcre_table.5,pgsql
-_table.5,postconf.5,postfix-wrapper.5,regexp_table.5,relocated.5,tcp_table.5,t
-ransport.5,virtual.5}
+sudo gzip /usr/share/man/man5/\{access.5,aliases.5,bounce.5,canonical.5,cidr_table.5,generic.5,header_checks.5,ldap_table.5,master.5,mysql_table.5,nisplus_table.5,pcre_table.5,pgsql_table.5,postconf.5,postfix-wrapper.5,regexp_table.5,relocated.5,tcp_table.5,transport.5,virtual.5}
 
-sudo gzip
-/usr/share/man/man8/\{anvil.8,bounce.8,cleanup.8,discard.8,error.8,flus
-h.8,local.8,master.8,oqmgr.8,pickup.8,pipe.8,proxy
-map.8,qmgr.8,qmqpd.8,scache.8,showq.8,smtp.8,smtpd
-.8,spawn.8,tlsmgr.8,trivial-rewrite.8,verify.8,virtual.8}
+sudo gzip /usr/share/man/man8/\{anvil.8,bounce.8,cleanup.8,discard.8,error.8,flush.8,local.8,master.8,oqmgr.8,pickup.8,pipe.8,proxymap.8,qmgr.8,qmqpd.8,scache.8,showq.8,smtp.8,smtpd.8,spawn.8,tlsmgr.8,trivial-rewrite.8,verify.8,virtual.8}
 
 sudo /usr/sbin/postfix set-permissions
 
@@ -248,23 +230,22 @@ sudo postmap /etc/postfix/sasl_passwd
 
 Step 4
 You have to edit the main config file and add at the end the following
-lines with
-this command in Terminal:
+lines with this command in Terminal:
 sudo nano /etc/postfix/main.cf
 
 This to add:
-# Minimum Postfix-specific configurations.
+### Minimum Postfix-specific configurations.
 mydomain_fallback = localhost
 mail_owner = _postfix
 setgid_group = _postdrop
 relayhost=smtp.googlemail.com:587
 
-# Enable SASL authentication in the Postfix SMTP client.
+### Enable SASL authentication in the Postfix SMTP client.
 smtp_sasl_auth_enable=yes
 smtp_sasl_password_maps=hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options=
 
-# Enable Transport Layer Security (TLS), i.e. SSL.
+### Enable Transport Layer Security (TLS), i.e. SSL.
 smtp_use_tls=yes
 smtp_tls_security_level=encrypt
 tls_random_source=dev:/dev/urandom
@@ -286,15 +267,19 @@ date | mail -s test YourAccountname@googlemail.com
 Done.
 Supplemental
 If you want to have started sendmail/postfix each time you start you
-start
-your machine you can add these lines to the launch daemon:
+start your machine you can add these lines to the launch daemon:
+
+[source,xml,subs=attributes+]
+----
 <key>RunAtLoad</key>
 <true/>
-
+----
 Do this with this command in terminal:
 sudo nano /System/Library/LaunchDaemons/org.postfix.master.plist
 
 After that this file should look like this:
+[source,xml,subs=attributes+]
+----
 <?xml version=“1.0” encoding=“UTF-8”?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
 "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -322,5 +307,5 @@ After that this file should look like this:
 <true/>
 </dict>
 </plist>
-
+----
 Instead of googlemail in this example you may use any other mail server.
