@@ -9,12 +9,12 @@ using playbook.yml.
 git init .
 touch .gitignore
 git add .gitignore
-git commit -m 'initialize repository
+git commit -m 'initialize repository'
 ....
 
 After this you need a structure like the following:
 
-image::https://raw.githubusercontent.com/wiki/Rasbats/opencpn-plugins-manual/images/local.build.structure.png[structure]
+image::../../images/local.build.structure.png[structure]
 
 The plugin folder has the same structure and files as the initial one
 sent to the developer by PR.
