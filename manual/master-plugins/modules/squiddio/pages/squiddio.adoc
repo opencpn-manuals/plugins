@@ -6,15 +6,12 @@ image::squiddio_overall1.png[]
 
 === Links
 
-* Website: *http://squidd.io[sQuiddio.io]*
-* Source:https://github.com/mauroc/squiddio_pi[Github Repository]
-* Release: https://github.com/mauroc/squiddio_pi/releases[Github
-Release]
-* Download: https://opencpn.org/OpenCPN/plugins/sQuiddio.html[Website
-Download]
+* Website: http://squidd.io[sQuiddio.io]
+* Source: https://github.com/mauroc/squiddio_pi[Github Repository]
+* Release: https://github.com/mauroc/squiddio_pi/releases[Github Release]
+* Download: https://opencpn.org/OpenCPN/plugins/sQuiddio.html[Website Download]
 * Forum:
-http://www.cruisersforum.com/forums/f134/squiddio-plugin-132122.html[sQuiddio
-CF Thread]
+http://www.cruisersforum.com/forums/f134/squiddio-plugin-132122.html[sQuiddio CF Thread]
 
 === The sQuiddio plugin
 
@@ -57,10 +54,9 @@ method is “long touch” on the chart canvas. Should work on all devices.
 
 * a _Sector_ is defined as an area of 5×5 degrees of lat/lon
 
-Use of the plugin is free of charge. (http://squidd.io/users/new[Free
-registration] is required for certain functions).
+Use of the plugin is free of charge. (http://squidd.io/users/new[Free registration] is required for certain functions).
 
-==== Share your seafaring knowledge with others
+=== Share your seafaring knowledge with others
 
 image::squiddio_poi_view.png[]
 
@@ -71,13 +67,13 @@ rate the POI on attributes such as beauty, service and quality of wi-fi
 access (where applicable).
 
 Can't find your favorite anchorage or marina?
-link:squiddio.html#submitting_a_new_poi[Report new POIs] not yet
+http://squidd.io/squiddio.html#submitting_a_new_poi[Report new POIs] not yet
 available in the database.
 
 More info on viewing, creating and updating POIs in sQuiddio
-link:squiddio.html#viewing_points_of_interest[here].
+http://squidd.io/squiddio.html#viewing_points_of_interest[here].
 
-==== View Weather Buoy and Ship Reports right on your chart
+=== View Weather Buoy and Ship Reports right on your chart
 
 (version 1.3 or greater)
 
@@ -90,7 +86,7 @@ an hourly basis as POIs on your OpenCPN chart.
 More info on Buoy and Ship reports
 link:squiddio.html#viewing_ndbc_buoy_and_ship_reports[here].
 
-==== One-click download of Satellite Maps for any Point of Interest
+=== One-click download of Satellite Maps for any Point of Interest
 
 (version 1.3 or greater)
 
@@ -102,7 +98,7 @@ image::squiddio_gcharts.png[]
 More info on downloading Google Maps
 link:squiddio.html#downloading_google_maps_for_one_or_more_pois[here].
 
-==== Follow your cruising friends on your OpenCPN Chart
+=== Follow your cruising friends on your OpenCPN Chart
 
 (version 0.4 or greater)
 
@@ -117,10 +113,9 @@ link:squiddio.html#follow_your_cruising_friends_on_your_opencpn_chart1[here].
 
 === Installing the plugin
 
-* Look for the sQuidd.io icon
-image::marina_grn.png[image,width=20]in the _Plugins for
+* Look for the sQuidd.io icon image:marina_grn.png[image,width=20]in the _Plugins for
 OpenCPN 3.3 and later_ section of the plugins
-http://opencpn.org/ocpn/downloadplugins#plugins33[download page].
+https://opencpn.org/OpenCPN/info/downloadplugins.html[download page].
 * Select the architecture and platform of your choice, download and
 install the relevant installation package.
 * After successful installation, the plug in should be available in the
@@ -128,7 +123,7 @@ Plugins tab of your OpenCpn Options dialog box.
 
 === Using the plugin
 
-==== Viewing Points of Interest:
+=== Viewing Points of Interest:
 
 * In OpenCPN, go to the Options → Plugins and enable the sQuiddio plugin
 (no settings are required).
@@ -144,7 +139,7 @@ sQuiddio POI page, right click on POI's waypoint, and select Properties.
 sQuidd.io. If you have an Internet connection, click the link and your
 browser should soon display the Destination's page on sQuidd.io.
 
-http://squidd.io/places/17924[image:../../../http_3a_2f_2fsquidd.io_2fassets_2fopencpn_2fplace_view.png[image]]
+http://squidd.io/places[squiddio places]
 
 * You can hide all POIs for an area from the charts by right-clicking on
 the chart and selecting _sQuiddio: Hide local Points of Interest_ from
@@ -155,7 +150,7 @@ destinations_.
 sQuiddio icon in the toolbar, then the _View_ tab, and select the types
 of POIs you want to display on the chart
 
-===== POIs as OpenCPN Waypoints or OCPN Draw Texpoints
+=== POIs as OpenCPN Waypoints or OCPN Draw Texpoints
 
 In earlier versions of the plugin (< 0.7), POIs were represented on the
 chart as OpenCPN Waypoints (which wasn't optimal, as Waypoints were not
@@ -167,7 +162,7 @@ the ODraw Plugin installed, we strongly recommend you select this option
 by going to the settings dialog → _POI Rendering_ and selecting _ODraw
 Textpoint_ as an option.
 
-==== Submitting a new POI
+=== Submitting a new POI
 
 sQuiddio relies on users like you to grow its database of POIs and keep
 it relevant. To submit a new POI:
@@ -178,7 +173,7 @@ chart
 the contextual menu. (Note: you must have a free user account to report
 new POI. Signup https://squidd.io/signup[here])
 
-==== Viewing NDBC Buoy and Ship reports
+=== Viewing NDBC Buoy and Ship reports
 
 To view the updated reports:
 
@@ -200,7 +195,7 @@ locations. We are currently looking into adding other organizations with
 similar services (e.g. Metoffice). Please contact _info at squidd dot
 io_ for ideas and suggestions
 
-==== Downloading Google Maps for one or more POIs
+=== Downloading Google Maps for one or more POIs
 
 To download Google maps for a set of POIs:
 
@@ -226,7 +221,7 @@ the toolbar and go to the _Download_ tab
 addition to the individual POI-specific maps. See the option _Include
 Viewport Map_ in the _Downloads_ tab
 
-==== Follow your cruising friends on your OpenCPN Chart
+=== Follow your cruising friends on your OpenCPN Chart
 
 If you are sailing with a group of other boats, chartering with a
 flottilla, participating in a regatta or simply want to follow your
