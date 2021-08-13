@@ -12,7 +12,7 @@ separate download is required.*
 ==== Links
 
 * Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn
-Internal Plugin] +
+Internal Plugin]
 * Forum:
 http://www.cruisersforum.com/forums/f134/chart-downloader-updater-plugin-58737.html[Chart
 Downloader Forum]
@@ -23,8 +23,7 @@ published by Argentina, Brasil and New Zealand (covering also huge areas
 of the Pacific ocean) as well as electronic charts of the inland
 waterways of the USA and more than a dozen European Union countries.
 
-For link:chart_manual_installation.html[Manual Installation
-Instructions] but Chart Downloader is preferred.
+You could use manual https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_manual_installation[installation] but Chart Downloader is preferred.
 
 === A Few Basic Concepts
 
