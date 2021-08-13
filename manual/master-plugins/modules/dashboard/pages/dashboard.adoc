@@ -12,7 +12,8 @@ what works.
 
 === Links
 
-Source:: https:://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
+Source:: 
+https:://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin]
 Forum::
 http:://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html[Forum Discussion thread]
 
@@ -360,8 +361,9 @@ https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html#pr
 
 David Burch Videos
 
-* https:://www.youtube.com/watch?v=a6ljVkZH-HY["Displaying Barameter in Opencpn -Part 1"]
-* https:://www.youtube.com/watch?v=bxKr1C3IPXc[Barometer in Opencpn -
+https:://www.youtube.com/watch?v=a6ljVkZH-HY["Displaying Barameter in Opencpn -Part 1"]
+
+https:://www.youtube.com/watch?v=bxKr1C3IPXc[Barometer in Opencpn -
 Part II]
 
 
