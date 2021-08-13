@@ -43,4 +43,12 @@ https://stackoverflow.com/questions/26126362/converting-all-files-in-a-folder-to
 https://stackoverflow.com/questions/525592/find-and-replace-inside-a-text-file-from-a-bash-command
 
 
+* *Finding broken links*
 
+Under :build the site with antora" Full LInkcheck
+I see a number of missing links.
+There are a lot of links to cruiser's forum which still work.
+I am trying to find the locations in the text for these.
+How would one do that?
+
+They are straight html link, right? Just do git grep :https://www.cruisersforum.com/, that gives you the matches and files. Or use git grep -l which just returns a list of files containing the link.

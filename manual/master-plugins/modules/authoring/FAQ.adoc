@@ -4,7 +4,7 @@
 
 Please use the issues link in the main repository:
 
-https://github.com/Rasbats/opencpn-plugins-manual/issues
+https://github.com/opencpn-manuals/plugins/issues
 
 * *What is the best way of making images show when using Firefox to open
 an .adoc file*
@@ -17,7 +17,7 @@ of the images.
 
 Latest build is here:
 
-https://rasbats.github.io/opencpn-plugins-manual/opencpn-plugins-manual/0.1/index.html
+https://opencpn-manuals.github.io/plugins/opencpn-plugins/0.1/index.html
 
 * *How can the manual be edited*
 

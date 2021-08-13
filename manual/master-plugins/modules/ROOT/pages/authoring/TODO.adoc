@@ -1,4 +1,0 @@
-== TODO
-
-* Document title is not showing at the moment. Need to look at this.
-* Prevent a PR for the manual causing a circleci build. 

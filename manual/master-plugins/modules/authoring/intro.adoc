@@ -3,7 +3,7 @@
 The OpenCPN Manuals seen by the user are still HTML but produced from files which use the asciidoc
 markup. The git for the plugins manual is here:
 
-https://github.com/Rasbats/opencpn-plugins-manual
+https://github.com/opencpn-manuals/plugins
 
 Initially modules were made for each developer's plugin which were a direct translation from the OpenCPN dokuwiki material to asciidoc.
 
