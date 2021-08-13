@@ -1,0 +1,44 @@
+== Introduction
+
+The OpenCPN Manuals seen by the user are still HTML but produced from files which use the asciidoc
+markup. The git for the plugins manual is here:
+
+https://github.com/Rasbats/opencpn-plugins-manual
+
+Initially modules were made for each developer's plugin which were a direct translation from the OpenCPN dokuwiki material to asciidoc.
+
+A PR was then made to move the module to a manual folder in the developer's repo
+(master branch), along with an antora.yml file to allow the collection
+of that data. When the PR is accepted the module in the opencpn plugins manual repo
+is deleted. Future source for the plugins manual is the root folder of the developer's repo. The data is
+collected everytime the OpenCPN manuals are built.
+
+Having the manual in the developer's repo means that any changes will
+appear in the OpenCPN plugins manual after it has been rebuilt. 
+
+The asciidoc files are easily edited with a text editor or something
+like VS Code. When edited they can be viewed with Firefox with the
+asciidoc extension.
+
+Visit the link:tools.adoc[Tools] page for more details.
+
+We hope to move the git under the ``github.com/opencpn/'' umbrella.
+Rasbats is only a temporary test platform.
+
+*Reading the adoc files*
+
+Firefox and Chrome have an extension for reading the asciidoc format.
+Called Asciidoctor.js Live Preview:
+
+https://github.com/asciidoctor/asciidoctor-chrome-extension/
+
+This allows a preview of the page as it would appear in HTML.
+
+*Editing asciidoc*
+
+For minor edits a text editor can be used. Linux users have Vi. 
+VS Code is an opensource editor which has an asciidoc extension (Win, Lin, Mac).
+
+*Syntax for the markup:*
+
+https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-ul-max
