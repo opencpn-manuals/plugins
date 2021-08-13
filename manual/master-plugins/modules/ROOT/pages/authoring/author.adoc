@@ -4,12 +4,12 @@ This section is a collection of information about the build process for the Open
 
 xref:authoring/FAQ.adoc[FAQ]
 
-xref:intro.adoc[Introduction to the manual for developers]
+xref:authoring/intro.adoc[Introduction to the manual for developers]
 
-xref:tools.adoc[Tools used for editing and reading manual pages]
+xref:authoring/tools.adoc[Tools used for editing and reading manual pages]
 
-xref:local-build[(Not essential reading)Shows how the manual information can be used]
+xref:authoring/local-build[(Not essential reading)Shows how the manual information can be used]
 
-xref:useful.adoc[Useful stuff]
+xref:authoring/useful.adoc[Useful stuff]
 
-xref:TODO.adoc[TODO]
+xref:authoring/TODO.adoc[TODO]
