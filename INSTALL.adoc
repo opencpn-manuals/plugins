@@ -38,5 +38,5 @@ https://github.com/opencpn-manuals/plugins/actions
 
 If the commit subject contains the string [full-linkcheck] site is checked
 using the checklink program from the w3c-linkchecks suite. This is a
-very slow process (currently about ten minutes) which however reveals more
+very slow process (currently about 20 minutes) which however reveals more
 errors, notably related to url fragments and corresponding anchors.
