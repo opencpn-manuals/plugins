@@ -84,7 +84,7 @@ Data Buoy Center (NDBC) https://www.ndbc.noaa.gov/[database] updated on
 an hourly basis as POIs on your OpenCPN chart.
 
 More info on Buoy and Ship reports
-link:squiddio.html#viewing_ndbc_buoy_and_ship_reports[here].
+link:squiddio.adoc#viewing_ndbc_buoy_and_ship_reports[here].
 
 === One-click download of Satellite Maps for any Point of Interest
 
@@ -172,7 +172,7 @@ chart
 * Right-click and select _sQuiddio: Report a POI at this location_ from
 the contextual menu. (Note: you must have a free user account to report
 new POI. Signup https://squidd.io/signup[here])
-
+[#viewing_ndbc_buoy_and_ship_reports]
 === Viewing NDBC Buoy and Ship reports
 
 To view the updated reports:
