@@ -71,7 +71,7 @@ http://squidd.io/squiddio.html#submitting_a_new_poi[Report new POIs] not yet
 available in the database.
 
 More info on viewing, creating and updating POIs in sQuiddio
-http://squidd.io/squiddio.html#viewing_points_of_interest[here].
+link:squiddio.adoc#viewing_points_of_interest[here].
 
 === View Weather Buoy and Ship Reports right on your chart
 
@@ -123,6 +123,7 @@ Plugins tab of your OpenCpn Options dialog box.
 
 === Using the plugin
 
+[#viewing_points_of_interest]
 === Viewing Points of Interest:
 
 * In OpenCPN, go to the Options → Plugins and enable the sQuiddio plugin
