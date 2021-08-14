@@ -19,3 +19,5 @@ jobs:
         run: ci/build-and-deploy.sh
       - name: "Check links"
         run: ci/linkchecker.sh
+      - name: "Full linkcheck (requires [full-linkcheck] in subject)"
+        run: ci/w3c-linkcheck.sh

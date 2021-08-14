@@ -1,8 +1,8 @@
-= Building the development manual
+= Building the plugins manual
 
 This document describes the basic steps to build and publish the
-manual. See the file WORKFLOWS for other steps such as initiating
-a new repo, editing  files etc.
+manual. See the file WORKFLOWS in the main project  for other steps
+such as initiating a new repo, editing  files etc.
 
 
 == Publish to Github Pages
@@ -12,8 +12,8 @@ Push the current branch to the branch _build_, something like
     $ git push -f origin HEAD:build
 
 Pushing to _build_ initiates a build job, progress can be followed at
-https://github.com/opencpn-manuals/development/actions. The results
-becomes available at https://github.com/opencpn-manuals/development
+https://github.com/opencpn-manuals/plugins/actions. The results
+becomes available at https://github.com/opencpn-manuals/plugins
 after about 2-3  minutes.
 
 
@@ -34,7 +34,7 @@ results by pointing the browser to the _docs/index.html_ file.
 
 When the build is done at github, a quick check for broken links is done
 using linkchecker. Logs from these tests are available at
-https://github.com/opencpn-manuals/development/actions
+https://github.com/opencpn-manuals/plugins/actions
 
 If the commit subject contains the string [full linkcheck] site is checked
 using the checklink program from the w3c-linkchecks suite. This is a
