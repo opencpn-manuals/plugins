@@ -544,11 +544,10 @@ downloaded by ZyGrib and then opened in OpenCPN.
 * https://opengribs.org/en/gribs[Opengrib] Other sources of gribs, also
 a grib server.http://openskiron.org/en/[Download Mediterranean Grib
 Files]
-* link:../../toolbar_buttons/route_mark_manager/weather_routing.html[Weather-Routing]
+* https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:toolbar_buttons:route_mark_manager:weather_routing[Weather-Routing]
 tools use Grib_pi and Grib data to create optimized routing based on
 boat performance files.
-* link:../weather/weather_routing.html[Weather Routing Plugin] OpenCPN
-has an excellent weather_routing plugin which works in concert with
+* https://opencpn-manuals.github.io/plugins/weather_routing/0.1/weather_routing.html OpenCPN has an excellent weather_routing plugin which works in concert with
 grib_pi and climatology_pi concurrently, so that grib files are extended
 by Climatology's monthly averages for planning long voyages.
 * http://wiki.virtual-loup-de-mer.org/index.php/QtVlm/en[QtVlm], is
