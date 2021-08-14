@@ -600,5 +600,4 @@ lieu of professionally-generated charts or forecasts.
 
 For advanced discussion of mail servers:
 
-xref:mail_servers.adoc[Mail Servers]
-
+xref:mail_servers[Mail Servers]
