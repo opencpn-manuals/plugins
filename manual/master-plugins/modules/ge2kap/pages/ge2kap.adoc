@@ -134,9 +134,9 @@ small programs and test them on the fly.
 
 Here is a reasonable technique for putting charts into OpenCPN with a
 minimum number of steps and/or geeky user interfaces. It does involve
-using GE2KAP, which you can find
-*_link:../../../supplementary_software/chart_conversion_manual/chart_conversion.html[Chart
-Conversion]_* complete with downloading instructions.
+using GE2KAP, which you can find in
+https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:supplementary_software:chart_conversion_manual:chart_conversion[Chart
+Conversion] complete with downloading instructions.
 
 GE2KAP is a great program. I've used it a bunch of times to get imagery
 in OpenCPN to show me where rocks, shorelines, etc. really are. But

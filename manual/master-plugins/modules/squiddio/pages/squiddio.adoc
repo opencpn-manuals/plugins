@@ -96,7 +96,7 @@ satellite images. View detailed satellite maps of marinas or anchorages.
 image::squiddio_gcharts.png[]
 
 More info on downloading Google Maps
-link:squiddio.html#downloading_google_maps_for_one_or_more_pois[here].
+link:squiddio.adoc#downloading_google_maps_for_one_or_more_pois[here].
 
 === Follow your cruising friends on your OpenCPN Chart
 
@@ -109,7 +109,7 @@ http://squidd.io/faq#follow[follow list] , and display their current
 position and heading on your OpenCPN charts
 
 More info on Log Sharing
-link:squiddio.html#follow_your_cruising_friends_on_your_opencpn_chart1[here].
+https://squidd.io/faq#log_sharing[here].
 
 === Installing the plugin
 
@@ -194,7 +194,7 @@ to United States waters, with some non-US (but currently few) other
 locations. We are currently looking into adding other organizations with
 similar services (e.g. Metoffice). Please contact _info at squidd dot
 io_ for ideas and suggestions
-
+[#downloading_google_maps_for_one_or_more_pois]
 === Downloading Google Maps for one or more POIs
 
 To download Google maps for a set of POIs:

@@ -198,14 +198,12 @@ users, the OpenCPN initialization file is located in the .opencpn
 directory in the user's home directory.
 
 For example:
-
-[PlugIns/TwoCan] +
-PGN=511 +
-Log=0 +
-Adapter=C:\\Program
-Files\\OpenCPN\\plugins\\twocan_pi\\drivers\\kvaser.dll +
+----
+PGN=511
+Log=0
+Adapter=C:\\Program Files\\OpenCPN\\plugins\\twocan_pi\\drivers\\kvaser.dll
 Mode=0
-
+----
 === Problems
 
 The TwoCan plugin has undergone very limited testing.

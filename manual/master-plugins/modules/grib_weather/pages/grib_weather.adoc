@@ -266,7 +266,7 @@ one of the items in the selection menu below.
 
 image::4gribdisplaychoices.png[]
 
-Many of the entries are repeated, so let&#39;s first have a closer look
+Many of the entries are repeated, so lets first have a closer look
 at the the most important one, the Wind. Entries on the same line are
 connected.
 
