@@ -91,7 +91,7 @@ current OpenCPN configuration, the plugin configures it for you.
 
 You can check the configuration on the “*Chart Files Tab*”. For more
 details about managing your charts, you should definitely read
-https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_files_tab[Chart Files Tab] - Installing Charts_
+https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_files_tab[Installing Charts].
 
 image::1pleaseupdate.jpeg[]
 
@@ -176,7 +176,7 @@ image::08-afterdownloading.png[]
 
 
 For more details about managing your charts, you should definitely read
-_link:chart_files_tab.html[Chart Files Tab] - Installing Charts_
+https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:charts:chart_files_tab#installing_charts[Installing Charts].
 
 To make it short, go to *Options > Chart Files Tab* and tick the *Scan
 Charts and Update Database* checkbox and when you *close* the Toolbox
