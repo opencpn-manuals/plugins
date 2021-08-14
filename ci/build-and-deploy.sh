@@ -31,6 +31,7 @@ antora $PLAYBOOK
 touch $SITE_DIR/.nojekyll
 
 # Set up a git environment in $SITE_DIR
+orig_subject=$(git log -1 --oneline $FETCH_HEAD)
 author_email=$(git log -1 --pretty=format:"%ae")
 cd $SITE_DIR
 git init -b pages
@@ -41,5 +42,11 @@ git config --local user.name "$GITHUB_ACTOR"
 
 # Commit changes and push to $GP_BRANCH
 git add --all .
-git commit -q -m "[CI] Updating $GP_BRANCH branch from ${GITHUB_SHA:0:8}"
+git fetch origin $GITHUB_SHA
+msg="[CI] Updating gh-pages branch from ${GITHUB_SHA:0:8}"
+if [[ "$orig_subject" == *full?linkcheck* ]]; then
+    msg="[full-linkcheck] $msg"
+fi
+git commit -q -m "$msg"
+
 git push -f origin pages:$GP_BRANCH

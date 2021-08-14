@@ -17,3 +17,7 @@ jobs:
         uses: actions/checkout@v2
       - name: "Build and deploy"
         run: ci/build-and-deploy.sh
+      - name: "Check links"
+        run: ci/linkchecker.sh
+      - name: "Full linkcheck (requires [full-linkcheck] in subject)"
+        run: ci/w3c-linkcheck.sh
