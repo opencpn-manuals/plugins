@@ -67,11 +67,11 @@ rate the POI on attributes such as beauty, service and quality of wi-fi
 access (where applicable).
 
 Can't find your favorite anchorage or marina?
-link:squiddio.adoc#submitting_a_new_poi[Report new POIs] not yet
+xref:squiddio.adoc#submitting_a_new_poi[Report new POIs] not yet
 available in the database.
 
 More info on viewing, creating and updating POIs in sQuiddio
-link:squiddio.adoc#viewing_points_of_interest[here].
+xref:squiddio.adoc#viewing_points_of_interest[here].
 
 === View Weather Buoy and Ship Reports right on your chart
 
