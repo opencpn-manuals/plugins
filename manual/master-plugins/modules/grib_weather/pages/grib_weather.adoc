@@ -486,7 +486,7 @@ Operating System is required.
 
 *There is an advanced alternative* for Mac OSX, Linux (and BSD). Install
 and configure a mail server. Instructions are on the
-link:grib_weather/mail_servers.html[Grib Weather Mail Servers Page].
+xref:mail_servers.adoc[Grib Weather Mail Servers Page].
 Following these instructions to enable the mail server will enable
 automatic transmission of a grib request to SailDocs.
 
@@ -600,4 +600,4 @@ lieu of professionally-generated charts or forecasts.
 
 For advanced discussion of mail servers:
 
-xref:mail_servers[Mail Servers]
+xref:mail_servers.adoc[Mail Servers]
