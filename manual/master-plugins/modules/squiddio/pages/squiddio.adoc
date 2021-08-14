@@ -96,7 +96,7 @@ satellite images. View detailed satellite maps of marinas or anchorages.
 image::squiddio_gcharts.png[]
 
 More info on downloading Google Maps
-link:squiddio.adoc#downloading_google_maps_for_one_or_more_pois[here].
+xref:squiddio.adoc#downloading_google_maps_for_one_or_more_pois[here].
 
 === Follow your cruising friends on your OpenCPN Chart
 
