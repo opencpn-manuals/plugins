@@ -173,6 +173,7 @@ chart
 * Right-click and select _sQuiddio: Report a POI at this location_ from
 the contextual menu. (Note: you must have a free user account to report
 new POI. Signup https://squidd.io/signup[here])
+
 [#viewing_ndbc_buoy_and_ship_reports]
 === Viewing NDBC Buoy and Ship reports
 
