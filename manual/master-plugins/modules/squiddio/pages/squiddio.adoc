@@ -162,6 +162,7 @@ hovering the mouse, POIs cannot be mistakenly moved etc.) . If you have
 the ODraw Plugin installed, we strongly recommend you select this option
 by going to the settings dialog → _POI Rendering_ and selecting _ODraw
 Textpoint_ as an option.
+
 [#submitting_a_new_poi]
 === Submitting a new POI
 
