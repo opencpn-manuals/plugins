@@ -15,7 +15,7 @@ they can be used by other plugins.
 
 === Links
 
-* Source: http://github.com/stadar/trackpoint_pi
+* Source: https://gitlab.com/drid/trackpoint_pi
 * Forum:
 http://www.cruisersforum.com/forums/showthread.php?p=2631510[Trackpoint
 CF Thread]
