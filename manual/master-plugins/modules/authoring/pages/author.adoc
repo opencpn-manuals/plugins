@@ -8,7 +8,7 @@ xref:intro.adoc[Introduction to the manual for developers]
 
 xref:tools.adoc[Tools used for editing and reading manual pages]
 
-xref:local-build.adoc[Shows how the manual information can be used]
+xref:localbuild.adoc[Shows how the manual information can be used]
 
 xref:useful.adoc[Useful stuff]
 
