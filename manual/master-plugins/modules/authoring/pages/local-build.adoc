@@ -14,7 +14,7 @@ git commit -m 'initialize repository'
 
 After this you need a structure like the following:
 
-image::../local.build.structure.png[structure]
+image::local.build.structure.png[structure]
 
 The plugin folder has the same structure and files as the initial one
 sent to the developer by PR.
