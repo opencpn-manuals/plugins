@@ -11,56 +11,56 @@ content:
       start_paths:
       - manual/master-plugins
       - manual/beta-plugins
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/DR_pi/manual/dead_reckoning
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/EarthExplorer_pi/manual/earthexplorer
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/otcurrent_pi/manual/otcurrent
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/otidalplan_pi/manual/otidalplan
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/otidalroute_pi/manual/otidalroute
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/photolayer_pi/manual/photolayer
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/SailawayNMEA_pi/manual/sailawaynmea
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/sar_pi/manual/sar
-    
+
     - url: .
       branches: HEAD
       start_path: ./sources/shipdriver_pi/manual/shipdriver
-    
-   - url: .
+
+    - url: .
       branches: HEAD
       start_path: ./sources/survey_pi/manual/survey
-    
-  - url: .
+
+    - url: .
       branches: HEAD
       start_path: ./sources/TideFinder_pi/manual/tidefinder
-    
-   - url: .
+
+    - url: .
       branches: HEAD
       start_path: ./sources/UKTides_pi/manual/uktides
-    
-   - url: .
+
+    - url: .
       branches: HEAD
       start_path: ./sources/vfkaps_pi/manual/vfkaps
 
@@ -72,7 +72,7 @@ ui:
     - path: ui.yml
       contents: |
         static_files: [ .nojekyll ]
-    - path: .nojekyll   
+    - path: .nojekyll
 
 output:
   dir: docs
