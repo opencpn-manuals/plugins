@@ -7,7 +7,6 @@ content:
   sources:
     - url: .
       branches: HEAD
-      edit_url: true
       start_paths:
       - manual/master-plugins
       - manual/beta-plugins

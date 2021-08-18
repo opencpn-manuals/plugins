@@ -8,6 +8,6 @@
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 587199b32fc04a7f799a286422c5bfe7104f30c5
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git d8ae1d0736fd77bd7638cff5dd8c779a7594bcc4
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 2bbb2ef26db25657558db0bb0c6dfea90a1063f4
-./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 7f778f0b6d2989d7b56a68aee4c3c7d524e9cdf2
+./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 8110207dc06a02e867cef565407a5baadf270d70
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
 ./sar_pi https://github.com/Rasbats/sar_pi.git 543af5d0bcbf8024fab8be15b3fb1fe3a140b721
