@@ -20,7 +20,7 @@ The asciidoc files are easily edited with a text editor or something
 like VS Code. When edited they can be viewed with Firefox with the
 asciidoc extension.
 
-Visit the xref:authoring/tools.adoc[Tools] page for more details.
+Visit the xref:tools.adoc[Tools] page for more details.
 
 We hope to move the git under the ``github.com/opencpn/'' umbrella.
 Rasbats is only a temporary test platform.
