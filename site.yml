@@ -4,10 +4,10 @@ site:
   start_page:  opencpn-plugins::index.adoc
 
 content:
+  edit_url: ~
   sources:
     - url: .
       branches: HEAD
-      edit_url: false
       start_paths:
       - manual/master-plugins
       - manual/beta-plugins
