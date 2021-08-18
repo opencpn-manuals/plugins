@@ -53,7 +53,5 @@
 ** xref:calculator:ROOT:calculator.adoc[calculator]
 ** xref:launcher:ROOT:launcher.adoc[launcher]
 ** xref:debugger:ROOT:debugger.adoc[debugger]
-** xref:pypilot:ROOT:pypilot.adoc[pypilot]
-** xref:shipdriver:ROOT:shipdriver.adoc[Shipdriver]
 ** xref:twocan:twocan.adoc[twocan]
 ** xref:odometer:ROOT:odometer.adoc[odometer]
