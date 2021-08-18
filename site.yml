@@ -50,10 +50,6 @@ content:
     
     - url: .
       branches: HEAD
-      start_path: ./sources/dashboard_tactics_pi/manual/dash-t
-    
-    - url: .
-      branches: HEAD
       start_path: ./sources/DR_pi/manual/dead_reckoning
     
     - url: .
