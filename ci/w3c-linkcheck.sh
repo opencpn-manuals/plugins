@@ -20,7 +20,6 @@ checklink \
     --suppress-broken '403:$dokuwiki?id=opencpn:opencpn_user_manual' \
     --suppress-broken '-1:https://cubian.org/downloads/' \
     --suppress-broken '-1:https://cubian.org/2013/08/12/enlarge-cubian-rootfs-partition/' \
-    --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
     --exclude adsabs.harvard.edu \
     --exclude apple.com \
     --exclude bethandevans.com \
@@ -31,4 +30,6 @@ checklink \
     --exclude opencpn.org \
     --exclude youtube.com \
     --exclude youtu.be \
+    --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
+    --masquerade "https://opencpn-manuals.github.io/plugins $PWD/docs" \
     --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
