@@ -3,7 +3,7 @@
 image:options-plugins-icon.png[]
 
 Where the manual comes from the developer repository this is indicated by '#'.
-The manuals for the included plugins will not be maintained as part of the OpenCPN code base. 
+The manuals for the included plugins will not be maintained as part of the OpenCPN code base.
 
 The other manuals are built by modules in the github rep 'https://github.com/Rasbats/ocpn-user-plugins-manual'
 
@@ -11,82 +11,82 @@ Plugins included in the master catalog are indicated by image:managed_plugin.png
 
 == Plugin Categories
 
-=== Included_plugins  
+=== Included_plugins
 
 These plugins are installed with the basic OpenCPN program.
 
-* xref:dashboard:dashboard.adoc[dashboard]  
-* xref:wmm:wmm.adoc[World Magnetic]  
-* xref:grib_weather:grib_weather.adoc[grib_weather]  
+* xref:dashboard:dashboard.adoc[dashboard]
+* xref:wmm:wmm.adoc[World Magnetic]
+* xref:grib_weather:grib_weather.adoc[grib_weather]
 * xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
 
-=== AIS / Radar  
-* xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display #] image:managed_plugin.png[] 
-* xref:radar:ROOT:Home.adoc[Radar Display #] image:managed_plugin.png[]
-* xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR #]
+// === AIS / Radar
+// * xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display #] image:managed_plugin.png[]
+// * xref:radar:ROOT:Home.adoc[Radar Display #] image:managed_plugin.png[]
+// * xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR #]
+//
+=== Charts
+// * xref:nv_charts:ROOT:nv_charts.adoc[nv_charts #]
+// * xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts #] image:managed_plugin.png[]
+// * xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts #]
+// * xref:oesenc:ROOT:oesenc.adoc[oeSENC #] image:managed_plugin.png[]
+// * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) #]
+* xref:photolayer:ROOT:photolayer.adoc[PhotoLayer #] image:managed_plugin.png[]
+* xref:vfkaps:ROOT:vfkaps.adoc[VfKaps - VentureFarther #] image:managed_plugin.png[]
+// * xref:rotationctrl:ROOT:rotationctrl.adoc[RotationCtrl #]
+// * xref:chartscale:ROOT:chartscale.adoc[ChartScale #]
+// * xref:objsearch:ROOT:objsearch.adoc[objsearch #]
+// * xref:projections:ROOT:projections.adoc[projections #]
 
-=== Charts  
-* xref:nv_charts:ROOT:nv_charts.adoc[nv_charts #] 
-* xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts #] image:managed_plugin.png[] 
-* xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts #]  
-* xref:oesenc:ROOT:oesenc.adoc[oeSENC #] image:managed_plugin.png[] 
-* xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) #] 
-* xref:photolayer:ROOT:photolayer.adoc[PhotoLayer #] image:managed_plugin.png[]  
-* xref:vfkaps:ROOT:vfkaps.adoc[VfKaps - VentureFarther #] image:managed_plugin.png[] 
-* xref:rotationctrl:ROOT:rotationctrl.adoc[RotationCtrl #]  
-* xref:chartscale:ROOT:chartscale.adoc[ChartScale #]  
-* xref:objsearch:ROOT:objsearch.adoc[objsearch #]  
-* xref:projections:ROOT:projections.adoc[projections #]
+// === Logs
+// * xref:dash-t:ROOT:dash-t.adoc[dash-t #] image:managed_plugin.png[]
+// * xref:logbook:ROOT:logbook.adoc[logbook #] image:managed_plugin.png[]
+// * xref:find-it:ROOT:find-it.adoc[find-it #] image:managed_plugin.png[]
+// * xref:vdr:ROOT:vdr.adoc[vdr #] image:managed_plugin.png[]
+// * xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter #]
 
-=== Logs  
-* xref:dash-t:ROOT:dash-t.adoc[dash-t #] image:managed_plugin.png[]
-* xref:logbook:ROOT:logbook.adoc[logbook #] image:managed_plugin.png[]
-* xref:find-it:ROOT:find-it.adoc[find-it #] image:managed_plugin.png[]
-* xref:vdr:ROOT:vdr.adoc[vdr #] image:managed_plugin.png[]
-* xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter #]  
+// === Navigation
+// * xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
+// * xref:googleearth:ROOT:googleearth.adoc[googleearth #]
+// * xref:celestial_navigation:ROOT:celestial_navigation.adoc[celestial_navigation #] image:managed_plugin.png[]
+// * xref:route_great_circle:ROOT:route_great_circle.adoc[Route Great Circle #]
+// * xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning #] image:managed_plugin.png[]
+// * xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent #] image:managed_plugin.png[]
+// * xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
+* xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
-=== Navigation  
-* xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[] 
-* xref:googleearth:ROOT:googleearth.adoc[googleearth #]  
-* xref:celestial_navigation:ROOT:celestial_navigation.adoc[celestial_navigation #] image:managed_plugin.png[] 
-* xref:route_great_circle:ROOT:route_great_circle.adoc[Route Great Circle #]  
-* xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning #] image:managed_plugin.png[]
-* xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent #] image:managed_plugin.png[] 
-* xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]  
-* xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]  
+// === Safety
+//
+// * xref:odraw:ROOT:odraw.adoc[odraw #] image:managed_plugin.png[]
+// * xref:watchdog:ROOT:watchdog.adoc[Watchdog #] image:managed_plugin.png[]
+// * xref:sar:ROOT:sar.adoc[SAR #] image:managed_plugin.png[]
+//
+// === Sailing
+// * xref:tactics:ROOT:tactics.adoc[tactics #] image:managed_plugin.png[]
+// * xref:sweep_plot:ROOT:sweep_plot.adoc[Sweep Plot #] image:managed_plugin.png[]
+// * xref:polar:ROOT:polar.adoc[polar #] image:managed_plugin.png[]
+// * xref:windvane:ROOT:windvane.adoc[windvane #] image:managed_plugin.png[]
 
-=== Safety  
-
-* xref:odraw:ROOT:odraw.adoc[odraw #] image:managed_plugin.png[]
-* xref:watchdog:ROOT:watchdog.adoc[Watchdog #] image:managed_plugin.png[]
-* xref:sar:ROOT:sar.adoc[SAR #] image:managed_plugin.png[]
-
-=== Sailing  
-* xref:tactics:ROOT:tactics.adoc[tactics #] image:managed_plugin.png[] 
-* xref:sweep_plot:ROOT:sweep_plot.adoc[Sweep Plot #] image:managed_plugin.png[] 
-* xref:polar:ROOT:polar.adoc[polar #] image:managed_plugin.png[] 
-* xref:windvane:ROOT:windvane.adoc[windvane #] image:managed_plugin.png[]
-
-=== Weather  
-
-* xref:weatherfax:ROOT:weatherfax.adoc[weatherfax #] image:managed_plugin.png[]  
-* xref:iacfleet:ROOT:iacfleet.adoc[iacfleet #]  
-* xref:climatology:ROOT:climatology.adoc[climatology #] image:managed_plugin.png[] 
-* xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing #] image:managed_plugin.png[]
-
+// === Weather
+//
+// * xref:weatherfax:ROOT:weatherfax.adoc[weatherfax #] image:managed_plugin.png[]
+// * xref:iacfleet:ROOT:iacfleet.adoc[iacfleet #]
+// * xref:climatology:ROOT:climatology.adoc[climatology #] image:managed_plugin.png[]
+// * xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing #] image:managed_plugin.png[]
+//
 === Utility
-* xref:statusbar:ROOT:statusbar.adoc[Statusbar #] image:managed_plugin.png[] 
-* xref:calculator:ROOT:calculator.adoc[calculator #]  
-* xref:launcher:ROOT:launcher.adoc[launcher #]  
-* xref:debugger:ROOT:debugger.adoc[debugger #]  
-* xref:pypilot:ROOT:pypilot.adoc[pypilot #] image:managed_plugin.png[]
+//* xref:statusbar:ROOT:statusbar.adoc[Statusbar #] image:managed_plugin.png[]
+//* xref:calculator:ROOT:calculator.adoc[calculator #]
+//* xref:launcher:ROOT:launcher.adoc[launcher #]
+//* xref:debugger:ROOT:debugger.adoc[debugger #]
+//* xref:pypilot:ROOT:pypilot.adoc[pypilot #] image:managed_plugin.png[]
 * xref:shipdriver:ROOT:shipdriver.adoc[Shipdriver #] image:managed_plugin.png[]
-* xref:twocan:twocan.adoc[twocan] image:managed_plugin.png[]
-* xref:odometer:ROOT:odometer.adoc[odometer #] image:managed_plugin.png[]
+// * xref:twocan:twocan.adoc[twocan] image:managed_plugin.png[]
+// * xref:odometer:ROOT:odometer.adoc[odometer #] image:managed_plugin.png[]
 
 === Click on a link above to see the plugin manual
 
-For OpenCPN version 4.2 & 4.4 plugins (stable):  
+For OpenCPN version 4.2 & 4.4 plugins (stable):
 https://opencpn.org/OpenCPN/info/olderplugins.html[Download Page]
 
 === Plugin Authors Credit
