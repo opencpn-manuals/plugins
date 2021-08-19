@@ -55,10 +55,10 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
-// === Safety
+=== Safety
 //
 // * xref:odraw:ROOT:odraw.adoc[odraw #] image:managed_plugin.png[]
-// * xref:watchdog:ROOT:watchdog.adoc[Watchdog #] image:managed_plugin.png[]
+* xref:watchdog:ROOT:watchdog.adoc[Watchdog #] image:managed_plugin.png[]
 // * xref:sar:ROOT:sar.adoc[SAR #] image:managed_plugin.png[]
 //
 // === Sailing
@@ -73,7 +73,7 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:iacfleet:ROOT:iacfleet.adoc[iacfleet #]
 // * xref:climatology:ROOT:climatology.adoc[climatology #] image:managed_plugin.png[]
 // * xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing #] image:managed_plugin.png[]
-//
+
 === Utility
 //* xref:statusbar:ROOT:statusbar.adoc[Statusbar #] image:managed_plugin.png[]
 //* xref:calculator:ROOT:calculator.adoc[calculator #]

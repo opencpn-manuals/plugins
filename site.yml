@@ -4,7 +4,7 @@ site:
   start_page:  opencpn-plugins::index.adoc
 
 content:
-  edit_url: ~
+  edit_url: 'https://github.com/leamas/oesenc_pi'
   sources:
     - url: .
       branches: HEAD
@@ -23,6 +23,11 @@ content:
     - url: .
       branches: HEAD
       start_path: ./sources/EarthExplorer_pi/manual/earthexplorer
+
+    - url: ./sources/oesenc_pi
+      branches: HEAD
+      start_path: manual
+      # edit_url: https://github.com/leamas/oesenc_pi/edit/{path}
 
     - url: .
       branches: HEAD
@@ -71,6 +76,10 @@ content:
     - url: .
       branches: HEAD
       start_path: ./sources/vfkaps_pi/manual/vfkaps
+
+    - url: .
+      branches: HEAD
+      start_path: ./sources/watchdog_pi/manual/watchdog
 
 ui:
   bundle:

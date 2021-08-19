@@ -34,9 +34,9 @@
 ** xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent]
 // ** xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
-// * Safety
+* Safety
 // ** xref:odraw:ROOT:odraw.adoc[odraw]
-// ** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
+** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
 // ** xref:sar:ROOT:sar.adoc[SAR]
 // * Sailing
 // ** xref:tactics:ROOT:tactics.adoc[tactics]
@@ -48,7 +48,8 @@
 // ** xref:iacfleet:ROOT:iacfleet.adoc[iacfleet]
 // ** xref:climatology:ROOT:climatology.adoc[climatology]
 // ** xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing]
-// * Utility
+
+* Utility
 // ** xref:statusbar:ROOT:statusbar.adoc[Statusbar]
 // ** xref:calculator:ROOT:calculator.adoc[calculator]
 // ** xref:launcher:ROOT:launcher.adoc[launcher]

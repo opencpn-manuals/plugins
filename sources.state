@@ -1,5 +1,13 @@
-./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
+./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git dd2dc7cae91bd0acb0cc4d02097a3624834496a4
+./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 731916cb7e70a84b2a91f6c0c632fc7c43b10856
+./photolayer_pi https://github.com/Rasbats/photolayer_pi.git 355cc67596518971adb7a95ab8159e097d79af14
+./UKTides_pi https://github.com/Rasbats/UKTides_pi.git 6f2ef007c46224d14d694e736db0f1ca42fbfea1
+./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git a23a2793d7a9c5282b5e22c0f3b070049f90fe51
+./survey_pi https://github.com/Rasbats/survey_pi.git a1cf88cb06dabd5ed7c3d3f4cbc6c0888b36c362
+./radar_pi https://github.com/opencpn-radar-pi/radar_pi.git 0e9fd4b227ead5a548887ccd452196d44a606e04
+./watchdog_pi https://github.com/rgleason/watchdog_pi.git 77e5b5886cc923fc67579504a5f54be8d6b63e84
 ./DR_pi https://github.com/Rasbats/DR_pi.git 8fa30e110a22ca4c39be213abafb45d756e70e50
+<<<<<<< HEAD
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git d8ae1d0736fd77bd7638cff5dd8c779a7594bcc4
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
@@ -18,3 +26,13 @@
 ./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git a23a2793d7a9c5282b5e22c0f3b070049f90fe51
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git 6f2ef007c46224d14d694e736db0f1ca42fbfea1
 ./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git f015031d04d4d2b1fc4fd9ef57ed3a9765e3408b
+=======
+./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 587199b32fc04a7f799a286422c5bfe7104f30c5
+./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git d8ae1d0736fd77bd7638cff5dd8c779a7594bcc4
+./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
+./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 8110207dc06a02e867cef565407a5baadf270d70
+./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
+./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
+./oesenc_pi https://github.com/leamas/oesenc_pi.git 9e025af6d54bf0373478a34254e8db21b67f1703
+./sar_pi https://github.com/Rasbats/sar_pi.git 3da85d6a9dbb1b1aa2fb9ce8fa1e06d3713f8c20
+>>>>>>> 51cda30 (Add watchdog to manual [full-linkcheck])
