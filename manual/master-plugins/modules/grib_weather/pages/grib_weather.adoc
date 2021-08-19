@@ -33,8 +33,8 @@ by David Burch, with a thorough treatment of the subject.
 OpenCPN can read both the original gribfile format, known as Grib1, as
 well as the new Grib2 format, with the .grb2 or .grib2 file-extension.
 To learn more about the various grib formats and models available, see
-this http://luckgrib.com/blog/2018/08/24/nbm-announce.html . 
-See this http://luckgrib.com/tutorials/2018/08/24/nbm-oceanic.html which introduces probability to the results. This
+this https://luckgrib.com/blog/2018/08/24/nbm-announce.html . 
+See this https://luckgrib.com/tutorials/2018/08/24/nbm-oceanic.html which introduces probability to the results. This
 is a new resource for the weather community to consider.
 
 === Get started
@@ -538,11 +538,12 @@ other companion programs or plugins.
 open-source software (FOSS) dedicated grib viewer. Grib files can be
 downloaded by ZyGrib and then opened in OpenCPN.
 * https://opengribs.org/en/gribs[Opengrib] Other sources of gribs, also
-a grib server. http://openskiron.org/en/[Download Mediterranean Grib Files]
+a grib server. https://openskiron.org/en/[Download Mediterranean Grib Files]
 * https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn:opencpn_user_manual:toolbar_buttons:route_mark_manager:weather_routing[Weather-Routing]
 tools use Grib_pi and Grib data to create optimized routing based on
 boat performance files.
-* https://opencpn-manuals.github.io/plugins/weather_routing/0.1/weather_routing.html OpenCPN has an excellent weather_routing plugin which works in concert with
+
+OpenCPN has an excellent weather_routing plugin which works in concert with
 grib_pi and climatology_pi concurrently, so that grib files are extended
 by Climatology's monthly averages for planning long voyages.
 * https://www.meltemus.com/index.php/en/, is
