@@ -38,6 +38,10 @@ content:
 
     - url: .
       branches: HEAD
+      start_path: ./sources/radar_pi/manual/radar
+
+    - url: .
+      branches: HEAD
       start_path: ./sources/SailawayNMEA_pi/manual/sailawaynmea
 
     - url: .

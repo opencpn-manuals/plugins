@@ -3,9 +3,9 @@
 ** xref:wmm:wmm.adoc[World Magnetic]
 ** xref:grib_weather:grib_weather.adoc[grib_weather]
 ** xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
-// * AIS / Radar
+* AIS / Radar
 // ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
-// ** xref:radar:ROOT:Home.adoc[Radar Display]
+** xref:radar:ROOT:Home.adoc[Radar Display]
 // ** xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR]
 // * Charts
 // ** xref:nv_charts:ROOT:nv_charts.adoc[nv_charts]

@@ -2,8 +2,14 @@
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git d8ae1d0736fd77bd7638cff5dd8c779a7594bcc4
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
+<<<<<<< HEAD
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git dd67eb24dc93b0da8607142445e5198c043a1d37
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git 8a1b3f6559435116d3b4b7addb72507e1cf8d993
+=======
+./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 587199b32fc04a7f799a286422c5bfe7104f30c5
+./photolayer_pi https://github.com/Rasbats/photolayer_pi.git 341863c736add32ec89a2560758c5e202af043de
+./radar_pi https://github.com/opencpn-radar-pi/radar_pi.git e3cf4a3e0c0d83b2d22adc8ac8ea8e700f3b42c5
+>>>>>>> e5f828f (Re-introducing radar_pi)
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 731916cb7e70a84b2a91f6c0c632fc7c43b10856
 ./sar_pi https://github.com/Rasbats/sar_pi.git 3e0b7cb8ade9228548a6fa1a3e90c5ee80a65572
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 497a9a0dbe106331caea9e25ce305ad344d97c19
