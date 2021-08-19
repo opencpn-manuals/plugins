@@ -30,7 +30,7 @@ Rasbats is only a temporary test platform.
 Firefox and Chrome have an extension for reading the asciidoc format.
 Called Asciidoctor.js Live Preview:
 
-https://github.com/asciidoctor/asciidoctor-chrome-extension/
+https://github.com/asciidoctor/asciidoctor-browser-extension/
 
 This allows a preview of the page as it would appear in HTML.
 
