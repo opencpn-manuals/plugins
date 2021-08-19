@@ -29,7 +29,7 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:nv_charts:ROOT:nv_charts.adoc[nv_charts #]
 // * xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts #] image:managed_plugin.png[]
 // * xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts #]
-// * xref:oesenc:ROOT:oesenc.adoc[oeSENC #] image:managed_plugin.png[]
+* xref:oesenc::index.adoc[oeSENC] image:managed_plugin.png[]
 // * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) #]
 * xref:photolayer:ROOT:photolayer.adoc[PhotoLayer #] image:managed_plugin.png[]
 * xref:vfkaps:ROOT:vfkaps.adoc[VfKaps - VentureFarther #] image:managed_plugin.png[]
