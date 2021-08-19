@@ -525,7 +525,7 @@ left click.)
 . The pick Open and the two grib files will be opened.
 . Both grib files will be used by Weather_routing.
 . In grib_pi settings I always use the “Current” “Proportional Arrow”
-. Refer to https://opencpn-manuals.github.io/plugins/weather_routing/0.1/weather_routing.html#_16_other_uses Two Grib Files (Wind Current)]
+. Refer to the weather routing plugin for the use of two Grib Files (Wind Current)]
 
 image::saildocscurrent.jpg[]
 
