@@ -219,7 +219,7 @@ file:
 sudo nano /etc/postfix/sasl_passwd
 
 Type into the nano editor:
-smtp.googlemail.com:587 YourAccountname@googlemail.com:YourPassword
+smtp.googlemail.com:587 YourAccountname(the at symbol)googlemail.com:YourPassword
 
 Substitute YourAccountname and YourPassword with your data.
 Save the file in nano with Ctrl-O and exit with Ctrl-X.
@@ -261,7 +261,7 @@ sudo postfix reload
 
 Step 6
 Now you can test your work in terminal with:
-date | mail -s test YourAccountname@googlemail.com
+date | mail -s test YourAccountname(the at symbol)googlemail.com
 
 
 Done.

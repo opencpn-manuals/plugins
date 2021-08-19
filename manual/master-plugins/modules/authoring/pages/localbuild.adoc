@@ -47,7 +47,7 @@ Here is the structure as it applies to Watchdog.
 The watchdog folder is exactly as first sent via PR. `antora.yml' does
 not need editing.
 
-Get ui-bundle.zip from: https://github.com/leamas/ocpn-manuals/ or the
+Get ui-bundle.zip from: https://github.com/opencpn-manuals/plugins or the
 link below.
 
 https://raw.githubusercontent.com/wiki/Rasbats/opencpn-plugins-manual/images/ui-bundle.zip[ui-bundle.zip]

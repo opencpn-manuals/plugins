@@ -20,8 +20,8 @@ Forum::
 http://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html[Forum Discussion thread]
 
 Companion Plugin::
-https://opencpn.org/wiki/dokuwiki/doku.php?id=opencpn::opencpn_user_manual::plugins::logs::nmea_converter[NmeaConverter_pi]
-can solve many conversion problems.
+https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
+This can solve many conversion problems.
 
 === The Dashboard in action
 
@@ -352,14 +352,13 @@ thus.
 ==== NmeaConverter_pi Conversions
 
 https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
-[NmeaConverter_pi]
 can solve many compatibility or unit conversion issues. There are nine
 examples showing how the use NmeaConverter to adjust Dashboard output.
 
 ===== Barometer MWV - XDR,MTA,MDA
 
 NMEAconverter_pi may help: 
-https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html#prepare_barometer_sensor_output_for_dashboard
+https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
 
 David Burch Videos
 
