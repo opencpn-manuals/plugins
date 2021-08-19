@@ -1,4 +1,4 @@
-./aisradar_pi https://github.com/nohal/aisradar_pi.git b3f8dc395b7bfda22c3543e8aa86faae31d0678f
+./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
 ./DR_pi https://github.com/Rasbats/DR_pi.git 8fa30e110a22ca4c39be213abafb45d756e70e50
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git d8ae1d0736fd77bd7638cff5dd8c779a7594bcc4
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
