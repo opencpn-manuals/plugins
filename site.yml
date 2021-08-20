@@ -4,7 +4,6 @@ site:
   start_page:  opencpn-plugins::index.adoc
 
 content:
-  edit_url: 'https://github.com/leamas/oesenc_pi'
   sources:
     - url: .
       branches: HEAD
@@ -27,7 +26,7 @@ content:
     - url: ./sources/oesenc_pi
       branches: HEAD
       start_path: manual
-      # edit_url: https://github.com/leamas/oesenc_pi/edit/{path}
+      edit_url: https://github.com/leamas/oesenc_pi/edit/master/{path}
 
     - url: .
       branches: HEAD
