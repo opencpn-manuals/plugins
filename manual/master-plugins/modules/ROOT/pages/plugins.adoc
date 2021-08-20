@@ -22,7 +22,7 @@ These plugins are installed with the basic OpenCPN program.
 
 === AIS / Radar
 * xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display #] image:managed_plugin.png[]
-* xref:radar:ROOT:Home.adoc[Radar Display #] image:managed_plugin.png[]
+* xref:radar:ROOT:index.adoc[Radar Display #] image:managed_plugin.png[]
 // * xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR #]
 //
 === Charts

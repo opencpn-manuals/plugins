@@ -52,7 +52,8 @@ content:
 
     - url: sources/radar_pi
       branches: HEAD
-      start_path: manual/radar
+      start_path: manual
+      edit_url: https://github.com/opencpn-manuals/radar_pi/edit/master/{path}
 
     - url: sources/SailawayNMEA_pi
       branches: HEAD
@@ -90,11 +91,11 @@ content:
     - url: sources/watchdog_pi/
       branches: HEAD
       start_path: manual/watchdog
-      
+
     - url: sources/chartscale_pi
       branches: HEAD
       start_path: manual/chartscale
-    
+
     - url: sources/objsearch_pi/
       branches: HEAD
       start_path: manual/objsearch
@@ -102,7 +103,6 @@ content:
     - url: sources/vdr_pi
       branches: HEAD
       start_path: manual/vdr
-    
 
 ui:
   bundle:
