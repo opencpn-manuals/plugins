@@ -4,6 +4,7 @@
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git d8ae1d0736fd77bd7638cff5dd8c779a7594bcc4
 ./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
 ./gecomapi_pi https://github.com/opencpn-manuals/gecomapi_pi 025f0628886409e6f383a4db877911783b08eb55
+./iacfleet_pi https://github.com/opencpn-manuals/iacfleet_pi.git 95300fce16472998eed8b5b6f3975ede0d6a3058
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi 3da698c9b1deb17b28ba28055a7e85c1c53653cf
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
 ./oesenc_pi https://github.com/leamas/oesenc_pi.git 9e025af6d54bf0373478a34254e8db21b67f1703
