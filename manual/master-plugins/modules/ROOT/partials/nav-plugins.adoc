@@ -45,7 +45,7 @@
 // ** xref:windvane:ROOT:windvane.adoc[windvane]
 // * Weather
 // ** xref:weatherfax:ROOT:weatherfax.adoc[weatherfax]
-// ** xref:iacfleet:ROOT:iacfleet.adoc[iacfleet]
+** xref:iacfleet:ROOT:iacfleet.adoc[iacfleet]
 // ** xref:climatology:ROOT:climatology.adoc[climatology]
 // ** xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing]
 
