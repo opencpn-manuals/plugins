@@ -19,6 +19,12 @@ content:
       branches: HEAD
       start_path: manual/dead_reckoning
 
+    - url: sources/EngineDashboard
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/EngineDashboard/edit/master/{path}
+
+
     - url: sources/EarthExplorer_pi
       branches: HEAD
       start_path: manual/earthexplorer
