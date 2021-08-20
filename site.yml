@@ -44,7 +44,8 @@ content:
 
     - url: sources/otidalroute_pi
       branches: HEAD
-      start_path: manual/otidalroute
+      start_path: manual
+      edit_url: https://github.com/Rasbats/otidalroute_pi/edit/master/{path]
 
     - url: sources/photolayer_pi
       branches: HEAD
