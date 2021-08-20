@@ -80,6 +80,14 @@ content:
     - url: .
       branches: HEAD
       start_path: ./sources/watchdog_pi/manual/watchdog
+      
+    - url: .
+      branches: HEAD
+      start_path: ./sources/chartscale_pi/manual/chartscale
+    
+    - url: .
+      branches: HEAD
+      start_path: ./sources/objsearch_pi/manual/objsearch
 
 ui:
   bundle:

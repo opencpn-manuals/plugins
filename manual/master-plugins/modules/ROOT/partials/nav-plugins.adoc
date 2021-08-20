@@ -7,7 +7,7 @@
 ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
 ** xref:radar:ROOT:Home.adoc[Radar Display]
 // ** xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR]
-// * Charts
+* Charts
 // ** xref:nv_charts:ROOT:nv_charts.adoc[nv_charts]
 // ** xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts]
 // ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts]
@@ -16,8 +16,8 @@
 ** xref:photolayer:ROOT:photolayer.adoc[PhotoLayer]
 ** xref:vfkaps:ROOT:vfkaps.adoc[VfKaps - VentureFarther]
 //** xref:rotationctrl:ROOT:rotationctrl.adoc[RotationCtrl]
-//** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
-//** xref:objsearch:ROOT:objsearch.adoc[objsearch]
+** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
+** xref:objsearch:ROOT:objsearch.adoc[objsearch]
 //** xref:projections:ROOT:projections.adoc[projections]
 //* Logs
 //** xref:dash-t:ROOT:dash-t.adoc[dash-t]
