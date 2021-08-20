@@ -7,7 +7,7 @@
 // * xref:opencpn-beta-plugins:javascript:javascript.adoc[JavaScript]
 // * xref:opencpn-beta-plugins:deviation:deviation.adoc[Deviation]
 * xref:opencpn-beta-plugins:survey:survey.adoc[Survey]
-// * xref:opencpn-beta-plugins:autopilot-rm:autopilot-rm.adoc[Autopilot_rm for Raymarine]
+* xref:opencpn-beta-plugins:autopilot-rm:autopilot-rm.adoc[Autopilot_rm for Raymarine]
 // * xref:opencpn-beta-plugins:autotrackrm-ev:autotrackraymarine.adoc[AutoTrackRaymarine for Evolution]
 // * xref:opencpn-beta-plugins:autopilot_route:autopilot_route.adoc[Autopilot_Route for OpenCPN]
 // * xref:opencpn-beta-plugins:admiralty:admiralty.adoc[Admiralty Tides]
