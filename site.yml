@@ -88,6 +88,11 @@ content:
       branches: HEAD
       start_path: ./sources/objsearch_pi/manual/objsearch
 
+    - url: .
+      branches: HEAD
+      start_path: ./sources/vdr_pi/manual/vdr
+    
+
 ui:
   bundle:
     url: ./ui-bundle.zip

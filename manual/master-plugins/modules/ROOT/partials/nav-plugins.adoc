@@ -19,11 +19,11 @@
 ** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
 ** xref:objsearch:ROOT:objsearch.adoc[objsearch]
 //** xref:projections:ROOT:projections.adoc[projections]
-//* Logs
+* Logs
 //** xref:dash-t:ROOT:dash-t.adoc[dash-t]
 //** xref:logbook:ROOT:logbook.adoc[logbook]
 //** xref:find-it:ROOT:find-it.adoc[find-it]
-//** xref:vdr:ROOT:vdr.adoc[vdr]
+** xref:vdr:ROOT:vdr.adoc[vdr]
 //** xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter]
 //* Navigation
 //** xref:squiddio:squiddio.adoc[Squiddio]
