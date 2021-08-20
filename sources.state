@@ -18,5 +18,4 @@
 ./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git a9df37d4936d1da248f9d2f605cd3e71dd5bfda0
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git 6f2ef007c46224d14d694e736db0f1ca42fbfea1
 ./vdr_pi https://github.com/nohal/vdr_pi.git b0d406f27944d3b3f918ad5d4f6c1cebe17399ea
-./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git 94890f059deda2466e6ad93d8b13c74623997603
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236

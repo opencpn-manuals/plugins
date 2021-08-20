@@ -85,10 +85,6 @@ content:
       branches: HEAD
       start_path: manual/uktides
 
-    - url: sources/vfkaps_pi
-      branches: HEAD
-      start_path: manual/vfkaps
-
     - url: sources/watchdog_pi/
       branches: HEAD
       start_path: manual/watchdog
