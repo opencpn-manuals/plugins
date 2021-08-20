@@ -11,86 +11,86 @@ content:
       - manual/master-plugins
       - manual/beta-plugins
 
-    - url: .
+    - url: sources/aisradar_pi/
       branches: HEAD
-      start_path: ./sources/aisradar_pi/manual/ais_radar_display
+      start_path: manual/ais_radar_display
 
-    - url: .
+    - url: sources/DR_pi
       branches: HEAD
-      start_path: ./sources/DR_pi/manual/dead_reckoning
+      start_path: manual/dead_reckoning
 
-    - url: .
+    - url: sources/EarthExplorer_pi
       branches: HEAD
-      start_path: ./sources/EarthExplorer_pi/manual/earthexplorer
+      start_path: manual/earthexplorer
 
-    - url: ./sources/oesenc_pi
+    - url: sources/oesenc_pi
       branches: HEAD
       start_path: manual
       edit_url: https://github.com/leamas/oesenc_pi/edit/master/{path}
 
-    - url: .
+    - url: sources/otcurrent_pi
       branches: HEAD
-      start_path: ./sources/otcurrent_pi/manual/otcurrent
+      start_path: manual/otcurrent
 
-    - url: .
+    - url: sources/otidalplan_pi
       branches: HEAD
-      start_path: ./sources/otidalplan_pi/manual/otidalplan
+      start_path: manual/otidalplan
 
-    - url: .
+    - url: sources/otidalroute_pi
       branches: HEAD
-      start_path: ./sources/otidalroute_pi/manual/otidalroute
+      start_path: manual/otidalroute
 
-    - url: .
+    - url: sources/photolayer_pi
       branches: HEAD
-      start_path: ./sources/photolayer_pi/manual/photolayer
+      start_path: manual/photolayer
 
-    - url: .
+    - url: sources/radar_pi
       branches: HEAD
-      start_path: ./sources/radar_pi/manual/radar
+      start_path: manual/radar
 
-    - url: .
+    - url: sources/SailawayNMEA_pi
       branches: HEAD
-      start_path: ./sources/SailawayNMEA_pi/manual/sailawaynmea
+      start_path: manual/sailawaynmea
 
-    - url: .
+    - url: sources/sar_pi
       branches: HEAD
-      start_path: ./sources/sar_pi/manual/sar
+      start_path: manual/sar
 
-    - url: .
+    - url: sources/shipdriver_pi
       branches: HEAD
-      start_path: ./sources/shipdriver_pi/manual/shipdriver
+      start_path: manual/shipdriver
 
-    - url: .
+    - url: sources/survey_pi
       branches: HEAD
-      start_path: ./sources/survey_pi/manual/survey
+      start_path: manual/survey
 
-    - url: .
+    - url: sources/TideFinder_pi/
       branches: HEAD
-      start_path: ./sources/TideFinder_pi/manual/tidefinder
+      start_path: manual/tidefinder
 
-    - url: .
+    - url: sources/UKTides_pi
       branches: HEAD
-      start_path: ./sources/UKTides_pi/manual/uktides
+      start_path: manual/uktides
 
-    - url: .
+    - url: sources/vfkaps_pi
       branches: HEAD
-      start_path: ./sources/vfkaps_pi/manual/vfkaps
+      start_path: manual/vfkaps
 
-    - url: .
+    - url: sources/watchdog_pi/
       branches: HEAD
-      start_path: ./sources/watchdog_pi/manual/watchdog
+      start_path: manual/watchdog
       
-    - url: .
+    - url: sources/chartscale_pi
       branches: HEAD
-      start_path: ./sources/chartscale_pi/manual/chartscale
+      start_path: manual/chartscale
     
-    - url: .
+    - url: sources/objsearch_pi/
       branches: HEAD
-      start_path: ./sources/objsearch_pi/manual/objsearch
+      start_path: manual/objsearch
 
-    - url: .
+    - url: sources/vdr_pi
       branches: HEAD
-      start_path: ./sources/vdr_pi/manual/vdr
+      start_path: manual/vdr
     
 
 ui:
