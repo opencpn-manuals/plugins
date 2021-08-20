@@ -68,6 +68,11 @@ content:
       branches: HEAD
       start_path: manual/tidefinder
 
+    - url: sources/TwoCanPlugIn
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/TwoCanPlugIn/edit/master/{path}
+
     - url: sources/UKTides_pi
       branches: HEAD
       start_path: manual/uktides
