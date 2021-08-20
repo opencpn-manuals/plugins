@@ -24,10 +24,14 @@ content:
       branches: HEAD
       edit_url: https://github.com/opencpn-manuals/EngineDashboard/edit/master/{path}
 
-
     - url: sources/EarthExplorer_pi
       branches: HEAD
       start_path: manual/earthexplorer
+
+    - url: sources/gecomapi_pi
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/gecomapi_pi/edit/master/{path}
 
     - url: sources/NmeaConverter_pi
       start_path: manual

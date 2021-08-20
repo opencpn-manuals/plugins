@@ -27,7 +27,7 @@
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 * Navigation
 ** xref:squiddio:squiddio.adoc[Squiddio]
-//** xref:googleearth:ROOT:googleearth.adoc[googleearth]
+** xref:googleearth:ROOT:index.adoc[googleearth]
 //** xref:celestial_navigation:ROOT:celestial_navigation.adoc[celestial_navigation]
 //** xref:route_great_circle:ROOT:route_great_circle.adoc[Route Great Circle]
 ** xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning]
