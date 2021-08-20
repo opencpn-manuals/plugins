@@ -24,7 +24,7 @@
 //** xref:logbook:ROOT:logbook.adoc[logbook]
 //** xref:find-it:ROOT:find-it.adoc[find-it]
 ** xref:vdr:ROOT:vdr.adoc[vdr]
-//** xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter]
+** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 * Navigation
 ** xref:squiddio:squiddio.adoc[Squiddio]
 //** xref:googleearth:ROOT:googleearth.adoc[googleearth]
