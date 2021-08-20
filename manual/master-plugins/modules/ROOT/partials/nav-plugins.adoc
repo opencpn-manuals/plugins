@@ -25,14 +25,14 @@
 //** xref:find-it:ROOT:find-it.adoc[find-it]
 ** xref:vdr:ROOT:vdr.adoc[vdr]
 //** xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter]
-//* Navigation
-//** xref:squiddio:squiddio.adoc[Squiddio]
+* Navigation
+** xref:squiddio:squiddio.adoc[Squiddio]
 //** xref:googleearth:ROOT:googleearth.adoc[googleearth]
 //** xref:celestial_navigation:ROOT:celestial_navigation.adoc[celestial_navigation]
 //** xref:route_great_circle:ROOT:route_great_circle.adoc[Route Great Circle]
-//** xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning]
+** xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning]
 ** xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent]
-// ** xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
+** xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 * Safety
 // ** xref:odraw:ROOT:odraw.adoc[odraw]

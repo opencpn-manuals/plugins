@@ -45,21 +45,21 @@ These plugins are installed with the basic OpenCPN program.
 * xref:vdr:ROOT:vdr.adoc[vdr #] image:managed_plugin.png[]
 // * xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter #]
 
-// === Navigation
-// * xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
+=== Navigation
+* xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
 // * xref:googleearth:ROOT:googleearth.adoc[googleearth #]
 // * xref:celestial_navigation:ROOT:celestial_navigation.adoc[celestial_navigation #] image:managed_plugin.png[]
 // * xref:route_great_circle:ROOT:route_great_circle.adoc[Route Great Circle #]
-// * xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning #] image:managed_plugin.png[]
-// * xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent #] image:managed_plugin.png[]
-// * xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
+* xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning #] image:managed_plugin.png[]
+* xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent #] image:managed_plugin.png[]
+* xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 === Safety
 //
 // * xref:odraw:ROOT:odraw.adoc[odraw #] image:managed_plugin.png[]
 * xref:watchdog:ROOT:watchdog.adoc[Watchdog #] image:managed_plugin.png[]
-// * xref:sar:ROOT:sar.adoc[SAR #] image:managed_plugin.png[]
+* xref:sar:ROOT:sar.adoc[SAR #] image:managed_plugin.png[]
 //
 // === Sailing
 // * xref:tactics:ROOT:tactics.adoc[tactics #] image:managed_plugin.png[]
