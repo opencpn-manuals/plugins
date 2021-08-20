@@ -20,3 +20,4 @@
 ./vdr_pi https://github.com/nohal/vdr_pi.git b0d406f27944d3b3f918ad5d4f6c1cebe17399ea
 ./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git 94890f059deda2466e6ad93d8b13c74623997603
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
+./Autopilot-Plugin https://github.com/oplaydo/Autopilot-Plugin.git 77b4a1e7686ba703db4be537a7b0fa6be8ffce3d
