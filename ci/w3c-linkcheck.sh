@@ -26,8 +26,10 @@ checklink \
     --exclude bigdumboat.com \
     --exclude cruisersforum.com \
     --exclude docs.google.com \
+    --exclude www.marine-knowledge.com \
     --exclude opencpn.org/wiki/dokuwiki \
     --exclude opencpn.org \
+    --exclude twocanplugin@hotmail.com	\
     --exclude youtube.com \
     --exclude youtu.be \
     --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
