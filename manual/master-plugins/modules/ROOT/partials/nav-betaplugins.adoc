@@ -1,11 +1,11 @@
 //DR_pi  EarthExplorer_pi  otcurrent_pi  otidalplan_pi  otidalroute_pi  photolayer_pi  SailawayNMEA_pi
 //  sar_pi  shipdriver_pi  survey_pi  TideFinder_pi  UKTides_pi  vfkaps_pi
 * xref:opencpn-beta-plugins:engine-dash:engine-dash.adoc[Engine Dashboard]
-* xref:opencpn-beta-plugins:race-start:index.adoc[Race Start]
+* xref:race-start:ROOT:index.adoc[Race Start]
 //  * xref:opencpn-beta-plugins:trackpoint:trackpoint.adoc[Trackpoint]
 *   xref:opencpn-beta-plugins:tidefinder:tidefinder.adoc[TideFinder]
 // * xref:opencpn-beta-plugins:javascript:javascript.adoc[JavaScript]
-// * xref:opencpn-beta-plugins:deviation:deviation.adoc[Deviation]
+* xref:deviation:ROOT:index.adoc[Deviation]
 * xref:opencpn-beta-plugins:survey:survey.adoc[Survey]
 //* xref:opencpn-beta-plugins:autopilot-rm:autopilot-rm.adoc[Autopilot_rm for Raymarine]
 //* xref:opencpn-beta-plugins:autotrackrm-ev:autotrackraymarine.adoc[AutoTrackRaymarine for Evolution]

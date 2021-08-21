@@ -1,11 +1,11 @@
 == BETA PLUGINS
 
 // * xref:engine-dash:engine-dash.adoc[Engine Dashboard]
-// * xref:race-start:race-start.adoc[Race Start]
+* xref:race-start::index.adoc[Race Start]
 // * xref:trackpoint:trackpoint.adoc[Trackpoint]
 * xref:tidefinder:tidefinder.adoc[TideFinder]
 // * xref:javascript:javascript.adoc[JavaScript]
-// * xref:deviation:deviation.adoc[Deviation]
+* xref:deviation::index.adoc[Deviation]
 * xref:survey:survey.adoc[Survey]
 //* xref:autopilot-rm:autopilot-rm.adoc[Autopilot_rm for Raymarine]
 // * xref:autotrackrm-ev:autotrackraymarine.adoc[AutoTrackRaymarine for Evolution]
