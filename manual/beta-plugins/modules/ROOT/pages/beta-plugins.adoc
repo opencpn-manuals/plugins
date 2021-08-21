@@ -12,7 +12,7 @@
 // * xref:autopilot_route:autopilot_route.adoc[Autopilot_Route for OpenCPN]
 // * xref:admiralty:admiralty.adoc[Admiralty Tides]
 // * xref:ncdf:ncdf.adoc[NetCDF tidal currents]
-* xref:otidalroute:otidalroute.adoc[otidalroute - using GRIB CURRENT]
+//* xref:otidalroute:otidalroute.adoc[otidalroute - using GRIB CURRENT]
 * xref:sailawaynmea:sailawaynmea.adoc[SailawayNMEA]
 * xref:uktides:uktides.adoc[UKTides]
 * xref:otidalplan:ROOT:otidalplan.adoc[otidalplan - using HARMONICS]
