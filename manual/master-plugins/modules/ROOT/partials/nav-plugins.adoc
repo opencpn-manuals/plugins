@@ -14,7 +14,7 @@
 ** xref:oesenc::index.adoc[oeSENC]
 // ** xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
 ** xref:photolayer:ROOT:photolayer.adoc[PhotoLayer]
-** xref:vfkaps:ROOT:vfkaps.adoc[VfKaps - VentureFarther]
+** xref:vfkaps:index.adoc[VfKaps - VentureFarther]
 //** xref:rotationctrl:ROOT:rotationctrl.adoc[RotationCtrl]
 ** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
 ** xref:objsearch:ROOT:objsearch.adoc[objsearch]

@@ -32,7 +32,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:oesenc::index.adoc[oeSENC] image:managed_plugin.png[]
 // * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) #]
 * xref:photolayer:ROOT:photolayer.adoc[PhotoLayer #] image:managed_plugin.png[]
-* xref:vfkaps:ROOT:vfkaps.adoc[VfKaps - VentureFarther #] image:managed_plugin.png[]
+* xref:vfkaps:index.adoc[VfKaps - VentureFarther #] image:managed_plugin.png[]
 // * xref:rotationctrl:ROOT:rotationctrl.adoc[RotationCtrl #]
 * xref:chartscale:ROOT:chartscale.adoc[ChartScale #]
 * xref:objsearch:ROOT:objsearch.adoc[objsearch #]
