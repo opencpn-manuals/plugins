@@ -1,0 +1,39 @@
+#/bin/bash
+#
+#  Template to run the checklink command in a plugin. Note:
+#    - The masquerade url must match the url in the playbook (ususally site.yml)
+#    - The suppress-redirect might also have to modified according to diagnostics
+#      printed.OB
+#
+#  checklink is available on CPAN as W3C-LinkChecker. All known versions are buggy
+#  in different ways. Notably, the Debian package does not respect the options here,
+#  at least some are silentlly ignored despite being documented.
+#
+#  The CPAN version outputs a lot of "Use of uninitialized value", but seems
+#  otherwise OK. These messages are filtered here.
+#
+#  Installig Perl and cpanm *should* be possible on Windows. Nothing I have
+#  tried.
+
+
+checklink \
+    --suppress-broken '-1:https://opencpn.org/' \
+    --suppress-broken '-1:https://www.opencpn.org/flyspray/' \
+    --suppress-broken '403:https://www.opencpn.org/' \
+    --suppress-broken '403:https://opencpn.org/flyspray/' \
+    --suppress-broken '403:https://opencpn.org/flyspray/index.php?project=0&do=index' \
+    --suppress-broken '403:https://opencpn.org/OpenCPN/info/downloadplugins.html' \
+    --suppress-broken '403:$dokuwiki?id=opencpn:opencpn_user_manual' \
+    --suppress-broken '-1:https://cubian.org/downloads/' \
+    --suppress-broken '-1:https://cubian.org/2013/08/12/enlarge-cubian-rootfs-partition/' \
+    --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
+    --exclude apple.com \
+    --exclude bigdumboat.com \
+    --exclude  cloudsmith.io/orgs/opencpn \
+    --exclude cruisersforum.com \
+    --exclude firebasestorage.googleapis.com \
+    --exclude github.com/travis-ci \
+    --exclude mailto: \
+    --exclude opencpn.org \
+    --masquerade "https://nowhere.net $PWD/docs" \
+    --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
