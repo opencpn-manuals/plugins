@@ -32,3 +32,4 @@
 ./vdr_pi https://github.com/nohal/vdr_pi.git b0d406f27944d3b3f918ad5d4f6c1cebe17399ea
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 42116e529bc20f0346c3ec65b666462a23cf70e6
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
+./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git b0d406f27944d3b3f918ad5d4f6c1cebe17399ea
