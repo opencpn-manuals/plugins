@@ -12,6 +12,7 @@
 ./iacfleet_pi https://github.com/opencpn-manuals/iacfleet_pi.git 95300fce16472998eed8b5b6f3975ede0d6a3058
 ./launcher_pi https://github.com/opencpn-manuals/launcher_pi.git d58a15e37774419aad56b49d4e9c5da916ebffc3
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
+./ocpndebugger_pi https://github.com/opencpn-manuals/ocpndebugger_pi 78b9e3bf03984ad8e049b0ff9fa1d6dff4f3ac93
 ./oesenc_pi https://github.com/leamas/oesenc_pi.git 9e025af6d54bf0373478a34254e8db21b67f1703
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
