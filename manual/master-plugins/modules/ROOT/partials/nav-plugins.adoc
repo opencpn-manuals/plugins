@@ -57,5 +57,5 @@
 ** xref:debugger:ROOT:index.adoc[debugger]
 // ** xref:pypilot:ROOT:pypilot.adoc[pypilot]
 ** xref:shipdriver:ROOT:shipdriver.adoc[Shipdriver]
-** xref:twocan::index.adoc.adoc[TwoCan]
+** xref:twocan::index.adoc[TwoCan]
 ** xref:odometer:ROOT:index.adoc[odometer]
