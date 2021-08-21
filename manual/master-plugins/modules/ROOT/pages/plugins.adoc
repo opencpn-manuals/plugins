@@ -43,7 +43,7 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:dash-t:ROOT:dash-t.adoc[dash-t #] image:managed_plugin.png[]
 // * xref:logbook:ROOT:logbook.adoc[logbook #] image:managed_plugin.png[]
 // * xref:find-it:ROOT:find-it.adoc[find-it #] image:managed_plugin.png[]
-* xref:vdr:ROOT:vdr.adoc[vdr #] image:managed_plugin.png[]
+* xref:vdr:ROOT:index.adoc[vdr #] image:managed_plugin.png[]
 * xref:nmea_converter:ROOT:index.adoc[NMEA Converter #]
 
 === Navigation
