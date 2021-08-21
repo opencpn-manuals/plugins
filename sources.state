@@ -1,4 +1,5 @@
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
+./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
 ./DR_pi https://github.com/Rasbats/DR_pi.git 8fa30e110a22ca4c39be213abafb45d756e70e50
