@@ -31,4 +31,4 @@
 ./survey_pi https://github.com/Rasbats/survey_pi.git a1cf88cb06dabd5ed7c3d3f4cbc6c0888b36c362
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 42116e529bc20f0346c3ec65b666462a23cf70e6
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
-./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git bb0137833e65fa510939399af815b9b12b60409d
+./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git 2f866fde5b3ad77d512cb64d79d2f128679ec90f
