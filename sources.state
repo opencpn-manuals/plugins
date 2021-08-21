@@ -23,5 +23,5 @@
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 497a9a0dbe106331caea9e25ce305ad344d97c19
 ./survey_pi https://github.com/Rasbats/survey_pi.git a1cf88cb06dabd5ed7c3d3f4cbc6c0888b36c362
 ./vdr_pi https://github.com/nohal/vdr_pi.git b0d406f27944d3b3f918ad5d4f6c1cebe17399ea
-./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git d4bb1a659d705edbda883c6a05ec14c12f90e322
+./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git 63ff28311cba539a97a403d74243fe08cc3587f6
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236

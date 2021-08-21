@@ -122,8 +122,8 @@ content:
       start_path: manual/vdr
 
     - url: sources/vfkaps_pi
-      start_path: manual
-      branches: HEAD      
+      branches: HEAD
+      start_path: manual          
       edit_url: https://github.com/opencpn-manuals/vfkaps_pi/edit/master/{path}
 
 ui:
