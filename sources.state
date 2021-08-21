@@ -29,7 +29,6 @@
 ./sar_pi https://github.com/Rasbats/sar_pi.git 8c9af67c6b81a9ee3cad99cad60910fbdf4e462f
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 497a9a0dbe106331caea9e25ce305ad344d97c19
 ./survey_pi https://github.com/Rasbats/survey_pi.git a1cf88cb06dabd5ed7c3d3f4cbc6c0888b36c362
-./vdr_pi https://github.com/nohal/vdr_pi.git b0d406f27944d3b3f918ad5d4f6c1cebe17399ea
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 42116e529bc20f0346c3ec65b666462a23cf70e6
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
 ./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git bb0137833e65fa510939399af815b9b12b60409d
