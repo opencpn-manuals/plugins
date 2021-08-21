@@ -44,11 +44,11 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:logbook:ROOT:logbook.adoc[logbook #] image:managed_plugin.png[]
 // * xref:find-it:ROOT:find-it.adoc[find-it #] image:managed_plugin.png[]
 * xref:vdr:ROOT:vdr.adoc[vdr #] image:managed_plugin.png[]
-// * xref:nmea_converter:ROOT:nmea_converter.adoc[NMEA Converter #]
+* xref:nmea_converter:ROOT:index.adoc[NMEA Converter #]
 
 === Navigation
 * xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
-// * xref:googleearth:ROOT:googleearth.adoc[googleearth #]
+* xref:googleearth:ROOT:index.adoc[googleearth #]
 // * xref:celestial_navigation:ROOT:celestial_navigation.adoc[celestial_navigation #] image:managed_plugin.png[]
 // * xref:route_great_circle:ROOT:route_great_circle.adoc[Route Great Circle #]
 * xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning #] image:managed_plugin.png[]
@@ -68,21 +68,21 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:polar:ROOT:polar.adoc[polar #] image:managed_plugin.png[]
 // * xref:windvane:ROOT:windvane.adoc[windvane #] image:managed_plugin.png[]
 
-// === Weather
+=== Weather
 //
 // * xref:weatherfax:ROOT:weatherfax.adoc[weatherfax #] image:managed_plugin.png[]
-// * xref:iacfleet:ROOT:iacfleet.adoc[iacfleet #]
+* xref:iacfleet:ROOT:index.adoc[iacfleet #]
 // * xref:climatology:ROOT:climatology.adoc[climatology #] image:managed_plugin.png[]
 // * xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing #] image:managed_plugin.png[]
 
 === Utility
 //* xref:statusbar:ROOT:statusbar.adoc[Statusbar #] image:managed_plugin.png[]
 //* xref:calculator:ROOT:calculator.adoc[calculator #]
-//* xref:launcher:ROOT:launcher.adoc[launcher #]
-//* xref:debugger:ROOT:debugger.adoc[debugger #]
+xref:launcher:ROOT:index.adoc[launcher #]
+* xref:debugger:ROOT:index.adoc[debugger #]
 //* xref:pypilot:ROOT:pypilot.adoc[pypilot #] image:managed_plugin.png[]
 * xref:shipdriver:ROOT:shipdriver.adoc[Shipdriver #] image:managed_plugin.png[]
-// * xref:twocan:twocan.adoc[twocan] image:managed_plugin.png[]
+* xref:twocan:index.adoc[twocan] image:managed_plugin.png[]
 // * xref:odometer:ROOT:odometer.adoc[odometer #] image:managed_plugin.png[]
 
 === Click on a link above to see the plugin manual
