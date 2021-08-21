@@ -33,6 +33,11 @@ content:
       branches: HEAD
       edit_url: https://github.com/opencpn-manuals/gecomapi_pi/edit/master/{path}
 
+    - url: sources/GPS-Odometer_pi
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/GPS-Odometer_pi/edit/master/{path}
+
     - url: sources/iacfleet_pi
       start_path: manual
       branches: HEAD
