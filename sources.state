@@ -9,6 +9,7 @@
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./gecomapi_pi https://github.com/opencpn-manuals/gecomapi_pi 025f0628886409e6f383a4db877911783b08eb55
+./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
 ./iacfleet_pi https://github.com/opencpn-manuals/iacfleet_pi.git 95300fce16472998eed8b5b6f3975ede0d6a3058
 ./launcher_pi https://github.com/opencpn-manuals/launcher_pi.git d58a15e37774419aad56b49d4e9c5da916ebffc3
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
