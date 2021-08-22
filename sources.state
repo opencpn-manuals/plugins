@@ -23,6 +23,7 @@
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 6158a7a9952cf446a95e91f4add5a5c868aa3f53
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git 8a1b3f6559435116d3b4b7addb72507e1cf8d993
+./polar_pi https://github.com/opencpn-manuals/polar_pi.git f70b235202b78b3266ee6d40ab60eaaace94a874
 ./RacingPlugIn https://github.com/opencpn-manuals/RacingPlugIn.git b2c7372a6fcd6841c1e9829704ed31c5fc6874da
 ./radar_pi https://github.com/opencpn-manuals/radar_pi a38674340f03082512cbd2feba301aed930fe7b4
 ./s63_pi https://github.com/opencpn-manuals/s63_pi 381e0b8f806489c0603817a497e78b2d8f7f641b
