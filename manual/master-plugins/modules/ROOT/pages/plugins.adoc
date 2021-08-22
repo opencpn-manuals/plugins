@@ -97,7 +97,7 @@ resource. There is a very healthy collaboration, so that at times it is impossib
 
 === Programmers
 
-Sean Depagnier, Dave Register, Jean Pierre Pitzef, Dave Cowell, Dirk
+Sean Depagnier, Dave Register, Pavel Kalian, Alec Leamas, Jean Pierre Pitzef, Dave Cowell, Dirk
 Smits, Jon Gough, Mike Rossiter, Salty Paws, Transmitter Dan, Peter
 Tulp, Konni, Hakan, Wally Schulpen, Kees Verruijt, Douwe Fokkema, Dave
 Deller and there are more.
