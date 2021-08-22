@@ -161,6 +161,14 @@ content:
     - url: sources/calculator_pi
       branches: HEAD
       start_path: manual/calculator
+
+    - url: sources/windvane_pi
+      branches: HEAD
+      start_path: manual/windvane
+
+    - url: sources/ocpn_draw_pi
+      branches: HEAD
+      start_path: manual/odraw
       
 
 ui:
