@@ -2,10 +2,9 @@
 
 image:options-plugins-icon.png[]
 
-Where the manual comes from the developer repository this is indicated by '#'.
 The manuals for the included plugins will not be maintained as part of the OpenCPN code base.
 
-The other manuals are built by modules in the github rep 'https://github.com/Rasbats/ocpn-user-plugins-manual'
+The Authoring and Included_plugin manuals are built by modules in the github rep 'https://github.com/opencpn-manuals/plugins'
 
 Plugins included in the master catalog are indicated by image:managed_plugin.png[]
 
