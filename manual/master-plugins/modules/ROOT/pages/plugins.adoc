@@ -62,7 +62,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:watchdog:ROOT:watchdog.adoc[Watchdog #] image:managed_plugin.png[]
 * xref:sar:ROOT:sar.adoc[SAR #] image:managed_plugin.png[]
 //
-// === Sailing
+=== Sailing
 // * xref:tactics:ROOT:tactics.adoc[tactics #] image:managed_plugin.png[]
 // * xref:sweep_plot:ROOT:sweep_plot.adoc[Sweep Plot #] image:managed_plugin.png[]
 * xref:polar:ROOT:index.adoc[polar #] image:managed_plugin.png[]
