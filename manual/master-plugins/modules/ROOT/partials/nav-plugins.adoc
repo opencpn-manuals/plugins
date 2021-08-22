@@ -38,7 +38,7 @@
 * Safety
 ** xref:odraw:ROOT:odraw.adoc[odraw]
 ** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
-// ** xref:sar:ROOT:sar.adoc[SAR]
+** xref:sar:ROOT:sar.adoc[SAR]
 // * Sailing
 // ** xref:tactics:ROOT:tactics.adoc[tactics]
 // ** xref:sweep_plot:ROOT:sweep_plot.adoc[Sweep Plot]
