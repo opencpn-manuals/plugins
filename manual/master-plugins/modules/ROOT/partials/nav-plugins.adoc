@@ -23,7 +23,7 @@
 * Logs
 //** xref:dash-t:ROOT:dash-t.adoc[dash-t]
 //** xref:logbook:ROOT:logbook.adoc[logbook]
-//** xref:find-it:ROOT:find-it.adoc[find-it]
+** xref:find-it::index.adoc[find-it]
 ** xref:vdr::index.adoc[Voyage Data Recorder]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 * Navigation

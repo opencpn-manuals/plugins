@@ -39,11 +39,11 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:projections:ROOT:projections.adoc[projections ]
 
 === Logs
-// * xref:dash-t:ROOT:dash-t.adoc[dash-t ] image:managed_plugin.png[]
-// * xref:logbook:ROOT:logbook.adoc[logbook ] image:managed_plugin.png[]
-// * xref:find-it:ROOT:find-it.adoc[find-it ] image:managed_plugin.png[]
-* xref:vdr::index.adoc[Voyage Data Recorder ] image:managed_plugin.png[]
-* xref:nmea_converter:ROOT:index.adoc[NMEA Converter ]
+// * xref:dash-t:ROOT:dash-t.adoc[dash-t #] image:managed_plugin.png[]
+// * xref:logbook:ROOT:logbook.adoc[logbook #] image:managed_plugin.png[]
+* xref:find-it::index.adoc[find-it ] image:managed_plugin.png[]
+* xref:vdr::index.adoc[Voyage Data Recorder #] image:managed_plugin.png[]
+* xref:nmea_converter:ROOT:index.adoc[NMEA Converter #]
 
 === Navigation
 // * xref:squiddio::squiddio.adoc[Squiddio] image:managed_plugin.png[]
