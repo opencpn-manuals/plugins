@@ -1,5 +1,6 @@
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
+./calculator_pi https://github.com/rasbats/calculator_pi.git 1c05c06380986d2014d0a42264a8c62faacb18fb
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
 ./DR_pi https://github.com/Rasbats/DR_pi.git 8fa30e110a22ca4c39be213abafb45d756e70e50
@@ -31,6 +32,6 @@
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 497a9a0dbe106331caea9e25ce305ad344d97c19
 ./survey_pi https://github.com/Rasbats/survey_pi.git a1cf88cb06dabd5ed7c3d3f4cbc6c0888b36c362
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 42116e529bc20f0346c3ec65b666462a23cf70e6
+./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git 7a00df87ab5df6f98a7d55fe6f7dcbc38d31f1e9
+./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 42116e529bc20f0346c3ec65b666462a23cf70e6
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
-./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git 2f866fde5b3ad77d512cb64d79d2f128679ec90f
-./calculator_pi https://github.com/rasbats/calculator_pi.git 1c05c06380986d2014d0a42264a8c62faacb18fb
