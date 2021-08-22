@@ -32,3 +32,5 @@
 ./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git 002dbb7c313b1a0b8a4b829ee483e0454bc2ff81
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 42116e529bc20f0346c3ec65b666462a23cf70e6
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
+./ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git 44bb9fec927a5f3f7c52744cda8a015945d43b92
+./windvane_pi https://github.com/jongough/windvane_pi.git 963358ec9fc527be0c797c3b7f7f024c9fe8bfb4
