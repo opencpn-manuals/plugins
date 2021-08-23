@@ -41,7 +41,7 @@
 ** xref:sar:ROOT:sar.adoc[SAR]
 // * Sailing
 // ** xref:tactics:ROOT:tactics.adoc[tactics]
-// ** xref:sweep_plot:ROOT:sweep_plot.adoc[Sweep Plot]
+** xref:sweep_plot::index.adoc[Sweep Plot]
 ** xref:polar::index.adoc[Polar]
 ** xref:windvane:ROOT:windvane.adoc[windvane]
 // * Weather

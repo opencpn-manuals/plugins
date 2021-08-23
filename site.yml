@@ -108,6 +108,11 @@ content:
       branches: HEAD
       start_path: manual/photolayer
 
+    - url:  sources/plots_pi
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/plots_pi/edit/master/{path}
+
     - url: sources/polar_pi
       start_path: manual
       branches: HEAD
