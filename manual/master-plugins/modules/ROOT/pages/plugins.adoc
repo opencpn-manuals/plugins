@@ -75,7 +75,7 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing ] image:managed_plugin.png[]
 
 === Utility
-//* xref:statusbar:ROOT:statusbar.adoc[Statusbar ] image:managed_plugin.png[]
+xref:statusbar:ROOT:index.adoc[Statusbar ] image:managed_plugin.png[]
 * xref:calculator:ROOT:calculator.adoc[calculator ]
 * xref:launcher:ROOT:index.adoc[launcher ]
 * xref:debugger:ROOT:index.adoc[debugger ]

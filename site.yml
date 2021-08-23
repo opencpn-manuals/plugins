@@ -138,7 +138,6 @@ content:
       branches: HEAD
       edit_url: https://github.com/opencpn-manuals/rotationctrl_pi/edit/master/{path}
 
-
     - url: sources/route_pi
       start_path: manual
       branches: HEAD
@@ -160,6 +159,11 @@ content:
     - url: sources/shipdriver_pi
       branches: HEAD
       start_path: manual/shipdriver
+
+    - url: sources/statusbar_pi
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/statusbar_pi/edit/master/{path}
 
     - url: sources/survey_pi
       branches: HEAD
