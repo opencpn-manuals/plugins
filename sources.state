@@ -31,6 +31,7 @@
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 731916cb7e70a84b2a91f6c0c632fc7c43b10856
 ./sar_pi https://github.com/Rasbats/sar_pi.git 8c9af67c6b81a9ee3cad99cad60910fbdf4e462f
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 497a9a0dbe106331caea9e25ce305ad344d97c19
+./statusbar_pi https://github.com/opencpn-manuals/statusbar_pi.git bb72d235ea5ee1d162d3c8904a1a0c7eb3ff7f08
 ./survey_pi https://github.com/Rasbats/survey_pi.git a1cf88cb06dabd5ed7c3d3f4cbc6c0888b36c362
 ./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git a23a2793d7a9c5282b5e22c0f3b070049f90fe51
 ./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git a9df37d4936d1da248f9d2f605cd3e71dd5bfda0
