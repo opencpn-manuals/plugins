@@ -11,6 +11,7 @@
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
 ./iacfleet_pi https://github.com/opencpn-manuals/iacfleet_pi.git 95300fce16472998eed8b5b6f3975ede0d6a3058
 ./launcher_pi https://github.com/opencpn-manuals/launcher_pi.git d58a15e37774419aad56b49d4e9c5da916ebffc3
+./LogbookKonni_pi https://github.com/opencpn-manuals/LogbookKonni_pi.git 6b0a9cb9379162bb46143aef1332793ecef468fc
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi 3da698c9b1deb17b28ba28055a7e85c1c53653cf
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
 ./ocpndebugger_pi https://github.com/opencpn-manuals/ocpndebugger_pi 78b9e3bf03984ad8e049b0ff9fa1d6dff4f3ac93
