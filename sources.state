@@ -1,3 +1,4 @@
+./admiralty_tide_tables_pi https://github.com/opencpn-manuals/admiralty_tide_tables_pi.git f7e59faf89aadf49fd733a8fa182f898006aa4f4
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
 ./Autopilot-Plugin https://github.com/opencpn-manuals/Autopilot-Plugin.git 63a3ce56a00369b6d8bf606f39d23217be824083
 ./autopilot_route_pi https://github.com/opencpn-manuals/autopilot_route_pi.git b55878f627ccf80838fcacb004d9ffd6e0a029f9
