@@ -6,7 +6,7 @@
 * AIS / Radar
 ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
 ** xref:radar:ROOT:index.adoc[Radar Display]
-// ** xref:rtlsdr:ROOT:rtlsdr.adoc[RTL-SDR]
+** xref:rtlsdr::index.adoc[RTL-SDR]
 
 * Charts
 // ** xref:nv_charts:ROOT:nv_charts.adoc[nv_charts]
