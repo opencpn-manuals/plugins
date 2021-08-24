@@ -1,5 +1,6 @@
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git 26ec22f100b030e88b566b0e46870a459311aa14
 ./Autopilot-Plugin https://github.com/opencpn-manuals/Autopilot-Plugin.git 63a3ce56a00369b6d8bf606f39d23217be824083
+./autopilot_route_pi https://github.com/opencpn-manuals/autopilot_route_pi.git b55878f627ccf80838fcacb004d9ffd6e0a029f9
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./calculator_pi https://github.com/rasbats/calculator_pi.git 9e90b3825c683c02572d9860736f8ef9d578a1a6
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
