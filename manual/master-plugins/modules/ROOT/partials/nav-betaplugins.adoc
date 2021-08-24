@@ -9,7 +9,7 @@
 * xref:survey::survey.adoc[Survey]
 xref:autopilot-rm::index.adoc[Autopilot for Raymarine]
 * xref:autotrackraymarine::index.adoc[AutoTrackRaymarine for Evolution]
-// * xref:opencpn-beta-plugins:autopilot_route:autopilot_route.adoc[Autopilot_Route for OpenCPN]
+* xref:autopilot_route::index.adoc[Autopilot Route]
 // * xref:opencpn-beta-plugins:admiralty:admiralty.adoc[Admiralty Tides]
 // * xref:opencpn-beta-plugins:ncdf:ncdf.adoc[NetCDF tidal currents]
 //* xref:opencpn-beta-plugins:otidalroute:otidalroute.adoc[otidalroute]
