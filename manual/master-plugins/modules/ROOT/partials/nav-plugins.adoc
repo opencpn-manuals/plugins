@@ -39,12 +39,12 @@
 ** xref:odraw:ROOT:odraw.adoc[odraw]
 ** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
 ** xref:sar:ROOT:sar.adoc[SAR]
-// * Sailing
+* Sailing
 // ** xref:tactics:ROOT:tactics.adoc[tactics]
 ** xref:sweep_plot::index.adoc[Sweep Plot]
 ** xref:polar::index.adoc[Polar]
 ** xref:windvane:ROOT:windvane.adoc[windvane]
-// * Weather
+* Weather
 // ** xref:weatherfax:ROOT:weatherfax.adoc[weatherfax]
 ** xref:iacfleet:ROOT:index.adoc[iacfleet]
 ** xref:climatology::index.adoc[Climatology]
