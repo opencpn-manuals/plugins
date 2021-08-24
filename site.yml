@@ -49,7 +49,6 @@ content:
       branches: HEAD
       edit_url: https://github.com/opencpn-manuals/climatology_pi/edit/master/{path}
 
-
     - url: sources/Deviation_pi
       start_path: manual
       branches: HEAD
@@ -231,6 +230,11 @@ content:
     - url: sources/watchdog_pi/
       branches: HEAD
       start_path: manual/watchdog
+
+    - url: sources/weather_routing_pi
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/weather_routing_pi/edit/master/{path}
 
     - url: sources/windvane_pi
       branches: HEAD

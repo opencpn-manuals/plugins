@@ -46,4 +46,5 @@
 ./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git a8e8064e716625a798321768a31328760d0fb94b
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 3da9b4f7515aff3b46a6703fc712e62d4d516b15
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 19850bc3b8231b707161647d5203870ed42ba236
+./weather_routing_pi https://github.com/opencpn-manuals/weather_routing_pi.git d5f9ec4ab08a763e761f4c33da55dec67ade1764
 ./windvane_pi https://github.com/jongough/windvane_pi.git 963358ec9fc527be0c797c3b7f7f024c9fe8bfb4
