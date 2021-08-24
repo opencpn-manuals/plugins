@@ -12,6 +12,11 @@ content:
       - manual/master-plugins
       - manual/beta-plugins
 
+    - url: sources/admiralty_tide_tables_pi
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/admiralty_tide_tables_pi/edit/master/{path}
+
     - url: sources/aisradar_pi/
       branches: HEAD
       start_path: manual/ais_radar_display

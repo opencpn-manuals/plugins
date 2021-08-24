@@ -10,7 +10,7 @@
 * xref:autopilot-rm::index.adoc[Autopilot for Raymarine]
 * xref:autotrackraymarine::index.adoc[AutoTrackRaymarine for Evolution]
 * xref:autopilot_route::index.adoc[Autopilot Route]
-// * xref:admiralty:admiralty.adoc[Admiralty Tides]
+* xref:admiralty::index.adoc[Admiralty Tides Tables]
 // * xref:ncdf:ncdf.adoc[NetCDF tidal currents]
 //* xref:otidalroute:otidalroute.adoc[otidalroute - using GRIB CURRENT]
 * xref:sailawaynmea::sailawaynmea.adoc[SailawayNMEA]
