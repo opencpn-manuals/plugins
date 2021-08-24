@@ -25,6 +25,7 @@
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git a3cb4555bba383e4301ca7a3828a340e7a2613a1
 ./plots_pi https://github.com/opencpn-manuals/plots_pi 6dbddc6deffdb06e5667a8d414c2e05bf67d9905
 ./polar_pi https://github.com/opencpn-manuals/polar_pi.git f70b235202b78b3266ee6d40ab60eaaace94a874
+./projections_pi https://github.com/opencpn-manuals/projections_pi.git 9ba34b88b77bb398d0e34f56e841cd35596d84f4
 ./pypilot_pi https://github.com/opencpn-manuals/pypilot_pi.git 390b594ef6dafdab1668866b045f79c841123a71
 ./RacingPlugIn https://github.com/opencpn-manuals/RacingPlugIn.git b2c7372a6fcd6841c1e9829704ed31c5fc6874da
 ./radar_pi https://github.com/opencpn-manuals/radar_pi a38674340f03082512cbd2feba301aed930fe7b4
