@@ -32,6 +32,7 @@
 ./radar_pi https://github.com/opencpn-manuals/radar_pi a38674340f03082512cbd2feba301aed930fe7b4
 ./rotationctrl_pi https://github.com/opencpn-manuals/rotationctrl_pi.git 4bd3939425d6f0daefb0575725e282563182ecb0
 ./route_pi https://github.com/opencpn-manuals/route_pi.git 9e3aa99cf0203aafa174ae32ecf7768855d056d5
+./rtlsdr_pi https://github.com/opencpn-manuals/rtlsdr_pi fe90f96c8d023f6533a9291d703ecf75a26b47c4
 ./s63_pi https://github.com/opencpn-manuals/s63_pi 381e0b8f806489c0603817a497e78b2d8f7f641b
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 731916cb7e70a84b2a91f6c0c632fc7c43b10856
 ./sar_pi https://github.com/Rasbats/sar_pi.git 8c9af67c6b81a9ee3cad99cad60910fbdf4e462f
