@@ -47,7 +47,7 @@
 // * Weather
 // ** xref:weatherfax:ROOT:weatherfax.adoc[weatherfax]
 ** xref:iacfleet:ROOT:index.adoc[iacfleet]
-// ** xref:climatology:ROOT:climatology.adoc[climatology]
+** xref:climatology::index.adoc[Climatology]
 // ** xref:weather_routing:ROOT:weather_routing.adoc[Weather Routing]
 
 * Utility
