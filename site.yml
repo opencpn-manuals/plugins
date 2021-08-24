@@ -16,6 +16,11 @@ content:
       branches: HEAD
       start_path: manual/ais_radar_display
 
+    - url: sources/Autopilot-Plugin
+      start_path: manual
+      branches: HEAD
+      edit_url: https://github.com/opencpn-manuals/Autopilot-Plugin/edit/master/{path}
+
     - url: sources/AutoTrackRaymarine_pi
       start_path: manual
       branches: HEAD
