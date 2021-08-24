@@ -36,7 +36,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:rotationctrl::index.adoc[RotationCtrl ]
 * xref:chartscale:ROOT:chartscale.adoc[ChartScale ]
 * xref:objsearch:ROOT:objsearch.adoc[objsearch ]
-// * xref:projections:ROOT:projections.adoc[projections ]
+* xref:projections::index.adoc[Projections]
 
 === Logs
 // * xref:dash-t:ROOT:dash-t.adoc[dash-t #] image:managed_plugin.png[]
