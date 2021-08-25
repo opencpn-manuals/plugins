@@ -33,7 +33,7 @@ content:
     - url: sources/autopilot_route_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/autopilot_route_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/autopilot_route_pi/edit/master/{path}
 
     - url: sources/AutoTrackRaymarine_pi
       start_path: manual
@@ -51,7 +51,7 @@ content:
     - url: sources/climatology_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/climatology_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/climatology_pi/edit/master/{path}
 
     - url: sources/Deviation_pi
       start_path: manual
