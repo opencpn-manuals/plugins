@@ -21,6 +21,10 @@ content:
       branches: HEAD
       start_path: manual/ais_radar_display
 
+    - url: sources/celestial_navigation_pi/
+      branches: HEAD
+      start_path: manual/celestial_navigation
+
     - url: sources/Autopilot-Plugin
       start_path: manual
       branches: HEAD
