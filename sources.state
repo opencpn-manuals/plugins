@@ -1,4 +1,4 @@
-./admiralty_tide_tables_pi https://github.com/opencpn-manuals/admiralty_tide_tables_pi.git f7e59faf89aadf49fd733a8fa182f898006aa4f4
+./admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git edbca34e7c5f1a1b592756b2f3a3748bf4f7d5ad
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git cda0c0c179b59d0d8e3e0b510402bda77d9a1a19
 ./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git d486ebf9394df41395491ed9dd0bdf7a291cb1b1
 ./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 519dec12fc0cb7b2271e1b51b9b6e5ce4c255a08
@@ -28,13 +28,13 @@
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git a3cb4555bba383e4301ca7a3828a340e7a2613a1
 ./plots_pi https://github.com/opencpn-manuals/plots_pi 6dbddc6deffdb06e5667a8d414c2e05bf67d9905
 ./polar_pi https://github.com/opencpn-manuals/polar_pi.git f0cd489f53ccc8aa35a6892d755f979e92116a37
-./projections_pi https://github.com/opencpn-manuals/projections_pi.git 9ba34b88b77bb398d0e34f56e841cd35596d84f4
-./pypilot_pi https://github.com/opencpn-manuals/pypilot_pi.git 390b594ef6dafdab1668866b045f79c841123a71
+./projections_pi https://github.com/rgleason/projections_pi.git a1d022a60693e15435602f61dee5a1fc50494513
+./pypilot_pi https://github.com/rgleason/pypilot_pi.git 2172326cc2c5d737e911e75da2c2447daeda0659
 ./RacingPlugIn https://github.com/opencpn-manuals/RacingPlugIn.git b2c7372a6fcd6841c1e9829704ed31c5fc6874da
 ./radar_pi https://github.com/opencpn-manuals/radar_pi a38674340f03082512cbd2feba301aed930fe7b4
 ./rotationctrl_pi https://github.com/opencpn-manuals/rotationctrl_pi.git 4bd3939425d6f0daefb0575725e282563182ecb0
 ./route_pi https://github.com/opencpn-manuals/route_pi.git 9e3aa99cf0203aafa174ae32ecf7768855d056d5
-./rtlsdr_pi https://github.com/opencpn-manuals/rtlsdr_pi fe90f96c8d023f6533a9291d703ecf75a26b47c4
+./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 01341592fb3caee84869b079edd5ce14a979b011
 ./s63_pi https://github.com/opencpn-manuals/s63_pi 381e0b8f806489c0603817a497e78b2d8f7f641b
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 731916cb7e70a84b2a91f6c0c632fc7c43b10856
 ./sar_pi https://github.com/Rasbats/sar_pi.git 8c9af67c6b81a9ee3cad99cad60910fbdf4e462f
@@ -47,7 +47,7 @@
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git 6f2ef007c46224d14d694e736db0f1ca42fbfea1
 ./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git a8e8064e716625a798321768a31328760d0fb94b
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 3da9b4f7515aff3b46a6703fc712e62d4d516b15
-./watchdog_pi https://github.com/leamas/watchdog_pi.git e22fe9b346c61fd2839350b8fe3bd072d3e64dae
+./watchdog_pi https://github.com/rgleason/watchdog_pi.git e17ecfbb11f8322aa76b20115f88f2ba904cb891
 ./weatherfax_pi https://github.com/opencpn-manuals/weatherfax_pi.git d46c5db8192c8f95bb1503b35bb769c31105a3ab
-./weather_routing_pi https://github.com/opencpn-manuals/weather_routing_pi.git c5fcea3d2793865afa480185f97f5b3b4d247cad
+./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git 7acea2648e47b9bc16c4c959d281deac9326605e
 ./windvane_pi https://github.com/jongough/windvane_pi.git 963358ec9fc527be0c797c3b7f7f024c9fe8bfb4
