@@ -1,6 +1,6 @@
 ./admiralty_tide_tables_pi https://github.com/opencpn-manuals/admiralty_tide_tables_pi.git f7e59faf89aadf49fd733a8fa182f898006aa4f4
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git cda0c0c179b59d0d8e3e0b510402bda77d9a1a19
-./Autopilot-Plugin https://github.com/opencpn-manuals/Autopilot-Plugin.git 8c35df94af0a253c38595017b63f42c0096c17dc
+./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git d486ebf9394df41395491ed9dd0bdf7a291cb1b1
 ./autopilot_route_pi https://github.com/opencpn-manuals/autopilot_route_pi.git b55878f627ccf80838fcacb004d9ffd6e0a029f9
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./calculator_pi https://github.com/rasbats/calculator_pi.git 9e90b3825c683c02572d9860736f8ef9d578a1a6
