@@ -28,7 +28,7 @@ content:
     - url: sources/Autopilot-Plugin
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/Autopilot-Plugin/edit/master/{path}
+      edit_url: https://github.com/rgleason/Autopilot-Plugin/edit/master/{path}
 
     - url: sources/autopilot_route_pi
       start_path: manual
