@@ -62,7 +62,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:sar:ROOT:sar.adoc[SAR ] image:managed_plugin.png[]
 //
 === Sailing
-// * xref:tactics:ROOT:tactics.adoc[tactics ] image:managed_plugin.png[]
+* xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
 * xref:sweep_plot::index.adoc[Sweep Plot ] image:managed_plugin.png[]
 * xref:polar:ROOT:index.adoc[polar ] image:managed_plugin.png[]
 * xref:windvane:ROOT:windvane.adoc[windvane ] image:managed_plugin.png[]
@@ -75,7 +75,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 
 === Utility
-xref:statusbar:ROOT:index.adoc[Statusbar ] image:managed_plugin.png[]
+* xref:statusbar:ROOT:index.adoc[Statusbar ] image:managed_plugin.png[]
 * xref:calculator:ROOT:calculator.adoc[calculator ]
 * xref:launcher:ROOT:index.adoc[launcher ]
 * xref:debugger:ROOT:index.adoc[debugger ]
