@@ -15,7 +15,7 @@ content:
     - url: sources/admiralty_tide_tables_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/admiralty_tide_tables_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/admiralty_tide_tables_pi/edit/master/{path}
 
     - url: sources/aisradar_pi/
       branches: HEAD
@@ -150,12 +150,12 @@ content:
     - url: sources/projections_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/projections_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/projections_pi/edit/master/{path}
 
     - url: sources/pypilot_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/pypilot_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/pypilot_pi/edit/master/{path}
 
     - url: sources/RacingPlugIn
       start_path: manual
@@ -180,7 +180,7 @@ content:
     - url: sources/rtlsdr_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/rtlsdr_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/rtlsdr_pi/edit/master/{path}
 
     - url: sources/s63_pi
       start_path: manual
@@ -239,6 +239,7 @@ content:
     - url: sources/watchdog_pi/
       branches: HEAD
       start_path: manual/watchdog
+      edit_url: https://github.com/rgleason/watchdog_pi/edit/master/{path}
 
     - url: sources/weatherfax_pi
       start_path: manual
@@ -248,7 +249,7 @@ content:
     - url: sources/weather_routing_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/weather_routing_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/weather_routing_pi/edit/master/{path}
 
     - url: sources/windvane_pi
       branches: HEAD
