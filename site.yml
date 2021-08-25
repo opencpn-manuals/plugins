@@ -23,7 +23,7 @@ content:
 
     - url: sources/celestial_navigation_pi/
       branches: HEAD
-      start_path: manual/celestial_navigation
+      start_path: manual
 
     - url: sources/Autopilot-Plugin
       start_path: manual

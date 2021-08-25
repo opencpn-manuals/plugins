@@ -4,7 +4,7 @@
 ./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 519dec12fc0cb7b2271e1b51b9b6e5ce4c255a08
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./calculator_pi https://github.com/rasbats/calculator_pi.git 9e90b3825c683c02572d9860736f8ef9d578a1a6
-./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git 7c993b2e5b56db12f82e62073f83f691ced23fe2
+./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git 4fc65d1fd313a78e0ffb6807f18e0f859cafbfe4
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./climatology_pi https://github.com/rgleason/climatology_pi.git f6b4ad00406e52b00618ffb1c757b504a8aa521d
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
