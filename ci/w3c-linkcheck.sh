@@ -21,14 +21,17 @@ checklink \
     --suppress-broken '-1:https://cubian.org/downloads/' \
     --suppress-broken '-1:https://cubian.org/2013/08/12/enlarge-cubian-rootfs-partition/' \
     --exclude adsabs.harvard.edu \
+    --exclude amazon.com \
     --exclude apple.com \
     --exclude bethandevans.com \
     --exclude bigdumboat.com \
     --exclude cruisersforum.com \
     --exclude docs.google.com \
-    --exclude www.marine-knowledge.com \
+    --exclude marine-knowledge.com \
+    --exclude navigation-spreadsheets.com \
     --exclude opencpn.org/wiki/dokuwiki \
     --exclude opencpn.org \
+    --exclude translate.google.com \
     --exclude twocanplugin@hotmail.com	\
     --exclude youtube.com \
     --exclude youtu.be \
