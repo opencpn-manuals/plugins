@@ -1,0 +1,148 @@
+= Plugin Installation, Update and Removal
+
+This page is about OpenCPN plugins. A necessary prerequisite is that OpenCPN is
+installed, this is not described here.
+
+== Supported platforms
+
+There is official support for six platforms:
+
+  - Windows (From Windows 7)
+  - MacOS
+  - Debian  (Stable and oldstable)
+  - Ubuntu  (Supported LTS releases)
+  - Flatpak  (x86_64 and aarch64)
+  - Android
+
+Other platforms, notably some Linux distros, have inofficial support. However,
+Flatpak works on basically all Linux platforms and is the official support for
+Linux besides Debian and Ubuntu LTS releases.
+
+All plugins are not available on all platforms
+
+== Managed and Legacy Plugins
+
+There are two kind of plugins in OpenCPN: managed and legacy.
+
+Managed plugins is the newer variant. These plugins are handled within
+OpenCPN. The GUI allows installation, updates and uninstallation in  a simple
+point-and-click interface.
+
+Legacy plugins is the older method. Such plugins are installed like any other
+program on a platform without using OpenCPN. Once installed, OpenCPN can use the
+plugin after a restart.
+
+
+== Managed Plugins
+
+Managed plugins are handled in the _Options_ | _Plugins GUI_.
+
+Available  plugins are listed in the catalog. This is updated when new plugin
+versions are released, which happens quite often. The first step when using
+managed plugins is to refresh the catalog
+
+image:catalog.png[width=550,link="_images/catalog.png"]
+
+With an updated catalog here is a list of plugins:
+
+[#managed_list]
+
+image:managed.png[]
+
+In this list we can see all available plugins. The status is visible from
+various icons:
+
+[%autowidth]
+|=============================================================================
+|image:giftbox.png[] |  Plugin is available for installation, but yet not
+                        installed
+|image:system.png[]  |  A system plugin, always available, cannot be
+                        uninstalled
+|image:checked.png[] |  Plugin can be updated and uninstalled. If this is
+                        not checked, plugin is a legacy plugin which must be
+                        handled outside of OpenCPN.
+|image:enabled.png[] |  Plugin is (is not) enabled, see below.
+|=============================================================================
+
+
+The installation or update is straight-forward. Click on a plugin, possibly
+find out more by expanding info on it, or just install it. If the plugin is an
+update to an existing plugin this is visible in the GUI.
+
+== Legacy plugins
+
+=== Debian and Ubuntu
+
+Using the command line first enable the opencpn PPA (if not already done):
+
+    $ sudo apt install software-properties-common
+    $ sudo add-apt-repository ppa:opencpn/opencpn
+    $ sudo apt update
+
+If the name of the plugin is not completely known, first search for it
+using:
+
+    $ apt search opencpn-plugin
+
+This lists a long list of plugins. Select the one to install, using the
+findit plugin as an example:
+
+   $ sudo apt install opencpn-plugin-findit
+
+Uninstallation and updates are done using the standard apt tools, see
+the operating system documentation for more.
+
+=== Flatpak
+
+There is no support for Flatpak legacy plugins, here only the modern
+managed plugins are used.
+
+=== Windows
+
+Windows packages are .exe files. These are available for download at
+the https://opencpn.org/OpenCPN/info/downloadplugins.html[Download area]
+The downloaded file is usually an executable ”.exe“ installation file.
+Click on the file and follow the instructions, use the default alternative
+on all questions.
+Once the plugin is installed, restart OpenCPN and proceed to enabling the plugin.
+
+*Uninstall and Remove*
+
+This always requires Administrative permissions.
+
+The recommended way is to navigate to
+ _C:\Program Files (x86)\OpenCPN [Version Number]_ and execute the
+_Uninstall-[Pluginname].exe_ in that directory.
+
+As an alternative it is also possible to uninstall a plugin manually by:
+
+* Navigate to
+  _C:\Program Files (x86)\OpenCPN [Version Number]\plugins_ and simply delete
+  appropriate [pluginname].dll file and [pluginname] subdirectory.
+* Open the Opencpn.ini file in the
+  _C:\ProgramData\opencpn_ directory with a text editor and search for
+  “plugins”, to find these lines +
+  `[Plugins]` - remove reference to the plugin. +
+  `[PlugIns/[pluginname]_pi.dll] bEnabled=0` - Remove these lines.
+
+* You will also find other lines with the plugin user settings, but these
+  do no harm and could be left in place.
+
+Common Paths used by Opencpn Plugin Packages
+
+ - DLL and plugin subdirectory:
+   _C:\Program Files (x86)\OpenCPN [version number]\plugins_
+ - User Plugin Data:  _%programdata%\opencpn\plugins_ a. k. a.
+   _C:\ProgramData\opencpn\plugins_.
+
+=== MacOS
+
+Although there do exist legacy MacOS plugin packages they are not documented
+here. Recent MacOS has made these packages somewhat complicated to use, and
+the managed plugins offers a better alternative.
+
+== Plugin enable/disable
+
+When a plugin is installed is is disabled. This applies to both legacy and managed plugins.
+To enable it, check the checkbox in the _Options_ | _Plugins_ GUI, see
+xref:#managed_list[above].

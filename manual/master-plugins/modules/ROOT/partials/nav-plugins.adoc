@@ -1,5 +1,6 @@
 * General
 ** xref:opencpn-plugins:misc:terminology.adoc[Terminology]
+** xref:opencpn-plugins:misc:plugin-install.adoc[Plugin installation]
 * Included_plugins
 ** xref:dashboard:dashboard.adoc[dashboard]
 ** xref:wmm:wmm.adoc[World Magnetic]
