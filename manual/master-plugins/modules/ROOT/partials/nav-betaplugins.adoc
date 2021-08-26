@@ -1,5 +1,3 @@
-//DR_pi  EarthExplorer_pi  otcurrent_pi  otidalplan_pi  otidalroute_pi  photolayer_pi  SailawayNMEA_pi
-//  sar_pi  shipdriver_pi  survey_pi  TideFinder_pi  UKTides_pi  vfkaps_pi
 * xref:engine-dash::index.adoc[Engine Dashboard]
 * xref:race-start:ROOT:index.adoc[Race Start]
 //  * xref:opencpn-beta-plugins:trackpoint:trackpoint.adoc[Trackpoint]
