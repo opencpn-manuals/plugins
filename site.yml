@@ -24,6 +24,7 @@ content:
     - url: sources/celestial_navigation_pi/
       branches: HEAD
       start_path: manual
+      edit-url:  https://github.com/rgleason/celestial_navigation_pi/edit/master/{path}
 
     - url: sources/Autopilot-Plugin
       start_path: manual
