@@ -1,10 +1,10 @@
 ./admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git edbca34e7c5f1a1b592756b2f3a3748bf4f7d5ad
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git cda0c0c179b59d0d8e3e0b510402bda77d9a1a19
-./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git d486ebf9394df41395491ed9dd0bdf7a291cb1b1
+./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git 29a6b4df28b521887aaf2d54244d665be888e6c8
 ./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 519dec12fc0cb7b2271e1b51b9b6e5ce4c255a08
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./calculator_pi https://github.com/rasbats/calculator_pi.git 9e90b3825c683c02572d9860736f8ef9d578a1a6
-./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git 4fc65d1fd313a78e0ffb6807f18e0f859cafbfe4
+./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git bec86fa07f91802a502b49386c09c98515a4b00c
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./climatology_pi https://github.com/rgleason/climatology_pi.git f6b4ad00406e52b00618ffb1c757b504a8aa521d
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
@@ -49,5 +49,5 @@
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 3da9b4f7515aff3b46a6703fc712e62d4d516b15
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git e17ecfbb11f8322aa76b20115f88f2ba904cb891
 ./weatherfax_pi https://github.com/opencpn-manuals/weatherfax_pi.git d46c5db8192c8f95bb1503b35bb769c31105a3ab
-./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git 7acea2648e47b9bc16c4c959d281deac9326605e
+./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git b90fcf748244a72857e3c63d1a6265c8be054529
 ./windvane_pi https://github.com/jongough/windvane_pi.git 963358ec9fc527be0c797c3b7f7f024c9fe8bfb4
