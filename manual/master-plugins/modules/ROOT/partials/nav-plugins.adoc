@@ -1,6 +1,7 @@
 * General
 ** xref:opencpn-plugins:misc:terminology.adoc[Terminology]
 ** xref:opencpn-plugins:misc:plugin-install.adoc[Plugin installation]
+** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
 * Included_plugins
 ** xref:dashboard:dashboard.adoc[dashboard]
 ** xref:wmm:wmm.adoc[World Magnetic]
