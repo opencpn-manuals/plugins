@@ -47,7 +47,7 @@
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git 6f2ef007c46224d14d694e736db0f1ca42fbfea1
 ./vdr_pi https://github.com/opencpn-manuals/vdr_pi.git a8e8064e716625a798321768a31328760d0fb94b
 ./vfkaps_pi https://github.com/opencpn-manuals/vfkaps_pi.git 3da9b4f7515aff3b46a6703fc712e62d4d516b15
-./watchdog_pi https://github.com/rgleason/watchdog_pi.git e17ecfbb11f8322aa76b20115f88f2ba904cb891
+./watchdog_pi https://github.com/rgleason/watchdog_pi.git 831c744b95471846423ccd4c3bf069cc6e1d1e0e
 ./weatherfax_pi https://github.com/opencpn-manuals/weatherfax_pi.git d46c5db8192c8f95bb1503b35bb769c31105a3ab
 ./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git b90fcf748244a72857e3c63d1a6265c8be054529
 ./windvane_pi https://github.com/jongough/windvane_pi.git 963358ec9fc527be0c797c3b7f7f024c9fe8bfb4
