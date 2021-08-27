@@ -27,13 +27,20 @@ checklink \
     --suppress-broken '-1:https://cubian.org/downloads/' \
     --suppress-broken '-1:https://cubian.org/2013/08/12/enlarge-cubian-rootfs-partition/' \
     --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
+    --exclude adsabs.harvard.edu \
+    --exclude amazon.com \
     --exclude apple.com \
+    --exclude bethandevans.com \
     --exclude bigdumboat.com \
-    --exclude  cloudsmith.io/orgs/opencpn \
     --exclude cruisersforum.com \
-    --exclude firebasestorage.googleapis.com \
-    --exclude github.com/travis-ci \
-    --exclude mailto: \
+    --exclude docs.google.com \
+    --exclude marine-knowledge.com \
+    --exclude navigation-spreadsheets.com \
+    --exclude opencpn.org/wiki/dokuwiki \
     --exclude opencpn.org \
-    --masquerade "https://nowhere.net $PWD/docs" \
+    --exclude translate.google.com \
+    --exclude twocanplugin@hotmail.com	\
+    --exclude youtube.com \
+    --exclude youtu.be \
+    --masquerade "https://opencpn-manuals.github.io/plugins $PWD/docs" \
     --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
