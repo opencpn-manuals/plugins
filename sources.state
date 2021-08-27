@@ -1,10 +1,10 @@
 ./admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git edbca34e7c5f1a1b592756b2f3a3748bf4f7d5ad
 ./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git cda0c0c179b59d0d8e3e0b510402bda77d9a1a19
 ./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git 29a6b4df28b521887aaf2d54244d665be888e6c8
-./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 519dec12fc0cb7b2271e1b51b9b6e5ce4c255a08
+./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 96e76739b585d3ca01291dc0b73deff583abde6e
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./calculator_pi https://github.com/rasbats/calculator_pi.git 9e90b3825c683c02572d9860736f8ef9d578a1a6
-./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git a97de70b60e086c7dc424e981e82c01e1c1e1b19
+./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git 3e60455cd02ef452e23efbec58c40424b6f9f335
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./climatology_pi https://github.com/rgleason/climatology_pi.git f6b4ad00406e52b00618ffb1c757b504a8aa521d
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
@@ -34,7 +34,7 @@
 ./radar_pi https://github.com/opencpn-manuals/radar_pi a38674340f03082512cbd2feba301aed930fe7b4
 ./rotationctrl_pi https://github.com/opencpn-manuals/rotationctrl_pi.git 4bd3939425d6f0daefb0575725e282563182ecb0
 ./route_pi https://github.com/opencpn-manuals/route_pi.git 9e3aa99cf0203aafa174ae32ecf7768855d056d5
-./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 01341592fb3caee84869b079edd5ce14a979b011
+./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 1255ccc3fb67719794f6c04901ac9341f9354873
 ./s63_pi https://github.com/opencpn-manuals/s63_pi 381e0b8f806489c0603817a497e78b2d8f7f641b
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 731916cb7e70a84b2a91f6c0c632fc7c43b10856
 ./sar_pi https://github.com/Rasbats/sar_pi.git 8c9af67c6b81a9ee3cad99cad60910fbdf4e462f
