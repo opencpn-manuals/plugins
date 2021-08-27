@@ -4,7 +4,7 @@
 ./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 519dec12fc0cb7b2271e1b51b9b6e5ce4c255a08
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
 ./calculator_pi https://github.com/rasbats/calculator_pi.git 9e90b3825c683c02572d9860736f8ef9d578a1a6
-./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git bec86fa07f91802a502b49386c09c98515a4b00c
+./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git a97de70b60e086c7dc424e981e82c01e1c1e1b19
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
 ./climatology_pi https://github.com/rgleason/climatology_pi.git f6b4ad00406e52b00618ffb1c757b504a8aa521d
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
@@ -15,7 +15,7 @@
 ./gecomapi_pi https://github.com/opencpn-manuals/gecomapi_pi 025f0628886409e6f383a4db877911783b08eb55
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
 ./iacfleet_pi https://github.com/opencpn-manuals/iacfleet_pi.git 95300fce16472998eed8b5b6f3975ede0d6a3058
-./launcher_pi https://github.com/opencpn-manuals/launcher_pi.git d58a15e37774419aad56b49d4e9c5da916ebffc3
+./launcher_pi https://github.com/opencpn-manuals/launcher_pi.git c689c55cec9e120de4dc07e2565994d44740e77d
 ./LogbookKonni_pi https://github.com/opencpn-manuals/LogbookKonni_pi.git 6b0a9cb9379162bb46143aef1332793ecef468fc
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi 3da698c9b1deb17b28ba28055a7e85c1c53653cf
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
@@ -49,5 +49,5 @@
 ./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git 6cff31322be4ac9a552c0667beef1a26e8fb28c5
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 831c744b95471846423ccd4c3bf069cc6e1d1e0e
 ./weatherfax_pi https://github.com/opencpn-manuals/weatherfax_pi.git d46c5db8192c8f95bb1503b35bb769c31105a3ab
-./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git b90fcf748244a72857e3c63d1a6265c8be054529
+./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git 972df1828c09a9166aba1258fdcbe02b65093ab3
 ./windvane_pi https://github.com/jongough/windvane_pi.git 963358ec9fc527be0c797c3b7f7f024c9fe8bfb4
