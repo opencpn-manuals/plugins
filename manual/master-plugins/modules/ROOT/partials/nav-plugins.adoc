@@ -6,6 +6,7 @@
 *** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]
 ** Supplementary software
 *** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
+*** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation tool]
 * Included_plugins
 ** xref:dashboard:dashboard.adoc[dashboard]
 ** xref:wmm:wmm.adoc[World Magnetic]
