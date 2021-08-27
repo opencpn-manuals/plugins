@@ -25,9 +25,12 @@ checklink \
     --exclude apple.com \
     --exclude bethandevans.com \
     --exclude bigdumboat.com \
+    --exclude blogspot.com \
     --exclude cruisersforum.com \
     --exclude docs.google.com \
+    --exclude facebook.com \
     --exclude marine-knowledge.com \
+    --exclude meanwell.com \
     --exclude navigation-spreadsheets.com \
     --exclude opencpn.org/wiki/dokuwiki \
     --exclude opencpn.org \
