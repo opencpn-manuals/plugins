@@ -4,6 +4,8 @@
 ** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
 ** Supplementary hardware
 *** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]
+** Supplementary software
+*** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
 * Included_plugins
 ** xref:dashboard:dashboard.adoc[dashboard]
 ** xref:wmm:wmm.adoc[World Magnetic]
