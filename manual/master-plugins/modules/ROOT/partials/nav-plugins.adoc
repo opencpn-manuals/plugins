@@ -4,6 +4,7 @@
 ** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
 ** Supplementary hardware
 *** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]
+*** xref:opencpn-plugins:misc:rpi-setups.adoc[RPi Setups]
 ** Supplementary software
 *** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
 *** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation tool]
