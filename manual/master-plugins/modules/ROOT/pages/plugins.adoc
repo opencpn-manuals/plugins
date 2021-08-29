@@ -31,7 +31,7 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts ]
 * xref:oesenc::index.adoc[oeSENC] image:managed_plugin.png[]
 // * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) ]
-* xref:photolayer:ROOT:photolayer.adoc[PhotoLayer ] image:managed_plugin.png[]
+* xref:photolayer:ROOT:index.adoc[PhotoLayer ] image:managed_plugin.png[]
 * xref:vfkaps:ROOT:index.adoc[VfKaps - VentureFarther ] image:managed_plugin.png[]
 * xref:rotationctrl::index.adoc[RotationCtrl ]
 * xref:chartscale:ROOT:chartscale.adoc[ChartScale ]
@@ -57,7 +57,7 @@ These plugins are installed with the basic OpenCPN program.
 
 === Safety
 //
-* xref:odraw:ROOT:odraw.adoc[odraw ] image:managed_plugin.png[]
+* xref:odraw:ROOT:index.adoc[odraw ] image:managed_plugin.png[]
 * xref:watchdog:ROOT:watchdog.adoc[Watchdog ] image:managed_plugin.png[]
 * xref:sar:ROOT:sar.adoc[SAR ] image:managed_plugin.png[]
 //

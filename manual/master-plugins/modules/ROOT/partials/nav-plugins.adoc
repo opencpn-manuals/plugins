@@ -24,7 +24,7 @@
 // ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts]
 ** xref:oesenc::index.adoc[oeSENC]
 // ** xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
-** xref:photolayer:ROOT:photolayer.adoc[PhotoLayer]
+** xref:photolayer:ROOT:index.adoc[PhotoLayer]
 ** xref:vfkaps:ROOT:index.adoc[VfKaps - VentureFarther]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
 ** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
@@ -46,7 +46,7 @@
 // ** xref:ge2kap::index.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 * Safety
-** xref:odraw:ROOT:odraw.adoc[odraw]
+** xref:odraw:ROOT:index.adoc[odraw]
 ** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
 ** xref:sar:ROOT:sar.adoc[SAR]
 * Sailing
