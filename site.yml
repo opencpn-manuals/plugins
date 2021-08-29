@@ -251,7 +251,7 @@ content:
     - url: sources/vfkaps_pi
       branches: HEAD
       start_path: manual
-      edit_url: https://github.com/opencpn-manuals/vfkaps_pi/edit/master/{path}
+      edit_url: https://github.com/Rasbats/vfkaps_pi/edit/master/{path}
 
     - url: sources/windvane_pi
       branches: HEAD
