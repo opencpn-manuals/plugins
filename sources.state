@@ -20,7 +20,7 @@
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi 3da698c9b1deb17b28ba28055a7e85c1c53653cf
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
 ./ocpndebugger_pi https://github.com/opencpn-manuals/ocpndebugger_pi 78b9e3bf03984ad8e049b0ff9fa1d6dff4f3ac93
-./ocpn_draw_pi https://github.com/opencpn-manuals/ocpn_draw_pi.git e44259033d2995629101a6eca720e7abac25caae
+./ocpn_draw_pi https://github.com/opencpn-manuals/ocpn_draw_pi.git dcbe231e4e4232ca1f9d622f49a0cd06cc7e404a
 ./oesenc_pi https://github.com/leamas/oesenc_pi.git 9e025af6d54bf0373478a34254e8db21b67f1703
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
