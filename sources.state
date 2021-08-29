@@ -25,7 +25,7 @@
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 6158a7a9952cf446a95e91f4add5a5c868aa3f53
-./photolayer_pi https://github.com/Rasbats/photolayer_pi.git a3cb4555bba383e4301ca7a3828a340e7a2613a1
+./photolayer_pi https://github.com/Rasbats/photolayer_pi.git 77a911ac1bb63212638cb9a28b1833039195f2b2
 ./plots_pi https://github.com/opencpn-manuals/plots_pi 6dbddc6deffdb06e5667a8d414c2e05bf67d9905
 ./polar_pi https://github.com/rgleason/polar_pi.git 75850aa3ff93a0fa464cba47227e2303e9de5f84
 ./projections_pi https://github.com/rgleason/projections_pi.git a1d022a60693e15435602f61dee5a1fc50494513
