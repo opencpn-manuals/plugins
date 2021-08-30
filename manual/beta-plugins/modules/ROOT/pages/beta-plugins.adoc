@@ -6,7 +6,7 @@
 * xref:tidefinder::index.adoc[TideFinder]
 // * xref:javascript:javascript.adoc[JavaScript]
 * xref:deviation::index.adoc[Deviation]
-* xref:survey::survey.adoc[Survey]
+* xref:survey::index.adoc[Survey]
 * xref:autopilot-rm::index.adoc[Autopilot for Raymarine]
 * xref:autotrackraymarine::index.adoc[AutoTrackRaymarine for Evolution]
 * xref:autopilot_route::index.adoc[Autopilot Route]
