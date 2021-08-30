@@ -44,7 +44,7 @@
 ./tactics_pi https://github.com/opencpn-manuals/tactics_pi.git 2ebbfe8339a7ffc32d791131eecb0e7d25783fd2
 ./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git a23a2793d7a9c5282b5e22c0f3b070049f90fe51
 ./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git a9df37d4936d1da248f9d2f605cd3e71dd5bfda0
-./UKTides_pi https://github.com/Rasbats/UKTides_pi.git 6f2ef007c46224d14d694e736db0f1ca42fbfea1
+./UKTides_pi https://github.com/Rasbats/UKTides_pi.git e146a5c17759078c4ffbbfc522ca56adfe8c1f5d
 ./vdr_pi https://github.com/rgleason/vdr_pi.git 2b19e67af30375b8c2d4c96bf2b7b1fa7429034e
 ./vfkaps_pi https://github.com/Rasbats/vfkaps_pi.git 6cff31322be4ac9a552c0667beef1a26e8fb28c5
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git bd928ad74d16b83909f4ef7cfba43ab1d5c6fbc8
