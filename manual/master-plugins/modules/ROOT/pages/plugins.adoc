@@ -31,8 +31,8 @@ These plugins are installed with the basic OpenCPN program.
 // * xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts ]
 * xref:oesenc::index.adoc[oeSENC] image:managed_plugin.png[]
 // * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) ]
-* xref:photolayer:ROOT:index.adoc[PhotoLayer ] image:managed_plugin.png[]
-* xref:vfkaps:ROOT:index.adoc[VfKaps - VentureFarther ] image:managed_plugin.png[]
+* xref:photolayer::index.adoc[PhotoLayer ] image:managed_plugin.png[]
+* xref:vfkaps::index.adoc[VfKaps - VentureFarther ] image:managed_plugin.png[]
 * xref:rotationctrl::index.adoc[RotationCtrl ]
 * xref:chartscale:ROOT:chartscale.adoc[ChartScale ]
 * xref:objsearch:ROOT:objsearch.adoc[objsearch ]
@@ -50,8 +50,8 @@ These plugins are installed with the basic OpenCPN program.
 * xref:googleearth:ROOT:index.adoc[googleearth ]
 * xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
 * xref:route_great_circle::index.adoc[Route Great Circle ]
-* xref:dead_reckoning:ROOT:index.adoc[Dead Reckoning ] image:managed_plugin.png[]
-* xref:otcurrent:ROOT:index.adoc[otidalcurrent ] image:managed_plugin.png[]
+* xref:dead_reckoning::index.adoc[Dead Reckoning ] image:managed_plugin.png[]
+* xref:otcurrent::index.adoc[otidalcurrent ] image:managed_plugin.png[]
 // * xref:ge2kap::index.adoc[GE2KAP Companion Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
@@ -59,7 +59,7 @@ These plugins are installed with the basic OpenCPN program.
 //
 * xref:odraw:ROOT:index.adoc[odraw ] image:managed_plugin.png[]
 * xref:watchdog:ROOT:watchdog.adoc[Watchdog ] image:managed_plugin.png[]
-* xref:sar:ROOT:index.adoc[SAR ] image:managed_plugin.png[]
+* xref:sar::index.adoc[SAR ] image:managed_plugin.png[]
 
 === Sailing
 * xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
@@ -76,11 +76,11 @@ These plugins are installed with the basic OpenCPN program.
 
 === Utility
 * xref:statusbar:ROOT:index.adoc[Statusbar ] image:managed_plugin.png[]
-* xref:calculator:ROOT:index.adoc[calculator ]
+* xref:calculator::index.adoc[calculator ]
 * xref:launcher:ROOT:index.adoc[launcher ]
 * xref:debugger:ROOT:index.adoc[debugger ]
 * xref:pypilot::index.adoc[pypilot] image:managed_plugin.png[]
-* xref:shipdriver:ROOT:shipdriver.adoc[Shipdriver ] image:managed_plugin.png[]
+* xref:shipdriver::index.adoc[Shipdriver ] image:managed_plugin.png[]
 * xref:twocan::index.adoc[twocan] image:managed_plugin.png[]
 * xref:odometer:ROOT:index.adoc[odometer ] image:managed_plugin.png[]
 
