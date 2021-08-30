@@ -55,6 +55,7 @@ cd $here/sources
 git config --global advice.detachedHead false
 case "$1" in
     restore)
+        set -x
         while true; do
             read dir url commit || exit 0
             test -d $dir || git_clone $url $dir
