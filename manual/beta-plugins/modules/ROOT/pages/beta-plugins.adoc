@@ -16,3 +16,4 @@
 * xref:sailawaynmea::index.adoc[SailawayNMEA]
 * xref:uktides::index.adoc[UKTides]
 * xref:otidalplan::index.adoc[otidalplan - using HARMONICS]
+* xref:earthexplorer::index.adoc[Earth Explorer]

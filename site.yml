@@ -74,7 +74,8 @@ content:
 
     - url: sources/EarthExplorer_pi
       branches: HEAD
-      start_path: manual/earthexplorer
+      start_path: manual
+      edit_url: https://github.com/Rasbats/EarthExplorer_pi/edit/master/{path}      
 
     - url: sources/Findit_pi
       start_path: manual
