@@ -39,7 +39,8 @@ content:
 
     - url: sources/calculator_pi
       branches: HEAD
-      start_path: manual/calculator
+      start_path: manual
+      edit_url: https://github.com/Rasbats/calculator_pi/edit/master/{path}      
 
     - url: sources/celestial_navigation_pi/
       branches: HEAD
