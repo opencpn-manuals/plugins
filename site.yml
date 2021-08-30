@@ -202,7 +202,8 @@ content:
 
     - url: sources/SailawayNMEA_pi
       branches: HEAD
-      start_path: manual/sailawaynmea
+      start_path: manual
+      edit_url: https://github.com/Rasbats/SailawayNMEA_pi/edit/master/{path}      
 
     - url: sources/sar_pi
       branches: HEAD
