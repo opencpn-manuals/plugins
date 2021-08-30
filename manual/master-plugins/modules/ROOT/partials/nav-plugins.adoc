@@ -41,14 +41,14 @@
 ** xref:googleearth:ROOT:index.adoc[googleearth]
 ** xref:celestial_navigation::index.adoc[Celestial Navigation]
 ** xref:route_great_circle::index.adoc[Route Great Circle]
-** xref:dead_reckoning:ROOT:dead_reckoning.adoc[Dead Reckoning]
-** xref:otcurrent:ROOT:otcurrent.adoc[otidalcurrent]
+** xref:dead_reckoning:ROOT:index.adoc[Dead Reckoning]
+** xref:otcurrent:ROOT:index.adoc[otidalcurrent]
 // ** xref:ge2kap::index.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 * Safety
 ** xref:odraw:ROOT:index.adoc[odraw]
 ** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
-** xref:sar:ROOT:sar.adoc[SAR]
+** xref:sar:ROOT:index.adoc[SAR]
 * Sailing
 ** xref:tactics::index.adoc[tactics]
 ** xref:sweep_plot::index.adoc[Sweep Plot]
@@ -62,7 +62,7 @@
 
 * Utility
 ** xref:statusbar::index.adoc[Statusbar]
-** xref:calculator:ROOT:calculator.adoc[calculator]
+** xref:calculator:ROOT:index.adoc[calculator]
 ** xref:launcher:ROOT:index.adoc[launcher]
 ** xref:debugger:ROOT:index.adoc[debugger]
 ** xref:pypilot::index.adoc[Pypilot]
