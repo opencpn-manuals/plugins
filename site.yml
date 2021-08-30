@@ -21,6 +21,7 @@ content:
     - url: sources/aisradar_pi/
       branches: HEAD
       start_path: manual/ais_radar_display
+      edit_url: https://github.com/opencpn-radar-pi/radar_pi/edit/master/{path}
 
     - url: sources/Autopilot-Plugin
       start_path: manual
