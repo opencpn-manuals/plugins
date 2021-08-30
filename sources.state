@@ -22,7 +22,7 @@
 ./ocpndebugger_pi https://github.com/opencpn-manuals/ocpndebugger_pi 78b9e3bf03984ad8e049b0ff9fa1d6dff4f3ac93
 ./ocpn_draw_pi https://github.com/opencpn-manuals/ocpn_draw_pi.git dcbe231e4e4232ca1f9d622f49a0cd06cc7e404a
 ./oesenc_pi https://github.com/leamas/oesenc_pi.git 9e025af6d54bf0373478a34254e8db21b67f1703
-./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 30f90348e3fd064f63be42a9064ef032f5f7b91f
+./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 4f06286ce0e13664f94cabe836a7cc40cfed7eca
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 1c2b2b690069842ba96a297d01bcf04d79135f04
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 6158a7a9952cf446a95e91f4add5a5c868aa3f53
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git 77a911ac1bb63212638cb9a28b1833039195f2b2

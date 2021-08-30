@@ -64,7 +64,7 @@ content:
     - url: sources/DR_pi
       branches: HEAD
       start_path: manual
-      edit_url: https://github.com/rasbats/DR_pi/edit/master/{path}
+      edit_url: https://github.com/Rasbats/DR_pi/edit/master/{path}
 
     - url: sources/EngineDashboard
       start_path: manual
@@ -131,7 +131,8 @@ content:
 
     - url: sources/otcurrent_pi
       branches: HEAD
-      start_path: manual/otcurrent
+      start_path: manual
+      edit_url: https://github.com/Rasbats/otcurrent_pi/edit/master/{path}
 
     - url: sources/otidalplan_pi
       branches: HEAD
@@ -140,7 +141,7 @@ content:
     - url: sources/photolayer_pi
       branches: HEAD
       start_path: manual
-      edit_url: https://github.com/rasbats/photolayer_pi/edit/master/{path}
+      edit_url: https://github.com/Rasbats/photolayer_pi/edit/master/{path}
 
     - url:  sources/plots_pi
       start_path: manual
