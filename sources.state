@@ -14,7 +14,7 @@
 ./Findit_pi https://github.com/opencpn-manuals/Findit_pi.git 9f59db2a0e99e04b06257bb7869b56e9659a7e97
 ./gecomapi_pi https://github.com/opencpn-manuals/gecomapi_pi 025f0628886409e6f383a4db877911783b08eb55
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
-./iacfleet_pi https://github.com/opencpn-manuals/iacfleet_pi.git 95300fce16472998eed8b5b6f3975ede0d6a3058
+./iacfleet_pi https://github.com/nohal/iacfleet_pi.git 8763c081cde0cdd8686e9b35c143638d2636a514
 ./launcher_pi https://github.com/opencpn-manuals/launcher_pi.git c689c55cec9e120de4dc07e2565994d44740e77d
 ./LogbookKonni_pi https://github.com/opencpn-manuals/LogbookKonni_pi.git 6b0a9cb9379162bb46143aef1332793ecef468fc
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi 3da698c9b1deb17b28ba28055a7e85c1c53653cf
