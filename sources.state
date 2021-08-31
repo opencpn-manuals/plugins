@@ -1,5 +1,5 @@
 ./admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git edbca34e7c5f1a1b592756b2f3a3748bf4f7d5ad
-./aisradar_pi https://github.com/opencpn-manuals/aisradar_pi.git cda0c0c179b59d0d8e3e0b510402bda77d9a1a19
+./aisradar_pi https://github.com/nohal/aisradar_pi.git 296812e4b5b3b38d9c827527ed86360067af4f35
 ./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git 29a6b4df28b521887aaf2d54244d665be888e6c8
 ./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 96e76739b585d3ca01291dc0b73deff583abde6e
 ./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
@@ -12,7 +12,7 @@
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git 90436aabc43e6e6b4260ca2fcc18e8278f63ba15
 ./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
 ./Findit_pi https://github.com/opencpn-manuals/Findit_pi.git 9f59db2a0e99e04b06257bb7869b56e9659a7e97
-./gecomapi_pi https://github.com/opencpn-manuals/gecomapi_pi 025f0628886409e6f383a4db877911783b08eb55
+./gecomapi_pi https://github.com/nohal/gecomapi_pi 99d8eb4bf002190b552d8da2d3abfbb3a6c27ea6
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
 ./iacfleet_pi https://github.com/nohal/iacfleet_pi.git 8763c081cde0cdd8686e9b35c143638d2636a514
 ./launcher_pi https://github.com/nohal/launcher_pi.git 3b0ba7e99ab109523d44076dc0da1e26a141e1de
