@@ -23,7 +23,6 @@ These plugins are installed with the basic OpenCPN program.
 * xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display ] image:managed_plugin.png[]
 * xref:radar::index.adoc[Radar Display ] image:managed_plugin.png[]
 * xref:rtlsdr::index.adoc[RTL-SDR ]
-//
 
 === Charts
 // * xref:nv_charts:ROOT:nv_charts.adoc[nv_charts ]
@@ -46,17 +45,16 @@ These plugins are installed with the basic OpenCPN program.
 * xref:nmea_converter:ROOT:index.adoc[NMEA Converter #]
 
 === Navigation
-// * xref:squiddio::squiddio.adoc[Squiddio] image:managed_plugin.png[]
+* xref:squiddio::squiddio.adoc[Squiddio] image:managed_plugin.png[]
 * xref:googleearth:ROOT:index.adoc[googleearth ]
 * xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
 * xref:route_great_circle::index.adoc[Route Great Circle ]
 * xref:dead_reckoning::index.adoc[Dead Reckoning ] image:managed_plugin.png[]
 * xref:otcurrent::index.adoc[otidalcurrent ] image:managed_plugin.png[]
-// * xref:ge2kap::index.adoc[GE2KAP Companion Software]
+* xref:ge2kap::ge2kap.adoc[GE2KAP Companion Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 === Safety
-//
 * xref:odraw:ROOT:index.adoc[odraw ] image:managed_plugin.png[]
 * xref:watchdog:ROOT:watchdog.adoc[Watchdog ] image:managed_plugin.png[]
 * xref:sar::index.adoc[SAR ] image:managed_plugin.png[]
@@ -68,7 +66,6 @@ These plugins are installed with the basic OpenCPN program.
 * xref:windvane:ROOT:windvane.adoc[windvane ] image:managed_plugin.png[]
 
 === Weather
-//
 * xref:weatherfax::index.adoc[Weather Fax] image:managed_plugin.png[]
 * xref:iacfleet:ROOT:index.adoc[iacfleet ]
 * xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
