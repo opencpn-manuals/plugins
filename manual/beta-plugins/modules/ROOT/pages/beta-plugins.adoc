@@ -1,4 +1,4 @@
-== BETA PLUGINS
+= Beta Plugins
 
 // * xref:engine-dash:engine-dash.adoc[Engine Dashboard]
 * xref:race-start::index.adoc[Race Start]

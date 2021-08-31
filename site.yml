@@ -1,5 +1,5 @@
 site:
-  title: OpenCPN Manuals
+  title: OpenCPN
   url: https://opencpn-manuals.github.io/plugins
   start_page:  opencpn-plugins::index.adoc
 

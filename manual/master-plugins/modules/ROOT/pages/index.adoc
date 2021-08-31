@@ -1,4 +1,4 @@
-== MASTER/BETA PLUGINS
+= Plugins Manual
 
 xref:plugins.adoc[Master Plugins (by Category)]
 
