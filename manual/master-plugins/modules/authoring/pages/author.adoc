@@ -1,0 +1,17 @@
+== Authoring the manual
+
+This section is a collection of information about the build process for the OpenCPN Manuals.
+
+xref:pm-plugin-documentation.adoc[Plugin Documentation]
+
+xref:FAQ.adoc[FAQ]
+
+xref:intro.adoc[Introduction to the manual for developers]
+
+xref:tools.adoc[Tools used for editing and reading manual pages]
+
+xref:useful.adoc[Useful stuff]
+
+xref:TODO.adoc[TODO]
+
+xref:localbuild.adoc[Local build]

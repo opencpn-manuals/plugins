@@ -1,0 +1,74 @@
+== Plugin Categories
+
+=== Included_plugins +
+
+These plugins are installed with the basic OpenCPN program.
+
+xref:dashboard:dashboard.adoc[dashboard] +
+xref:wmm:wmm.adoc[World Magnetic] +
+xref:grib_weather:grib_weather.adoc[grib_weather] +
+xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+
+=== AIS / Radar +
+xref:ais_radar_display:ais_radar_display.adoc[AISradar Display] +
+xref:garmin_radar:garmin_radar.adoc[Garmin Radar Overlay] +
+xref:br24_radar:br24_radar.adoc[BR24 Radar Overlay]
+
+=== Charts +
+xref:nv_charts:nv_charts.adoc[nv_charts] +
+xref:s63_vector_charts:s63_vector_charts.adoc[s63_vector_charts] +
+xref:bsb4_charts:bsb4_charts.adoc[bsb4_charts] +
+xref:oesenc:oesenc.adoc[oeSENC] +
+xref:fugawi:fugawi.adoc[Fugawi (deprecated)] +
+xref:vfkaps:vfkaps.adoc[VfKaps - VentureFarther] +
+xref:rotationctrl:rotationctrl.adoc[RotationCtrl] +
+xref:chartscale:chartscale.adoc[Chartscale] +
+xref:objsearch:objsearch.adoc[objsearch] +
+xref:projections:projections.adoc[projections]
+
+=== Logs +
+xref:dash-t:dash-t.adoc[dash-t] +
+xref:logbook:logbook.adoc[logbook] +
+xref:find-it:find-it.adoc[find-it] +
+xref:vdr:vdr.adoc[vdr] +
+xref:nmea_converter:nmea_converter.adoc[NMEA Converter] +
+
+=== Navigation +
+xref:squiddio:squiddio.adoc[Squiddio] +
+xref:googleearth:googleearth.adoc[googleearth] +
+xref:celestial_navigation:celestial_navigation.adoc[celestial_navigation] +
+xref:route_great_circle:route_great_circle.adoc[Route Great Circle] +
+xref:dead_reckoning:dead_reckoning.adoc[DR Dead Reckoning] +
+xref:otcurrent:otcurrent.adoc[otcurrent] 
+xref:PhotoLayer:ROOT:photolayer.adoc[PhotoLayer #]  
+xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software] +
+xref:wmm.adoc[WMM (Included)] +
+
+=== Safety +
+xref:odraw1.6_pi:odraw1.6_pi.adoc[odraw1.6_pi] +
+xref:odraw1.4_pi:odraw1.4_pi.adoc[odraw1.4_pi] +
+xref:watchdog:watchdog.adoc[watchdog] +
+xref:sar:sar.adoc[sar]
+
+=== Sailing +
+xref:tactics:tactics.adoc[tactics] +
+xref:sweep_plot:sweep_plot.adoc[Sweep Plot] +
+xref:polar:polar.adoc[polar] +
+xref:windvane:windvane.adoc[windvane]
+
+=== Weather +
+
+xref:weatherfax:weatherfax.adoc[weatherfax] +
+xref:iacfleet:iacfleet.adoc[iacfleet] +
+xref:climatology:climatology.adoc[climatology] +
+xref:weather_routing:weather_routing.adoc[Weather Routing]
+
+=== Utility
+xref:statusbar:statusbar.adoc[Statusbar] +
+xref:calculator:calculator.adoc[calculator] +
+xref:launcher:launcher.adoc[launcher] +
+xref:debugger:debugger.adoc[debugger] +
+xref:pypilot:pypilot.adoc[pypilot] +
+xref:shipdriver:shipdriver.adoc[shipdriver] +
+xref:twocan:twocan.adoc[twocan] +
+xref:odometer:odometer.adoc[odometer] +

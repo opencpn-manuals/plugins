@@ -1,0 +1,62 @@
+== Useful Stuff
+
+These references have been found useful at some stage in preparing the manuals.
+
+* *Github Markdown Syntax Cheatsheet*
+
+https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
+
+* *Stop ci building when adding manuals*
+
+Add [skip ci] [skip appveyor] at the top of the commit message. This does not stop circleci builds at present, although the build does not result in a beta or master package. It generates an alpha.
+
+* *Including images in PDF made using asciidoctor-pdf*
+
+https://github.com/asciidoctor/asciidoctor-pdf/issues/93
+
+https://stackoverflow.com/questions/64459420/no-images-in-generated-pdf-document-from-asciidoc-to-pdf
+
+* *Asciidoc Syntax (another reference)*
+
+https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-ul-max
+
+https://docs.antora.org/antora/2.2/asciidoc/insert-image/
+
+* *Python Stuff*
+
+https://stackoverflow.com/questions/4829043/how-to-remove-read-only-attrib-directory-with-python-in-windows
+
+* *Pandoc*
+
+https://pandoc.org/demos.html
+
+* *Convert all files in a folder using Pandoc*
+
+----
+find ./ -iname "*.md" -type f -exec sh -c 'pandoc "${0}" -o "./output/$(basename ${0%.md}.adoc)"' {} \;
+----
+
+https://stackoverflow.com/questions/26126362/converting-all-files-in-a-folder-to-md-using-pandoc-on-mac
+
+* *Bash*
+
+https://stackoverflow.com/questions/525592/find-and-replace-inside-a-text-file-from-a-bash-command
+
+
+* *Finding broken links*
+
+Under :build the site with antora" Full LInkcheck
+I see a number of missing links.
+There are a lot of links to cruiser's forum which still work.
+I am trying to find the locations in the text for these.
+How would one do that?
+
+They are straight html link, right? Just do git grep :https://www.cruisersforum.com/, that gives you the matches and files. Or use git grep -l which just returns a list of files containing the link.
+
+Rick@Dart MINGW64 ~/documents/github/development/modules/ROOT/pages (main)
+$ grep :https://www.cruisersforum.com/
+and cursor is just blinking.
+
+This is using Windows Bash prompt.
+
+grep reads by default from stdin... type control-C to get out this. Then use the correct command git grep which by default searches from current dir.

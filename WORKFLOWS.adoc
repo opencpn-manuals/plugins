@@ -1,0 +1,100 @@
+
+== Git workflows
+
+Since Antora is based on git, all sorts of workflows are possible. Here is
+some  examples for maintaining this manual.
+
+Some of these workflows are using bleeding edge git features. There has been
+problems with Github Desktop when running these workflows, probably related
+to this. For that reason we recommend using the command line for git
+operations.
+
+
+=== Initiating a new repo
+
+As usual, clone the repository using the URL available in the green CODE
+button on github:
+
+    $ git clone git@github.com:opencpn-manuals/plugins.git
+
+Maintainers with commit rights uses this ssh-based url; other users uses
+the corresponding https URL
+
+Aftter cloning, update dependencies in the _sources_ directory if it 
+exists:
+
+    $ cd development
+    $ ./source-state.sh restore
+
+
+=== Basic, minor change
+
+Simple fixes could just be edited on the main branch, committed
+and tested:
+
+    $ edit-some-file
+    $ git commit -am "Describe the change"
+    $ git push -f origin main:build
+
+If the build completes, the results becomes visible at
+https://opencpn-manuals.github.io/development/. If testing reveals errors,
+the commit can be amended since it hasn't been pushed to main:
+
+    $ edit-again, fixing errors
+    $ git commit -a --amend
+    $ git push -f origin main:build
+
+When testing and reviewing is done, one can push to origin/main:
+
+    $ git remote update origin
+    $ git rebase origin/main
+    $ git push origin main:main
+
+The rebase operation is not always strictly required. However, it never
+hurts and sometimes prevents otherwise complicated problems.
+
+
+=== Complex changes on separate branch
+
+When doing more complex changes using a separate branch makes things easier:
+
+    $ git checkout -b my-branch
+
+On the new branch, one can make all sorts of changes without affecting the
+main branch. Testing is done using
+
+    $ git push -f origin my-branch:build
+
+Note that this will publish the test branch on the Github Pages url
+https://opencpn-manuals.github.io/development/.
+
+Pushing the branch onto origin after completing the change is done using
+
+    $ git remote update origin
+    $ git rebase origin/main
+    $ git push origin my-branch:main
+
+
+== Maintaining dependencies in _sources_
+
+The sources directory is currently in use in the main and plugins manuals.
+This directory contains other Antora modules which are used by the
+project. They are not part of the git repo, instead they are handled by the
+source-state.sh script. Description and usage is available in the header of
+this script:
+
+The basic workflow w r t sources is:
+
+      $ ./source-state.sh restore ①
+      $ ./source-state.sh update ②
+      $ ./source-state.sh save  ③
+
+① : Populate the sources directory with all modules listed in sources.state
+② : Update all modules to latest version available
+② : Saves the state of the modules in source-state.sh
+
+
+Using `./source-state.sh update` is not the only way to update the sources.
+Each directory here is a git repository, and the can be updated as usual
+with for example `git pull`. After such updates, `./source-state.sh save`
+will record all changes into source-state.sh

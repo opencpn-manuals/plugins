@@ -1,0 +1,71 @@
+* General
+** xref:opencpn-plugins:misc:terminology.adoc[Terminology]
+** xref:opencpn-plugins:misc:plugin-install.adoc[Plugin installation]
+** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
+** Supplementary hardware
+*** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]
+*** xref:opencpn-plugins:misc:rpi-setups.adoc[RPi Setups]
+** Supplementary software
+*** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
+*** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation tool]
+* Included_plugins
+** xref:dashboard:dashboard.adoc[dashboard]
+** xref:wmm:wmm.adoc[World Magnetic]
+** xref:grib_weather:grib_weather.adoc[grib_weather]
+** xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+* AIS / Radar
+** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
+** xref:radar:ROOT:index.adoc[Radar Display]
+** xref:rtlsdr::index.adoc[RTL-SDR]
+
+* Charts
+// ** xref:nv_charts:ROOT:nv_charts.adoc[nv_charts]
+** xref:s63_vector_charts:ROOT:index.adoc[S63 Vector Charts]
+// ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts]
+** xref:oesenc::index.adoc[oeSENC]
+// ** xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
+** xref:photolayer::index.adoc[PhotoLayer]
+** xref:vfkaps::index.adoc[VfKaps - VentureFarther]
+** xref:rotationctrl::index.adoc[RotationCtrl]
+** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
+** xref:objsearch:ROOT:objsearch.adoc[objsearch]
+** xref:projections::index.adoc[Projections]
+* Logs
+//** xref:dash-t:ROOT:dash-t.adoc[dash-t]
+** xref:logbook::index.adoc[Logbook]
+** xref:find-it::index.adoc[find-it]
+** xref:vdr::index.adoc[Voyage Data Recorder]
+** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
+* Navigation
+// ** xref:squiddio::squiddio.adoc[Squiddio]
+** xref:googleearth:ROOT:index.adoc[googleearth]
+** xref:celestial_navigation::index.adoc[Celestial Navigation]
+** xref:route_great_circle::index.adoc[Route Great Circle]
+** xref:dead_reckoning::index.adoc[Dead Reckoning]
+** xref:otcurrent::index.adoc[otidalcurrent]
+// ** xref:ge2kap::index.adoc[GE2KAP Companion Software]
+** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
+* Safety
+** xref:odraw:ROOT:index.adoc[odraw]
+** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
+** xref:sar::index.adoc[SAR]
+* Sailing
+** xref:tactics::index.adoc[tactics]
+** xref:sweep_plot::index.adoc[Sweep Plot]
+** xref:polar::index.adoc[Polar]
+** xref:windvane:ROOT:windvane.adoc[windvane]
+* Weather
+** xref:weatherfax::index.adoc[Weather Fax]
+** xref:iacfleet:ROOT:index.adoc[iacfleet]
+** xref:climatology::index.adoc[Climatology]
+** xref:weather_routing::index.adoc[Weather Routing]
+
+* Utility
+** xref:statusbar::index.adoc[Statusbar]
+** xref:calculator:ROOT:index.adoc[calculator]
+** xref:launcher:ROOT:index.adoc[launcher]
+** xref:debugger:ROOT:index.adoc[debugger]
+** xref:pypilot::index.adoc[Pypilot]
+** xref:shipdriver::index.adoc[Shipdriver]
+** xref:twocan::index.adoc[TwoCan]
+** xref:odometer:ROOT:index.adoc[odometer]
