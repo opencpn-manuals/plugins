@@ -46,17 +46,16 @@ These plugins are installed with the basic OpenCPN program.
 * xref:nmea_converter:ROOT:index.adoc[NMEA Converter #]
 
 === Navigation
-// * xref:squiddio::squiddio.adoc[Squiddio] image:managed_plugin.png[]
+* xref:squiddio::squiddio.adoc[Squiddio] image:managed_plugin.png[]
 * xref:googleearth:ROOT:index.adoc[googleearth ]
 * xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
 * xref:route_great_circle::index.adoc[Route Great Circle ]
 * xref:dead_reckoning::index.adoc[Dead Reckoning ] image:managed_plugin.png[]
 * xref:otcurrent::index.adoc[otidalcurrent ] image:managed_plugin.png[]
-// * xref:ge2kap::index.adoc[GE2KAP Companion Software]
+* xref:ge2kap::ge2kap.adoc[GE2KAP Companion Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 === Safety
-//
 * xref:odraw:ROOT:index.adoc[odraw ] image:managed_plugin.png[]
 * xref:watchdog:ROOT:watchdog.adoc[Watchdog ] image:managed_plugin.png[]
 * xref:sar::index.adoc[SAR ] image:managed_plugin.png[]
