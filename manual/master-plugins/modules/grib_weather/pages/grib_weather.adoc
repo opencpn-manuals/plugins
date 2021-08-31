@@ -1,11 +1,11 @@
-== Grib Weather
+= Grib Weather
 
 OpenCPN has a grib weather file viewer plugin, aimed at being useful
 while under way.
 *The grib plugin is an Internal Plugin, always distributed with OpenCPN,
 no separate download is required.*
 
-=== Links
+== Links
 
 Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn
 Internal Plugin]
@@ -13,7 +13,7 @@ Forum:
 http://www.cruisersforum.com/forums/f134/new-grib-presentation-100414.html[Grib
 Weather Forum]
 
-=== What is a grib file?
+== What is a grib file?
 
 If you are not familiar with grib weather files, make sure you
 understand the basics, before you start to use them. *It is essential to
@@ -28,7 +28,7 @@ http://weather.mailasail.com/Franks-Weather/Grib-Files-Getting-And-Using[Franks-
 A very good, up to date book, is “Modern Marine Weather, second edition”
 by David Burch, with a thorough treatment of the subject.
 
-=== Types of Grib files.
+== Types of Grib files.
 
 OpenCPN can read both the original gribfile format, known as Grib1, as
 well as the new Grib2 format, with the .grb2 or .grib2 file-extension.
@@ -37,7 +37,7 @@ this https://luckgrib.com/blog/2018/08/24/nbm-announce.html .
 See this https://luckgrib.com/tutorials/2018/08/24/nbm-oceanic.html which introduces probability to the results. This
 is a new resource for the weather community to consider.
 
-=== Get started
+== Get started
 
 To display grib files as an overlay on your normal charts you have to
 first activate the grib icon
@@ -56,7 +56,7 @@ dialog rarely needs changing after the initial setup.
 
 image::33gribpreference2.png[]
 
-=== Grib Preference
+== Grib Preference
 
 *Use High Definition Graphics*. The setting only concerns the barbed
 wind arrows.Tick the “Use High Definition Graphics” box, unless you are
@@ -78,26 +78,26 @@ spacing. For some dates/times, the wave data do not exist.This parameter
 allows this missing data to be reconstructed and avoiding the overlay
 (if set) to flicker.
 
-=== Load File Options
+== Load File Options
 
 *Load the More Recent File in Directory*. Loads the newest file in the
 grib directory on start.
 *Load the Last Open File*. Loads the grib file used last time.
 
-=== Start options
+== Start options
 
 *Start at the first forecast in GRIB file*
 *Start at the nearest forecast to current time*
 *Authorize interpolation to start at current time.*
 
-=== Time Options
+== Time Options
 
 *Local Time*
 *UTC*
 
-=== The Grib Display Controls
+== The Grib Display Controls
 
-==== The Standard Display Control
+=== The Standard Display Control
 
 To start the Grib plugin press the image:grib.png[] The “GRIB Display Control” then pops up.
 
@@ -162,7 +162,7 @@ image::4gribcontrol.png[]
 
 Right-clicking the “Air Temp” option square.
 
-==== The Advanced Display Control
+=== The Advanced Display Control
 
 The plugin has an advanced mode were altitude data can be displayed.
 This mode requires some more knowledge than plain gribs.
@@ -185,13 +185,13 @@ The advanced data are displayed against a yellow background.
 *Wind*. These are the wind data valid for the selected altitude level.
 *Grib Data at 500 hPa*. The values at the selected level.
 
-=== Pressure Isobar Numbers - Short & Long
+== Pressure Isobar Numbers - Short & Long
 
 Right click on Pressure and select what you want.
 
 image::grib-pressure-isobar-numbers-short-long.png[]
 
-=== Weather Tables
+== Weather Tables
 
 Once a grib file is loaded in the current session, the “Weather table”
 appears in the right click menu.
@@ -210,7 +210,7 @@ switch.
 
 image::grib-table-degrees.png[]
 
-==== Settings
+=== Settings
 
 …controls how the grib files are displayed on the screen, and units used
 in the Grib Display control. Things like overlay colors, animation time
@@ -233,7 +233,7 @@ image::grib-settings-data-waves-playback.png[]
 
 image::grib-settings-bottom-slider.png[]
 
-==== Playback
+=== Playback
 
 The Loop Mode controls what happens when “Play” is pressed in the Grib
 Display Control.
@@ -254,7 +254,7 @@ image::33gribinterpolation.png[image,width=477,height=165]
 entry is only visible if “Interpolate between gribs” is ticked. This is
 connected tho the chosen time interval when requesting a grib file.
 
-==== Display
+=== Display
 
 The lower part of the Grib Settings Dialog, under the Display heading is
 really 10 different controls. The controls are activated by the choosing
@@ -368,7 +368,7 @@ image::grib-settings-bottom-slider.png[]
 
 Altitude and Relative Humidity have a simple one choice entry.
 
-==== The Grib-file Request Button
+=== The Grib-file Request Button
 
 * Grib files can be requested directly from the plugin. The request is
 in the form of an email to SailDocs or ZyGrib. The requested grib file
@@ -398,7 +398,7 @@ request to SaiDocs or to ZyGrib. Some alternatives are only available
 from SailDocs, and some are only available from zyGrib. Alternatives not
 available are grayed out.
 
-===== SailDocs Request Form
+==== SailDocs Request Form
 
 image::grib-settings-message-saildocs.png[]
 
@@ -457,7 +457,7 @@ This is the standard way of getting a new grib in Windows and Linux.
 To get a grib, just press *_“Send”_*, and wait for a return mail.
 
 
-===== zyGrib Request Form
+==== zyGrib Request Form
 
 
 Note that the Login is longer the first page of the website. The URL for
@@ -466,7 +466,7 @@ you login to recieve the special code that allows download for two
 months.
 image::grib-settings-message-zygrib.png[image,width=550,height=692]
 
-==== Configuration of Default Email Server
+=== Configuration of Default Email Server
 
 If after hitting “Send”, the “Mail” window shows this message, instead
 of the “send” request:
@@ -497,7 +497,7 @@ OpenCPN when editing opencpn.conf.
 
 Setting “SendMailMethod” to “0” restores the default.
 
-==== ZyGrib Server Registration
+=== ZyGrib Server Registration
 
 When ZyGrib is selected as the download server, there are User and Code
 fields that can be completed. This requires subscription or registration
@@ -514,7 +514,7 @@ Internet]
 * http://www.zygrib.org/index.php?page=gribauto[Code Generator]
 * http://zygrib.org/forum/index.php?sid=961889a5354269828e9d83eb33007c99[Forum]
 
-==== Load two Grib Files Concurrently (Wind Current)
+=== Load two Grib Files Concurrently (Wind Current)
 
 Combine separate Saildocs GFS Wind RTOFS Current grib files. (Note:
 Only applies to OpenCPN v4.2.x and forward)
@@ -529,7 +529,7 @@ left click.)
 
 image::saildocscurrent.jpg[]
 
-==== More to know
+=== More to know
 
 There are many aspects to the use of grib files which lead to the use of
 other companion programs or plugins.
@@ -553,7 +553,7 @@ polar data, and produces an optimized route.
 These are very good tools to use in routing decisions, but they all have
 the same limitations as all grib-data.
 
-==== Grib File Notes & WARNINGS
+=== Grib File Notes & WARNINGS
 
 (These notes are from the SailDocs Grib Server)
 

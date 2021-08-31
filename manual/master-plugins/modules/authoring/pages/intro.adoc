@@ -1,4 +1,4 @@
-== Introduction
+= Introduction
 
 The OpenCPN Manuals seen by the user are still HTML but produced from files which use the asciidoc
 markup. The git for the plugins manual is here:

@@ -1,4 +1,4 @@
-== Dashboard
+= Dashboard
 
 The Dashboard plugin is able to show quite a few instruments. *The
 Dashboard plugin is an Internal Plugin, always distributed with OpenCPN,
@@ -10,7 +10,7 @@ tell what is available. It is assumed that the user knows what is
 connected. It is of course possible to activate all instruments and see
 what works.
 
-=== Links
+== Links
 
 Source:: 
 
@@ -23,7 +23,7 @@ Companion Plugin::
 https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
 This can solve many conversion problems.
 
-=== The Dashboard in action
+== The Dashboard in action
 
 There are two Dashboards, one vertical and one horizontal.
 
@@ -47,7 +47,7 @@ which is handled separately. See further down.
 
 image::dash-drag.png[]
 
-=== The Dashboard Tab
+== The Dashboard Tab
 
 Once the Dashboard plugin is activated in the plugin tab, the Dashboard
 Icon will be available in the ToolBar and will work as an on/off toggle.
@@ -61,7 +61,7 @@ ToolBar. Once enabled, the “Disable” Button is displayed, as show above.
 If you press the “Preference” Button the Dashboard preferences dialog
 becomes available.
 
-==== Dashboard settings
+=== Dashboard settings
 
 image::dash-set.png[image,width=298,height=239]
 
@@ -72,11 +72,11 @@ Stop displaying it by un-ticking the box in front of the first
 “Dashboard” line. Get it back by right clicking on the other Dashboard
 and tick the same box again.
 
-==== Preferences
+=== Preferences
 
 image::dashprop322.png[image,width=450,height=455]
 
-==== The Dashboard Tab
+=== The Dashboard Tab
 
 The Icons in the narrow pane to the left, represents the available
 instances. Click on an instance and the configured instruments shows in
@@ -108,7 +108,7 @@ Window.
 
 image::dash-select-instr_0.png[image,width=260,height=265]
 
-==== 40 Instruments Available
+=== 40 Instruments Available
 
 
 
@@ -208,17 +208,17 @@ same informations is however available through the “xgps” command.
 
 
 
-==== Delete
+=== Delete
 
 Highlight an entry in the Instrument Window to delete it.
 
-==== Up / Down
+=== Up / Down
 
 Highlight an entry in the Instrument Window and change the order between
 the selected instruments. This order will also be the order between the
 instruments in the Dashboard dialog.
 
-==== The Appearance Tab
+=== The Appearance Tab
 
 image::dashboard-preferences-appearance.jpeg[dashboard-preferences-appearance.jpg,title="dashboard-preferences-appearance.jpg",width=443,height=385]
 
@@ -227,7 +227,7 @@ Use this tab to set fonts.
 Note:: Depth Transducer Offset is in units of meters regardless of the
 chosen display units.
 
-==== Dampen SOG and COG (IR Filter)
+=== Dampen SOG and COG (IR Filter)
 
 There are 2 parameters in the Dashboard→Preferences→Appearance dialog
 for damping of SOG and COG. A value of 1 means no filtering. Higher
@@ -237,7 +237,7 @@ mechanical filter that uses an oil damped indicator dial. It will
 respond gradually to a change in course or speed. A typical filter value
 of 10 seems to work pretty well.
 
-==== Units Selection
+=== Units Selection
 
 Select these parameters as suits your use. These controls together
 enable the user to adjust the view of the dashboard to suit individual
@@ -250,7 +250,7 @@ speed dial.
 
 image::33speed12.png[image,width=231,height=250]image::33speed50.png[image,width=231,height=250]
 
-==== Wind History
+=== Wind History
 
 The Wind History Instrument needs some further explanations.
 
@@ -312,7 +312,7 @@ Dashboard.
 
 image::wh1.png[image,width=162,height=134]
 
-==== Night time Mode
+=== Night time Mode
 
 In Windows, Night, F5, mode. The title bar on the floating dashboard
 window is a bit glaring (this mode is controlled by windows by way of a
@@ -322,7 +322,7 @@ is to simply “dock” the dashboard window at night, either left or right.
 This brings the window decorations back under OCPN control, and we
 recently added logic to dim it in this mode.
 
-==== Dashboard Time
+=== Dashboard Time
 
 The dashboard plugin contains 3 instruments capable of displaying the
 time according to the preference of the user.
@@ -341,7 +341,7 @@ selected any other offset in 30 minute increments up to/- 12 hours.
 The offset will be added to the GPS UTC time and the local computer time
 zone will be ignored.
 
-===== Sunrise - Sunset
+==== Sunrise - Sunset
 
 Sunrise/sunset are computed based on the date and lat/long from the GPS
 NMEA input data. They are not computed from the CPU clock or the ship's
@@ -349,13 +349,13 @@ position. So unless you have a GPS connected then the times of
 sunrise/sunset are probably not going to be right. It has always been
 thus.
 
-==== NmeaConverter_pi Conversions
+=== NmeaConverter_pi Conversions
 
 https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
 can solve many compatibility or unit conversion issues. There are nine
 examples showing how the use NmeaConverter to adjust Dashboard output.
 
-===== Barometer MWV - XDR,MTA,MDA
+==== Barometer MWV - XDR,MTA,MDA
 
 NMEAconverter_pi may help: 
 https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html

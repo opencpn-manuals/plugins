@@ -1,4 +1,4 @@
-== WMM
+= WMM
 
 The *World Magnetic Model PlugIn* for OpenCPN implements and bundles the
 the current NOAA World Magnetic Model, WMM2015, valid until 2020. The
@@ -9,7 +9,7 @@ https://blogs.agu.org/geospace/2019/02/27/historic-stone-walls-record-history-of
 
 Very interesting article, showing a good use for lidar. This shows why the World Magnetic Model plugin (WMM_pi) needs to be updated on a regular basis..
 
-=== Links
+== Links
 
 Source: 
 
@@ -19,7 +19,7 @@ Forum: http://www.cruisersforum.com/forums/f134/world-magnetic-model-plugin-5816
 
 Forum: http://www.cruisersforum.com/forums/showthread.php?p=1701648[WMMThread]
 
-=== A Quick-Start Guide.
+== A Quick-Start Guide.
 
 This plugin is all about the value of the magnetic variation. The value
 at your boat position, at the position of the cursor, and the rest of
@@ -49,7 +49,7 @@ image::wmm4.png[]
 That is all you need to know to get started, and for most of your daily
 use. Need more details? Read on!
 
-=== The Details
+== The Details
 
 World Magnetic Model Plotting allows users to cross reference the
 magnetic deviation values printed on many raster charts.

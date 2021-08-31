@@ -1,4 +1,4 @@
-== Local Build
+= Local Build
 
 This page shows how to set up the build:
 

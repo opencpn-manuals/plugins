@@ -1,4 +1,4 @@
-== FAQ
+= FAQ
 
 * *How can errors in the manual be reported*
 

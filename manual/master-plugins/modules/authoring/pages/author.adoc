@@ -1,4 +1,4 @@
-== Authoring the manual
+= Authoring the manual
 
 This section is a collection of information about the build process for the OpenCPN Manuals.
 
