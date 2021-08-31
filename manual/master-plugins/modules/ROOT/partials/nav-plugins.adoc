@@ -49,7 +49,7 @@
 ** xref:route_great_circle::index.adoc[Route Great Circle]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning]
 ** xref:otcurrent::index.adoc[otidalcurrent]
-** xref:sat2chart:index.adoc[GE2KAP Companion Software]
+** xref:sat2chart:sat2chart.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 * Safety
