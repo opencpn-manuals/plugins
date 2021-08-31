@@ -2,17 +2,21 @@
 ** xref:opencpn-plugins:misc:terminology.adoc[Terminology]
 ** xref:opencpn-plugins:misc:plugin-install.adoc[Plugin installation]
 ** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
+
 ** Supplementary hardware
 *** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]
 *** xref:opencpn-plugins:misc:rpi-setups.adoc[RPi Setups]
+
 ** Supplementary software
 *** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
 *** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation tool]
+
 * Included_plugins
 ** xref:dashboard:dashboard.adoc[dashboard]
 ** xref:wmm:wmm.adoc[World Magnetic]
 ** xref:grib_weather:grib_weather.adoc[grib_weather]
 ** xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+
 * AIS / Radar
 ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
 ** xref:radar:ROOT:index.adoc[Radar Display]
@@ -30,30 +34,35 @@
 ** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
 ** xref:objsearch:ROOT:objsearch.adoc[objsearch]
 ** xref:projections::index.adoc[Projections]
+
 * Logs
 //** xref:dash-t:ROOT:dash-t.adoc[dash-t]
 ** xref:logbook::index.adoc[Logbook]
 ** xref:find-it::index.adoc[find-it]
 ** xref:vdr::index.adoc[Voyage Data Recorder]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
+
 * Navigation
-** xref:squiddio::squiddio.adoc[Squiddio]
+** xref:squiddio:squiddio.adoc[Squiddio]
 ** xref:googleearth:ROOT:index.adoc[googleearth]
 ** xref:celestial_navigation::index.adoc[Celestial Navigation]
 ** xref:route_great_circle::index.adoc[Route Great Circle]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning]
 ** xref:otcurrent::index.adoc[otidalcurrent]
-** xref:ge2kap::ge2kap.adoc[GE2KAP Companion Software]
+** xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
+
 * Safety
 ** xref:odraw:ROOT:index.adoc[odraw]
 ** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
 ** xref:sar::index.adoc[SAR]
+
 * Sailing
 ** xref:tactics::index.adoc[tactics]
 ** xref:sweep_plot::index.adoc[Sweep Plot]
 ** xref:polar::index.adoc[Polar]
 ** xref:windvane:ROOT:windvane.adoc[windvane]
+
 * Weather
 ** xref:weatherfax::index.adoc[Weather Fax]
 ** xref:iacfleet:ROOT:index.adoc[iacfleet]
