@@ -21,7 +21,7 @@
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
 ./ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi d9b355bed47370f4482405ea2b3a6132edc2f683
 ./ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git b6179c793473284625c96e15c967b5b48b239a39
-./oesenc_pi https://github.com/leamas/oesenc_pi.git 9e025af6d54bf0373478a34254e8db21b67f1703
+./oesenc_pi https://github.com/opencpn-manuals/oesenc_pi.git e95e9320e3d5c6d6d4c21f9b3c26dd098aa589e5
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 4f06286ce0e13664f94cabe836a7cc40cfed7eca
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 585e76443671d4a3bf11ac17e97f234940a0faef
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 245482451420feba2d48a796308649d441af0a6b
