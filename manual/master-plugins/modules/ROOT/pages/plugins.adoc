@@ -1,4 +1,4 @@
-== MASTER PLUGINS
+= Master Plugins
 
 image:options-plugins-icon.png[]
 

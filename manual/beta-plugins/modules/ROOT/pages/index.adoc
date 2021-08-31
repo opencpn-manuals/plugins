@@ -1,4 +1,4 @@
-== BETA PLUGINS
+= Beta Plugins
 
 xref:beta-plugins.adoc[Beta Plugins]
 
