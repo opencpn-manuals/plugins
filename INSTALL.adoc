@@ -13,7 +13,7 @@ Push the current branch to the branch _build_, something like
 
 Pushing to _build_ initiates a build job, progress can be followed at
 https://github.com/opencpn-manuals/plugins/actions. The results
-becomes available at https://github.com/opencpn-manuals/plugins
+becomes available at https://opencpn-manuals.github.io/plugins
 after about 2-3  minutes.
 
 
@@ -22,7 +22,11 @@ after about 2-3  minutes.
 Local builds requires Nodejs and Antora installed. See
 https://docs.antora.org/antora/2.3/install/install-antora/
 
-With these tools in place, build using
+The first step is to clone all required sources using
+
+    $ ./source-state.sh restore
+
+With sources and the antora program in place, build using
 
     $ antora site.yml
 
@@ -32,11 +36,33 @@ results by pointing the browser to the _docs/index.html_ file.
 
 == Automated link tests
 
-When the build is done at github, a quick check for broken links is done
-using linkchecker. Logs from these tests are available at
+When the build is done at github, some quick checks for broken links is done
+using linkchecker and other tools. Logs from these tests are available at
 https://github.com/opencpn-manuals/plugins/actions
 
 If the commit subject contains the string [full-linkcheck] site is checked
 using the checklink program from the w3c-linkchecks suite. This is a
-very slow process (currently about 20 minutes) which however reveals more
+slow process (currently about 20 minutes) which however reveals more
 errors, notably related to url fragments and corresponding anchors.
+
+
+== Maintaining the sources/ directory.
+
+The _sources_ directory works like a cache of included plugins. Contrary to
+the cache otherwise used by Antora it's state is fully defined and can be
+restored using the data in the _sources.state_ file. It's also much smaller
+since it only clones the data required, not the complete plugins.
+
+_sources_ and _sources.state_ are maintained using the _source_state.sh_
+script. The basic operations are:
+
+    - _./sources-state.sh restore_ clones all repos listed in _sources.state_.
+    - _./source-state.sh save_ updates _sources.state_ so it matches the
+      directories in _sources_. In other words, it's the reverse operation to
+      _restore_
+    - _./source-state-sh update_ Updates all repositories in _sources_ to
+      latest version (does not save!)
+
+These is the everyday usage. Occasionally the _restore_ operation fails after
+changing repositories in _sources.state_. In most cases removing the repo
+in _sources_ before running _restore_ fixes this.
