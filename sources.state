@@ -17,9 +17,10 @@
 ./iacfleet_pi https://github.com/nohal/iacfleet_pi.git 8763c081cde0cdd8686e9b35c143638d2636a514
 ./launcher_pi https://github.com/nohal/launcher_pi.git 3b0ba7e99ab109523d44076dc0da1e26a141e1de
 ./LogbookKonni_pi https://github.com/opencpn-manuals/LogbookKonni_pi.git 6b0a9cb9379162bb46143aef1332793ecef468fc
-./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi 3da698c9b1deb17b28ba28055a7e85c1c53653cf
+./ncdf_pi https://github.com/Rasbats/ncdf_pi.git 9400d65a66cb33a74e1e30ce03daebc6689ef79f
+./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi.git 3da698c9b1deb17b28ba28055a7e85c1c53653cf
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
-./ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi d9b355bed47370f4482405ea2b3a6132edc2f683
+./ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git d9b355bed47370f4482405ea2b3a6132edc2f683
 ./ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git b6179c793473284625c96e15c967b5b48b239a39
 ./oesenc_pi https://github.com/bdbcat/oesenc_pi.git 284bfc902d2e23bbcae691e027121174c92e12e9
 ./otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 2bf02b72851b1730a5a8a8818a99c69988fb3d57
