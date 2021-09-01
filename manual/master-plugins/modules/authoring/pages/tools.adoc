@@ -26,3 +26,6 @@ https://flathub.org/apps/details/com.visualstudio.code[Flathub]
 and and a snap package at https://snapcraft.io/code[snapcraft]
 Using tools like these the need to make a local build and thus
 the need to install Antora can be avoided.
+
+There are also asciidoc plugins for the ubiquitous IntelliJ and
+Eclipse platforms. Not tested wihin the project.
