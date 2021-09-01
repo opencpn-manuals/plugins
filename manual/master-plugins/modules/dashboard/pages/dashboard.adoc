@@ -358,7 +358,7 @@ examples showing how the use NmeaConverter to adjust Dashboard output.
 ==== Barometer MWV - XDR,MTA,MDA
 
 NMEAconverter_pi may help: 
-https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
+https://opencpn-manuals.github.io/plugins/nmea_converter/0.1/index.html
 
 David Burch Videos
 
