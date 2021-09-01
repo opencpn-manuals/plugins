@@ -33,7 +33,7 @@
 ./pypilot_pi https://github.com/rgleason/pypilot_pi.git 2172326cc2c5d737e911e75da2c2447daeda0659
 ./RacingPlugIn https://github.com/opencpn-manuals/RacingPlugIn.git b2c7372a6fcd6841c1e9829704ed31c5fc6874da
 ./radar_pi https://github.com/opencpn-radar-pi/radar_pi.git 779738508433d912241ffca8e5da24662f9e5460
-./rotationctrl_pi https://github.com/opencpn-manuals/rotationctrl_pi.git 4bd3939425d6f0daefb0575725e282563182ecb0
+./rotationctrl_pi https://github.com/rgleason/rotationctrl_pi.git 582f6f5c263922dc7d80e78e4a08a3c1e226797f
 ./route_pi https://github.com/rgleason/route_pi.git 846fd2435dedf6d28f57a3bdf4065e9801aece7f
 ./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 1255ccc3fb67719794f6c04901ac9341f9354873
 ./s63_pi https://github.com/bdbcat/s63_pi 9d2ee9b08e78e9e739f502b827c43583563dbfd4
