@@ -46,7 +46,7 @@
 ./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git a9df37d4936d1da248f9d2f605cd3e71dd5bfda0
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git f29679c94cc6546af772f1809ca53b6f2efab59d
 ./vdr_pi https://github.com/rgleason/vdr_pi.git 2b19e67af30375b8c2d4c96bf2b7b1fa7429034e
-./vfkaps_pi https://github.com/rasbats/vfkaps_pi.git 6cff31322be4ac9a552c0667beef1a26e8fb28c5
+./vfkaps_pi https://github.com/rasbats/vfkaps_pi.git 00bc1485a8a02cd696e9f770cafd0a217aa8588c
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git bd928ad74d16b83909f4ef7cfba43ab1d5c6fbc8
 ./weatherfax_pi https://github.com/opencpn-manuals/weatherfax_pi.git d46c5db8192c8f95bb1503b35bb769c31105a3ab
 ./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git 972df1828c09a9166aba1258fdcbe02b65093ab3
