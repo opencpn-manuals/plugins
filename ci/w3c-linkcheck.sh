@@ -38,6 +38,7 @@ checklink \
     --exclude twocanplugin@hotmail.com	\
     --exclude youtube.com \
     --exclude youtu.be \
+    --exclude squidd.io \
     --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
     --masquerade "https://opencpn-manuals.github.io/plugins $PWD/docs" \
     --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
