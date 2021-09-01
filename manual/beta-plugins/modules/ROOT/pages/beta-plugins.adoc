@@ -1,6 +1,6 @@
 = Beta Plugins
 
-// * xref:engine-dash:engine-dash.adoc[Engine Dashboard]
+* xref:engine-dash::index.adoc[Engine Dashboard]
 * xref:race-start::index.adoc[Race Start]
 // * xref:trackpoint:trackpoint.adoc[Trackpoint]
 * xref:tidefinder::index.adoc[TideFinder]
