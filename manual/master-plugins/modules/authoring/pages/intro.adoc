@@ -1,44 +1,47 @@
 = Introduction
 
-The OpenCPN Manuals seen by the user are still HTML but produced from files which use the asciidoc
-markup. The git for the plugins manual is here:
+The OpenCPN Manuals seen by the user is HTML produced from files which use
+the asciidoc markup. The git repository for the plugins manual framework is
+at https://github.com/opencpn-manuals/plugins
 
-https://github.com/opencpn-manuals/plugins
+Each plugin manual is maintained in the source repository, by convention
+in a _manual_ top-level directory. For example, the shipdriver manual is
+maintained in the _manual_ directory in
+https://github.com/Rasbats/shipdriver_pi
 
-Initially modules were made for each developer's plugin which were a direct translation from the OpenCPN dokuwiki material to asciidoc.
+When the overall plugins manual is generated it collects the different
+plugin manuals from their git repositories and generates a complete
+manual form these. This means that the responsible for maintaining each
+plugin manual is the plugin developer.
 
-A PR was then made to move the module to a manual folder in the developer's repo
-(master branch), along with an antora.yml file to allow the collection
-of that data. When the PR is accepted the module in the opencpn plugins manual repo
-is deleted. Future source for the plugins manual is the root folder of the developer's repo. The data is
-collected everytime the OpenCPN manuals are built.
-
-Having the manual in the developer's repo means that any changes will
-appear in the OpenCPN plugins manual after it has been rebuilt. 
+The manual in the _manual_ directory is using asciidoc to format the
+pages. Most manuals are just a single page named
+_modules/ROOT/pages/index.adoc_.
+An example is available
+https://github.com/Rasbats/shipdriver_pi/blob/master/manual/modules/ROOT/pages/index.adoc[
+here]
 
 The asciidoc files are easily edited with a text editor or something
 like VS Code. When edited they can be viewed with Firefox with the
-asciidoc extension.
+asciidoc extension. One can also do a xref:localbuild.adoc[local build]
+and inspect the generated HTML
+
+Formally, the plugin manual is an Antora page. While backwards-
+compatible with asciidoc Antora adds some additions on top of this
+syntax, notably links to other pages. However, these additions are
+usually not useful in a plugin manual (although they are heavily used in
+the overall manual framwork). If these additions are used, the best way
+to inspect the result is to make a local build.
 
 Visit the xref:tools.adoc[Tools] page for more details.
 
-We hope to move the git under the ``github.com/opencpn/'' umbrella.
-Rasbats is only a temporary test platform.
+References: +
 
-*Reading the adoc files*
+Asciidoc cheat sheet;;
+  https://powerman.name/doc/asciidoc
 
-Firefox and Chrome have an extension for reading the asciidoc format.
-Called Asciidoctor.js Live Preview:
+Asciidoc syntax;;
+  https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-ul-max
 
-https://github.com/asciidoctor/asciidoctor-browser-extension/
-
-This allows a preview of the page as it would appear in HTML.
-
-*Editing asciidoc*
-
-For minor edits a text editor can be used. Linux users have Vi. 
-VS Code is an opensource editor which has an asciidoc extension (Win, Lin, Mac).
-
-*Syntax for the markup:*
-
-https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#ex-ul-max
+Antora documentation;;
+  https://docs.antora.org/antora/2.3/
