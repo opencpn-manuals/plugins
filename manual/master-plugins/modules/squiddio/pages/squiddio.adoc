@@ -100,10 +100,14 @@ position and heading on your OpenCPN charts
 
 == Installing the plugin
 
-sQiddio is available as a managed plugin:
+sQuiddio is available as a managed plugin:
+
 * Update the master plugins catalog.
-* Select the sQiddio entry and install the plugin.
-* In the list of installed plugins enable the sQiddio plugin.
+
+* Select the sQuiddio entry and install the plugin.
+
+* In the list of installed plugins enable the sQuiddio plugin.
+
 * After successful installation, the plugin should be available in the plugins tab of your OpenCPN options dialog box.
 
 == Using the plugin
@@ -128,7 +132,7 @@ https://squidd.io/places/17924[Viewing locations]
 * You can hide all POIs for an area from the charts by right-clicking on
 the chart and selecting _sQuiddio: Hide local Points of Interest_ from
 the contextual menu. You can make the destinations visible again
-(without downloading them anew) by selecting the _Show sQiddio
+(without downloading them anew) by selecting the _Show sQuiddio
 destinations_.
 * You can also select the types of POI to show or hide: click on the
 sQuiddio icon in the toolbar, then the _View_ tab, and select the types
