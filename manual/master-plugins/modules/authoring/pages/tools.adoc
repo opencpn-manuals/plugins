@@ -19,7 +19,7 @@ Asciidoc files are plain text files which can be edited with any
 text editor. Using a xref:localbuild.adoc[local build], no other
 tools are required.
 
-VS Code is an opensource editor which has an asciidoc extension
+VS Code is a editor which has an asciidoc extension
 (Win, Lin, Mac). https://code.visualstudio.com. For Linux users,
 it is also available as a Flatpak package at
 https://flathub.org/apps/details/com.visualstudio.code[Flathub]
@@ -27,5 +27,11 @@ and and a snap package at https://snapcraft.io/code[snapcraft]
 Using tools like these the need to make a local build and thus
 the need to install Antora can be avoided.
 
+VS Code is based on the open-sourced vscode project, but adds some
+features like a C# debugger and anti-features like telemetry. The
+https://vscodium.com/[vscodium] project delivers a clean open-source
+version. Codium is available in major platforms including Windows, MacOS,
+Flatpak and Snap.
+
 There are also asciidoc plugins for the ubiquitous IntelliJ and
-Eclipse platforms. Not tested wihin the project.
+Eclipse platforms. Not tested within the project.
