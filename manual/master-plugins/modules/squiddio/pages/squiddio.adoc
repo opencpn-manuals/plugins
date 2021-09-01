@@ -56,7 +56,7 @@ method is “long touch” on the chart canvas. Should work on all devices.
 
 * a _Sector_ is defined as an area of 5×5 degrees of lat/lon
 
-Use of the plugin is free of charge. (http://squidd.io/users/new[Free
+Use of the plugin is free of charge. (https://squidd.io/users/new[Free
 registration] is required for certain functions).
 
 == Share your seafaring knowledge with others
