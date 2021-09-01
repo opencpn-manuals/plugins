@@ -2,7 +2,7 @@
 ./aisradar_pi https://github.com/nohal/aisradar_pi.git 296812e4b5b3b38d9c827527ed86360067af4f35
 ./Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git 29a6b4df28b521887aaf2d54244d665be888e6c8
 ./autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 96e76739b585d3ca01291dc0b73deff583abde6e
-./AutoTrackRaymarine_pi https://github.com/opencpn-manuals/AutoTrackRaymarine_pi.git e5365b2153f357524e0575aa5ad358b656813799
+./AutoTrackRaymarine_pi https://github.com/douwefokkema/AutoTrackRaymarine_pi.git 477b21f4113184d0bf516ad453dfc1b292a329ca
 ./calculator_pi https://github.com/rasbats/calculator_pi.git bc7ec88d12635aaa72a71dea564c798486fb64f0
 ./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git e51c4f7e4815ae24f8e614bcec5bc05e233d0272
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
