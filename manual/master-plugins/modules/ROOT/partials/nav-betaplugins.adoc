@@ -1,6 +1,6 @@
 * xref:engine-dash::index.adoc[Engine Dashboard]
 * xref:race-start:ROOT:index.adoc[Race Start]
-//  * xref:opencpn-beta-plugins:trackpoint:trackpoint.adoc[Trackpoint]
+//  * xref:opencpn-beta-plugins:trackpoint:index.adoc[Trackpoint]
 * xref:tidefinder::index.adoc[TideFinder]
 // * xref:opencpn-beta-plugins:javascript:javascript.adoc[JavaScript]
 * xref:deviation::index.adoc[Deviation]
