@@ -81,7 +81,7 @@ content:
     - url: sources/Findit_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/Findit_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/Findit_pi/edit/master/{path}
 
     - url: sources/gecomapi_pi
       start_path: manual
@@ -160,7 +160,7 @@ content:
     - url:  sources/plots_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/plots_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/plots_pi/edit/master/{path}
 
     - url: sources/polar_pi
       start_path: manual
@@ -195,7 +195,7 @@ content:
     - url: sources/route_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/route_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/route_pi/edit/master/{path}
 
     - url: sources/rtlsdr_pi
       start_path: manual

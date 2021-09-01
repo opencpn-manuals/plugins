@@ -11,7 +11,7 @@
 ./DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d52f
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git f8dc8de594ea8333cb81c18f61fec936019ded94
 ./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
-./Findit_pi https://github.com/opencpn-manuals/Findit_pi.git 9f59db2a0e99e04b06257bb7869b56e9659a7e97
+./Findit_pi https://github.com/rgleason/Findit_pi.git f3b96a56762c3d763c00d68b5d5fb3b0a57e4ab3
 ./gecomapi_pi https://github.com/nohal/gecomapi_pi 99d8eb4bf002190b552d8da2d3abfbb3a6c27ea6
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
 ./iacfleet_pi https://github.com/nohal/iacfleet_pi.git 8763c081cde0cdd8686e9b35c143638d2636a514
@@ -27,14 +27,14 @@
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 9f7882ce7a88c5045d7e0cbbb67951a8093421c9
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 404f7eeadf935b1acc1d840f940a6b893f1bdfbc
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git de8239e605b51d01b9c51112b5ebb9833f9e907e
-./plots_pi https://github.com/opencpn-manuals/plots_pi 6dbddc6deffdb06e5667a8d414c2e05bf67d9905
+./plots_pi https://github.com/rgleason/plots_pi.git d740d429feef982c7b9950cc612c27900141abc9
 ./polar_pi https://github.com/rgleason/polar_pi.git 75850aa3ff93a0fa464cba47227e2303e9de5f84
 ./projections_pi https://github.com/rgleason/projections_pi.git a1d022a60693e15435602f61dee5a1fc50494513
 ./pypilot_pi https://github.com/rgleason/pypilot_pi.git 2172326cc2c5d737e911e75da2c2447daeda0659
 ./RacingPlugIn https://github.com/opencpn-manuals/RacingPlugIn.git b2c7372a6fcd6841c1e9829704ed31c5fc6874da
 ./radar_pi https://github.com/opencpn-radar-pi/radar_pi.git 779738508433d912241ffca8e5da24662f9e5460
 ./rotationctrl_pi https://github.com/opencpn-manuals/rotationctrl_pi.git 4bd3939425d6f0daefb0575725e282563182ecb0
-./route_pi https://github.com/opencpn-manuals/route_pi.git 9e3aa99cf0203aafa174ae32ecf7768855d056d5
+./route_pi https://github.com/rgleason/route_pi.git 846fd2435dedf6d28f57a3bdf4065e9801aece7f
 ./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 1255ccc3fb67719794f6c04901ac9341f9354873
 ./s63_pi https://github.com/bdbcat/s63_pi 9d2ee9b08e78e9e739f502b827c43583563dbfd4
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git fd03456757c612befe68f7b6e13d80c6d9145a0a
