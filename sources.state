@@ -38,7 +38,7 @@
 ./s63_pi https://github.com/bdbcat/s63_pi 9d2ee9b08e78e9e739f502b827c43583563dbfd4
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git fd03456757c612befe68f7b6e13d80c6d9145a0a
 ./sar_pi https://github.com/Rasbats/sar_pi.git daa606f6271c8b521f111f77f8ee655a971e197f
-./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 4082895e47d96d62059fb808a329d35da7c14e36
+./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git e444f72810c92bc176a429be84084610f03e667e
 ./statusbar_pi https://github.com/opencpn-manuals/statusbar_pi.git bb72d235ea5ee1d162d3c8904a1a0c7eb3ff7f08
 ./survey_pi https://github.com/Rasbats/survey_pi.git 1ebe39963df74c1468327a8f247eeb1693033a3f
 ./tactics_pi https://github.com/opencpn-manuals/tactics_pi.git 2ebbfe8339a7ffc32d791131eecb0e7d25783fd2
