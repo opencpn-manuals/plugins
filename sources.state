@@ -42,7 +42,7 @@
 ./statusbar_pi https://github.com/opencpn-manuals/statusbar_pi.git bb72d235ea5ee1d162d3c8904a1a0c7eb3ff7f08
 ./survey_pi https://github.com/Rasbats/survey_pi.git 1a4da4a89297b49c3264b6129e56e660eec929f0
 ./tactics_pi https://github.com/opencpn-manuals/tactics_pi.git 2ebbfe8339a7ffc32d791131eecb0e7d25783fd2
-./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git 06e51b20db8781db046092a78035e4f81a591833
+./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git 6eb220ee72efb2221003ac182760c581c147d74d
 ./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git a9df37d4936d1da248f9d2f605cd3e71dd5bfda0
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git e146a5c17759078c4ffbbfc522ca56adfe8c1f5d
 ./vdr_pi https://github.com/rgleason/vdr_pi.git 2b19e67af30375b8c2d4c96bf2b7b1fa7429034e
