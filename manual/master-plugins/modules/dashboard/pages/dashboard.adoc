@@ -20,7 +20,7 @@ Forum::
 http://www.cruisersforum.com/forums/f134/plugin-dashboard-44087.html[Forum Discussion thread]
 
 Companion Plugin::
-https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
+https://opencpn-manuals.github.io/plugins/nmea_converter/0.1/nmea_converter.html
 This can solve many conversion problems.
 
 == The Dashboard in action
