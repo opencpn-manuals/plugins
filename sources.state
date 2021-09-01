@@ -9,7 +9,7 @@
 ./climatology_pi https://github.com/rgleason/climatology_pi.git f6b4ad00406e52b00618ffb1c757b504a8aa521d
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
 ./DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d52f
-./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git 90436aabc43e6e6b4260ca2fcc18e8278f63ba15
+./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git f8dc8de594ea8333cb81c18f61fec936019ded94
 ./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
 ./Findit_pi https://github.com/opencpn-manuals/Findit_pi.git 9f59db2a0e99e04b06257bb7869b56e9659a7e97
 ./gecomapi_pi https://github.com/nohal/gecomapi_pi 99d8eb4bf002190b552d8da2d3abfbb3a6c27ea6
