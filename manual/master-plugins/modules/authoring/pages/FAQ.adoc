@@ -3,20 +3,40 @@
 How can errors in the manual be reported?;;
 For issues in the overall manual, please use
 https://github.com/opencpn-manuals/plugins/issues.
-+
+
 For minor edit  for specific plugins, please use the _Edit This Page_
 link which is available top-right in every manual page. This leads
 to a GUI dialog where it is possible to propose changes directly.
-+
+
 For other problems with specific plugins, please file the issue
 against the plugin. The github repository link is usually on top
 of the manual page.
 
-How could images be displayed in Firefox using the asciidoc plugin?;;
+How could images be displayed in Firefox/Chrome using the asciidoc plugin?;;
 
-At the top of the document (.adoc) add the attribute ``:imagesdir:
-../images/'' This will not appear in the page but controls the location
-of the images.
+*Asciidoctor Firefox extension*
+
+* Add the Asciidoctor.js Live Preview extension
+
+image:firefox1.jpg[]
+
+* In the options->custom attributes add "imagesdir=../images/".
+
+image:firefox2.jpg[]
+
+*Asciidoctor Chrome extension*
+
+* Add the Asciidoctor.js Live Preview extension
+
+image:chrome1.jpg[]
+
+* Enable the extension and allow access to file URLs
+
+image:chrome2.jpg[]
+
+* In extension options->custom attributes add "imagesdir=../images/".
+
+image:chrome3.jpg[]
 
 Where is the latest build of the OpenCPN Plugins Manual?;;
 
