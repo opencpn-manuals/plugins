@@ -69,13 +69,6 @@ Registered sQuidd.io users can post comments about the POI, as well as
 rate the POI on attributes such as beauty, service and quality of wi-fi
 access (where applicable).
 
-Can't find your favorite anchorage or marina?
-link:squiddio.html#submitting_a_new_poi[Report new POIs] not yet
-available in the database.
-
-More info on viewing, creating and updating POIs in sQuiddio
-link:squiddio.html#viewing_points_of_interest[here].
-
 == View Weather Buoy and Ship Reports right on your chart
 
 (version 1.3 or greater)
@@ -85,9 +78,6 @@ image::squiddio_ndbc_buoys.png[]
 sQuiddio provides wind and wave reports obtained from the US National
 Data Buoy Center (NDBC) https://www.ndbc.noaa.gov/[database] updated on
 an hourly basis as POIs on your OpenCPN chart.
-
-More info on Buoy and Ship reports
-link:squiddio.html#viewing_ndbc_buoy_and_ship_reports[here].
 
 == One-click download of Satellite Maps for any Point of Interest
 
@@ -133,7 +123,7 @@ sQuiddio POI page, right click on POI's waypoint, and select Properties.
 sQuidd.io. If you have an Internet connection, click the link and your
 browser should soon display the Destination's page on sQuidd.io.
 
-https://squidd.io/places/17924[place_view]
+https://squidd.io/places/17924[Viewing locations]
 
 * You can hide all POIs for an area from the charts by right-clicking on
 the chart and selecting _sQuiddio: Hide local Points of Interest_ from
@@ -186,8 +176,7 @@ the context menu to download the most recent wind and wave reports.
 * Note that https://www.ndbc.noaa.gov/[NDBC coverage] is mostly limited
 to United States waters, with some non-US (but currently few) other
 locations. We are currently looking into adding other organizations with
-similar services (e.g. Metoffice). Please contact _info at squidd dot
-io_ for ideas and suggestions
+similar services (e.g. Metoffice). Please contact "info@squidd.io" for ideas and suggestions
 
 == Downloading Google Maps for one or more POIs
 
