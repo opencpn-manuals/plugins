@@ -1,4 +1,4 @@
-== Sat2Chart
+= Sat2Chart
 
 This program can work alongside an OpenCPN plugin called ge2kap to capture the OpenCPN chart display.
 
@@ -8,7 +8,7 @@ Note 1: Windows only.
 
 Note 2: It can be run on MacOSX >= V10.5 or Linux/Gtk >= V2.6 if running Windows in a virtual machine. 
 
-=== Links
+== Links
 
 Source: Not available.
 
@@ -21,14 +21,14 @@ The program includes a comprehensive help file.
 * Forum:
 https://www.cruisersforum.com/forums/f121/sat2chart-233353-15.html
 
-=== Installation
+== Installation
 
 At http://gdayii.ca/Downloads.php , select “Sat2Chart_Install.exe”.
 Download and install. 
 
 Some zip files in the Downloads require a password to unzip which is: *phiggins*
 
-=== Use of ooREX Language
+== Use of ooREX Language
 
 Paul Higgins uses the ooRexx language in creating Sat2Chart. For Sat2Chart to
 run it needs the ooRexx interpreter installed on the machine (Paul used
@@ -41,32 +41,32 @@ executable is started but the ooRexx code is given to the interpreter
 which translate it to machine code during startup. That is nice for
 small programs and test them on the fly.
 
-=== Description & Process
+== Description & Process
 
 This is a technique for putting charts into OpenCPN with a minimum number of steps and/or geeky user interfaces. Some processes involve using the ge2kap plugin, which is installed in OpenCPN as part of the installation of 
 sat2chart. Remember to enable the ge2kap plugin in OpenCPN.
 
 Follow the instructions in the help file or use the tutorials in the program.
 
-=== Gilletarom's Guide
+== Gilletarom's Guide
 
 http://shoreline.fr/PHiggins/GE2KAP/English/OpenCPN.html
 
 This describes the old GE2KAP program but it includes details of the OpenCPN plugin (ge2kap_pi.dll) that works with Sat2Chart. Use in conjunction with the Sat2Chart help file and tutorials.
 
-=== Jon Hocking's mbtiles File Page
+== Jon Hocking's mbtiles File Page
 Jon Hocking's mbtiles page includes information about OpenCPN and sat2chart.
 http://svocelot.com/Cruise_Info/Equipment/mbTiles.htm
 
-=== SAS.Planet
+== SAS.Planet
 
 http://gdayii.ca/Downloads/Sasplanet.zip
 
-=== Facebook Group (Private)
+== Facebook Group (Private)
 
 https://www.facebook.com/groups/sat2chart
 
-=== Additional downloads from http://gdayii.ca/Downloads.php that may be of interest
+== Additional downloads from http://gdayii.ca/Downloads.php that may be of interest
 
 . Some zip file require a password to unzip which is: phiggins
 . *GERoute* - V3.0.0 New Jun.06 2020 Follows a route to load the
