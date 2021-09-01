@@ -351,7 +351,7 @@ thus.
 
 === NmeaConverter_pi Conversions
 
-https://opencpn-manuals.github.io/main/nmea_converter/0.1/nmea_converter.html
+https://opencpn-manuals.github.io/plugins/nmea_converter/0.1/nmea_converter.html
 can solve many compatibility or unit conversion issues. There are nine
 examples showing how the use NmeaConverter to adjust Dashboard output.
 
