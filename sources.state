@@ -36,7 +36,7 @@
 ./route_pi https://github.com/opencpn-manuals/route_pi.git 9e3aa99cf0203aafa174ae32ecf7768855d056d5
 ./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 1255ccc3fb67719794f6c04901ac9341f9354873
 ./s63_pi https://github.com/bdbcat/s63_pi 9d2ee9b08e78e9e739f502b827c43583563dbfd4
-./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 1e9fc3eb2fd71727153235f05c6dbe59cc767386
+./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git fd03456757c612befe68f7b6e13d80c6d9145a0a
 ./sar_pi https://github.com/Rasbats/sar_pi.git af5ae1f968fa5afaf99834e58e64b12d3b334adc
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 4082895e47d96d62059fb808a329d35da7c14e36
 ./statusbar_pi https://github.com/opencpn-manuals/statusbar_pi.git bb72d235ea5ee1d162d3c8904a1a0c7eb3ff7f08
