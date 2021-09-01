@@ -1,67 +1,19 @@
 = Local Build
 
-This page shows how to set up the build:
+It is possible to create a local manual in HTML format using
+Antora. This generates a complete, standalone plugin manual.
 
-https://gitlab.com/antora/antora/-/issues/284
+This requires that NodeJS and Antora is installed, see
+https://docs.antora.org/antora/2.3/install/install-antora/
 
-It involves creating an empty git repository in the folder where you are
-using playbook.yml.
+With with antora installed build is performed in the
+_manual_ directory  using
 
-....
-git init .
-touch .gitignore
-git add .gitignore
-git commit -m 'initialize repository'
-....
+    $ antora site.yml
 
-After this you need a structure like the following:
+This generates output in the _docs_ directory. Check the results
+by pointing the web browser to _docs/index.html_
 
-image::local.build.structure.png[structure]
-
-The plugin folder has the same structure and files as the initial one
-sent to the developer by PR.
-
-It may be better to pull out the manual from the repo for working
-somewhere other than in your repo.
-
-No full github repository is needed. CD to the manual folder. Make an
-empty repository in that folder as shown above.
-
-Here is the structure as it applies to Watchdog.
-
-....
-├── manual
-| └── .git
-| └── playbook.yml (or bldloc.yml or whatever)
-| └── ui-bundle.zip
-| └── .gitignore
-||└── watchdog
-|||| ├── antora.yml
-|||| └── modules
-|||||| └── ROOT
-|||||||| ├── images
-|||||||| └── pages
-|||||||||| └── watchdog.adoc
-....
-
-The watchdog folder is exactly as first sent via PR. `antora.yml' does
-not need editing.
-
-Get ui-bundle.zip from: https://github.com/opencpn-manuals/plugins or the
-link below.
-
-https://raw.githubusercontent.com/wiki/Rasbats/opencpn-plugins-manual/images/ui-bundle.zip[ui-bundle.zip]
-
-playbook.yml has the following text:
-
-https://raw.githubusercontent.com/wiki/Rasbats/opencpn-plugins-manual/images/playbook.yml[playbook.yml]
-
-CD to the manual folder, if not already there, and use: antora –fetch
-playbook.yml –stacktrace
-
-The output is in the public directory. An index html is created
-automatically and the output appears as in the opencpn-plugins-manual.
-
-The advantage of this structure is that the tool (playbook.yml) is
-separated from the module (watchdog). Another tool allows making a pdf
-of the watchdog plugin manual. TBC
+If there is a need to publish the generated docs the site.yml file
+needs to be patched. See the Antora documentation; site.yml is a
+_playbook_ in Antora parlance.
