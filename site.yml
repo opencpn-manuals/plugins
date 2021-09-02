@@ -36,7 +36,7 @@ content:
     - url: sources/AutoTrackRaymarine_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/AutoTrackRaymarine_pi/edit/master/{path}
+      edit_url: https://github.com/douwefokkema/AutoTrackRaymarine_pi/edit/master/{path}
 
     - url: sources/calculator_pi
       branches: HEAD
@@ -190,7 +190,7 @@ content:
     - url:  sources/rotationctrl_pi
       start_path: manual
       branches: HEAD
-      edit_url: https://github.com/opencpn-manuals/rotationctrl_pi/edit/master/{path}
+      edit_url: https://github.com/rgleason/rotationctrl_pi/edit/master/{path}
 
     - url: sources/route_pi
       start_path: manual
