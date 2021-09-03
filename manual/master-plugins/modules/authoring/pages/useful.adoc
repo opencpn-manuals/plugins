@@ -33,7 +33,7 @@ https://pandoc.org/demos.html +
 Convert all files in a folder using Pandoc and bash:
 
 ----
-for f in $(find ./ -iname "*.md" -type f) do; pandoc $f -o ${f%.md}.adoc; done
+for f in $(find . -iname '*.md' -type f); do pandoc $f -o ${f%.md}.adoc; done
 ----
 
 https://stackoverflow.com/questions/26126362/converting-all-files-in-a-folder-to-md-using-pandoc-on-mac
@@ -46,7 +46,7 @@ https://stackoverflow.com/questions/525592/find-and-replace-inside-a-text-file-f
 
 For a smaller thumbnail that is linked to the larger (double-click) image:
 
-    image::foo.png["Foo comment",width=550,link="_images/foo.png"]
+    image::foo.png["Foo comment",width=550,link="../images/foo.png"]
 
 
 * *Finding broken links*
