@@ -16,7 +16,7 @@
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 254a104ff7248c2776fe2d514eb12fe73d1d21e5
 ./iacfleet_pi https://github.com/nohal/iacfleet_pi.git 8763c081cde0cdd8686e9b35c143638d2636a514
 ./launcher_pi https://github.com/nohal/launcher_pi.git 3b0ba7e99ab109523d44076dc0da1e26a141e1de
-./LogbookKonni_pi https://github.com/opencpn-manuals/LogbookKonni_pi.git 6b0a9cb9379162bb46143aef1332793ecef468fc
+./LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git 6e19a8bfcc8c49cea1f5ddd85c2450b7cf0f33eb
 ./ncdf_pi https://github.com/Rasbats/ncdf_pi.git ccaf6ffe592eb09a476a1facd8f832975769c90b
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi.git 3da698c9b1deb17b28ba28055a7e85c1c53653cf
 ./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
@@ -42,7 +42,7 @@
 ./shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git e444f72810c92bc176a429be84084610f03e667e
 ./statusbar_pi https://github.com/opencpn-manuals/statusbar_pi.git bb72d235ea5ee1d162d3c8904a1a0c7eb3ff7f08
 ./survey_pi https://github.com/Rasbats/survey_pi.git 1a4da4a89297b49c3264b6129e56e660eec929f0
-./tactics_pi https://github.com/opencpn-manuals/tactics_pi.git 2ebbfe8339a7ffc32d791131eecb0e7d25783fd2
+./tactics_pi https://github.com/rgleason/tactics_pi.git cc4d81a53cdb54f9c9cdf07c8c58c016046abed3
 ./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git 6eb220ee72efb2221003ac182760c581c147d74d
 ./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git a9df37d4936d1da248f9d2f605cd3e71dd5bfda0
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git f29679c94cc6546af772f1809ca53b6f2efab59d
