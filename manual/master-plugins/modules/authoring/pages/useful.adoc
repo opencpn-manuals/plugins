@@ -28,35 +28,60 @@ https://stackoverflow.com/questions/4829043/how-to-remove-read-only-attrib-direc
 
 * *Pandoc*
 
-https://pandoc.org/demos.html
+https://pandoc.org/demos.html +
 
-* *Convert all files in a folder using Pandoc*
+Convert all files in a folder using Pandoc and bash:
 
 ----
-find ./ -iname "*.md" -type f -exec sh -c 'pandoc "${0}" -o "./output/$(basename ${0%.md}.adoc)"' {} \;
+for f in $(find ./ -iname "*.md" -type f) do; pandoc $f -o ${f%.md}.adoc; done
 ----
 
 https://stackoverflow.com/questions/26126362/converting-all-files-in-a-folder-to-md-using-pandoc-on-mac
 
-* *Bash*
+* *Edit files using sed and bash*
 
 https://stackoverflow.com/questions/525592/find-and-replace-inside-a-text-file-from-a-bash-command
+
+* *Creating a thumbnail, linked image*
+
+For a smaller thumbnail that is linked to the larger (double-click) image:
+
+    image::foo.png["Foo comment",width=550,link="_images/foo.png"]
 
 
 * *Finding broken links*
 
-Under :build the site with antora" Full LInkcheck
+Under "build the site with antora" Full Linkcheck
 I see a number of missing links.
 There are a lot of links to cruiser's forum which still work.
 I am trying to find the locations in the text for these.
 How would one do that?
 
-They are straight html link, right? Just do git grep :https://www.cruisersforum.com/, that gives you the matches and files. Or use git grep -l which just returns a list of files containing the link.
+They are straight html link, right? Just do `git grep https://www.cruisersforum.com`,
+that gives you the matches and files. Or use `git grep -l` which just returns a list of
+files containing the link.
 
-Rick@Dart MINGW64 ~/documents/github/development/modules/ROOT/pages (main)
-$ grep :https://www.cruisersforum.com/
-and cursor is just blinking.
+    Rick@Dart MINGW64 ~/documents/github/development/modules/ROOT/pages (main)
+    $ grep https://www.cruisersforum.com/
 
-This is using Windows Bash prompt.
+and cursor is just blinking.  This is using Windows Bash prompt.
 
-grep reads by default from stdin... type control-C to get out this. Then use the correct command git grep which by default searches from current dir.
+grep reads by default from stdin... type control-C to get out of this. Then use the correct
+command `git grep` which by default searches from current dir.
+
+* *Finding unresolved Antora xrefs*
+
+Unresolved xref: links are rendered with a red font in HTML. Such links can be
+found after making a local build using
+
+    $ grep -r "page unresolved" docs
+
+
+* *Remove execute permissions from files in windows*
+
+Windows occasionally adds execute permissions to source files. Although invisible on
+windows, they are a pain in Linux and MacOS and should be removed using:
+
+    git update-index --chmod=-x <file>
+
+See: https://stackoverflow.com/questions/6476513/git-file-permissions-on-windows
