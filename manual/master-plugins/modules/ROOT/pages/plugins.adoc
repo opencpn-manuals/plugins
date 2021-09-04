@@ -64,7 +64,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
 * xref:sweep_plot::index.adoc[Sweep Plot ] image:managed_plugin.png[]
 * xref:polar:ROOT:index.adoc[polar ] image:managed_plugin.png[]
-* xref:windvane:ROOT:windvane.adoc[windvane ] image:managed_plugin.png[]
+* xref:windvane::index.adoc[windvane ] image:managed_plugin.png[]
 
 === Weather
 * xref:weatherfax::index.adoc[Weather Fax] image:managed_plugin.png[]

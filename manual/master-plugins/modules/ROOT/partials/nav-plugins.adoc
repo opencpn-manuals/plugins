@@ -48,7 +48,7 @@
 ** xref:tactics::index.adoc[tactics]
 ** xref:sweep_plot::index.adoc[Sweep Plot]
 ** xref:polar::index.adoc[Polar]
-** xref:windvane:ROOT:windvane.adoc[windvane]
+** xref:windvane::index.adoc[windvane]
 
 * Weather
 ** xref:weatherfax::index.adoc[Weather Fax]
