@@ -47,7 +47,6 @@ These plugins are installed with the basic OpenCPN program.
 
 === Navigation
 * xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
-* xref:googleearth:ROOT:index.adoc[googleearth ]
 * xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
 * xref:route_great_circle::index.adoc[Route Great Circle ]
 * xref:dead_reckoning::index.adoc[Dead Reckoning ] image:managed_plugin.png[]

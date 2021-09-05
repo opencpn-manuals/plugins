@@ -31,7 +31,6 @@
 
 * Navigation
 ** xref:squiddio:squiddio.adoc[Squiddio]
-** xref:googleearth:ROOT:index.adoc[googleearth]
 ** xref:celestial_navigation::index.adoc[Celestial Navigation]
 ** xref:route_great_circle::index.adoc[Route Great Circle]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning]

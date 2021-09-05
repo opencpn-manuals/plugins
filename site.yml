@@ -83,11 +83,6 @@ content:
       branches: HEAD
       edit_url: https://github.com/rgleason/Findit_pi/edit/master/{path}
 
-    - url: sources/gecomapi_pi
-      start_path: manual
-      branches: HEAD
-      edit_url: https://github.com/nohal/gecomapi_pi/edit/master/{path}
-
     - url: sources/GPS-Odometer_pi
       start_path: manual
       branches: HEAD

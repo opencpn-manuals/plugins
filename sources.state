@@ -12,7 +12,6 @@
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git f8dc8de594ea8333cb81c18f61fec936019ded94
 ./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
 ./Findit_pi https://github.com/rgleason/Findit_pi.git f3b96a56762c3d763c00d68b5d5fb3b0a57e4ab3
-./gecomapi_pi https://github.com/nohal/gecomapi_pi 99d8eb4bf002190b552d8da2d3abfbb3a6c27ea6
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 79f48e7492ee36421ca746824d1913557176092a
 ./iacfleet_pi https://github.com/nohal/iacfleet_pi.git 8763c081cde0cdd8686e9b35c143638d2636a514
 ./launcher_pi https://github.com/nohal/launcher_pi.git 3b0ba7e99ab109523d44076dc0da1e26a141e1de
