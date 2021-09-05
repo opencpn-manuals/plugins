@@ -7,7 +7,7 @@
 ./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git e51c4f7e4815ae24f8e614bcec5bc05e233d0272
 ./chartscale_pi https://github.com/rgleason/chartscale_pi.git 1d914de735db3fbe06d25d43e71dc3b112151ef2
 ./climatology_pi https://github.com/rgleason/climatology_pi.git 2ee6b50ee1d7d12f4ce9a439d30f483f3700d9ac
-./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
+./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 0befabc46d086a69b6f2ec85a54ba0ee9ad159bc
 ./DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d52f
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git f8dc8de594ea8333cb81c18f61fec936019ded94
 ./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
