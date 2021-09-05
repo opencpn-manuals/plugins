@@ -5,7 +5,7 @@
 ./AutoTrackRaymarine_pi https://github.com/douwefokkema/AutoTrackRaymarine_pi.git 477b21f4113184d0bf516ad453dfc1b292a329ca
 ./calculator_pi https://github.com/rasbats/calculator_pi.git bc7ec88d12635aaa72a71dea564c798486fb64f0
 ./celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git e51c4f7e4815ae24f8e614bcec5bc05e233d0272
-./chartscale_pi https://github.com/rgleason/chartscale_pi.git 14e4f8923582468c4376c819b3c33d987f2126cf
+./chartscale_pi https://github.com/rgleason/chartscale_pi.git 1d914de735db3fbe06d25d43e71dc3b112151ef2
 ./climatology_pi https://github.com/rgleason/climatology_pi.git f6b4ad00406e52b00618ffb1c757b504a8aa521d
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 341604ac7a82bf3e2a406611df3c5f8b8ef5fefe
 ./DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d52f
