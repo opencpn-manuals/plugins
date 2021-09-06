@@ -18,7 +18,7 @@
 ** xref:photolayer::index.adoc[PhotoLayer]
 ** xref:vfkaps::index.adoc[VfKaps - VentureFarther]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
-** xref:chartscale:ROOT:chartscale.adoc[Chartscale]
+** xref:chartscale::index.adoc[Chartscale]
 ** xref:objsearch:ROOT:objsearch.adoc[objsearch]
 ** xref:projections::index.adoc[Projections]
 
