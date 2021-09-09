@@ -56,7 +56,7 @@ These plugins are installed with the basic OpenCPN program.
 
 === Safety
 * xref:odraw:ROOT:index.adoc[odraw ] image:managed_plugin.png[]
-* xref:watchdog:ROOT:watchdog.adoc[Watchdog ] image:managed_plugin.png[]
+* xref:watchdog::index.adoc[Watchdog ] image:managed_plugin.png[]
 * xref:sar::index.adoc[SAR ] image:managed_plugin.png[]
 
 === Sailing

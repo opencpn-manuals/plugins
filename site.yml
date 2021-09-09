@@ -259,7 +259,7 @@ content:
 
     - url: sources/watchdog_pi/
       branches: HEAD
-      start_path: manual/watchdog
+      start_path: manual
       edit_url: https://github.com/rgleason/watchdog_pi/edit/master/{path}
 
     - url: sources/weatherfax_pi

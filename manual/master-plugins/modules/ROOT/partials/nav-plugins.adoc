@@ -40,7 +40,7 @@
 
 * Safety
 ** xref:odraw:ROOT:index.adoc[odraw]
-** xref:watchdog:ROOT:watchdog.adoc[Watchdog]
+** xref:watchdog::index.adoc[Watchdog]
 ** xref:sar::index.adoc[SAR]
 
 * Sailing
