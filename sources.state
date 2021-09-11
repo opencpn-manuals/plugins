@@ -44,7 +44,7 @@
 ./survey_pi https://github.com/Rasbats/survey_pi.git 1a4da4a89297b49c3264b6129e56e660eec929f0
 ./tactics_pi https://github.com/rgleason/tactics_pi.git 46d9e0f058ce49f699b4fb7aa6934ffbb1e64f26
 ./TideFinder_pi https://github.com/Rasbats/TideFinder_pi.git 6eb220ee72efb2221003ac182760c581c147d74d
-./TwoCanPlugIn https://github.com/opencpn-manuals/TwoCanPlugIn.git 3ef00df63027ea317299b213fee33032eaa9efd2
+./TwoCanPlugIn https://github.com/TwoCanPlugIn/TwoCanPlugIn.git 074c127a22c778eb1237567f32c7aa8c0a8a4ef4
 ./UKTides_pi https://github.com/Rasbats/UKTides_pi.git f29679c94cc6546af772f1809ca53b6f2efab59d
 ./vdr_pi https://github.com/rgleason/vdr_pi.git 48933950aa3804678cc984ea3e95b15f1cfd34f9
 ./vfkaps_pi https://github.com/rasbats/vfkaps_pi.git 00bc1485a8a02cd696e9f770cafd0a217aa8588c
