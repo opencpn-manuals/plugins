@@ -1,14 +1,12 @@
 #!/bin/sh
 
 # Rebuild all maunals found in sources, primarely to hunt for errors.
-# Produces a lot of output, and is probably best run redirected
-# to a file so one can search the output for specific errors.
 
 top=$(git rev-parse --show-toplevel)
 for dir in $top/sources/*; do
     if [ -f $dir/manual/site.yml ]; then
         pushd $dir/manual > /dev/null
-        echo "==== Building $dir/manual/site.yml"
+        echo "==== Building ${dir/$top/plugins}/manual/site.yml"
         antora site.yml
         popd > /dev/null
     else
