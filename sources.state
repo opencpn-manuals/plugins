@@ -27,7 +27,7 @@
 ./otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 9f7882ce7a88c5045d7e0cbbb67951a8093421c9
 ./otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 404f7eeadf935b1acc1d840f940a6b893f1bdfbc
 ./photolayer_pi https://github.com/Rasbats/photolayer_pi.git de8239e605b51d01b9c51112b5ebb9833f9e907e
-./plots_pi https://github.com/rgleason/plots_pi.git eb4a2682733d06787b2c68b8c06a80058ddc1b28
+./plots_pi https://github.com/rgleason/plots_pi.git 7f01a21fdd8ca6a6247ae53ff3389f5840b887b9
 ./polar_pi https://github.com/rgleason/polar_pi.git ca586eed7fcb9eff61f9397cf5e5036fd14e2004
 ./projections_pi https://github.com/rgleason/projections_pi.git 5c2f010eb6893a2aa661aea2650330b2c1d42d6f
 ./pypilot_pi https://github.com/rgleason/pypilot_pi.git 9519feb2db48ff9fcd1ea8b0c4ae00ce9c8813f3
