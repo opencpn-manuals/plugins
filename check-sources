@@ -1,15 +1,14 @@
 #!/bin/sh
-
-# Rebuild all maunals found in sources, primarely to hunt for errors.
+#
+# Rebuild all manuals found in sources, primarely to hunt for errors.
 
 top=$(git rev-parse --show-toplevel)
 for dir in $top/sources/*; do
     if [ -f $dir/manual/site.yml ]; then
-        pushd $dir/manual > /dev/null
+        cd $dir/manual
         echo "==== Building ${dir/$top/plugins}/manual/site.yml"
         antora site.yml
-        popd > /dev/null
     else
-        echo "No manual/site.yml found in $dir" >&2
+        echo "No manual/site.yml found in ${dir/$top/plugins}" >&2
     fi
 done
