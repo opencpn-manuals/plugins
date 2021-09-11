@@ -1,12 +1,10 @@
 = Plugin Messaging
 
-Between ODraw, Watchdog and Weather_routing.
-
-== OpenCPn Draw and Watchdog
+== Between ODraw (OD), Watchdog (WD) and Weather Routing (WR).
 
 === User aspects
 
-First of all, we should see OD and WD as separate plugins. In OD you can draw geo-referenced objects (lines, points, straight lined areas and circles). WD knows when and how to sound alarms.
+First of all, we should see OD (same as Ocpn-Draw), WD and WR as separate plugins. In OD you can draw geo-referenced objects (lines, points, straight lined areas and circles). WD knows when and how to sound alarms.
 
 In OD, a graphical indication (crosshatching or shading) may be added to areas, to indicate whether these are intended to avoid (crosshatched inside) or to stay within (crosshatched outside), or whatever other meaning you want to give to those graphical indications.
 
@@ -119,3 +117,5 @@ to watch. Please note that a JSON message does not have a “structure” per
 se, the message consists of element/value pairs written as delimited
 strings. The elements can occur in any order. So “structure” in the sense
 used in this document really refers to required elements.
+
+Weather Routing simply uses ODraw boundaries for avoidance, and it uses the same messaging as above.
