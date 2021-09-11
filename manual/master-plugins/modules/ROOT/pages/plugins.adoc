@@ -35,13 +35,13 @@ These plugins are installed with the basic OpenCPN program.
 * xref:vfkaps::index.adoc[VfKaps - VentureFarther] image:managed_plugin.png[]
 * xref:rotationctrl::index.adoc[RotationCtrl]
 * xref:chartscale::index.adoc[ChartScale]
-* xref:objsearch:ROOT:objsearch.adoc[objsearch]
+* xref:objsearch:ROOT:objsearch.adoc[objSearch]
 * xref:projections::index.adoc[Projections]
 
 === Logs
 // * xref:dash-t:ROOT:dash-t.adoc[Dash-T] image:managed_plugin.png[]
 * xref:logbook::index.adoc[Logbook] image:managed_plugin.png[]
-* xref:find-it::index.adoc[Findit] image:managed_plugin.png[]
+* xref:findit::index.adoc[Findit] image:managed_plugin.png[]
 * xref:vdr::index.adoc[Voyage Data Recorder VDR] image:managed_plugin.png[]
 * xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 
@@ -51,7 +51,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:route_great_circle::index.adoc[Route Great Circle]
 * xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
 * xref:otcurrent::index.adoc[oTidalCurrent] image:managed_plugin.png[]
-* xref:sat2chart:sat2chart.adoc[Sat2Chart Companion Software]
+* xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 === Safety
@@ -61,7 +61,7 @@ These plugins are installed with the basic OpenCPN program.
 
 === Sailing
 * xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
-* xref:plot::index.adoc[Plots] image:managed_plugin.png[]
+* xref:plots::index.adoc[Plots] image:managed_plugin.png[]
 * xref:polar:ROOT:index.adoc[Polar] image:managed_plugin.png[]
 * xref:windvane::index.adoc[Windvane] image:managed_plugin.png[]
 
