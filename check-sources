@@ -7,8 +7,10 @@
 top=$(git rev-parse --show-toplevel)
 for dir in $top/sources/*; do
     if [ -f $dir/manual/site.yml ]; then
-        pushd $dir/manual
+        pushd $dir/manual > /dev/null
+        echo "==== Building $dir/manual/site.yml"
         antora site.yml
+        popd > /dev/null
     else
         echo "No manual/site.yml found in $dir" >&2
     fi
