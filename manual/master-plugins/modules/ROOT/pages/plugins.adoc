@@ -14,72 +14,72 @@ Plugins included in the master catalog are indicated by image:managed_plugin.png
 
 These plugins are installed with the basic OpenCPN program.
 
-* xref:dashboard:dashboard.adoc[dashboard]
+* xref:dashboard:dashboard.adoc[Dashboard]
 * xref:wmm:wmm.adoc[World Magnetic]
-* xref:grib_weather:grib_weather.adoc[grib_weather]
-* xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+* xref:grib_weather:grib_weather.adoc[Grib Weather]
+* xref:chart_downloader_tab:chart_downloader_tab.adoc[Chart Downloader Tab]
 
 === AIS / Radar
-* xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display ] image:managed_plugin.png[]
-* xref:radar::index.adoc[Radar Display ] image:managed_plugin.png[]
-* xref:rtlsdr::index.adoc[RTL-SDR ]
+* xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display] image:managed_plugin.png[]
+* xref:radar::index.adoc[Radar Display] image:managed_plugin.png[]
+* xref:rtlsdr::index.adoc[RTL-SDR Ais]
 //
 
 === Charts
-// * xref:nv_charts:ROOT:nv_charts.adoc[nv_charts ]
-// * xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[s63_vector_charts ] image:managed_plugin.png[]
-// * xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts ]
+// * xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
+// * xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[S63 Vector Charts] image:managed_plugin.png[]
+// * xref:bsb4_charts:ROOT:bsb4_charts.adoc[BSB4 Charts]
 * xref:oesenc::index.adoc[oeSENC] image:managed_plugin.png[]
-// * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated) ]
-* xref:photolayer::index.adoc[PhotoLayer ] image:managed_plugin.png[]
-* xref:vfkaps::index.adoc[VfKaps - VentureFarther ] image:managed_plugin.png[]
-* xref:rotationctrl::index.adoc[RotationCtrl ]
-* xref:chartscale::index.adoc[ChartScale ]
-* xref:objsearch:ROOT:objsearch.adoc[objsearch ]
+// * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
+* xref:photolayer::index.adoc[PhotoLayer] image:managed_plugin.png[]
+* xref:vfkaps::index.adoc[VfKaps - VentureFarther] image:managed_plugin.png[]
+* xref:rotationctrl::index.adoc[RotationCtrl]
+* xref:chartscale::index.adoc[ChartScale]
+* xref:objsearch:ROOT:objsearch.adoc[objsearch]
 * xref:projections::index.adoc[Projections]
 
 === Logs
-// * xref:dash-t:ROOT:dash-t.adoc[dash-t] image:managed_plugin.png[]
+// * xref:dash-t:ROOT:dash-t.adoc[Dash-T] image:managed_plugin.png[]
 * xref:logbook::index.adoc[Logbook] image:managed_plugin.png[]
-* xref:find-it::index.adoc[find-it ] image:managed_plugin.png[]
-* xref:vdr::index.adoc[Voyage Data Recorder] image:managed_plugin.png[]
+* xref:find-it::index.adoc[Findit] image:managed_plugin.png[]
+* xref:vdr::index.adoc[Voyage Data Recorder VDR] image:managed_plugin.png[]
 * xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 
 === Navigation
 * xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
 * xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
-* xref:route_great_circle::index.adoc[Route Great Circle ]
-* xref:dead_reckoning::index.adoc[Dead Reckoning ] image:managed_plugin.png[]
-* xref:otcurrent::index.adoc[otidalcurrent ] image:managed_plugin.png[]
+* xref:route_great_circle::index.adoc[Route Great Circle]
+* xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
+* xref:otcurrent::index.adoc[oTidalCurrent] image:managed_plugin.png[]
 * xref:sat2chart:sat2chart.adoc[Sat2Chart Companion Software]
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 === Safety
-* xref:odraw:ROOT:index.adoc[odraw ] image:managed_plugin.png[]
-* xref:watchdog::index.adoc[Watchdog ] image:managed_plugin.png[]
-* xref:sar::index.adoc[SAR ] image:managed_plugin.png[]
+* xref:odraw:ROOT:index.adoc[ODraw] image:managed_plugin.png[]
+* xref:watchdog::index.adoc[Watchdog] image:managed_plugin.png[]
+* xref:sar::index.adoc[SAR] image:managed_plugin.png[]
 
 === Sailing
 * xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
-* xref:sweep_plot::index.adoc[Sweep Plot ] image:managed_plugin.png[]
-* xref:polar:ROOT:index.adoc[polar ] image:managed_plugin.png[]
-* xref:windvane::index.adoc[windvane ] image:managed_plugin.png[]
+* xref:plot::index.adoc[Plots] image:managed_plugin.png[]
+* xref:polar:ROOT:index.adoc[Polar] image:managed_plugin.png[]
+* xref:windvane::index.adoc[Windvane] image:managed_plugin.png[]
 
 === Weather
-* xref:weatherfax::index.adoc[Weather Fax] image:managed_plugin.png[]
-* xref:iacfleet:ROOT:index.adoc[iacfleet ]
+* xref:weatherfax::index.adoc[Weatherfax] image:managed_plugin.png[]
+* xref:iacfleet:ROOT:index.adoc[IacFleet]
 * xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
 * xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 
 === Utility
-* xref:statusbar:ROOT:index.adoc[Statusbar ] image:managed_plugin.png[]
-* xref:calculator::index.adoc[calculator ]
-* xref:launcher:ROOT:index.adoc[launcher ]
-* xref:debugger:ROOT:index.adoc[debugger ]
-* xref:pypilot::index.adoc[pypilot] image:managed_plugin.png[]
-* xref:shipdriver::index.adoc[Shipdriver ] image:managed_plugin.png[]
-* xref:twocan::index.adoc[twocan] image:managed_plugin.png[]
-* xref:odometer:ROOT:index.adoc[odometer ] image:managed_plugin.png[]
+* xref:statusbar:ROOT:index.adoc[Statusbar] image:managed_plugin.png[]
+* xref:calculator::index.adoc[Calculator]
+* xref:launcher:ROOT:index.adoc[Launcher]
+* xref:debugger:ROOT:index.adoc[Debugger]
+* xref:pypilot::index.adoc[Pypilot] image:managed_plugin.png[]
+* xref:shipdriver::index.adoc[Shipdriver] image:managed_plugin.png[]
+* xref:twocan::index.adoc[Twocan] image:managed_plugin.png[]
+* xref:odometer:ROOT:index.adoc[Odometer] image:managed_plugin.png[]
 
 === Click on a link above to see the plugin manual
 
@@ -88,16 +88,12 @@ https://opencpn.org/OpenCPN/info/olderplugins.html[Download Page]
 
 === Plugin Authors Credit
 
-The diversity and range of the OpenCPN Plugins is quite remarkable.
-Users should appreciate the time these authors spent to create this
-resource. There is a very healthy collaboration, so that at times it is impossible to determine “whose” plugin it is. Since this is one of the major strengths of Open Source we will not attribute. However, it should be noted that there are a number of authors who are quite prolific. As the authors come to mind they will be noted below. If you are one of the authors and your name does not appear, please advise.
+The diversity and range of the OpenCPN Plugins is quite remarkable. Users should appreciate the time these authors spent to create this resource. There is a very healthy collaboration, so that at times it is impossible to determine “whose” plugin it is. Since this is one of the major strengths of Open Source we will not attribute here. However, it should be noted that there are a number of authors who are quite prolific. As the authors come to mind they will be noted below. If you are one of the authors and your name does not appear, please advise.
 
 === Programmers
 
-Sean Depagnier, Dave Register, Pavel Kalian, Alec Leamas, Jean Pierre Pitzef, Dave Cowell, Dirk
-Smits, Jon Gough, Mike Rossiter, Salty Paws, Transmitter Dan, Peter
-Tulp, Konni, Hakan, Wally Schulpen, Kees Verruijt, Douwe Fokkema, Dave
-Deller and there are more.
+Sean Depagnier, Dave Register, Pavel Kalian, Alec Leamas, Jean Pierre Pitzef, Dave Cowell, Dirk Smits, Jon Gough, Mike Rossiter, Salty Paws, Transmitter Dan, Peter
+Tulp, Konni, Hakan, Wally Schulpen, Kees Verruijt, Douwe Fokkema, Dave Deller, Rick Gleason (Maintenance) and there are more.
 
 === Testers/Translators
 

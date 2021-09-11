@@ -1,32 +1,32 @@
-* Included_plugins
-** xref:dashboard:dashboard.adoc[dashboard]
+* Included Plugins
+** xref:dashboard:dashboard.adoc[Dashboard]
 ** xref:wmm:wmm.adoc[World Magnetic]
-** xref:grib_weather:grib_weather.adoc[grib_weather]
-** xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+** xref:grib_weather:grib_weather.adoc[Grib Weather]
+** xref:chart_downloader_tab:chart_downloader_tab.adoc[Chart Downloader Tab]
 
 * AIS / Radar
 ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
 ** xref:radar:ROOT:index.adoc[Radar Display]
-** xref:rtlsdr::index.adoc[RTL-SDR]
+** xref:rtlsdr::index.adoc[RTL-SDR AIS]
 
 * Charts
-// ** xref:nv_charts:ROOT:nv_charts.adoc[nv_charts]
+// ** xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
 ** xref:s63_vector_charts:ROOT:index.adoc[S63 Vector Charts]
-// ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[bsb4_charts]
+// ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[BSB4 Charts]
 ** xref:oesenc::index.adoc[oeSENC]
 // ** xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
 ** xref:photolayer::index.adoc[PhotoLayer]
 ** xref:vfkaps::index.adoc[VfKaps - VentureFarther]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
 ** xref:chartscale::index.adoc[Chartscale]
-** xref:objsearch:ROOT:objsearch.adoc[objsearch]
+** xref:objsearch:ROOT:objsearch.adoc[ObjSearch]
 ** xref:projections::index.adoc[Projections]
 
 * Logs
-//** xref:dash-t:ROOT:dash-t.adoc[dash-t]
+//** xref:dash-t:ROOT:dash-t.adoc[Dash-T]
 ** xref:logbook::index.adoc[Logbook]
-** xref:find-it::index.adoc[find-it]
-** xref:vdr::index.adoc[Voyage Data Recorder]
+** xref:find-it::index.adoc[Findit]
+** xref:vdr::index.adoc[Voyage Data Recorder VDR]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 
 * Navigation
@@ -34,33 +34,33 @@
 ** xref:celestial_navigation::index.adoc[Celestial Navigation]
 ** xref:route_great_circle::index.adoc[Route Great Circle]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning]
-** xref:otcurrent::index.adoc[otidalcurrent]
+** xref:otcurrent::index.adoc[oTidalCurrent]
 ** xref:sat2chart:sat2chart.adoc[GE2KAP Companion Software]
 ** xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 * Safety
-** xref:odraw:ROOT:index.adoc[odraw]
+** xref:odraw:ROOT:index.adoc[ODraw]
 ** xref:watchdog::index.adoc[Watchdog]
 ** xref:sar::index.adoc[SAR]
 
 * Sailing
-** xref:tactics::index.adoc[tactics]
-** xref:sweep_plot::index.adoc[Sweep Plot]
+** xref:tactics::index.adoc[Tactics]
+** xref:sweep_plot::index.adoc[Plots]
 ** xref:polar::index.adoc[Polar]
-** xref:windvane::index.adoc[windvane]
+** xref:windvane::index.adoc[Windvane]
 
 * Weather
-** xref:weatherfax::index.adoc[Weather Fax]
-** xref:iacfleet:ROOT:index.adoc[iacfleet]
+** xref:weatherfax::index.adoc[WeatherFax]
+** xref:iacfleet:ROOT:index.adoc[iacFleet]
 ** xref:climatology::index.adoc[Climatology]
 ** xref:weather_routing::index.adoc[Weather Routing]
 
 * Utility
 ** xref:statusbar::index.adoc[Statusbar]
-** xref:calculator:ROOT:index.adoc[calculator]
-** xref:launcher:ROOT:index.adoc[launcher]
-** xref:debugger:ROOT:index.adoc[debugger]
+** xref:calculator:ROOT:index.adoc[Calculator]
+** xref:launcher:ROOT:index.adoc[Launcher]
+** xref:debugger:ROOT:index.adoc[Debugger]
 ** xref:pypilot::index.adoc[Pypilot]
 ** xref:shipdriver::index.adoc[Shipdriver]
 ** xref:twocan::index.adoc[TwoCan]
-** xref:odometer:ROOT:index.adoc[odometer]
+** xref:odometer:ROOT:index.adoc[Odometer]

@@ -11,7 +11,7 @@
 
 ** Supplementary software
 *** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
-*** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation tool]
+*** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation Tool]
 
 
 * Master Plugins
