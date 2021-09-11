@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Rebuild all maunals found in sources, primarely to hunt for errors.
+# Produces a lot of output, and is probably best run redirected
+# to a file so one can search the output for specific errors.
+
+top=$(git rev-parse --show-toplevel)
+for dir in $top/sources/*; do
+    if [ -f $dir/manual/site.yml ]; then
+        pushd $dir/manual
+        antora site.yml
+    else
+        echo "No manual/site.yml found in $dir" >&2
+    fi
+done
