@@ -51,4 +51,4 @@
 ./watchdog_pi https://github.com/rgleason/watchdog_pi.git 1306a7ddd37b04a61934b140c0cb521d620fd2f4
 ./weather_routing_pi https://github.com/rgleason/weather_routing_pi.git 001181e2e3e70b84e71f68143f95e3a9bde36432
 ./weatherfax_pi https://github.com/rgleason/weatherfax_pi.git fef0dcc7ea03d30d2e608175e37c2a93228b7ae6
-./windvane_pi https://github.com/Rasbats/windvane_pi.git 08d647a3ddb90fa2c3447670620a454986659321
+./windvane_pi https://github.com/jongough/windvane_pi.git 9038e864911f269d6a376b21740f1782f7b322c5
