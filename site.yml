@@ -177,7 +177,7 @@ content:
     - url: sources/RacingPlugIn
       start_path: manual
       branches: master
-      edit_url: https://github.com/opencpn-manuals/RacingPlugIn/edit/master/{path}
+      edit_url: https://github.com/TwoCanPlugin/RacingPlugIn/edit/master/{path}
 
     - url: sources/radar_pi
       branches: master
