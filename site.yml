@@ -7,7 +7,7 @@ content:
   sources:
     # Keep listed sorted to avoid duplicates and for better diffs.
     - url: .
-      branches: HEAD
+      branches: master
       start_paths:
       - manual/master-plugins
       - manual/beta-plugins
@@ -15,267 +15,267 @@ content:
     # @@plugin-list-begin    Keep this comment, used by main project
     - url: sources/admiralty_tide_tables_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/admiralty_tide_tables_pi/edit/master/{path}
 
     - url: sources/aisradar_pi/
-      branches: HEAD
+      branches: master
       start_path: manual/ais_radar_display
       edit_url: https://github.com/nohal/aisradar_pi/edit/master/{path}
 
     - url: sources/Autopilot-Plugin
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/Autopilot-Plugin/edit/master/{path}
 
     - url: sources/autopilot_route_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/autopilot_route_pi/edit/master/{path}
 
     - url: sources/AutoTrackRaymarine_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/douwefokkema/AutoTrackRaymarine_pi/edit/master/{path}
 
     - url: sources/calculator_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/calculator_pi/edit/master/{path}      
 
     - url: sources/celestial_navigation_pi/
-      branches: HEAD
+      branches: master
       start_path: manual
       edit-url:  https://github.com/rgleason/celestial_navigation_pi/edit/master/{path}
 
     - url: sources/chartscale_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url:  https://github.com/rgleason/chartscale_pi/edit/master/{path}
 
     - url: sources/climatology_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/climatology_pi/edit/master/{path}
 
     - url: sources/Deviation_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/opencpn-manuals/Deviation_pi/edit/master/{path}
 
     - url: sources/DR_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/DR_pi/edit/master/{path}
 
     - url: sources/EngineDashboard
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/opencpn-manuals/EngineDashboard/edit/master/{path}
 
     - url: sources/EarthExplorer_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/EarthExplorer_pi/edit/master/{path}      
 
     - url: sources/Findit_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/FindIt_pi/edit/master/{path}
 
     - url: sources/GPS-Odometer_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/opencpn-manuals/GPS-Odometer_pi/edit/master/{path}
 
     - url: sources/iacfleet_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/nohal/iacfleet_pi/edit/master/{path}
 
     - url: sources/launcher_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/nohal/launcher_pi/edit/master/{path}
 
     - url: sources/LogbookKonni_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/LogbookKonni_pi/edit/master/{path}
 
     - url: sources/ncdf_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/Rasbats/ncdf_pi/edit/master/{path}
 
     - url: sources/NmeaConverter_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/opencpn-manuals/NmeaConverter_pi/edit/master/{path}
 
     - url: sources/ocpndebugger_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/nohal/ocpndebugger_pi/edit/master/{path}
 
     - url: sources/objsearch_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/nohal/objsearch_pi/edit/master/{path}
 
 
     - url: sources/ocpn_draw_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/jongough/ocpn_draw_pi/edit/master/{path}
 
     - url: sources/oesenc_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/bdbcat/oesenc_pi/edit/master/{path}
 
     - url: sources/otcurrent_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/otcurrent_pi/edit/master/{path}
 
     - url: sources/otidalplan_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/otidalplan_pi/edit/master/{path}
 
     - url: sources/otidalroute_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/otidalroute_pi/edit/master/{path}                
 
     - url: sources/photolayer_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/photolayer_pi/edit/master/{path}
 
     - url:  sources/plots_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/plots_pi/edit/master/{path}
 
     - url: sources/polar_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/polar_pi/edit/master/{path}
 
     - url: sources/projections_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/projections_pi/edit/master/{path}
 
     - url: sources/pypilot_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/pypilot_pi/edit/master/{path}
 
     - url: sources/RacingPlugIn
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/opencpn-manuals/RacingPlugIn/edit/master/{path}
 
     - url: sources/radar_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/opencpn-radar-pi/radar_pi/edit/master/{path}
 
     - url:  sources/rotationctrl_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/rotationctrl_pi/edit/master/{path}
 
     - url: sources/route_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/route_pi/edit/master/{path}
 
     - url: sources/rtlsdr_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/rtlsdr_pi/edit/master/{path}
 
     - url: sources/s63_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/bdbcat/s63_pi/edit/master/{path}
 
     - url: sources/SailawayNMEA_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/SailawayNMEA_pi/edit/master/{path}      
 
     - url: sources/sar_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/sar_pi/edit/master/{path}
 
     - url: sources/shipdriver_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/shipdriver_pi/edit/master/{path}
 
     - url: sources/statusbar_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/statusbar_pi/edit/master/{path}
 
     - url: sources/survey_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/survey_pi/edit/master/{path}      
 
     - url: sources/tactics_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/tactics_pi/edit/master/{path}
 
     - url: sources/TideFinder_pi/
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/TideFinder_pi/edit/master/{path}
 
     - url: sources/TwoCanPlugIn
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/TwoCanPlugIn/TwoCanPlugIn/edit/master/{path}
 
     - url: sources/UKTides_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/UKTides_pi/edit/master/{path}
 
     - url: sources/vdr_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/rgleason/vdr_pi/edit/master/{path}
 
     - url: sources/vfkaps_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/Rasbats/vfkaps_pi/edit/master/{path}
 
     - url: sources/watchdog_pi/
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/rgleason/watchdog_pi/edit/master/{path}
 
     - url: sources/weatherfax_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/weatherfax_pi/edit/master/{path}
 
     - url: sources/weather_routing_pi
       start_path: manual
-      branches: HEAD
+      branches: master
       edit_url: https://github.com/rgleason/weather_routing_pi/edit/master/{path}      
 
     - url: sources/windvane_pi
-      branches: HEAD
+      branches: master
       start_path: manual
       edit_url: https://github.com/jongough/windvane_pi/edit/master/{path}   
 
