@@ -71,7 +71,7 @@ content:
     - url: sources/EngineDashboard
       start_path: manual
       branches: master
-      edit_url: https://github.com/opencpn-manuals/EngineDashboard/edit/master/{path}
+      edit_url: https://github.com/TwoCanPlugin/EngineDashboard/edit/master/{path}
 
     - url: sources/EarthExplorer_pi
       branches: master

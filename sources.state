@@ -10,7 +10,7 @@
 ./Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 0befabc46d086a69b6f2ec85a54ba0ee9ad159bc
 ./DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d52f
 ./EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git f8dc8de594ea8333cb81c18f61fec936019ded94
-./EngineDashboard https://github.com/opencpn-manuals/EngineDashboard.git 9ecccc32896f78ffdf999ee0fcffe289fc85d307
+./EngineDashboard https://github.com/TwoCanPlugin/EngineDashboard.git 06638447ac65b2c791f95ca2dc7138e0c86cac95
 ./Findit_pi https://github.com/rgleason/Findit_pi.git b61c200885c46595088fe5e5072fe1f0a6758016
 ./gecomapi_pi https://github.com/nohal/gecomapi_pi f5d606919dc28bb4cefd3be943ec64abe22171dc
 ./GPS-Odometer_pi https://github.com/opencpn-manuals/GPS-Odometer_pi.git 79f48e7492ee36421ca746824d1913557176092a
