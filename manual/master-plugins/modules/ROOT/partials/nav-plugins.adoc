@@ -19,7 +19,7 @@
 ** xref:vfkaps::index.adoc[VfKaps VentureFarther]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
 ** xref:chartscale::index.adoc[Chartscale]
-** xref:objsearch:ROOT:objsearch.adoc[ObjSearch]
+** xref:objsearch::index.adoc[ObjSearch]
 ** xref:projections::index.adoc[Projections]
 
 * Logs

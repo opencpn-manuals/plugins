@@ -19,7 +19,7 @@
 ./LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git ed0f135875892a0a5eab0e7548f158bd6fc86f51
 ./ncdf_pi https://github.com/Rasbats/ncdf_pi.git ccaf6ffe592eb09a476a1facd8f832975769c90b
 ./NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi.git 3da698c9b1deb17b28ba28055a7e85c1c53653cf
-./objsearch_pi https://github.com/nohal/objsearch_pi.git 605dc3a216a54bae94dd87c68484faa023131586
+./objsearch_pi https://github.com/nohal/objsearch_pi.git 286cb34cb999faef713ada938a1b101cdf53bd99
 ./ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git 693347485d104c4dccd4399295679388d7491cf9
 ./ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git d9b355bed47370f4482405ea2b3a6132edc2f683
 ./oesenc_pi https://github.com/bdbcat/oesenc_pi.git 284bfc902d2e23bbcae691e027121174c92e12e9

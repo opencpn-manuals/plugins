@@ -35,7 +35,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:vfkaps::index.adoc[VfKaps VentureFarther] image:managed_plugin.png[]
 * xref:rotationctrl::index.adoc[RotationCtrl]
 * xref:chartscale::index.adoc[ChartScale]
-* xref:objsearch:ROOT:objsearch.adoc[ObjSearch]
+* xref:objsearch::index.adoc[ObjSearch]
 * xref:projections::index.adoc[Projections]
 
 === Logs
