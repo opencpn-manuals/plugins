@@ -57,6 +57,7 @@ case "$1" in
     restore)
         while true; do
             read dir url commit || exit 0
+            echo "Restoring into ${dir##*/}"
             test -d $dir || git_clone $url $dir
             cd $dir
             git fetch origin $commit
