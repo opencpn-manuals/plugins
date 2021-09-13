@@ -1,31 +1,58 @@
 #!/bin/bash
 
+# Usage:
+#     source-state.sh <update | restore> [plugins...]
+#     source-state.sh save
+#
 # A primitive git submodules replacement, used since
 # isomorphic-git does not support git submodules.
 #
-# The script handles a number of external git repos which are part of
+# Script handles a number of external git repos which are part of
 # the build. All repos lives in the sources/ directory.
 #
 # The sources.state file is used to record the state of the repos. Each
 # repo is defined by a name, url and commit in this file.
 #
-# Script is invoked with an operation argument, one of
-#
-#   - restore: Fetch and checkout all repos listed in sources.state
+# <command> is one of:
+#   - restore: Fetch and checkout repos listed in sources.state
+#   - update: Update plugin repos to latest version (does not save!).
 #   - save: Save state of all plugin repos in sources.state
-#   - update: Update all plugin repos to latest version (does not save!).
+#
+# [plugin] is one or more plugins listed in sources.state. By default,
+# operation applies to all known plugins.
 #
 # Files:
 #   sources.state:
 #       directory, url and commit for plugin sources.
 #   sources:
-#       base directory
-#
+#       base directory for plugin sources
+
+usage() {
+    cat << EOF
+Usage:
+    source-state.sh restore [plugin...]
+    source-state.sh update [plugin...]
+    source-state.sh save
+EOF
+}
 
 
 here=$(readlink -fn $(dirname $0))
 statefile="$here/sources.state"
+
+cd $here
 test -d $here/sources || mkdir $here/sources
+test -f $here/sources/.gitkeep || touch $here/sources/.gitkeep
+
+
+skip_dir() {
+    if [[ " ${dirs[@]} " =~ " $1 " ]]; then
+        return 1
+    else
+        return 0
+    fi
+}
+
 
 cleanup_clone() {
     if test -f .git/info/sparse-checkout; then return; fi
@@ -52,11 +79,31 @@ git_clone() {
 }
 
 cd $here/sources
+
+command=$1
+if [ $# -eq 0 ]; then
+    command='foo'
+elif [ $# -gt 1 ]; then
+    shift
+    dirs=("$@")
+else
+    dirs=()
+    for d in $(find . -maxdepth 1 -mindepth 1 -type d); do
+        dirs+=(${d#*/})
+    done
+fi
+
+if [[ "$command" = 'save' && $# -gt 1 ]]; then
+    echo "save does not permit explicit  plugin list"
+    exit 1
+fi
+
 git config --global advice.detachedHead false
-case "$1" in
+case "$command" in
     restore)
         while true; do
             read dir url commit || exit 0
+            if skip_dir ${dir##*/}; then continue; fi
             echo "Restoring into ${dir##*/}"
             test -d $dir || git_clone $url $dir
             cd $dir
@@ -68,6 +115,7 @@ case "$1" in
 
     update)
         for dir in $(find . -maxdepth 1 -mindepth 1 -type d); do
+            if skip_dir ${dir##*/}; then continue; fi
             cd $dir
             echo -n "$dir: "
             git remote update origin
@@ -86,6 +134,6 @@ case "$1" in
         done
         ;;
 
-    *) echo 'Usage: $0: <save | restore | update>'
+    *) usage >&2
         ;;
 esac
