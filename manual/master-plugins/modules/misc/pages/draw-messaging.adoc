@@ -1,6 +1,11 @@
-= Plugin Messaging
+= ODraw Plugin Messaging
 
-== Between ODraw (OD), Watchdog (WD) and Weather Routing (WR).
+== Messaging between Plugins
+
+. Ocpn-Draw (OD) - ODraw Entities such as Point, Line, EBL, Guard Zones, Boundaries and Layers with ODraw Messaging used to enhance other plugins.
+. Watchdog (WD) - Uses ODraw entities and messaging to create a large number of useful alarms.
+. Weather Routing (WR) - Uses Boundaries to create Avoidance zones.
+. Squiddio - Optionally uses ODraw Layers to avoid use of Navigation WP and POI. 
 
 === User aspects
 
