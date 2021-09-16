@@ -35,7 +35,7 @@
 ./radar_pi https://github.com/opencpn-radar-pi/radar_pi.git 779738508433d912241ffca8e5da24662f9e5460
 ./rotationctrl_pi https://github.com/rgleason/rotationctrl_pi.git 0979fcf759605ad3b26cc33991d7388066886f53
 ./route_pi https://github.com/rgleason/route_pi.git 6a71f40288218aeb4ed3fb839258648a2e8a50dc
-./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 5a4ffa0349bb04f3470fb3ec8e242b9878e5303a
+./rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 42e3c521655f1d352314b1dab9604fe31babe71e
 ./s63_pi https://github.com/bdbcat/s63_pi 9d2ee9b08e78e9e739f502b827c43583563dbfd4
 ./SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git fd03456757c612befe68f7b6e13d80c6d9145a0a
 ./sar_pi https://github.com/Rasbats/sar_pi.git daa606f6271c8b521f111f77f8ee655a971e197f
