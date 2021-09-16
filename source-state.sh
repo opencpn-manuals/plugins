@@ -128,7 +128,7 @@ case "$command" in
 
     save)
         rm -f $statefile
-        for dir in $(find . -maxdepth 1 -mindepth 1 -type d | sort); do
+        for dir in $(find . -maxdepth 1 -mindepth 1 -type d | sort -f); do
             url=$(git -C $dir config remote.origin.url)
             echo $dir $url $(git -C $dir rev-parse HEAD) >> $statefile
         done
