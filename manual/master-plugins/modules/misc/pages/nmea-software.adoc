@@ -1,7 +1,7 @@
 = NMEA
 == Online Nmea Tools
 
-xref:ocpn-dev-manual::res-online-tools.adoc[Developer Manual Online Nmea Tools]
+Developer Manual - Online Nmea Tools
 
 == NMEA Input/Output/Multiplexing
 
