@@ -1,7 +1,6 @@
 = Celestial Navigation
 
-Looking for the  Celestial Navigation Plugin for Opencpn? Find it
-xref:celestial-navigation::index.adoc[here]
+Looking for the  xref:celestial_navigation::index.adoc[Celestial Navigation Plugin]?
 
 == Background
 
