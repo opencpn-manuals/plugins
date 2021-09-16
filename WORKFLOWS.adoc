@@ -37,7 +37,8 @@ and tested:
     $ git push -f origin main:build
 
 If the build completes, the results becomes visible at
-https://opencpn-manuals.github.io/development/. If testing reveals errors,
+https://opencpn-manuals.github.io/plugins/opencpn-plugins/0.1/index.html
+via https://opencpn-manuals.github.io/development/. If testing reveals errors,
 the commit can be amended since it hasn't been pushed to main:
 
     $ edit-again, fixing errors
