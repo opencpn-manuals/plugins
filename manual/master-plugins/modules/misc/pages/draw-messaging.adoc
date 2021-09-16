@@ -123,5 +123,5 @@ se, the message consists of element/value pairs written as delimited
 strings. The elements can occur in any order. So “structure” in the sense
 used in this document really refers to required elements.
 
-WR Weather Routing simply uses ODraw boundaries for avoidance, and it uses the same messaging as above.
+WR Weather Routing simply uses OD boundaries for avoidance, and it uses the same messaging as above.
 Squiddio simply has an option to use OD Layers instead of the OpenCPN Navigation Layer for WP and Marks.
