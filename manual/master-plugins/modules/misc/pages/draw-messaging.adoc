@@ -2,14 +2,14 @@
 
 == Messaging between Plugins
 
-. Ocpn-Draw (OD) - ODraw Entities such as Point, Line, EBL, Guard Zones, Boundaries and Layers with ODraw Messaging used to enhance other plugins.
-. Watchdog (WD) - Uses ODraw entities and messaging to create a large number of useful alarms.
-. Weather Routing (WR) - Uses Boundaries to create Avoidance zones.
-. Squiddio - Optionally uses ODraw Layers to avoid use of Navigation WP and POI. 
+. Ocpn-Draw (OD) - OD Entities such as Point, Line, EBL, Guard Zones, Boundaries and Layers with ODraw Messaging used to enhance other plugins.
+. Watchdog (WD) - Uses OD entities and messaging to create a large number of useful alarms.
+. Weather Routing (WR) - Uses OD Boundaries to create Avoidance zones.
+. Squiddio - Optionally uses OD Layers to avoid use of Navigation WP and POI. 
 
-=== User aspects
+=== User Perspective
 
-First of all, we should see OD (same as Ocpn-Draw), WD and WR as separate plugins. In OD you can draw geo-referenced objects (lines, points, straight lined areas and circles). WD knows when and how to sound alarms.
+OD, WD, WR and Squiddio are separate plugins. In OD you can draw geo-referenced objects (lines, points, straight lined areas and circles). WD knows when and how to sound alarms. WR knows how to avoid boundaries. Squiddio has an option to use OD Layers which leaves the navigation layer cleaner.
 
 In OD, a graphical indication (crosshatching or shading) may be added to areas, to indicate whether these are intended to avoid (crosshatched inside) or to stay within (crosshatched outside), or whatever other meaning you want to give to those graphical indications.
 
@@ -123,4 +123,5 @@ se, the message consists of element/value pairs written as delimited
 strings. The elements can occur in any order. So “structure” in the sense
 used in this document really refers to required elements.
 
-Weather Routing simply uses ODraw boundaries for avoidance, and it uses the same messaging as above.
+WR Weather Routing simply uses ODraw boundaries for avoidance, and it uses the same messaging as above.
+Squiddio simply has an option to use OD Layers instead of the OpenCPN Navigation Layer for WP and Marks.
