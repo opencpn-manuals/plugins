@@ -344,14 +344,12 @@ thus.
 
 === NmeaConverter_pi Conversions
 
-https://opencpn-manuals.github.io/plugins/nmea_converter/0.1/nmea_converter.html
-can solve many compatibility or unit conversion issues. There are nine
+xref:nmea_converter::index.adoc[Nmea_Converter_pi] can solve many compatibility or unit conversion issues. There are nine
 examples showing how the use NmeaConverter to adjust Dashboard output.
 
 ==== Barometer MWV - XDR,MTA,MDA
 
-NMEAconverter_pi may help: 
-https://opencpn-manuals.github.io/plugins/nmea_converter/0.1/index.html
+Companion Plugin: xref:nmea_converter::index.adoc[Nmea_Converter_pi] can solve many conversion problems.
 
 David Burch Videos
 
