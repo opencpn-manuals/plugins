@@ -36,7 +36,6 @@ Usage:
 EOF
 }
 
-
 here=$(readlink -fn $(dirname $0))
 statefile="$here/sources.state"
 
@@ -78,7 +77,6 @@ git_clone() {
     cd ..
 }
 
-cd $here/sources
 
 command=$1
 if [ $# -eq 0 ]; then
@@ -88,7 +86,7 @@ elif [ $# -gt 1 ]; then
     dirs=("$@")
 else
     dirs=()
-    for d in $(find . -maxdepth 1 -mindepth 1 -type d); do
+    for d in $(awk '{sub(/\.\//, ""); print $1}' sources.state); do
         dirs+=(${d#*/})
     done
 fi
@@ -98,6 +96,7 @@ if [[ "$command" = 'save' && $# -gt 1 ]]; then
     exit 1
 fi
 
+cd $here/sources
 git config --global advice.detachedHead false
 case "$command" in
     restore)
@@ -130,7 +129,7 @@ case "$command" in
         rm -f $statefile
         for dir in $(find . -maxdepth 1 -mindepth 1 -type d | sort -f); do
             url=$(git -C $dir config remote.origin.url)
-            echo $dir $url $(git -C $dir rev-parse HEAD) >> $statefile
+            echo ${dir#./} $url $(git -C $dir rev-parse HEAD) >> $statefile
         done
         ;;
 
