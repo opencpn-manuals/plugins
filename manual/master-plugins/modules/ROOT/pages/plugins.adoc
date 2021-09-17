@@ -46,7 +46,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:nmea_converter:ROOT:index.adoc[NMEAconverter]
 
 === Navigation
-* xref:squiddio:squiddio.adoc[Squiddio] image:managed_plugin.png[]
+* xref:squiddio::index.adoc[Squiddio] image:managed_plugin.png[]
 * xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
 * xref:route_great_circle::index.adoc[Route Great Circle]
 * xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
