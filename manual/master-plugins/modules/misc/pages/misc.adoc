@@ -1,0 +1,17 @@
+= General information/Supplementary hardware/Supplementary software
+
+* General
+
+** xref:opencpn-plugins:misc:terminology.adoc[Terminology]
+** xref:opencpn-plugins:misc:plugin-install.adoc[Plugin Installation]
+** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
+
+* Supplementary hardware
+
+*** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]
+*** xref:opencpn-plugins:misc:rpi-setups.adoc[RPI Setups]
+
+* Supplementary software
+
+*** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
+*** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation Tool]

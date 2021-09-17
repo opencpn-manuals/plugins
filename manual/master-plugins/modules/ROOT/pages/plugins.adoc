@@ -1,4 +1,4 @@
-= Master Plugins
+= Main Plugins
 
 image:options-plugins-icon.png[]
 
@@ -10,7 +10,7 @@ Plugins included in the master catalog are indicated by image:managed_plugin.png
 
 == Plugin Categories
 
-=== Included_plugins
+=== Included Plugins
 
 These plugins are installed with the basic OpenCPN program.
 

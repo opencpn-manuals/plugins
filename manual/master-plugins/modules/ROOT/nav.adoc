@@ -14,7 +14,7 @@
 *** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation Tool]
 
 
-* Master Plugins
+* Main Plugins
 +
 --
 include::partial$nav-plugins.adoc[]
