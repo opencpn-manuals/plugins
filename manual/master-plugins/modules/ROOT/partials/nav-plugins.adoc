@@ -39,7 +39,7 @@
 ** xref:wmm:wmm.adoc[WMM (Included)]
 
 * Safety
-** xref:odraw:ROOT:index.adoc[ODraw]
+** xref:ocpn_draw:ROOT:index.adoc[ODraw]
 ** xref:watchdog::index.adoc[Watchdog]
 ** xref:sar::index.adoc[SAR]
 

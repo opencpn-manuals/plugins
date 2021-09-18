@@ -55,7 +55,7 @@ These plugins are installed with the basic OpenCPN program.
 * xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
 
 === Safety
-* xref:odraw:ROOT:index.adoc[ODraw] image:managed_plugin.png[]
+* xref:ocpn_draw:ROOT:index.adoc[ODraw] image:managed_plugin.png[]
 * xref:watchdog::index.adoc[Watchdog] image:managed_plugin.png[]
 * xref:sar::index.adoc[SAR] image:managed_plugin.png[]
 
