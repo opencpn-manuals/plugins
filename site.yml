@@ -86,7 +86,7 @@ content:
     - url: sources/GPS-Odometer_pi
       start_path: manual
       branches: master
-      edit_url: https://github.com/opencpn-manuals/GPS-Odometer_pi/edit/master/{path}
+      edit_url: https://github.com/LennartG-Sve/GPS-Odometer_pi/edit/master/{path}
 
     - url: sources/iacfleet_pi
       start_path: manual
