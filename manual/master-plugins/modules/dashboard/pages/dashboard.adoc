@@ -104,101 +104,54 @@ image::dash-select-instr_0.png[image,width=260,height=265]
 === 40 Instruments Available
 
 
-
 [cols="",]
 |===
 |Position (text)
-
 |SOG (text) -Speed Over Ground
-
 |Speedometer (dial)
-
 |COG(text) - Course Over Ground
-
 |GPS Compass(dial)
-
 |STW(text) Speed Through Water
-
 |True HDG(text) Heading
-
-|Apparent WindAngle & Speed(dial) See
-http://www.cruisersforum.com/forums/f134/mwv-sentences-not-working-in-dashboard-159069.html[MWV]
-
+|Apparent WindAngle & Speed(dial) See http://www.cruisersforum.com/forums/f134/mwv-sentences-not-working-in-dashboard-159069.html[MWV]
 |App. Wind speed(text)
-
 |App. Wind speed(dial)
-
 |App. Wind angle
-
 |True Wind Angle & Speed(dial)
-
 |Depth(text)^1^
-
 |Depth(dial)^1^
-
 |Water Temp(text)
-
 |VMG(text)- Velocity Made Good to a waypoint
-
 |VMG(dial)
-
 |Rudder Angle(text)
-
 |Rudder Angle(dial)
-
 |GPS in view(text)- the number of satellites detected^2^
-
 |GPS status(dial)^2^
-
 |Cursor, shows the position of the cursor.
-
-|Clock, showing UTC from the NMEA stream, in most cases this is the gps
-time.
-
+|Clock, showing UTC from the NMEA stream, in most cases this is the gps time.
 |Sunrise/Sunset
-
 |Moon phase
-
 |Air Temp
-
 |True Wind angle
-
 |True Wind direction
-
 |True Wind Speed
-
 |True Wind Direction and speed
-
 |Magnetic Hdg
-
 |True Compass
-
 |Wind History
-
 |Trip Log
-
 |Sum Log
-
 |Barometric Pressure (dial)
-
-|Barometric Pressure (text)
-http://www.cruisersforum.com/forums/f134/dashboard-vs-xdr-mta-mda-197116.html#post2571109[MVW
-Example]
-
+|Barometric Pressure (text) http://www.cruisersforum.com/forums/f134/dashboard-vs-xdr-mta-mda-197116.html#post2571109[MVW Example]
 |Barometric History
-
 |From Ownship. Shows the vector from Ownship to the cursor.
-
 |Magnetic COG^2^
 |===
 
-
-
-{empty}1. The DPT sentence is used, and transducer offset will be added
+. The DPT sentence is used, and transducer offset will be added
 to depth value, if available.
-2. Linux note:: GPS satellite info is not available if using gpsd. The
+. Linux note:: GPS satellite info is not available if using gpsd. The
 same informations is however available through the “xgps” command.
-
 
 
 === Delete
@@ -266,26 +219,24 @@ standard instruments (blue = wind speed data, TWS=True Wind Speed, red =
 direction, TWD = True Wind Direction).
 
 Here is an explanation of the text line, left side (see screen shot)::
-TWS 7.5:: true Wind Speed currently 7.5 kts
-Max 22.3 kts since 18::50:: this is the max Wind speed in the visible
-graphs, i.e. the last ~40 mins
-Overall 22.3:: the max wind speed since OpenCPN was started.
+TWS 7.5:: true Wind Speed currently 7.5 kts +
+Max 22.3 kts since 18::50:: this is the max Wind speed in the visible graphs, i.e. the last ~40 mins +
+Overall 22.3:: the max wind speed since OpenCPN was started. +
 
-Right side above:: TWD 357 degrees:: True wind direction currently 357
-degrees
+Right side above:: TWD 357 degrees:: True wind direction currently 357 degrees
 
 The thin red/blue curves are the real direction/speed values, the
 thicker curves are smoothed values. Makes it easier to see trends.
 
 There is some logic included :: The instruments zooms automatically as
 much as possible, always trying to show the whole visible curve;
+
 Wind speed curve::
-if your max (visible) wind speed is 10 kts, then your scale is from 0…11
-kts (rounded upwards to the next full knot).
+If your max (visible) wind speed is 10 kts, then your scale is from 0…11 kts (rounded upwards to the next full knot).
 In the screen shot we had a mx of 22.3kts –> scale is 0…23 kts.
+
 Wind direction::
-The instrument scale shows/- 90 degrees of the currently visible data
-values, but is limited to a total of 360 degrees.
+The instrument scale shows/- 90 degrees of the currently visible data values, but is limited to a total of 360 degrees.
 If the wind is shifting through North (from 350, 355, 359, 002, 010, …)
 we're shifting the curve as well, meaning that there is NO vertical jump
 in the data from 360 degrees –> 0 degrees, and we do NOT loose all the
@@ -320,10 +271,8 @@ recently added logic to dim it in this mode.
 The dashboard plugin contains 3 instruments capable of displaying the
 time according to the preference of the user.
 
-. GPS clock - Unmodified time provided by the GPS unit, if available.
-This value is UTC.
-. Local GPS clock - Time from the GPS clock corrected by user defined
-timezone offset (see below)
+. GPS clock - Unmodified time provided by the GPS unit, if available. This value is UTC.
+. Local GPS clock - Time from the GPS clock corrected by user defined  timezone offset (see below)
 . Local CPU clock - Local clock obtained from operating system
 
 On the appearance tab of the Dashboard preferences there is a setting
