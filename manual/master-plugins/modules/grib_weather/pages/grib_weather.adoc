@@ -15,11 +15,10 @@ Forum: http://www.cruisersforum.com/forums/f134/new-grib-presentation-100414.htm
 If you are not familiar with grib weather files, make sure you
 understand the basics, before you start to use them. *It is essential to
 understand the limitations of weather forecasts that are distributed in
-the grib format.*
-It is also worth pointing out that gribs are *not* reliable near
-tropical systems.
-Send a blank mail to "GribWarning(at symbol)saildocs.com". Read the mail you get
+the grib format.*  It is also worth pointing out that gribs are *not* reliable near
+tropical systems.  Send a blank mail to "GribWarning(at symbol)saildocs.com". Read the mail you get
 back carefully.
+
 To get started with gribs and to find sources for downloads, check
 http://weather.mailasail.com/Franks-Weather/Grib-Files-Getting-And-Using[Franks-Weather].
 A very good, up to date book, is “Modern Marine Weather, second edition”
@@ -29,6 +28,12 @@ by David Burch, with a thorough treatment of the subject.
 
 OpenCPN can read both the original gribfile format, known as Grib1, as
 well as the new Grib2 format, with the .grb2 or .grib2 file-extension.
+
+OpenCPN Grib_pi has been updated to support all of the useful GFS parameters (Sept 2021). 
+The WW3 model has been incorporated into the GFS, so we get waves 
+now along with the wind and pressure (and reflectivity)… plus the waves go out 16 days and not just the 8 of WW3, 
+and the resolution is now 0.25º and when it was 0.5 before.
+
 To learn more about the various grib formats and models available, see:
 
 * http://davidburchnavigation.blogspot.com/2021/02/grib-school.html[Grib School by Davd Burch]
@@ -42,13 +47,11 @@ first activate the grib icon
 
 image::grib.png[]
 
-
 Go to 
 
 image::settings.png[]
 
-
-find the plugin tab. Click on the Grib plugin, then the “Enable” button. The
+Find the plugin tab. Click on the Grib plugin, then the “Enable” button. The
 “Preferences” Button brings up a small dialog. The settings in this
 dialog rarely needs changing after the initial setup.
 
@@ -59,16 +62,16 @@ image::33gribpreference2.png[]
 *Use High Definition Graphics*. The setting only concerns the barbed
 wind arrows.Tick the “Use High Definition Graphics” box, unless you are
 on old hardware. Not ticking the “High Definition Graphics” box can help
-to speed up the grib display on a slow computer.
+to speed up the grib display on a slow computer. +
 *Use Gradual Colors.* This setting applies to all colored overlay maps.
 On many installations the difference in rendering is very small. The
-overlay maps built in color variation plays a part.
+overlay maps built in color variation plays a part. +
 *Copy First Cumulative Missing Record*. This is about rainfall and cloud
-cover records .
+cover records. +
 As these records are “cumulative” the first one does not exist in files
 from zyGrib and Saildocs. With this parameter unchecked, there will be
 neither rainfall and nor cloud cover displayed for the first date/time
-of the file. Ticking the box fixes the problem.
+of the file. Ticking the box fixes the problem. +
 *Copy Missing Wave Records*. This only concerns wave records from zyGrib
 delivers files from two models ; FNMOC (WW3-…) for waves and GFS for all
 other parameters. These two forecast models does not have the same time
@@ -79,19 +82,20 @@ allows this missing data to be reconstructed and avoiding the overlay
 == Load File Options
 
 *Load the More Recent File in Directory*. Loads the newest file in the
-grib directory on start.
+grib directory on start. +
 *Load the Last Open File*. Loads the grib file used last time.
 
 == Start options
 
-*Start at the first forecast in GRIB file*
-*Start at the nearest forecast to current time*
-*Authorize interpolation to start at current time.*
+*Important* +
+Start at the first forecast in GRIB file +
+Start at the nearest forecast to current time +
+Authorize interpolation to start at current time. +
 
 == Time Options
 
-*Local Time*
-*UTC*
+*Local Time* +
+*UTC* +
 
 == The Grib Display Controls
 
@@ -107,45 +111,45 @@ image::girb-hide-data.png[image,width=550,height=57]
 
 This is a smart and compact dialog. For a quick start press the “Open
 File” button and navigate to your grib file directory and press the file
-to be displayed.
+to be displayed. +
 *Previous/Next* Go to the previous or the next record in the gribfile.
 This corresponds to the time “interval” chosen when the grib file was
-downloaded.
-*Data valid at* The time of validity for all grib data on screen.
-*Open Grib file* The name of the grib file in use.
+downloaded. +
+*Data valid at* The time of validity for all grib data on screen. +
+*Open Grib file* The name of the grib file in use. +
 *Now* Displays the record, nearest in time to “now” according to the
 Start option you have selected: (“Start at the nearest forecast to
-current time” or “Authorize interpolation to start at current time”).
+current time” or “Authorize interpolation to start at current time”). +
 *Select Geopotential Height* If grib data for geopotential height is
-available, selection will be between Std, 500.
+available, selection will be between Std, 500. +
 *Zoom to Center* This button will home in on the loaded area that the
-loaded grib file covers.
+loaded grib file covers. +
 *Play* Goes through all records in turn, with the animation speed
-controlled in the “Grib Settings” dialog.
+controlled in the “Grib Settings” dialog. +
 *Hide Cursor Data* Hides Grib which normally appears in the data
-windows. Data windows are hidden.
+windows. Data windows are hidden. +
 *Progress Slider* Just to the right of the “Play” button is a slider
-that is just another way of going through the grip records.
+that is just another way of going through the grip records. +
 *Open File* Activates the operating systems standard file selector
 dialog to select a grib file. The plugin remembers the directory of this
 grib. This is used next time you start OpenCPN and activates the Grib
 plugin. See settings in the “Grib Preferences” dialog above.
 *Settings* is where to control how the different grib data will be
-displayed. See more below.
-*Request* Download grib files via email. More below.
-*GRIB Data at Cursor.* This is where the “smart” part kicks in.
+displayed. See more below. +
+*Request* Download grib files via email. More below. +
+*GRIB Data at Cursor.* This is where the “smart” part kicks in. +
 *Only entries for the data contained in the active grib file will be
 displayed*. For example, if there is no wave data in the current grib
 file, there will be no signs of wave data at all. In the case above,
 where the the wave data is N/A, the grib file includes wave data, but
 not for the area where the cursor is. Compare with the picture below,
-where the grib only contains current data.
+where the grib only contains current data. +
 The tick boxes next to each data entry, are used to activate the
-data-display on the screen.
+data-display on the screen. +
 Exactly what will be shown is controlled in the “Grib Settings” dialog,
-which is reached by pressing the “Settings” button.
+which is reached by pressing the “Settings” button. +
 Don't activate to many display features at the same time. The display
-quickly becomes very cluttered.
+quickly becomes very cluttered. +
 
 image::33gribcurrent.png[]
 
@@ -164,9 +168,8 @@ Right-clicking the “Air Temp” option square.
 
 The plugin has an advanced mode were altitude data can be displayed.
 This mode requires some more knowledge than plain gribs.
-A good start is to read
- https://vos.noaa.gov:443/MWL/dec_08/milibar_chart.shtml
-"Mariner's Guide to the 500--Millibar Chart"
+A good start is to read  https://vos.noaa.gov:443/MWL/dec_08/milibar_chart.shtml
+[Mariner's Guide to the 500--Millibar Chart] +
 If a grib file includes altitude data, the control will automatically
 include more options. See below.
 
@@ -177,10 +180,10 @@ Data at Cursor”, like this,
 
 image::std-grib.png[]
 
-then the grib file contains altitude data. Selecting one of the
-altitudes, for example 500, changes the dialog to what you see above.
-The advanced data are displayed against a yellow background.
-*Wind*. These are the wind data valid for the selected altitude level.
+Then the grib file contains altitude data. Selecting one of the
+altitudes, for example 500, changes the dialog to what you see above. +
+The advanced data are displayed against a yellow background. +
+*Wind*. These are the wind data valid for the selected altitude level. +
 *Grib Data at 500 hPa*. The values at the selected level.
 
 == Pressure Isobar Numbers - Short & Long
@@ -195,7 +198,6 @@ Once a grib file is loaded in the current session, the “Weather table”
 appears in the right click menu.
 
 image::33wxtable.png[]
-
 
 Click the entry, and a Weather Table, valid at the cursor point, pops
 up. All available data in the current grib file, for the whole time
@@ -237,17 +239,18 @@ The Loop Mode controls what happens when “Play” is pressed in the Grib
 Display Control.
 
 *Loop Mode*. Sets the “Play” function into a loop mode. Otherwise,
-playback will stop when reaching the end of the file.
+playback will stop when reaching the end of the file. +
 *Loop Start*. Were to start the loop. The option “Current time forecast”
-makes sure that only data now or in the future are shown
-*Updates per Second.* Controls the speed of “play”.
+makes sure that only data now or in the future are shown +
+*Updates per Second.* Controls the speed of “play”. +
 *Loop Start*. The loop can start either at the start of the grib file or
-from the current time forecast.
+from the current time forecast. +
 *Interpolate between gribs*. If you select this option, you will be able
 to choose your own time interval, but you have to consider that it can
-decrease data accuracy. To remind you, this info will pop up.
+decrease data accuracy. To remind you, this info will pop up. +
 
 image::33gribinterpolation.png[image,width=477,height=165]
+
 *Time Interval*. This is the time interval used for interpolation. The
 entry is only visible if “Interpolate between gribs” is ticked. This is
 connected tho the chosen time interval when requesting a grib file.
@@ -274,30 +277,31 @@ For wind speed the choices are.
 image::33gribunits.png[]
 
 *Barbed Arrows* Display the traditional barbed arrows, showing wind
-direction and wind speed.
+direction and wind speed. +
 *Range* refers to the distance between displayed arrows (not working
-3.3.1117).
+3.3.1117). +
 *Default Color/Controlled Colors* Default is dark brown while
 “Controlled” varies from blue for very light winds to red for very
-strong winds.
+strong winds. +
 
 image::4gribcontroledcolours.png[image,width=300,height=187]
+
 *Always visible* This option only exists for “Wind” and “Pressure”. When
 ticked the object is shown regardless of what is ticked in the “Settings
 Control”. The idea is to be able to Show wind and/or pressure at the
 same time as other options. Use with Rainfall, for example, to help
-identifying fronts.
+identifying fronts. +
 *Display Isotachs* shows contour lines connecting points with the same
-wind speed.
+wind speed. +
 *Spacing* controls which wind speed Isotachs will be shown. Use knots
 for units and 10 for spacing and isotach contours will be shown at 10
-kts, 20kts and so on.
+kts, 20kts and so on. +
 *OverlayMap* Depending on your system capability,if you use “Accelerated
 Graphics (OpenGL)” (see General Options/Display/Advanced), the overlay
 will be visible at all scales. But if you don't, the overlay will only
 be visible at small scales. A small yellow pop up at the bottom left of
 the screen will inform you. Zoom out to a scale of 1:13 millions, or
-smaller to see them.
+smaller to see them. +
 *Colors* is another selection menu containing pre-set color schemes. The
 idea is to use the scheme with the same name as the control, but this is
 just a hint, nothing more.
@@ -305,15 +309,15 @@ just a hint, nothing more.
 image::33griboverlaycolors.png[]
 
 *Numbers* shows the wind speed in small square boxes. *Minimum Spacing*
-refers to the spacing between these boxes.
+refers to the spacing between these boxes. +
 *Particle Map* is a kind of animation of the wind field. It is created
 by letting “particles”, or dots, move in the wind direction and leave a
 trail. The trail is colored after the wind strength, and each particle
-has a limited “life span”.
+has a limited “life span”. +
 The *Density* slider creates particle trails that are shorter but closer
 together with increased value, which is the same as further to the
 right. The particle Map below clearly shows a convergence zone with
-stronger winds (red). This is probably a cold front.
+stronger winds (red). This is probably a cold front. +
 *Performance Warning*: Note that high density Particle Maps on Low
 Powered Machines and Large Files may slow your machine to a crawl. First
 test on small files.
@@ -338,9 +342,9 @@ image::grib-settings-bottom-slider.png[]
 
 Waves and Current have a more or less similar display. A Particle Map is
 available for currents. See the descripion above for wind Particle Maps.
-Once again different units.
+Once again different units. +
 There is a choice between three different display arrows shown in two
-sizes.
+sizes. +
 If wave height, direction and wave period is present in the grib file it
 will be displayed in the Display Control like this:
 
@@ -348,9 +352,7 @@ image::4gribcurrent_0.png[]
 
 image::grib-settings-data-waves-data.png[]
 
-
 image::grib-settings-bottom-slider.png[]
-
 
 Air Temperature and Sea Temperature looks the same.
 
@@ -403,20 +405,22 @@ image::grib-settings-message-saildocs.png[]
 Compose the request by picking parameters and data. Not all data are
 available for all choices of parameters.
 For example, in the picture above “Wind Gusts” and “Current” are grayed
-out, as the are not available with GFS from SailDocs.
+out, as the are not available with GFS from SailDocs. +
+
 When selecting *“Moving Grib”* the dialog expands and makes it possible
 to choose a speed and course. The selected grib forecast area will move,
 using these values, for each grib interval. The idea behind this is to
-minimize the download while still covering a longer passage.
+minimize the download while still covering a longer passage. +
 Moving grib files are incompatible with interpolation, so if a “moving
 file” is detected a warning is displayed. Interpolation, if set is
 deactivated, but only for moving file, the settings as such, are not
-modified.
+modified. +
+
 *Resolution* The choices are 0.5, 1.0 or 2.0. A recent upgrade to gribs
 makes it possible to download even 0.25&deg; resolution. This is not yet
 an alternative in the plugin and requires editing the email manually
 before sending. In the picture above …|0.5,0.5|… should instead look
-like …|0.25,0.25|…
+like …|0.25,0.25|… +
 The default geographical coverage of the requested grib file is the area
 you can see on the screen. A manual Selection Mode is also available.
 When the *Area Selection* → Manual Selection box is ticked the dialog
@@ -435,8 +439,8 @@ area.
 When selecting *“Pressure Altitude”* and the GFS forecast model, the
 dialog expands and makes it possible to choose forecasts for different
 altitude levels. The SailDocs dialog only supports the 500 mb altitude,
-while zyGrib suports all options.
-When you are ready press *_“Send”_*.
+while zyGrib suports all options. +
+When you are ready press *_“Send”_*. +
 This message will show in the “Mail” window instead of the “send”
 request:
 
@@ -448,20 +452,18 @@ request:
 
 
 As stated, a mail is composed for you and ready to send with your normal
-mailing program.
+mailing program. +
 This is the standard way of getting a new grib in Windows and Linux.
-(Mac ??)
-
+(Mac ??) +
 To get a grib, just press *_“Send”_*, and wait for a return mail.
 
-
 ==== zyGrib Request Form
-
 
 Note that the Login is longer the first page of the website. The URL for
 the login is http://www.zygrib.org/index.php?page=gribauto This is where
 you login to recieve the special code that allows download for two
 months.
+
 image::grib-settings-message-zygrib.png[image,width=550,height=692]
 
 === Configuration of Default Email Server
@@ -480,7 +482,7 @@ Operating System is required.
 
 *There is an advanced alternative* for Mac OSX, Linux (and BSD). Install
 and configure a mail server. Instructions are on the
-xref:mail_servers.adoc[Grib Weather Mail Servers Page].
+xref:mail_servers.adoc[Grib Weather Mail Servers Page]. +
 Following these instructions to enable the mail server will enable
 automatic transmission of a grib request to SailDocs.
 
@@ -518,8 +520,7 @@ Combine separate Saildocs GFS Wind RTOFS Current grib files. (Note:
 Only applies to OpenCPN v4.2.x and forward)
 Using Windows, Click on the “Open a File” to browse grib file.
 
-. Highlight two grib files (Ctrl and pick the two files with a mouse
-left click.)
+. Highlight two grib files (Ctrl and pick the two files with a mouse left click.)
 . The pick Open and the two grib files will be opened.
 . Both grib files will be used by Weather_routing.
 . In grib_pi settings I always use the “Current” “Proportional Arrow”
