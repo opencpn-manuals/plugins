@@ -7,11 +7,8 @@ no separate download is required.*
 
 == Links
 
-Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn
-Internal Plugin]
-Forum:
-http://www.cruisersforum.com/forums/f134/new-grib-presentation-100414.html[Grib
-Weather Forum]
+Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin] +
+Forum: http://www.cruisersforum.com/forums/f134/new-grib-presentation-100414.html[Grib Weather Forum] +
 
 == What is a grib file?
 
@@ -33,6 +30,7 @@ by David Burch, with a thorough treatment of the subject.
 OpenCPN can read both the original gribfile format, known as Grib1, as
 well as the new Grib2 format, with the .grb2 or .grib2 file-extension.
 To learn more about the various grib formats and models available, see:
+
 * http://davidburchnavigation.blogspot.com/2021/02/grib-school.html[Grib School by Davd Burch]
 * https://luckgrib.com/blog/2018/08/24/nbm-announce.html[Luckgrib NBM announcement]
 * https://luckgrib.com/tutorials/2018/08/24/nbm-oceanic.html[Luckgrib probability for the results]
