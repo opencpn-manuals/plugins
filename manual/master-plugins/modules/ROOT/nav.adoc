@@ -3,7 +3,7 @@
 * General
 ** xref:opencpn-plugins:misc:terminology.adoc[Terminology]
 ** xref:opencpn-plugins:misc:plugin-install.adoc[Plugin Installation]
-** xref:opencpn-plugins:misc:draw-messaging.adoc[OCPN Draw Messaging]
+** xref:opencpn-plugins:misc:draw-messaging.adoc[Draw Messaging]
 
 ** Supplementary hardware
 *** xref:opencpn-plugins:misc:ais-devices.adoc[AIS Devices]

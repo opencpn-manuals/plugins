@@ -2,7 +2,7 @@
 
 image:options-plugins-icon.png[]
 
-The manuals for the included plugins will not be maintained as part of the OpenCPN code base.
+The manuals for the included plugins will not be maintained as part of the OpenCPN code base, but here under 'https://github.com/opencpn-manuals/plugins' 
 
 The Authoring and Included_plugin manuals are built by modules in the github rep 'https://github.com/opencpn-manuals/plugins'
 
@@ -12,7 +12,7 @@ Plugins included in the master catalog are indicated by image:managed_plugin.png
 
 === Included Plugins
 
-These plugins are installed with the basic OpenCPN program.
+Installed with the basic OpenCPN program.
 
 * xref:dashboard:dashboard.adoc[Dashboard]
 * xref:wmm:wmm.adoc[World Magnetic]
@@ -22,15 +22,15 @@ These plugins are installed with the basic OpenCPN program.
 === AIS / Radar
 * xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display] image:managed_plugin.png[]
 * xref:radar::index.adoc[Radar Display] image:managed_plugin.png[]
-* xref:rtlsdr::index.adoc[RTL-SDR AIS]
+* xref:rtlsdr::index.adoc[AIS RTL-SDR]
 //
 
 === Charts
 // * xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
 // * xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[S63 Vector Charts] image:managed_plugin.png[]
 // * xref:bsb4_charts:ROOT:bsb4_charts.adoc[BSB4 Charts]
-* xref:oesenc::index.adoc[oeSENC] image:managed_plugin.png[]
-// * xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
+* xref:oesenc::index.adoc[oeSENC Charts] image:managed_plugin.png[]
+// * xref:fugawi:ROOT:fugawi.adoc[Fugawi Charts (deprecated)]
 * xref:photolayer::index.adoc[PhotoLayer] image:managed_plugin.png[]
 * xref:vfkaps::index.adoc[VfKaps VentureFarther] image:managed_plugin.png[]
 * xref:rotationctrl::index.adoc[RotationCtrl]
@@ -39,10 +39,10 @@ These plugins are installed with the basic OpenCPN program.
 * xref:projections::index.adoc[Projections]
 
 === Logs
-// * xref:dash-t:ROOT:dash-t.adoc[Dash-T] image:managed_plugin.png[]
+// * xref:dash-t:ROOT:dash-t.adoc[Dashboard-Tactics] image:managed_plugin.png[]
 * xref:logbook::index.adoc[Logbook] image:managed_plugin.png[]
 * xref:findit::index.adoc[Findit] image:managed_plugin.png[]
-* xref:vdr::index.adoc[VDR Voyage Data Recorder] image:managed_plugin.png[]
+* xref:vdr::index.adoc[Voyage Data Recorder VDR] image:managed_plugin.png[]
 * xref:nmea_converter:ROOT:index.adoc[NMEAconverter]
 
 === Navigation
@@ -52,10 +52,10 @@ These plugins are installed with the basic OpenCPN program.
 * xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
 * xref:otcurrent::index.adoc[oTidalCurrent] image:managed_plugin.png[]
 * xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
-* xref:wmm:wmm.adoc[WMM (Included in OpenCPN)]
+* xref:wmm:wmm.adoc[World Magnetic (Included)]
 
 === Safety
-* xref:ocpn_draw:ROOT:index.adoc[ODraw] image:managed_plugin.png[]
+* xref:ocpn_draw:ROOT:index.adoc[Ocpn Draw] image:managed_plugin.png[]
 * xref:watchdog::index.adoc[Watchdog] image:managed_plugin.png[]
 * xref:sar::index.adoc[SAR] image:managed_plugin.png[]
 
@@ -68,6 +68,7 @@ These plugins are installed with the basic OpenCPN program.
 === Weather
 * xref:weatherfax::index.adoc[Weatherfax] image:managed_plugin.png[]
 // * xref:iacfleet:ROOT:index.adoc[IacFleet]
+* xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
 * xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
 * xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 
@@ -93,7 +94,7 @@ The diversity and range of the OpenCPN Plugins is quite remarkable. Users should
 === Programmers
 
 Sean Depagnier, Dave Register, Pavel Kalian, Alec Leamas, Jean Pierre Pitzef, Dave Cowell, Dirk Smits, Jon Gough, Mike Rossiter, Salty Paws, Transmitter Dan, Peter
-Tulp, Konni, Hakan, Wally Schulpen, Kees Verruijt, Douwe Fokkema, Dave Deller, Rick Gleason (Maintenance) and there are more.
+Tulp, Konni, Hakan, Wally Schulpen, Kees Verruijt, Douwe Fokkema, Dave Deller, Rick Gleason and there are more.
 
 === Testers/Translators
 

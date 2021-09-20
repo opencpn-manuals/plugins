@@ -7,14 +7,14 @@
 * AIS / Radar
 ** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display]
 ** xref:radar:ROOT:index.adoc[Radar Display]
-** xref:rtlsdr::index.adoc[RTL-SDR AIS ]
+** xref:rtlsdr::index.adoc[AIS RTL-SDR]
 
 * Charts
 // ** xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
 ** xref:s63_vector_charts:ROOT:index.adoc[S63 Vector Charts]
 // ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[BSB4 Charts]
-** xref:oesenc::index.adoc[oeSENC]
-// ** xref:fugawi:ROOT:fugawi.adoc[Fugawi (deprecated)]
+** xref:oesenc::index.adoc[oeSENC Charts]
+// ** xref:fugawi:ROOT:fugawi.adoc[Fugawi Charts (deprecated)]
 ** xref:photolayer::index.adoc[PhotoLayer]
 ** xref:vfkaps::index.adoc[VfKaps VentureFarther]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
@@ -26,7 +26,7 @@
 //** xref:dash-t:ROOT:dash-t.adoc[Dash-T]
 ** xref:logbook::index.adoc[Logbook]
 ** xref:findit::index.adoc[Findit]
-** xref:vdr::index.adoc[VDR Voyage Data Recorder]
+** xref:vdr::index.adoc[Voyage Data Recorder VDR]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 
 * Navigation
@@ -35,8 +35,8 @@
 ** xref:route_great_circle::index.adoc[Route Great Circle]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning]
 ** xref:otcurrent::index.adoc[oTidalCurrent]
-** xref:sat2chart:sat2chart.adoc[GE2KAP Software]
-** xref:wmm:wmm.adoc[WMM (Included)]
+** xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
+** xref:wmm:wmm.adoc[World Magnetic (Included)]
 
 * Safety
 ** xref:ocpn_draw:ROOT:index.adoc[ODraw]
@@ -52,8 +52,8 @@
 * Weather
 ** xref:weatherfax::index.adoc[WeatherFax]
 // ** xref:iacfleet:ROOT:index.adoc[iacFleet]
+** xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
 ** xref:climatology::index.adoc[Climatology]
-** xref:grib_weather:grib_weather.adoc[Grib Weather (included)]
 ** xref:weather_routing::index.adoc[Weather Routing]
 
 * Utility
