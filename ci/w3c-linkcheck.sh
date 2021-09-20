@@ -39,6 +39,9 @@ checklink \
     --exclude youtube.com \
     --exclude youtu.be \
     --exclude squidd.io \
+	--exclude ephemeris.com \
+	--exclude clearskyinstitute.com \
+    --exclude forum.openmarine.net 	\
     --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
     --masquerade "https://opencpn-manuals.github.io/plugins $PWD/docs" \
     --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
