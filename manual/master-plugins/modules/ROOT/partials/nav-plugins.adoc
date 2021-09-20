@@ -51,7 +51,7 @@
 
 * Weather
 ** xref:weatherfax::index.adoc[WeatherFax]
-** xref:iacfleet:ROOT:index.adoc[iacFleet]
+// ** xref:iacfleet:ROOT:index.adoc[iacFleet]
 ** xref:climatology::index.adoc[Climatology]
 ** xref:grib_weather:grib_weather.adoc[Grib Weather (included)]
 ** xref:weather_routing::index.adoc[Weather Routing]

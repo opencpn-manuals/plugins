@@ -89,11 +89,6 @@ content:
       branches: master
       edit_url: https://github.com/LennartG-Sve/GPS-Odometer_pi/edit/master/{path}
 
-    - url: sources/iacfleet_pi
-      start_path: manual
-      branches: master
-      edit_url: https://github.com/nohal/iacfleet_pi/edit/master/{path}
-
     - url: sources/launcher_pi
       start_path: manual
       branches: master

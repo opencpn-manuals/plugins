@@ -67,7 +67,7 @@ These plugins are installed with the basic OpenCPN program.
 
 === Weather
 * xref:weatherfax::index.adoc[Weatherfax] image:managed_plugin.png[]
-* xref:iacfleet:ROOT:index.adoc[IacFleet]
+// * xref:iacfleet:ROOT:index.adoc[IacFleet]
 * xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
 * xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 
