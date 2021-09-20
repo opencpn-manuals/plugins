@@ -99,3 +99,24 @@ Using `./source-state.sh update` is not the only way to update the sources.
 Each directory here is a git repository, and the can be updated as usual
 with for example `git pull`. After such updates, `./source-state.sh save`
 will record all changes into source-state.sh
+
+
+== Edit Plugins Manual with Github + AsciiDoc/Antora 
+
+[width="100%",cols="6%,50%,50%",options="header",]
+|===
+| | What Document to Edit | How to Edit with Git 
+| 1 | Typical Plugins with manuals distributed | Commit changes normally from PI  
+| 2 | Internal Plugins | Use Basic Minor Change above 
+| 3 | Plugin Nav.adoc, Index.adoc etc | Use Basic Minor Change above
+|===
+
+For 1 above.
+
+* If you maintain the PI - Edit sources, commit and push to github.
+* If someone else's PI - Fork it, make changes, commit and make a PR for acceptance.
+
+For 2 & 3 above.
+
+* Use Workflow "Basic Minor Change" directly in the sources, as normal.
+* All github users may not have access to Edit these areas.
