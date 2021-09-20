@@ -42,6 +42,7 @@ checklink \
 	--exclude ephemeris.com \
 	--exclude clearskyinstitute.com \
     --exclude forum.openmarine.net 	\
+	--exclude techsail.com 
     --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
     --masquerade "https://opencpn-manuals.github.io/plugins $PWD/docs" \
     --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
