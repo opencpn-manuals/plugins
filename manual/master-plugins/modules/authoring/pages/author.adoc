@@ -1,6 +1,6 @@
 = Authoring the manual
 
-This section is just a collection of information about the build process for the OpenCPN Manuals.
+This section is a collection of information about the build process for the OpenCPN Manuals.
 
 xref:pm-plugin-documentation.adoc[Plugin Documentation Guidelines]
 
