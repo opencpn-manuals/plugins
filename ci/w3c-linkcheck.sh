@@ -26,23 +26,23 @@ checklink \
     --exclude bethandevans.com \
     --exclude bigdumboat.com \
     --exclude blogspot.com \
+    --exclude clearskyinstitute.com \
     --exclude cruisersforum.com \
     --exclude docs.google.com \
+    --exclude ephemeris.com \
     --exclude facebook.com \
+    --exclude forum.openmarine.net \
     --exclude marine-knowledge.com \
     --exclude meanwell.com \
     --exclude navigation-spreadsheets.com \
-    --exclude opencpn.org/wiki/dokuwiki \
     --exclude opencpn.org \
+    --exclude opencpn.org/wiki/dokuwiki \
+    --exclude squidd.io \
+    --exclude techsail.com \
     --exclude translate.google.com \
     --exclude twocanplugin@hotmail.com	\
-    --exclude youtube.com \
     --exclude youtu.be \
-    --exclude squidd.io \
-    --exclude ephemeris.com \
-    --exclude clearskyinstitute.com \
-    --exclude forum.openmarine.net \
-    --exclude techsail.com \
+    --exclude youtube.com \
     --suppress-redirect 'https://opencpn-manuals.github.io/plugins->https://opencpn-manuals.github.io/plugins/' \
     --masquerade "https://opencpn-manuals.github.io/plugins $PWD/docs" \
     --depth 4 -s docs/index.html |& grep -v "Use of uninitialized value"
