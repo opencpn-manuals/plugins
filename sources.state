@@ -21,7 +21,7 @@ NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi.git 53da252
 objsearch_pi https://github.com/nohal/objsearch_pi.git 2a0758cf039a6fa3bf239250a019b55ef7803db8
 ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git 75681de8c119eebb26df61e95686c9513bcdd40e
 ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git a9b818dda55ebb84dd80b0c4700a19a685aa4e8e
-oesenc_pi https://github.com/bdbcat/oesenc_pi.git 437c888dfb6b5dc9fdbc50daa842bb0bc6b9067f
+oesenc_pi https://github.com/bdbcat/oesenc_pi.git ed789fe4cc6d50c568acc23bdca65d11cb3deeb6
 otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 94a487b177c9615958ec92a4309d8c8afb3e93af
 otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git c4ecd80d6a10f080795a6393e181ab07a9e48dfd
 otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 404f7eeadf935b1acc1d840f940a6b893f1bdfbc
