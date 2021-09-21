@@ -24,6 +24,11 @@ include::partial$nav-plugins.adoc[]
 --
 include::partial$nav-betaplugins.adoc[]
 --
+* All plugins A-Z
++
+--
+include::partial$nav-all-plugins.adoc[]
+--
 *
 * Authoring the manual
 ** xref:opencpn-plugins:authoring:pm-plugin-documentation.adoc[Plugin Documentation Guidelines]
