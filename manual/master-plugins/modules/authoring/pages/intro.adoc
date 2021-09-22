@@ -11,8 +11,8 @@ https://github.com/Rasbats/shipdriver_pi
 
 When the overall plugins manual is generated it collects the different
 plugin manuals from their git repositories and generates a complete
-manual form these. This means that the responsible for maintaining each
-plugin manual is the plugin developer.
+manual form these. This means that the responsibility for maintaining each
+plugin manual lies with the plugin developer.
 
 The manual in the _manual_ directory is using asciidoc to format the
 pages. Most manuals are just a single page named
@@ -21,7 +21,7 @@ An example is available
 https://github.com/Rasbats/shipdriver_pi/blob/master/manual/modules/ROOT/pages/index.adoc
 
 The asciidoc files are easily edited with a text editor or something
-like VS Code. When edited they can be viewed with Firefox with the
+like https://code.visualstudio.com/[VS Code]. When edited they can be viewed with Firefox with the
 asciidoc extension. One can also do a xref:localbuild.adoc[local build]
 and inspect the generated HTML
 

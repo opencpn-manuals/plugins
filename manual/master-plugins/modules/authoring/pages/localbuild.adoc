@@ -14,6 +14,8 @@ _manual_ directory  using
 This generates output in the _docs_ directory. Check the results
 by pointing the web browser to _docs/index.html_
 
+A .gitignore file should be present in the manual directory. Writing docs in this file will prevent the HTML being pushed to the repository. 
+
 If there is a need to publish the generated docs the site.yml file
 needs to be patched. See the Antora documentation; site.yml is a
 _playbook_ in Antora parlance.

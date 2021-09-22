@@ -13,6 +13,8 @@ only Asciidoc. However, in most scenarios this doesn't really matter.
 
 Also see the xref:FAQ.adoc[FAQ] on how to view images in this extension.
 
+When editing using https://code.visualstudio.com[Visual Studio Code] the preview option shows how the HTML will appear.
+
 == Editing asciidoc
 
 Asciidoc files are plain text files which can be edited with any

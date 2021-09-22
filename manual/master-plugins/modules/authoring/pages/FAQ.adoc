@@ -46,6 +46,7 @@ How can the manual be edited?;;
 . Top right of your pages you will see `Edit this page'. Using this
 allows edits of the manual on Github. On the next build of your plugin
 the edits will be seen in the manual (after the main manual is updated).
+
 . Using the manual pages in your plugin repository.
 
 
@@ -55,7 +56,7 @@ Are there tools that ``automagically'' converts markdown
 e.g.,  the README.md file in the github repo) to asciidocs? Yes
 https://pandoc.org/[pandoc] does this. It's not perfect, but usable.
 
-BTW if you need HTML for a help button you will create it by using a local build of the manual.
+BTW if you need HTML for a help button you can create it by using a local build of the manual.
 The HTML could be placed in a folder in your plugin data directory and referenced
 by the plugin.
 
