@@ -34,6 +34,7 @@ Installed with the basic OpenCPN program.
 * xref:projections::index.adoc[Projections]
 
 === Logs
+* xref:dashboard_tactics::index.adoc[Dasboard Tactics] image:managed_plugin.png[]
 * xref:logbook::index.adoc[Logbook] image:managed_plugin.png[]
 * xref:findit::index.adoc[Findit] image:managed_plugin.png[]
 * xref:vdr::index.adoc[Voyage Data Recorder VDR] image:managed_plugin.png[]

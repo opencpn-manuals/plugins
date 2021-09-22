@@ -57,7 +57,7 @@
 ** xref:survey::index.adoc[Survey]
 ** xref:tactics::index.adoc[Tactics]
 ** xref:tidefinder::index.adoc[TideFinder]
-** xref:twocan::index.adoc[TwoCan]'
+** xref:twocan::index.adoc[TwoCan]
 
 * U - Z
 ** xref:uktides::index.adoc[UKTides]
