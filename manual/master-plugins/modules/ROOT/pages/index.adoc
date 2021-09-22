@@ -1,5 +1,7 @@
 = Plugins Manual
 
+foobar
+
 xref:misc:misc.adoc[General and supplementary information]
 
 xref:plugins.adoc[Main Plugins (by Category)]
