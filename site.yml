@@ -62,7 +62,7 @@ content:
     - url: sources/dashboard_tactics_pi
       start_path: manual
       branches: master
-      edit_url: https://github.com/rgleason/dashboard_tactics_pi.git/edit/master/{path}
+      edit_url: https://github.com/rgleason/dashboard_tactics_pi/edit/master/{path}
 
     - url: sources/Deviation_pi
       start_path: manual
