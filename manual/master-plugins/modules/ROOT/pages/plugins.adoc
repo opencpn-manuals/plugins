@@ -23,14 +23,9 @@ Installed with the basic OpenCPN program.
 * xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display] image:managed_plugin.png[]
 * xref:radar::index.adoc[Radar Display] image:managed_plugin.png[]
 * xref:rtlsdr::index.adoc[AIS RTL-SDR]
-//
 
 === Charts
-// * xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
-// * xref:s63_vector_charts:ROOT:s63_vector_charts.adoc[S63 Vector Charts] image:managed_plugin.png[]
-// * xref:bsb4_charts:ROOT:bsb4_charts.adoc[BSB4 Charts]
 * xref:oesenc::index.adoc[oeSENC Charts] image:managed_plugin.png[]
-// * xref:fugawi:ROOT:fugawi.adoc[Fugawi Charts (deprecated)]
 * xref:photolayer::index.adoc[PhotoLayer] image:managed_plugin.png[]
 * xref:vfkaps::index.adoc[VfKaps VentureFarther] image:managed_plugin.png[]
 * xref:rotationctrl::index.adoc[RotationCtrl]
@@ -39,7 +34,6 @@ Installed with the basic OpenCPN program.
 * xref:projections::index.adoc[Projections]
 
 === Logs
-// * xref:dash-t:ROOT:dash-t.adoc[Dashboard-Tactics] image:managed_plugin.png[]
 * xref:logbook::index.adoc[Logbook] image:managed_plugin.png[]
 * xref:findit::index.adoc[Findit] image:managed_plugin.png[]
 * xref:vdr::index.adoc[Voyage Data Recorder VDR] image:managed_plugin.png[]
@@ -61,13 +55,13 @@ Installed with the basic OpenCPN program.
 
 === Sailing
 * xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
+* xref:dashboard_tactics::index.adoc[Dasboard Tactics] image:managed_plugin.png[]
 * xref:plots::index.adoc[Plots] image:managed_plugin.png[]
 * xref:polar:ROOT:index.adoc[Polar] image:managed_plugin.png[]
 * xref:windvane::index.adoc[Windvane] image:managed_plugin.png[]
 
 === Weather
 * xref:weatherfax::index.adoc[Weatherfax] image:managed_plugin.png[]
-// * xref:iacfleet:ROOT:index.adoc[IacFleet]
 * xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
 * xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
 * xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]

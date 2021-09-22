@@ -44,6 +44,7 @@
 ** xref:sar::index.adoc[SAR]
 
 * Sailing
+** xref:dashboard_tactics::index.adoc[Dashboard Tactics]
 ** xref:tactics::index.adoc[Tactics]
 ** xref:plots::index.adoc[Plots]
 ** xref:polar::index.adoc[Polar]
