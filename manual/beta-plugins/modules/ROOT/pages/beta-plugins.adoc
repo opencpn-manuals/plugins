@@ -17,3 +17,8 @@
 * xref:uktides::index.adoc[UKTides]
 * xref:otidalplan::index.adoc[oTidalPlan uses Harmonics]
 * xref:earthexplorer::index.adoc[Earth Explorer]
+====================================================
+
+Main plugins found here: xref:opencpn-plugins::index.adoc[Main plugins]
+
+====================================================
