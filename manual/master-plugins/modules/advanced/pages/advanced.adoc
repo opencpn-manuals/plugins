@@ -1,0 +1,258 @@
+= Advanced Topics
+
+* This section is about using the 
+https://github.com/opencpn-manuals/plugins[Github OpenCPN Plugins Manual repository].
+
+== Repository Structure
+
+[,]
+----
+plugins/.
+│   .gitignore
+│   .gitmodules
+│   .nojekyll
+│   antora.yml       
+│   check-sources
+│   INSTALL.adoc
+│   README.md
+│   run-checklink
+│   site.yml
+│   source-state.sh
+│   sources.state
+│   ui-bundle.zip
+│   WORKFLOWS.adoc
+----
+In the main plugins directory there are four important files:
+
+* antora.yml
+* site.yml
+* source-state.sh
+* sources.state
+
+When we make a local build of the plugins manual or use a script from Github Workflow the following is executed: antora site.yml. For a local build the HTML is found in the docs directory. The website can be started by opening 'index.html'.
+
+== sources.state
+
+The first two lines of this file (at the present time) are:
+[,]
+----
+admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git fa4b6e4de7073fa646ac68336dade1c7cff17140
+aisradar_pi https://github.com/nohal/aisradar_pi.git 296812e4b5b3b38d9c827527ed86360067af4f35
+----
+Space separated items on each line. The first item is the name of the plugin. Second item the git clone URL. Third item is the commit being used for the OpenCPN plugins manual.
+
+sources.state is a sorted alphabetical list of all the plugins available, master and beta combined.
+
+== source-state.sh
+
+This script has 3 options:
+
+* $source-state restore ... copies state from sources.state -> sources directory
+* $source-state update ...  updates sources
+* $source-state save ...  copies state from sources -> sources.state file
+
+"state" is the commit that is used for the manual.
+
+*$source-state restore* is run before a local build to ensure all the plugin directories in the sources directory contain the manuals from the plugins listed in sources.state. This script is also run as part of the script building the website using Github Actions.
+
+The build-and-deploy.sh script in the ci directory shows *$source-state restore* being used.
+
+New commits to the dev plugin manuals will have been made since sources.state was last compiled.
+*$source-state update*, run locally, 'visits' each plugin in the sources directory and if a new commit has been made updates the data for the plugin, in the 'sources' directory. It has not changed the data in sources.state.
+
+A local build would then use the latest dev plugin commit, but if the website is built by Github Actions the existing (old) sources.state file is used.
+
+In this way the state of the plugins manual can be tracked, by the commits made to the OpenCPN plugins manual. So far nothing has changed the state of the repository.'.gitignore' prevents any local build docs files or sources files being committed to the repository.
+
+When the latest commits of all the plugins are needed *$source-state save* is run. This copies the commit hashes from the plugin sources and updates the sources.state file. The next commit for the OpenCPN plugins manual will use the new dev plugin commits, if any.
+
+== Adding a new developer plugin's manual
+
+This will not normally be handled by the developer but by a maintainer of the OpenCPN Plugins Manual.
+
+A build of the OpenCPN Plugins Manual needs to locate and use the dev plugin repository. 'sources.state' holds the data for the plugins and a new entry is needed in the list. Keep the list sorted!
+
+[,]
+----
+├───manual
+│   │   
+│   ├───beta-plugins
+│   │   │   antora.yml
+│   │   │   
+│   │   └───modules
+│   │       └───ROOT
+│   │           │   nav.adoc
+│   │           │       
+│   │           └───pages
+│   │                   beta-plugins.adoc
+│   │                   index.adoc
+│   └───master-plugins
+│       │   antora.yml
+│       │   
+│       └───modules
+│           │           
+│           ├───ROOT
+│           │   │   nav.adoc
+│           │   │          
+│           │   ├───pages
+│           │   │       index.adoc
+│           │   │       plugins.adoc
+│           │   │       
+│           │   └───partials
+│           │           nav-all-plugins.adoc
+│           │           nav-betaplugins.adoc
+│           │           nav-plugins.adoc
+----
+
+Asciidoc nav- files in the partials directory are used to create lists of the plugins, which appear on the left hand side of the website page. They duplicate other lists but they are essential for the indexing of the different individual dev plugin manuals.
+
+There are two components in the manual, master-plugins and beta-plugins. On the website it is possible to navigate between the master and beta plugins. Each component has a number of modules. ROOT is an important module that contains the nav.adoc page that provides the link with the master and beta pages. By using nav-plugins.adoc and nav-beta-plugins.adoc in the partials directory we simplify the construction of the nav.adoc file, which will not be touched in the following edits.
+
+As an example the following lines were added when DR_pi was added to the master plugins:
+
+* *sources.state*
+[,]
+----
+DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d52f
+----
+
+* *site.yml*
+[,]
+----
+    - url: sources/DR_pi
+      branches: master
+      start_path: manual
+      edit_url: https://github.com/Rasbats/DR_pi/edit/master/{path}
+
+----
+
+The indenting is important. Follow the indenting already in use.
+
+Because we are working with a master plugin that has been released, the files plugins.adoc nav-plugins.adoc, and nav-all-plugins.adoc are edited. 
+
+* *plugins.adoc*
+
+'plugins.adoc' is in the 'pages' directory of 'ROOT'. It contains a list of the master plugins and creates the main master plugins page.
+
+[,]
+----
+=== Navigation
+...
+* xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
+...
+----
+
+* *nav-plugins.adoc*
+
+'nav-plugins.adoc' is in the 'partials' directory and is used for navigation and indexing.
+
+[,]
+----
+* Navigation
+...
+** xref:dead_reckoning::index.adoc[Dead Reckoning]
+...
+----
+
+* *nav-all-plugins.adoc*
+
+'nav-all-plugins.adoc' is in the 'partials' directory and is an alphabetical list, appearing on the left hand side of the pages.
+
+[,]
+----
+* A - E
+...
+** xref:dead_reckoning::index.adoc[Dead Reckoning]
+...
+----
+
+Important: notice the reference 'dead_reckoning' is used and not DR for this plugin. This is the same text as entered for the title in the 'antora.yml' file in the dev plugin's manual.
+
+The whole OpenCPN Plugins Manual Github repository structure with only the DR_pi source shown:
+
+[,]
+----
+plugins:.
+│   .gitignore
+│   .gitmodules
+│   .nojekyll
+│   antora.yml
+│   check-sources
+│   INSTALL.adoc
+│   README.md
+│   run-checklink
+│   site.yml
+│   source-state.sh
+│   sources.state
+│   ui-bundle.zip
+│   WORKFLOWS.adoc
+│   
+├───.github
+│   └───workflows
+│           main.yml
+├───ci
+│       build-and-deploy.sh
+│       dokuwiki-links.sh
+│       linkchecker.sh
+│       unresolved-xrefs.sh
+│       w3c-linkcheck.sh
+│       
+├───manual
+│   │   .gitignore
+│   │   .nojekyll
+│   │   beta_plugins.txt
+│   │   dokuwiki plugins.txt
+│   │   README.md
+│   │   ui-bundle.zip
+│   │   
+│   ├───beta-plugins
+│   │   │   antora.yml
+│   │   │   
+│   │   └───modules
+│   │       └───ROOT
+│   │           │   nav.adoc
+│   │           │       
+│   │           └───pages
+│   │                   beta-plugins.adoc
+│   │                   index.adoc
+│   └───master-plugins
+│       │   antora.yml
+│       │   
+│       └───modules
+│           ├───advanced
+│           ├───authoring
+│           ├───chart_downloader_tab
+│           ├───dashboard
+│           ├───grib_weather
+│           ├───misc
+│           │           
+│           ├───ROOT
+│           │   │   nav.adoc
+│           │   │          
+│           │   ├───pages
+│           │   │       index.adoc
+│           │   │       plugins.adoc
+│           │   │       
+│           │   └───partials
+│           │           nav-all-plugins.adoc
+│           │           nav-betaplugins.adoc
+│           │           nav-plugins.adoc
+│           ├───sat2chart
+│           └───wmm
+└───sources
+    │   .gitkeep
+    │                       
+    ├───DR_pi
+    │   └───manual
+    │       │   .gitignore
+    │       │   antora.yml
+    │       │   site.yml
+    │       │   
+    │       └───modules
+    │           └───ROOT
+    │               ├───images
+    │               │       
+    │               └───pages
+    │                       index.adoc
+    │                       
+----

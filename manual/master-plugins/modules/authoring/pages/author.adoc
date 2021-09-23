@@ -16,3 +16,4 @@ xref:useful.adoc[Useful stuff]
 
 xref:TODO.adoc[TODO]
 
+xref:advanced:advanced.adoc[Understanding the Github Plugins Manual repository]
