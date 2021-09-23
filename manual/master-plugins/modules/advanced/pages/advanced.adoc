@@ -29,7 +29,7 @@ In the main plugins directory there are four important files:
 * source-state.sh
 * sources.state
 
-When we make a local build of the plugins manual or use a script from Github Workflow the following is executed: _antora site.yml_. For a local build the HTML is found in the docs directory. The website can be started by opening 'index.html'.
+When we make a local build of the plugins manual or use a script from Github Workflow the following is executed: _antora site.yml_. For a local build the HTML is found in the _docs_ directory. The website can be started by opening _index.html_.
 
 == What is sources.state?
 
@@ -41,7 +41,7 @@ aisradar_pi https://github.com/nohal/aisradar_pi.git 296812e4b5b3b38d9c827527ed8
 ----
 Space separated items on each line. The first item is the name of the plugin. Second item the git clone URL. Third item is the commit being used for the OpenCPN plugins manual.
 
-sources.state is a sorted alphabetical list of all the plugins available, master and beta combined.
+_sources.state_ is a sorted alphabetical list of all the plugins available, master and beta combined.
 
 == What is source-state.sh?
 
@@ -61,20 +61,20 @@ copies state from sources -> sources.state file
 
 "state" is the commit that is used for the manual.
 
-_source-state restore_ is run before a local build to ensure all the plugin directories in the sources directory contain the manuals from the plugins listed in sources.state. This script is also run as part of the script building the website using Github Actions.
+_source-state restore_ is run before a local build to ensure all the plugin directories in the _sources_ directory contain the manuals from the plugins listed in sources.state. This script is also run as part of the script building the website using Github Actions.
 
-The build-and-deploy.sh script in the ci directory shows *$source-state restore* being used.
+The _build-and-deploy.sh_ script in the _ci_ directory shows *$source-state restore* being used.
 
 New commits to the dev plugin manuals will have been made since sources.state was last compiled.
-_source-state update_, run locally, 'visits' each plugin in the sources directory and if a new commit has been made updates the data for the plugin, in the 'sources' directory. It has not changed the data in sources.state.
+_source-state update_, run locally, 'visits' each plugin in the sources directory and if a new commit has been made updates the data for the plugin, in the _sources_ directory. It has not changed the data in _sources.state_.
 
-A local build would then use the latest dev plugin commit, but if the website is built by Github Actions the existing (old) sources.state file is used.
+A local build would then use the latest dev plugin commit, but if the website is built by Github Actions the existing (old) _sources.state_ file is used.
 
-In this way the state of the plugins manual can be tracked, by the commits made to the OpenCPN plugins manual. So far nothing has changed the state of the repository.'.gitignore' prevents any local build docs files or sources files being committed to the repository.
+In this way the state of the plugins manual can be tracked, by the commits made to the OpenCPN plugins manual. So far nothing has changed the state of the repository._.gitignore_ prevents any local build docs files or sources files being committed to the repository.
 
-When the latest commits of all the plugins are needed _source-state save_ is run. This copies the commit hashes from the plugin sources and updates the sources.state file. The next commit for the OpenCPN plugins manual will use the new dev plugin commits, if any.
+When the latest commits of all the plugins are needed _source-state save_ is run. This copies the commit hashes from the plugin sources and updates the _sources.state_ file. The next commit for the OpenCPN plugins manual will use the new dev plugin commits, if any.
 
-In addition an individual plugin manual can be added to sources and the sources.state file updated:
+In addition an individual plugin manual can be added to _sources_ and the _sources.state_ file updated:
 
      source-state.sh restore [plugin...]
 
@@ -82,7 +82,7 @@ In addition an individual plugin manual can be added to sources and the sources.
 
      source-state.sh save
 
-Where [plugin...] is the URL for the plugin. The plugin has to be already listed in sources.state.
+Where [plugin...] is the URL for the plugin. The plugin has to be already listed in _sources.state_.
 
 == Adding a new developer plugin's manual
 
@@ -124,7 +124,7 @@ A build of the OpenCPN Plugins Manual needs to locate and use the dev plugin rep
 
 Asciidoc nav- files in the partials directory are used to create lists of the plugins, which appear on the left hand side of the website page. They duplicate other lists but they are essential for the indexing of the different individual dev plugin manuals.
 
-There are two components in the manual, master-plugins and beta-plugins. On the website it is possible to navigate between the master and beta plugins. Each component has a number of modules. ROOT is an important module that contains the nav.adoc page that provides the link with the master and beta pages. By using nav-plugins.adoc and nav-beta-plugins.adoc in the partials directory we simplify the construction of the nav.adoc file, which will not be touched in the following edits.
+There are two components in the manual, _master-plugins_ and _beta-plugins_. On the website it is possible to navigate between the master and beta plugins. Each component has a number of modules. _ROOT_ is an important module that contains the _nav.adoc_ page that provides the link with the master and beta pages. By using _nav-plugins.adoc_ and _nav-beta-plugins.adoc_ in the _partials_ directory we simplify the construction of the _nav.adoc_ file, which will not be touched in the following edits.
 
 As an example the following lines were added when DR_pi was added to the master plugins:
 
@@ -146,11 +146,11 @@ DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d
 
 The indenting is important. Follow the indenting already in use.
 
-Because we are working with a master plugin that has been released, the files plugins.adoc nav-plugins.adoc, and nav-all-plugins.adoc are edited. 
+Because we are working with a master plugin that has been released, the files _plugins.adoc_ _nav-plugins.adoc_, and _nav-all-plugins.adoc_ are edited. 
 
 == *plugins.adoc*
 
-'plugins.adoc' is in the 'pages' directory of 'ROOT'. It contains a list of the master plugins and creates the main master plugins page.
+_plugins.adoc_ is in the _pages_ directory of _ROOT_. It contains a list of the master plugins and creates the main master plugins page.
 
 [,]
 ----
@@ -162,7 +162,7 @@ Because we are working with a master plugin that has been released, the files pl
 
 == *nav-plugins.adoc*
 
-'nav-plugins.adoc' is in the 'partials' directory and is used for navigation and indexing.
+_nav-plugins.adoc_ is in the _partials_ directory and is used for navigation and indexing.
 
 [,]
 ----
@@ -174,7 +174,7 @@ Because we are working with a master plugin that has been released, the files pl
 
 == *nav-all-plugins.adoc*
 
-'nav-all-plugins.adoc' is in the 'partials' directory and is an alphabetical list, appearing on the left hand side of the pages.
+_nav-all-plugins.adoc_ is in the _partials_ directory and is an alphabetical list, appearing on the left hand side of the pages.
 
 [,]
 ----
@@ -184,7 +184,7 @@ Because we are working with a master plugin that has been released, the files pl
 ...
 ----
 
-Important: notice the reference 'dead_reckoning' is used and not DR for this plugin. This is the same text as entered for the title in the 'antora.yml' file in the dev plugin's manual.
+Important: notice the reference 'dead_reckoning' is used and not DR for this plugin. This is the same text as entered for the title in the _antora.yml_ file in the dev plugin's manual.
 
 The whole OpenCPN Plugins Manual Github repository structure with only the DR_pi source shown:
 
