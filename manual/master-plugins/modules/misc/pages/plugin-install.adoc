@@ -5,18 +5,32 @@ installed, this is not described here.
 
 == Supported platforms
 
-There is official support for six platforms:
+There is official support for the following platforms:
+[cols="1,1,1"]
+|===
+| OS       | Platform | Version
 
-  - Windows (From Windows 7)
-  - MacOS
-  - Debian  (Stable and oldstable)
-  - Ubuntu  (Supported LTS releases)
-  - Flatpak  (x86_64 and aarch64)
-  - Android
+| Windows  | x86_64 | Windows 7+
 
-Other platforms, notably some Linux distros, have inofficial support. However,
+| MacOS    | x86_64 | 10.9+
+
+| Debian   | amd64  | stable, oldstable
+
+| Ubuntu   | amd64  | Supported LTS releases
+
+| Flatpak  | x86_64, aarch64 | runtime 20.08
+
+| Raspbian | armhf | 10
+
+| Android  | android-armeabi-v7a |
+| Android  |  android-arm64-v8a |
+|===
+
 Flatpak works on basically all Linux platforms and is the official support for
 Linux besides Debian and Ubuntu LTS releases.
+
+Note that there is no support for the various OS:es used on for example RPi 4
+i. e., aarch64 platforms. Here, Flatpak is the only official packaging.
 
 All plugins are not available on all platforms
 
