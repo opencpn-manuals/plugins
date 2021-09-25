@@ -1,0 +1,7 @@
+name: opencpn-plugins
+title: OpenCPN Plugins
+version: '0.1'
+nav: 
+- naw-main.adoc
+- nav-beta.adoc
+- nav-all.adoc
