@@ -4,77 +4,13 @@ image:options-plugins-icon.png[]
 
 The manuals for the included plugins will not be maintained as part of the OpenCPN code base, but here under 'https://github.com/opencpn-manuals/plugins' 
 
-The Authoring and Included_plugin manuals are built by modules in the github rep 'https://github.com/opencpn-manuals/plugins'
+The _Authoring_ and _Included with Opencpn_ manuals are built by modules in the github rep 'https://github.com/opencpn-manuals/plugins'
 
 Plugins included in the master catalog are indicated by image:managed_plugin.png[]
 
 == Plugin Categories
 
-=== Included Plugins
-
-Installed with the basic OpenCPN program.
-
-* xref:dashboard:dashboard.adoc[Dashboard]
-* xref:wmm:wmm.adoc[World Magnetic]
-* xref:grib_weather:grib_weather.adoc[Grib Weather]
-* xref:chart_downloader_tab:chart_downloader_tab.adoc[Chart Downloader Tab]
-
-=== AIS / Radar
-* xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display] image:managed_plugin.png[]
-* xref:radar::index.adoc[Radar Display] image:managed_plugin.png[]
-* xref:rtlsdr::index.adoc[AIS RTL-SDR]
-
-=== Charts
-* xref:oesenc::index.adoc[oeSENC Charts] image:managed_plugin.png[]
-* xref:photolayer::index.adoc[PhotoLayer] image:managed_plugin.png[]
-* xref:vfkaps::index.adoc[VfKaps VentureFarther] image:managed_plugin.png[]
-* xref:rotationctrl::index.adoc[RotationCtrl]
-* xref:chartscale::index.adoc[ChartScale]
-* xref:objsearch::index.adoc[ObjSearch]
-* xref:projections::index.adoc[Projections]
-
-=== Logs
-* xref:logbook::index.adoc[Logbook] image:managed_plugin.png[]
-* xref:findit::index.adoc[Findit] image:managed_plugin.png[]
-* xref:vdr::index.adoc[Voyage Data Recorder VDR] image:managed_plugin.png[]
-* xref:nmea_converter:ROOT:index.adoc[NMEAconverter]
-
-=== Navigation
-* xref:squiddio::index.adoc[sQuiddio] image:managed_plugin.png[]
-* xref:celestial_navigation::index.adoc[Celestial Navigation] image:managed_plugin.png[]
-* xref:route_great_circle::index.adoc[Route Great Circle]
-* xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
-* xref:otcurrent::index.adoc[oTidalCurrent] image:managed_plugin.png[]
-* xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
-* xref:wmm:wmm.adoc[World Magnetic (Included)]
-
-=== Safety
-* xref:ocpn_draw:ROOT:index.adoc[Ocpn Draw] image:managed_plugin.png[]
-* xref:watchdog::index.adoc[Watchdog] image:managed_plugin.png[]
-* xref:sar::index.adoc[SAR] image:managed_plugin.png[]
-
-=== Sailing
-* xref:tactics::index.adoc[Tactics] image:managed_plugin.png[]
-* xref:dashboard_tactics::index.adoc[Dasboard Tactics] image:managed_plugin.png[]
-* xref:plots::index.adoc[Plots] image:managed_plugin.png[]
-* xref:polar:ROOT:index.adoc[Polar] image:managed_plugin.png[]
-* xref:windvane::index.adoc[Windvane] image:managed_plugin.png[]
-
-=== Weather
-* xref:weatherfax::index.adoc[Weatherfax] image:managed_plugin.png[]
-* xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
-* xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
-* xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
-
-=== Utility
-* xref:statusbar:ROOT:index.adoc[Statusbar] image:managed_plugin.png[]
-* xref:calculator::index.adoc[Calculator]
-* xref:launcher:ROOT:index.adoc[Launcher]
-* xref:debugger:ROOT:index.adoc[Debugger]
-* xref:pypilot::index.adoc[Pypilot] image:managed_plugin.png[]
-* xref:shipdriver::index.adoc[Shipdriver] image:managed_plugin.png[]
-* xref:twocan::index.adoc[Twocan] image:managed_plugin.png[]
-* xref:odometer:ROOT:index.adoc[Odometer] image:managed_plugin.png[]
+include::partial$nav-main.adoc[]
 
 === Click on a link above to see the plugin manual
 

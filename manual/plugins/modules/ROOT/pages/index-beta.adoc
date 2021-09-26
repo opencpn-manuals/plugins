@@ -1,22 +1,7 @@
 = Beta Plugins
 
-* xref:engine-dash::index.adoc[Engine Dashboard]
-* xref:race-start::index.adoc[Race Start]
-// * xref:trackpoint:trackpoint.adoc[Trackpoint]
-* xref:tidefinder::index.adoc[TideFinder]
-// * xref:javascript:javascript.adoc[JavaScript]
-* xref:deviation::index.adoc[Deviation]
-* xref:survey::index.adoc[Survey]
-* xref:autopilot-rm::index.adoc[Autopilot for Raymarine]
-* xref:autotrackraymarine::index.adoc[AutoTrackRaymarine for Evolution]
-* xref:autopilot_route::index.adoc[Autopilot Route]
-* xref:admiralty::index.adoc[Admiralty Tides Tables]
-* xref:ncdf::index.adoc[NetCDF tidal currents]
-* xref:otidalroute::index.adoc[oTidalRoute uses Grib Currents]
-* xref:sailawaynmea::index.adoc[SailawayNMEA]
-* xref:uktides::index.adoc[UKTides]
-* xref:otidalplan::index.adoc[oTidalPlan uses Harmonics]
-* xref:earthexplorer::index.adoc[Earth Explorer]
+include::partial$nav-beta.adoc[]
+
 ====================================================
 
 Main plugins found here: xref:opencpn-plugins::index.adoc[Main plugins]
