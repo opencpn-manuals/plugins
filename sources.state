@@ -17,7 +17,7 @@ GPS-Odometer_pi https://github.com/LennartG-Sve/GPS-Odometer_pi.git 4ba36c9cc5da
 launcher_pi https://github.com/nohal/launcher_pi.git 57a45aee8a4df056e6721003e64327006f717c5f
 LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git eca726671517e823048caba4981d821d19bd04b3
 ncdf_pi https://github.com/Rasbats/ncdf_pi.git 82b13e4c735d75cde41c2c2c7781c72509e83d46
-NmeaConverter_pi https://github.com/opencpn-manuals/NmeaConverter_pi.git 53da252f42d201334eaf6544ee32b98c750662f5
+NmeaConverter_pi https://github.com/RooieDirk/NmeaConverter_pi.git 48fa9a5f6b1d0edb2e9a951c13700e45a596e2c1
 objsearch_pi https://github.com/nohal/objsearch_pi.git 2a0758cf039a6fa3bf239250a019b55ef7803db8
 ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git 75681de8c119eebb26df61e95686c9513bcdd40e
 ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git a9b818dda55ebb84dd80b0c4700a19a685aa4e8e
