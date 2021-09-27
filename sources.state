@@ -1,7 +1,7 @@
 admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git fa4b6e4de7073fa646ac68336dade1c7cff17140
 aisradar_pi https://github.com/nohal/aisradar_pi.git 296812e4b5b3b38d9c827527ed86360067af4f35
+autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 436baa5820d8930282446afa046390ccee139d5a
 Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git 0357a1d6af15f838eee3a4b77d77f26d136f50cf
-autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 7a5215e91da5a76915b03ffb2e2b92a923fd77eb
 AutoTrackRaymarine_pi https://github.com/douwefokkema/AutoTrackRaymarine_pi.git 346b99ca6197394ef39882ef11ecc1e6b809dde8
 calculator_pi https://github.com/rasbats/calculator_pi.git 5e7df4e3c050c22f2da9264b02ad176678bffc2d
 celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git 97629a1ed4aa895fd5cfe1f020c3429ca48f4ed4
@@ -19,9 +19,9 @@ LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git eca726671517e823
 ncdf_pi https://github.com/Rasbats/ncdf_pi.git 82b13e4c735d75cde41c2c2c7781c72509e83d46
 NmeaConverter_pi https://github.com/RooieDirk/NmeaConverter_pi.git 48fa9a5f6b1d0edb2e9a951c13700e45a596e2c1
 objsearch_pi https://github.com/nohal/objsearch_pi.git 2a0758cf039a6fa3bf239250a019b55ef7803db8
+ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git 2daf811a9dd04f69a2bbcff3ef9b223ca037b03a
 ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git 75681de8c119eebb26df61e95686c9513bcdd40e
-ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git a9b818dda55ebb84dd80b0c4700a19a685aa4e8e
-oesenc_pi https://github.com/bdbcat/oesenc_pi.git ed789fe4cc6d50c568acc23bdca65d11cb3deeb6
+oesenc_pi https://github.com/bdbcat/oesenc_pi.git 666ad67eea6008a48daa5b5466e0eb9dc97e6722
 otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 94a487b177c9615958ec92a4309d8c8afb3e93af
 otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git c4ecd80d6a10f080795a6393e181ab07a9e48dfd
 otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 404f7eeadf935b1acc1d840f940a6b893f1bdfbc
@@ -35,7 +35,7 @@ radar_pi https://github.com/opencpn-radar-pi/radar_pi.git 779738508433d912241ffc
 rotationctrl_pi https://github.com/rgleason/rotationctrl_pi.git 0979fcf759605ad3b26cc33991d7388066886f53
 route_pi https://github.com/rgleason/route_pi.git 6a71f40288218aeb4ed3fb839258648a2e8a50dc
 rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 42e3c521655f1d352314b1dab9604fe31babe71e
-s63_pi https://github.com/bdbcat/s63_pi 9d2ee9b08e78e9e739f502b827c43583563dbfd4
+s63_pi https://github.com/bdbcat/s63_pi 9bbf78405ec1fc05d4f30a9678f5980a37c09d35
 SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git fd03456757c612befe68f7b6e13d80c6d9145a0a
 sar_pi https://github.com/Rasbats/sar_pi.git daa606f6271c8b521f111f77f8ee655a971e197f
 shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git d58def6ffcae7366cbb66b2ed929555b6710ede9
@@ -49,6 +49,6 @@ UKTides_pi https://github.com/Rasbats/UKTides_pi.git f29679c94cc6546af772f1809ca
 vdr_pi https://github.com/rgleason/vdr_pi.git 5503ac81136c12496985bbea24ca1fc45d08309c
 vfkaps_pi https://github.com/rasbats/vfkaps_pi.git 40f83ae0baa36b6212d8ad0013f8c97b204dec3e
 watchdog_pi https://github.com/rgleason/watchdog_pi.git 16374cdf9ffcb3d8db37b2244cee012aecfb06c9
-weatherfax_pi https://github.com/rgleason/weatherfax_pi.git 86ef95e9ef2bf52675b1c0f091b984500315d3dc
 weather_routing_pi https://github.com/rgleason/weather_routing_pi.git 89ce242dd81f505b1b5277ea54eb6b0deaf608b7
-windvane_pi https://github.com/jongough/windvane_pi.git 44e8b986e423d7033d83b40a9ff7b0f40f205768
+weatherfax_pi https://github.com/rgleason/weatherfax_pi.git 86ef95e9ef2bf52675b1c0f091b984500315d3dc
+windvane_pi https://github.com/jongough/windvane_pi.git edfcd9584c31eefe6794797fe8b37c285779b807
