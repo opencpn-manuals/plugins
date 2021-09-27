@@ -13,22 +13,23 @@
 *** xref:opencpn-plugins:misc:nmea-software.adoc[NMEA Tools]
 *** xref:opencpn-plugins:misc:celestial-nav.adoc[Celestial Navigation Tool]
 
+
 * Main Plugins
 +
 --
-include::ROOT:partial$nav-main.adoc[]
+include::partial$nav-plugins.adoc[]
 --
 * Beta Plugins
 +
 --
-include::partial$nav-beta.adoc[]
+include::partial$nav-betaplugins.adoc[]
 --
 * All plugins A-Z
 +
 --
-include::partial$nav-all.adoc[]
+include::partial$nav-all-plugins.adoc[]
 --
-
+*
 * Authoring the manual
 ** xref:opencpn-plugins:authoring:pm-plugin-documentation.adoc[Plugin Documentation Guidelines]
 ** xref:opencpn-plugins:authoring:intro.adoc[Manual Maintenance Introduction]

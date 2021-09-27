@@ -19,13 +19,14 @@
 
 * F - O
 ** xref:findit::index.adoc[Findit]
+** xref:grib_weather:grib_weather.adoc[Grib Weather]
 ** xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
 ** xref:launcher:ROOT:index.adoc[Launcher]
 ** xref:logbook::index.adoc[Logbook]
 ** xref:ncdf::index.adoc[NetCDF Tidal Currents]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 ** xref:objsearch::index.adoc[ObjSearch]
-** xref:ocpn_draw:ROOT:index.adoc[Ocpn Draw]
+** xref:ocpn_draw:ROOT:index.adoc[ODraw]
 ** xref:odometer:ROOT:index.adoc[Odometer]
 ** xref:oesenc::index.adoc[oeSENC Charts]
 ** xref:otcurrent::index.adoc[oTidalCurrent]
@@ -51,12 +52,12 @@
 ** xref:sar::index.adoc[SAR]
 ** xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
 ** xref:shipdriver::index.adoc[Shipdriver]
-** xref:squiddio::index.adoc[sQuiddio]
+** xref:squiddio::index.adoc[Squiddio]
 ** xref:statusbar::index.adoc[Statusbar]
 ** xref:survey::index.adoc[Survey]
 ** xref:tactics::index.adoc[Tactics]
 ** xref:tidefinder::index.adoc[TideFinder]
-** xref:twocan::index.adoc[TwoCan]
+** xref:twocan::index.adoc[TwoCan]'
 
 * U - Z
 ** xref:uktides::index.adoc[UKTides]
@@ -66,4 +67,5 @@
 ** xref:weatherfax::index.adoc[WeatherFax]
 ** xref:weather_routing::index.adoc[Weather Routing]
 ** xref:windvane::index.adoc[Windvane]
+** xref:wmm:wmm.adoc[World Magnetic]
 ** xref:wmm:wmm.adoc[World Magnetic (Included)]

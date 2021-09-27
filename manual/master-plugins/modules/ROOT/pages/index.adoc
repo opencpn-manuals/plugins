@@ -1,12 +1,12 @@
 = Plugins Manual
 
-xref:misc:misc.adoc[General and Supplementary information]
+xref:misc:misc.adoc[General and supplementary information]
 
-xref:index-main.adoc[Main Plugins (by Category)]
+xref:plugins.adoc[Main Plugins (by Category)]
 
 Main plugins are stable plugins that have been well tested. They are published on the main OpenCPN website downloads page. Where a managed version is available the plugin will appear in the master catalog of the OpenCPN program.
 
-xref:index-beta.adoc[Beta Plugins]
+xref:opencpn-beta-plugins::index.adoc[Beta Plugins]
 
 Beta plugins are plugins which are in development and not yet considered stable enough to be published on the main OpenCPN website or included in the master catalog. Where a managed version has been produced this will appear in the beta catalog of the OpenCPN program. Beta plugins may cause your computer to freeze or result in OpenCPN failing to work correctly. They are used entirely at your own risk.
 
