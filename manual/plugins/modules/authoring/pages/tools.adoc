@@ -1,0 +1,39 @@
+= Tools
+
+== Reading the adoc files
+
+Firefox and Chrome have an extension for reading the asciidoc format
+called Asciidoctor.js Live Preview:
+
+https://github.com/asciidoctor/asciidoctor-browser-extension/
+
+This allows a preview of the page as it would appear in HTML. The
+limitation is that these tools does not understand the Antora markup,
+only Asciidoc. However, in most scenarios this doesn't really matter.
+
+Also see the xref:FAQ.adoc[FAQ] on how to view images in this extension.
+
+When editing using https://code.visualstudio.com[Visual Studio Code] the preview option shows how the HTML will appear.
+
+== Editing asciidoc
+
+Asciidoc files are plain text files which can be edited with any
+text editor. Using a xref:localbuild.adoc[local build], no other
+tools are required.
+
+VS Code is a editor which has an asciidoc extension
+(Win, Lin, Mac). https://code.visualstudio.com. For Linux users,
+it is also available as a Flatpak package at
+https://flathub.org/apps/details/com.visualstudio.code[Flathub]
+and and a snap package at https://snapcraft.io/code[snapcraft]
+Using tools like these the need to make a local build and thus
+the need to install Antora can be avoided.
+
+VS Code is based on the open-sourced vscode project, but adds some
+features like a C# debugger and anti-features like telemetry. The
+https://vscodium.com/[vscodium] project delivers a clean open-source
+version. Codium is available in major platforms including Windows, MacOS,
+Flatpak and Snap.
+
+There are also asciidoc plugins for the ubiquitous IntelliJ and
+Eclipse platforms. Not tested within the project.

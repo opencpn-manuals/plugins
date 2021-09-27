@@ -1,0 +1,6 @@
+= Plugins Manual
+
+xref::misc.adoc[General and supplementary information]
+
+
+xref::authoring:author.adoc[Authoring the manual]
