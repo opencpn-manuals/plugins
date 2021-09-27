@@ -25,7 +25,7 @@
 ** xref:ncdf::index.adoc[NetCDF Tidal Currents]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 ** xref:objsearch::index.adoc[ObjSearch]
-** xref:ocpn_draw:ROOT:index.adoc[Ocpn Draw]
+** xref:ocpn_draw:ROOT:index.adoc[OcpnDraw]
 ** xref:odometer:ROOT:index.adoc[Odometer]
 ** xref:oesenc::index.adoc[oeSENC Charts]
 ** xref:otcurrent::index.adoc[oTidalCurrent]
