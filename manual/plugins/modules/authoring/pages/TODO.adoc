@@ -1,4 +1,0 @@
-= TODO
-
-* Prevent a PR for the manual causing a circleci build. 
-* Work on broken links.
