@@ -20,6 +20,7 @@
 * F - O
 ** xref:findit::index.adoc[Findit]
 ** xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
+** xref:javascript::index.adoc[JavaScript]
 ** xref:launcher:ROOT:index.adoc[Launcher]
 ** xref:logbook::index.adoc[Logbook]
 ** xref:ncdf::index.adoc[NetCDF Tidal Currents]

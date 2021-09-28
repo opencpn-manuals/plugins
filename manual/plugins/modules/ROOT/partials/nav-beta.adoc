@@ -2,7 +2,7 @@
 * xref:race-start:ROOT:index.adoc[Race Start]
 //  * xref:opencpn-beta-plugins:trackpoint:index.adoc[Trackpoint]
 * xref:tidefinder::index.adoc[TideFinder]
-// * xref:opencpn-beta-plugins:javascript:javascript.adoc[JavaScript]
+* xref:javascript::index.adoc[JavaScript]
 * xref:deviation::index.adoc[Deviation]
 * xref:survey::index.adoc[Survey]
 * xref:autopilot-rm::index.adoc[Autopilot Raymarine]
