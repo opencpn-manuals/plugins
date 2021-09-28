@@ -94,17 +94,7 @@ A build of the OpenCPN Plugins Manual needs to locate and use the dev plugin rep
 ----
 ├───manual
 │   │   
-│   ├───beta-plugins
-│   │   │   antora.yml
-│   │   │   
-│   │   └───modules
-│   │       └───ROOT
-│   │           │   nav.adoc
-│   │           │       
-│   │           └───pages
-│   │                   beta-plugins.adoc
-│   │                   index.adoc
-│   └───master-plugins
+│   └───plugins
 │       │   antora.yml
 │       │   
 │       └───modules
@@ -114,17 +104,19 @@ A build of the OpenCPN Plugins Manual needs to locate and use the dev plugin rep
 │           │   │          
 │           │   ├───pages
 │           │   │       index.adoc
-│           │   │       plugins.adoc
+│           │   │       index-main.adoc
+│           │   │       index-beta.adoc
+│           │   │       index-all.adoc
 │           │   │       
 │           │   └───partials
-│           │           nav-all-plugins.adoc
-│           │           nav-betaplugins.adoc
-│           │           nav-plugins.adoc
+│           │           nav-all.adoc
+│           │           nav-beta.adoc
+│           │           nav-main.adoc
 ----
 
 Asciidoc nav- files in the partials directory are used to create lists of the plugins, which appear on the left hand side of the website page. They duplicate other lists but they are essential for the indexing of the different individual dev plugin manuals.
 
-There are two components in the manual, master-plugins and beta-plugins. On the website it is possible to navigate between the master and beta plugins. Each component has a number of modules. ROOT is an important module that contains the nav.adoc page that provides the link with the master and beta pages. By using nav-plugins.adoc and nav-beta-plugins.adoc in the partials directory we simplify the construction of the nav.adoc file, which will not be touched in the following edits.
+There is one component in the manual, plugins. On the website it is possible to navigate the plugins component. Each component can have a number of modules. ROOT is an important module that contains the nav.adoc page that provides the link with the plugin pages. Nav.adoc is comprized of the partial directory files nav-main.adoc, nav-beta.adoc and nav-all.adoc which are used to construct the left hand navigation bar, which will not be touched in the following edits.
 
 As an example the following lines were added when DR_pi was added to the master plugins:
 
@@ -146,11 +138,11 @@ DR_pi https://github.com/Rasbats/DR_pi.git f88efae675945a7f1eb5b3cc33ddaa3ff560d
 
 The indenting is important. Follow the indenting already in use.
 
-Because we are working with a master plugin that has been released, the files plugins.adoc nav-plugins.adoc, and nav-all-plugins.adoc are edited. 
+Editing to add or remove a plugin from the index is done in the _partials_ folder, because these files are "included" in both the left side navigation and the center display. Because we are working with a main plugin that has been released, the files nav-main.adoc and nav-all.adoc are edited. (The file nav-beta.adoc is edited for beta plugins.  Authoring and General and Supplementary Information changes may require index changes in those sections but that is normally done by maintainers.) 
 
-== *plugins.adoc*
+== *nav-main.adoc*
 
-'plugins.adoc' is in the 'pages' directory of 'ROOT'. It contains a list of the master plugins and creates the main master plugins page.
+'nav-main.adoc' is in the 'partials' directory of 'ROOT'. It contains a list of the main plugins displayed as part of nav.adoc (left side navigation)  and is also "included" in the index-main.adoc file which shows at the center panel.
 
 [,]
 ----
@@ -160,9 +152,9 @@ Because we are working with a master plugin that has been released, the files pl
 ...
 ----
 
-== *nav-plugins.adoc*
+== *nav-main.adoc*
 
-'nav-plugins.adoc' is in the 'partials' directory and is used for navigation and indexing.
+'nav-main.adoc' is in the 'partials' directory and is used for left side navigation index and is included with index-main.adoc file which shows at the center.
 
 [,]
 ----
@@ -172,9 +164,9 @@ Because we are working with a master plugin that has been released, the files pl
 ...
 ----
 
-== *nav-all-plugins.adoc*
+== *nav-all.adoc*
 
-'nav-all-plugins.adoc' is in the 'partials' directory and is an alphabetical list, appearing on the left hand side of the pages.
+'nav-all.adoc' is in the 'partials' directory and is an alphabetical list, appearing on the left hand side of the pages.
 
 [,]
 ----
@@ -223,17 +215,7 @@ plugins:.
 │   │   README.md
 │   │   ui-bundle.zip
 │   │   
-│   ├───beta-plugins
-│   │   │   antora.yml
-│   │   │   
-│   │   └───modules
-│   │       └───ROOT
-│   │           │   nav.adoc
-│   │           │       
-│   │           └───pages
-│   │                   beta-plugins.adoc
-│   │                   index.adoc
-│   └───master-plugins
+│   └───plugins
 │       │   antora.yml
 │       │   
 │       └───modules
@@ -249,12 +231,14 @@ plugins:.
 │           │   │          
 │           │   ├───pages
 │           │   │       index.adoc
-│           │   │       plugins.adoc
+│           │   │       index-main.adoc
+│           │   │       index-beta.adoc
 │           │   │       
 │           │   └───partials
-│           │           nav-all-plugins.adoc
-│           │           nav-betaplugins.adoc
-│           │           nav-plugins.adoc
+│           │           nav-all.adoc
+│           │           nav-beta.adoc
+│           │           nav-main.adoc
+|           |
 │           ├───sat2chart
 │           └───wmm
 └───sources
