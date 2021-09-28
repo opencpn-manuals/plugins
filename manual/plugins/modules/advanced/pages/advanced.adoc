@@ -116,7 +116,7 @@ A build of the OpenCPN Plugins Manual needs to locate and use the dev plugin rep
 
 Asciidoc nav- files in the partials directory are used to create lists of the plugins, which appear on the left hand side of the website page. They duplicate other lists but they are essential for the indexing of the different individual dev plugin manuals.
 
-There is one component in the manual, plugins. On the website it is possible to navigate the plugins component. Each component can have a number of modules. ROOT is an important module that contains the nav.adoc page that provides the link with the plugin pages. Nav.adoc is comprized of the partial directory files nav-main.adoc, nav-beta.adoc and nav-all.adoc which are used to construct the left hand navigation bar, which will not be touched in the following edits.
+There is one component in the manual, plugins. On the website it is possible to navigate the plugins component. Each component can have a number of modules. ROOT is an important module that contains the nav.adoc page that provides the link with the plugin pages. Nav.adoc is comprised of the partials directory files nav-main.adoc, nav-beta.adoc and nav-all.adoc which are used to construct the left hand navigation bars, which are edited as necessary.
 
 As an example the following lines were added when DR_pi was added to the master plugins:
 
