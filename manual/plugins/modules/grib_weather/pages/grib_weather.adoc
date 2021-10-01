@@ -10,6 +10,11 @@ no separate download is required.*
 Source: https://github.com/OpenCPN/OpenCPN/tree/master/plugins[Opencpn Internal Plugin] +
 Forum: http://www.cruisersforum.com/forums/f134/new-grib-presentation-100414.html[Grib Weather Forum] +
 
+== Technical Specs
+
+Grib_pi supports template numbers: 0, 10, 30 & 40  from this specification: 
+https://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_table3-1.shtml
+
 == What is a grib file?
 
 If you are not familiar with grib weather files, make sure you
