@@ -18,10 +18,10 @@ content:
       branches: master
       edit_url: https://github.com/rgleason/admiralty_tide_tables_pi/edit/master/{path}
 
-    - url: sources/aisradar_pi/
+    - url: sources/AISradar_pi/
       branches: master
-      start_path: manual/ais_radar_display
-      edit_url: https://github.com/nohal/aisradar_pi/edit/master/{path}
+      start_path: manual
+      edit_url: https://github.com/Verezano/AISradar_pi/edit/master/{path}
 
     - url: sources/Autopilot-Plugin
       start_path: manual
