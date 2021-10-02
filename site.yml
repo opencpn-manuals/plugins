@@ -10,7 +10,6 @@ content:
       branches: HEAD
       start_paths:
       - manual/plugins
-#      - manual/beta-plugins
       edit_url: https://github.com/opencpn-manuals/plugins/edit/main/{path}
 
     # @@plugin-list-begin    Keep this comment, used by main project
@@ -128,7 +127,6 @@ content:
       branches: master
       start_path: manual
       edit_url: https://github.com/nohal/objsearch_pi/edit/master/{path}
-
 
     - url: sources/ocpn_draw_pi
       branches: master
