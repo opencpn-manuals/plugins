@@ -603,11 +603,11 @@ For advanced discussion of mail servers:
 xref:mail_servers.adoc[Mail Servers]
 
 
-=== Supported Saildocs GFS Grib Data ====
+=== Supported Saildocs GFS Grib Data
 
 http://www.saildocs.com/gribmodels
 
-==== Saildocs GFS Data Available 09-05-2021 ==
+==== Saildocs GFS Data Available 09-05-2021
 
 * PRMSL or PRESS (PRessure / Mean Sea Level, smoothed)
   MSLP (unfiltered Mean Sea Level pressure)
@@ -637,7 +637,7 @@ The Default parameter is "HTSGW" (height of significant waves, i.e. the average 
 
 Using Saildocs GFS just select "Wave" and these three parameters are added.
 
-==== Not Supported ==
+==== Not Supported
 
 * RH (Relative Humidity 2m above surface)
 * LFTX (LiFTed indeX)
