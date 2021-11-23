@@ -601,3 +601,47 @@ lieu of professionally-generated charts or forecasts.
 For advanced discussion of mail servers:
 
 xref:mail_servers.adoc[Mail Servers]
+
+
+==== Supported Saildocs GFS Grib Data ====
+
+http://www.saildocs.com/gribmodels
+
+== Saildocs GFS Data Available 09-05-2021 ==
+
+* PRMSL or PRESS (PRessure / Mean Sea Level, smoothed)
+  MSLP (unfiltered Mean Sea Level pressure)
+* WIND (10 meters above surface)
+* GUST (at 10 meters)
+* AIRTMP (temperature 2 meters above surface)
+* SFCTMP or SEATEMP (temp at surface)
+  RH (Relative Humidity 2m above surface)
+  LFTX (LiFTed indeX)
+* CAPE (Clear Air Potential Energy)
+  RAIN (Precip rate, mm / hr)
+* APCP (Accumulated precip)
+* HGT500 (500mb height)
+  TMP500 (temperature at 500mb level)
+* WIND500 (Wind velocity at 500mb level)
+  ABSV (Absolute vorticity at 500mb)
+* CLOUDS TCDC (Total cloud cover)
+
+* Parameters that OpenCPN Supports
+
+Also supported from saildocs WW3 / GFSwave:
+* HTSGW Significant Height of Combined Wind Waves and Swell [100] 
+* WVDIR Wind Waves Direction (towards) [109]
+* WVPER Wind Waves Mean Period [110]
+
+The Default parameter is "HTSGW" (height of significant waves, i.e. the average of the largest 1/3 of combined swell and wind-waves), "WAVES" means the same.
+
+Using Saildocs GFS just select "Wave" and these three parameters are added.
+
+== Not Supported ==
+
+* RH (Relative Humidity 2m above surface)
+* LFTX (LiFTed indeX)
+* TMP500 (temperature at 500mb level)
+* ABSV (Absolute vorticity at 500mb)
+
+We can't request RH , LFTX, TMP500 and ABSV, we do use RH if available for dew point, I'm not sure we are doing anything with it though. Assuming we do we could request RH if AIRTMP is set.
