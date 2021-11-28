@@ -5,7 +5,7 @@
 ** xref:chart_downloader_tab:chart_downloader_tab.adoc[Chart Downloader Tab]
 
 * AIS / Radar
-** xref:ais_radar_display:ROOT:ais_radar_display.adoc[AISradar Display] image:managed_plugin.png[]
+** xref:aisradar:ROOT:index.adoc[AISradar Display] image:managed_plugin.png[]
 ** xref:radar:ROOT:index.adoc[Radar Display] image:managed_plugin.png[]
 ** xref:rtlsdr::index.adoc[AIS RTL-SDR]
 
