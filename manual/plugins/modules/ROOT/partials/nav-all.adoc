@@ -1,5 +1,6 @@
 * A - E
 ** xref:admiralty::index.adoc[Admiralty Tides Tables]
+** xref:ais-vd::index.adoc[AIS-Voyage Data]
 ** xref:aisradar:ROOT:index.adoc[AISradar Display]
 ** xref:autopilot-rm::index.adoc[Autopilot Raymarine]
 ** xref:autopilot_route::index.adoc[Autopilot Route]

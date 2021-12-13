@@ -18,6 +18,11 @@ content:
       branches: master
       edit_url: https://github.com/rgleason/admiralty_tide_tables_pi/edit/master/{path}
 
+    - url: sources/ais--vd_pi
+      start_path: manual
+      branches: master
+      edit_url: https://github.com/Hakansv/ais-vd_pi/edit/master/{path}
+
     - url: sources/AISradar_pi/
       start_path: manual
       branches: master      

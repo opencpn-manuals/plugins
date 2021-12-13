@@ -8,6 +8,7 @@
 ** xref:aisradar:ROOT:index.adoc[AISradar Display] image:managed_plugin.png[]
 ** xref:radar:ROOT:index.adoc[Radar Display] image:managed_plugin.png[]
 ** xref:rtlsdr::index.adoc[AIS RTL-SDR]
+** xref:ais-vd::index.adoc[AIS-Voyage Data]
 
 * Charts
 // ** xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
