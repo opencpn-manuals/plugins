@@ -1,5 +1,5 @@
 admiralty_tide_tables_pi https://github.com/rgleason/admiralty_tide_tables_pi.git fa4b6e4de7073fa646ac68336dade1c7cff17140
-ais-vd_pi https://github.com/Hakansv/ais-vd_pi.git 59ef481b283a9b4dbf1d4283dd40f0494cccc73b
+ais-vd_pi https://github.com/Hakansv/ais-vd_pi.git 9a9a5cf32bf01be0780296b59d55ed60735dd4e7
 AISradar_pi https://github.com/Verezano/AISradar_pi.git a37f5afa54d6b6b90fdcc8ac59a9fb6ef6d6efed
 Autopilot-Plugin https://github.com/rgleason/Autopilot-Plugin.git 0357a1d6af15f838eee3a4b77d77f26d136f50cf
 autopilot_route_pi https://github.com/rgleason/autopilot_route_pi.git 02cc9601081dddca7b3863be99f450b52bb9b8fe
@@ -7,7 +7,7 @@ AutoTrackRaymarine_pi https://github.com/douwefokkema/AutoTrackRaymarine_pi.git 
 calculator_pi https://github.com/rasbats/calculator_pi.git 9b77bb172b1493b8f06a1b7eb38e49852d1eef12
 celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git ee7cc82ece8a565f01b6afff05022b24e47e78df
 chartscale_pi https://github.com/rgleason/chartscale_pi.git f954e1adbc63de791d205c35fc3091ae94e6f2cb
-climatology_pi https://github.com/rgleason/climatology_pi.git 16a5314ca80eb3cc7e21e94e6bdac3f42c3c2bf6
+climatology_pi https://github.com/rgleason/climatology_pi.git f5ef4707e538ec47fcaac122715369e0e96dfe6e
 dashboard_tactics_pi https://github.com/rgleason/dashboard_tactics_pi.git 2630baa8114c827dc47cc4320b14cae2dcec26a4
 Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 203b21af43f011d00f00a5987badf7c4ab5bc3ca
 DR_pi https://github.com/Rasbats/DR_pi.git 5cdeee76da943371343c5f4c5afcbd607a0c6d11
