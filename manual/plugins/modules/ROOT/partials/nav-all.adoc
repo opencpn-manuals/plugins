@@ -21,6 +21,7 @@
 * F - O
 ** xref:findit::index.adoc[Findit]
 ** xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
+** xref:gps-odometer:ROOT:index.adoc[GPS Odometer]
 ** xref:javascript::index.adoc[JavaScript]
 ** xref:launcher:ROOT:index.adoc[Launcher]
 ** xref:logbook::index.adoc[Logbook]
@@ -28,7 +29,6 @@
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 ** xref:objsearch::index.adoc[ObjSearch]
 ** xref:ocpn_draw:ROOT:index.adoc[OcpnDraw]
-** xref:odometer:ROOT:index.adoc[Odometer]
 ** xref:oesenc::index.adoc[oeSENC Charts]
 ** xref:otcurrent::index.adoc[oTidalCurrent]
 ** xref:otidalplan::index.adoc[oTidalPlan uses Harmonics]

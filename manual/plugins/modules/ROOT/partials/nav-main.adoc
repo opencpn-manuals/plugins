@@ -8,7 +8,6 @@
 ** xref:aisradar:ROOT:index.adoc[AISradar Display] image:managed_plugin.png[]
 ** xref:radar:ROOT:index.adoc[Radar Display] image:managed_plugin.png[]
 ** xref:rtlsdr::index.adoc[AIS RTL-SDR]
-** xref:ais-vd::index.adoc[AIS-Voyage Data] image:managed_plugin.png[]
 
 * Charts
 // ** xref:nv_charts:ROOT:nv_charts.adoc[NV Charts]
@@ -58,6 +57,7 @@
 ** xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 
 * Utility
+** xref:ais-vd::index.adoc[AIS-Voyage Data] image:managed_plugin.png[]
 ** xref:statusbar::index.adoc[Statusbar] image:managed_plugin.png[]
 ** xref:calculator:ROOT:index.adoc[Calculator]
 ** xref:launcher:ROOT:index.adoc[Launcher]
@@ -65,4 +65,4 @@
 ** xref:pypilot::index.adoc[Pypilot] image:managed_plugin.png[]
 ** xref:shipdriver::index.adoc[Shipdriver] image:managed_plugin.png[]
 ** xref:twocan::index.adoc[TwoCan] image:managed_plugin.png[]
-** xref:odometer:ROOT:index.adoc[Odometer] image:managed_plugin.png[]
+** xref:gps-odometer:ROOT:index.adoc[GPS Odometer] image:managed_plugin.png[]
