@@ -15,7 +15,7 @@ EarthExplorer_pi https://github.com/Rasbats/EarthExplorer_pi.git 7f3232e740a0c68
 EngineDashboard https://github.com/TwoCanPlugin/EngineDashboard.git 3a1d97a977455321eb82869fbbeeef8d31026404
 Findit_pi https://github.com/rgleason/Findit_pi.git ad58de02b6ae2436c3dee41d5c04ec1d71b0f8c2
 gecomapi_pi https://github.com/nohal/gecomapi_pi.git f5d606919dc28bb4cefd3be943ec64abe22171dc
-GPS-Odometer_pi https://github.com/LennartG-Sve/GPS-Odometer_pi.git 6db4a67dacbae9aaeb0eb51c744717fed6642bda
+GPS-Odometer_pi https://github.com/LennartG-Sve/GPS-Odometer_pi.git b8c82a4f1fba7bcc7fed34dae2bb878cd73a5e68
 JavaScript_pi https://github.com/antipole2/JavaScript_pi.git b84e83ed3c775bd1159765d813fa7347c2c117f8
 launcher_pi https://github.com/nohal/launcher_pi.git 57a45aee8a4df056e6721003e64327006f717c5f
 LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git aae491cc0cc31f09cbe88b732d37c9342b08d7e1
@@ -41,7 +41,7 @@ rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 42e3c521655f1d352314b1dab960
 s63_pi https://github.com/bdbcat/s63_pi b15b928828889c37a9bfe28f3fc4938877296198
 SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git fd03456757c612befe68f7b6e13d80c6d9145a0a
 sar_pi https://github.com/Rasbats/sar_pi.git 34da0108c4537f298d6da656af334ceb06a93f62
-shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 42b36fc59b88cc35993876af1f9cf4109beb05ee
+shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git aaf6c06ab2ae44f9fbbc58c2d7be6e5b402e5554
 squiddio_pi https://github.com/mauroc/squiddio_pi.git 1deb2f160f5f41e74820598a2e599010db71213a
 statusbar_pi https://github.com/rgleason/statusbar_pi.git d6f60f4e45d285f52b700b82eba55d9a90bd0df8
 survey_pi https://github.com/Rasbats/survey_pi.git 1a4da4a89297b49c3264b6129e56e660eec929f0
