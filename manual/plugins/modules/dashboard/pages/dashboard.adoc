@@ -132,6 +132,7 @@ image::dash-select-instr_0.png[image,width=260,height=265]
 |Sunrise/Sunset
 |Moon phase
 |Air Temp
+|Altitude
 |True Wind angle
 |True Wind direction
 |True Wind Speed
