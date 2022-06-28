@@ -44,7 +44,7 @@
 ** xref:race-start:ROOT:index.adoc[Race Start]
 ** xref:radar:ROOT:index.adoc[Radar Display]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
-** xref:route_great_circle::index.adoc[Route Great Circle]
+** xref:route::index.adoc[Route Great Circle]
 ** xref:rtlsdr::index.adoc[AIS RTL-SDR]
 
 
