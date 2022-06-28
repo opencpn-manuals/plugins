@@ -29,7 +29,7 @@
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 ** xref:nv_charts:ROOT:index.adoc[NV Charts]
 ** xref:objsearch::index.adoc[ObjSearch]
-** xref:ocpn_draw:ROOT:index.adoc[OcpnDraw]
+** xref:odraw:ROOT:index.adoc[OcpnDraw]
 ** xref:oesenc::index.adoc[oeSENC Charts]
 ** xref:otcurrent::index.adoc[oTidalCurrent]
 ** xref:otidalplan::index.adoc[oTidalPlan uses Harmonics]

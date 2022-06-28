@@ -39,7 +39,7 @@
 ** xref:wmm:wmm.adoc[World Magnetic (Included)]
 
 * Safety
-** xref:ocpn_draw:ROOT:index.adoc[OcpnDraw] image:managed_plugin.png[]
+** xref:odraw:ROOT:index.adoc[OcpnDraw] image:managed_plugin.png[]
 ** xref:watchdog::index.adoc[Watchdog] image:managed_plugin.png[]
 ** xref:sar::index.adoc[SAR] image:managed_plugin.png[]
 
