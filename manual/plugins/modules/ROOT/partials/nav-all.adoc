@@ -31,6 +31,7 @@
 ** xref:objsearch::index.adoc[ObjSearch]
 ** xref:odraw:ROOT:index.adoc[OcpnDraw]
 ** xref:oesenc::index.adoc[oeSENC Charts]
+** xref:o-charts::index.adoc[O-charts]
 ** xref:otcurrent::index.adoc[oTidalCurrent]
 ** xref:otidalplan::index.adoc[oTidalPlan uses Harmonics]
 ** xref:otidalroute::index.adoc[oTidalRoute]
