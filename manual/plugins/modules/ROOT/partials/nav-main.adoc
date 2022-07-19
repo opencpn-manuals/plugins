@@ -10,11 +10,9 @@
 ** xref:rtlsdr::index.adoc[AIS RTL-SDR]
 
 * Charts
-** xref:nv_charts:ROOT:index.adoc[NV Charts]
 ** xref:s63_vector_charts:ROOT:index.adoc[S63 Vector Charts]
-// ** xref:bsb4_charts:ROOT:bsb4_charts.adoc[BSB4 Charts]
 ** xref:oesenc::index.adoc[oeSENC Charts] image:managed_plugin.png[]
-// ** xref:fugawi:ROOT:fugawi.adoc[Fugawi Charts (deprecated)]
+** xref:o-charts::index.adoc[O-charts] image:managed_plugin.png[]
 ** xref:photolayer::index.adoc[PhotoLayer] image:managed_plugin.png[]
 ** xref:vfkaps::index.adoc[VfKaps VentureFarther] image:managed_plugin.png[]
 ** xref:rotationctrl::index.adoc[RotationCtrl]
