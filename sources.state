@@ -8,6 +8,7 @@ calculator_pi https://github.com/rasbats/calculator_pi.git 745004ccfe556116d8138
 celestial_navigation_pi https://github.com/rgleason/celestial_navigation_pi.git 899aa6229ff72cb17d922194170e889b3b221a36
 chartscale_pi https://github.com/rgleason/chartscale_pi.git 0b412b2aa67c2e37868bc162bd7f946e76322ba7
 climatology_pi https://github.com/rgleason/climatology_pi.git fc842c23d4c3b4630e9e6eac077aef2755a9b6ee
+dashboardsk_pi https://github.com/nohal/dashboardsk_pi.git 9dcd523940c2302445e3fb5de05a6c5e157f4548
 dashboard_tactics_pi https://github.com/rgleason/dashboard_tactics_pi.git 60201fe8eff82c2da0c89b97f157ecdb8d970689
 Deviation_pi https://github.com/opencpn-manuals/Deviation_pi.git 5d19a0730e967ba8ad941b82c453386373682391
 DR_pi https://github.com/Rasbats/DR_pi.git b2c7b4a1ef60aed194228857d9a91fb2547777f8
@@ -21,6 +22,7 @@ launcher_pi https://github.com/nohal/launcher_pi.git 57a45aee8a4df056e6721003e64
 LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git 084b468149b64e65023b2c32f57b6ae7c3ec1800
 ncdf_pi https://github.com/Rasbats/ncdf_pi.git 7bea3361361a89f7df8672106c617ec99299f347
 NmeaConverter_pi https://github.com/RooieDirk/NmeaConverter_pi.git 48fa9a5f6b1d0edb2e9a951c13700e45a596e2c1
+nsk_pi https://github.com/nohal/nsk_pi.git e2173448b3035d33f1d568e0ee25933c0627d7b0
 nvc_pi https://github.com/Rasbats/nvc_pi/.git f5a5240ec7892e56f4cba74632c6b726bd02bcb1
 objsearch_pi https://github.com/nohal/objsearch_pi.git 2a0758cf039a6fa3bf239250a019b55ef7803db8
 ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git 75681de8c119eebb26df61e95686c9513bcdd40e

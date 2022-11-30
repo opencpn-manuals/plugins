@@ -15,3 +15,5 @@
 * xref:otidalroute::otidalroute.adoc[otidalroute]
 * xref:sailawaynmea::sailawaynmea.adoc[SailawayNMEA]
 * xref:uktides::uktides.adoc[UKTides]
+* xref:dashboardsk::index.adoc[SignalK Dashboard]
+* xref:nsk::index.adoc[NMEA 0183 to SignalK Converter]
