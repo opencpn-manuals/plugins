@@ -13,3 +13,5 @@
 * xref:uktides::index.adoc[UKTides]
 * xref:otidalplan::index.adoc[oTidalPlan uses Harmonics]
 * xref:earthexplorer::index.adoc[Earth Explorer]
+* xref:dashboardsk::index.adoc[SignalK Dashboard]
+* xref:nsk::index.adoc[NMEA 0183 to SignalK Converter]
