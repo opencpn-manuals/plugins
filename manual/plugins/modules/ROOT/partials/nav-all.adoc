@@ -20,6 +20,7 @@
 
 * F - O
 ** xref:findit::index.adoc[Findit]
+** xref:frcurrents::index.adoc[frcurrents]
 ** xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
 ** xref:gps-odometer:ROOT:index.adoc[GPS Odometer]
 ** xref:javascript::index.adoc[JavaScript]
