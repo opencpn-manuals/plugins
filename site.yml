@@ -25,7 +25,7 @@ content:
 
     - url: sources/AISradar_pi/
       start_path: manual
-      branches: master      
+      branches: master
       edit_url: https://github.com/Verezano/AISradar_pi/edit/master/{path}
 
     - url: sources/Autopilot-Plugin
@@ -46,7 +46,7 @@ content:
     - url: sources/calculator_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/Rasbats/calculator_pi/edit/master/{path}      
+      edit_url: https://github.com/Rasbats/calculator_pi/edit/master/{path}
 
     - url: sources/celestial_navigation_pi/
       branches: master
@@ -91,12 +91,17 @@ content:
     - url: sources/EarthExplorer_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/Rasbats/EarthExplorer_pi/edit/master/{path}      
+      edit_url: https://github.com/Rasbats/EarthExplorer_pi/edit/master/{path}
 
     - url: sources/Findit_pi
       start_path: manual
       branches: master
       edit_url: https://github.com/rgleason/FindIt_pi/edit/master/{path}
+
+    - url: sources/frcurrents_pi
+      start_path: manual
+      branches: master
+      edit_url: https://github.com/Rasbats/frcurrents_pi/edit/master/{path}
 
     - url: sources/GPS-Odometer_pi
       start_path: manual
@@ -136,7 +141,7 @@ content:
     - url: sources/nvc_pi
       start_path: manual
       branches: master
-      edit_url: https://github.com/Rasbats/nvc_pi/edit/master/{path}      
+      edit_url: https://github.com/Rasbats/nvc_pi/edit/master/{path}
 
     - url: sources/ocpndebugger_pi
       start_path: manual
@@ -171,7 +176,7 @@ content:
     - url: sources/otidalroute_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/Rasbats/otidalroute_pi/edit/master/{path}                
+      edit_url: https://github.com/Rasbats/otidalroute_pi/edit/master/{path}
 
     - url: sources/photolayer_pi
       branches: master
@@ -231,7 +236,7 @@ content:
     - url: sources/SailawayNMEA_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/Rasbats/SailawayNMEA_pi/edit/master/{path}      
+      edit_url: https://github.com/Rasbats/SailawayNMEA_pi/edit/master/{path}
 
     - url: sources/sar_pi
       branches: master
@@ -256,7 +261,7 @@ content:
     - url: sources/survey_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/Rasbats/survey_pi/edit/master/{path}      
+      edit_url: https://github.com/Rasbats/survey_pi/edit/master/{path}
 
     - url: sources/tactics_pi
       start_path: manual
@@ -301,12 +306,12 @@ content:
     - url: sources/weather_routing_pi
       start_path: manual
       branches: master
-      edit_url: https://github.com/rgleason/weather_routing_pi/edit/master/{path}      
+      edit_url: https://github.com/rgleason/weather_routing_pi/edit/master/{path}
 
     - url: sources/windvane_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/jongough/windvane_pi/edit/master/{path}   
+      edit_url: https://github.com/jongough/windvane_pi/edit/master/{path}
 
     # @@plugin-list-end    Keep this comment, used by main project
 
