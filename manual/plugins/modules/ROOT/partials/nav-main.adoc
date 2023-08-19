@@ -33,7 +33,7 @@
 ** xref:route::index.adoc[Route Great Circle]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning] image:managed_plugin.png[]
 ** xref:otcurrent::index.adoc[oTidalCurrent] image:managed_plugin.png[]
-** xref:frcurrents::index.adoc[frcurrents] image:managed_plugin.png[]
+** xref:frcurrents:ROOT:index.adoc[frcurrents] image:managed_plugin.png[]
 ** xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
 ** xref:wmm:wmm.adoc[World Magnetic (Included)]
 
