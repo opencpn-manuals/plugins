@@ -56,6 +56,8 @@
 ** xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 
 * Utility
+** xref:dashboardsk::index.adoc[SignalK Dashboard]
+** xref:nsk::index.adoc[NMEA 0183 to SignalK Converter]
 ** xref:ais-vd::index.adoc[AIS-Voyage Data] image:managed_plugin.png[]
 ** xref:statusbar::index.adoc[Statusbar] image:managed_plugin.png[]
 ** xref:calculator:ROOT:index.adoc[Calculator] image:managed_plugin.png[]
