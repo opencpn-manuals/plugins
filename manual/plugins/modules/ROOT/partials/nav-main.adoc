@@ -11,7 +11,6 @@
 
 * Charts
 ** xref:s63_vector_charts:ROOT:index.adoc[S63 Vector Charts]
-** xref:oesenc::index.adoc[oeSENC Charts] image:managed_plugin.png[]
 ** xref:o-charts::index.adoc[O-charts] image:managed_plugin.png[]
 ** xref:photolayer::index.adoc[PhotoLayer] image:managed_plugin.png[]
 ** xref:vfkaps::index.adoc[VfKaps VentureFarther] image:managed_plugin.png[]

@@ -28,7 +28,7 @@ nvc_pi https://github.com/Rasbats/nvc_pi.git f5a5240ec7892e56f4cba74632c6b726bd0
 objsearch_pi https://github.com/nohal/objsearch_pi.git 2a0758cf039a6fa3bf239250a019b55ef7803db8
 ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git 75681de8c119eebb26df61e95686c9513bcdd40e
 ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git ffc4bcf934280b5bd1b2e2d9c313a6a7132e3c77
-oesenc_pi https://github.com/bdbcat/oesenc_pi.git 10fa2c706d0c51688134bcd79532e603c30d60e7
+o-charts_pi https://github.com/bdbcat/o-charts_pi.git e10fc5c3e9da31a1d19b264df1ac11e39d9226bb
 otcurrent_pi https://github.com/Rasbats/otcurrent_pi.git 077d77c03c0cd15064c61e5c2196262ebac5bb02
 otidalplan_pi https://github.com/Rasbats/otidalplan_pi.git 38372212cfc6c219e91c246d0e63440b1c556f6b
 otidalroute_pi https://github.com/Rasbats/otidalroute_pi.git 98484d7eddab36d1234bce2b88162fd4859e273c

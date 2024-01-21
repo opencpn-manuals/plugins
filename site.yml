@@ -70,8 +70,8 @@ content:
 
     - url: sources/dashboardsk_pi
       start_path: manual
-      branches: master
-      edit_url: https://github.com/nohal/dashboardsk_pi/edit/master/{path}
+      branches: main
+      edit_url: https://github.com/nohal/dashboardsk_pi/edit/main/{path}
 
     - url: sources/Deviation_pi
       start_path: manual
@@ -100,8 +100,8 @@ content:
 
     - url: sources/frcurrents_pi
       start_path: manual
-      branches: master
-      edit_url: https://github.com/Rasbats/frcurrents_pi/edit/master/{path}
+      branches: main
+      edit_url: https://github.com/Rasbats/frcurrents_pi/edit/main/{path}
 
     - url: sources/GPS-Odometer_pi
       start_path: manual
@@ -135,8 +135,8 @@ content:
 
     - url: sources/nsk_pi
       start_path: manual
-      branches: master
-      edit_url: https://github.com/nohal/nsk_pi/edit/master/{path}
+      branches: main
+      edit_url: https://github.com/nohal/nsk_pi/edit/main/{path}
 
     - url: sources/nvc_pi
       start_path: manual
@@ -158,10 +158,10 @@ content:
       start_path: manual
       edit_url: https://github.com/jongough/ocpn_draw_pi/edit/master/{path}
 
-    - url: sources/oesenc_pi
+    - url: sources/o-charts_pi
       branches: master
       start_path: manual
-      edit_url: https://github.com/bdbcat/oesenc_pi/edit/master/{path}
+      edit_url: https://github.com/bdbcat/o-charts_pi/edit/master/{path}
 
     - url: sources/otcurrent_pi
       branches: master
