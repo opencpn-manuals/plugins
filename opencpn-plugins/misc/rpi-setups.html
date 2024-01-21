@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RPI Setups &amp; Accessories :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/opencpn-plugins/misc/rpi-setups.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="opencpn-plugins" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">OpenCPN Plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="terminology.html">Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugin-install.html">Plugin Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="draw-messaging.html">Draw Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplementary hardware</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ais-devices.html">AIS Devices</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="rpi-setups.html">RPI Setups</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplementary software</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nmea-software.html">NMEA Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="celestial-nav.html">Celestial Navigation Tool</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Main Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Included with OpenCPN</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">Grib Weather</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">Chart Downloader Tab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AIS / Radar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../aisradar/index.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../radar/0.1/index.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rtlsdr/index.html">AIS RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../s63_vector_charts/0.1/index.html">S63 Vector Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../o-charts/index.html">O-charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../photolayer/index.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vfkaps/index.html">VfKaps VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rotationctrl/index.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../chartscale/index.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../objsearch/0.1/index.html">ObjSearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../projections/0.1/index.html">Projections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Logs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../logbook/index.html">Logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../findit/index.html">Findit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vdr/index.html">Voyage Data Recorder VDR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nmea_converter/index.html">NMEA Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../squiddio/0.1/index.html">sQuiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../route/index.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dead_reckoning/index.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otcurrent/index.html">oTidalCurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../frcurrents/index.html">frcurrents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sat2chart/sat2chart.html">Sat2Chart Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic (Included)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../odraw/index.html">OcpnDraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../watchdog/index.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sar/index.html">SAR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sailing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tactics/index.html">Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../plots/index.html">Plots</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../polar/index.html">Polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../windvane/0.1/index.html">Windvane</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Weather</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weatherfax/index.html">WeatherFax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">Grib Weather (Included)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../climatology/index.html">Climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weather_routing/index.html">Weather Routing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Utility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ais-vd/0.1/index.html">AIS-Voyage Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../statusbar/index.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../calculator/index.html">Calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../launcher/0.1/index.html">Launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../debugger/0.1/index.html">Debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../javascript/index.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../pypilot/index.html">Pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../shipdriver/index.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../twocan/0.1/index.html">TwoCan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../gps-odometer/index.html">GPS Odometer</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beta Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../engine-dash/0.1/index.html">Engine Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../race-start/0.1/index.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tidefinder/index.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../deviation/index.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../survey/index.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autopilot_route/index.html">Autopilot Route</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../admiralty/index.html">Admiralty Tides Tables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../ncdf/index.html">NetCDF Tidal Currents</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../otidalroute/index.html">oTidalRoute</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../uktides/index.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../otidalplan/index.html">oTidalPlan uses Harmonics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../earthexplorer/index.html">Earth Explorer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">All plugins A-Z</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">A - E</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../admiralty/index.html">Admiralty Tides Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ais-vd/0.1/index.html">AIS-Voyage Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../aisradar/index.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autopilot_route/index.html">Autopilot Route</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../calculator/index.html">Calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">Chart Downloader Tab</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../chartscale/index.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../climatology/index.html">Climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dead_reckoning/index.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../debugger/0.1/index.html">Debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../deviation/index.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../earthexplorer/index.html">Earth Explorer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../engine-dash/0.1/index.html">Engine Dashboard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">F - O</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../findit/index.html">Findit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../frcurrents/index.html">frcurrents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">Grib Weather (Included)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../gps-odometer/index.html">GPS Odometer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../javascript/index.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../launcher/0.1/index.html">Launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../logbook/index.html">Logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ncdf/index.html">NetCDF Tidal Currents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nmea_converter/index.html">NMEA Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nv_charts/index.html">NV Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../objsearch/0.1/index.html">ObjSearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../odraw/index.html">OcpnDraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../o-charts/index.html">O-charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otcurrent/index.html">oTidalCurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otidalplan/index.html">oTidalPlan uses Harmonics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otidalroute/index.html">oTidalRoute</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">P - R</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../photolayer/index.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../plots/index.html">Plots</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../polar/index.html">Polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../projections/0.1/index.html">Projections</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../pypilot/index.html">Pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../race-start/0.1/index.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../radar/0.1/index.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rotationctrl/index.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../route/index.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rtlsdr/index.html">AIS RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">S - T</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../s63_vector_charts/0.1/index.html">S63 Vector Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sar/index.html">SAR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sat2chart/sat2chart.html">Sat2Chart Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../shipdriver/index.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../squiddio/0.1/index.html">sQuiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../statusbar/index.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../survey/index.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tactics/index.html">Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tidefinder/index.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../twocan/0.1/index.html">TwoCan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">U - Z</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../uktides/index.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vdr/index.html">Voyage Data Recorder VDR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vfkaps/index.html">VfKaps VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../watchdog/index.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weatherfax/index.html">WeatherFax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weather_routing/index.html">Weather Routing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../windvane/0.1/index.html">Windvane</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic (Included)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Authoring the manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/pm-plugin-documentation.html">Plugin Documentation Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/intro.html">Manual Maintenance Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/tools.html">Viewing and Editing Tools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/localbuild.html">Local Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/FAQ.html">FAQ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/useful.html">Useful stuff</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../advanced/advanced.html">Understanding the Github Plugins Manual repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Plugins</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">OpenCPN Plugins</a></li>
+    <li>General</li>
+    <li>Supplementary hardware</li>
+    <li><a href="rpi-setups.html">RPI Setups</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/opencpn-manuals/plugins/edit/main/manual/plugins/modules/misc/pages/rpi-setups.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">RPI Setups &amp; Accessories</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>OpenPlotter Hardware
+<a href="https://www.youtube.com/watch?v=qbVuFEpTjuc" class="bare">https://www.youtube.com/watch?v=qbVuFEpTjuc</a></p>
+</li>
+<li>
+<p>OpenPlotter install
+<a href="https://www.youtube.com/watch?v=C9DKu0P7-tM" class="bare">https://www.youtube.com/watch?v=C9DKu0P7-tM</a></p>
+</li>
+<li>
+<p>How to Sail Digital for CHEAP with Raspberry Pi
+<a href="https://www.youtube.com/watch?v=U3ucE3Rx7Tw">Sailing Balachandra S02E32</a></p>
+</li>
+<li>
+<p>RPI Display and OpenCPN <a href="https://www.youtube.com/watch?v=BKtBKVCWMy4" class="bare">https://www.youtube.com/watch?v=BKtBKVCWMy4</a></p>
+</li>
+<li>
+<p>Openplotter instruction video for Raspberry Pi
+<a href="https://www.youtube.com/watch?v=r8CGixMl18k" class="bare">https://www.youtube.com/watch?v=r8CGixMl18k</a></p>
+</li>
+<li>
+<p>Building your own Chartplotter with a Raspberry Pi and OpenCPN
+<a href="https://www.youtube.com/watch?v=PdfLTA2CRL8" class="bare">https://www.youtube.com/watch?v=PdfLTA2CRL8</a></p>
+</li>
+<li>
+<p>zeilersforum.nl Serious Chartplotter Setup
+<a href="https://zeilersforum.nl/index.php/forum-hoofdmenu-37/raspberry-pi-arduino-etcetera/586581-rpi-als-boordcomputer?start=%1$d" class="bare">https://zeilersforum.nl/index.php/forum-hoofdmenu-37/raspberry-pi-arduino-etcetera/586581-rpi-als-boordcomputer?start=%1$d</a></p>
+</li>
+<li>
+<p>Mgrouch Docs &amp; photos of navigation system with OpenCPN/openplotter
+<a href="https://bareboat-necessities.github.io/my-bareboat/" class="bare">https://bareboat-necessities.github.io/my-bareboat/</a></p>
+</li>
+<li>
+<p>BBN Marine OS for raspberry pi now released as Stable. Includes OpenCPN,
+SignalK, PyPilot, and more info, Getting Started Guide. Download links
+here: <a href="https://github.com/bareboat-necessities/lysmarine_gen" class="bare">https://github.com/bareboat-necessities/lysmarine_gen</a></p>
+</li>
+<li>
+<p>Sailing Belachandra Installation &amp; 2 year review
+<a href="https://www.youtube.com/channel/UCT_tWXWJCUAI17XUYfe-1Bg/search?query=opencpn">
+RPI3B, Openplotter &amp; Opencpn Videos (2)</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_guides_for_rpi"><a class="anchor" href="#_user_guides_for_rpi"></a>User Guides for RPI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://svmatilda.blogspot.com/2018/11/setting-up-our-raspberry-pi-with.html">
+SV Matilda - Set up RPI with OpenPlotter</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dc_power_supply"><a class="anchor" href="#_dc_power_supply"></a>DC Power Supply</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.meanwell.com/webapp/product/search.aspx?prod=SD-25">
+Meanwell SD-25 25watt</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rpi_examples_what_you_can_do"><a class="anchor" href="#_rpi_examples_what_you_can_do"></a>RPI Examples - What you can do</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://www.lediouris.net/RaspberryPI/_Articles/readme.html">
+Enriching an NMEA Stream</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_intel_atom_alternative_to_rpi_low_power"><a class="anchor" href="#_intel_atom_alternative_to_rpi_low_power"></a>Intel Atom Alternative to RPI (low power)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Intel Atom based minicomputers are phenomenally low powered and have no fans.
+Use maximum &lt;5 watts while watching 4K movies, and normally about 3 watts when
+in use, not idle. I connect the box directly to ship&#8217;s 13.6v power supply
+with no dropper or stabilizer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rock64_4k60p_hdr_media_board_computer"><a class="anchor" href="#_rock64_4k60p_hdr_media_board_computer"></a>ROCK64 4K60P HDR Media Board Computer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some users are using a Rock64. ROCK64 is a credit card size 4K60P HDR Media
+Board Computer powered by Rockchip RK3328 Quad-Core ARM Cortex A53 64-Bit
+Processor and support up to 4GB 1600MHz LPDDR3 memory. It provides eMMC
+module socket, MicroSD Card slot, Pi-2 Bus, Pi-P5+ Bus, USB 3.0 and many
+others peripheral devices interface for makers to integrate with sensors
+and devices. Various Operating System (OS)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_monitors"><a class="anchor" href="#_monitors"></a>Monitors</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_sean_on_monitors"><a class="anchor" href="#_sean_on_monitors"></a>Sean on monitors</h3>
+<div class="paragraph">
+<p>I read it&#8217;s possible to convert any screen by just using a more powerful
+backlight. You can buy LEDS of the right type, and install them to greatly
+increase backlight power. I think this will use a lot of power. The only
+alternative is transreflective?? This costs a lot.</p>
+</div>
+<div class="paragraph">
+<p>I think I will keep the screen inside the boat and not worry about it.
+Maybe it&#8217;s too far away on a bigger boat, but for me, I can see the inside
+screen fine sitting outside. I&#8217;m too worried about waves splashing it anyway.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cheap_daylight_viewable_monitors"><a class="anchor" href="#_cheap_daylight_viewable_monitors"></a>Cheap Daylight Viewable Monitors</h3>
+<div class="paragraph">
+<p>See CruiserForum Discussions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/need-cheap-daylight-viewable-monitor-59672.html">
+Cheap Daylight Viewable Monitor</a></p>
+</li>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/raspberry-screen-power-source-and-housing-195036.html">
+Raspberry Screen, Power Source &amp; Housing</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Cheaper but (too) small monitor where you must build your own waterproof
+chassis. Adafruit HDMI 4 Pi - 10.1" Display 1280x800 IPS, HDMI/VGA/NTSC/PAL,
+PROD ID: 1287 $144.95</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.faytech.us/touchscreen-monitor/industrial/">
+Faytech Industries, 7"-15", IP65, 8-36VDC, 7-24W, Resistive (some capacitive)
+Touchscreens(USB), 1000Nit, VGA or HDMI</a>
+$225-$590 USD. - The 10“ Faytech touchscreen works very well and is a rigid
+ construction in an alu housing. Available with VGA or HDMI and it works
+ with Raspberry PI. - Faytech screen is three times brighter and comes
+ waterproof as standard. The Faytech has two buttons (+/-) on the front
+ panel, so that you can easily change the light intensity, and the power
+ consumption is only 10 watts. In combination with my Raspberry Pi it has
+ a very low power consumption. Low intensity backlight 4.8 watts and high
+ intensity backlight 7.8 watts, with the screen connected to a 240/12 volt
+ adapter. See
+<a href="https://www.cruisersforum.com/forums/f134/need-cheap-daylight-viewable-monitor-59672.html#post2504172">
+Bram&#8217;s Post</a></p>
+</div>
+<div class="paragraph">
+<p>Comparison: $145. vs. $270.</p>
+</div>
+<div class="paragraph">
+<p>For $125 extra you are getting:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Uses only 10 watts</p>
+</li>
+<li>
+<p>1000 nits brightness vs 350</p>
+</li>
+<li>
+<p>LEDs for screen lighting</p>
+</li>
+<li>
+<p>USB touchscreen</p>
+</li>
+<li>
+<p>Full IP65 Waterproof enclosure</p>
+</li>
+<li>
+<p>Wide input power 8-36V</p>
+</li>
+<li>
+<p>Wide operating temperature range.</p>
+</li>
+<li>
+<p>Waterproof speakers, integral and work via the HDMI cable.</p>
+</li>
+<li>
+<p>Cable harnass (HDMI, USB (touchscreen) &amp; Power cable is around 1.80 meter.</p>
+</li>
+<li>
+<p>2 versions VGA or HDMI</p>
+</li>
+<li>
+<p>Brightness adjustment in front with +/- button.</p>
+</li>
+<li>
+<p>Remote Control</p>
+</li>
+<li>
+<p>Stylus</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://www.faytech.com/product/touch-monitor/open-frame-touch-monitors/7-open-frame-capacitive-touch-monitor/?fbclid=IwAR372D4u-j-rgwYEOUm8ZsIano8xbFJM6bP89y5xTuvgrcLeCg_3pK9Eq4c">
+Faytech 7″ Open Frame Capacitive Touch Monitor</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://botland.store/raspberry-pi-cm/20050-industrial-pi-cm4-70-em-raspberry-pi-cm4-compute-module-4-7-display.html">
+Industrial Pi CM4-70-EM - Raspberry Pi CM4 Compute Module 4 + 7'' display</a></p>
+</div>
+<div class="paragraph">
+<p>Other comments:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Txg - We use a 13” with 1920×1080, no issues with scaling and uses less
+than 6W at full brightness (only about 250nits but thats fine below deck).</p>
+</li>
+<li>
+<p>Sean -My screen cost less than half what yours does, but the resolution is
+only 1366×768. 16” hdmi display runs directly on 12v (11-15v so far no
+problem) uses 350mA. Sceptre E165W-1600HC E 16“ Screen LED-Lit Monitor,
+True Black (E165W-1600HC)</p>
+</li>
+<li>
+<p>Tupaia -Eyoyo/Lilliput A7S 7” monitor for cockpit, field monitor used by
+photographers, Size: 7 inch, Resolution: 1920×1200, Connection: HDMI,
+Power: 7-24 volt, Consumption &lt;11W, Brightness: 500 cd/m2, Contrast:
+1000:1. Comes with a removable rubber surround for protection and a sun
+hood. I am very pleased with the results and it was reasonably priced at
+US$150. It is not quite as bright as Nexus 7, first choice for drones, but
+the 500 cd/m and the contrast ratio makes it is one of the brightest I
+could find, especially for the price and it is pretty good. The screen is
+gloss so there are some reflections in certain conditions although the hood
+that comes with it works well in these circumstances. Because it is a
+camera monitor it has lots of functions that aren&#8217;t relevant but there is a
+thumb wheel “brightness” adjust and you can set one of the 2 function
+buttons to “Scan” that effectively zooms the central section of the screen
+very useful on a 7“ screen.</p>
+</li>
+<li>
+<p>On my Raspberry Pi 2 with the official Pi 7” touch screen the Chart
+Downloader plugin is unusable. The “New Chart Source” window opens with
+the catalogue pane overwritten by the Chart Directory selection box. There
+is plenty of screen real estate available. There doesn&#8217;t seem to be anyway
+available to resize the window. I have to use a PC and copy the chart files
+over.</p>
+</li>
+<li>
+<p>Lilliput A7S screen (500nits) which initially was great in our cockpit
+(500nits), but the problem is that with polarized sunglasses all you see is
+a black screen. FYI this screen is not waterproof, but it can be fixed.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>AndersG reports ..I am happy with the Lilliput A7S 7“ 1920×1200 500 nits
+photo field monitor. Some with say not bright enough but I disagree. Also
+x high resolution makes up for small screen size… 12V OK… $155 from Amazon.
+I taped all the vents up and it ran OK for days (a bit hot but not too hot),
+so I am going to try and weatherproof it now.</p>
+</div>
+<div class="paragraph">
+<p>For Small Touch Screens look at <a href="https://smallhd.com/">SmallHD</a>. These are
+high end field and production monitors, with HDMI,sdi and wireless interfaces.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_display_for_bright_sunlight"><a class="anchor" href="#_display_for_bright_sunlight"></a>Display for bright sunlight</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Brightness needs to be 1000+ nits</p>
+</div>
+<div class="paragraph">
+<p>Brightness of 300 nits is just not enough. Typical, cheap, color
+chartplotters have a screen that specs out at 750 nits as a minimum;
+usually closer to 1000 nits. Can you “make do” with a 300 or 500 nit screen?
+Sure. That&#8217;s about usual for a decent phone screen, and they work reasonably
+well in sunlight. But compare the screen on your phone to one on even a very
+cheap chartplotter and you will clearly see a significant difference. When
+you need the chartplotter you must see is clearly and easily.</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.cruisersforum.com/forums/f134/sunlight-viewable-monitor-202821.html#post2654623">
+Verkerber wrote</a>:</p>
+</div>
+<div class="paragraph">
+<p>10” Faytech monitor, daylight, water resistant and touchscreen. HDMi version.
+Works very well. For the touch screen you need the Egalax driver and change
+some settings. Works with two versions of OpenCPN. One with the detail chart
+and one with the overview.</p>
+</div>
+<div class="paragraph">
+<p>FT10MBIP65HDMI -10“ IP65, High brightness cd/m2 1000+ nits, with two speakers,
+using HDMI cable for AIS alerts and playing music. Brightness setting on the
+front panel. Has led backlight. 12 volt. Power consumption in combination
+with the PI is around 10-12 watts. Has touch function (no gesture) with an
+Egalax driver. I have here the instructions on how to do that. It is not
+simply installing the Eeti driver. Bought the monitor in Germany at HRT.</p>
+</div>
+<div class="paragraph">
+<p>Monitor has vesa mounting points and a support is not included. I use a Ball
+pivot Ram support, which is nice and rigid. I use an extra ball to have the
+monitor available on two places. I&#8217;am using the screen in combination with
+my RPI3B+. With latest updates and latest kernel. VC4 driver on. Running now
+with the glxgears test at around 1000 FPS. Price in 2017 was € 308,-
+including VAT and freight.</p>
+</div>
+<div class="paragraph">
+<p>See photos in the link above. Or the Faytech 15” IP65 High brightness Touch.</p>
+</div>
+<div class="paragraph">
+<p>For visibility, check out screens used as remote control for serious dslr and
+video shooters. Best DSLR Camera Monitors will have recent reviews, but such
+devices cost $$ while all it takes is an OpenCPN or any other free nav app
+on a sub 100 USD table, (even mirroring the RPI with VNC) . Hard to beat the
+buck factor. (Barnakiel)</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.facebook.com/groups/1666364153609573/permalink/2775226739389970/">
+Mikhail Grushinskiy</a> shared a good <a href="https://m.alibaba.com/product/62059970636/Good-quality-marine-navigation-system-touchscreen.html?__sceneInfo=%7B%22type%22%3A%22appDetailShare%22%2C%22data%22%3A%7B%22filterKey%22%3A%227.8.2_share%22%2C%22cacheTime%22%3A%221800000%22%7D%7D&amp;fbclid=IwAR2s1QHfGKvIwEU0-V3JTc2UGXfCpO06K4SVPgLmGPpSTdz-Np6yS6PtNbM">Display Good Quality Marine Nav Display</a> 7 inch IP65
+waterproof Industrial embedded Capacitive Touchscreen Monitor 600cd/m2 (nits)
+(standard) doesn&#8217;t make it much brighter than an iPad (Just ask for a
+brighter one of 1000+ nits). Only the screen part is waterproof (not a
+problem really), 1024×600. Variable 500nit-1500nit LED backlights.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_touchscreen_daylight_waterproof_software"><a class="anchor" href="#_touchscreen_daylight_waterproof_software"></a>Touchscreen (Daylight &amp; Waterproof) &amp; Software</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>See Mgrouch CF Post #4 in
+<a href="https://www.cruisersforum.com/forums/f134/open-cpn-on-a-touchscreen-244005.html#post3302330">
+OpenCPN on a Touchscreen</a> Mounted in the cockpit with cable to RPI inside
+cabin
+<a href="https://www.sihovision.com/industrial-touch-monitor/7-inch-industrial-wide-temperaturer-lcd-monitor-with-remote-control-1.html">
+Waterproof IP65 7" 1024x600 Industrial wide temperature LCD monitor
+brightness 1000nit with Touch Capacitive Screen</a></p>
+</div>
+<div class="paragraph">
+<p>Mgrouch provides modified OpenCPN software with TouchSreen enabled in
+<a href="https://www.cruisersforum.com/forums/f134/open-cpn-on-a-touchscreen-244005.html#post3302330">Post #5</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_display_for_cabin"><a class="anchor" href="#_display_for_cabin"></a>Display for Cabin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>13“-19” Samsung LED HD (720p) with 2 HDMI, USB, Coax, Component Analog Video
+(possibly VGA or DVI if needed) Under $130 You want LED as they use less and
+you must have HDMI for the RPI. The issue here is how to power with 12vDC.
+Two answers:</p>
+</div>
+<div class="paragraph">
+<p>19“ and just goes straight into the boat 12v supply (sometimes 15v) draws about 1A.
+Small pure sine wave inverter, overkill at 150 Watts but allows for other low power devices. $150 on eBay. 32 inch LCD uses 40 Watts.</p>
+</div>
+<div class="paragraph">
+<p>High power, sun readable displays are difficult to come by. I purchased a second hand Raymarine A65 for its 6.5” quality display, it turned out to be just 400 nits. So we have to compromise a bit, put it in the shade or something. In terms of water proofing, my suggested approach is to build your system and then cover all the edges of the display/components with silicone. Definitely go for cheaper displays and replace often vs. buying one expensive display.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vnc_another_viewpoint_about_monitors"><a class="anchor" href="#_vnc_another_viewpoint_about_monitors"></a>VNC - Another Viewpoint about Monitors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A tablet on it&#8217;s own has just a tiny fraction of the capabilities of having a
+Pi running openplotter providing data to a tablet. Add from a large
+selection of cheap sensors for barometer, voltage, current, temperature;
+multiplex it all over wifi as signalk &amp; nmea, record everything into a
+database &amp; view easily in a web browser; wifi access point repeater, decode
+wfax, music system, the list goes on for not a lot of cost and mostly menus
+to set up. No need for a monitor, set it all up with VNC on a tablet. (Conachair)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ssd_card"><a class="anchor" href="#_ssd_card"></a>SSD Card</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/raspberry-pi-w-opencpn-208244.html#post2734168">
+CF Post by BenS</a></p>
+</li>
+<li>
+<p><a href="https://www.conrad.com/p/m2-sata-ssd-expansion-board-for-the-raspberry-pi-1487097">
+M.2 SATA SSD expansion board for the Raspberry Pi</a></p>
+</li>
+<li>
+<p><a href="https://www.aliexpress.com/item/1005001504728181.html?spm=a2g0o.detail.0.0.13ed7387LeWuu7&amp;gps-id=pcDetailBottomMoreThisSeller&amp;scm=1007.13339.169870.0&amp;scm_id=1007.13339.169870.0&amp;scm-url=1007.13339.169870.0&amp;pvid=a350fa0c-fe24-42c0-945e-6aacbb697da5&amp;_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.169870.0,pvid:a350fa0c-fe24-42c0-945e-6aacbb697da5,tpp_buckets:668%230%23131923%2339_668%23888%233325%2319_668%232846%238113%23699_668%232717%237563%23552_668%231000022185%231000066058%230_668%233468%2315617%23877">
+RPI4 52Pi X862 M.2 2280/2260/2242/2230 SATA SSD Shield, X862 SSD Storage Expansion Board</a>
+RPI1234 52Pi X828 Stackable 2.5" SATA HDD/SSD Shield Expansion Board USB3.0 Hub]</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_power_ups"><a class="anchor" href="#_power_ups"></a>Power &amp; UPS</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Having adequate power supply is essential.</p>
+</li>
+<li>
+<p><a href="https://www.tindie.com/products/silicognition/lifepo4weredpi-2/">Power and UPS</a></p>
+</li>
+<li>
+<p>RPI4 Low Power</p>
+</li>
+<li>
+<p>RPI4 UPS from 52pi 52Pi <a href="https://www.aliexpress.com/item/33012132000.html?spm=a2g0o.detail.100009.3.6c68286dn1orHn&amp;gps-id=pcDetailLeftTopSell&amp;scm=1007.13482.95643.0&amp;scm_id=1007.13482.95643.0&amp;scm-url=1007.13482.95643.0&amp;pvid=ea369137-0116-4cfe-99ab-bdaa8f7e215f&amp;_t=gps-id:pcDetailLeftTopSell,scm-url:1007.13482.95643.0,pvid:ea369137-0116-4cfe-99ab-bdaa8f7e215f,tpp_buckets:668%230%23131923%2377_668%23888%233325%2319_668%232846%238113%23699_668%232717%237563%23552_668%231000022185%231000066058%230_668%233480%2315683%23541">
+Original New UPS With RTC &amp; Coulometer Pro Power Supply Device</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cooling_natural_fan_ice"><a class="anchor" href="#_cooling_natural_fan_ice"></a>Cooling - Natural, Fan, ICE</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.aliexpress.com/item/4000288119233.html?spm=a2g0o.detail.100009.1.713c7387esN1mC&amp;gps-id=pcDetailLeftTopSell&amp;scm=1007.13482.95643.0&amp;scm_id=1007.13482.95643.0&amp;scm-url=1007.13482.95643.0&amp;pvid=3ea34b32-d492-4aab-a634-e9ebb75b5e44&amp;_t=gps-id:pcDetailLeftTopSell,scm-url:1007.13482.95643.0,pvid:3ea34b32-d492-4aab-a634-e9ebb75b5e44,tpp_buckets:668%230%23131923%239_668%23888%233325%2319_668%232846%238113%23699_668%232717%237563%23552_668%231000022185%231000066058%230_668%233480%2315683%23815">
+RPI4 52pi Cooling Tower Low-Profile ICE-Tower CPU Cooling Fan for Raspberry Pi</a></p>
+</li>
+<li>
+<p><a href="https://www.amazon.com/Raspberry-Cooling-Automatic-Discoloration-Expansion/dp/B08B111D8K/ref=pd_di_sccai_6?pd_rd_w=miFok&amp;pf_rd_p=c9443270-b914-4430-a90b-72e3e7e784e0&amp;pf_rd_r=J4GDBHAHX6PMCWJGESZ6&amp;pd_rd_r=240f7b6c-c385-4b6e-9162-325950af5231&amp;pd_rd_wg=3k2sg&amp;pd_rd_i=B08B111D8K&amp;psc=1">
+PI1234 Dual Cooling Fans Dual Fans</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inertial_measurement_fluxgate_compass"><a class="anchor" href="#_inertial_measurement_fluxgate_compass"></a>Inertial Measurement &amp; Fluxgate Compass</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>B&amp;G Precision 9 Compass $650 or the All-in-one GPS + IMU Airmar GH2183 $800
+<a href="https://www.defender.com" class="bare">https://www.defender.com</a> in terms of accuracy, use with Radar Overlay, Arpa,
+Marpa, measurement of heeling angle and as bcn suggests leeway?</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Moo advises: In terms of accuracy it is probably not bad. But it is not a
+comparable product. The others are purpose built with NMEA outputs ready
+for network integration whilst the MPU-9255 is just the sensor and a few
+components to interface it to a bus.</p>
+</li>
+<li>
+<p>Håkan advises: I&#8217;m using this setup for my system and it works good enough
+for radar and ARPA. The compass sensor is rather equal to the MPU-9255 I
+suppose. See:
+<a href="http://www.cruisersforum.com/forums/f134/inexpensive-heading-sensor-103042.html#post1495725">
+Inexpensive heading sensor</a>? Heading data is sent by 2 Hz but
+OCPN is receiving at 1 Hz, probably due to 1 Hz system bus on the Simrad
+IS15 system. On a low speed sailing boat the 1 Hz update is apparently
+sufficient. Håkan&#8217;s post has 3 pdfs showing the Arduino.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_wireless_trackball"><a class="anchor" href="#_wireless_trackball"></a>Wireless Trackball</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://support.logitech.com/en_us/product/wireless-trackball-m570">
+Logitech Wireless Trackball m570</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adding_a_real_time_clock"><a class="anchor" href="#_adding_a_real_time_clock"></a>Adding a Real Time Clock</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://thepihut.com/blogs/raspberry-pi-tutorials/17209332-adding-a-real-time-clock-to-your-raspberry-pi" class="bare">https://thepihut.com/blogs/raspberry-pi-tutorials/17209332-adding-a-real-time-clock-to-your-raspberry-pi</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ais"><a class="anchor" href="#_ais"></a>AIS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.tindie.com/products/astuder/daisy-hat-ais-receiver-for-raspberry-pi/?gclid=Cj0KCQjw95vPBRDVARIsAKvPd3JLjy2Yc8hUB2CYkmapCyJ3sHyhOj7TLrxclVJnJpHcuOcP7Lwdl-MaAuf4EALw_wcB">dAISy HAT for RPI</a> $65</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pypilot_autopilot"><a class="anchor" href="#_pypilot_autopilot"></a>PyPilot Autopilot</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An OpenSource Marine Autopilot. Tested pypilot on a trimaran sailing 15 knots, and it is working.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.pypilot.org/">Website (Hardware and Software)</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot">Github (Python &amp; C++)</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/Hardware">Hardware</a></p>
+</li>
+<li>
+<p><a href="http://phoenixketch.blogspot.com/search/label/Autopilot">PhoenixKetch Pypilot</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>PyPilot Forums</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/autopilot-open-source-191315.html">
+Cruiser&#8217;s Forum Autopilot - Open Source</a></p>
+</li>
+<li>
+<p><a href="https://forum.openmarine.net/forumdisplay.php?fid=17">
+PyPilot OpenMarine Forum</a></p>
+</li>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f13/free-autopilot-186378.html">
+Cruiser&#8217;s Forum Free Autopilot Discussion</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sean D&#8217;Epagnier&#8217;s PyPilot AutoPilot using raspberry zero-W or orange,</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/controller">Controller</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/LCD_keypad">
+Optional user interface LCD and keypad</a>, gps and weather sensors.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/pypilot/pypilot/wiki/webapp">Pypilot Webapp</a> if using
+tinypilot, creates a webserver which provides remote autopilot control
+through a browser. Trimaran test used rtlsdr IR remote for control. It can
+use any tv remote, also buttons, or gui program through openplotter.</p>
+</div>
+<div class="paragraph">
+<p>This Autopilot uses modified and improved versions of SignalK and RTMUlib2.
+More details are available in the Wiki and README</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.tindie.com/stores/seandepagnier/">Tindie Store</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pypilot_requirements"><a class="anchor" href="#_pypilot_requirements"></a>Pypilot Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Literally requires some Raspberry Pi, an IMU and a motor controller.
+<a href="https://www.cruisersforum.com/forums/f134/b-and-g-triton-236323.html#post3175756" class="bare">https://www.cruisersforum.com/forums/f134/b-and-g-triton-236323.html#post3175756</a></p>
+</div>
+<div class="paragraph">
+<p>There should be some NMEA0183-IN for the pypilot, since you want to steer on
+apparent wind, but that can also be provided over the network (kplex or
+signalk 10110). If OpenCPN and SignalK works on one computer, you use
+tinypilot (pypilot on a seperate pi) and they can be connected using wifi.
+If you use OpenPlotter you can also install pypilot to the same pi where you
+use OpenCPN adding the IMU and the controller to OpenPlotter.</p>
+</div>
+<div class="paragraph">
+<p>First diagram:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Sensors (wind) =nmea=&gt;  pc (SignalK + Opencpn) =wifi=&gt; tinypi   &lt;=i2c= IMU
+                                                       ||  /\
+                                                       \/  ||
+                                           motorcontroller   rudder feedback</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Second diagram</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Sensors (wind) =nmea=&gt;  pc (SignalK + Opencpn) &lt;=I2C= IMU
+                           ||         /\
+                           \/         ||
+                 motorcontroller   rudder feedback</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You could also use the tinypi as central computer in the network (not my preference).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rudder_sensor"><a class="anchor" href="#_rudder_sensor"></a>Rudder Sensor</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.amazon.com/VDO-Single-Station-Rudder-Sensor/dp/B07J2VMJ1S">
+VDO Single Station Rudder Angle Sensor - 12/24V - 10-180 OHM A2C1102950001</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.cruisersforum.com/forums/f134/rudder-position-pypilot-238333.html#post3206924">
+Cruise Forum Thread</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_openplotter_hats"><a class="anchor" href="#_openplotter_hats"></a>OpenPlotter HATS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These HATS will work for certain with
+<a href="https://forum.openmarine.net/showthread.php?tid=868">OpenPlotter HATS</a></p>
+</div>
+<div class="paragraph">
+<p>Moitessier Hat (available): AIS + GNSS + compass + heel + trim MacArthur Hat
+(development): UPS (battery) + on/off switch + … Slocum Hat (development):
+Analog to digital converter + I2C/1W/GPIO easy connection + …</p>
+</div>
+<div class="paragraph">
+<p>Another PCB effort I do not have any need for Wifi and will probably
+multiplex input signals in hardware instead. I have one USB plug that
+acts both as a HID for the keys/buttons and a CDC for serial, aggregating
+a number of serial signals as a combined NMEA stream. In this case a small
+PCB that will plug into the raspberry and allow you to connect just about
+any 40-pin TFT with touch and also accommodate several NMEA inputs as well
+as real buttons. This PCB stacked with the Moitessier hat would make a very
+capable, almost plug and play, plotter.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hat_from_mcm_for_openplotter"><a class="anchor" href="#_hat_from_mcm_for_openplotter"></a>Hat from MCM for Openplotter</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Note Well!! This hat is obsolete and not fully supported by OpenPlotter.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.tindie.com/stores/mcm_solutions/">MCM Solutions</a>
+<a href="https://www.tindie.com/products/mcm_solutions/openplotter-hat-for-raspberry-pi/" class="bare">https://www.tindie.com/products/mcm_solutions/openplotter-hat-for-raspberry-pi/</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Power Supply with extra USB(power), UPS and 2200ma battery backup (2hr)
+with sensors.</p>
+</li>
+<li>
+<p>GPS (Antenova M10478-M2), IMU (Compass, Gyro, Acceleration), MPU9250 from
+Invensense, Air pressure (LPS25HB from ST)</p>
+</li>
+<li>
+<p>Humidity (SHT21 from Sensirion), LDO voltage regulator for GPS and sensors
+for optimal performance, audio connections, digital Class D audio amplifier
+with 3.2 Watt Power (MAX98357A)</p>
+</li>
+<li>
+<p>2-pin 0.1″ header for direct connection of the loudspeaker, speaker
+connection additionally on 6-pin ribbon connector.</p>
+</li>
+<li>
+<p>Designed to fit in
+<a href="https://www.amazon.com/Raspberry-Pi-Case-Black-fits/dp/B00UW2G1BS">
+OneNineDesign Case</a> for RPI-RPI3 with the battery]]</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tacktick_wifi"><a class="anchor" href="#_tacktick_wifi"></a>TackTick WiFi</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://phoenixketch.blogspot.com/2019/01/building-marine-navigational-computer.html">
+Phoenix&#8217;s RPI3 and Tacktick</a> We have a Tacktick wireless network and we
+interfaced it into our RPi using a USB RS232 cable from the Tacktick NMEA
+interface (T122). Works great. I suppose you could create your own
+interface but we had enough fun trail blazing for setting up the earlier
+versions of OCPN on the pi and luckily our system came w/the T122.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arduino_wifi_signalk_for_nmea0183"><a class="anchor" href="#_arduino_wifi_signalk_for_nmea0183"></a>Arduino Wifi + SignalK for Nmea0183</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://bitbucket.org/toQDuj/signalk-wifi-nodules/src">Connects to a
+"Reciever" RPI + OpenPlotter, another low powered solution for wifi + Nmea0183</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lightweight_communication"><a class="anchor" href="#_lightweight_communication"></a>Lightweight Communication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Draws much less power than the VHF set, though no good for weatherfax. Handy
+for ocean passages as well though to keep a Vhf watch drawing little r power.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://baofengtech.com//product/uv-5r/">BaoFeng UV5R Transmitter</a>, 4 watt UHF / 4 watt
+VHF, draws milliamps. Costs about $30-50 USD. Requires Ham License for
+transmit.<br>
+<a href="http://www.eham.net/reviews/detail/10349">eHam Review</a> UV5R List (discontinued)
+<a href="https://www.buytwowayradios.com/baofeng-uv-5r.html">More Details</a> To
+power the basse, use a buck converter to 8vdc or small regulator.<br>
+<a href="https://baofengtech.com/product/bf-f8hp/">BaoFeng BFF8HP</a>,
+<a href="http://www.eham.net/reviews/detail/11882">Review</a>, is the successor.<br>
+<a href="http://www.eham.net/reviews/detail/198">Icom T8AReview</a>
+<a href="http://www.eham.net/reviews/detail/2350">Yaesu VX-7A Review</a> These are both
+old,  more expensive rn ecent ones available.</p>
+</div>
+<div class="paragraph">
+<p>You can do a lot with 4 watts, if you have a good antenna and good
+installation. My fixed VHF set is usually kept on 1 watt. I&#8217;ve had “weak but
+readable” signal reports from 60 miles. I have a decent VHF/UHF Diamond
+antenna on a spreader, connected with RG214. A 5 watt Icom VHF/UHF handy
+talky hooked up to that does remarkable things over water.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_weatherfax"><a class="anchor" href="#_weatherfax"></a>Weatherfax</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Broadband Radar with Chart Overlay</p>
+</div>
+<div class="paragraph">
+<p>Chart overlay on RPI-2B with Opencpn 4.8 and BR24radar_pi v3.0. The radar
+traffic via ethernet wiree to eth0. All NMEA 0183 via wireless lan. MARPA
+works fine, the radar window is slow while opening, but also works also
+fine. I use Rasbian out of the box and OCPN is locally built.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_arduino_alternator_regulator"><a class="anchor" href="#_arduino_alternator_regulator"></a>Arduino Alternator Regulator</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://arduinoalternatorregulator.blogspot.com/">Arduino Alternator Regulator
+Can</a>, Nmea2000, Signal-K</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.cruisersforum.com/forums/showthread.php?t=194917">
+Next Gen Alternator Thread - Cruisers Forum</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.youtube.com/playlist?list=PLh8BEnfg2z52YcFEMpvMLLWS3f3tVwHHe">
+Projects with RPI and Arduino Videos</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_up_a_gpio_button_keyboard_on_a_raspberry_pi"><a class="anchor" href="#_setting_up_a_gpio_button_keyboard_on_a_raspberry_pi"></a>Setting up a GPIO-Button “keyboard” on a Raspberry Pi</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.cruisersforum.com/forums/f134/ctrl-m-on-hardwired-button-232008.html#post3101411">
+RPI GPIO-Button “keyboard” on Cruiseer&#8217;s Forum</a></p>
+</div>
+<div class="paragraph">
+<p><a href="http://blog.gegg.us/2017/01/setting-up-a-gpio-button-keyboard-on-a-raspberry-pi/">
+Setting up a GPIO-Button “keyboard” on a Raspberry Pi - Original</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

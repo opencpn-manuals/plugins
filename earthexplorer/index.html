@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EarthExplorer :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/earthexplorer/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="earthexplorer" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">EarthExplorer</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/EarthExplorer_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">EarthExplorer</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Plugin to drive Google Earth (GE).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/plugin_icon.png" alt="plugin icon">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/plugin_view.jpg" alt="plugin view">
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to driving a simulated vessel across the chart of OpenCPN
+the vessel can be displayed on Google Earth. The plugin controls the GE
+camera position. The autopilot can be used. A sample GPX is included.
+This is a route through the new locks at the southern end of the Panama
+Canal. The default model to drive is a panamax container ship.</p>
+</div>
+<div class="paragraph">
+<p><strong>Links</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/Rasbats/EarthExplorer_pi/">EarthExplorer_pi source</a></p>
+</li>
+<li>
+<p><a href="https://www.cruisersforum.com/forums/f134/earthexplorer-a-new-beta-244186.html">OpenCPN forum plugin EarthExplorer_pi</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plugin_install"><a class="anchor" href="#_plugin_install"></a>Plugin Install</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The plugin can be installed by updating the OpenCPN master catalog and using the EarthExplorer_pi entry.</p>
+</div>
+<div class="paragraph">
+<p><strong>Extra requirements</strong></p>
+</div>
+<div class="paragraph">
+<p>The Google Chrome Web Server extension is used to serve
+the KML files used by GE. Chrome is cross-platform and can be used on
+MacOSX, Linux and Windows.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install <a href="https://www.google.com/intl/en_uk/chrome/">Google Chrome</a> (if not already installed)</p>
+</li>
+<li>
+<p>Start Chrome</p>
+</li>
+<li>
+<p>Dowload the webserver extension from <a href="https://chrome.google.com/webstore/d&#8230;&#8203;mlocgigb?hl=en">here.</a> Add the extension to Chrome.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/chrome1.jpg" alt="chrome1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Start the EarthExplorer plugin. Right-Click on the chart and you will find a menu option <em>EarthExplorer Start Position</em>. After selecting this press <strong>Start</strong> and test driving the ship and using the controls.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ee1.jpg" alt="ee1">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ee2.jpg" alt="ee2">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ee3.jpg" alt="ee3">
+</div>
+</div>
+<div class="paragraph">
+<p>On first starting to drive with EarthExplorer the files to link with GE are copied to the <em>GetpPrivateApplicationDataLocation()</em> directory. On Windows this will be similar to <em>C:\ProgramData\opencpn\plugins\EarthExplorer_pi</em>. On Linux it will be like <em>home/.opencpn/plugins/EarthExplorer_pi/data</em>.</p>
+</div>
+<div class="paragraph">
+<p>If not already installed download and install Google Earth Pro:
+<a href="https://www.google.com/earth/download/gep/agree.html" class="bare">https://www.google.com/earth/download/gep/agree.html</a></p>
+</div>
+<div class="paragraph">
+<p>Not sure if the version available from Paul Higgins is compatible.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_up"><a class="anchor" href="#_setting_up"></a>Setting up</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Start the Chrome Web Server</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/chrome2.jpg" alt="chrome2">
+</div>
+</div>
+<div class="paragraph">
+<p>After this the Chrome Browser can be shut down.
+It does not have to be the default browser</p>
+</div>
+<div class="paragraph">
+<p>The webserver displays with a button to choose the default folder. Select the
+<em>GetpPrivateApplicationDataLocation()</em> directory mentioned above.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/chrome3.jpg" alt="chrome3">
+</div>
+</div>
+<div class="paragraph">
+<p>Testing the plugin will have created a <em>placemark.kml</em> file in the
+<em>GetpPrivateApplicationDataLocation()</em> directory along with the model file
+<em>container.dae</em>. Another file is also copied there … <em>link.kml</em>. This
+provides the network link with GE.</p>
+</div>
+<div class="paragraph">
+<p><strong>Make the OpenCPN connection</strong></p>
+</div>
+<div class="paragraph">
+<p>Select <em>Options&#8594;Connections</em> in OpenCPN. <em>Add Connection</em>. Use TCP Network Address 127.0.0.1 and port 8887.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/connections.jpg" alt="connections">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_start_google_earth"><a class="anchor" href="#_start_google_earth"></a>Start Google Earth</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>File&#8594;Open</strong> and select `placemark.kml' from the same folder as you set
+up in the Chrome webserver. * GE should fly to the location of your
+vessel. You should see the model in the centre of the GE display. * A
+place called <em>model</em> will have been added to GE <em>Temporary Places</em>.</p>
+</div>
+<div class="paragraph">
+<p><strong>File&#8594;Open</strong> and select <em>link.kml</em>. This will add a place <em>Earth
+Explorer</em> to <em>Temporary Places</em>. One of the contents of this place is
+<em>model</em>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge1.jpg" alt="ge1">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>
+Using <em>File&#8594;Open</em> may cause Google Earth to freeze. If this happens you may need to open the files by using Windows Explorer. Navigate to the <em>ProgramData/opencpn/plugins/EarthExplorer_pi</em> directory and open the file with GE.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge.0.jpg" alt="ge.0">
+</div>
+</div>
+<div class="paragraph">
+<p>If there have been problems you may be asked to use the GE repair tool.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge.error.0.jpg" alt="ge.error.0">
+</div>
+</div>
+<div class="paragraph">
+<p>Select <em>Clear disk cache</em>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge.error.1.jpg" alt="ge.error.1">
+</div>
+</div>
+<div class="paragraph">
+<p>After adding <em>placemark.kml</em> you should see the ship on the GE screen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge2.jpg" alt="ge2">
+</div>
+</div>
+<div class="paragraph">
+<p>And after adding <em>link.kml</em>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge3.jpg" alt="ge3">
+</div>
+</div>
+<div class="paragraph">
+<p>Start driving the vessel in OpenCPN. You should see the model moving
+across the screen.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge4.jpg" alt="ge4">
+</div>
+</div>
+<div class="paragraph">
+<p>If you can still see the model that was dropped when
+you opened <em>placemark.kml</em> you can de-select and delete that place, as
+it is no longer needed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/ge5.jpg" alt="ge5">
+</div>
+</div>
+<div class="paragraph">
+<p>Select the `3D Buildings' layer in GE if you want to see models. For instance these include
+the bridges at the southern end of the Panama Canal.</p>
+</div>
+<div class="paragraph">
+<p>Press the plugin <em>Camera</em> if you want to zoom in or pan/tilt the display in GE.</p>
+</div>
+<div class="paragraph">
+<p>Using OpenCPN <em>Options&#8594;Ship</em> the `Ship icon type' can be changed to `real scale
+vector'. A panamax container ship has length 292m, beam 30m. GPS is
+approx 270m from the bow and midships.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_closing_google_earth"><a class="anchor" href="#_closing_google_earth"></a>Closing Google Earth</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Important</strong>. Do not save the temporary places when you close GE. You
+need to repeat the startup procedure listed above when you open GE
+again.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enjoy_your_toy"><a class="anchor" href="#_enjoy_your_toy"></a>Enjoy your toy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Many bugs remain. Pleae PM me if you see anything that needs fixing.</p>
+</div>
+<div class="paragraph">
+<p>If you have other GPX files for interesting pilotages or other ship
+models please PM me.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.cruisersforum.com/forums/showthread.php?p=3304453#post3304453">Announcement
+on the Cruisers Forum</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

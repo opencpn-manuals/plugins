@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dead Reckoning :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/dead_reckoning/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dead_reckoning" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">DR</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/Rasbats/DR_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Dead Reckoning</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image left"><img src="_images/dr_pi.png" alt="dr pi"></span> .</p>
+</div>
+<div class="paragraph">
+<p>Add DR positions to a route by means of editing a gpx file, which has
+been exported from 'Route Manager'.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Available in the managed plugins catalog.</p>
+</div>
+<div class="paragraph">
+<p><span class="image left"><img src="_images/managed_plugin.png" alt="managed plugin"></span> .</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/Rasbats/DR_pi">Gihub Repository</a></p>
+</li>
+<li>
+<p>Releases: <a href="https://github.com/Rasbats/DR_pi/releases">Github Releases</a></p>
+</li>
+<li>
+<p>Downloads: <a href="https://opencpn.org/OpenCPN/plugins/dreckoning.html">Website Download</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/dead-reckoning-plugin-for-ocpn-82864.html">Cruiser&#8217;s Forum Dead Reckoning thread</a></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/dr-plugin-splitting-up-gpx-route-files-114482.html">DR plugin splitting up gpx routefiles</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_definition"><a class="anchor" href="#_definition"></a>Definition</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In navigation, dead reckoning or dead-reckoning (also ded for deduced
+reckoning or <strong>DR</strong>) is the process of calculating one&#8217;s current
+<strong>position</strong> by using a previously determined <strong>position</strong>, or fix, and
+advancing that <strong>position</strong> based upon known or estimated speeds over
+elapsed time and course.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_what_and_why"><a class="anchor" href="#_1_what_and_why"></a>1. What and Why</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The DR plugin is a means of adding DR positions to a route. Because the
+plugin cannot access 'Route Manager' directly it works by editing a gpx
+file, which has been exported from 'Route Manager'.</p>
+</div>
+<div class="paragraph">
+<p>DR speed and the time between the DR positions can be changed before the
+DR gpx is finally created.</p>
+</div>
+<div class="paragraph">
+<p>This plugin is a temporary solution to the problem of creating DR
+positions. The <strong>Draw plugin</strong> now allows the creation of DR positions for
+course legs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_install"><a class="anchor" href="#_2_install"></a>2. Install</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Copy 'DR_pi.dll' to the plugins folder. Start OpenCPN. Tools/Options and
+select 'Enable' for the DR entry.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/tools_plugins.png" alt="tools plugins">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_standard_actions"><a class="anchor" href="#_3_standard_actions"></a>3. Standard actions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Save the route which you want to add DR positions to by using 'Route
+Manager'. Make a note of the folder where this original route file can
+be found.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/export_route.png" alt="export route">
+</div>
+</div>
+<div class="paragraph">
+<p>Start DR:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/menu_bar.png" alt="menu bar">
+</div>
+</div>
+<div class="paragraph">
+<p>The main page of the plugin appears:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/add_options.png" alt="add options">
+</div>
+</div>
+<div class="paragraph">
+<p>The DR speed and interval between DR positions have been added. The DR
+route name is entered in the bottom box.</p>
+</div>
+<div class="paragraph">
+<p>The process of creating the DR route is started by pressing 'Generate
+GPX'. A file dialog box appears.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/import_gpx.png" alt="import gpx">
+</div>
+</div>
+<div class="paragraph">
+<p>Select the route GPX file where DR positions will be added.</p>
+</div>
+<div class="paragraph">
+<p>Immediately after selecting this file a new file dialog box appears.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/export_dr_gpx.png" alt="export dr gpx">
+</div>
+</div>
+<div class="paragraph">
+<p>After pressing 'Save' the route_dr gpx file is created in the folder you
+have chosen. If the original file is not needed you can use the same
+file name and the original file will be over-written.</p>
+</div>
+<div class="paragraph">
+<p>The plugin can now be closed.</p>
+</div>
+<div class="paragraph">
+<p>Using 'Route Manager' import the DR gpx:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/import_dr_gpx.png" alt="import dr gpx">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/import_dr_gpx_route_manager.png" alt="import dr gpx route manager">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/show_dr_gpx.png" alt="show dr gpx">
+</div>
+</div>
+<div class="paragraph">
+<p>The DR route is now available. To avoid confusion the original route can
+be hidden by using the 'Eye' symbol.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

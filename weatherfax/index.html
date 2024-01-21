@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Weatherfax :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/weatherfax/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="weatherfax" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">WeatherFax</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rgleason/weatherfax_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Weatherfax</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/weatherfax.png" alt="weatherfax">
+</div>
+</div>
+<div class="paragraph">
+<p>Author: Sean D&#8217;Epagnier,  August 26, 2021,  Version v1.0<br>
+Maintainers: Rick Gleason, Jon Gough and the Plugin Team<br>
+Development Details: PI Manager (PIM) Workflow uses the Testplugin Template<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Retrieves internet image files, reads image files or decodes audio and then Overlays the image on top of charts.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-0-retrieve-internet-overlaid-on-chart.png" alt="wx 0 retrieve internet overlaid on chart">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/seandepagnier/weatherfax_pi" class="bare">https://github.com/seandepagnier/weatherfax_pi</a></p>
+</li>
+<li>
+<p>Maintenance Source: <a href="https://github.com/rgleason/weatherfax_pi" class="bare">https://github.com/rgleason/weatherfax_pi</a></p>
+</li>
+<li>
+<p>Release: <a href="https://github.com/rgleason/weatherfax_pi/releases">Windows Releases</a></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/weatherfax.html" class="bare">https://opencpn.org/OpenCPN/plugins/weatherfax.html</a></p>
+</li>
+<li>
+<p>Forum: <a href="http://www.cruisersforum.com/forums/f134/weatherfax-97533.html" class="bare">http://www.cruisersforum.com/forums/f134/weatherfax-97533.html</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_and_preparation"><a class="anchor" href="#_installation_and_preparation"></a>Installation and Preparation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_using_plugin_manager_pim"><a class="anchor" href="#_using_plugin_manager_pim"></a>Using Plugin Manager (PIM)</h3>
+<div class="paragraph">
+<p>Weatherfax is available as a managed plugin (PIM), which is the easiest way to install the plugin. The OpenCPN Manual has general information in <a href="../opencpn-plugins/misc/plugin-install.html" class="xref page">Plugin Download, Install and Enable</a>
+for installing this plugin. This is the preferred way.</p>
+</div>
+<div class="paragraph">
+<p>In OpenCPN, go to the <em>Options → Plugins</em> and download, install and enable the Weatherfax plugin.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>In OpenCPN  Click <strong>Tools-Options-Plugins</strong></p>
+</li>
+<li>
+<p>First "Update" the master plugins catalog.</p>
+</li>
+<li>
+<p>Select the Weatherfax entry and "Install" the plugin.</p>
+</li>
+<li>
+<p>In the list of installed plugins "Enable" the Weatherfax plugin and "Apply".</p>
+</li>
+<li>
+<p>Use “<strong>Preferences</strong>” to set your preferences (should be self-explanatory). Then “<strong>Apply</strong>.</p>
+</li>
+<li>
+<p>After successful installation, the plugin should be available in the plugins tab of your OpenCPN options dialog box.</p>
+</li>
+<li>
+<p>Then close <strong>Options</strong> and the Weatherfax Icon should appear in the Toolbar.</p>
+</li>
+<li>
+<p>Then open it and explore the top menus.</p>
+</li>
+<li>
+<p>With an internet connection it is quite easy to select the “HF Radio Schedules” to select and set alarms for use with a receiver, or to select the Internet Schedules and then retrieve Weatherfaxes via the Internet and overlay on the chart. Audio Capture requires a connection.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-2-retrieve-menu.png" alt="wx 2 retrieve menu">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_legacy_plugin_package_installer_pi"><a class="anchor" href="#_use_legacy_plugin_package_installer_pi"></a>Use Legacy Plugin Package Installer (PI)</h3>
+<div class="paragraph">
+<p>The second way is to download a Legacy PI Package Installer (Windows .exe, Linux .deb or MacOS .pkg) from the  <a href="https://www.opencpn.org">OpenCPN website, to download Weatherfax</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_retrieve_weatherfax_image_files_with_an_internet_connection"><a class="anchor" href="#_retrieve_weatherfax_image_files_with_an_internet_connection"></a>Retrieve Weatherfax Image files with an internet connection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you have an internet connection, first Retrieve &gt; All &gt; HF Radio Schedules.<br>
+Then Retrieve &gt; Internet &gt; Select NOAA &gt; Select Boston (for example) &gt;
+Select 24hr 500mb Forecast<br>
+The Weatherfax image file will download and be overlaid directly onto a chart.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c0-ret-inet-menu-1_0.png" alt="wx c0 ret inet menu 1 0">
+</div>
+</div>
+<div class="paragraph">
+<p>Lat 42 Long -70 –&gt; Servers: Noaa —&gt; Regions: Atlantic —→ Select Contents
+—→ Retrieve</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c0-ret-inet-menu-1_0.png" alt="wx c0 ret inet menu 1 0">
+</div>
+</div>
+<div class="paragraph">
+<p>Lat 42 Long -70 –&gt; Servers: Passage —&gt; Regions: N. Atlantic —→ Select Contents —→ Retrieve</p>
+</div>
+<div class="paragraph">
+<p>It is a wonderful planning tool for cruises or passagemaking. There are several options, but
+* Select “Internet” to retrieve HF Radio Schedules via the internet.
+* Then Select “NOAA” Under “Servers” you will see “Stations” fill up.
+* Then select “Boston” and the Internet Retrieval choices are
+automatically listed in the menu area.
+* Select several faxes and pick “Retrieve Scheduled” or “Retrieve
+Selected”.</p>
+</div>
+<div class="sect2">
+<h3 id="_internet_retrieval_summary"><a class="anchor" href="#_internet_retrieval_summary"></a>Internet Retrieval Summary</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Retrieve…Internet</p>
+</li>
+<li>
+<p>Select provider and region.</p>
+</li>
+<li>
+<p>Select forecast you need.(X)</p>
+</li>
+<li>
+<p>Highlight and use the 'Selected' button.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/weatherfax-inetpng.png" alt="weatherfax inetpng">
+</div>
+</div>
+<div class="paragraph">
+<p>The plugin data directory contains an WeatherFaxInternetRetrieval.xml file that has database for meterological sites. The “Internet Retrieval” Option uses this schedule.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c1-ret-inet-aviation-americas.png" alt="wx c1 ret inet aviation americas">
+</div>
+</div>
+<div class="paragraph">
+<p>Aviation Americas Forecast retrieved via the internet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c2-ret-inet-passsage-atlantic-012wind.png" alt="wx c2 ret inet passsage atlantic 012wind">
+</div>
+</div>
+<div class="paragraph">
+<p>Passage Weather Atlantic 012 Wind via internet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c3-ret-inet-bermuda-3day.png" alt="wx c3 ret inet bermuda 3day">
+</div>
+</div>
+<div class="paragraph">
+<p>Bermuda 3 day via internet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c4-ret-inet-noaa-atlantic-24hr-500mb.png" alt="wx c4 ret inet noaa atlantic 24hr 500mb">
+</div>
+</div>
+<div class="paragraph">
+<p>NOAA Atlantic 24hr 500mb via internet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c5-ret-inet-noaa-atlantic-24hrsurf.png" alt="wx c5 ret inet noaa atlantic 24hrsurf">
+</div>
+</div>
+<div class="paragraph">
+<p>NOAA Atlantic 24hr Surface via internet.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c6-ret-inet-passage-ne.png" alt="wx c6 ret inet passage ne">
+</div>
+</div>
+<div class="paragraph">
+<p>Passage Weather New England Wind 012</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c7-ret-inet-passage-novasoctia.png" alt="wx c7 ret inet passage novasoctia">
+</div>
+</div>
+<div class="paragraph">
+<p>Passage Weather Nova Scotia Wind 021</p>
+</div>
+<hr>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-c8-ret-inet-downloaded-list.png" alt="wx c8 ret inet downloaded list">
+</div>
+</div>
+<div class="paragraph">
+<p>List of Weatherfaxes downloaded. Highlighted one shows overlaid on
+charts.</p>
+</div>
+<div class="paragraph">
+<p>The weatherfax will be overlayed generally in the proper location
+provided the weather service has not changed their fax formats. (The user can modify the associated WeatherFaxInternetRetrieval.xml file appropriately to add or modify the actions.) Users should please post changes to this file to the Weatherfax Thread for the next release.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_memory_use"><a class="anchor" href="#_memory_use"></a>Memory Use</h3>
+<div class="paragraph">
+<p>Please note tht all the loaded maps stay in RAM until OpenCPN is closed.  RAM occupation depends on the maps size. The number of weatherfax charts that can be stored in memory is dependent on the amount of memory available. When weatherfax_pi runs out of available memory, it will stop downloading weatherfaxes. As soon as you close WxFax and restart this memory is cleared, however the previous images then no longer have active georeferencing, so you will need to download them again for automatic georeferencing. Weatherfax_pi keeps all downloaded images connected to its coordinates and georeferenced until that session of weatherfax is closed.</p>
+</div>
+<div class="paragraph">
+<p>For exemple on OpenCPN linux flatpak:
+Load 96 maps in Arome/France: 887MB
+Load 57 maps in Arpege/Europe: 2250MB</p>
+</div>
+<div class="paragraph">
+<p>The limit seems to be the system RAM. I loaded 213 maps, more than 6GB and still okay and responsive.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hf_radio_weather_faxes"><a class="anchor" href="#_hf_radio_weather_faxes"></a>HF Radio Weather Faxes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The plugin has a builtin database (WeatherFaxSchedules.xml) for HF Radio Weather Service Fax transmissions, which when used properly can automatically alert the user and begin decoding these faxes.</p>
+</div>
+<div class="paragraph">
+<p>This schedule is updated from time to time using schedules and frequencies of all the official fax services worldwide from
+<a href="https://www.weather.gov/media/marine/rfax.pdf" class="bare">https://www.weather.gov/media/marine/rfax.pdf</a>    The detailed DWD schedule is also useful <a href="https://www.dwd.de/EN/specialusers/shipping/broadcast_en/broadcast_fax_102020.pdf?__blob=publicationFile&amp;v=1" class="bare">https://www.dwd.de/EN/specialusers/shipping/broadcast_en/broadcast_fax_102020.pdf?__blob=publicationFile&amp;v=1</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Retrieve &gt; RF Radio Schedule Menu</strong> on the Filter Tab.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-b1-ret-hfradiosch-filtertab-menu.png" alt="wx b1 ret hfradiosch filtertab menu">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Retrieve &gt; RF Radio Schedule Menu</strong> on the 1 minute Alarm Tab.</p>
+</div>
+<div class="paragraph">
+<p><strong>Retrieve &gt; RF Radio Schedule Menu</strong> on the Capture Options Tab.</p>
+</div>
+<div class="paragraph">
+<p><strong>Retrieve &gt; RF Radio Schedule Menu</strong> on the Information Tab.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_decoding_sound_via_ssb"><a class="anchor" href="#_decoding_sound_via_ssb"></a>Decoding Sound via SSB</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Select Retrieve → Audio Capture (Ctrl+A)</p>
+</div>
+<div class="paragraph">
+<p>A line from the SSB radio to the audio input of the sound card should be
+attached, and the radio tuned to the appropriate frequency (1.9khz below
+listed frequency and SSB mode) The SSB BFO must be adjusted correctly.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_retrieve_audio_capture_shown_while_recieving"><a class="anchor" href="#_retrieve_audio_capture_shown_while_recieving"></a>Retrieve &gt; Audio Capture shown while recieving</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-a1-ret-audiocapture-recieving.png" alt="image">
+</div>
+</div>
+<div class="paragraph">
+<p>The images decoded can then be calibrated and overlayed on charts. The
+resulting image can be exported to a chart, so the plugin also works as
+a general purpose conversion tool to make charts from images.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_weatherfax_image_wizard"><a class="anchor" href="#_weatherfax_image_wizard"></a>Weatherfax Image Wizard</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_working_with_files"><a class="anchor" href="#_working_with_files"></a>Working with Files</h3>
+<div class="paragraph">
+<p>The plugin can read and open numerous common image files, and audio
+files, and can save Kap files. The next step in development is to have
+it read Kap for ease of use with respect to coordinates being recorded
+and reused.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-1-file-menu.png" alt="image">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weather_sources_david_burch_navigation_blog"><a class="anchor" href="#_weather_sources_david_burch_navigation_blog"></a>Weather Sources - David Burch Navigation Blog</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Sx_ImKxdZXI&amp;feature=youtu.be">Georeferencing
+Sat Images in OpenCPN - Video 2018 -NEW</a></p>
+</li>
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2016/01/how-to-load-noaa-weather-maps-into.html">How
+to Load Weather Maps into OpenCPN — The Hard Way! - Blog 2016</a></p>
+</li>
+<li>
+<p><a href="https://davidburchnavigation.blogspot.com/2018/12/satellite-cloud-images-underway-sources.html">Satellite
+Cloud Images - Underway Sources - Blog 2018</a>
+<a href="https://ocean.weather.gov/gridded_wind_vectors.php">ASCAT Grib (low
+orbit)</a> and <a href="https://www.goes.noaa.gov/">GOES (high orbit)</a></p>
+</li>
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2016/01/weather-mapswhere-to-get-them-and-what.html">[Weather
+Maps—Where To Get Them and What We Get? - Blog 2016</a></p>
+</li>
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2015/06/atlantic-and-pacific-weather-briefings.html">Atlantic
+and Pacific Weather Briefings - Blog 2015</a></p>
+</li>
+<li>
+<p><a href="http://davidburchnavigation.blogspot.com/2015/08/high-seas-forecasts-and-tropical.html">High
+Seas Forecasts and Tropical Cyclone Alerts by Email Request - Blog 2015</a>
+Metarea for Saildocs.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weatherfax_image_file_sources"><a class="anchor" href="#_weatherfax_image_file_sources"></a>Weatherfax Image File Sources</h3>
+<div class="sect3">
+<h4 id="_noaa_all_weather_products"><a class="anchor" href="#_noaa_all_weather_products"></a>Noaa All Weather Products</h4>
+<div class="paragraph">
+<p><a href="https://www.nws.noaa.gov/om/marine/home.htm">Noaa Weather Products</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_briefings"><a class="anchor" href="#_briefings"></a>Briefings</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://ocean.weather.gov/shtml/A_brief.php">OPC Atlantic Weather Briefing</a> <a href="https://ocean.weather.gov/shtml/A_brief_text.php">Text Briefing</a></p>
+</li>
+<li>
+<p><a href="https://ocean.weather.gov/shtml/P_brief.php">OPC Pacific Weather Briefing</a> <a href="https://ocean.weather.gov/shtml/P_brief_text.php">Text Briefing</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ftp_websites"><a class="anchor" href="#_ftp_websites"></a>FTP Websites</h4>
+<div class="paragraph">
+<p><a href="https://tgftp.nws.noaa.gov/fax/">FTP WeatherFax</a> Most recent synoptic time, or near.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lists_of_filenames"><a class="anchor" href="#_lists_of_filenames"></a>Lists of Filenames</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/rfaxpac.txt">List of all Pacific Weather Map File Names</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/rfaxatl.txt">List of all Atlantic Weather Map File Names</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/rfaxak.txt">Alaska map file names</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/rfaxhi.txt">Hi map file names</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/rfaxmex.txt">Gulf of Mexico and Carib file names</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/otherfax.txt">Selected International map file names</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/uk.txt">Selected UK map file names</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_weatherfax_files"><a class="anchor" href="#_example_weatherfax_files"></a>Example Weatherfax Files</h4>
+<div class="paragraph">
+<p>Some example files that can be used (Gif, png, tif, etc.):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/marine.shtml">NOAA Marine Radio Forecast Charts</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/marshlatest.shtml">NOAA Boston Radio Forecast -Atlantic</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/PYAD10.gif">Preliminary Surface Analysis</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/PYAA11.gif">00Z-12Z Surface Analysis Atlantic -Part 1</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/PYAA12.gif">00Z-12Z Surface Analysis Atlantic -Part 2</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/QDTM10.gif">48 hr Surface Analysis Atlantic</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/PWAM99.gif">96 hr Surface Analysis Atlantic</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/PWAE98.gif">Atlantic</a></p>
+</li>
+<li>
+<p><a href="http://tgftp.nws.noaa.gov/fax/PPAE11.gif">24 hr 500mb Atlantic</a></p>
+</li>
+<li>
+<p><a href="https://www.weathercharts.org/">UK Atlantic Forecasts</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_to_use_weatherfax_files_and_the_image_wizard"><a class="anchor" href="#_how_to_use_weatherfax_files_and_the_image_wizard"></a>How to use Weatherfax files and the Image Wizard:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Save the files in a new directory on your hard drive in the same directory as your Charts. (I called the directory FaxWx).</p>
+</li>
+<li>
+<p>Open the Plugin and a fax file and use the Weatherfax Image Wizard</p>
+</li>
+<li>
+<p>From OpenCPN select the Weatherfax Icon, a window pops up.</p>
+</li>
+<li>
+<p>Select Open and browse to the FaxWx directory and select a fax file.</p>
+</li>
+<li>
+<p>Open the file.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_objective"><a class="anchor" href="#_objective"></a>Objective:</h3>
+<div class="paragraph">
+<p>The objective is to set the x/y coordinates and lat/long properly so
+that the image will map directly over the proper area on the
+charts/globe. The Image Wizard allows user control over the necessary
+settings in a step by step process which ends in a successful chart
+overlay or not, depending on the skill of the user. If it does not work
+properly the first time, simply try it again. There are two basic types
+of projections the wizard can handle.</p>
+</div>
+<div class="sect3">
+<h4 id="_mercator_projections"><a class="anchor" href="#_mercator_projections"></a>Mercator Projections</h4>
+<div class="paragraph">
+<p>If the fax is a Mercator projection (orthogonal, not polar), click
+through the next screen that comes up and at the second screen set the
+coordinates and lat/long properly. (Screenshots will be added later) and click on through to see the fax overlaid on the charts.</p>
+</div>
+<div class="paragraph">
+<p>Note: It is very difficult to test for poor coordinate and lat/long input, so it is best to have your lat long correct, otherwise strange things may happen with the overlay in Opencpn.</p>
+</div>
+<div class="paragraph">
+<p>I first use a separate image viewer with the selected fax image, to zoom in and to write down the Lat/long and coordinates that I will be using. If you plan to export to a chart file then you should select “Get Aspect Ratio”</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/weatherfax-inetpng.png" alt="weatherfax inetpng">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_polar_projections"><a class="anchor" href="#_polar_projections"></a>Polar Projections</h4>
+<div class="paragraph">
+<p>There are other techniques used to modify a Polar fax onto a Mercator
+projection chart which are reviewed on the forum and will be more fully
+described later. Review the posts following this
+<a href="http://www.cruisersforum.com/forums/showthread.php?p=1185034">Cruiser&#8217;s Forum Post in the Weatherfax Thread</a> in the Forums.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-polarsu1.jpeg" alt="wx polarsu1">
+</div>
+</div>
+<div class="paragraph">
+<p><strong><em>Coordinate</em> 1</strong> (Red) -Select a high latitude which must also lie on
+the vertical meridian running through the pole (N or S)<br>
+<strong><em>Coordinate 2</em></strong> (Blue) - Select an opposing corner (either side) with lower latitude. Then hit Get Map, the Blue circles should follow the latitudes of respective coords. Adjust the left/right location with the PoleX value and adjust the circle radius with the PoleY value. Set the True Width Ratio value to 1.0.</p>
+</div>
+<div class="paragraph">
+<p>From here, it should be possible to click “get mapping”</p>
+</div>
+<div class="paragraph">
+<p><strong><em>True width Ratio</em></strong> - Adjusts the width of the blue circles (a fraction like .8 makes the circles wider, and 1.2 makes them narrower). Adjust the true width ratio such that the blue circles align with the associated latitude lines, otherwise the “Apply” transformation will not render straight lat/long lines or will fail.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Pole X</em></strong> - Moves the center of the blue circles left and right. The blue circles should be centered on the vertical meridian which goes through the pole.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Pole Y</em> -</strong> Moves the center of the blue circles up and down. The blue circles should be centered on the pole. Hit get mapping to see how this is working, because the blue rings change in width, and sometime the ring closest to the pole flips if the value is too far out of whack.</p>
+</div>
+<div class="paragraph">
+<p><strong><em>Equator Y</em> -</strong> This does not appear to do much when you change the value, more about this value later.</p>
+</div>
+<div class="paragraph">
+<p>If you are starting fresh with a Polar, and the blue rings are too wide after hitting Get Mapping, first check the lat/long entered and reset coords to be sure they are hit, then Hit 'get mapping again' then adjust the “True width ratio” so the blue rings align with the latitude lines.
+Once that is done don&#8217;t hit “Get Mapping” again, hit “Apply” the lines should be straight and orthogonal.</p>
+</div>
+<div class="paragraph">
+<p>Here is an example of a WxFax overlay in Opencpn</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-overlay.jpeg" alt="wx overlay">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_export_as_kap_file_open_kap"><a class="anchor" href="#_file_export_as_kap_file_open_kap"></a>File Export as KAP, File Open KAP</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_file_export_as_kap"><a class="anchor" href="#_file_export_as_kap"></a>File Export as KAP</h3>
+<div class="paragraph">
+<p>Image files that are downloaded and overlaid onto charts with specific
+coordinates, can now be saved as Kap files that save long/lat and
+coordinates with the file.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/wx-export-open-kap-files.jpeg" alt="wx export open kap files">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_file_open_kap_next_improvement"><a class="anchor" href="#_file_open_kap_next_improvement"></a>File Open KAP (Next Improvement)</h3>
+<div class="paragraph">
+<p>Hopefully the plugin will also be made to read Kap files so that they can be automatically overlaid on charts without having to use the WeatherFax Image Wizard.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_xml_file_update_user_powered"><a class="anchor" href="#_xml_file_update_user_powered"></a>XML File Update - User Powered</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_weatherfax_urls_and_coordinates_and_schedules"><a class="anchor" href="#_weatherfax_urls_and_coordinates_and_schedules"></a>Weatherfax URL&#8217;s and Coordinates and Schedules</h3>
+<div class="paragraph">
+<p>It is the User&#8217;s job to update this information, by sending newly updated files of their area of the world. We cannot devote programming resources to this location specific task which changes regularly.</p>
+</div>
+<div class="paragraph">
+<p>Note that the file weatherfaxinternetretrieval.xml has been separated into world region xml files, to make this task easier. We need voluteers to take a region and send in updates every six months to a year.  Github pull requests to the maintainer for these changes are easiest, but emailed files are accepted too.</p>
+</div>
+<div class="paragraph">
+<p>The critical files are:
+. WeatherfaxInternetRetrieval_(Region).xml&#8217;s (Multiple Regional files)
+. CoordinateSets.xml  (installed in the program directory and saved in the User writable directory)
+. WeatherfaxSchedule.xml  - For capture of sound.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_operational_notes"><a class="anchor" href="#_operational_notes"></a>Operational Notes</h3>
+<div class="paragraph">
+<p>To start out with a clean slate, no previous weatherfax xml files.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Remove the %localappdata%/opencpn/plugins/weatherfax/data files   Use Options &gt; Plugins &gt; Uninstall the plugin.</p>
+</li>
+<li>
+<p>Remove the local user directory data, in particular coordinateSets.xml   Manually remove this directory "C:\ProgramData\opencpn\plugins\weatherfax" or empty it.</p>
+</li>
+<li>
+<p>Not necessary, but you can manually remove all weatherfax_pi tarballs from "C:\ProgramData\opencpn\plugins\cache\tarballs". For more information about the location of installation files see the Development Manual - Installation Paths <a href="https://opencpn-manuals.github.io/main/plugin-installer/Installation-paths.html" class="bare">https://opencpn-manuals.github.io/main/plugin-installer/Installation-paths.html</a></p>
+</li>
+<li>
+<p>Use search "CoordinateSets.xml" in your files to determine where the Opencpn local user (writable) files are stored if you don&#8217;t know already.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>When weatherfax_pi tarballs are installed, updated  <em>%localappdata%/opencpn/plugins/weatherfax/data</em> files are installed.
+After internet weatherfax files are retrieved using <em>Retrieve &gt; Update Data Files</em> and when weatherfax or opencpn is closed, the coordinateSets.xml in memory is saved to the User writable directory <em>C:\ProgramData\opencpn\plugins\weatherfax</em> with any Image Wizard coordinate changes made by the User. If the original coordinate name is use the changes are save to the new CoordinateSets.xml file ( instead of the installation coordinateSets.xml file at <em>%localappdata%/opencpn/plugins/weatherfax/data</em>). If <em>New Coordinates</em> is selected from the dropdown menu in the upper left (or <em>New Coordinates 2</em> or <em>3</em>) then those are saveed in a new User_CoordinateSets.xml file also located in the user writable directory <em>C:\ProgramData\opencpn\plugins\weatherfax</em> and which is used for the image in future downloads.</p>
+</div>
+<div class="paragraph">
+<p>We also notice that the empty WeatherfaxInternetRetrieval.xml file and WeatherfaxSchedule.xml are copied to this directory as well. Is this so that users can customize them?  I am not sure what is happening here.  Should all the WeatherfaxInternetRetrieval_(Regional).xml files be copied there?  Which files are actually being used by the program?</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maintenance_of_xml_files"><a class="anchor" href="#_maintenance_of_xml_files"></a>Maintenance of XML Files</h3>
+<div class="paragraph">
+<p>The weatherfaxinternetretrieval.xml and weatherfaxschedules.xml files must be maintained and updated by all the USERS!
+Contribute your special url&#8217;s and schedules for the benefit of all.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>WeatherfaxInternetRetrieval.xml is dependent on many MET website services worldwide, and users who contribute xml files.</p>
+</li>
+<li>
+<p>WeatherfaxSchedules.xml is created from NOAA&#8217;s current Worldwide RF Radio Schedule <a href="https://www.weather.gov/nwr&amp;in_desc=NOAA+Weather+Radio/" class="bare">https://www.weather.gov/nwr&amp;in_desc=NOAA+Weather+Radio/</a>   and
+<a href="https://www.nhc.noaa.gov/radiofax.shtml" class="bare">https://www.nhc.noaa.gov/radiofax.shtml</a></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Users are asked to submit error reports and updated xml files through <em>github.com/rgleason/weatherfax_pi</em>  using "Issues" and attaching files or make a pull request.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weatherfaxinternetretrieval_files_12_regional_files"><a class="anchor" href="#_weatherfaxinternetretrieval_files_12_regional_files"></a>WeatherFaxInternetRetrieval Files (12 Regional Files)</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>WeatherFaxInternetRetrieval_PWx_Pacific.xml    Passageweather Pacific</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_PWx_India.xml      Passageweather India</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_PWx_Euro_Atl.xml   Passageweather European</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_PWx_Amer_Atl.xml   Passageweather American Atlantic</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_NOAA_OPC.xml       NOAA Ocean Prediction Center</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_NOAA.xml           NOAA</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_Navy.xml           Navy Gulf Stream</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_Misc.xml           Bermuda, French Polynesia, Chile, South Africa</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_LaMMA.xml          Ligurian, Mediterranean, Adriatic, Ionian, Sardinia, Ionian, etc.</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_Europe.xml         German Weather DWD, ECMWF, GFS, UK MET, Arpege, Arome, all of Europe</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_Aviation.xml       Sat Images, Infra-red</p>
+</li>
+<li>
+<p>WeatherFaxInternetRetrieval_Australia.xml      Australia BOM</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_of_strdate"><a class="anchor" href="#_use_of_strdate"></a>Use of STRDATE</h3>
+<div class="paragraph">
+<p>Date and Time Manipulation using DATE and STRDATE Functions
+<a href="https://www.ibm.com/support/pages/date-and-time-manipulation-using-date-and-strdate-functions" class="bare">https://www.ibm.com/support/pages/date-and-time-manipulation-using-date-and-strdate-functions</a></p>
+</div>
+<div class="paragraph">
+<p>Download the IBM White Paper  June 26 2009
+<a href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strdate-wstrdate?view=msvc-170" class="bare">https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/strdate-wstrdate?view=msvc-170</a></p>
+</div>
+<div class="paragraph">
+<p>Format Specifier 	Description
+%8 	ISO-8601 date format. Valid format is YYYYMMDD&#8217;T&#8217;HHMMSS'.'sssZ
+Note This date format cannot be combined with any other format specifier.
+%a 	Abbreviated weekday name.
+%A 	Full weekday name.
+%b 	Abbreviated month name.
+%B 	Full month name.
+%d 	Day of the month as a decimal number (01 - 31).
+%H 	Hour in 24-hour format (00 - 23).
+%I 	Hour in 12-hour format (01 - 12).
+%j 	Day of the year as a decimal number (001 - 366).
+%m 	Month as a decimal number (01 - 12).
+%M 	Minute as a decimal number (00 - 59).
+%S 	Second as a decimal number (00 - 59)
+%U 	Week of the year as a decimal number, with Sunday as the first day of the week (00 - 51).
+%w 	Weekday as a decimal number (0 - 6, with Sunday as "0").
+%W 	Week of the year as a decimal number, with Monday as the first day of the week (00 - 51).
+%y 	Year without the century as a decimal number (00 - 99).
+%Y 	Year with the century as a decimal number.
+%% 	Percent sign.</p>
+</div>
+<div class="paragraph">
+<p>For more examples and discussion about the use of strdate please see
+<a href="https://github.com/seandepagnier/weatherfax_pi/issues/58" class="bare">https://github.com/seandepagnier/weatherfax_pi/issues/58</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_examples_and_use"><a class="anchor" href="#_examples_and_use"></a>Examples and Use</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>David Burch&#8217;s Blog has made some videos which help to explain how to update the world regional xmls and the coordinateset.xml file.
+<a href="https://www.youtube.com/watch?v=Ks4JwUYu84w">How to update file souces for OpenCPN weatherfax plugin</a></p>
+</div>
+<div class="paragraph">
+<p><a href="http://davidburchnavigation.blogspot.com/search?q=weatherfax">How to update file souces for OpenCPN weatherfax plugin</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.instructables.com/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/">Raspberry Pi NOAA Weather Satellite Receiver</a></p>
+</div>
+<div class="paragraph">
+<p>Thanks to Sean for a great Plugin!</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

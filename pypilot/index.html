@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Pypilot Autopilot :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/pypilot/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="pypilot" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Pypilot Autopilot</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rgleason/pypilot_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Pypilot Autopilot</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/pypilot_icon.png" alt="pypilot icon">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/pypilot/pypilot_pi" class="bare">https://github.com/pypilot/pypilot_pi</a><br></p>
+</li>
+<li>
+<p>Maintenance Source: <a href="https://github.com/rgleason/pypilot_pi" class="bare">https://github.com/rgleason/pypilot_pi</a><br></p>
+</li>
+<li>
+<p>Download:https://opencpn.org/OpenCPN/plugins/pypilot.html<br></p>
+</li>
+<li>
+<p>Forum: <a href="https://www.cruisersforum.com/forums/f134/pypilot-199337.html">Pypilot Cruiser&#8217;s Forum Thread</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_what_and_why"><a class="anchor" href="#_1_what_and_why"></a>1. What and Why</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The pypilot plugin provides an interface to the free software autopilot
+pypilot. Control, configure and calibrate the autopilot from OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>The Pypilot_pi interface plugin will work with any operating system
+running opencpn (Linux, Windows, MacOS, Android are available). The
+Pypilot_pi interface plugin is separate and distinct from the plugin
+“autopilot_route_pi”.</p>
+</div>
+<div class="paragraph">
+<p>The pypilot server that pypilot_pi connects to, so far typically runs on
+raspberry pi, but it can work on orange pi or potentially other systems
+as well.</p>
+</div>
+<div class="paragraph">
+<p>Note: OpenCPN can communicate with pypilot server already via nmea to
+receive compass heading, and to autopilot, so this plugin is not
+strictly required.</p>
+</div>
+<div class="paragraph">
+<p>This plugin allows for configuration and tuning of the
+autopilot in ways not possible through basic nmea0183 messaging. The
+plugin also allows for graphical overlays of the autopilot settings
+directly onto the chart.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/pypilot_plugin_screenshot.png" alt="pypilot plugin screenshot">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_installation"><a class="anchor" href="#_2_installation"></a>2. Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The OpenCPN Manual has general information in <a href="../opencpn-plugins/misc/plugin-install.html" class="xref page">Plugin Download, Install and Enable</a> for installing this plugin.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_other_information"><a class="anchor" href="#_3_other_information"></a>3. Other Information</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>OpenCPN Plugin for Pypilot Autopilots An OpenSource Marine Autopilot.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://pypilot.org/wiki/doku.php">PyPilot Website (Hardware and Software</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot">Github Repository</a> (Python &amp; C++)</p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/Hardware">Hardware</a></p>
+</li>
+<li>
+<p>Example: Pypilot is tested and working on a trimaran sailing at 15 knots.</p>
+</li>
+<li>
+<p>Example: <a href="https://youtu.be/KQuBwLSMSxI">Video: Pypilot on Princess Mia</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_capable_of_steering_under_sail_in_harbors"><a class="anchor" href="#_4_capable_of_steering_under_sail_in_harbors"></a>4. Capable of steering under sail in harbors.</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The autopilot route plugin capable of steering under sail in harbors</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Example:
+<a href="https://phoenixketch.blogspot.com/2019/01/pypilot-open-source-marine-autopilot.html">Hydraulic
+Installation: S/V Phoenix [Ketch</a> with Pypilot]</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_pypilot_forums"><a class="anchor" href="#_5_pypilot_forums"></a>5. PyPilot Forums</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.cruisersforum.com/forums/f134/pypilot-199337.html">Pypilot Cruiser&#8217;s Forum Thread</a></p>
+</li>
+<li>
+<p><a href="https://www.cruisersforum.com/forums/f134/autopilot-open-source-191315.html">Cruiser&#8217;s Forum Autopilot - Open Source</a></p>
+</li>
+<li>
+<p><a href="https://www.cruisersforum.com/forums/f13/free-autopilot-186378.html">Cruiser&#8217;s Forum Free Autopilot Discussion</a></p>
+</li>
+<li>
+<p><a href="https://forum.openmarine.net/forumdisplay.php?fid=17">PyPilot OpenMarine Forum</a></p>
+</li>
+<li>
+<p><a href="https://www.cruisersforum.com/forums/f134/opencpn-and-arduboat-199849.html">PyPilot with Arduboat Discussion</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sean D&#8217;Epagnier&#8217;s <a href="https://github.com/pypilot/pypilot/wiki/autopilot_computer">PyPilot AutoPilot</a> using raspberry zero-W or orange,</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/controller">Controller</a>,</p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/imu">IMU</a> with</p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki/LCD_keypad">Optional user
+interface LCD and keypad</a>, gps and weather sensors.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/pypilot/pypilot/wiki/webapp">Pypilot Webapp</a> if using
+tinypilot, creates a webserver which provides remote autopilot control
+through a browser. Trimaran test used rtlsdr IR remote for control. It
+can use any tv remote, also buttons, or gui program through openplotter.</p>
+</div>
+<div class="paragraph">
+<p>This Autopilot uses modified and improved versions of SignalK and
+RTMUlib2. More details are available in the</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/wiki">Wiki</a></p>
+</li>
+<li>
+<p><a href="https://github.com/pypilot/pypilot/blob/master/README">README</a></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/pypilot-menus.png" alt="pypilot menus">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_pypilot_integrated_hardware_shop"><a class="anchor" href="#_6_pypilot_integrated_hardware_shop"></a>6. PyPilot Integrated Hardware Shop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://pypilot.org/store/">Pypilot Store</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>PyPilot Motor Controller</p>
+</li>
+<li>
+<p>TinyPilot Computer</p>
+</li>
+<li>
+<p>Minimal wind sensor - Wind speed and direction</p>
+</li>
+<li>
+<p>Weather Sensors with Display - Wind and Barometric Pressure</p>
+</li>
+<li>
+<p>The wind sensor uses <a href="http://www.sailsmarine.com/ItemDetail.aspx?c=196659&amp;l=g">Davis 6410 Wind
+instrument</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://www.tindie.com/stores/seandepagnier/">Tindie Store</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Orange pi Zero IMU Hat mpu9255 9DOF inertial sensor</p>
+</li>
+<li>
+<p>Raspberry pi Nokia 5110 LCD Hat</p>
+</li>
+<li>
+<p>Orange pi Nokia 5110 LCD Hat</p>
+</li>
+<li>
+<p>Raspberry pi Zero IMU Hat mpu9255 9DOF inertial sensor</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Another favorite rpi from the Tindie Store is
+<a href="https://www.tindie.com/products/astuder/daisy-hat-ais-receiver-for-raspberry-pi/">dAISy
+HAT AIS Receiver for Raspberry Pi</a></p>
+</div>
+<div class="paragraph">
+<p>Pypilot is free software like Opencpn and it is fully supported by
+opencpn, and is better supported than any autopilot. It has 2
+specialized opencpn plugins designed for it. For the cost of a raspberry
+pi, some $4 sensors, and a motor controller you can build, or buy for
+$75 and just use a windshield wiper motor and a belt to the wheel, or if
+you have a tiller:</p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://youtu.be/ZaLBRRelT-M" class="bare">https://youtu.be/ZaLBRRelT-M</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Polar File Conversion :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/weather_routing/polar_file_conversion.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="weather_routing" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Weather Routing</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rgleason/weather_routing_pi/edit/master/manual/modules/ROOT/pages/polar_file_conversion.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Polar File Conversion</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is advanced material, not for beginners.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_weather_routing_pi_and_polar_formats"><a class="anchor" href="#_weather_routing_pi_and_polar_formats"></a>Weather_routing_pi and Polar Formats</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The plugin has a very useful <strong>Edit</strong> mode for polars under</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>WeatherRouting Configuration &gt; Boat &gt; Edit</strong></p>
+</li>
+<li>
+<p>Then highlight the polar file and Select <strong>Edit</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Dimension Tab</strong> enables adding and deleting columns and rows.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><a class="image" href="_images/wxrte-edit-polar-file.jpg"><img src="_images/wxrte-edit-polar-file.jpg" alt="wxrte edit polar file" width="550" title="Edit Polar File"></a></span></p>
+</div>
+<div class="paragraph">
+<p>For example: Changing the <em>anomalous</em> value 4.7 to 6.6 results in a smoother curve at 47 degrees and 10 knots TWS.</p>
+</div>
+<div class="paragraph">
+<p>The weather_routing_pi plugin references several files located in <em>c:/ProgramData/opencpn/plugins/weather_routing</em>.</p>
+</div>
+<div class="paragraph">
+<p>To see where these files are set in the plugin, select a route or make a new one.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pick <strong>Configuration &gt; Edit</strong></p>
+</li>
+<li>
+<p>Then pick <strong>Boat &gt; Edit</strong> a tabbed dialogue box will open.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_plot_details_tab"><a class="anchor" href="#_plot_details_tab"></a>Plot Details Tab</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Open, Save and Save as Buttons</p>
+</li>
+<li>
+<p>This is the pointer to the <strong>boat&gt;.xml</strong> file which contains the boat sailing characteristics, it is initially set to <strong>boat.xml</strong> or <strong>boat-climatolgy.xml</strong>.</p>
+</li>
+<li>
+<p>After you have gone through all the tabs and set the boat&#8217;s Lwl, Loa, Displacement, etc.</p>
+</li>
+<li>
+<p><strong>Save as</strong> using your boat&#8217;s name.</p>
+</li>
+<li>
+<p>Then "open" that file each time weather_routing needs those settings.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_opencpn_boat_xml_file_boat_climatology_xml"><a class="anchor" href="#_opencpn_boat_xml_file_boat_climatology_xml"></a>OpenCPN &lt;boat&gt;.xml File  (Boat-Climatology.xml)</h3>
+<div class="paragraph">
+<p>Found under <strong>Configuration &gt; Edit &gt; Boat Edit &gt; Plot Details Tab</strong> the file referenced is <em>boat.xml</em> or <em>boat-climatology.xml</em>.</p>
+</div>
+<div class="paragraph">
+<p>This is a typical <strong>&lt;boat&gt;.XML</strong> file, one of the initial default files <strong>Boat-Climatology.xml</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;OpenCPNWeatherRoutingBoat version="1.13" creator="Opencpn Weather Routing plugin"&gt;
+    &lt;Polar FileName="C:\ProgramData\opencpn\\plugins\weather_routing\polars\Example\Example-0-10.pol" /&gt;
+    &lt;Polar FileName="C:\ProgramData\opencpn\\plugins\weather_routing\polars\Example\Example-6-24.pol" /&gt;
+    &lt;Polar FileName="C:\ProgramData\opencpn\\plugins\weather_routing\polars\Example\Example-15-30.pol" /&gt;
+    &lt;Polar FileName="C:\ProgramData\opencpn\\plugins\weather_routing\polars\Example\Example-24-60.pol" /&gt;
+&lt;/OpenCPNWeatherRoutingBoat&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This file references the polar files that will be used for the current routing, the first one being <strong>Example-0-10.pol</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_opencpn_polar_pol_example_0_10_pol"><a class="anchor" href="#_opencpn_polar_pol_example_0_10_pol"></a>OpenCPN &lt;polar.pol (Example-0-10.pol)</h3>
+<div class="paragraph">
+<p>The second file is under <strong>Configuration &gt; Edit &gt; Boat Edit &gt; Polar Tab</strong> and this is likey to have 4 polar files on initial installation. Highlight one of the files. <strong>Polar File Tab</strong> shows the path of the Polar file being used, if one exists, otherwise the program has builtin VPP calculation using the boats characteristics which have been entered, which is in effect when the path shows as "&lt;computed&gt;".</p>
+</div>
+<div class="paragraph">
+<p>If you have prepared a polar file in the Opencpn format for your boat, you can load it into the plugin from this tab, and after you <strong>Save</strong> from the <strong>Plot Details</strong> tab, the pathname will be remembered.</p>
+</div>
+<div class="paragraph">
+<p>Sometimes the plugin is picky about these files. If it is close the plugin and opencpn and reopen, to reset it. Then try again. The two sample files are shown below. They are paired. If you load the XML file the referenced polar file will be loaded if it is in the path and the correct format.</p>
+</div>
+<div class="paragraph">
+<p>This is a typical <strong>&lt;boat_polar&gt;.csv</strong> or <strong>&lt;boat_polar&gt;.pol</strong>, the first polar file referenced by the default  <strong>Boat-Climatology.xml</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>twa/tws;1;2;3;4;5;6;7;8;9;10
+52;;0.4;0.8;1.9;3.5;4;4.3;4.7;5;5.5
+60;0.01;0.5;0.9;2.1;3.7;4.3;4.6;4.9;5.6;6.5
+75;0.01;0.5;1.1;2.3;3.8;4.5;4.9;5.3;5.8;6.6
+90;0.01;0.6;1.1;2.4;3.9;4.6;5.1;5.5;5.9;6.6
+110;0.01;0.5;1;2.3;3.6;4.2;5;5.5;5.9;6.6
+120;0.01;0.5;0.9;2;3.4;3.9;4.7;5.2;5.7;6.6
+135;0.01;0.45;0.8;1.9;3.1;3.6;4.2;4.6;5.2;6
+150;0.01;0.4;0.7;1.8;2.8;3.2;3.6;4;4.8;5.7
+180;0.01;0.3;0.6;1.6;2.5;2.8;3.2;3.8;4.4;5.1</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_qtvlm_polar_format"><a class="anchor" href="#_qtvlm_polar_format"></a>qtVLM Polar Format</h3>
+<div class="paragraph">
+<p><a href="https://www.starpath.com/qtVlm/#polar" class="bare">https://www.starpath.com/qtVlm/#polar</a></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Extension of the file name. Csv</p>
+</li>
+<li>
+<p>Separator ';' (semicolon)</p>
+</li>
+<li>
+<p>Double-entry table</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The first cell always contains 'TWA \ TWS'</p>
+</li>
+<li>
+<p>The first line lists the wind forces. Vlm does not go beyond 60 knots of wind.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Beginning of each line gives the look, then each value corresponding to the shape and strength of the wind (column heading).</p>
+</li>
+<li>
+<p>The digital data of the polar use a decimal point, 'that is the point.' An integer (no point ended) is valid.</p>
+</li>
+<li>
+<p>Whites are valid (value = 0.0) but discouraged. Thank you for being explicit.</p>
+</li>
+<li>
+<p>Text file format is UNIX ie lines that are terminated by LF (Line Feed) and not CR (Carriage Return) and LF.</p>
+</li>
+<li>
+<p>A good text editor windows (PsPad or Notepad + +) knows rerecord this format.</p>
+<div class="literalblock">
+<div class="content">
+<pre>TWA\TWS;0;2;4;6;8;10;12;14;16;18;20;22;24;26;28;30;32;34;36;38;40;42;44;46;48;50;52;54;56;58;60
+0;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000;0.000
+5;0.000;0.210;0.420;0.630;0.800;0.860;0.920;0.940;0.950;0.970;0.980;0.980;0.990;0.950;0.880;0.810;0.740;0.670;0.600;0.530;0.460;0.370;0.280;0.190;0.090;0.000;0.000;0.000;0.000;0.000;0.000</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_maxsea_polar_format_same_as_adrena_or_sailgrib_wr"><a class="anchor" href="#_maxsea_polar_format_same_as_adrena_or_sailgrib_wr"></a>Maxsea Polar Format (same as Adrena, or SailGrib WR)</h3>
+<div class="paragraph">
+<p><a href="http://www.sailgrib.com/wr-user-guide" class="bare">http://www.sailgrib.com/wr-user-guide</a> [sailgrib.com WR User Guide]</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The first row defines the True Wind Speed.</p>
+</li>
+<li>
+<p>The first column defines the True Wind Angle.</p>
+</li>
+<li>
+<p>In the example, the theoretical hull speed for various wind velocities and wind angles is in the cells.</p>
+</li>
+<li>
+<p>Modify the True Wind Speed values in the first row. The example below uses 10 and 30 Kts.</p>
+</li>
+<li>
+<p>Enter these values in the first row and delete the other columns.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>In an Excel spreadsheet</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>TWA 10 15 20 25
+30 2.0 5.4 7.2 7.9
+90 4.7 9.5 11.5 12.8
+150 2.9 7.4 10.5 13.0</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Sailing Performance: <a href="http://www.sailingperformance.com/Products.html" class="bare">http://www.sailingperformance.com/Products.html</a><br>
+Expedition <a href="http://www.expeditionmarine.com/index.html" class="bare">http://www.expeditionmarine.com/index.html</a><br>
+Isler <a href="http://www.islersailing.com/new_page_3.htm" class="bare">http://www.islersailing.com/new_page_3.htm</a><br>
+BLUR Boats and Polars <a href="http://www.blur.se/boats/" class="bare">http://www.blur.se/boats/</a><br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bluewater_racing_and_expedition_polar_file_format"><a class="anchor" href="#_bluewater_racing_and_expedition_polar_file_format"></a>Bluewater Racing, and Expedition Polar file format</h3>
+<div class="paragraph">
+<p><a href="https://bluewaterracing.com/htdocs/help/pages/polarmanager.htm" class="bare">https://bluewaterracing.com/htdocs/help/pages/polarmanager.htm</a></p>
+</div>
+<div class="paragraph">
+<p>Quote:  A polar file is a sequence of lines. Each line describes the curve for one windspeed, <em>ws</em>. Optionally, the first line may begin with the string "pol", in which case it is treated as a comment line. This klunky format is not my idea; it is for compatibility with <em>Expedition</em> and other software tools, and because it loads easily into spreadsheet tools such as <em>Excel</em>.</p>
+</div>
+<div class="paragraph">
+<p>Each curve is described on one line of the text file by a windspeed, followed by a sequence of pairs of True Wind Angle and boatspeed. (TWA in degrees, BSP in knots)  eg:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>10 30 0 45 6 90 8.1 160 7 180 5
+15 30 0 40 8 90 12 150 10 165 9 170 5</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This gives two curves, one for windspeed 10, one for windspeed 15. Different curves may have different TWA points, and different numbers of points. The line for windspeed 10 specifies a boatspeed of zero knots at a true wind angle of 30 degrees, a boatspeed of six knots at TWA 45, 8.1 knots at 90, seven knots at 160 degrees, and five knots at 180 degrees.</p>
+</div>
+<div class="paragraph">
+<p>There can be a zero windspeed curve with non-zero boatspeed, i.e., “when the wind is gone, the motor&#8217;s on.”</p>
+</div>
+<div class="paragraph">
+<p>Rules for the data in polar files:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>One windspeed curve per line.</p>
+</li>
+<li>
+<p>There must be a least 3 points per curve.</p>
+</li>
+<li>
+<p>There must be at least one non-zero windspeed curve.</p>
+</li>
+<li>
+<p>The minimum TWA is zero, and the maximum is 180.</p>
+</li>
+<li>
+<p>The 2nd smallest TWA in a line is the best VMG upwind angle for that windspeed. The 2nd largest TWA is the best VMG downwind angle for that</p>
+</li>
+<li>
+<p>The first TWA should be less than any 2nd TWA in any curve. Ideally, zero.</p>
+</li>
+<li>
+<p>The last TWA should be greater than any 2nd-to-last TWA in any curve. Ideally, 180</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If these rules are broken, the behavior of the program is undetermined.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bluewater_racing_example_and_expedition"><a class="anchor" href="#_bluewater_racing_example_and_expedition"></a>Bluewater Racing Example (and Expedition)</h3>
+<div class="literalblock">
+<div class="content">
+<pre>2 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+4 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 18
+6 24 28 32 36 40 44 48 52 __4.5__ 56 60 __5__ 64 68 72 76 __5.5__ 80 84 88 92 __5.7__ 96 100 104 108 112 __5.8__ 116 120 __5.5__ 124 128 132 136 __4.8__ 140 144 148 152 __4__ 156 160 164 168 172 176 180
+8 24 28 32 36 40 44 48 52 __5.4__ 56 60 __6__ 64 68 72 76 __6.4__ 80 84 88 92 __6.6__ 96 100 104 108 112__ 6.7__ 116 120 __6.5__ 124 128 132 136 __6__ 140 144 148 152 __5__ 156 160 164 168 172 176 180
+10 24 28 32 36 40 44 48 52 __6.1__ 56 60 __6.5__ 64 68 72 76 __6.8__ 80 84 88 92__ 7__ 96 100 104 108 112 __7.1__ 116 120 7 124 128 132 136 __6.6__ 140 144 148 152 __5.9__ 156 160 164 168 172 176 180
+12 24 28 32 36 40 44 48 52 6.4 56 60 6.7 64 68 72 76__ 7__ 80 84 88 92 __7.3__ 96 100 104 108 112 __7.4__ 116 120 7.3 124 128 132 136 7 140 144 148 152 __6.5__ 156 160 164 168 172 176 180
+14 24 28 32 36 40 44 48 52 6.8 56 60 6.8 64 68 72 76 7.2 80 84 88 92 7.5 96 100 104 108 112 7.6 116 120 7.6 124 128 132 136 7.4 140 144 148 152 6.9 156 160 164 168 172 176 180
+16 24 28 32 36 40 44 48 52 6.7 56 60 6.9 64 68 72 76 7.3 80 84 88 92 7.6 96 100 104 108 112 7.7 116 120 7.9 124 128 132 136 7.7 140 144 148 152 7.3 156 160 164 168 172 176 180
+18 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+20 24 28 32 36 40 44 48 52 6.7 56 60 7 64 68 72 76 7.4 80 84 88 92 7.7 96 100 104 108 112 7.9 116 120 8.2 124 128 132 136 8.3 140 144 148 152 7.9 156 160 164 168 172 176 180
+22 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+24 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+26 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+28 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+30 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+32 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+34 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180
+36 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128 132 136 140 144 148 152 156 160 164 168 172 176 180</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

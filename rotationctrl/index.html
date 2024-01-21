@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rotation Control :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/rotationctrl/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rotationctrl" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Rotation Control</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rgleason/rotationctrl_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Rotation Control</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_buttons.png" alt="rotctrl buttons">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/seandepagnier/rotationctrl_pi" class="bare">https://github.com/seandepagnier/rotationctrl_pi</a><br></p>
+</li>
+<li>
+<p>Maintenance Source: <a href="https://github.com/rgleason/rotationctrl_pi" class="bare">https://github.com/rgleason/rotationctrl_pi</a><br></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/chartrotation.html" class="bare">https://opencpn.org/OpenCPN/plugins/chartrotation.html</a><br></p>
+</li>
+<li>
+<p>Forum: <a href="http://www.cruisersforum.com/forums/f134/rotationctrl-plugin-144542.html" class="bare">http://www.cruisersforum.com/forums/f134/rotationctrl-plugin-144542.html</a><br></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Note: RotationCtrl is an early testing release so you may encounter some bugs.<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_what_and_why"><a class="anchor" href="#_1_what_and_why"></a>1. What and Why</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Rotation Control Plugin (RotationCtrl-pi) allows the user to control the way the chart is shown on the
+the computer-screen.</p>
+</div>
+<div class="sect2">
+<h3 id="_a_what_rotationctrl_can_do"><a class="anchor" href="#_a_what_rotationctrl_can_do"></a>A. What RotationCtrl can do</h3>
+<div class="paragraph">
+<p>You can rotate the chart manually (clockwise, counterclockwise) and in
+the following manners:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>North</strong> up (the top of the chart corresponds to the direction of true North).</p>
+</li>
+<li>
+<p><strong>South</strong> up (the top of the chart corresponds to the direction of true South).</p>
+</li>
+<li>
+<p><strong>Course</strong> up (the top of the chart points corresponds to the direction you are actually goïng (Course over Ground).</p>
+</li>
+<li>
+<p><strong>Heading</strong> up (the top of the chart corresponds to the direction you are steering).</p>
+</li>
+<li>
+<p><strong>Route</strong> up (the top of the chart corresponds to the waypoint that is activated as “navigate to”.</p>
+</li>
+<li>
+<p><strong>Wind</strong> up (the top of the chart corresponds to the direction the wind is coming from).</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The plugin gets the necessary information in the following ways:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>about “<strong>North</strong>“and “<strong>South</strong>”: from the information in your <strong>digital charts</strong>.</p>
+</li>
+<li>
+<p>about your <strong>course</strong>: from your <strong>GPS</strong>.</p>
+</li>
+<li>
+<p>about your <strong>heading</strong>: from your <strong>(electronic) compass</strong> that outputs NMEA-data to OpenCPN.</p>
+</li>
+<li>
+<p>about your <strong>route</strong>: from <strong>OpenCPN</strong> (when you have activated a route).</p>
+</li>
+<li>
+<p>about the <strong>wind</strong>: from your <strong>wind sensor</strong> that outputs NMEA-data to OpenCPN.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_b_why_rotation_pi_can_be_useful"><a class="anchor" href="#_b_why_rotation_pi_can_be_useful"></a>B. Why Rotation-pi can be useful</h3>
+<div class="paragraph">
+<p>Normally the representation of a chart is “North up”.</p>
+</div>
+<div class="paragraph">
+<p>That means Top is “North”, Right hand side is “East”, Bottom is “South” and Left hand side is “West”.</p>
+</div>
+<div class="paragraph">
+<p>But maybe you prefer to have the top of the chart corresponding to “South”.</p>
+</div>
+<div class="paragraph">
+<p>Or to have the top of the chart corresponding to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>your present course (to where you are really going to)</p>
+</li>
+<li>
+<p>or heading (to the direction your bow is pointing to)</p>
+</li>
+<li>
+<p>or route (to where you are supposed to go)</p>
+</li>
+<li>
+<p>or the wind-direction (the direction to avoid facing while throwing up or peeing).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Examples</strong>:</p>
+</div>
+<div class="paragraph">
+<p>This sailing vessel is inward bound. The representation is “North up”.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_north_up.png" alt="rotctrl north up">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <strong>wind</strong> (blue arrow) is from the <strong>West</strong>.</p>
+</li>
+<li>
+<p>The ship&#8217;s <strong>heading</strong> is the <strong>red dashed</strong> line.</p>
+</li>
+<li>
+<p>The ships <strong>course</strong> (over the ground) is the <strong>white dotted</strong> line.</p>
+</li>
+<li>
+<p>The ships <strong>route</strong> (next active waypoint) is the red dot at the end of the <strong>green line</strong> (and don&#8217;t worry, she&#8217;s just about to turn to port).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The next illustrations show you the differences. Note the rotation of the coastline.</p>
+</div>
+<div class="paragraph">
+<p><strong>South</strong> up</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_south_up.png" alt="rotctrl south up">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Course</strong> up</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_course_up.png" alt="rotctrl course up">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Heading</strong> up</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_heading_up.png" alt="rotctrl heading up">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Route</strong> up</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_route_up.png" alt="rotctrl route up">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Wind</strong> up</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_wind_up.png" alt="rotctrl wind up">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_installation"><a class="anchor" href="#_2_installation"></a>2. Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The OpenCPN Manual has general information in <a href="../opencpn-plugins/misc/plugin-install.html" class="xref page">Plugin Download, Install and Enable</a> for installing this plugin. This is the preferred way.</p>
+</div>
+<div class="paragraph">
+<p>Rotation-pi can also be downloaded from <a href="https://opencpn.org/OpenCPN/info/downloadplugins.html" class="bare">https://opencpn.org/OpenCPN/info/downloadplugins.html</a>
+and installed with a Legacy Pl Package.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_download.png" alt="rotctrl download">
+</div>
+</div>
+<div class="paragraph">
+<p>Don&#8217;t forget to enable the plugin.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_enable.png" alt="rotctrl enable">
+</div>
+</div>
+<div class="paragraph">
+<p>The Rotation-pi icons should appear in your Toolbar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_buttons.png" alt="rotctrl buttons">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_setting_preferences"><a class="anchor" href="#_3_setting_preferences"></a>3. Setting Preferences</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Additionally you can set the <strong>Preferences</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_preferences.png" alt="rotctrl preferences">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_preferences-2.png" alt="rotctrl preferences 2">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_standard_actions"><a class="anchor" href="#_4_standard_actions"></a>4. Standard Actions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>What are basic (standard) actions you have to do to make Rotation-pi
+work.<br>
+Simple: just click the button of your choice to activate the desired
+rotation.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_buttons.png" alt="rotctrl buttons">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: the buttons for “Manual Tilt” (the red buttons) do not seem to
+work yet!<br>
+To go back to the normal representation (“North up”) click the “North
+up”-button.<br>
+<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_remarks"><a class="anchor" href="#_5_remarks"></a>5. Remarks</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_a_why_or_why_not_north_up"><a class="anchor" href="#_a_why_or_why_not_north_up"></a>A. Why (or why not) "North up"?</h3>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_real_north_up_vector.png" alt="rotctrl real north up vector">
+</div>
+</div>
+<div class="paragraph">
+<p>This is the “normal” representation (“<strong>North</strong> up”).<br>
+<br>
+We are sailing in a narrow channel in a southerly direction.<br>
+On the chart, the coast is on the <strong>left</strong> side of the boat-icon.<br>
+<br>
+But for the helmsman on board the coast is on his <strong>right</strong> hand
+(starboard) side.<br>
+For someone who has a clear visual image of the chart “in his head”,
+this should not be a problem.<br>
+But other people may find it a bit confusing.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_real_south_up_vector.png" alt="rotctrl real south up vector">
+</div>
+</div>
+<div class="paragraph">
+<p>This is the same situation, but now with “<strong>Heading</strong> up”.</p>
+</div>
+<div class="paragraph">
+<p>In this presentation-mode the chart shows the coast on the same side
+(right hand) as it is seen from the helmsman&#8217;s position.<br>
+That sounds logical.</p>
+</div>
+<div class="paragraph">
+<p>But for those of us who have “the chart in their head” it can be
+confusing.<br>
+(because the brain may say <em>“Hey skipper! It&#8217;s your boat that is moving
+and turning, not the coast!”</em>)</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s face it: when thinking of the UK and Ireland,is this what you have
+in mind?</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_uk_south_up.png" alt="rotctrl uk south up">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_b_notes_on_possible_strange_behavior_of_enc_text"><a class="anchor" href="#_b_notes_on_possible_strange_behavior_of_enc_text"></a>B. Notes on possible strange behavior of ENC-text</h3>
+<div class="paragraph">
+<p>When using ENC-charts (vector-charts) you might experience some weird
+behavior when using any other mode than “North up”.</p>
+</div>
+<div class="paragraph">
+<p>This is “<strong>North</strong> up”</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_333_nu.png" alt="rotctrl 333 nu">
+</div>
+</div>
+<div class="paragraph">
+<p>Note the ENC-text for the names and numbers of the buoys and the
+indication “Wk” on the wreck-symbols.</p>
+</div>
+<div class="paragraph">
+<p>And a few seconds later, but now with “<strong>Heading</strong> up”.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_325_cu.png" alt="rotctrl 325 cu">
+</div>
+</div>
+<div class="paragraph">
+<p>Note the icons for the buoys are not “upright” anymore, but also rotated
+(and with “South up” they would be completely upside down).</p>
+</div>
+<div class="paragraph">
+<p>But more disturbing is that the ENC text for the names and numbers of
+the buoys has disappeared (as has the text “Wk” on the wreck-symbols).<br>
+And other ENC-text might be placed in the wrong positions.</p>
+</div>
+<div class="paragraph">
+<p>This “missing text-bug” can occur because in this example a ENC (a
+vector chart) is used.<br>
+It can occur with all representations that are not “North up”.</p>
+</div>
+<div class="paragraph">
+<p>Note: This does not seem to occur to all ENC&#8217;s, but it <strong>can</strong> occur.<br>
+It can not happen while using a raster chart (on a raster chart you will
+not lose the text, but the text will be rotated the same way as the rest
+of the information on that chart).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_c_notes_on_strange_interaction_with_google_earth"><a class="anchor" href="#_c_notes_on_strange_interaction_with_google_earth"></a>C. Notes on strange interaction with Google Earth</h3>
+<div class="paragraph">
+<p>When used in conjunction with the Google Earth-plugin, something
+strange happens. In any representation-mode other than “North-up” or
+“South-up”, the picture in the Google Earth-window rotates
+<strong><em>opposite</em></strong> to the rotation of the main screen (the chart).<br>
+In other words, if the main charts rotates clockwise, the Google
+Earth-window rotates counter-clockwise and vice versa.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/rotctrl_google_earth_contra.png" alt="rotctrl google earth contra">
+</div>
+</div>
+<div class="paragraph">
+<p>True, it does make navigation more interesting, but nevertheless should
+be considered a bug in this</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_d_notes_on_possible_performance_issues"><a class="anchor" href="#_d_notes_on_possible_performance_issues"></a>D. Notes on possible performance-issues</h3>
+<div class="paragraph">
+<p>When you alter course, something happens on your OpenCPN screen. In
+normal mode (“North up”) OpenCPN rotates your ship&#8217;s icon. But in modes
+“Heading up”, “Course up” and “Route up”, you want OpenCPN to rotate the
+world. That takes a lot more than just rotating that ship-icon. On less
+powerful systems it might cause the system to respond slower than
+desired (or it might cause other problems).</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

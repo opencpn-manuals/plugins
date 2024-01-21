@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AutoTrackRaymarine Evo :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/autotrackraymarine/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="autotrackraymarine" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">AutoTrackRaymarine Evo</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/douwefokkema/AutoTrackRaymarine_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">AutoTrackRaymarine Evo</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/tracking_panel.png" alt="autotrackraymarine" width="60" height="60">
+</div>
+</div>
+<div class="paragraph">
+<p>Developer: Douwe Fokkema</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/douwefokkema/AutoTrackRaymarine_pi">Github Repository</a></p>
+</li>
+<li>
+<p><a href="http://www.cruisersforum.com/forums/f134/autotrackraymarine_pi-remote-control-and-route-following-for-evolution-pilots-225322.html">Cruiser
+Forum - AutoTrackRaymarine_pi Remote control and route following for Evolution pilots</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Will provide remote control of a Raymarine Evolution autopilot from
+OpenCPN and route following for complex routes from start to finish, but
+requires Actisense NGT-1 to connect to the Raymarine Raytalk-ng network,
+which is an nmea 2000 network with proprietary pgn’s</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operation_from_the_evo"><a class="anchor" href="#_operation_from_the_evo"></a>Operation from the Evo</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Make your route in OpenCPN.</p>
+</li>
+<li>
+<p>Activate it. Cast off.</p>
+</li>
+<li>
+<p>Put the ship on course.</p>
+</li>
+<li>
+<p>Press Auto on the Raymarine P70 pilot head.</p>
+</li>
+<li>
+<p>Pilot takes over as usual.</p>
+</li>
+<li>
+<p>Press auto again.</p>
+</li>
+<li>
+<p>Plugin takes control of the autopilot and will steer your ship along the activated route to your
+destination, and follows the route with a margin (XTE) normally less than 2 meters, independent of cross currents and compass errors.</p>
+</li>
+<li>
+<p>Caution: Only thing to do is keep a lookout for obstacles and traffic.</p>
+</li>
+<li>
+<p>As soon as you press Standby the autopilot returns to standby and you can steer manually again.</p>
+</li>
+<li>
+<p>When you press one of the buttons +/- 1 or 10, pilot will switch to regular auto on the last heading plus the button you pressed.</p>
+</li>
+<li>
+<p>Auto button when pilot is in auto activates the tracking again.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operation_from_opencpn_plugin_interface"><a class="anchor" href="#_operation_from_opencpn_plugin_interface"></a>Operation from OpenCPN Plugin Interface</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Alternatively this may be handled from the plugin window on the OpenCPN screen, see attached image.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The Auto, Standby and +/- buttons work as usual with your Evolution pilot.</p>
+</li>
+<li>
+<p>On top of this comes the Tracking button which is enabled only when a route is active.</p>
+</li>
+<li>
+<p>It will make you follow the active route as described below.</p>
+</li>
+<li>
+<p>Buttons are large for easy use on touch screens.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To use the plugin you need an Actisense NGT-1 to connect to the Raymarine
+Raytalk-ng network, which is an nmea 2000 network with lots of
+proprietary pgn&#8217;s. Some of these are decoded to get access to the
+required functions. The current code (Windows only) can be found at
+<a href="https://github.com/douwefokkema/AutoTrackRaymarine_pi" class="bare">https://github.com/douwefokkema/AutoTrackRaymarine_pi</a> . This version works
+fine with OpenCPN version 5.2 and later.</p>
+</div>
+<div class="paragraph">
+<p>If you want to use this plugin, at <a href="https://www.dropbox.com/s/kh87usvy1otrrlp/AutoTrackRaymarine_pi-0.0.0-ov50-win32.exe?dl=0" class="bare">https://www.dropbox.com/s/kh87usvy1otrrlp/AutoTrackRaymarine_pi-0.0.0-ov50-win32.exe?dl=0</a>
+you will find the installer for AutoTrackRaymarine_pi.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_actisense_ngt_1"><a class="anchor" href="#_actisense_ngt_1"></a>Actisense NGT-1</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In preferences, set the serial port number of your Actisense NGT-1. You
+may forget about the rest. For the technically interested, the plugin is
+using a PID based steering function that calculates corrections on the
+Bearing to Waypoint (BTW) based on the XTE as received from OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>It normally sticks to the route within 2 meters, on heading changes at
+waypoints it may overshoot a little. With large compass errors or strong
+cross currents, it may take a minute or so to settle down on the track.</p>
+</div>
+<div class="paragraph">
+<p>This plugin was inspired by and may use code from autopilot_route_pi,
+Autopilot-Plugin and Canboat (for controlling the Actisense NGT-1).</p>
+</div>
+<div class="paragraph">
+<p>Warning: this plugin may take full control of your autopilot. In case of
+system or software errors be ready to switch the autopilot off (never
+happened).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_remote_control"><a class="anchor" href="#_remote_control"></a>Remote Control</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This plugin also function as a remote control with the possibility to set the autopilot to
+Auto/Standby and to adjust the heading set.</p>
+</div>
+<div class="paragraph">
+<p>The wireless remote control that Raymarine provides is too expensive and rather old fashioned,
+connected through the old Seatalk with a converter that caused all kinds
+of problems.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_track_function_with_opencpn"><a class="anchor" href="#_track_function_with_opencpn"></a>Track Function with Opencpn</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Track function on the autopilot is difficult or impossible to use
+with OpenCPN. It needs data from O, but whatever you send it, after some
+time it switches off with a “No data” message. I have the impression it
+requires a Raymarine display to function.</p>
+</div>
+<div class="paragraph">
+<p>When the Raymarine track function does work, it behaves very
+erratically at startup, steering crazy headings for some minutes, then
+stabilizing on the right track. Further it requires confirmation at
+every waypoint, which is not practical when you have routes with
+hundreds of waypoints often very close together.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_programming_details"><a class="anchor" href="#_programming_details"></a>Programming Details</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To do a better job one needs to control the autopilot for at least the
+following functions: set heading, set auto/standby. I have decoded the
+communication of the autopilot with the pilot head and deciphered the
+proprietary pgn&#8217;s that perform these functions.</p>
+</div>
+<div class="paragraph">
+<p>With this I have build a plugin for OpenCPN that provides a remote control for the autopilot and a
+route following function.</p>
+</div>
+<div class="paragraph">
+<p>The plugin is using a Actisense NGT-1 for the communication with the NMEA2000 network of Raymarine.
+The plugin is also monitoring the keystrokes on the Raymarine P70 pilot head and acts on
+that to activate the route following.
+When the plugin observes that the auto is pressed while the pilot is on auto already, the plugin activates
+the route following.</p>
+</div>
+<div class="paragraph">
+<p>Further details on this plugin: <a href="https://www.cruisersforum.com/forums/f134/autotrackraymarine_pi-remote-control-and-route-following-for-evolution-pilots-225322-2.html">Cruiser
+Forum - AutoTrackRaymarine_pi Remote control and route following for Evolution pilots</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: The PGN&#8217;s I am using to control the Raymarine pilot are
+proprietary and don&#8217;t have nmea183 equivalents. So I do not see how a
+SignalK server can do a conversion. Further I have no need of a
+conversion, my plugin is working and tested during a full sailing
+season. To follow a route I do not need the full route in the plugin. I
+just use the DTW, BTW and XTE for the current leg, that is sufficient to
+steer on track.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: Reason I needed an update in O is that the accuracy of
+the XTE in the nmea183 message lacks precision. I want to steer within
+meters from the track, limited only by the accuracy provided by the GPS</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

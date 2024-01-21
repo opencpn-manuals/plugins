@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Terminology :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/opencpn-plugins/misc/terminology.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="opencpn-plugins" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">OpenCPN Plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="terminology.html">Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="plugin-install.html">Plugin Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="draw-messaging.html">Draw Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplementary hardware</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ais-devices.html">AIS Devices</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="rpi-setups.html">RPI Setups</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplementary software</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="nmea-software.html">NMEA Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="celestial-nav.html">Celestial Navigation Tool</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Main Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Included with OpenCPN</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">Grib Weather</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">Chart Downloader Tab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AIS / Radar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../aisradar/index.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../radar/0.1/index.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rtlsdr/index.html">AIS RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../s63_vector_charts/0.1/index.html">S63 Vector Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../o-charts/index.html">O-charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../photolayer/index.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vfkaps/index.html">VfKaps VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rotationctrl/index.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../chartscale/index.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../objsearch/0.1/index.html">ObjSearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../projections/0.1/index.html">Projections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Logs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../logbook/index.html">Logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../findit/index.html">Findit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vdr/index.html">Voyage Data Recorder VDR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nmea_converter/index.html">NMEA Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../squiddio/0.1/index.html">sQuiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../route/index.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dead_reckoning/index.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otcurrent/index.html">oTidalCurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../frcurrents/index.html">frcurrents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sat2chart/sat2chart.html">Sat2Chart Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic (Included)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../odraw/index.html">OcpnDraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../watchdog/index.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sar/index.html">SAR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sailing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tactics/index.html">Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../plots/index.html">Plots</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../polar/index.html">Polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../windvane/0.1/index.html">Windvane</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Weather</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weatherfax/index.html">WeatherFax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">Grib Weather (Included)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../climatology/index.html">Climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weather_routing/index.html">Weather Routing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Utility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ais-vd/0.1/index.html">AIS-Voyage Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../statusbar/index.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../calculator/index.html">Calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../launcher/0.1/index.html">Launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../debugger/0.1/index.html">Debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../javascript/index.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../pypilot/index.html">Pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../shipdriver/index.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../twocan/0.1/index.html">TwoCan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../gps-odometer/index.html">GPS Odometer</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beta Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../engine-dash/0.1/index.html">Engine Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../race-start/0.1/index.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tidefinder/index.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../deviation/index.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../survey/index.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autopilot_route/index.html">Autopilot Route</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../admiralty/index.html">Admiralty Tides Tables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../ncdf/index.html">NetCDF Tidal Currents</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../otidalroute/index.html">oTidalRoute</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../uktides/index.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../otidalplan/index.html">oTidalPlan uses Harmonics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../earthexplorer/index.html">Earth Explorer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">All plugins A-Z</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">A - E</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../admiralty/index.html">Admiralty Tides Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ais-vd/0.1/index.html">AIS-Voyage Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../aisradar/index.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autopilot_route/index.html">Autopilot Route</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../calculator/index.html">Calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">Chart Downloader Tab</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../chartscale/index.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../climatology/index.html">Climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dead_reckoning/index.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../debugger/0.1/index.html">Debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../deviation/index.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../earthexplorer/index.html">Earth Explorer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../engine-dash/0.1/index.html">Engine Dashboard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">F - O</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../findit/index.html">Findit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../frcurrents/index.html">frcurrents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../grib_weather/grib_weather.html">Grib Weather (Included)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../gps-odometer/index.html">GPS Odometer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../javascript/index.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../launcher/0.1/index.html">Launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../logbook/index.html">Logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ncdf/index.html">NetCDF Tidal Currents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nmea_converter/index.html">NMEA Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nv_charts/index.html">NV Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../objsearch/0.1/index.html">ObjSearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../odraw/index.html">OcpnDraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../o-charts/index.html">O-charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otcurrent/index.html">oTidalCurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otidalplan/index.html">oTidalPlan uses Harmonics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otidalroute/index.html">oTidalRoute</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">P - R</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../photolayer/index.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../plots/index.html">Plots</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../polar/index.html">Polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../projections/0.1/index.html">Projections</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../pypilot/index.html">Pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../race-start/0.1/index.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../radar/0.1/index.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rotationctrl/index.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../route/index.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rtlsdr/index.html">AIS RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">S - T</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../s63_vector_charts/0.1/index.html">S63 Vector Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sar/index.html">SAR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sat2chart/sat2chart.html">Sat2Chart Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../shipdriver/index.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../squiddio/0.1/index.html">sQuiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../statusbar/index.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../survey/index.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tactics/index.html">Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tidefinder/index.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../twocan/0.1/index.html">TwoCan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">U - Z</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../uktides/index.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vdr/index.html">Voyage Data Recorder VDR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vfkaps/index.html">VfKaps VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../watchdog/index.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weatherfax/index.html">WeatherFax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weather_routing/index.html">Weather Routing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../windvane/0.1/index.html">Windvane</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic (Included)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Authoring the manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/pm-plugin-documentation.html">Plugin Documentation Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/intro.html">Manual Maintenance Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/tools.html">Viewing and Editing Tools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/localbuild.html">Local Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/FAQ.html">FAQ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/useful.html">Useful stuff</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../advanced/advanced.html">Understanding the Github Plugins Manual repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Plugins</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">OpenCPN Plugins</a></li>
+    <li>General</li>
+    <li><a href="terminology.html">Terminology</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/opencpn-manuals/plugins/edit/main/manual/plugins/modules/misc/pages/terminology.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Terminology</h1>
+<div class="sect1">
+<h2 id="_bowditch_2002_definitions_for_direction_and_speed"><a class="anchor" href="#_bowditch_2002_definitions_for_direction_and_speed"></a>Bowditch 2002 Definitions (for direction and speed)</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Vector</dt>
+<dd>
+<p>Any quantity, such as a force, velocity, or acceleration, which
+has both magnitude and direction, as opposed to a SCALAR which has
+magnitude only. Such a quantity may be represented geometrically by
+an arrow of length proportional to its magnitude, pointing in the given
+direction. [Dutch: vector]</p>
+</dd>
+<dt class="hdlist1">Velocity</dt>
+<dd>
+<p>A vector quantity equal to speed in a given direction. [Dutch: snelheid
+(in een bepaalde richting)]</p>
+</dd>
+<dt class="hdlist1">North</dt>
+<dd>
+<p>The primary reference direction relative to the earth; the direction
+indicated by 000° in any system other than relative. True north is the
+direction of the north geographical pole; magnetic north the direction
+north as determined by the earth’s magnetic compass; grid north an
+arbitrary reference direction used with grid navigation. [Dutch: noord,
+noorden, N]</p>
+</dd>
+<dt class="hdlist1">True North</dt>
+<dd>
+<p>The direction of the north geographical pole; the reference direction for
+measurement of true directions. [Dutch: ware noorden, Nw]</p>
+</dd>
+<dt class="hdlist1">Variation</dt>
+<dd>
+<p>The angle between the magnetic and geographic meridians at any place,
+expressed in degrees and minutes east or west to indicate the direction
+of magnetic north from true north. The angle between magnetic and grid
+meridians is called GRID MAGNETIC ANGLE, GRID VARIATION, or GRIVATION.
+Called MAGNETIC VARIATION when a distinction is needed to prevent possible
+ambiguity. [Dutch: variatie, var]</p>
+</dd>
+<dt class="hdlist1">Magnetic North</dt>
+<dd>
+<p>The direction indicated by the north seeking pole of a freely suspended
+magnetic needle, influenced only by the earth’s magnetic field. [Dutch:
+magnetische noorden, Nm]</p>
+</dd>
+<dt class="hdlist1">Deviation</dt>
+<dd>
+<p>The angle between the magnetic meridian and the axis of a compass card,
+expressed in degrees east or west to indicate the direction in which the
+northern end of the compass card is offset from magnetic north. Deviation
+is caused by disturbing magnetic influences in the immediate vicinity of
+the compass. Semicircular deviation changes sign (E or W) approximately
+each 180° change of heading; quadrantal deviation changes sign
+approximately each 90° change of heading; constant deviation is the same
+on any heading. Deviation of a magnetic compass after adjustment or
+compensation is RESIDUAL DEVIATION. Called MAGNETIC DEVIATION when a
+distinction is needed to prevent possible ambiguity. [Dutch: deviatie, dev]</p>
+</dd>
+<dt class="hdlist1">Compass North</dt>
+<dd>
+<p>The direction north as indicated by a magnetic compass; the reference
+direction for measurement of compass directions. [Dutch: kompasnoorden, Nk]</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>NOTE:
+Variation is the same as Declination See NOAA Geomagnetism and Wikipedia
+“Declination” (magnetic affects of the world) should not be confused with
+“Deviation” (magnetic effects of the ship). That is the reason we are using
+the word Variation exclusively, as Bowditch does, for clarity and lack of confusion.
+Nautical Acronyms</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_definitions"><a class="anchor" href="#_definitions"></a>Definitions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The definitions below are for those terms commonly used in instrument systems and
+navigation. The abbreviations shown are those more commonly used and may vary from
+one manufacturer to another. The definitions likewise may vary.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Route (RT)</dt>
+<dd>
+<p>A route is a predefined path or passage from one point to another. Routes
+generally use a series of Marks or Waypoints at each course change.
+Waypoints are Location Markers with specific Longitude and Latitude.
+The Route Legs between the Waypoints each have a specific Course and Distance.</p>
+</dd>
+<dt class="hdlist1">Waypoint (WPT)</dt>
+<dd>
+<p>A waypoint marks a specific location, coordinates, or Latitude and Longitude,
+often determined by GPS. A Waypoint could be considered the ending point of
+a Leg.</p>
+</dd>
+<dt class="hdlist1">Isochrones</dt>
+<dd>
+<p>While calculating a Weather Routing the plugin will calculate the location
+of the boat for a given time interval (eg: 1 hr, 4hr, 6 hr or 12hr ) and
+an isochrone represents how far the boat willl sail in a given direction,
+based on the weather and boat conditions, for each successive time interval.
+Isochrones are like contour lines around the starting point. Think of them
+as showing an intermediate destination, and the calculated distancee traveled.</p>
+</dd>
+<dt class="hdlist1">Apparent Wind (AW)</dt>
+<dd>
+<p>Wind speed and direction relative to the boat. Apparent Wind is measured in
+the frame of reference of the boat, which may be subject to boat movement
+through the water (propulsion by sails, engine, etc) and movement of the body
+of water itself (currents, tides, etc). Apparent Wind is relative to the boat.</p>
+</dd>
+<dt class="hdlist1">Apparent Wind Direction (AWD)</dt>
+<dd>
+<p>Compass direction from which the wind is coming relative to the boat.</p>
+</dd>
+<dt class="hdlist1">Apparent Wind Angle (AWA)</dt>
+<dd>
+<p>Apparent Wind Angle is expressed in angle to the bow of Ownship, in degrees
+to port or starboard of the Heading, as measured by the onboard wind instrument.</p>
+</dd>
+<dt class="hdlist1">Apparent Wind Speed (AWS)</dt>
+<dd>
+<p>Wind speed relative to the boat as measured by the onboard wind instrument</p>
+</dd>
+<dt class="hdlist1">Average Speed (AVS)</dt>
+<dd>
+<p>Average Boat Speed through the water. (Trip Log / Trip Time)</p>
+</dd>
+<dt class="hdlist1">Bearing to Waypoint (BTW)</dt>
+<dd>
+<p>Compass bearing to active waypoint measured from the current position.</p>
+</dd>
+<dt class="hdlist1">Bearing Waypoint to Waypoint</dt>
+<dd>
+<p>Compass bearing to a waypoint measured from the previous waypoint.</p>
+</dd>
+<dt class="hdlist1">Boat Position (POS)</dt>
+<dd>
+<p>Latitude and Longitude of the boat</p>
+</dd>
+<dt class="hdlist1">Boat Speed (BSP or STW)</dt>
+<dd>
+<p>Sometimes called Speedo Speed of the boat through the water as measured by
+the onboard speed transducer.</p>
+</dd>
+<dt class="hdlist1">Compass Course (CC)</dt>
+<dd>
+<p>The course steered from the magnetic compass using adjustments for True,
+Variation and Magnetic Deviation values.
+True-Variation-Magnetic-Deviation-Compass (TVMDC) values.</p>
+</dd>
+<dt class="hdlist1">Course (CRS)</dt>
+<dd>
+<p>Compass direction that the boat is moving through the water (HDG + Leeway).
+Note that the difference between CRS and COG is Current. CRS does not
+include the effect of current.</p>
+</dd>
+<dt class="hdlist1">Course to Steer (CTS)</dt>
+<dd>
+<p>The course to steer to offset the effect of currents, wind and other factors.</p>
+</dd>
+<dt class="hdlist1">Speed to go (STG)</dt>
+<dt class="hdlist1">Course Over Ground (COG)</dt>
+<dd>
+<p>Actual Compass direction that the boat is moving over the surface of the
+earth. (HDG + Leeway + Current) “The actual course you are moving along
+at the moment relative to the fixed land, meaning actual direction you
+travel regardless of the course steered and temporary variations in heading
+around this course. Things that cause COG to differ from heading include:
+current, leeway, poor helmsmanship, or compass errors.” Often derived from GPS.</p>
+</dd>
+<dt class="hdlist1">Speed Over Ground (SOG)</dt>
+<dd>
+<p>The speed actually achieved which includes the effect or current set
+(direction) &amp; drift (speed), wind and leeway and helmsman errrors. Same as
+SMG. Often derived from GPS.</p>
+</dd>
+<dt class="hdlist1">Course Made Good (CMG)</dt>
+<dd>
+<p>Is the course actually steered which includes the effect of current set
+(direction) &amp; drift (speed), wind and leeway and helmsman errrors. Note
+we distinguish COG (course over ground) from cmg (course made good), as one
+being present dynamic value, and the other being past. The phrase “course
+made good,” can be used to refer to a single track line or to the
+combination of several course changes between two points. If i sailed 1
+mile north and 1 mile east, i made good a course of 045. Or, if i tried
+to sail course 200 but was being set between 10 and 20°, then i might end
+up “making good a course” of say 214. The distinctions between terms is not
+often critical, but may help to clarify some communications.</p>
+</dd>
+<dt class="hdlist1">Speed made good (SMG)</dt>
+<dd>
+<p>The speed actually achieved which includes the effect or current set
+(direction) &amp; drift (speed), wind and leeway and helmsman errrors.</p>
+</dd>
+<dt class="hdlist1">Cross Track Error (XTE)</dt>
+<dd>
+<p>The perpendicular distance from the direct route (rhumb line or great
+circle) between two waypoints to the current position of the boat (POS)</p>
+</dd>
+<dt class="hdlist1">Dead Reckoning, also Ded Reckoning (DR)</dt>
+<dd>
+<p>Dead reckoning is the process of determining one’s present position by
+projecting known or estimated course(s) and speed(s) from a known past
+position, or predicting a future position by projecting known or estimated
+course(s) and speed(s) from a known present position. The DR position is
+only an approximate position.</p>
+</dd>
+<dt class="hdlist1">Drift (DFT)</dt>
+<dd>
+<p>Speed that the water is moving. This movement may be caused by a number
+of factors, including; tide, ocean currents, river flows etc.</p>
+</dd>
+<dt class="hdlist1">Electronic Chart Display &amp; Information System (ECDIS)</dt>
+<dd>
+<p>An ECDIS is a computer-based navigation information system that complies
+with International Maritime Organization (IMO) regulations and can be used
+as an alternative to paper nautical charts. IMO refers to similar systems
+not meeting the regulations as Electronic Chart Systems (ECS)</p>
+</dd>
+<dt class="hdlist1">Electronic Navigational Chart (ENC)</dt>
+<dd>
+<p>An ENC is an official database created by a national hydrographic office for
+use with an ECDIS. An ENC must conform to standards stated in the
+International Hydrographic Organization (IHO) Special Publication S-57
+before it can be certified as an ENC. Only ENCs can be used within ECDIS
+to meet the International Maritime Organisation (IMO) performance standard
+for ECDIS.</p>
+</dd>
+<dt class="hdlist1">Ground Wind (GW)</dt>
+<dd>
+<p>Wind speed and direction relative to the ground (same as landspeople’s
+true wind). Ground Wind direction is expressed in compass direction.
+Ground Wind speed and direction is also relative to boats anchored or
+moored and stationary relative to the earth. Ground Wind is used in weather
+forecasts and reports.</p>
+</dd>
+<dt class="hdlist1">Ground Wind Direction (GWD )</dt>
+<dd>
+<p>Wind direction relative to the ground (same as landspeople’s true wind).
+Ground Wind direction is expressed in compass direction.</p>
+</dd>
+<dt class="hdlist1">Ground Wind Speed (GWS)</dt>
+<dd>
+<p>Wind speed relative to the ground.</p>
+</dd>
+<dt class="hdlist1">Heading (HDG, HDT, HDM)</dt>
+<dd>
+<p>Compass direction in which the boat is pointed. The abbreviations HDT and
+HDM are typically used to distinguish between heading degrees true and
+heading degrees magnetic, whereas HDG does not infer either a true or a
+magnetic heading. Whether HDG displays true or magnetic values, will
+depend on sensor selection and system setup.</p>
+</dd>
+<dt class="hdlist1">Heel (HEL)</dt>
+<dd>
+<p>Heeling Angle in degrees of the port/starboard inclination of the boat.
+Heeling angle is associated with the boat&#8217;s lateral movement, or Leeway</p>
+</dd>
+<dt class="hdlist1">Layline</dt>
+<dd>
+<p>Theoretical COG that will be achieved if the current conditions (TWD, TWS,
+TWA, SET, DFT, BSP, HEL etc), remain constant. There are port and starboard
+laylines that represent port and starboard tacks (or gybes). There are boat
+laylines, which emanate from the boat, and waypoint laylines, which emanate
+from the active waypoint. They are used to indicate when it is beneficial to
+tack or gybe.</p>
+</dd>
+<dt class="hdlist1">Leeway</dt>
+<dd>
+<p>Leeway is the angle between the HDG and the CRS and results from the lateral
+movement experienced by the boat as she moves forward through the water..
+The empirical formula is that
+Leeway = -1 * k * Heel / BSP<sup>2</sup>. The formula itself is often called into
+question, especially with planning hulls. The k value, which is boat
+specific, will vary according to crew numbers and boat loading.</p>
+</dd>
+<dt class="hdlist1">Log (LOG)</dt>
+<dd>
+<p>Record of distance travelled</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>NMEA National Marine Electronics Association has several standards NMEA0183
+and NMEA2000. Nmea2000 uses manufacturer PGN&#8217;s. Two Links for Nmea 0183 NMEA0183
+Sentences and NMEA0183 Revealed</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Set (SET)</dt>
+<dd>
+<p>Compass direction of moving water (In the direction of the moving water).
+This movement may be caused by a number of factors, including; tide, ocean
+currents, river flows etc.</p>
+</dd>
+<dt class="hdlist1">Speed Over Ground (SOG)</dt>
+<dd>
+<p>Speed that the boat is moving over the surface of the earth or ground.</p>
+</dd>
+<dt class="hdlist1">Speed Polars</dt>
+<dd>
+<p>Theoretical values for maximum BSP for a range of given TWSs and TWAs.</p>
+</dd>
+<dt class="hdlist1">Target (Boat Speed)</dt>
+<dd>
+<p>(BSP) Theoretical values for TWA and BSP for a range of given TWSs that
+result in the highest VMG. It is derived from the Speed Polars.
+<a href="https://sailzing.com/velocity-made-good-vmg/" class="bare">https://sailzing.com/velocity-made-good-vmg/</a></p>
+</dd>
+<dt class="hdlist1">Track (TRK)</dt>
+<dd>
+<p>A record of the ships position as it proceeds on its voyage.</p>
+</dd>
+<dt class="hdlist1">True Wind (TW)</dt>
+<dd>
+<p>Wind speed and direction relative to the surface of the water. Sailors
+sail in the interface between air and water, therefore mariners' True Wind
+is relative to water and different from landspeople’s true wind. True wind
+is perceived when the boat is stationary in the water, but moving with the
+tide or current; similar to the wind in the plane of reference of a stick
+floating down a river. True wind is not adjusted for current, tide or
+leeway, and that is how Ground wind differs.</p>
+</dd>
+<dt class="hdlist1">True Wind Direction (TWD)</dt>
+<dd>
+<p>Compass direction from which the wind is coming over the surface of the water.</p>
+</dd>
+<dt class="hdlist1">True Wind Angle (TWA)</dt>
+<dd>
+<p>True Wind angle is typically expressed as angle to the bow of Ownship.
+Note that mariners use the expression Wind angle relative to the bow in
+degrees to port or starboard of CRS (some instrument systems do not consider
+leeway in the calculation of TWA and in this case TWA is the wind angle
+relative to the bow in degrees to port or starboard of HDG).</p>
+</dd>
+<dt class="hdlist1">True Wind Speed (TWS)</dt>
+<dd>
+<p>Wind speed over the surface of the water.</p>
+</dd>
+<dt class="hdlist1">Velocity Made on Course (VMC)</dt>
+<dd>
+<p>Speed achieved directly toward the active waypoint. The value of VMC changes
+the longer the tack. VMC decreases the greater the angle to the mark, until
+on the layline where it turns to “0” and then starts getting negative
+because the distance from the mark is increasing.</p>
+</dd>
+<dt class="hdlist1">Velocity Made Good (VMG)</dt>
+<dd>
+<p>Speed achieved directly towards, or away from, the TWD. The average value
+of VMG is an indicator of optimum sailing angle, and should be used as a
+general indicator, however the skipper should be using Target Boat speed
+to sail at the optimum tacking angel. <a href="https://sailzing.com/velocity-made-good-vmg/" class="bare">https://sailzing.com/velocity-made-good-vmg/</a></p>
+</dd>
+<dt class="hdlist1">Estimated Time of Arrival (ETA)</dt>
+<dd>
+<p>ETA is not an accurate way to judge progress or performance in a tacking
+sailboat because it does not account for the greater distance sailed between
+waypoints. VMC (to Waypoint or Course) changes the longer the tack is
+(VMG decreases dramatically as the boat gets to the 'layline' for the mark,
+because of the increased angle from the mark) and VMG (to Wind) has similar
+problems because it is not relative to a destination. So these terms are
+not effective for sailing.</p>
+</dd>
+<dt class="hdlist1">Tacking Time to Destination (TTD)</dt>
+<dd>
+<p>Calculates in advance how long it will take to tack (or jibe) a sailboat
+to a particular destination in particular wind conditions, including
+factors such as wind changes, currents, waves, boat polars, sail and boat
+bottom conditions. An approximation of performance. [From Sailtimer
+documents]. Tacking Time to Destination TTD may also provide a better
+measure of performance than ETA and VMG. Tacking performance is commonly
+judged by using Target boat speeds now.</p>
+</dd>
+<dt class="hdlist1">Time to go (TTG)</dt>
+<dt class="hdlist1">Turn Rate</dt>
+<dd>
+<p>The AIS class A “Turn rate” signal normally comes from a gyro or satellite
+compass. It&#8217;s not calculated by the AIS itself.</p>
+</dd>
+<dt class="hdlist1">Heading Rate</dt>
+<dd>
+<p>Heading rate is the rate of the heading which is typically derived from a
+magnetic compass. This is the absolute orientation of the boat.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_l_36_sailing_terminology_extensive_list"><a class="anchor" href="#_l_36_sailing_terminology_extensive_list"></a>L-36 Sailing Terminology - Extensive list.</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apparent Wind Angle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apparent Wind Direction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apparent Wind Speed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GWA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ground Wind Angle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GWD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ground Wind Direction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GWS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ground Wind Speed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TWA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind Angle</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TWD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind Direction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TWS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">True Wind Speed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VMC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Velocity Made Good (to Waypoint, course)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VMG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Velocity Made Good (to Wind)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">POS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boat Position</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SPD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boat speed thru the water</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Speed over ground -Gps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">COG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Course over ground (Includes the effect of HDG + Leeway + Current) -Gps</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CRS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Course - Compass direction that the boat is moving through the water (Includes effect of HDG + Leeway).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HDG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Heading Compass direction in which the boat is pointed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HDT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Heading Compass True direction in which the boat is pointed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HDM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Heading Compass Magnetic direction in which the boat is pointed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DFT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drift -Speed that the water is moving.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SET</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compass -Direction water is moving towards</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LOG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Record of distance travelled</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XTE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cross track error</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ETA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Estimated time of Arrival</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TTG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time to Go</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BSP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">or Target Boat Speed for various points of sail in various winds for optimal performance.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TTD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tacking time to Destination</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Leeway</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Angle between the HDG and the CRS</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Track</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

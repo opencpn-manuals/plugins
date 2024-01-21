@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Irma Hurricane Examples :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/weather_routing/irma_examples.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="weather_routing" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Weather Routing</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rgleason/weather_routing_pi/edit/master/manual/modules/ROOT/pages/irma_examples.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Irma Hurricane Examples</h1>
+<div class="sect1">
+<h2 id="_five_configurations_that_will_compute"><a class="anchor" href="#_five_configurations_that_will_compute"></a>Five Configurations that will Compute</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Confirm that the Weather_Routing Plugin has been installed.</p>
+</div>
+<div class="sect2">
+<h3 id="_files_pathnames"><a class="anchor" href="#_files_pathnames"></a>Files &amp; Pathnames</h3>
+<div class="paragraph">
+<p>It is important that you use this configuration for Windows (Linux use
+comparable User accessible directories):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Main Path for support files: <em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</li>
+<li>
+<p>WeatherRoutingConfiguration.xml: <em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</li>
+<li>
+<p>Polar Files (.pol,.txt,.csv): <em>C:\ProgramData\opencpn\plugins\weather_routing\polars</em></p>
+</li>
+<li>
+<p>Boat.Xml Files: <em>C:\ProgramData\opencpn\plugins\weather_routing\boat</em></p>
+</li>
+<li>
+<p>Grib-Sample File: <em>C:\ProgramData\opencpn\plugins\weather_routing\grib-sample</em></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Weather_routing installation may not create these files in the correct location, and may put them under</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>C:\Program Files (x86)\opencpn\plugins\weather_routing/data</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If this is the case, just download the Weather Routing Setup files below and install as shown above.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_weather_routing_setup_files"><a class="anchor" href="#_weather_routing_setup_files"></a>Weather Routing Setup Files</h3>
+<div class="paragraph">
+<p>Download and Unzip files and directories to <em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</div>
+<div class="paragraph">
+<p><a href="_attachments/weather-routing-setup.zip">Weather Routing Setup Zip File</a></p>
+</div>
+<div class="paragraph">
+<p>Unzip and install files &amp; directories into
+<em>C:\ProgramData\opencpn\plugins\weather_routing</em> to follow the locations
+above. These files will provide you with sample files to help learn how
+to weather_route.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_run_some_weather_routing_routes"><a class="anchor" href="#_run_some_weather_routing_routes"></a>Run some Weather Routing Routes</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start Climatology_pi, although it will start automatically if called.</p>
+</li>
+<li>
+<p>Start Grib_pi and open the Irma-Jose-2017090618.gfs.grib2 file.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>This file is located in <em>C:\ProgramData\opencpn\plugins\weather_routing\grib-sample</em></p>
+</li>
+<li>
+<p>or just copy it to your normal grib file location.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Set the Grib Date to Wed, Sept 6 2017, UTC 21:00 and get the screen centered on the grib.</p>
+</li>
+<li>
+<p>Then open Weather_routing_pi.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>you may be pointing at the wrong directory, so Pick "<em>File &gt; Open</em>" and browse to</p>
+</li>
+<li>
+<p><em>C:\ProgramData\opencpn\plugins\weather_routing</em></p>
+</li>
+<li>
+<p>Then select and open "<em>WeatherRoutingConfiguration.xml</em>".</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Confirm the "Boat section" path is correct as shown above in the Pathname list.</p>
+</li>
+<li>
+<p>Confirm the "Polar" path is correct as shown above in the Pathname list.</p>
+</li>
+<li>
+<p>In the menu you should find 5 configurations for routes in the Caribbean.</p>
+</li>
+<li>
+<p>Pick a route configuration and then select <em>Compute</em> from the bottom of the menu.</p>
+</li>
+<li>
+<p>Check that the isobars and route is drawn.</p>
+</li>
+<li>
+<p>Then step through the Grib_pi:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Changing the time to see where the boat is located and how the wind changes.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Try <em>Computing</em> the other routes.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Notice how the Configuration settings have been changed.</p>
+</li>
+<li>
+<p>Notice what files are being used.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Once you are pretty confident about this, go to the next step.</p>
+</li>
+<li>
+<p>Which is to create your own configurations.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_computation_of_5_routes"><a class="anchor" href="#_computation_of_5_routes"></a>Computation of 5 Routes</h3>
+<div class="paragraph">
+<p>These are 5 Weather Routings in "<strong>Weather-Routing-Setup</strong>" that should <strong>Complete</strong> when using the small grib file for hurricane Irma.</p>
+</div>
+<div class="paragraph">
+<p>Weather_routing would not normally be used for this weather, as it is time to haul, however in emergency situations it could be used to develop <em>avoidance measures by setting conservative maximum wind speeds</em> in your configuration.</p>
+</div>
+<div class="paragraph">
+<p>These routings below do find <strong>circuitous avoidance routes</strong> based upon their <em>Configuration values</em>, but the values could be made even more <em>conservative</em>. The purpose of these examples is to illustrate the dependence of <em>Completed</em> routings on a number of values and constraints.</p>
+</div>
+<div class="paragraph">
+<p>When a routing <em>Fails</em>, the user needs to learn and understand what values need to be adjusted. Adjustment of Time Interval is just one of the settings to be considered in Weather Route Configuration.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-1-4hr.jpg"><img src="_images/wr-setup-1-4hr.jpg" alt="wr setup 1 4hr" width="500"></a>
+</div>
+<div class="title">Figure 1. First Routing Default Settings - 4 hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-2-5hr.jpg"><img src="_images/wr-setup-2-5hr.jpg" alt="wr setup 2 5hr" width="500"></a>
+</div>
+<div class="title">Figure 2. Second routing- 5hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-3-2hr.jpg"><img src="_images/wr-setup-3-2hr.jpg" alt="wr setup 3 2hr" width="500"></a>
+</div>
+<div class="title">Figure 3. Third Routing Default Settings - 2 hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-4-3hr.jpg"><img src="_images/wr-setup-4-3hr.jpg" alt="wr setup 4 3hr" width="500"></a>
+</div>
+<div class="title">Figure 4. Fourth Routing Default Settings - 3 hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-5-4hr.jpg"><img src="_images/wr-setup-5-4hr.jpg" alt="wr setup 5 4hr" width="500"></a>
+</div>
+<div class="title">Figure 5. Fifth routing- 4hr Interval</div>
+</div>
+<div class="paragraph">
+<p>Computation of Routes from Cape Canaveral with different Intervals</p>
+</div>
+<div class="paragraph">
+<p>These routes are also in “Weather-Routing-Setup Zip Files” and illustrate how different Time Intervals may interact with Land causing Failures depending on the configuration of the Finish point with land masses. Notice that Cape Canaveral 4 &amp; 5 (4 &amp; 5 hour Time Intervals) both Failed.</p>
+</div>
+<div class="paragraph">
+<p>Changing to a <em>smaller Time Interval</em> is a reasonable response to help <strong>Complete</strong> and so is changing the <em>Default Max Diverted Course from 100 to 150 degrees</em>, both of which require more computation. The other alternative is to use a different Weather Routing Position for the Finish, which is further away from the interfering land masses.</p>
+</div>
+<div class="paragraph">
+<p>Note that the optimum weather route that is computed changes with the Time Interval due to interaction with Land mass at the edges of the Wind data. Choosing Finish points that are clear from Land Masses, Smaller Time Intervals and greater Max Diverted Course will generally help in these cases.</p>
+</div>
+<div class="paragraph">
+<p>The very different routes taken with each time interval all result in Trip times of 5days-1/2hr to 5days-4-1/2hrs which are quite small differences given the divergent routes. In planning your trips you may want to take advantage of these alternatives which are shown with use of different Time Intervals, depending on your goals.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-1-1hr.jpg"><img src="_images/wr-setup-cc-1-1hr.jpg" alt="wr setup cc 1 1hr" width="500"></a>
+</div>
+<div class="title">Figure 6. From Cape Canaveral 1- 1hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-2-2hr.jpg"><img src="_images/wr-setup-cc-2-2hr.jpg" alt="wr setup cc 2 2hr" width="500"></a>
+</div>
+<div class="title">Figure 7. From Cape Canaveral 2- 2hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-3-3hr.jpg"><img src="_images/wr-setup-cc-3-3hr.jpg" alt="wr setup cc 3 3hr" width="500"></a>
+</div>
+<div class="title">Figure 8. From Cape Canaveral 3- 3hr Interval</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-4-4hr-fail.jpg"><img src="_images/wr-setup-cc-4-4hr-fail.jpg" alt="wr setup cc 4 4hr fail" width="500"></a>
+</div>
+<div class="title">Figure 9. From Cape Canaveral 4- 4hr Interval Polar: Failed</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-4-4hr-fail-zoom.jpg"><img src="_images/wr-setup-cc-4-4hr-fail-zoom.jpg" alt="wr setup cc 4 4hr fail zoom" width="500"></a>
+</div>
+<div class="title">Figure 10. From Cape Canaveral 4- 4hr Interval Polar: Failed Zoomed</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-5-5hr-fail-zoom.jpg"><img src="_images/wr-setup-cc-5-5hr-fail.jpg" alt="wr setup cc 5 5hr fail" width="500"></a>
+</div>
+<div class="title">Figure 11. From Cape Canaveral - 5 hr Interval Polar: Failed</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-5-5hr-maxdiv-150-complete.jpg"><img src="_images/wr-setup-cc-5-5hr-maxdiv-150-complete.jpg" alt="wr setup cc 5 5hr maxdiv 150 complete" width="500"></a>
+</div>
+<div class="title">Figure 12. From Cape Canaveral - 5 hr Interval: Fail Zoomed (Changed MaxDiv=150) Complete</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wr-setup-cc-6-6hr.jpg"><img src="_images/wr-setup-cc-6-6hr.jpg" alt="wr setup cc 6 6hr" width="500"></a>
+</div>
+<div class="title">Figure 13. From Cape Canaveral - 6 hr Interval - On Default MaxDiv=100 Complete</div>
+</div>
+<div class="paragraph">
+<p>When there is a Compute Failure try to understand why. Zoom in to where the routing is failing, to see and determine that the Time Interval or Destination Point is not right or too close at the complex land - sea interface. Then change the Time Interval or move the Destination Point further out to sea where the routing calculations can be made more easily. This is just one configuration consideration, there are others.</p>
+</div>
+<div class="paragraph">
+<p>Here is a good example of “Avoidance Routing” around Irma. The polars could be made more conservative (and should be), and the routing will probably “fail” which would be a warning that a better “weather window” is needed. Time to prepare for the hurricane rather than running weather-routings!.  Avoidance of Irma into the Gulf and along Florida Shore.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="_images/wx-rte-irma-avoidance-routing.png"><img src="_images/wx-rte-irma-avoidance-routing.png" alt="wx rte irma avoidance routing" width="500"></a>
+</div>
+<div class="title">Figure 14. From Cape Canaveral - 6 hr Interval - Irma Avoidance Routing</div>
+</div>
+<div class="paragraph">
+<p>WR Not a substitute for sound judgment &amp; realistic goals</p>
+</div>
+<div class="paragraph">
+<p>Why try to route into Irma? You must Configure weather_routing to match your sound judgment and realistic goals. You are in control, use your own judgement when you review the results. This cannot be emphasized enough. Weather_Routing_pi is just a tool in your hands, you are in control.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

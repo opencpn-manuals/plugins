@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GPS Odometer :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/gps-odometer/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="gps-odometer" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">GPS-Odometer</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/LennartG-Sve/GPS-Odometer_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">GPS Odometer</h1>
+<div class="sect1">
+<h2 id="_links"><a class="anchor" href="#_links"></a>Links</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Cruiser Forum Thread: <a href="https://www.cruisersforum.com/forums/f134/gps-based-odometer-241659.html" class="bare">https://www.cruisersforum.com/forums/f134/gps-based-odometer-241659.html</a></p>
+</li>
+<li>
+<p>Github: <a href="https://github.com/LennartG-Sve/GPS-Odometer_pi" class="bare">https://github.com/LennartG-Sve/GPS-Odometer_pi</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose"><a class="anchor" href="#_purpose"></a>Purpose</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The GPS Odometer is a plugin for OpenCPN version 5.0 and higher. It also supports NMEA2000 via socketCAN if used with OpenCPN version 5.7 or higher.
+The keyword for this GPS Odometer is simplicity. Note that, as this is a GPS/GNSS based instrument, it requires GPS/GNSS data to display any data at all. The MNEA 0183 sentences RMC and GGA or the PGN&#8217;s 129026 and PGN 129029 for Signal K or NMEA2000 is a must. See further information below.</p>
+</div>
+<div class="paragraph">
+<p>The GPS Odometer contain these basic functions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An optional Speedometer with both analog and digital readout.</p>
+</li>
+<li>
+<p>A Total Distance log, always displayed.</p>
+</li>
+<li>
+<p>A Trip Distance log, always displayed.</p>
+</li>
+<li>
+<p>An optional Departure / Arrival timer with digital readout.</p>
+</li>
+<li>
+<p>A Trip reset button that resets Trip, Departure Time and Arrival Time.</p>
+</li>
+<li>
+<p>An Autoreset Trip checkbox allowing to execute Trip reset as defined in the setup dialogue.</p>
+</li>
+<li>
+<p>An optional Leg Trip time and Distance including Start/Stop Leg and Leg reset buttons.</p>
+</li>
+<li>
+<p>A trip log allowing to view up to one month old trips in text, csv or html format.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_instruments"><a class="anchor" href="#_instruments"></a>Instruments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The instruments are shown in the above listed order and it is not possible to change the order. It is however possible to toggle the optional instruments on or off right-clicking on the instrument panel and select 'Settings'.
+The trip log, with options, is viewed right-clicking on the instrument selecting 'View trip log'.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Total distance, Trip distance plus the Trip reset button can not be toggled off. Just leave the GPS Odometer on screen and reset the trip counter once the trip is ended (and log book written?) or before the next trip starts.</p>
+</li>
+<li>
+<p>The trip will be considered started as soon as the speed increases above 'Minimum Route Speed', preset at 2 knots (selectable in the settings menu). The departure date and time will be displayed on the instrument as the upper value for 'Departure &amp; Arrival'.</p>
+</li>
+<li>
+<p>The trip will be considered stopped as soon as the speed decreases below 'Minimum Route Speed' and the date and time will be displayed on the instrument as the lower value for 'Departure &amp; Arrival'.</p>
+</li>
+<li>
+<p>If the speed then again increases above 'Minimum Route Speed' the trip be either continued or restarted depending on if the 'Trip reset' button has been clicked or not. You may even shut down OpenCPN for e.g. a lunch break, the 'Trip distance' as well as 'Departure &amp; Arrival' times are remembered until the Trip reset button is clicked. Just note that there will be an automatic trip reset executed if 'Autoreset Trip' is selected and the break time exceeds the 'Minimum trip stop time' selected in the settings menu.</p>
+</li>
+<li>
+<p>Departure and arrival times are displayed according to the ISO standard 8601 primary alternative ('YYYY-MM-DD HH:MM').</p>
+</li>
+<li>
+<p>'Total distance' is simply a counter of distance travelled and is not affected by the reset button. You can edit (increase only) the 'Totaldistance' value in the OpenCPN configuration file e.g. if the GPS Odometer is replacing another log instrument. The format is '12345.6' (one decimal only) and remember to do that while OpenCPN is shut down or your change will be lost.</p>
+</li>
+<li>
+<p>The Leg Trip functionality is a bit different as it has higher time and distance resolution, intended for e.g. tight navigation time and distance measurements. Like “How far is it between X and Y?” or “How long time does it take between Y and Z”. Start or resume the distance and time counters clicking the Start/Stop Leg button, it will count distance and time until the button is clicked again. Click the Leg Reset button to zero distance and time and begin a new count session. This counter does not use the 'Minimum Route Speed' setting.</p>
+</li>
+<li>
+<p>Several parameters can be adjusted in the 'Settings' menu, just right-click somewhere on the instrument and select 'Settings'.</p>
+</li>
+<li>
+<p>The most important setting is the selection of source protocol between NMEA 0183 (default), Signal K or NMEA2000. This selection is used to avoid the same type of information from multiple sources but still allowing e.g. NMEA 0183 to be generated from Signal K without affecting the GPS Odometer. This is a common situation when e.g. using a NMEA 2000 GPS/GNSS unit and a VHF with NMEA 0183 input.</p>
+</li>
+<li>
+<p>The logging option is selected in the settings menu and will detect Departure (trip start), Arrival with trip distance and resumed trip where a trip is restarted without a trip reset, manual or automatic. You may also, in the settings menu, select the shortest trip stop to be detected and logged, either all stops or stops longer than the time set in the setings menu.
+To view the log, just right-click somewhere on the instrument and select 'View trip log'. This opens a menu where the viewing options are selected. Note that there must be an associated viewer available for the selected alternative if 'External viewer' is selected. The generated view file is located in the users home directory with the extension .txt, .csv or .html respectively. Logs are automatically removed when over one month old.</p>
+</li>
+<li>
+<p>The character settings are:
+'Title': Title rows and button texts
+'Data': Distance and time data
+'Description: Digital speed notation in speedometer
+'Small': Speedometer numbering</p>
+</li>
+<li>
+<p>Please do not set 'Min Route Speed' to low or you may get false trip start/stop times due to e.g. position inaccurancies when anchored.</p>
+</li>
+<li>
+<p>The Odometer has a filtering that dashboard does not use, e.g. it requires a certain number of satellites (default 4) and a HDOP level of 4 (not required by dashboard). These settings can be changed in the OpenCPN configuration file, see the troubleshooting section below. Please note that HDOP and Satellites are used with SIGNAL K that names these as 'GNSS Fix', 'DGNSS fix' and 'Precise GNSS'. One of these must be present.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>GPS/GNSS signal information, coming from NMEA 0183, Signal K or NMEA2000 are selected in the settings menu. If one or both of the required sentences, as mentioned above, are missing:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>There will be no speed or distance count nor will the GPS Odometer start displaying data until NMEA 0183 GGA or NMEA2000 is indicating a valid GPS/GNSS signal (using the 'Satellites in use' and 'HDOP' information). There is also a few seconds delay (default 15) when powered up or when switching protocol, this to allow the system to be properly settled. Many GPS/GNSS units are also somewhat inaccurate until the position is properly settled. Note that this is a power up delay that has no effect later on. This setting, named PowerOnDelaySecs, may be updated (from 5 and up) in the OpenCPN configuration file.</p>
+</li>
+<li>
+<p>It is essential to use a good quality and stable GPS/GNSS receiver. Some GPS/GNSS units are quite unstable when starting (although they are indicating a valid fix) and, as all distances are added, this will add to the trip and total distances or trigger false departure times.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multiple_gpsgnss_units"><a class="anchor" href="#_multiple_gpsgnss_units"></a>Multiple GPS/GNSS units</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A good and reliable GPS/GNSS unit, properly mounted, is the single most important navigational tool you have onboard. It should be on top of the list (priority 9). There may also be other GPS/GNSS units, like e.g. AIS or VHF radio with built-in GPS/GNSS receivers, and this may then generate multiple position and speed data.
+The OpenCPN priority system is message based and may, if a message is e.g. incomplete, cause a mix of messages from to different GPS/GNSS units. Messages are also processed in the order received and the last sentence of each type will be used. The order used is as shown in the NMEA Debug Window (opened via 'Options &#8594; Connections' and activating 'Show NMEA Debug Window').
+Also note that the protocol (NMEA0183 / Signal K / NMEA2000) is selected in the GPS Odometer settings as all the required signals are currently not available for external plugins like the GPS Odometer.</p>
+</div>
+<div class="paragraph">
+<p>A general recommendation is hence to have one, and only one, reliable good quality GPS/GNSS receiver sending navigational data (e.g. NMEA0183 RMC, GGA, GSV and GSA) to OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>If you experience problems of any kind when having multiple GPS/GNSS units, then verify by either generating a VDR file for examination (recommended) or by opening the NMEA debug window and and check the sentences, those dropped will display in brown. You may close the settings main window and display only the debug window, this will allow you to stop/resume and copy the content if required.</p>
+</div>
+<div class="paragraph">
+<p>If generating a VDR file, then use a standard text editor and remove everything but the lines starting with 'xxRMC' or 'xxGGA'. The letters 'xx' may be 'GP', 'EC' or something else, see the document referenced below.
+Group the lines and then glance through them swiftly comparing them, you will easily spot any irregularities. The trick is then to know which unit that is in error.</p>
+</div>
+<div class="paragraph">
+<p>Now test having only one unit sending GPS/GNSS related data, preferably your dedicated GPS/GNSS receiver. All other GPS/GNSS related data should be dropped. You may efficiently do that following this procedure:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to 'Options &#8594; Connections' and select the unit whose sentences should be dropped.</p>
+</li>
+<li>
+<p>In the 'Input filtering' select 'Ignore sentences'.</p>
+</li>
+<li>
+<p>Add the sentences RMC, GGA, GSV and GSA to be dropped.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This should not affect the functionality of any units, just make OpenCPN drop GPS/GNSS generated sentences. If this fixes the problem, then you have an error/discrepancy in the sentences received from your 'extra' GPS/GNSS units.</p>
+</div>
+<div class="paragraph">
+<p>A good reference page for NMEA 0183 is found at: <a href="https://gpsd.gitlab.io/gpsd/NMEA.html" class="bare">https://gpsd.gitlab.io/gpsd/NMEA.html</a></p>
+</div>
+<div class="paragraph">
+<p>A note on NMEA 2000 GPS/GNSS units: OpenCPN has currently no option to prioritize units within a NMEA 2000 network so multiple GPS/GNSS units in the same NMEA 2000 network pose a large risk of getting conflicting messages unless they can be individually controlled.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_general_troubleshooting"><a class="anchor" href="#_general_troubleshooting"></a>General troubleshooting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The most common problem is the GPS/GNSS signal quality, often depending on non-optimal GPS/GNSS unit placement. This can be easily verified examining the NMEA 0183 GGA message using OpenCPN 'Options &#8594; Connections' and activating 'Show NMEA Debug Window'.
+If you are using NMEA 2000 you need to generate NMEA 0183 messages either by using the TwoCan plugin or using the signalk-to-nmea0183 app activating GGA messages and reading the NMEA 0183 messages thru port 10110.
+Look for the GGA messages and these fields:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Field 6 (following the E/W) is the Quality indicator, Should be 1 thru 5.</p>
+</li>
+<li>
+<p>Field 7 indicates the number of satellites, should be a minimum of 4.
+The required number of satellites may be adjusted setting the 'SatsRequired' parameter in the OpenCPN configuration file. The allowed range is 4 and up.</p>
+</li>
+<li>
+<p>Field 8 is the HDOP (Horizontal dilution of precision). This should be as low as possible with a default maximum of 4. The HDOP limit may be adjusted setting the 'HDOP' parameter in the OpenCPN configuration file.
+The allowed range is 1 thru 10. Increasing the 'HDOP' value is a last resort if nothing else helps but also an indication that there is a GPS/GNSS problem, placement or otherwise.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If any of these values becomes 'invalid' then the speed indicator will go to '0' and it will take a few seconds before the speedometer is showing any speed. This delay is introduced as the speed may, at start or straight after a valid fix, still show an erroneous value hence affecting the distance calculations. The delay, named 'PowerOnDelaySecs' defaults to 15 but may be adjusted setting the parameter in the OpenCPN configuration file. The allowed range is 5 and up. You should never see this effect apart from when the system is started if all is working as it should.</p>
+</div>
+<div class="paragraph">
+<p>Total distance, Trip distance, Departure time and Arrival time are saved in the OpenCPN configuration file at shutdown. They are also, together with a few other parameters, saved in the GPS Odometer data directory and updated as values changes. The data log file in the GPS Odometer data directory also contains the log information. This dedicated save is done to ensure the information will survive e.g. a power outage or a system crash where OpenCPN does not shut down properly. The information in the data directory overrides the distances and times in the OpenCPN configuration file.
+. 1/ There is one exception for the Total distance where the highest of the two walues is used, see the description for Total distance above.
+. 2/ If a sudden shutdown occurs while on route, no arrival time will be given upon restart as there is no Arrival time available, it will display three dashes instead.
+. 3/ Starting and stopping OpenCPN, or clicking Trip reset, while on speed above 'On Route' speed may confuse the logging facility as e.g. an arrival time may be missing.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bugs_and_inconveniences"><a class="anchor" href="#_bugs_and_inconveniences"></a>Bugs and inconveniences</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are a few bugs/inconveniences as the instrument window sizing when e.g. removing an instrument does not update the panel size properly. There are also other minor display size inconveniences but these are corrected just grabbing the lower right corner and adjust the panel size or, in worst case, restarting OpenCPN before it can be adjusted.</p>
+</div>
+<div class="paragraph">
+<p>Also, some of the parameters from the Settings menu does not update the instruments until OpenCPN is restarted, like the maximum speed setting in the speedometer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installing"><a class="anchor" href="#_installing"></a>Installing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The GPS Odometer is installed using the package manager.</p>
+</div>
+<div class="paragraph">
+<p>There is (currently?) no version available for the Android environment as I don&#8217;t have either the tools nor the knowledge to do that. Any help from the community would be appreciated.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_final_comments"><a class="anchor" href="#_final_comments"></a>Final comments</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The name is 'GPS Odometer' as I started this before any GNSS units was available for regular boaters and changing the name is never a winning concept. GPS is also frequently used covering both GPS and GNSS systems.</p>
+</div>
+<div class="paragraph">
+<p>I did this plugin as I wanted a simple GPS/GNSS based Odometer. The Logbook has that option but I did not need all the other stuff in there and also wanted an on-screen solution.</p>
+</div>
+<div class="paragraph">
+<p>For 'dry-runs' I recommend gpsfeed+ in a square pattern (getting various speeds).</p>
+</div>
+<div class="paragraph">
+<p>Contact: You can PM me through OpenCPN in Cruisers Forum, look for LennartG or use Search → Advanced search → Search by user name.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

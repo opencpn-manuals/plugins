@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/launcher/0.1/index.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="launcher" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">Launcher</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/nohal/launcher_pi/edit/master/manual/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_launcher"><a class="anchor" href="#_launcher"></a>Launcher</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Launch external programs from within Opencpn.</p>
+</div>
+<div class="sect2">
+<h3 id="_links"><a class="anchor" href="#_links"></a>Links</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Source: <a href="https://github.com/nohal/launcher_pi" class="bare">https://github.com/nohal/launcher_pi</a><br></p>
+</li>
+<li>
+<p>Download: <a href="https://opencpn.org/OpenCPN/plugins/launcher.html" class="bare">https://opencpn.org/OpenCPN/plugins/launcher.html</a><br></p>
+</li>
+<li>
+<p>Forum:
+<a href="http://www.cruisersforum.com/forums/f134/launcher-plugin-119149.html">CF
+Launcher_pI Thread</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This document is about Launcher plugin (Launcher)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_01.jpeg" alt="launcher 01">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_and_why"><a class="anchor" href="#_what_and_why"></a>What and Why</h3>
+<div class="paragraph">
+<p><strong>A. What does Launcher do</strong></p>
+</div>
+<div class="paragraph">
+<p>The plugin allows the user to define several buttons to launch external
+(Standard Actions) or internal commands (Keyboard Events).<br>
+It is primarily targetting touchscreen devices but can also be used with
+a mouse.<br>
+<br>
+External commands are all the commands you can give to your computer.<br>
+Internal commands are used in OpenCPN itself.</p>
+</div>
+<div class="paragraph">
+<p><strong>B. Why can Launcher be useful</strong></p>
+</div>
+<div class="paragraph">
+<p>You can use a button in Launcher (while you keep running OpenCPN) to do
+something else with your computer than just running OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>You could for instance:</p>
+</div>
+<div class="paragraph">
+<p><strong>Open a document</strong> with information you find usefull. That can be
+anything. The manual of your ship&#8217;s engine, your favourite recipes for
+that freshly caught mackerel (or, if you did not catch anything, the
+book “Fishing for Dummies”), a document with all the facts of interests
+of the ports you pass, pilotage information, you name it.</p>
+</div>
+<div class="paragraph">
+<p>When you have access to the Internet you could use Launcher to <strong>open a
+specific website</strong>.<br>
+For instance the OpenCPN-website, the Cruisers Forum, Marine-Traffic
+(AIS) etc. etc.</p>
+</div>
+<div class="paragraph">
+<p>In “<strong>Standard actions</strong>” we will show some examples.<br>
+<br></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h3>
+<div class="paragraph">
+<p><strong>A. Where to get Launcher</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> +
+*Note*: In this section the instructions are specifically for Launcher,
+but there is a dedicated page in the manual with information about
+Downloading, Installing and Enabling Plugins in general. That dedicated
+page can be found here: link:../install_and_enable.html[Plugins -
+Install and Enable].</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Launcher can be downloaded from <a href="http://www.opencpn.org/index.html" class="bare">http://www.opencpn.org/index.html</a><br>
+<br>
+Click “<strong>Downloads</strong>”</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/watchdog_19056_001_ocpn_downloads.jpeg" alt="watchdog 19056 001 ocpn downloads">
+</div>
+</div>
+<div class="paragraph">
+<p>Click “<strong>Plugins for OpenCPN 4.2 &amp; 4.4</strong>”</p>
+</div>
+<div class="paragraph">
+<p>Scroll down to the “<strong>Other</strong>”-section and click “<strong>Launcher</strong>“<br></p>
+</div>
+<div class="paragraph">
+<p><strong>B. How to install the plug-in</strong></p>
+</div>
+<div class="paragraph">
+<p>Make sure you choose the file that is compatible with your
+computersystem. In this manual we presume it&#8217;s Windows, so we choose the
+<strong>Windows setup-package</strong>.<br>
+<strong>Download</strong> the file (double-click).</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_02.jpeg" alt="launcher 02">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>B. How to install Launcher</strong><br></p>
+</div>
+<div class="paragraph">
+<p>We assume you know where to find the files you download from the
+Internet<br>
+(if you don&#8217;t: quit now and read the manual of your computer before
+doing anything else with it)</p>
+</div>
+<div class="paragraph">
+<p>Double-click the downloaded file (with “launcher_pi” in the name and
+”.exe” as extension) and follow the set-up instructions.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_03.jpeg" alt="launcher 03">
+</div>
+</div>
+<div class="paragraph">
+<p>That&#8217;s it. But before you can actually <strong>use</strong> Launcher, you first have to
+<strong>enable</strong> that plug-in in OpenCPN.</p>
+</div>
+<div class="sect3">
+<h4 id="_enabling_launcher_in_opencpn"><a class="anchor" href="#_enabling_launcher_in_opencpn"></a>Enabling Launcher in OpenCPN</h4>
+<div class="paragraph">
+<p>Open (or restart) OpenCPN.</p>
+</div>
+<div class="paragraph">
+<p>Click <strong>Tools</strong>-<strong>Options</strong>-.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_04.jpeg" alt="launcher 04">
+</div>
+</div>
+<div class="paragraph">
+<p>and then <strong>Plugins</strong><br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_05.jpeg" alt="launcher 05">
+</div>
+</div>
+<div class="paragraph">
+<p>Scroll down untill you see the Launcher-pi.<br>
+<br>
+Click “<strong>Enable</strong>”.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_06.jpeg" alt="launcher 06">
+</div>
+</div>
+<div class="paragraph">
+<p>Note: If you do not see launcher in the list of plugins, check it was
+installed in the correct plugings directory of OpenCPN (eg: C:\Program
+Files (x86)\OpenCPN\plugins)</p>
+</div>
+<div class="paragraph">
+<p>Now the Launcher icon (it looks like an old fashioned ship&#8217;s wheel)
+should appear somewhere in your OpenCPN Toolbar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_07.jpeg" alt="launcher 07">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_standard_actions"><a class="anchor" href="#_standard_actions"></a>Standard actions</h3>
+<div class="paragraph">
+<p>Follow the steps below to launch an external program</p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>Tools</strong>” - “<strong>Options</strong>” - “<strong>Plugins</strong>” as described before.<br></p>
+</div>
+<div class="paragraph">
+<p>Scroll down to “Launcher” and click “<strong>Preferences</strong>”.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_08.jpeg" alt="launcher 08">
+</div>
+</div>
+<div class="paragraph">
+<p>Clicking “Preferences” will open the menu “<strong>Launcher Settings</strong>”.<br></p>
+</div>
+<div class="paragraph">
+<p>In the menu “Launcher Settings”, Click “<strong>Add</strong>”.<br></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_09.jpeg" alt="launcher 09">
+</div>
+</div>
+<div class="paragraph">
+<p>Clicking “Add” will open the menu “<strong>Launcher Item</strong>”.<br></p>
+</div>
+<div class="paragraph">
+<p>In this menu “Launcher Item” you will have to give Launcher some
+information.<br>
+You want a button in Launcher-pi to launch a program for you, so you
+will have to tell Launcher-pi:<br>
+1. What <strong>label</strong> you want on that <strong>button</strong> and<br>
+2. Where Launcher-pi can find the <strong>command</strong> to launch that specific
+<strong>program</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_10.jpeg" alt="launcher 10">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>EXAMPLE</strong>:<br>
+you want a button to launch a specific <strong>document</strong> (let us assume it is a
+user manual of your ship) that is made with the program <strong>Microsoft
+WORD</strong>.<br>
+You can find the path and file-name to run WORD by a right-hand
+mouse-click on the icon (shortcut) for that program.<br>
+Choose “<strong>Properties</strong>” and copy the text that is in the field
+“<strong>target</strong>”.<br></p>
+</div>
+<div class="paragraph">
+<p>Let us assume that:<br>
+The <strong>path</strong> and <strong>file</strong> to execute that <strong>program</strong> is “<strong>C:\Program
+Files\Microsoft Office 15\root\office15\WINWORD.EXE</strong>”.<br>
+<br>
+The <strong>file</strong> (document) you want to open is called
+“<strong>Manual_of_my_ship.docx</strong>” and stored in a <strong>directory</strong>
+<strong>C:\MyShip\Manuals</strong>.<br>
+<br>
+<strong>IMPORTANT</strong>:<br>
+If the pathname\filename consist of several words <strong>separated with a
+blank space</strong>, change that by removing those blank spaces or by replacing
+them by <strong>underscores</strong>. Example: <strong>“C:\My ship\Manuals”</strong> should be renamed
+to <strong>“C:\Myship\Manuals”</strong> or <strong>“C:\My_ship\Manuals”</strong> and “<strong>Manual of my
+ship.docx</strong>” should be renamed to “<strong>Manual_of_my_ship.docx</strong>”.<br></p>
+</div>
+<div class="paragraph">
+<p>So to assign a button in Launcher to launch that specific WORD-document,
+you will have to feed Launcher the following information:</p>
+</div>
+<div class="paragraph">
+<p>1. The <strong>label</strong> you want for the button.<br>
+In this case: “<strong>Manual of my ship</strong>”.</p>
+</div>
+<div class="paragraph">
+<p>2. The <strong>path and program-file</strong> .<br>
+In this case: “<strong>C:\Program Files\Microsoft Office
+15\root\office15\WINWORD.EXE</strong>”.</p>
+</div>
+<div class="paragraph">
+<p>3. The <strong>path and specific file</strong> to open with that program.<br>
+In this case: “<strong>C:\MyShip\Manuals\Manual_of_my_ship.docx</strong>”.</p>
+</div>
+<div class="paragraph">
+<p>This is how you do that:<br></p>
+</div>
+<div class="paragraph">
+<p>Insert the <strong>label</strong> Manual of my ship<br>
+Insert the <strong>command</strong> C:\Program Files\Microsoft Office
+15\root\office15\WINWORD.EXE</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_11.jpeg" alt="launcher 11">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>IMPORTANT</strong>: <strong>Leave one space after “exe”</strong> and add the <strong>path and
+name of the file</strong> you want to open.<br>
+In this case: <strong>C:\MyShip\Manuals\Manual_of_my_ship.docx</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_12.jpeg" alt="launcher 12">
+</div>
+</div>
+<div class="paragraph">
+<p>The text in the field “command” should read <strong>C:\Program Files\Microsoft
+Office 15\root\office15\WINWORD.EXE
+C:\MyShip\Manuals\Manual_of_my_ship.docx</strong><br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to save the Launcher item.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_13.jpeg" alt="launcher 13">
+</div>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to save the Launcher settings.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_14.jpeg" alt="launcher 14">
+</div>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to exit the “options”-menu and return to the main screen of
+OpenCPN.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_15.jpeg" alt="launcher 15">
+</div>
+</div>
+<div class="paragraph">
+<p>Now you can execute the command via Launcher-pi.<br></p>
+</div>
+<div class="sect3">
+<h4 id="_executing_a_command_via_launcher"><a class="anchor" href="#_executing_a_command_via_launcher"></a>Executing a command via Launcher</h4>
+<div class="paragraph">
+<p>To execute the command via Launcher in OpenCPN, do this:</p>
+</div>
+<div class="paragraph">
+<p>Click on the <strong>Launcher icon</strong> in the toolbar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_07.jpeg" alt="launcher 07">
+</div>
+</div>
+<div class="paragraph">
+<p>Click the button with the label “<strong>Manual of my ship</strong>”</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_16.jpeg" alt="launcher 16">
+</div>
+</div>
+<div class="paragraph">
+<p>The WORD-document should open.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_17.jpeg" alt="launcher 17">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Note</strong>: of course this WORD-document can only be opened if you actually
+have the program WORD on your computer in the given directory
+(C:\Program Files\Microsoft Office 15\root\office15\WINWORD.EXE) and if
+you actually do have a document called “Manual_of_my_ship.docx” in the
+given directory (C:\MyShip\Manuals\).<br></p>
+</div>
+<div class="paragraph">
+<p>You can repeat this process of adding Launcher items. With every new
+assignment you will see the number of buttons growing.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_internal_opencpn_actions"><a class="anchor" href="#_internal_opencpn_actions"></a>Internal OpenCPN Actions</h3>
+<div class="paragraph">
+<p>Launcher can be used to issue OpenCPN a command such as change the scale
+for a chart (F7 or F8 key). To do this you use a keyboard event in the
+place of the command.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_launcher_variables"><a class="anchor" href="#_launcher_variables"></a>Launcher Variables</h3>
+<div class="paragraph">
+<p>Launcher 1.1 has some nice new functionality Readme in github main
+repository</p>
+</div>
+<div class="paragraph">
+<p>See <a href="#_keyboard_events">Keyboard Events</a></p>
+</div>
+<div class="sect3">
+<h4 id="_variables"><a class="anchor" href="#_variables"></a>Variables</h4>
+<div class="paragraph">
+<p>You can use several variables in your commands which will be replaced
+with the actual values at the moment of command invocation.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Variable</th>
+<th class="tableblock halign-left valign-top">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">——–</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">——-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_LAT%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boat Latitude</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_LON%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boat longitude</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_SOG%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boat SOG</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_COG%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boat COG</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_VAR%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magnetic variation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_FIXTIME%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The timestamp of the past fix (seconds since 01/01/1970
+UTC)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">%BOAT_NSATS%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Number of satelites “visible” during the last fix</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_keyboard_events"><a class="anchor" href="#_keyboard_events"></a>Keyboard Events</h4>
+<div class="paragraph">
+<p>Start the command definition with string KBD: followed by coma separated
+list of key events to send to the main application. A component starting
+with ! (explanation mark) represents a key down even, a component
+without the beginning ! represents a key up event. Example: KBD:!S,S
+represents a short press of the S key, resulting in turning on/off the
+soundings.</p>
+</div>
+<div class="paragraph">
+<p>Special keys may be used if implemented by the plugin. Example:
+KBD:!F5,F5 represents a short press of the F5 key, resulting in
+switching the color scheme.<br>
+Special keys implemented: F1-F12<br>
+Example: KBD:!F7,F7 for a change of chart scale</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h3>
+<div class="paragraph">
+<p>Here are some examples for use of the Launcher Plugin:</p>
+</div>
+<div class="sect3">
+<h4 id="_vdrplayer"><a class="anchor" href="#_vdrplayer"></a>VDRplayer</h4>
+<div class="paragraph">
+<p>Launcher can be used to start various nmea VDR files to test plugins.
+See <a href="../../opencpn-plugins/misc/nmea-software.html" class="xref page">NMEA-Software towards bottom VDRplayer as Nmea Server</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_websites"><a class="anchor" href="#_websites"></a>Websites</h4>
+<div class="literalblock">
+<div class="content">
+<pre> +
+In this example we show how to make a Launcher item to launch a website
+(in this case the website of the Dutch Coastguard, which is
+https://www.kustwacht.nl[www.kustwacht.nl]) with Google Chrome. +</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To do so, you first have to find and copy the command to launch the
+program Google Chrome.<br></p>
+</div>
+<div class="paragraph">
+<p>That should be something like <strong>C:\Program Files
+(x86)\Google\Chrome\Application\chrome.exe</strong>.<br></p>
+</div>
+<div class="paragraph">
+<p>You can find the path and file-name to run Chrome by a right-hand
+mouse-click on the icon (shortcut) for that program, choose
+“<strong>Properties</strong>” and select (all) the text in the field “<strong>Target</strong>”. Click
+“<strong>copy</strong>”.<br></p>
+</div>
+<div class="paragraph">
+<p>Go to <strong>OpenCPN</strong>.<br></p>
+</div>
+<div class="paragraph">
+<p>Edit Launcher.<br></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click <strong>Tools</strong>-<strong>Plugins</strong>-<strong>Launcher</strong>-<strong>Preferences</strong></p>
+</li>
+<li>
+<p>Click <strong>Add</strong></p>
+</li>
+<li>
+<p>Insert the <strong>label</strong> (Dutch Coastguard)</p>
+</li>
+<li>
+<p>Insert (paste) the <strong>command</strong> C:\Program Files
+(x86)\Google\Chrome\Application\chrome.exe</p>
+</li>
+<li>
+<p>leave one space after “exe” and add the <strong>adress of the website</strong> (in
+this case: <a href="https://www.kustwacht.nl">www.kustwacht.nl</a>)<br></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The text in the field “command”should read:<br></p>
+</div>
+<div class="paragraph">
+<p><strong>C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+<a href="https://www.kustwacht.nl">www.kustwacht.nl</a></strong><br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to save the Launcher item.<br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to save the Launcher settings.<br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to exit the “options”-menu and return to the main screen of
+OpenCPN.<br></p>
+</div>
+<div class="paragraph">
+<p>Execute the command via Launcher-pi in OpenCPN as described before.<br></p>
+</div>
+<div class="paragraph">
+<p>Click on the <strong>Launcher-pi icon</strong> in the toolbar.<br></p>
+</div>
+<div class="paragraph">
+<p>Click the button with the label “<strong>Dutch Coastguard</strong>” to open the
+website.<br></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_one_other_example_you_might_find_useful"><a class="anchor" href="#_one_other_example_you_might_find_useful"></a>One other example you might find useful.</h4>
+<div class="paragraph">
+<p>When you are sailing in US waters you might want to consult one of the
+“United States Coast Pilots”.<br></p>
+</div>
+<div class="paragraph">
+<p>These pilots are published by the NOAA and can be downloaded (free of
+charge) from <a href="https://www.nauticalcharts.noaa.gov/nsd/cpdownload.htm" class="bare">https://www.nauticalcharts.noaa.gov/nsd/cpdownload.htm</a></p>
+</div>
+<div class="paragraph">
+<p>There are several volumes. In this example we have downloaded “US Coast
+Pilot nr. 2 (Atlantic Coast: Cape Cod, MA to Sandy Hook, NJ), 207 (46th)
+Edition”.</p>
+</div>
+<div class="paragraph">
+<p>It is a PDF-document. So if your computer has a program that can read
+PDF-files, you can read that document on your computer-screen.<br>
+And with Launcher, you can launch that document directly from within
+OpenCPN.<br>
+You just have to add a button for it in “Launcher”.<br></p>
+</div>
+<div class="paragraph">
+<p>This is what you do:<br>
+Download the document and save it on your computer.<br>
+Let&#8217;s say you save the document as “<strong>Pilot_2_Cape_Cod_to_Sandy
+Hook.pdf</strong>” in a directory “<strong>C:\Nautical\US_Coast_Pilots</strong>” (remember the
+importance of avoiding spaces between the words in the path- and
+filename, use underscores instead!)<br></p>
+</div>
+<div class="paragraph">
+<p>In OpenCPN, edit Launcher as described before:<br>
+click “<strong>Tools</strong>” - “<strong>Options</strong>” - “<strong>Plugins</strong>”.<br>
+Scroll down to “Launcher” (make sure the plugin is “Enabled”)<br>
+Click “<strong>Preferences</strong>“<br>
+Click “<strong>Add</strong>“<br>
+<br>
+In the field “<strong>Label</strong>”: enter the name you want to give to the button.<br>
+In this case for instance “US Pilot 2-Cape Cod to Sandy Hook”.<br></p>
+</div>
+<div class="paragraph">
+<p>In the field “<strong>Command</strong>”: enter the path and filename of the program you
+use to open PDF-files.<br>
+If you use Adobe Reader it might be something like this:“C:\Program
+Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe”.<br>
+If you use an alternative PDF-reader, like the freeware PDFXchange
+Editor, it might be something like this: “C:\Program Files\Tracker
+Software\PDF Editor\PDFXEdit.exe”.<br>
+<strong>Leave a space</strong> and enter the path and filename of the document you want
+that program to open.<br>
+In this case that would be:
+“<strong>C:\Nautical\US_Coast_Pilots\Pilot_2-Cape_Cod_to_Sandy_Hook.pdf</strong>”.<br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to save the Launcher item.<br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to save the Launcher settings.<br></p>
+</div>
+<div class="paragraph">
+<p>Click “<strong>OK</strong>” to exit the “options”-menu and return to the main screen of
+OpenCPN.<br></p>
+</div>
+<div class="paragraph">
+<p>Execute the command via Launcher-pi in OpenCPN as described before.<br></p>
+</div>
+<div class="paragraph">
+<p>Click on the <strong>Launcher-pi icon</strong> in the toolbar.<br></p>
+</div>
+<div class="paragraph">
+<p>You should see the button that corresponds with the US Coast Pilot nr.
+2.<br></p>
+</div>
+<div class="paragraph">
+<p>Click that button and the file will open.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/launcher_18.jpeg" alt="launcher 18">
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_frequently_asked_questions"><a class="anchor" href="#_frequently_asked_questions"></a>Frequently Asked Questions</h3>
+<div class="paragraph">
+<p>Q: I have edited Launcher to execute a command, but it doesn&#8217;t work.
+<strong>What did I do wrong?</strong><br>
+A: <strong>We don&#8217;t know</strong>. There&#8217;s a lot you might have done wrong.<br>
+But <strong>check the correct pathnames\filenames</strong>. If the pathname\filename
+consist of several words <strong>separated with a blank space</strong>, change that by
+removing those blank spaces or by replacing them by <strong>underscores</strong>.
+Example: <strong>“C:\My ship\Manuals”</strong> should be renamed to
+<strong>“C:\Myship\Manuals”</strong> or <strong>“C:\My_ship\Manuals”</strong>.<br></p>
+</div>
+<div class="paragraph">
+<p>Q: Can I use Launcher to shut down my computer?<br>
+A: <strong>Yes</strong>. It is possible.<br>
+Here&#8217;s an example how to do it in Windows 7 Home Edition 64 bit.<br>
+Add a new launcher item.<br>
+Type in the field under “label” the text “Shut down after 10 seconds”<br>
+Type in the field under “Command” the text<br>
+<strong>shutdown -s -t 10 -c “I quit. You&#8217;ve got the helm”</strong><br>
+This should shut down your computer 10 seconds after launching that
+item.<br>
+Of course you can alter the text “I quit. You&#8217;ve got the helm” in
+anything you like.<br>
+Just don&#8217;t forget to put that text between quotation marks (”).<br>
+<strong>Note</strong>: Windows 7 <strong>Pro</strong> 64-bit might not accept the ”-s” parameter
+from Launcher. Try ”/s“ instead.<br></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

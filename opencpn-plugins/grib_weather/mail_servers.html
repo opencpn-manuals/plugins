@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/opencpn-plugins/grib_weather/mail_servers.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../../_/css/site.css">
+<link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="opencpn-plugins" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">OpenCPN Plugins</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home Page</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">General</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../misc/terminology.html">Terminology</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../misc/plugin-install.html">Plugin Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../misc/draw-messaging.html">Draw Messaging</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplementary hardware</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/ais-devices.html">AIS Devices</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/rpi-setups.html">RPI Setups</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Supplementary software</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/nmea-software.html">NMEA Tools</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../misc/celestial-nav.html">Celestial Navigation Tool</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Main Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Included with OpenCPN</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="grib_weather.html">Grib Weather</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">Chart Downloader Tab</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">AIS / Radar</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../aisradar/index.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../radar/0.1/index.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rtlsdr/index.html">AIS RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Charts</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../s63_vector_charts/0.1/index.html">S63 Vector Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../o-charts/index.html">O-charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../photolayer/index.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vfkaps/index.html">VfKaps VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rotationctrl/index.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../chartscale/index.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../objsearch/0.1/index.html">ObjSearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../projections/0.1/index.html">Projections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Logs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../logbook/index.html">Logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../findit/index.html">Findit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vdr/index.html">Voyage Data Recorder VDR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nmea_converter/index.html">NMEA Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../squiddio/0.1/index.html">sQuiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../route/index.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dead_reckoning/index.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otcurrent/index.html">oTidalCurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../frcurrents/index.html">frcurrents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sat2chart/sat2chart.html">Sat2Chart Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic (Included)</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../odraw/index.html">OcpnDraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../watchdog/index.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sar/index.html">SAR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Sailing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tactics/index.html">Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../plots/index.html">Plots</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../polar/index.html">Polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../windvane/0.1/index.html">Windvane</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Weather</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weatherfax/index.html">WeatherFax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="grib_weather.html">Grib Weather (Included)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../climatology/index.html">Climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weather_routing/index.html">Weather Routing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Utility</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ais-vd/0.1/index.html">AIS-Voyage Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../statusbar/index.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../calculator/index.html">Calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../launcher/0.1/index.html">Launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../debugger/0.1/index.html">Debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../javascript/index.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../pypilot/index.html">Pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../shipdriver/index.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../twocan/0.1/index.html">TwoCan</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../gps-odometer/index.html">GPS Odometer</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Beta Plugins</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../engine-dash/0.1/index.html">Engine Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../race-start/0.1/index.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../tidefinder/index.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../deviation/index.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../survey/index.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../autopilot_route/index.html">Autopilot Route</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../admiralty/index.html">Admiralty Tides Tables</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../ncdf/index.html">NetCDF Tidal Currents</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../otidalroute/index.html">oTidalRoute</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../uktides/index.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../otidalplan/index.html">oTidalPlan uses Harmonics</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../earthexplorer/index.html">Earth Explorer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">All plugins A-Z</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">A - E</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../admiralty/index.html">Admiralty Tides Tables</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ais-vd/0.1/index.html">AIS-Voyage Data</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../aisradar/index.html">AISradar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autopilot_route/index.html">Autopilot Route</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../calculator/index.html">Calculator</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../chart_downloader_tab/chart_downloader_tab.html">Chart Downloader Tab</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../chartscale/index.html">Chartscale</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../climatology/index.html">Climatology</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dashboard/dashboard.html">Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboardsk/index.html">SignalK Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../dead_reckoning/index.html">Dead Reckoning</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../debugger/0.1/index.html">Debugger</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../deviation/index.html">Deviation</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../earthexplorer/index.html">Earth Explorer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../engine-dash/0.1/index.html">Engine Dashboard</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">F - O</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../findit/index.html">Findit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../frcurrents/index.html">frcurrents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="grib_weather.html">Grib Weather (Included)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../gps-odometer/index.html">GPS Odometer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../javascript/index.html">JavaScript</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../launcher/0.1/index.html">Launcher</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../logbook/index.html">Logbook</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../ncdf/index.html">NetCDF Tidal Currents</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nmea_converter/index.html">NMEA Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nsk/index.html">NMEA 0183 to SignalK Converter</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../nv_charts/index.html">NV Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../objsearch/0.1/index.html">ObjSearch</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../odraw/index.html">OcpnDraw</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../o-charts/index.html">O-charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otcurrent/index.html">oTidalCurrent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otidalplan/index.html">oTidalPlan uses Harmonics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../otidalroute/index.html">oTidalRoute</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">P - R</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../photolayer/index.html">PhotoLayer</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../plots/index.html">Plots</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../polar/index.html">Polar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../projections/0.1/index.html">Projections</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../pypilot/index.html">Pypilot</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../race-start/0.1/index.html">Race Start</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../radar/0.1/index.html">Radar Display</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rotationctrl/index.html">RotationCtrl</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../route/index.html">Route Great Circle</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../rtlsdr/index.html">AIS RTL-SDR</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">S - T</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../s63_vector_charts/0.1/index.html">S63 Vector Charts</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../sar/index.html">SAR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sat2chart/sat2chart.html">Sat2Chart Software</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../shipdriver/index.html">Shipdriver</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../squiddio/0.1/index.html">sQuiddio</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../statusbar/index.html">Statusbar</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../survey/index.html">Survey</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tactics/index.html">Tactics</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../tidefinder/index.html">TideFinder</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../twocan/0.1/index.html">TwoCan</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">U - Z</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../uktides/index.html">UKTides</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vdr/index.html">Voyage Data Recorder VDR</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../vfkaps/index.html">VfKaps VentureFarther</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../watchdog/index.html">Watchdog</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weatherfax/index.html">WeatherFax</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../weather_routing/index.html">Weather Routing</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../windvane/0.1/index.html">Windvane</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../wmm/wmm.html">World Magnetic (Included)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Authoring the manual</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/pm-plugin-documentation.html">Plugin Documentation Guidelines</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/intro.html">Manual Maintenance Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/tools.html">Viewing and Editing Tools</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/localbuild.html">Local Build</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/FAQ.html">FAQ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../authoring/useful.html">Useful stuff</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../advanced/advanced.html">Understanding the Github Plugins Manual repository</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">OpenCPN Plugins</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dashboardsk/index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dashboardsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/opencpn-manuals/plugins/edit/main/manual/plugins/modules/grib_weather/pages/mail_servers.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_mail_servers"><a class="anchor" href="#_mail_servers"></a>Mail Servers</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_warning"><a class="anchor" href="#_warning"></a>Warning!</h3>
+<div class="paragraph">
+<p><strong>This is an Advanced subject, that is not necessary for running the grib
+plugin.
+Do not try these setups unless you are familiar with your operating
+system, comfortable with handling the command line interface and editing
+configuration files.
+Do not expect these instructions to work without some customization.</strong></p>
+</div>
+<div class="paragraph">
+<p>This page contains detailed instructions on how to set up mailservers to
+automatically send grib request mails to Sail Docs.
+“Ptizef” &amp; “rgleason” have compiled the instructions for
+<strong>Windows/Thunderbird</strong>
+“Ptizef” has compiled the instructions for <strong>Linux/SSMTP.</strong>
+“Cagney” has compiled the instructions for <strong>Linux/Exim4</strong>.
+“CarCode” has compiled the instructions for <strong>Mac OS X/PostFix</strong> .</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_windows_mapi_mail_server_setup"><a class="anchor" href="#_windows_mapi_mail_server_setup"></a>Windows MAPI Mail Server Setup</h3>
+<div class="paragraph">
+<p>The plugin&#8217;s email request depends on the user&#8217;s selection of the
+default MAPI email program which is dependent on the Operating System
+conventions. Linux, Windows and Mac are all different. If the plugin
+does not find a default MAPI program, an appropriate message will show
+in the plugin menu:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> Request can't be sent. Please verify your email system parameters.
+ You should also have a look at your log file.
+ Save or Cancel to finish...</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and there will be an error message in the opencpn.log similar to:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> 10:55:47 PM: MAIL Error: Failed to logon to MAPI using a shared session, Error:3</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To fix this problem use a google search, and find links such as
+<a href="http://www.ctimls.com/support/kb/error%20fixes/fix_mapi_error.htm">Fix
+CLS Send, MAPI or Runtime Error in Email</a></p>
+</div>
+<div class="sect3">
+<h4 id="_windows_10_or_8_1_and_thunderbird"><a class="anchor" href="#_windows_10_or_8_1_and_thunderbird"></a>Windows 10 or 8.1 and Thunderbird</h4>
+<div class="paragraph">
+<p>For example, if you use Thunderbird exclusively with Win10 or Win8.1,
+this should fix the problem</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre> Start &gt; Control Panel &gt; Default Programs &gt; Set your Default Programs,  Then pick Thunderbird.</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_windows_vista_or_xp_and_thunderbird"><a class="anchor" href="#_windows_vista_or_xp_and_thunderbird"></a>Windows Vista or XP and Thunderbird</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Outside OpenCPN</strong> there is nothing more to do except to ensure that
+there is a mail system (mine is thunderbird) correctly configured and
+set as “main” on the device.
+also verify if the mapi32.dll is present in c:/windows/system32 (or
+equivalent for 64b) (otherwise an error message will be the result).</p>
+</li>
+<li>
+<p><strong>Inside OpenCPN</strong>, there is nothing to do; the sender mail address can
+be entered, but will not be used. Just don&#8217;t forget to enter the zyGRIB
+login and password.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When clicking on “send” button :
+if the “main” mail system is not open, OpenCPN opens it and the waiting
+messages are received.
+remark : if there are many waiting messages, it could take a while. That
+is why it would be better to create a specific address for this
+purpose.
+Then a new mail page is opened with all mail elements already written
+thus ready to be sent.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_linux"><a class="anchor" href="#_linux"></a>Linux</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_using_ssmtp"><a class="anchor" href="#_using_ssmtp"></a>Using SSMTP</h3>
+<div class="paragraph">
+<p>How to install and configure sSMTP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>1) Install the ssmtp package.
+If another MTA is already installed, you may be asked to uninstall it
+before installing ssmtp.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Once it&#8217;s done you can test it by typing this command:
+“whereis sendmail”</p>
+</div>
+<div class="paragraph">
+<p>The answer should be something like “/usr/sbin/sendmail”.</p>
+</div>
+<div class="paragraph">
+<p>Use that answer in the next command:
+“ls -la /usr/sbin/sendmail”</p>
+</div>
+<div class="paragraph">
+<p>If everything is OK you should get this answer:
+“/usr/sbin/sendmail → ssmtp”
+showing that Sendmail function is now connected to ssmtp.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>2) Now there are two files to set:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>the first file : /etc/ssmtp/ssmtp.conf ( with root rights )</p>
+</div>
+<div class="paragraph">
+<p>The typical setting should be:
+root=postmaster
+AuthUser=yourlogin to your ISP access
+AuthPass=yourpasseword to your ISP access
+mailhub=yourISPserveurname.yourdomain (for example smtp.orange.fr)
+rewriteDomain=yourdomain
+FromLineOverride=YES
+hostname= the full host-name ( normally automatically entered, but if
+not you can type the command : “hostname” to get it)</p>
+</div>
+<div class="paragraph">
+<p>For ISP requiring a TLS connection , it could be necessary to add the
+line UseTLS=YES or UseSTARTTLS=YES</p>
+</div>
+<div class="paragraph">
+<p>the second file : /etc/ssmtp/revaliases (with root rights)</p>
+</div>
+<div class="paragraph">
+<p>Enter this line.
+root:yourlogin@yourdomain:yourISPserveurname.yourdomain</p>
+</div>
+<div class="paragraph">
+<p>the default port was 25 but now many ISP refuse it and use 587. If you
+have a mail system, you will find the right value in it.sudo
+dpkg-reconfigure exim4-config
+Sendmail/Postfix install for Mac
+- Inside OpenCPN :You must enter the sender address : your entire mail
+address, the one you will use to send mails and receive answers</p>
+</div>
+<div class="paragraph">
+<p>When you click on the “send” button, the mail is directly sent. You can
+find the log here : /var/log/mail.log</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_exim4"><a class="anchor" href="#_using_exim4"></a>Using Exim4</h3>
+<div class="paragraph">
+<p>First install Exim4
+$sudo apt-get install exim4
+then configure it (again).
+$sudo dpkg-reconfigure exim4-config
+This is a very simple setup where exim is just used to forward mail to
+the ISP:s smtp server. Local system mail is also available.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail1.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>It&#8217;s important to use the choice above.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail2.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>I just use “localhost”.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail3.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>We have no incoming connections.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail4.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>We are not using this.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail5.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>We are not using this.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail6.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>This is important. It must point to your Internet Service Providers SMTP
+server.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail7.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>Your choice!</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail8.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>RTFM and make up your mind. Not a big deal for this simple setup.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail9.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>RTFM.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/33gribmail10.png" alt="image" width="650">
+</div>
+</div>
+<div class="paragraph">
+<p>Your Choice, but no point in splitting this simple setup.</p>
+</div>
+<div class="paragraph">
+<p>Edit /etc/exim4/passwd.client so it contains your username and password
+to your ISP:s mail server.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"># password file used when the local exim is authenticating to a
+remote_PARATABLE_INS_# host as a
+client._PARATABLE_INS_#<em>PARATABLE_INS_# *see
+exim4_passwd_client(5) for more
+documentation*_PARATABLE_INS</em><mark><em>PARATABLE_INS_#
+Example:_PARATABLE_INS</em></mark>##
+target.mail.server.example:login:password_PARATABLE_INS_# for OpenCPN
+you can use *:login:password_PARATABLE_INS_*:fakexyz123:madeupXYZ123</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>(Re)start Exim4
+$ /etc/init.d/exim4
+\{start|stop|restart|reload|status|what|force-stop}
+Start testing</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mac_os"><a class="anchor" href="#_mac_os"></a>Mac OS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_using_sendmailpostfix"><a class="anchor" href="#_using_sendmailpostfix"></a>Using Sendmail/Postfix</h3>
+<div class="paragraph">
+<p>It is not so easy to install this on a Mac since you will need some
+experience with terminal using. The example below uses an googlemail
+account and nano as editor:</p>
+</div>
+<div class="paragraph">
+<p>Step 1
+Type in terminal these 6 lines one after another with return:
+sudo mkdir -p /Library/Server/Mail/Data/spool</p>
+</div>
+<div class="paragraph">
+<p>sudo gzip
+/usr/share/man/man1/\{postalias.1,postcat.1,postconf.1,postdrop.1,postf
+ix.1,postkick.1,postlock.1,postlog.1,postmap.1,postmulti.1,postqueue.1,postsuper.1,sendmail.1}</p>
+</div>
+<div class="paragraph">
+<p>sudo gzip /usr/share/man/man5/\{access.5,aliases.5,bounce.5,canonical.5,cidr_table.5,generic.5,header_checks.5,ldap_table.5,master.5,mysql_table.5,nisplus_table.5,pcre_table.5,pgsql_table.5,postconf.5,postfix-wrapper.5,regexp_table.5,relocated.5,tcp_table.5,transport.5,virtual.5}</p>
+</div>
+<div class="paragraph">
+<p>sudo gzip /usr/share/man/man8/\{anvil.8,bounce.8,cleanup.8,discard.8,error.8,flush.8,local.8,master.8,oqmgr.8,pickup.8,pipe.8,proxymap.8,qmgr.8,qmqpd.8,scache.8,showq.8,smtp.8,smtpd.8,spawn.8,tlsmgr.8,trivial-rewrite.8,verify.8,virtual.8}</p>
+</div>
+<div class="paragraph">
+<p>sudo /usr/sbin/postfix set-permissions</p>
+</div>
+<div class="paragraph">
+<p>sudo chmod 700 /Library/Server/Mail/Data/mta</p>
+</div>
+<div class="paragraph">
+<p>Step 2
+Type in terminal another command to start the nano editor with this
+file:
+sudo nano /etc/postfix/sasl_passwd</p>
+</div>
+<div class="paragraph">
+<p>Type into the nano editor:
+smtp.googlemail.com:587 YourAccountname(the at symbol)googlemail.com:YourPassword</p>
+</div>
+<div class="paragraph">
+<p>Substitute YourAccountname and YourPassword with your data.
+Save the file in nano with Ctrl-O and exit with Ctrl-X.</p>
+</div>
+<div class="paragraph">
+<p>Step 3
+Publicate the new file in terminal with this command:
+sudo postmap /etc/postfix/sasl_passwd</p>
+</div>
+<div class="paragraph">
+<p>Step 4
+You have to edit the main config file and add at the end the following
+lines with this command in Terminal:
+sudo nano /etc/postfix/main.cf</p>
+</div>
+<div class="paragraph">
+<p>This to add:
+<mark>#</mark> Minimum Postfix-specific configurations.
+mydomain_fallback = localhost
+mail_owner = _postfix
+setgid_group = _postdrop
+relayhost=smtp.googlemail.com:587</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enable_sasl_authentication_in_the_postfix_smtp_client"><a class="anchor" href="#_enable_sasl_authentication_in_the_postfix_smtp_client"></a>Enable SASL authentication in the Postfix SMTP client.</h3>
+<div class="paragraph">
+<p>smtp_sasl_auth_enable=yes
+smtp_sasl_password_maps=hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options=</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enable_transport_layer_security_tls_i_e_ssl"><a class="anchor" href="#_enable_transport_layer_security_tls_i_e_ssl"></a>Enable Transport Layer Security (TLS), i.e. SSL.</h3>
+<div class="paragraph">
+<p>smtp_use_tls=yes
+smtp_tls_security_level=encrypt
+tls_random_source=dev:/dev/urandom</p>
+</div>
+<div class="paragraph">
+<p>Save the file and exit nano as in step 2.</p>
+</div>
+<div class="paragraph">
+<p>Step 5
+Now you can start postfix in terminal with:
+sudo postfix start</p>
+</div>
+<div class="paragraph">
+<p>If an error occurs correct main.cf and start again with:
+sudo postfix reload</p>
+</div>
+<div class="paragraph">
+<p>Step 6
+Now you can test your work in terminal with:
+date | mail -s test YourAccountname(the at symbol)googlemail.com</p>
+</div>
+<div class="paragraph">
+<p>Done.
+Supplemental
+If you want to have started sendmail/postfix each time you start you
+start your machine you can add these lines to the launch daemon:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;key&gt;RunAtLoad&lt;/key&gt;
+&lt;true/&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Do this with this command in terminal:
+sudo nano /System/Library/LaunchDaemons/org.postfix.master.plist</p>
+</div>
+<div class="paragraph">
+<p>After that this file should look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;?xml version=“1.0” encoding=“UTF-8”?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version=“1.0”&gt;
+&lt;dict&gt;
+&lt;key&gt;Label«/key&gt;
+&lt;string&gt;org.postfix.master&lt;/string&gt;
+&lt;key&gt;Program&lt;/key&gt;
+&lt;string&gt;/usr/libexec/postfix/master&lt;/string&gt;
+&lt;key&gt;ProgramArguments&lt;/key&gt;
+&lt;array&gt;
+&lt;string&gt;master&lt;/string&gt;
+&lt;string&gt;-e&lt;/string&gt;
+&lt;string&gt;60&lt;/string&gt;
+&lt;/array&gt;
+&lt;key&gt;QueueDirectories&lt;/key&gt;
+&lt;array&gt;
+&lt;string&gt;/var/spool/postfix/maildrop&lt;/string&gt;
+&lt;/array&gt;
+&lt;key&gt;AbandonProcessGroup&lt;/key&gt;
+&lt;true/&gt;
+&lt;key&gt;OnDemand/lt;/key&gt;
+&lt;true/&gt;
+&lt;key&gt;RunAtLoad&lt;/key&gt;
+&lt;true/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Instead of googlemail in this example you may use any other mail server.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: OpenCPN</title>
+    <link rel="canonical" href="https://opencpn-manuals.github.io/plugins/dashboardsk/simplenumberinstrument.html">
+    <meta name="generator" content="Antora 3.1.7">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+    <script>var uiRootPath = '../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="ocpn-logo"> </div>
+      <a class="navbar-title"
+         href="https://opencpn-manuals.github.io/plugins"
+      >
+        OpenCPN
+        </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+       <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+              <a class="navbar-item" href="https://www.opencpn.org/">
+                OpenCPN.org
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/wiki/dokuwiki/doku.php?id&#x3D;opencpn:opencpn_user_manual">
+                User Manual
+              </a>
+              <a class="navbar-item" href="https://github.com/opencpn/OpenCPN">
+                Github Site
+              </a>
+              <a class="navbar-item" href="https://opencpn.org/flyspray/">
+                Bugtracker
+              </a>
+              <a class="navbar-item" href="https://opencpn-manuals.github.io/plugins/">
+                Plugin Manual (WIP)
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="dashboardsk" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-explore is-active" data-panel="explore">
+  <div class="context">
+    <span class="title">DashboardSK</span>
+    <span class="version">default</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../admiralty/index.html">Admiralty Tide Tables</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../admiralty/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rtlsdr/index.html">AIS RTLsdr USB</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rtlsdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ais-vd/0.1/index.html">AIS-vd</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ais-vd/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../aisradar/index.html">AISradar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../aisradar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot-rm/0.1/index.html">Autopilot Raymarine</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot-rm/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autopilot_route/index.html">Autopilot Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autopilot_route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../autotrackraymarine/index.html">AutoTrackRaymarine Evo</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../autotrackraymarine/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../calculator/index.html">Calculator</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../calculator/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../celestial_navigation/index.html">Celestial Navigation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../celestial_navigation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../chartscale/index.html">ChartScale</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../chartscale/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../climatology/index.html">Climatology</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../climatology/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dashboard_tactics/index.html">Dashboard Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dashboard_tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">DashboardSK</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../debugger/0.1/index.html">Debugger</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../debugger/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../deviation/index.html">Deviation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../deviation/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../dead_reckoning/index.html">DR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../dead_reckoning/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../earthexplorer/index.html">EarthExplorer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../earthexplorer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../engine-dash/0.1/index.html">EngineDashboard</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../engine-dash/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../findit/index.html">FindIt</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../findit/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../frcurrents/index.html">frcurrents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../frcurrents/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../gps-odometer/index.html">GPS-Odometer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../gps-odometer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../route/index.html">Great Circle Route</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../route/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../javascript/index.html">Javascript Plugin Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../javascript/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../launcher/0.1/index.html">Launcher</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../launcher/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../logbook/index.html">Logbook</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../logbook/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../ncdf/index.html">NCDF Tidal Currents</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../ncdf/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nmea_converter/index.html">NMEA Converter</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nmea_converter/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nsk/index.html">NSK</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nsk/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../nv_charts/index.html">nv_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../nv_charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../o-charts/index.html">o-charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../o-charts/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../objsearch/0.1/index.html">ObjSearch</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../objsearch/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../odraw/index.html">Ocpn_Draw</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../odraw/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../opencpn-plugins/index.html">OpenCPN Plugins</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../opencpn-plugins/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otcurrent/index.html">oTcurrent</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otcurrent/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalplan/index.html">oTidalPlan</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalplan/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../otidalroute/index.html">oTidalRoute</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../otidalroute/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../photolayer/index.html">PhotoLayer</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../photolayer/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../plots/index.html">Plots</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../plots/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../polar/index.html">Polar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../polar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../projections/0.1/index.html">Projections</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../projections/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../pypilot/index.html">Pypilot Autopilot</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../pypilot/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../race-start/0.1/index.html">RaceStart</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../race-start/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../radar/0.1/index.html">Radar Manual</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../radar/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../rotationctrl/index.html">Rotation Control</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../rotationctrl/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../s63_vector_charts/0.1/index.html">s63_vector_charts</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../s63_vector_charts/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sailawaynmea/index.html">SailawayNMEA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sailawaynmea/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../sar/index.html">SAR</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../sar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../shipdriver/index.html">ShipDriver</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../shipdriver/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../squiddio/0.1/index.html">sQuiddio</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../squiddio/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../statusbar/index.html">Statusbar</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../statusbar/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../survey/index.html">Survey</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../survey/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tactics/index.html">Tactics</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tactics/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../tidefinder/index.html">TideFinder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../tidefinder/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../twocan/0.1/index.html">TwoCan Plugin</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../twocan/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../uktides/index.html">UKtides</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../uktides/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vfkaps/index.html">VFkaps</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vfkaps/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../vdr/index.html">Voyage Data Recorder</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../vdr/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../watchdog/index.html">Watchdog</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../watchdog/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weather_routing/index.html">Weather Routing</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weather_routing/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../weatherfax/index.html">WeatherFax</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../weatherfax/index.html">default</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../windvane/0.1/index.html">Windvane</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../windvane/0.1/index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../opencpn-plugins/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/nohal/dashboardsk_pi/edit/main/manual/modules/ROOT/pages/simplenumberinstrument.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_simple_number_instrument"><a class="anchor" href="#_simple_number_instrument"></a>Simple number instrument</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="_images/simplenumberinstrument_screenshot.png" alt="Simple number instrument">
+</div>
+</div>
+<div class="paragraph">
+<p>A rectangular instrument displaying a single numerical value. Allows to select formatting and unit conversion from the SI units used by Signal K to usual units used in navigation.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Configuration parameters</caption>
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 71.4285%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Name</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name of the instrument</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time from primary GPS</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Title</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Title of the instrument to be displayed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GPS Time</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Timeout</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Timeout in seconds. If the set numeber of seconds passes since the last update for the Signal K key displayed by the instrument pass without receiving an update, the value is considerd timed out and is replaced by dashes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">SK key</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fully qualified <a href="skkeys.html" class="xref page">Signal K path</a> to the value displayed by the instrument</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vessels.urn:mrn:signalk:uuid:76bb2350-c92e-4e47-b3c3-e12273f21155.environment.depth.belowTransducer</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Format</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Format of the displayed number.</p>
+</div>
+<div class="ulist">
+<div class="title">Supported formats</div>
+<ul>
+<li>
+<p>9.9</p>
+</li>
+<li>
+<p>9.99</p>
+</li>
+<li>
+<p>9.999</p>
+</li>
+<li>
+<p>9</p>
+</li>
+<li>
+<p>009</p>
+</li>
+<li>
+<p>009.9</p>
+</li>
+<li>
+<p>09.9</p>
+</li>
+<li>
+<p>09.99</p>
+</li>
+<li>
+<p>009.99
+If displaying a sign in front of the number for negative values is undesirable, select the format marked by <code>ABS</code>, eg. <code>ABS(009)</code>.</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Transformation</p></th>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Function to be used to convert the value from the SI unit used by Signal K to human readable form</p>
+</div>
+<div class="ulist">
+<div class="title">Supported transformation functions</div>
+<ul>
+<li>
+<p>None</p>
+</li>
+<li>
+<p>RAD&#8594;DEG</p>
+</li>
+<li>
+<p>m/s &#8594; kn</p>
+</li>
+<li>
+<p>m/s &#8594; km/h</p>
+</li>
+<li>
+<p>m/s &#8594; mph</p>
+</li>
+<li>
+<p>m &#8594; feet</p>
+</li>
+<li>
+<p>m &#8594; fathoms</p>
+</li>
+<li>
+<p>m &#8594; NMi</p>
+</li>
+<li>
+<p>Kelvin &#8594; Celsius</p>
+</li>
+<li>
+<p>Kelvin &#8594; Fahrenheit</p>
+</li>
+<li>
+<p>ratio &#8594; percent</p>
+</li>
+<li>
+<p>Pa &#8594; hPa</p>
+</li>
+<li>
+<p>Pa &#8594; kPa</p>
+</li>
+<li>
+<p>Pa &#8594; MPa</p>
+</li>
+<li>
+<p>Pa &#8594; atm</p>
+</li>
+<li>
+<p>Pa &#8594; mmHg</p>
+</li>
+<li>
+<p>Pa &#8594; psi</p>
+</li>
+<li>
+<p>Hz &#8594; RPM</p>
+</li>
+<li>
+<p>RAD/s &#8594; Degrees/min</p>
+</li>
+</ul>
+</div></div></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Zones</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Value zones used to trigger visual alarm (Changing the colors of the instrument if the displayed value is within a zone). Refer to the <a href="zones.html" class="xref page">detailed documentation</a>.</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Data smoothing</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Degree of data smoothing. The value between 0 and 9 configuring how smooth the transition between values received from the data stream should be.</p>
+<p class="tableblock">O means no smoothing, the latest value received from the data stream is directly displayed.</p>
+<p class="tableblock">Values between 1 and 9 regulate how aggressive the smoothing algorithm is.</p>
+<p class="tableblock">1 means the latest received value has 90% influence on what is displayed, 10% the earlier values. Lower values are suitable for data possibly changing fast in real world and the sensors with steady output, like depth.</p>
+<p class="tableblock">9 means the latest received value has only 10% influence on the displayed value and 90% the earlier values. This makes the transition between values very smooth, not fluctuating wildly, but means a signifiant delay in reaching close to the actual value received from the sensor.
+Higher values are suitable for data not changing fast in real world and coming from sensors suffering big fluctuation coming from boat movement and other factors, for example wind strength and direction.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Title size</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Font size of the instrument Title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Body size</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Font size for the instrument value</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Title background</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background color of the title part of the instrument</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Title color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text color of the title part of the instrument</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Body background</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background color of the value part of the instrument</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Body color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text color of the value part of the instrument</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Alert background</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background color of the value part of the instrument when the value is within an alert zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Alert color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text color of the value part of the instrument when the value is within an alert zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Warning background</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background color of the value part of the instrument when the value is within a warning zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Warning color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text color of the value part of the instrument when the value is within a warning zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Alarm background</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background color of the value part of the instrument when the value is within an alarm zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Alarm color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text color of the value part of the instrument when the value is within an alarm zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Emergency background</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Background color of the value part of the instrument when the value is within an emergency zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Emergency color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text color of the value part of the instrument when the value is within an emergency zone</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Border color</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Color of the border of the instrument</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.
+     Sources: https://gitlab.com/leamas/antora-ui-default
+  </p>
+</footer>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
