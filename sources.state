@@ -24,7 +24,7 @@ LogbookKonni_pi https://github.com/rgleason/LogbookKonni_pi.git 084b468149b64e65
 ncdf_pi https://github.com/Rasbats/ncdf_pi.git 7bea3361361a89f7df8672106c617ec99299f347
 NmeaConverter_pi https://github.com/RooieDirk/NmeaConverter_pi.git 48fa9a5f6b1d0edb2e9a951c13700e45a596e2c1
 nsk_pi https://github.com/nohal/nsk_pi.git e2173448b3035d33f1d568e0ee25933c0627d7b0
-nvc_pi https://github.com/Rasbats/nvc_pi/.git f5a5240ec7892e56f4cba74632c6b726bd02bcb1
+nvc_pi https://github.com/Rasbats/nvc_pi.git f5a5240ec7892e56f4cba74632c6b726bd02bcb1
 objsearch_pi https://github.com/nohal/objsearch_pi.git 2a0758cf039a6fa3bf239250a019b55ef7803db8
 ocpndebugger_pi https://github.com/nohal/ocpndebugger_pi.git 75681de8c119eebb26df61e95686c9513bcdd40e
 ocpn_draw_pi https://github.com/jongough/ocpn_draw_pi.git ffc4bcf934280b5bd1b2e2d9c313a6a7132e3c77
