@@ -22,7 +22,7 @@ readonly GP_BRANCH='gh-pages'      # Branch used as input by Github Pages
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 npm -v
-npm i -g @antora/cli@3.1 @antora/site-generator-default@3.1
+npm i -g @antora/cli@3.1 @antora/site-generator@3.1
 antora -v
 
 # Update dependencies and build site
