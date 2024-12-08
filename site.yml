@@ -93,6 +93,11 @@ content:
       start_path: manual
       edit_url: https://github.com/Rasbats/EarthExplorer_pi/edit/master/{path}
 
+    - url: sources/e_timer_pi
+      branches: main
+      start_path: manual
+      edit_url: https://github.com/Rasbats/e_timer_pi/edit/main/{path}
+
     - url: sources/Findit_pi
       start_path: manual
       branches: master

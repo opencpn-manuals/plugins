@@ -18,6 +18,7 @@
 ** xref:deviation::index.adoc[Deviation]
 ** xref:earthexplorer::index.adoc[Earth Explorer]
 ** xref:engine-dash::index.adoc[Engine Dashboard]
+** xref:e_timer::index.adoc[e_timer]
 
 * F - O
 ** xref:findit::index.adoc[Findit]

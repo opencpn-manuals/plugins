@@ -60,6 +60,7 @@
 ** xref:ais-vd::index.adoc[AIS-Voyage Data] image:managed_plugin.png[]
 ** xref:statusbar::index.adoc[Statusbar] image:managed_plugin.png[]
 ** xref:calculator:ROOT:index.adoc[Calculator] image:managed_plugin.png[]
+** xref:e_timer:ROOT:index.adoc[e_timer] image:managed_plugin.png[]
 ** xref:launcher:ROOT:index.adoc[Launcher]
 ** xref:debugger:ROOT:index.adoc[Debugger]
 ** xref:javascript::index.adoc[JavaScript] image:managed_plugin.png[]
