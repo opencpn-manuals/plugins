@@ -43,7 +43,6 @@ rotationctrl_pi https://github.com/rgleason/rotationctrl_pi.git bedac9ba71dc5ec3
 route_pi https://github.com/rgleason/route_pi.git 1037f3374f24213f0658a830de496e82ed49996f
 rtlsdr_pi https://github.com/rgleason/rtlsdr_pi.git 42e3c521655f1d352314b1dab9604fe31babe71e
 s63_pi https://github.com/bdbcat/s63_pi 688a17246b4b91f2d3823c6b5e9df40fba515475
-SailawayNMEA_pi https://github.com/Rasbats/SailawayNMEA_pi.git 1b8f81d576df76f48636cc67b97efab5c1f64be2
 sar_pi https://github.com/Rasbats/sar_pi.git b9ec42c42743ae77b2ab28ed4391fe21cf53fc40
 shipdriver_pi https://github.com/Rasbats/shipdriver_pi.git 28d73c499e4026448f97e5d0b5887032c94f9710
 squiddio_pi https://github.com/mauroc/squiddio_pi.git 1deb2f160f5f41e74820598a2e599010db71213a
