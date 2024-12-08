@@ -64,7 +64,6 @@
 ** xref:debugger:ROOT:index.adoc[Debugger]
 ** xref:javascript::index.adoc[JavaScript] image:managed_plugin.png[]
 ** xref:pypilot::index.adoc[Pypilot] image:managed_plugin.png[]
-** xref:sailawaynmea::index.adoc[SailawayNMEA] image:managed_plugin.png[]
 ** xref:shipdriver::index.adoc[Shipdriver] image:managed_plugin.png[]
 ** xref:twocan::index.adoc[TwoCan] image:managed_plugin.png[]
 ** xref:gps-odometer:ROOT:index.adoc[GPS Odometer] image:managed_plugin.png[]

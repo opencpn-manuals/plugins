@@ -53,7 +53,6 @@
 
 * S - T
 ** xref:s63_vector_charts:ROOT:index.adoc[S63 Vector Charts]
-** xref:sailawaynmea::index.adoc[SailawayNMEA]
 ** xref:sar::index.adoc[SAR]
 ** xref:sat2chart:sat2chart.adoc[Sat2Chart Software]
 ** xref:shipdriver::index.adoc[Shipdriver]
