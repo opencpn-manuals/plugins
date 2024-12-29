@@ -38,10 +38,12 @@ OpenCPN Grib_pi has been updated to support all of the useful GFS parameters (Se
 The WW3 model has been incorporated into the GFS, so we get waves 
 now along with the wind and pressure (and reflectivity)… plus the waves go out 16 days and not just the 8 of WW3, 
 and the resolution is now 0.25º and when it was 0.5 before.
+ASCAT Indexes and Data have been added for USA and Europe.
 
 To learn more about the various grib formats and models available, see:
 
 * http://davidburchnavigation.blogspot.com/2021/02/grib-school.html[Grib School by Davd Burch]
+* https://youtu.be/Ro3XnyjcJeo[ASCAT Indexes and Use by Davd Burch]
 * https://luckgrib.com/blog/2018/08/24/nbm-announce.html[Luckgrib NBM announcement]
 * https://luckgrib.com/tutorials/2018/08/24/nbm-oceanic.html[Luckgrib probability for the results]
 
