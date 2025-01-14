@@ -88,8 +88,7 @@ update to an existing plugin this is visible in the GUI.
 The built-in plugin system in OpenCPN downloads plugins in a special format called tarballs.  Such tarballs can also be downloaded without using OpenCPN with the plugin downloader available http://mumin.crabdance.com/opencpn-dl/[here].
 Once downloaded, such tarballs can be transferred to a computer running OpenCPN and then imported using the Import button available in the Options | Plugins tab 
 
-fixme: This Screenshot url image should appear below this. How does an editor add an image to the image resource directory? This is certainly not intuitive.
-http://user-images.githubusercontent.com/405541/127825288-8ad8ab1f-6d7e-49e1-bf91-f6fb2e43ef79.png
+image:import-tarballs.png[]
 
 The downloader supports downloading the same plugins as those available in the OpenCPN program.
 
