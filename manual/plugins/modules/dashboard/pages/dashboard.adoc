@@ -101,7 +101,7 @@ Window.
 
 image::dash-select-instr_0.png[image,width=260,height=265]
 
-=== 40 Instruments Available
+=== 41 Instruments Available
 
 
 [cols="",]
@@ -147,6 +147,7 @@ image::dash-select-instr_0.png[image,width=260,height=265]
 |Barometric History
 |From Ownship. Shows the vector from Ownship to the cursor.
 |Magnetic COG^2^
+|Windlass
 |===
 
 . The DPT sentence is used, and transducer offset will be added
@@ -174,12 +175,12 @@ Use this tab to set fonts.
 Note:: Depth Transducer Offset is in units of meters regardless of the
 chosen display units.
 
-=== Dampen SOG and COG (IR Filter)
+=== Dampen SOG, COG, Wind speed and Wind angle (IR Filter)
 
-There are 2 parameters in the Dashboard→Preferences→Appearance dialog
-for damping of SOG and COG. A value of 1 means no filtering. Higher
-values mean ever slower response of the instrument. The max filter value
-is 100 which is pretty slow. This filter works almost exactly like a
+There are 4 parameters in the Dashboard→Preferences→Appearance dialog
+for damping of Speed Over Ground (SOG), Course Over Ground (COG), Wind speed and Wind angle.
+A value of 1 means no filtering. Higher values mean ever slower response of the instrument.
+The max filter value is 100 which is pretty slow. This filter works almost exactly like a
 mechanical filter that uses an oil damped indicator dial. It will
 respond gradually to a change in course or speed. A typical filter value
 of 10 seems to work pretty well.
@@ -196,6 +197,16 @@ image::dash-big-fonts.png[image,width=700,height=691]
 speed dial.
 
 image::33speed12.png[image,width=231,height=250]image::33speed50.png[image,width=231,height=250]
+
+==== Other Selections
+
+Use Internal Sumlog. If checked, the Dashboard uses internal sumlog calculation instead 
+of data from external sources. The value listed all the time is saved in the configuration file.
+The current value can be changed, or reset, in the box to the right.
+
+Use NMEA2000 (N2k) or SignalK true wind data over ground. 
+If checked, data with reference to SOG is used instead of STW. 
+Both values are normally available from these sources.
 
 === Wind History
 
