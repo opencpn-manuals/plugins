@@ -50,7 +50,7 @@
 
 * Weather
 ** xref:weatherfax::index.adoc[WeatherFax] image:managed_plugin.png[]
-** xref:grib_weather:grib_weather.adoc[Grib Weather (Included)]
+** xref:grib::index.adoc[Grib Weather (Included)]
 ** xref:climatology::index.adoc[Climatology] image:managed_plugin.png[]
 ** xref:weather_routing::index.adoc[Weather Routing] image:managed_plugin.png[]
 

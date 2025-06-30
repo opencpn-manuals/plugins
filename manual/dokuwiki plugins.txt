@@ -5,9 +5,9 @@
 These plugins are installed with the basic OpenCPN program.
 
 xref:dashboard:dashboard.adoc[dashboard] +
-xref:wmm:wmm.adoc[World Magnetic] +
-xref:grib_weather:grib_weather.adoc[grib_weather] +
-xref:chart_downloader_tab:chart_downloader_tab.adoc[chart_downloader_tab]
+xref:wmm::index.adoc[World Magnetic] +
+xref:grib_weather::index.adocther.adoc[grib_weather] +
+xref:chartdldr::index.adoc[chart_downloader_tab]
 
 === AIS / Radar +
 xref:ais_radar_display:ais_radar_display.adoc[AISradar Display] +
@@ -42,7 +42,7 @@ xref:dead_reckoning:dead_reckoning.adoc[DR Dead Reckoning] +
 xref:otcurrent:otcurrent.adoc[otcurrent] 
 xref:PhotoLayer:ROOT:photolayer.adoc[PhotoLayer #]  
 xref:ge2kap:ge2kap.adoc[GE2KAP Companion Software] +
-xref:wmm.adoc[WMM (Included)] +
+xref:wmm::index.adoc[WMM (Included)] +
 
 === Safety +
 xref:odraw1.6_pi:odraw1.6_pi.adoc[odraw1.6_pi] +
