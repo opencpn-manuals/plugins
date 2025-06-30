@@ -10,7 +10,6 @@
 ** xref:chart_downloader_tab:chart_downloader_tab.adoc[Chart Downloader Tab]
 ** xref:chartscale::index.adoc[Chartscale]
 ** xref:climatology::index.adoc[Climatology]
-** xref:crowdsource::index.adoc[Crowdsource]
 ** xref:opencpn-plugins:dashboard:dashboard.adoc[Dashboard]
 ** xref:dashboardsk::index.adoc[SignalK Dashboard]
 ** xref:dashboard_tactics::index.adoc[Dashboard Tactics]
