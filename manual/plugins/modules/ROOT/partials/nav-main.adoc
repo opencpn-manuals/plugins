@@ -1,12 +1,12 @@
 * Included with OpenCPN
-** xref:dashboard:dashboard.adoc[Dashboard]
-** xref:wmm:wmm.adoc[World Magnetic]
-** xref:grib_weather:grib_weather.adoc[Grib Weather]
-** xref:chart_downloader_tab:chart_downloader_tab.adoc[Chart Downloader Tab]
+** xref:dashboard::index.adoc[Dashboard]
+** xref:wmm::index.adoc[World Magnetic]
+** xref:grib::index.adoc[Grib Weather]
+** xref:chartdldr::index.adoc[Chart Downloader Tab]
 
 * AIS / Radar
-** xref:aisradar:ROOT:index.adoc[AISradar Display] image:managed_plugin.png[]
-** xref:radar:ROOT:index.adoc[Radar Display] image:managed_plugin.png[]
+** xref:aisradar::index.adoc[AISradar Display] image:managed_plugin.png[]
+** xref:radar::index.adoc[Radar Display] image:managed_plugin.png[]
 ** xref:rtlsdr::index.adoc[AIS RTL-SDR]
 ** xref:crowdsource::index.adoc[Crowdsource AIS, ARPA targets] image:managed_plugin.png[]
 
