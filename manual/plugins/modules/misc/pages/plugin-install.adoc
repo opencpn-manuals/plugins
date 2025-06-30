@@ -88,8 +88,6 @@ update to an existing plugin this is visible in the GUI.
 The built-in plugin system in OpenCPN downloads plugins in a special format called tarballs.  Such tarballs can also be downloaded without using OpenCPN with the plugin downloader available http://mumin.crabdance.com/opencpn-dl/[here].
 Once downloaded, such tarballs can be transferred to a computer running OpenCPN and then imported using the Import button available in the Options | Plugins tab 
 
-image:import-tarballs.png[]
-
 The downloader supports downloading the same plugins as those available in the OpenCPN program.
 
 == Legacy plugins

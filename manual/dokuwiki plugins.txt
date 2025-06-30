@@ -4,7 +4,7 @@
 
 These plugins are installed with the basic OpenCPN program.
 
-xref:dashboard:dashboard.adoc[dashboard] +
+xref:dashboard::index.adoc[dashboard] +
 xref:wmm::index.adoc[World Magnetic] +
 xref:grib_weather::index.adocther.adoc[grib_weather] +
 xref:chartdldr::index.adoc[chart_downloader_tab]
