@@ -18,7 +18,7 @@ There is official support for the following platforms:
 
 | Ubuntu   | amd64  | Supported LTS releases
 
-| Flatpak  | x86_64, aarch64 | runtime 20.08
+| Flatpak  | x86_64, aarch64 | runtime 24.08
 
 | Raspbian | armhf | 10
 
