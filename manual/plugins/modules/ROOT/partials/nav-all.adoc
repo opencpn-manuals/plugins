@@ -15,6 +15,7 @@
 ** xref:dashboard_tactics::index.adoc[Dashboard Tactics]
 ** xref:dead_reckoning::index.adoc[Dead Reckoning]
 ** xref:debugger:ROOT:index.adoc[Debugger]
+** xref:demo_plugin:ROOT:index.adoc[Demo]
 ** xref:deviation::index.adoc[Deviation]
 ** xref:earthexplorer::index.adoc[Earth Explorer]
 ** xref:engine-dash::index.adoc[Engine Dashboard]
