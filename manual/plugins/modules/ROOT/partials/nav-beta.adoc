@@ -14,3 +14,4 @@
 * xref:earthexplorer::index.adoc[Earth Explorer]
 * xref:dashboardsk::index.adoc[SignalK Dashboard]
 * xref:nsk::index.adoc[NMEA 0183 to SignalK Converter]
+* xref:navico_autopilot::index.adoc[Navico Autopilot]
