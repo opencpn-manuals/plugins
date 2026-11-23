@@ -29,6 +29,7 @@
 ** xref:javascript::index.adoc[JavaScript]
 ** xref:launcher:ROOT:index.adoc[Launcher]
 ** xref:logbook::index.adoc[Logbook]
+** xref:navico_autopilot::index.adoc[Navico Autopilot]
 ** xref:ncdf::index.adoc[NetCDF Tidal Currents]
 ** xref:nmea_converter:ROOT:index.adoc[NMEA Converter]
 ** xref:nsk::index.adoc[NMEA 0183 to SignalK Converter]
